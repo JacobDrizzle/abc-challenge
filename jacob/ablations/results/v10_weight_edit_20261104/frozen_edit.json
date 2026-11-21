@@ -1,0 +1,13 @@
+{
+  "candidate": {
+    "id": "global_105",
+    "gains": [
+      1.05,
+      1.05,
+      1.05
+    ]
+  },
+  "discovery_delta_deg": -0.0017365629927664796,
+  "locked_utc": "2026-11-04T22:24:54.109837+00:00",
+  "further_tuning_allowed": false
+}

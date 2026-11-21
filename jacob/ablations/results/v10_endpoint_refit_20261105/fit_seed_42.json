@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "train_examples": 1620028,
+  "train_users": 800,
+  "residual_rms": 0.07299616262337444,
+  "statistics_sha256": "6299accc4139637e57c64a3533f698b27bd6f031503c7267fcfc6a7ba81b60ee",
+  "fit_target": "200 ms endpoint",
+  "fitting_split": "train",
+  "feature_extractor_frozen": true
+}

@@ -1,0 +1,61 @@
+﻿exact-grid resample max |dq|: 1.4901161193847656e-08
+exact 100 Hz grid (40 s, 131,459 windows) {'damped velocity (baseline)': 5.0497, 'k8_combined': 4.2478, 'combined_jitter_1_5ms': 4.2566, 'combined_jitter_3ms': 4.2793, 'k8_jitter3_bare': 4.3228}
+jitter +-0.5 ms (40 s, 131,459 windows) {'damped velocity (baseline)': 5.0482, 'k8_combined': 4.2593, 'combined_jitter_1_5ms': 4.2589, 'combined_jitter_3ms': 4.2787, 'k8_jitter3_bare': 4.322}
+jitter +-1 ms (40 s, 131,459 windows) {'damped velocity (baseline)': 5.0507, 'k8_combined': 4.2959, 'combined_jitter_1_5ms': 4.2734, 'combined_jitter_3ms': 4.2831, 'k8_jitter3_bare': 4.3265}
+jitter +-1.5 ms (40 s, 131,459 windows) {'damped velocity (baseline)': 5.0573, 'k8_combined': 4.3468, 'combined_jitter_1_5ms': 4.2991, 'combined_jitter_3ms': 4.2925, 'k8_jitter3_bare': 4.3361}
+jitter +-2 ms (40 s, 131,459 windows) {'damped velocity (baseline)': 5.0681, 'k8_combined': 4.4052, 'combined_jitter_1_5ms': 4.3343, 'combined_jitter_3ms': 4.307, 'k8_jitter3_bare': 4.3509}
+jitter +-3 ms (40 s, 131,459 windows) {'damped velocity (baseline)': 5.1016, 'k8_combined': 4.5303, 'combined_jitter_1_5ms': 4.4279, 'combined_jitter_3ms': 4.3518, 'k8_jitter3_bare': 4.396}
+rate 90 Hz (36 s, 117,941 windows) {'damped velocity (baseline)': 5.5849, 'k8_combined': 4.6809, 'combined_jitter_1_5ms': 4.697, 'combined_jitter_3ms': 4.7298, 'k8_jitter3_bare': 4.7804}
+rate 95 Hz (38 s, 124,695 windows) {'damped velocity (baseline)': 5.2891, 'k8_combined': 4.4298, 'combined_jitter_1_5ms': 4.4469, 'combined_jitter_3ms': 4.4788, 'k8_jitter3_bare': 4.5225}
+rate 98 Hz (39 s, 128,749 windows) {'damped velocity (baseline)': 5.1281, 'k8_combined': 4.2945, 'combined_jitter_1_5ms': 4.3112, 'combined_jitter_3ms': 4.3412, 'k8_jitter3_bare': 4.3849}
+rate 102 Hz (41 s, 134,154 windows) {'damped velocity (baseline)': 4.9259, 'k8_combined': 4.1266, 'combined_jitter_1_5ms': 4.1435, 'combined_jitter_3ms': 4.1705, 'k8_jitter3_bare': 4.2137}
+rate 105 Hz (42 s, 138,207 windows) {'damped velocity (baseline)': 4.7861, 'k8_combined': 4.0137, 'combined_jitter_1_5ms': 4.0279, 'combined_jitter_3ms': 4.0548, 'k8_jitter3_bare': 4.0935}
+rate 110 Hz (44 s, 144,965 windows) {'damped velocity (baseline)': 4.5698, 'k8_combined': 3.8328, 'combined_jitter_1_5ms': 3.8463, 'combined_jitter_3ms': 3.8712, 'k8_jitter3_bare': 3.9067}
+rate 98 Hz + jitter +-1 ms (39 s, 128,749 windows) {'damped velocity (baseline)': 5.1355, 'k8_combined': 4.3521, 'combined_jitter_1_5ms': 4.3357, 'combined_jitter_3ms': 4.3507, 'k8_jitter3_bare': 4.3945}
+repeats 1% (40 s, 131,459 windows) {'damped velocity (baseline)': 5.0699, 'k8_combined': 4.2906, 'combined_jitter_1_5ms': 4.2969, 'combined_jitter_3ms': 4.3112, 'k8_jitter3_bare': 4.3524}
+drops 1% (40 s, 130,102 windows) {'damped velocity (baseline)': 5.1086, 'k8_combined': 4.3111, 'combined_jitter_1_5ms': 4.3135, 'combined_jitter_3ms': 4.3333, 'k8_jitter3_bare': 4.3747}
+jitter +-2 ms + repeats 1% (40 s, 131,459 windows) {'damped velocity (baseline)': 5.0891, 'k8_combined': 4.4379, 'combined_jitter_1_5ms': 4.3702, 'combined_jitter_3ms': 4.3354, 'k8_jitter3_bare': 4.3787}
+
+Step-20 mean geodesic error (degrees) on the exact grid; the other rows are each model's change.
+
+| Stream | Windows | damped velocity (baseline) | k8_combined | combined_jitter_1_5ms | combined_jitter_3ms | k8_jitter3_bare |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| exact 100 Hz grid | 131,459 | 5.0497 | 4.2478 | 4.2566 | 4.2793 | 4.3228 |
+| jitter +-0.5 ms | 131,459 | -0.0016 | +0.0115 | +0.0023 | -0.0006 | -0.0007 |
+| jitter +-1 ms | 131,459 | +0.0010 | +0.0480 | +0.0168 | +0.0038 | +0.0037 |
+| jitter +-1.5 ms | 131,459 | +0.0076 | +0.0989 | +0.0425 | +0.0132 | +0.0134 |
+| jitter +-2 ms | 131,459 | +0.0183 | +0.1573 | +0.0778 | +0.0277 | +0.0281 |
+| jitter +-3 ms | 131,459 | +0.0519 | +0.2825 | +0.1713 | +0.0725 | +0.0732 |
+| rate 90 Hz | 117,941 | +0.5352 | +0.4331 | +0.4405 | +0.4505 | +0.4577 |
+| rate 95 Hz | 124,695 | +0.2394 | +0.1819 | +0.1903 | +0.1995 | +0.1998 |
+| rate 98 Hz | 128,749 | +0.0784 | +0.0466 | +0.0546 | +0.0619 | +0.0622 |
+| rate 102 Hz | 134,154 | -0.1238 | -0.1212 | -0.1131 | -0.1088 | -0.1090 |
+| rate 105 Hz | 138,207 | -0.2636 | -0.2342 | -0.2287 | -0.2245 | -0.2293 |
+| rate 110 Hz | 144,965 | -0.4799 | -0.4151 | -0.4103 | -0.4081 | -0.4161 |
+| rate 98 Hz + jitter +-1 ms | 128,749 | +0.0857 | +0.1042 | +0.0791 | +0.0714 | +0.0718 |
+| repeats 1% | 131,459 | +0.0202 | +0.0427 | +0.0403 | +0.0319 | +0.0296 |
+| drops 1% | 130,102 | +0.0589 | +0.0632 | +0.0569 | +0.0540 | +0.0519 |
+| jitter +-2 ms + repeats 1% | 131,459 | +0.0394 | +0.1901 | +0.1136 | +0.0561 | +0.0560 |
+
+Each model minus k8_combined on the same stream (negative: better than k8_combined).
+
+| Stream | damped velocity (baseline) | combined_jitter_1_5ms | combined_jitter_3ms | k8_jitter3_bare |
+| --- | ---: | ---: | ---: | ---: |
+| exact 100 Hz grid | +0.8019 | +0.0087 | +0.0315 | +0.0749 |
+| jitter +-0.5 ms | +0.7888 | -0.0004 | +0.0193 | +0.0627 |
+| jitter +-1 ms | +0.7548 | -0.0225 | -0.0128 | +0.0306 |
+| jitter +-1.5 ms | +0.7105 | -0.0477 | -0.0543 | -0.0107 |
+| jitter +-2 ms | +0.6629 | -0.0708 | -0.0982 | -0.0543 |
+| jitter +-3 ms | +0.5713 | -0.1025 | -0.1785 | -0.1343 |
+| rate 90 Hz | +0.9040 | +0.0161 | +0.0489 | +0.0995 |
+| rate 95 Hz | +0.8594 | +0.0172 | +0.0491 | +0.0928 |
+| rate 98 Hz | +0.8337 | +0.0167 | +0.0467 | +0.0904 |
+| rate 102 Hz | +0.7993 | +0.0168 | +0.0439 | +0.0871 |
+| rate 105 Hz | +0.7724 | +0.0143 | +0.0411 | +0.0798 |
+| rate 110 Hz | +0.7371 | +0.0136 | +0.0384 | +0.0739 |
+| rate 98 Hz + jitter +-1 ms | +0.7834 | -0.0164 | -0.0014 | +0.0424 |
+| repeats 1% | +0.7793 | +0.0064 | +0.0206 | +0.0618 |
+| drops 1% | +0.7975 | +0.0025 | +0.0222 | +0.0636 |
+| jitter +-2 ms + repeats 1% | +0.6512 | -0.0677 | -0.1025 | -0.0592 |
+
+wrote <repo>\jacob\training\outputs\v9_timing_stress\step3_screen.json

@@ -1,0 +1,89 @@
+{
+ "stride": 5,
+ "windows": 131459,
+ "first_pose_tilt_deg": {
+  "median": 9.643726348876953,
+  "min": 1.3978779315948486,
+  "max": 38.79758071899414
+ },
+ "models": {
+  "v6 plain (=v5) s42": {
+   "checkpoint": "v6_group_a_v2/plain/seed_42/best.pt",
+   "gravity": false,
+   "mirror": false
+  },
+  "v6 no_mirror s42": {
+   "checkpoint": "v6_group_a_v2/no_mirror/seed_42/best.pt",
+   "gravity": true,
+   "mirror": false
+  },
+  "v6 no_gravity s42": {
+   "checkpoint": "v6_group_a_v2/no_gravity/seed_42/best.pt",
+   "gravity": false,
+   "mirror": true
+  },
+  "v6 control s42": {
+   "checkpoint": "v6_group_a_v2/control/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "v6 control s44 (fallback)": {
+   "checkpoint": "v6_group_a_v2/control/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "sep+angular s44": {
+   "checkpoint": "v8_recipe_sep_base3_addons/angular_loss/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "base3_5+angular s44": {
+   "checkpoint": "v8_recipe_base3_5_addons/angular_loss/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  }
+ },
+ "results": {
+  "identity": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "v6 plain (=v5) s42": 4.407184308071374,
+   "v6 no_mirror s42": 4.3830840475888415,
+   "v6 no_gravity s42": 4.369594482602107,
+   "v6 control s42": 4.353150388736323,
+   "v6 control s44 (fallback)": 4.329535623860914,
+   "sep+angular s44": 4.3144687287188965,
+   "base3_5+angular s44": 4.315688324681168
+  },
+  "ROS/ENU (z-up, x fwd, y left)": {
+   "damped velocity (baseline)": 5.049710015944998,
+   "v6 plain (=v5) s42": 4.880708095992542,
+   "v6 no_mirror s42": 4.823372784796272,
+   "v6 no_gravity s42": 4.8123828269129305,
+   "v6 control s42": 4.782702878880816,
+   "v6 control s44 (fallback)": 4.742272128722161,
+   "sep+angular s44": 4.712450741418178,
+   "base3_5+angular s44": 4.7191236729520805
+  },
+  "ROS/ENU, player heading +90 deg": {
+   "damped velocity (baseline)": 5.0497098483873355,
+   "v6 plain (=v5) s42": 4.88070773742384,
+   "v6 no_mirror s42": 6.230594162316776,
+   "v6 no_gravity s42": 4.812382316406818,
+   "v6 control s42": 6.376304692502964,
+   "v6 control s44 (fallback)": 5.800156304248689,
+   "sep+angular s44": 5.742406543608912,
+   "base3_5+angular s44": 5.755469958195112
+  },
+  "ROS/ENU, player heading +180 deg": {
+   "damped velocity (baseline)": 5.049710012248816,
+   "v6 plain (=v5) s42": 4.880708091008529,
+   "v6 no_mirror s42": 8.283014421578349,
+   "v6 no_gravity s42": 4.812382814929177,
+   "v6 control s42": 6.962528936613372,
+   "v6 control s44 (fallback)": 6.961414696711089,
+   "sep+angular s44": 6.2416819504308725,
+   "base3_5+angular s44": 5.831035256032771
+  }
+ },
+ "table_md": "| Stream convention | damped velocity (baseline) | v6 plain (=v5) s42 | v6 no_mirror s42 | v6 no_gravity s42 | v6 control s42 | v6 control s44 (fallback) | sep+angular s44 | base3_5+angular s44 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n| identity (BOXRR/Unity) | 5.0497 | 4.4072 | 4.3831 | 4.3696 | 4.3532 | 4.3295 | 4.3145 | 4.3157 |\n| ROS/ENU (z-up, x fwd, y left) | +0.0000 | +0.4735 | +0.4403 | +0.4428 | +0.4296 | +0.4127 | +0.3980 | +0.4034 |\n| ROS/ENU, player heading +90 deg | -0.0000 | +0.4735 | +1.8475 | +0.4428 | +2.0232 | +1.4706 | +1.4279 | +1.4398 |\n| ROS/ENU, player heading +180 deg | +0.0000 | +0.4735 | +3.8999 | +0.4428 | +2.6094 | +2.6319 | +1.9272 | +1.5153 |"
+}

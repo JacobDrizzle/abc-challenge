@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "run": "colab_moredata_final_v10_k8_s42_a100-sxm4-80gb",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "validation_step20_deg": 4.542269268917307,
+  "all_seeds_validation_step20_deg": {
+    "42": 4.542269268917307,
+    "43": 4.55273488994898,
+    "44": 4.546466968530597
+  },
+  "data": "moredata_final.h5"
+}

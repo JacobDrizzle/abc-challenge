@@ -1,0 +1,79 @@
+2026-11-04T22:09:00+00:00 Baseline: 5/120 validation users
+2026-11-04T22:09:23+00:00 Baseline: 10/120 validation users
+2026-11-04T22:09:39+00:00 Baseline: 15/120 validation users
+2026-11-04T22:09:55+00:00 Baseline: 20/120 validation users
+2026-11-04T22:10:24+00:00 Baseline: 25/120 validation users
+2026-11-04T22:10:43+00:00 Baseline: 30/120 validation users
+2026-11-04T22:10:52+00:00 Baseline: 35/120 validation users
+2026-11-04T22:11:03+00:00 Baseline: 40/120 validation users
+2026-11-04T22:11:17+00:00 Baseline: 45/120 validation users
+2026-11-04T22:11:34+00:00 Baseline: 50/120 validation users
+2026-11-04T22:11:47+00:00 Baseline: 55/120 validation users
+2026-11-04T22:12:00+00:00 Baseline: 60/120 validation users
+2026-11-04T22:12:15+00:00 Baseline: 65/120 validation users
+2026-11-04T22:12:33+00:00 Baseline: 70/120 validation users
+2026-11-04T22:12:46+00:00 Baseline: 75/120 validation users
+2026-11-04T22:12:59+00:00 Baseline: 80/120 validation users
+2026-11-04T22:13:20+00:00 Baseline: 85/120 validation users
+2026-11-04T22:13:40+00:00 Baseline: 90/120 validation users
+2026-11-04T22:13:58+00:00 Baseline: 95/120 validation users
+2026-11-04T22:14:18+00:00 Baseline: 100/120 validation users
+2026-11-04T22:14:34+00:00 Baseline: 105/120 validation users
+2026-11-04T22:15:00+00:00 Baseline: 110/120 validation users
+2026-11-04T22:15:24+00:00 Baseline: 115/120 validation users
+2026-11-04T22:15:39+00:00 Baseline: 120/120 validation users
+2026-11-04T22:15:39+00:00 Baseline reproduced: 4.403628580 degrees
+2026-11-04T22:15:47+00:00 Screen: 10/80 discovery users, all 16 edits
+2026-11-04T22:15:50+00:00 Screen: 20/80 discovery users, all 16 edits
+2026-11-04T22:15:57+00:00 Screen: 30/80 discovery users, all 16 edits
+2026-11-04T22:16:07+00:00 Screen: 40/80 discovery users, all 16 edits
+2026-11-04T22:16:13+00:00 Screen: 50/80 discovery users, all 16 edits
+2026-11-04T22:16:18+00:00 Screen: 60/80 discovery users, all 16 edits
+2026-11-04T22:16:29+00:00 Screen: 70/80 discovery users, all 16 edits
+2026-11-04T22:16:35+00:00 Screen: 80/80 discovery users, all 16 edits
+2026-11-04T22:16:35+00:00 Screen winner: global_105, 4.368125798 degrees
+2026-11-04T22:17:12+00:00 discovery seed44: 5/80 users
+2026-11-04T22:17:44+00:00 discovery seed44: 10/80 users
+2026-11-04T22:17:57+00:00 discovery seed44: 15/80 users
+2026-11-04T22:18:13+00:00 discovery seed44: 20/80 users
+2026-11-04T22:18:43+00:00 discovery seed44: 25/80 users
+2026-11-04T22:19:19+00:00 discovery seed44: 30/80 users
+2026-11-04T22:20:13+00:00 discovery seed44: 35/80 users
+2026-11-04T22:20:46+00:00 discovery seed44: 40/80 users
+2026-11-04T22:21:26+00:00 discovery seed44: 45/80 users
+2026-11-04T22:21:42+00:00 discovery seed44: 50/80 users
+2026-11-04T22:22:03+00:00 discovery seed44: 55/80 users
+2026-11-04T22:22:18+00:00 discovery seed44: 60/80 users
+2026-11-04T22:23:13+00:00 discovery seed44: 65/80 users
+2026-11-04T22:23:57+00:00 discovery seed44: 70/80 users
+2026-11-04T22:24:30+00:00 discovery seed44: 75/80 users
+2026-11-04T22:24:54+00:00 discovery seed44: 80/80 users
+2026-11-04T22:24:54+00:00 discovery seed44: delta=-0.001736563 degrees
+2026-11-04T22:25:24+00:00 confirmation seed44: 5/40 users
+2026-11-04T22:25:54+00:00 confirmation seed44: 10/40 users
+2026-11-04T22:26:27+00:00 confirmation seed44: 15/40 users
+2026-11-04T22:26:55+00:00 confirmation seed44: 20/40 users
+2026-11-04T22:27:37+00:00 confirmation seed44: 25/40 users
+2026-11-04T22:27:56+00:00 confirmation seed44: 30/40 users
+2026-11-04T22:28:16+00:00 confirmation seed44: 35/40 users
+2026-11-04T22:29:06+00:00 confirmation seed44: 40/40 users
+2026-11-04T22:29:06+00:00 confirmation seed44: delta=-0.002263948 degrees
+2026-11-04T22:29:36+00:00 confirmation seed42: 5/40 users
+2026-11-04T22:30:06+00:00 confirmation seed42: 10/40 users
+2026-11-04T22:30:39+00:00 confirmation seed42: 15/40 users
+2026-11-04T22:31:08+00:00 confirmation seed42: 20/40 users
+2026-11-04T22:31:49+00:00 confirmation seed42: 25/40 users
+2026-11-04T22:32:08+00:00 confirmation seed42: 30/40 users
+2026-11-04T22:32:29+00:00 confirmation seed42: 35/40 users
+2026-11-04T22:33:19+00:00 confirmation seed42: 40/40 users
+2026-11-04T22:33:19+00:00 confirmation seed42: delta=-0.002241714 degrees
+2026-11-04T22:33:50+00:00 confirmation seed43: 5/40 users
+2026-11-04T22:34:19+00:00 confirmation seed43: 10/40 users
+2026-11-04T22:34:52+00:00 confirmation seed43: 15/40 users
+2026-11-04T22:35:21+00:00 confirmation seed43: 20/40 users
+2026-11-04T22:36:03+00:00 confirmation seed43: 25/40 users
+2026-11-04T22:36:22+00:00 confirmation seed43: 30/40 users
+2026-11-04T22:36:42+00:00 confirmation seed43: 35/40 users
+2026-11-04T22:37:31+00:00 confirmation seed43: 40/40 users
+2026-11-04T22:37:31+00:00 confirmation seed43: delta=-0.002450013 degrees
+2026-11-04T22:37:31+00:00 Experiment status: not_confirmed

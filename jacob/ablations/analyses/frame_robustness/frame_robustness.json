@@ -1,0 +1,149 @@
+{
+ "stride": 5,
+ "windows": 131459,
+ "first_pose_tilt_deg": {
+  "median": 9.643726348876953,
+  "min": 1.3978779315948486,
+  "max": 38.79758071899414
+ },
+ "models": {
+  "v6 plain (=v5) s42": {
+   "checkpoint": "v6_group_a_v2/plain/seed_42/best.pt",
+   "gravity": false,
+   "mirror": false
+  },
+  "v6 no_mirror s42": {
+   "checkpoint": "v6_group_a_v2/no_mirror/seed_42/best.pt",
+   "gravity": true,
+   "mirror": false
+  },
+  "v6 no_gravity s42": {
+   "checkpoint": "v6_group_a_v2/no_gravity/seed_42/best.pt",
+   "gravity": false,
+   "mirror": true
+  },
+  "v6 control s42": {
+   "checkpoint": "v6_group_a_v2/control/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "v6 control s44 (fallback)": {
+   "checkpoint": "v6_group_a_v2/control/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "sep+angular s44": {
+   "checkpoint": "v8_recipe_sep_base3_addons/angular_loss/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "base3_5+angular s44": {
+   "checkpoint": "v8_recipe_base3_5_addons/angular_loss/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  }
+ },
+ "results": {
+  "identity": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "v6 plain (=v5) s42": 4.407184308071374,
+   "v6 no_mirror s42": 4.3830840475888415,
+   "v6 no_gravity s42": 4.369594482602107,
+   "v6 control s42": 4.353150388736323,
+   "v6 control s44 (fallback)": 4.329535623860914,
+   "sep+angular s44": 4.3144687287188965,
+   "base3_5+angular s44": 4.315688324681168
+  },
+  "heading +90 deg (world yaw)": {
+   "damped velocity (baseline)": 5.0497098530363616,
+   "v6 plain (=v5) s42": 4.407183821463047,
+   "v6 no_mirror s42": 4.383083544086124,
+   "v6 no_gravity s42": 4.369594021747028,
+   "v6 control s42": 4.353149871431544,
+   "v6 control s44 (fallback)": 4.329535115630394,
+   "sep+angular s44": 4.3144681327267005,
+   "base3_5+angular s44": 4.315687789483538
+  },
+  "re-centre heading on first pose": {
+   "damped velocity (baseline)": 5.049709990396995,
+   "v6 plain (=v5) s42": 4.407184257179842,
+   "v6 no_mirror s42": 4.383084025521603,
+   "v6 no_gravity s42": 4.3695944817739045,
+   "v6 control s42": 4.353150362887745,
+   "v6 control s44 (fallback)": 4.329535667994994,
+   "sep+angular s44": 4.314468660845416,
+   "base3_5+angular s44": 4.315688255638239
+  },
+  "left-right mirror (x = 0 plane)": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "v6 plain (=v5) s42": 4.415059629108416,
+   "v6 no_mirror s42": 4.374862140403366,
+   "v6 no_gravity s42": 4.3695944838315395,
+   "v6 control s42": 4.353150389272574,
+   "v6 control s44 (fallback)": 4.329535620390214,
+   "sep+angular s44": 4.314468723259738,
+   "base3_5+angular s44": 4.315688324922908
+  },
+  "world tilted 5 deg": {
+   "damped velocity (baseline)": 5.049709985683454,
+   "v6 plain (=v5) s42": 4.407184234291034,
+   "v6 no_mirror s42": 4.382607088819485,
+   "v6 no_gravity s42": 4.369594432471914,
+   "v6 control s42": 4.352946397031163,
+   "v6 control s44 (fallback)": 4.327619903225949,
+   "sep+angular s44": 4.314366176926817,
+   "base3_5+angular s44": 4.319999530240149
+  },
+  "world tilted 15 deg": {
+   "damped velocity (baseline)": 5.049709959593439,
+   "v6 plain (=v5) s42": 4.407184102045618,
+   "v6 no_mirror s42": 4.451253547871766,
+   "v6 no_gravity s42": 4.369594213229468,
+   "v6 control s42": 4.433119490322035,
+   "v6 control s44 (fallback)": 4.408643643887005,
+   "sep+angular s44": 4.3734126371625734,
+   "base3_5+angular s44": 4.387954222957362
+  },
+  "z-up world (up axis off by 90 deg)": {
+   "damped velocity (baseline)": 5.049709987667518,
+   "v6 plain (=v5) s42": 4.40718420726963,
+   "v6 no_mirror s42": 5.586871549278662,
+   "v6 no_gravity s42": 4.369594314747876,
+   "v6 control s42": 5.473412679766067,
+   "v6 control s44 (fallback)": 5.997633320502265,
+   "sep+angular s44": 5.230312974718959,
+   "base3_5+angular s44": 5.3529646698361555
+  },
+  "re-centre full first pose": {
+   "damped velocity (baseline)": 5.049710028198693,
+   "v6 plain (=v5) s42": 4.407184274807263,
+   "v6 no_mirror s42": 4.414557105179137,
+   "v6 no_gravity s42": 4.369594390665977,
+   "v6 control s42": 4.391601575271888,
+   "v6 control s44 (fallback)": 4.366100514502649,
+   "sep+angular s44": 4.346026193099326,
+   "base3_5+angular s44": 4.3389639521186405
+  },
+  "OpenXR handedness (flip z)": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "v6 plain (=v5) s42": 4.554962228992876,
+   "v6 no_mirror s42": 4.553463175310098,
+   "v6 no_gravity s42": 4.520176992907608,
+   "v6 control s42": 4.518247988513516,
+   "v6 control s44 (fallback)": 4.507136855416639,
+   "sep+angular s44": 4.436795243262745,
+   "base3_5+angular s44": 4.471393143892535
+  },
+  "ROS/ENU (z-up, x fwd, y left)": {
+   "damped velocity (baseline)": 5.049710015944998,
+   "v6 plain (=v5) s42": 4.880708095992542,
+   "v6 no_mirror s42": 4.823372784796272,
+   "v6 no_gravity s42": 4.8123828269129305,
+   "v6 control s42": 4.782702878880816,
+   "v6 control s44 (fallback)": 4.742272128722161,
+   "sep+angular s44": 4.712450741418178,
+   "base3_5+angular s44": 4.7191236729520805
+  }
+ },
+ "table_md": "| Stream convention | damped velocity (baseline) | v6 plain (=v5) s42 | v6 no_mirror s42 | v6 no_gravity s42 | v6 control s42 | v6 control s44 (fallback) | sep+angular s44 | base3_5+angular s44 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n| identity (BOXRR/Unity) | 5.0497 | 4.4072 | 4.3831 | 4.3696 | 4.3532 | 4.3295 | 4.3145 | 4.3157 |\n| heading +90 deg (world yaw) | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 |\n| re-centre heading on first pose | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | +0.0000 | -0.0000 | -0.0000 |\n| left-right mirror (x = 0 plane) | +0.0000 | +0.0079 | -0.0082 | +0.0000 | +0.0000 | -0.0000 | -0.0000 | +0.0000 |\n| world tilted 5 deg | -0.0000 | -0.0000 | -0.0005 | -0.0000 | -0.0002 | -0.0019 | -0.0001 | +0.0043 |\n| world tilted 15 deg | -0.0000 | -0.0000 | +0.0682 | -0.0000 | +0.0800 | +0.0791 | +0.0589 | +0.0723 |\n| z-up world (up axis off by 90 deg) | -0.0000 | -0.0000 | +1.2038 | -0.0000 | +1.1203 | +1.6681 | +0.9158 | +1.0373 |\n| re-centre full first pose | +0.0000 | -0.0000 | +0.0315 | -0.0000 | +0.0385 | +0.0366 | +0.0316 | +0.0233 |\n| OpenXR handedness (flip z) | +0.0000 | +0.1478 | +0.1704 | +0.1506 | +0.1651 | +0.1776 | +0.1223 | +0.1557 |\n| ROS/ENU (z-up, x fwd, y left) | +0.0000 | +0.4735 | +0.4403 | +0.4428 | +0.4296 | +0.4127 | +0.3980 | +0.4034 |"
+}

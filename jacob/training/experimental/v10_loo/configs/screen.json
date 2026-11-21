@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": {
+    "control": {},
+    "no_prior": {
+      "damped_prior_tau_ms": null
+    },
+    "no_gravity": {
+      "gravity_features": false
+    },
+    "no_mirror": {
+      "mirror_equivariant": false
+    },
+    "quaternion_loss": {
+      "loss_kind": "quaternion"
+    },
+    "user_sampling": {
+      "sampling": "user"
+    },
+    "rf_243": {
+      "num_blocks": 5,
+      "kernel_sizes": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "dilations": [
+        1,
+        3,
+        9,
+        27,
+        81
+      ]
+    },
+    "exact_maps": {
+      "maps": "exact"
+    },
+    "no_tilt": {
+      "tilt_augmentation_deg": 0
+    }
+  },
+  "baseline_lags": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "baseline_tau_ms": [
+    25,
+    50,
+    100,
+    200,
+    500,
+    null
+  ]
+}

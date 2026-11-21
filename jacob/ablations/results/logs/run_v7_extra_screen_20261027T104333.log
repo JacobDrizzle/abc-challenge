@@ -1,0 +1,186 @@
+Working folder: <repo>\jacob\training
+Stage 1 compares 2 configurations with seed 42.
+Stage 2 confirms the winning configuration with seeds [42, 43, 44].
+Repeating seed 42 across different configurations is intentional. Saved work is reused.
+Damped baseline search: 22,092 validation windows
+Damped baseline search: 35,638 validation windows
+Damped baseline search: 58,152 validation windows
+Damped baseline search: 69,376 validation windows
+Damped baseline search: 80,192 validation windows
+Damped baseline search: 97,204 validation windows
+Damped baseline search: 118,067 validation windows
+Damped baseline search: 137,240 validation windows
+Damped baseline search: 154,251 validation windows
+Damped baseline search: 166,878 validation windows
+Damped baseline search: 179,935 validation windows
+Damped baseline search: 198,880 validation windows
+Damped baseline search: 220,185 validation windows
+Damped baseline search: 245,689 validation windows
+Damped baseline search: 268,606 validation windows
+Damped baseline search: 270,038 validation windows
+Damped baseline search: 288,484 validation windows
+Damped baseline search: 299,657 validation windows
+Damped baseline search: 332,925 validation windows
+Damped baseline search: 355,266 validation windows
+Damped baseline search: 380,708 validation windows
+Damped baseline search: 381,355 validation windows
+Damped baseline search: 397,597 validation windows
+Damped baseline search: 405,120 validation windows
+Damped baseline search: 427,695 validation windows
+Damped baseline search: 442,817 validation windows
+Damped baseline search: 460,900 validation windows
+Damped baseline search: 482,898 validation windows
+Damped baseline search: 496,008 validation windows
+Damped baseline search: 505,983 validation windows
+Damped baseline search: 518,165 validation windows
+Damped baseline search: 532,727 validation windows
+Damped baseline search: 553,234 validation windows
+Damped baseline search: 576,465 validation windows
+Damped baseline search: 586,517 validation windows
+Damped baseline search: 587,715 validation windows
+Damped baseline search: 598,619 validation windows
+Damped baseline search: 614,540 validation windows
+Damped baseline search: 631,346 validation windows
+Damped baseline search: 649,585 validation windows
+Damped baseline search: 651,568 validation windows
+Damped baseline search: 653,144 validation windows
+Damped baseline search: 655,127 validation windows
+Damped baseline search: 657,189 validation windows
+Scoring 657,189 windows from 44 segments / 15 users; filter-qualified according to input metadata.
+  Segment 1/44: 22,092/657,189 windows
+  Segment 2/44: 35,638/657,189 windows
+  Segment 3/44: 58,152/657,189 windows
+  Segment 4/44: 69,376/657,189 windows
+  Segment 5/44: 80,192/657,189 windows
+  Segment 6/44: 97,204/657,189 windows
+  Segment 7/44: 118,067/657,189 windows
+  Segment 8/44: 137,240/657,189 windows
+  Segment 9/44: 154,251/657,189 windows
+  Segment 10/44: 166,878/657,189 windows
+  Segment 11/44: 179,935/657,189 windows
+  Segment 12/44: 198,880/657,189 windows
+  Segment 13/44: 220,185/657,189 windows
+  Segment 14/44: 245,689/657,189 windows
+  Segment 15/44: 268,606/657,189 windows
+  Segment 16/44: 270,038/657,189 windows
+  Segment 17/44: 288,484/657,189 windows
+  Segment 18/44: 299,657/657,189 windows
+  Segment 19/44: 332,925/657,189 windows
+  Segment 20/44: 355,266/657,189 windows
+  Segment 21/44: 380,708/657,189 windows
+  Segment 22/44: 381,355/657,189 windows
+  Segment 23/44: 397,597/657,189 windows
+  Segment 24/44: 405,120/657,189 windows
+  Segment 25/44: 427,695/657,189 windows
+  Segment 26/44: 442,817/657,189 windows
+  Segment 27/44: 460,900/657,189 windows
+  Segment 28/44: 482,898/657,189 windows
+  Segment 29/44: 496,008/657,189 windows
+  Segment 30/44: 505,983/657,189 windows
+  Segment 31/44: 518,165/657,189 windows
+  Segment 32/44: 532,727/657,189 windows
+  Segment 33/44: 553,234/657,189 windows
+  Segment 34/44: 576,465/657,189 windows
+  Segment 35/44: 586,517/657,189 windows
+  Segment 36/44: 587,715/657,189 windows
+  Segment 37/44: 598,619/657,189 windows
+  Segment 38/44: 614,540/657,189 windows
+  Segment 39/44: 631,346/657,189 windows
+  Segment 40/44: 649,585/657,189 windows
+  Segment 41/44: 651,568/657,189 windows
+  Segment 42/44: 653,144/657,189 windows
+  Segment 43/44: 655,127/657,189 windows
+  Segment 44/44: 657,189/657,189 windows
+Screening variant: separable_base3_addons
+
+Stage 1/2 | variant 2/2 | separable_base3_addons
+New configuration, using screening seed 42.
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] Training seed 42 on cuda; 6,651 parameters; 1000 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] Validation references (131,459 windows, stride 5): hold-last 6.0825 deg | damped velocity 5.0497 deg
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 01/40 | loss 0.002563 | train end 5.369 deg | val end 4.5580 deg (best 4.5580 @1, stale 0/40) | val 100ms 2.285 deg | vs damped -0.492 deg (-9.7%) | lr 1.00e-03 | 11.8k win/s | 24.0s | ETA <= 16m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 02/40 | loss 0.002403 | train end 5.215 deg | val end 4.5162 deg (best 4.5162 @2, stale 0/40) | val 100ms 2.260 deg | vs damped -0.534 deg (-10.6%) | lr 9.98e-04 | 12.2k win/s | 23.3s | ETA <= 15m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 03/40 | loss 0.002320 | train end 5.154 deg | val end 4.4902 deg (best 4.4902 @3, stale 0/40) | val 100ms 2.244 deg | vs damped -0.560 deg (-11.1%) | lr 9.94e-04 | 12.2k win/s | 23.3s | ETA <= 15m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 04/40 | loss 0.002293 | train end 5.124 deg | val end 4.4720 deg (best 4.4720 @4, stale 0/40) | val 100ms 2.233 deg | vs damped -0.578 deg (-11.4%) | lr 9.86e-04 | 12.2k win/s | 23.3s | ETA <= 14m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 05/40 | loss 0.002267 | train end 5.094 deg | val end 4.4632 deg (best 4.4632 @5, stale 0/40) | val 100ms 2.225 deg | vs damped -0.587 deg (-11.6%) | lr 9.76e-04 | 12.2k win/s | 23.3s | ETA <= 14m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 06/40 | loss 0.002225 | train end 5.053 deg | val end 4.4557 deg (best 4.4557 @6, stale 0/40) | val 100ms 2.217 deg | vs damped -0.594 deg (-11.8%) | lr 9.62e-04 | 12.2k win/s | 23.4s | ETA <= 13m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 07/40 | loss 0.002179 | train end 5.031 deg | val end 4.4480 deg (best 4.4480 @7, stale 0/40) | val 100ms 2.211 deg | vs damped -0.602 deg (-11.9%) | lr 9.46e-04 | 12.2k win/s | 23.3s | ETA <= 13m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 08/40 | loss 0.002178 | train end 5.013 deg | val end 4.4437 deg (best 4.4437 @8, stale 1/40) | val 100ms 2.207 deg | vs damped -0.606 deg (-12.0%) | lr 9.26e-04 | 12.2k win/s | 23.3s | ETA <= 12m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 09/40 | loss 0.002171 | train end 4.995 deg | val end 4.4386 deg (best 4.4386 @9, stale 0/40) | val 100ms 2.203 deg | vs damped -0.611 deg (-12.1%) | lr 9.05e-04 | 12.2k win/s | 23.4s | ETA <= 12m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 10/40 | loss 0.002134 | train end 4.972 deg | val end 4.4340 deg (best 4.4340 @10, stale 1/40) | val 100ms 2.199 deg | vs damped -0.616 deg (-12.2%) | lr 8.80e-04 | 12.2k win/s | 23.3s | ETA <= 12m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 11/40 | loss 0.002131 | train end 4.981 deg | val end 4.4280 deg (best 4.4280 @11, stale 0/40) | val 100ms 2.197 deg | vs damped -0.622 deg (-12.3%) | lr 8.54e-04 | 12.2k win/s | 23.4s | ETA <= 11m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 12/40 | loss 0.002115 | train end 4.948 deg | val end 4.4216 deg (best 4.4216 @12, stale 0/40) | val 100ms 2.193 deg | vs damped -0.628 deg (-12.4%) | lr 8.25e-04 | 12.2k win/s | 23.4s | ETA <= 11m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 13/40 | loss 0.002116 | train end 4.947 deg | val end 4.4184 deg (best 4.4184 @13, stale 1/40) | val 100ms 2.189 deg | vs damped -0.631 deg (-12.5%) | lr 7.94e-04 | 12.2k win/s | 23.4s | ETA <= 11m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 14/40 | loss 0.002111 | train end 4.943 deg | val end 4.4125 deg (best 4.4125 @14, stale 0/40) | val 100ms 2.187 deg | vs damped -0.637 deg (-12.6%) | lr 7.61e-04 | 12.2k win/s | 23.4s | ETA <= 10m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 15/40 | loss 0.002113 | train end 4.946 deg | val end 4.4106 deg (best 4.4106 @15, stale 1/40) | val 100ms 2.185 deg | vs damped -0.639 deg (-12.7%) | lr 7.27e-04 | 12.2k win/s | 23.4s | ETA <= 10m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 16/40 | loss 0.002087 | train end 4.930 deg | val end 4.4079 deg (best 4.4079 @16, stale 2/40) | val 100ms 2.184 deg | vs damped -0.642 deg (-12.7%) | lr 6.91e-04 | 12.2k win/s | 23.4s | ETA <= 9m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 17/40 | loss 0.002077 | train end 4.920 deg | val end 4.4045 deg (best 4.4045 @17, stale 0/40) | val 100ms 2.183 deg | vs damped -0.645 deg (-12.8%) | lr 6.55e-04 | 12.2k win/s | 23.3s | ETA <= 9m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 18/40 | loss 0.002082 | train end 4.921 deg | val end 4.4047 deg (best 4.4045 @17, stale 1/40) | val 100ms 2.182 deg | vs damped -0.645 deg (-12.8%) | lr 6.17e-04 | 12.2k win/s | 23.3s | ETA <= 9m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 19/40 | loss 0.002068 | train end 4.906 deg | val end 4.4023 deg (best 4.4023 @19, stale 2/40) | val 100ms 2.182 deg | vs damped -0.647 deg (-12.8%) | lr 5.78e-04 | 12.2k win/s | 23.4s | ETA <= 8m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 20/40 | loss 0.002070 | train end 4.892 deg | val end 4.4029 deg (best 4.4023 @19, stale 3/40) | val 100ms 2.181 deg | vs damped -0.647 deg (-12.8%) | lr 5.39e-04 | 12.2k win/s | 23.3s | ETA <= 8m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 21/40 | loss 0.002075 | train end 4.900 deg | val end 4.3992 deg (best 4.3992 @21, stale 0/40) | val 100ms 2.179 deg | vs damped -0.651 deg (-12.9%) | lr 5.00e-04 | 12.2k win/s | 23.4s | ETA <= 7m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 22/40 | loss 0.002067 | train end 4.897 deg | val end 4.3983 deg (best 4.3983 @22, stale 1/40) | val 100ms 2.179 deg | vs damped -0.651 deg (-12.9%) | lr 4.61e-04 | 12.2k win/s | 23.4s | ETA <= 7m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 23/40 | loss 0.002050 | train end 4.881 deg | val end 4.3971 deg (best 4.3971 @23, stale 2/40) | val 100ms 2.178 deg | vs damped -0.653 deg (-12.9%) | lr 4.22e-04 | 12.1k win/s | 23.5s | ETA <= 7m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 24/40 | loss 0.002035 | train end 4.871 deg | val end 4.3956 deg (best 4.3956 @24, stale 3/40) | val 100ms 2.177 deg | vs damped -0.654 deg (-13.0%) | lr 3.83e-04 | 12.2k win/s | 23.3s | ETA <= 6m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 25/40 | loss 0.002039 | train end 4.870 deg | val end 4.3935 deg (best 4.3935 @25, stale 0/40) | val 100ms 2.176 deg | vs damped -0.656 deg (-13.0%) | lr 3.45e-04 | 12.2k win/s | 23.4s | ETA <= 6m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 26/40 | loss 0.002055 | train end 4.875 deg | val end 4.3924 deg (best 4.3924 @26, stale 1/40) | val 100ms 2.177 deg | vs damped -0.657 deg (-13.0%) | lr 3.09e-04 | 12.2k win/s | 23.5s | ETA <= 5m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 27/40 | loss 0.002039 | train end 4.869 deg | val end 4.3914 deg (best 4.3914 @27, stale 2/40) | val 100ms 2.176 deg | vs damped -0.658 deg (-13.0%) | lr 2.73e-04 | 12.2k win/s | 23.3s | ETA <= 5m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 28/40 | loss 0.002038 | train end 4.863 deg | val end 4.3888 deg (best 4.3888 @28, stale 3/40) | val 100ms 2.174 deg | vs damped -0.661 deg (-13.1%) | lr 2.39e-04 | 12.1k win/s | 23.5s | ETA <= 5m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 29/40 | loss 0.002050 | train end 4.868 deg | val end 4.3907 deg (best 4.3888 @28, stale 4/40) | val 100ms 2.176 deg | vs damped -0.659 deg (-13.1%) | lr 2.06e-04 | 12.2k win/s | 23.3s | ETA <= 4m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 30/40 | loss 0.002037 | train end 4.864 deg | val end 4.3880 deg (best 4.3880 @30, stale 0/40) | val 100ms 2.175 deg | vs damped -0.662 deg (-13.1%) | lr 1.75e-04 | 12.2k win/s | 23.4s | ETA <= 4m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 31/40 | loss 0.002019 | train end 4.845 deg | val end 4.3875 deg (best 4.3875 @31, stale 1/40) | val 100ms 2.174 deg | vs damped -0.662 deg (-13.1%) | lr 1.46e-04 | 12.2k win/s | 23.4s | ETA <= 4m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 32/40 | loss 0.002040 | train end 4.861 deg | val end 4.3870 deg (best 4.3870 @32, stale 2/40) | val 100ms 2.174 deg | vs damped -0.663 deg (-13.1%) | lr 1.20e-04 | 12.2k win/s | 23.4s | ETA <= 3m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 33/40 | loss 0.002045 | train end 4.863 deg | val end 4.3865 deg (best 4.3865 @33, stale 3/40) | val 100ms 2.174 deg | vs damped -0.663 deg (-13.1%) | lr 9.55e-05 | 12.2k win/s | 23.3s | ETA <= 3m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 34/40 | loss 0.002032 | train end 4.853 deg | val end 4.3872 deg (best 4.3865 @33, stale 4/40) | val 100ms 2.174 deg | vs damped -0.662 deg (-13.1%) | lr 7.37e-05 | 12.2k win/s | 23.4s | ETA <= 2m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 35/40 | loss 0.002009 | train end 4.837 deg | val end 4.3856 deg (best 4.3856 @35, stale 5/40) | val 100ms 2.174 deg | vs damped -0.664 deg (-13.2%) | lr 5.45e-05 | 12.2k win/s | 23.4s | ETA <= 2m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 36/40 | loss 0.002021 | train end 4.852 deg | val end 4.3851 deg (best 4.3851 @36, stale 6/40) | val 100ms 2.174 deg | vs damped -0.665 deg (-13.2%) | lr 3.81e-05 | 12.1k win/s | 23.5s | ETA <= 2m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 37/40 | loss 0.002011 | train end 4.839 deg | val end 4.3855 deg (best 4.3851 @36, stale 7/40) | val 100ms 2.174 deg | vs damped -0.664 deg (-13.2%) | lr 2.45e-05 | 12.2k win/s | 23.4s | ETA <= 1m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 38/40 | loss 0.002011 | train end 4.835 deg | val end 4.3864 deg (best 4.3851 @36, stale 8/40) | val 100ms 2.174 deg | vs damped -0.663 deg (-13.1%) | lr 1.38e-05 | 12.2k win/s | 23.4s | ETA <= 1m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 39/40 | loss 0.002002 | train end 4.832 deg | val end 4.3853 deg (best 4.3851 @36, stale 9/40) | val 100ms 2.173 deg | vs damped -0.664 deg (-13.2%) | lr 6.16e-06 | 12.2k win/s | 23.4s | ETA <= 0m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] epoch 40/40 | loss 0.002026 | train end 4.851 deg | val end 4.3851 deg (best 4.3851 @40, stale 10/40) | val 100ms 2.173 deg | vs damped -0.665 deg (-13.2%) | lr 1.54e-06 | 12.2k win/s | 23.4s | ETA <= 0m
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] Scoring 657,189 windows from 44 segments / 15 users; filter-qualified according to input metadata.
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 1/44: 22,092/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 2/44: 35,638/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 3/44: 58,152/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 4/44: 69,376/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 5/44: 80,192/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 6/44: 97,204/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 7/44: 118,067/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 8/44: 137,240/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 9/44: 154,251/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 10/44: 166,878/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 11/44: 179,935/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 12/44: 198,880/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 13/44: 220,185/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 14/44: 245,689/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 15/44: 268,606/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 16/44: 270,038/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 17/44: 288,484/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 18/44: 299,657/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 19/44: 332,925/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 20/44: 355,266/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 21/44: 380,708/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 22/44: 381,355/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 23/44: 397,597/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 24/44: 405,120/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 25/44: 427,695/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 26/44: 442,817/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 27/44: 460,900/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 28/44: 482,898/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 29/44: 496,008/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 30/44: 505,983/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 31/44: 518,165/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 32/44: 532,727/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 33/44: 553,234/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 34/44: 576,465/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 35/44: 586,517/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 36/44: 587,715/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 37/44: 598,619/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 38/44: 614,540/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 39/44: 631,346/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 40/44: 649,585/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 41/44: 651,568/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 42/44: 653,144/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 43/44: 655,127/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42]   Segment 44/44: 657,189/657,189 windows
+[Stage 1/2 | variant 2/2 | separable_base3_addons | seed 42] Selected seed 42: validation endpoint 4.3855 degrees.
+exit code 0

@@ -1,0 +1,85 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "nic-pc",
+ "created_utc": "2026-11-11T22:08:14.570681+00:00",
+ "machine": {
+  "cpu": "AMD Ryzen 7 5800X3D 8-Core Processor",
+  "processor": "x86_64",
+  "machine": "x86_64",
+  "os": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "logical_cores": 16,
+  "python": "3.12.3",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "final_k8_combined_v10_s42": {
+   "onnx": "Submission/Motion_Pending_headpose/model_fp32.onnx",
+   "onnx_sha256": "28221e1e0b559e8d4d900f8b448acd22a0fbe0da38f904cb12d4e268aca53cad",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.07752107921987772,
+     "mean_ms": 0.07819614132555823,
+     "p90_ms": 0.08027193835005164,
+     "p99_ms": 0.08795126108452676,
+     "min_ms": 0.07457099854946136,
+     "max_ms": 0.1166521105915308
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09208102710545063,
+     "mean_ms": 0.09324474617217977,
+     "p90_ms": 0.09821393759921193,
+     "p99_ms": 0.11076081311330176,
+     "min_ms": 0.08870207238942385,
+     "max_ms": 0.14987203758209944
+    }
+   }
+  },
+  "k8_100users": {
+   "onnx": "jacob/models/tcnn_v9_k8_combined_ga2_stream.onnx",
+   "onnx_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.07689098129048944,
+     "mean_ms": 0.07765141781419516,
+     "p90_ms": 0.079926080070436,
+     "p99_ms": 0.08755105780437589,
+     "min_ms": 0.07380091119557619,
+     "max_ms": 0.11847098357975483
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09179196786135435,
+     "mean_ms": 0.09271152651247878,
+     "p90_ms": 0.09692509192973375,
+     "p99_ms": 0.10337198502384123,
+     "min_ms": 0.08813105523586273,
+     "max_ms": 0.15808199532330036
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": null,
+  "dirty": null
+ }
+}

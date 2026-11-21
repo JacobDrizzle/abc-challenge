@@ -1,0 +1,308 @@
+{
+  "schema": "bench-result-v1",
+  "bench_package_version": "0.1.0",
+  "created_utc": "2026-10-27T19:51:11.315154+00:00",
+  "bench": {
+    "name": "group-a-v2-test20",
+    "definition_sha256": "71ca343f35a17f85a8a30c9e434d7c7065b68dd9d1db3bbff15d79f216961bd2",
+    "cohort_fingerprint": "6303a55cc75316cc7a172b1162875e801350cd267cf7827a53d82edd364bcd48",
+    "legacy_cohort_fingerprint": "015851ffd032833b294db919929d2ad4b141df1794c0f3e4ceaf4b9ac73a51d5",
+    "windows": 931051,
+    "players": [
+      "0aefb728-86ee-4ea8-aba2-014f8b233587",
+      "0f0949b4-e42b-47a4-bf7e-cbbf63361225",
+      "141ce789-0a59-4858-bc0e-28846ab1672c",
+      "318e521e-281d-4d8d-b570-01db1c79ba20",
+      "35220c0e-fda1-4716-a70e-1a93e0819578",
+      "35f825eb-37f8-4fa5-8d40-a0f89fd5d553",
+      "36074619-270d-49c6-9f41-63c9c9a06df4",
+      "44af878e-4a76-44ea-bc2c-78a4c20ffe42",
+      "6338df1d-430d-47e1-8000-376c180fc232",
+      "67190adb-b000-4c7f-9702-cbe3aebdc9a6",
+      "6924807d-4ab4-4522-9da5-669132df4bfb",
+      "6ef6bfe7-c6d6-4a6a-a4cd-fcc7fd3dba27",
+      "73d4c8ec-6f7c-4dfa-89d4-382ccdd15d0d",
+      "7e372e75-5aa4-4465-9cf1-423502ed92a3",
+      "7ea2f8af-82e8-497e-bfca-e9c577c0d42d",
+      "89da1a5f-fdb6-4c84-b2eb-9d6e39df69a4",
+      "939fdaed-a8af-404c-b0be-52f50ca2f284",
+      "a3fcf0fa-4bbb-4500-bf4b-345710aec9b2",
+      "aecf2eb7-d872-4504-93b3-bdb31b748861",
+      "c825484a-10de-4f16-815f-610f5f708740"
+    ]
+  },
+  "inputs": {
+    "data_file": "qualified_head_100hz_20261026_131953.h5",
+    "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51"
+  },
+  "model": {
+    "name": "v7_base3_5_addons_ga2",
+    "kind": "onnx",
+    "onnx": "jacob\\training\\outputs\\v8_bench\\base3_5_addons\\model_fp32_stream.onnx",
+    "onnx_sha256": "4978a5804d9c264b41e297fc93d29daae54b07b1d35605af4dcb4dc432b805f0",
+    "baseline": null,
+    "stateful": true,
+    "owner": null,
+    "group": null,
+    "declared_trainable_parameters": 17811,
+    "notes": null,
+    "threads": 1
+  },
+  "contamination": {
+    "status": "clean",
+    "trained_on": [
+      {
+        "spec": "bench/trained_on/group_a_v2_20261026_131953_trainval.txt",
+        "kind": "list",
+        "sha256": "8206c2f205715f4906fcdfc90447b54b0583457f2e383ef42f04c30bbec696ab",
+        "players": 115
+      }
+    ],
+    "overlap": []
+  },
+  "git": {
+    "commit": "b432d9fd8ee6d6a5197b568e485c2475e05f2346",
+    "dirty": false
+  },
+  "machine": {
+    "label": "jacob-amd",
+    "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "machine": "AMD64",
+    "os": "Windows-11-10.0.26200-SP0",
+    "logical_cores": 24,
+    "python": "3.12.10",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.2.6"
+  },
+  "efficiency": {
+    "opset": [
+      {
+        "domain": "ai.onnx",
+        "version": 17
+      }
+    ],
+    "stateful": true,
+    "states": [
+      {
+        "name": "state_in_0",
+        "shape": [
+          2,
+          24,
+          2
+        ]
+      },
+      {
+        "name": "state_in_1",
+        "shape": [
+          2,
+          24,
+          6
+        ]
+      },
+      {
+        "name": "state_in_2",
+        "shape": [
+          2,
+          24,
+          18
+        ]
+      },
+      {
+        "name": "state_in_3",
+        "shape": [
+          2,
+          24,
+          54
+        ]
+      },
+      {
+        "name": "state_in_4",
+        "shape": [
+          2,
+          24,
+          162
+        ]
+      }
+    ],
+    "state_elements": 11616,
+    "initializer_elements": 17808,
+    "constant_node_elements": 464,
+    "macs_per_call": {
+      "total": 36183,
+      "by_operator": {
+        "MatMul": 1287,
+        "Conv": 34896
+      },
+      "recurrences": [],
+      "uncounted_einsum": []
+    },
+    "operators": {
+      "counts": {
+        "Constant": 131,
+        "Mul": 23,
+        "Slice": 23,
+        "Add": 21,
+        "Concat": 18,
+        "MatMul": 12,
+        "Relu": 12,
+        "Reshape": 9,
+        "Conv": 6,
+        "Clip": 1
+      },
+      "safe": [
+        "Add",
+        "Clip",
+        "Concat",
+        "Conv",
+        "MatMul",
+        "Mul",
+        "Relu",
+        "Reshape",
+        "Slice"
+      ],
+      "avoid": [],
+      "conditional": {},
+      "other": [],
+      "slow_on_npu": [],
+      "custom_domain": [],
+      "float64_tensors": [],
+      "sequence_tensors": [],
+      "long_recurrences": [],
+      "issues": []
+    },
+    "output_checks": {
+      "calls": 64,
+      "shape_ok": true,
+      "finite": true,
+      "output_norm_range": [
+        0.9999998299100522,
+        1.0000001183354426
+      ],
+      "deterministic": true,
+      "max_abs_diff_rerun": 0.0,
+      "max_abs_diff_1_vs_4_threads": 0.0
+    },
+    "stream_parity": null
+  },
+  "accuracy": {
+    "protocol": "from-start",
+    "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+    "windows": 931051,
+    "mean_deg_step20": 4.392306216182422,
+    "mean_deg_step10": 2.2484428237344467,
+    "mean_deg_by_horizon": [
+      0.12608619686488592,
+      0.3028557531061519,
+      0.5231699725480424,
+      0.7714574638909026,
+      1.0314013872500007,
+      1.2906627188639486,
+      1.5427592866635385,
+      1.7858900675249179,
+      2.0205139239918983,
+      2.2484428237344467,
+      2.4720416519448922,
+      2.6928236359901283,
+      2.911375961112107,
+      3.1281964615132454,
+      3.343299551053138,
+      3.5564753263155895,
+      3.767769544244903,
+      3.9773832416313133,
+      4.18545416485996,
+      4.392306216182422
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.676414424326646,
+    "p95_deg_step20": 10.117454783152326,
+    "p99_deg_step20": 15.211827774316358,
+    "equal_player_mean_deg_step20": 4.337011669271751,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/v7_base3_5_addons_ga2@jacob-amd/endpoint_from-start.npy",
+      "sha256": "70cca48973b8217854f3dcdb9d51f963114a6015ab54ab1397456aa6f673b98a",
+      "dtype": "float32"
+    }
+  },
+  "accuracy_cold_start": {
+    "protocol": "cold-start",
+    "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+    "windows": 931051,
+    "mean_deg_step20": 4.394630152871942,
+    "mean_deg_step10": 2.249509069232146,
+    "mean_deg_by_horizon": [
+      0.12613041402193026,
+      0.3029643509616803,
+      0.5233592130210614,
+      0.771745336350493,
+      1.0318029316574873,
+      1.2911932042442544,
+      1.5434206813933797,
+      1.7866831290186969,
+      2.0214450678588483,
+      2.249509069232146,
+      2.473235180906749,
+      2.694147983966778,
+      2.9128307042426367,
+      3.1297810792206615,
+      3.3450135202413405,
+      3.5583156053823606,
+      3.769733263801818,
+      3.9794651868864577,
+      4.187655434756555,
+      4.394630152871942
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.6789456729524304,
+    "p95_deg_step20": 10.120952215870258,
+    "p99_deg_step20": 15.215479855358879,
+    "equal_player_mean_deg_step20": 4.3410771759841085,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/v7_base3_5_addons_ga2@jacob-amd/endpoint_cold-start.npy",
+      "sha256": "8eb34cafc940333f6e636a23b783a4e7462d41ff907c0a7815595f8eeff69fbc",
+      "dtype": "float32"
+    }
+  }
+}

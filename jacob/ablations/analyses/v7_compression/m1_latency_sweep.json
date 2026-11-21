@@ -1,0 +1,1480 @@
+{
+  "entries": [
+    {
+      "name": "base2_7_w8_mirror",
+      "layout": "base2_7",
+      "mirror": true,
+      "width_per_stream": 8,
+      "path": "<scratch>\\m1_graphs\\base2_7_w8_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          8,
+          2
+        ],
+        [
+          2,
+          8,
+          4
+        ],
+        [
+          2,
+          8,
+          8
+        ],
+        [
+          2,
+          8,
+          16
+        ],
+        [
+          2,
+          8,
+          32
+        ],
+        [
+          2,
+          8,
+          64
+        ],
+        [
+          2,
+          8,
+          128
+        ]
+      ],
+      "params": 3308,
+      "artefact_floats": 3824,
+      "macs": 6992,
+      "state_floats": 4064,
+      "nodes": 174,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.11470000026747584,
+      "mean_ms": 0.13306378322886303,
+      "p90_ms": 0.20411000878084454,
+      "p99_ms": 0.2261999764596112,
+      "min_ms": 0.10989999282173812,
+      "max_ms": 0.43280000681988895,
+      "calls_per_second": 8718.395794839056
+    },
+    {
+      "name": "base2_7_w12_mirror",
+      "layout": "base2_7",
+      "mirror": true,
+      "width_per_stream": 12,
+      "path": "<scratch>\\m1_graphs\\base2_7_w12_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          12,
+          2
+        ],
+        [
+          2,
+          12,
+          4
+        ],
+        [
+          2,
+          12,
+          8
+        ],
+        [
+          2,
+          12,
+          16
+        ],
+        [
+          2,
+          12,
+          32
+        ],
+        [
+          2,
+          12,
+          64
+        ],
+        [
+          2,
+          12,
+          128
+        ]
+      ],
+      "params": 6968,
+      "artefact_floats": 7484,
+      "macs": 14248,
+      "state_floats": 6096,
+      "nodes": 174,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.11630001245066524,
+      "mean_ms": 0.13059461652301252,
+      "p90_ms": 0.18770000315271318,
+      "p99_ms": 0.22529999841935933,
+      "min_ms": 0.11289998656138778,
+      "max_ms": 0.26810000417754054,
+      "calls_per_second": 8598.451358070168
+    },
+    {
+      "name": "base2_7_w16_mirror",
+      "layout": "base2_7",
+      "mirror": true,
+      "width_per_stream": 16,
+      "path": "<scratch>\\m1_graphs\\base2_7_w16_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          16,
+          2
+        ],
+        [
+          2,
+          16,
+          4
+        ],
+        [
+          2,
+          16,
+          8
+        ],
+        [
+          2,
+          16,
+          16
+        ],
+        [
+          2,
+          16,
+          32
+        ],
+        [
+          2,
+          16,
+          64
+        ],
+        [
+          2,
+          16,
+          128
+        ]
+      ],
+      "params": 11972,
+      "artefact_floats": 12488,
+      "macs": 24192,
+      "state_floats": 8128,
+      "nodes": 174,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.12069998774677515,
+      "mean_ms": 0.13857060002919752,
+      "p90_ms": 0.19789999350905418,
+      "p99_ms": 0.23060198087478062,
+      "min_ms": 0.11690001701936126,
+      "max_ms": 0.7287999906111509,
+      "calls_per_second": 8285.004983579362
+    },
+    {
+      "name": "base2_7_w20_mirror",
+      "layout": "base2_7",
+      "mirror": true,
+      "width_per_stream": 20,
+      "path": "<scratch>\\m1_graphs\\base2_7_w20_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          20,
+          2
+        ],
+        [
+          2,
+          20,
+          4
+        ],
+        [
+          2,
+          20,
+          8
+        ],
+        [
+          2,
+          20,
+          16
+        ],
+        [
+          2,
+          20,
+          32
+        ],
+        [
+          2,
+          20,
+          64
+        ],
+        [
+          2,
+          20,
+          128
+        ]
+      ],
+      "params": 18320,
+      "artefact_floats": 18836,
+      "macs": 36824,
+      "state_floats": 10160,
+      "nodes": 174,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.12349997996352613,
+      "mean_ms": 0.14084173343144357,
+      "p90_ms": 0.20169999625068158,
+      "p99_ms": 0.23480498348362755,
+      "min_ms": 0.11300001642666757,
+      "max_ms": 0.5126000032760203,
+      "calls_per_second": 8097.167305576366
+    },
+    {
+      "name": "base2_7_w24_mirror",
+      "layout": "base2_7",
+      "mirror": true,
+      "width_per_stream": 24,
+      "path": "<scratch>\\m1_graphs\\base2_7_w24_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          24,
+          2
+        ],
+        [
+          2,
+          24,
+          4
+        ],
+        [
+          2,
+          24,
+          8
+        ],
+        [
+          2,
+          24,
+          16
+        ],
+        [
+          2,
+          24,
+          32
+        ],
+        [
+          2,
+          24,
+          64
+        ],
+        [
+          2,
+          24,
+          128
+        ]
+      ],
+      "params": 26012,
+      "artefact_floats": 26528,
+      "macs": 52144,
+      "state_floats": 12192,
+      "nodes": 174,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.12650000280700624,
+      "mean_ms": 0.1400574668465803,
+      "p90_ms": 0.19810999510809782,
+      "p99_ms": 0.2370010002050549,
+      "min_ms": 0.12290000449866056,
+      "max_ms": 0.3726000140886754,
+      "calls_per_second": 7905.13816450773
+    },
+    {
+      "name": "base2_7_w32_mirror",
+      "layout": "base2_7",
+      "mirror": true,
+      "width_per_stream": 32,
+      "path": "<scratch>\\m1_graphs\\base2_7_w32_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          32,
+          2
+        ],
+        [
+          2,
+          32,
+          4
+        ],
+        [
+          2,
+          32,
+          8
+        ],
+        [
+          2,
+          32,
+          16
+        ],
+        [
+          2,
+          32,
+          32
+        ],
+        [
+          2,
+          32,
+          64
+        ],
+        [
+          2,
+          32,
+          128
+        ]
+      ],
+      "params": 45428,
+      "artefact_floats": 45944,
+      "macs": 90848,
+      "state_floats": 16256,
+      "nodes": 174,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.1340000017080456,
+      "mean_ms": 0.1485944835440023,
+      "p90_ms": 0.2101100253639743,
+      "p99_ms": 0.24560000747442245,
+      "min_ms": 0.1294999965466559,
+      "max_ms": 0.3110000106971711,
+      "calls_per_second": 7462.686472040233
+    },
+    {
+      "name": "base2_7_w8_plain",
+      "layout": "base2_7",
+      "mirror": false,
+      "width_per_stream": 8,
+      "path": "<scratch>\\m1_graphs\\base2_7_w8_plain.onnx",
+      "shapes": [
+        [
+          1,
+          16,
+          2
+        ],
+        [
+          1,
+          16,
+          4
+        ],
+        [
+          1,
+          16,
+          8
+        ],
+        [
+          1,
+          16,
+          16
+        ],
+        [
+          1,
+          16,
+          32
+        ],
+        [
+          1,
+          16,
+          64
+        ],
+        [
+          1,
+          16,
+          128
+        ]
+      ],
+      "params": 6636,
+      "artefact_floats": 6974,
+      "macs": 6992,
+      "state_floats": 4064,
+      "nodes": 140,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.09169999975711107,
+      "mean_ms": 0.10629421667545103,
+      "p90_ms": 0.16071000136435035,
+      "p99_ms": 0.18390000332146883,
+      "min_ms": 0.0892000098247081,
+      "max_ms": 0.21019999985583127,
+      "calls_per_second": 10905.125437826982
+    },
+    {
+      "name": "base2_7_w12_plain",
+      "layout": "base2_7",
+      "mirror": false,
+      "width_per_stream": 12,
+      "path": "<scratch>\\m1_graphs\\base2_7_w12_plain.onnx",
+      "shapes": [
+        [
+          1,
+          24,
+          2
+        ],
+        [
+          1,
+          24,
+          4
+        ],
+        [
+          1,
+          24,
+          8
+        ],
+        [
+          1,
+          24,
+          16
+        ],
+        [
+          1,
+          24,
+          32
+        ],
+        [
+          1,
+          24,
+          64
+        ],
+        [
+          1,
+          24,
+          128
+        ]
+      ],
+      "params": 13956,
+      "artefact_floats": 14294,
+      "macs": 14248,
+      "state_floats": 6096,
+      "nodes": 140,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.09309998131357133,
+      "mean_ms": 0.10544688363734167,
+      "p90_ms": 0.15402000572066762,
+      "p99_ms": 0.18420000560581684,
+      "min_ms": 0.09039998985826969,
+      "max_ms": 0.32610000926069915,
+      "calls_per_second": 10741.14071657959
+    },
+    {
+      "name": "base2_7_w16_plain",
+      "layout": "base2_7",
+      "mirror": false,
+      "width_per_stream": 16,
+      "path": "<scratch>\\m1_graphs\\base2_7_w16_plain.onnx",
+      "shapes": [
+        [
+          1,
+          32,
+          2
+        ],
+        [
+          1,
+          32,
+          4
+        ],
+        [
+          1,
+          32,
+          8
+        ],
+        [
+          1,
+          32,
+          16
+        ],
+        [
+          1,
+          32,
+          32
+        ],
+        [
+          1,
+          32,
+          64
+        ],
+        [
+          1,
+          32,
+          128
+        ]
+      ],
+      "params": 23964,
+      "artefact_floats": 24302,
+      "macs": 24192,
+      "state_floats": 8128,
+      "nodes": 140,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.09590000263415277,
+      "mean_ms": 0.1078814166879359,
+      "p90_ms": 0.15430001076310873,
+      "p99_ms": 0.18670099554583433,
+      "min_ms": 0.08899997919797897,
+      "max_ms": 0.4091000009793788,
+      "calls_per_second": 10427.5283892836
+    },
+    {
+      "name": "base2_7_w20_plain",
+      "layout": "base2_7",
+      "mirror": false,
+      "width_per_stream": 20,
+      "path": "<scratch>\\m1_graphs\\base2_7_w20_plain.onnx",
+      "shapes": [
+        [
+          1,
+          40,
+          2
+        ],
+        [
+          1,
+          40,
+          4
+        ],
+        [
+          1,
+          40,
+          8
+        ],
+        [
+          1,
+          40,
+          16
+        ],
+        [
+          1,
+          40,
+          32
+        ],
+        [
+          1,
+          40,
+          64
+        ],
+        [
+          1,
+          40,
+          128
+        ]
+      ],
+      "params": 36660,
+      "artefact_floats": 36998,
+      "macs": 36824,
+      "state_floats": 10160,
+      "nodes": 140,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.09780001710169017,
+      "mean_ms": 0.11166506675363053,
+      "p90_ms": 0.1679099979810417,
+      "p99_ms": 0.19040399463847288,
+      "min_ms": 0.09239997598342597,
+      "max_ms": 0.3034999826923013,
+      "calls_per_second": 10224.94708728142
+    },
+    {
+      "name": "base2_7_w24_plain",
+      "layout": "base2_7",
+      "mirror": false,
+      "width_per_stream": 24,
+      "path": "<scratch>\\m1_graphs\\base2_7_w24_plain.onnx",
+      "shapes": [
+        [
+          1,
+          48,
+          2
+        ],
+        [
+          1,
+          48,
+          4
+        ],
+        [
+          1,
+          48,
+          8
+        ],
+        [
+          1,
+          48,
+          16
+        ],
+        [
+          1,
+          48,
+          32
+        ],
+        [
+          1,
+          48,
+          64
+        ],
+        [
+          1,
+          48,
+          128
+        ]
+      ],
+      "params": 52044,
+      "artefact_floats": 52382,
+      "macs": 52144,
+      "state_floats": 12192,
+      "nodes": 140,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.10080001084133983,
+      "mean_ms": 0.11286658340638193,
+      "p90_ms": 0.16160000814124942,
+      "p99_ms": 0.1949049998074771,
+      "min_ms": 0.09699998190626502,
+      "max_ms": 0.3805000160355121,
+      "calls_per_second": 9920.63385364124
+    },
+    {
+      "name": "base2_7_w32_plain",
+      "layout": "base2_7",
+      "mirror": false,
+      "width_per_stream": 32,
+      "path": "<scratch>\\m1_graphs\\base2_7_w32_plain.onnx",
+      "shapes": [
+        [
+          1,
+          64,
+          2
+        ],
+        [
+          1,
+          64,
+          4
+        ],
+        [
+          1,
+          64,
+          8
+        ],
+        [
+          1,
+          64,
+          16
+        ],
+        [
+          1,
+          64,
+          32
+        ],
+        [
+          1,
+          64,
+          64
+        ],
+        [
+          1,
+          64,
+          128
+        ]
+      ],
+      "params": 90876,
+      "artefact_floats": 91214,
+      "macs": 90848,
+      "state_floats": 16256,
+      "nodes": 140,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.10569998994469643,
+      "mean_ms": 0.12074604964679263,
+      "p90_ms": 0.1806999818654731,
+      "p99_ms": 0.20290000247769058,
+      "min_ms": 0.10220002150163054,
+      "max_ms": 0.5128999764565378,
+      "calls_per_second": 9460.738837564815
+    },
+    {
+      "name": "base3_5_w8_mirror",
+      "layout": "base3_5",
+      "mirror": true,
+      "width_per_stream": 8,
+      "path": "<scratch>\\m1_graphs\\base3_5_w8_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          8,
+          2
+        ],
+        [
+          2,
+          8,
+          6
+        ],
+        [
+          2,
+          8,
+          18
+        ],
+        [
+          2,
+          8,
+          54
+        ],
+        [
+          2,
+          8,
+          162
+        ]
+      ],
+      "params": 2524,
+      "artefact_floats": 3016,
+      "macs": 5456,
+      "state_floats": 3872,
+      "nodes": 154,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.09899999713525176,
+      "mean_ms": 0.11065143309436583,
+      "p90_ms": 0.15351000183727595,
+      "p99_ms": 0.19140200223773723,
+      "min_ms": 0.0926000066101551,
+      "max_ms": 0.4369000089354813,
+      "calls_per_second": 10101.010393301533
+    },
+    {
+      "name": "base3_5_w12_mirror",
+      "layout": "base3_5",
+      "mirror": true,
+      "width_per_stream": 12,
+      "path": "<scratch>\\m1_graphs\\base3_5_w12_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          12,
+          2
+        ],
+        [
+          2,
+          12,
+          6
+        ],
+        [
+          2,
+          12,
+          18
+        ],
+        [
+          2,
+          12,
+          54
+        ],
+        [
+          2,
+          12,
+          162
+        ]
+      ],
+      "params": 5216,
+      "artefact_floats": 5708,
+      "macs": 10792,
+      "state_floats": 5808,
+      "nodes": 154,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.10199999087490141,
+      "mean_ms": 0.11552699986107957,
+      "p90_ms": 0.16691001655999574,
+      "p99_ms": 0.19859999883919954,
+      "min_ms": 0.09919999865815043,
+      "max_ms": 0.22849999368190765,
+      "calls_per_second": 9803.922445703518
+    },
+    {
+      "name": "base3_5_w16_mirror",
+      "layout": "base3_5",
+      "mirror": true,
+      "width_per_stream": 16,
+      "path": "<scratch>\\m1_graphs\\base3_5_w16_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          16,
+          2
+        ],
+        [
+          2,
+          16,
+          6
+        ],
+        [
+          2,
+          16,
+          18
+        ],
+        [
+          2,
+          16,
+          54
+        ],
+        [
+          2,
+          16,
+          162
+        ]
+      ],
+      "params": 8868,
+      "artefact_floats": 9360,
+      "macs": 18048,
+      "state_floats": 7744,
+      "nodes": 154,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.10390000534243882,
+      "mean_ms": 0.1155507332344617,
+      "p90_ms": 0.16519998025614768,
+      "p99_ms": 0.20010501000797387,
+      "min_ms": 0.09610000415705144,
+      "max_ms": 0.42479997500777245,
+      "calls_per_second": 9624.63858114492
+    },
+    {
+      "name": "base3_5_w20_mirror",
+      "layout": "base3_5",
+      "mirror": true,
+      "width_per_stream": 20,
+      "path": "<scratch>\\m1_graphs\\base3_5_w20_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          20,
+          2
+        ],
+        [
+          2,
+          20,
+          6
+        ],
+        [
+          2,
+          20,
+          18
+        ],
+        [
+          2,
+          20,
+          54
+        ],
+        [
+          2,
+          20,
+          162
+        ]
+      ],
+      "params": 13480,
+      "artefact_floats": 13972,
+      "macs": 27224,
+      "state_floats": 9680,
+      "nodes": 154,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.10710000060498714,
+      "mean_ms": 0.12220088299363852,
+      "p90_ms": 0.18249999557156116,
+      "p99_ms": 0.20730000687763095,
+      "min_ms": 0.10060000931844115,
+      "max_ms": 0.4398999735713005,
+      "calls_per_second": 9337.068107854284
+    },
+    {
+      "name": "base3_5_w24_mirror",
+      "layout": "base3_5",
+      "mirror": true,
+      "width_per_stream": 24,
+      "path": "<scratch>\\m1_graphs\\base3_5_w24_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          24,
+          2
+        ],
+        [
+          2,
+          24,
+          6
+        ],
+        [
+          2,
+          24,
+          18
+        ],
+        [
+          2,
+          24,
+          54
+        ],
+        [
+          2,
+          24,
+          162
+        ]
+      ],
+      "params": 19052,
+      "artefact_floats": 19544,
+      "macs": 38320,
+      "state_floats": 11616,
+      "nodes": 154,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.10950001887977123,
+      "mean_ms": 0.12650888299200838,
+      "p90_ms": 0.19040999468415978,
+      "p99_ms": 0.21190201281569904,
+      "min_ms": 0.10410000686533749,
+      "max_ms": 0.35329998354427516,
+      "calls_per_second": 9132.418516730846
+    },
+    {
+      "name": "base3_5_w32_mirror",
+      "layout": "base3_5",
+      "mirror": true,
+      "width_per_stream": 32,
+      "path": "<scratch>\\m1_graphs\\base3_5_w32_mirror.onnx",
+      "shapes": [
+        [
+          2,
+          32,
+          2
+        ],
+        [
+          2,
+          32,
+          6
+        ],
+        [
+          2,
+          32,
+          18
+        ],
+        [
+          2,
+          32,
+          54
+        ],
+        [
+          2,
+          32,
+          162
+        ]
+      ],
+      "params": 33076,
+      "artefact_floats": 33568,
+      "macs": 66272,
+      "state_floats": 15488,
+      "nodes": 154,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.11580000864341855,
+      "mean_ms": 0.13251348329261722,
+      "p90_ms": 0.19560997898224744,
+      "p99_ms": 0.219000008655712,
+      "min_ms": 0.10790000669658184,
+      "max_ms": 0.6198000046424568,
+      "calls_per_second": 8635.577939197628
+    },
+    {
+      "name": "base3_5_w8_plain",
+      "layout": "base3_5",
+      "mirror": false,
+      "width_per_stream": 8,
+      "path": "<scratch>\\m1_graphs\\base3_5_w8_plain.onnx",
+      "shapes": [
+        [
+          1,
+          16,
+          2
+        ],
+        [
+          1,
+          16,
+          6
+        ],
+        [
+          1,
+          16,
+          18
+        ],
+        [
+          1,
+          16,
+          54
+        ],
+        [
+          1,
+          16,
+          162
+        ]
+      ],
+      "params": 5068,
+      "artefact_floats": 5398,
+      "macs": 5456,
+      "state_floats": 3872,
+      "nodes": 128,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.08229998638853431,
+      "mean_ms": 0.09531696669970795,
+      "p90_ms": 0.14250000822357833,
+      "p99_ms": 0.16729999362723902,
+      "min_ms": 0.07690000347793102,
+      "max_ms": 0.33229999826289713,
+      "calls_per_second": 12150.670296335746
+    },
+    {
+      "name": "base3_5_w12_plain",
+      "layout": "base3_5",
+      "mirror": false,
+      "width_per_stream": 12,
+      "path": "<scratch>\\m1_graphs\\base3_5_w12_plain.onnx",
+      "shapes": [
+        [
+          1,
+          24,
+          2
+        ],
+        [
+          1,
+          24,
+          6
+        ],
+        [
+          1,
+          24,
+          18
+        ],
+        [
+          1,
+          24,
+          54
+        ],
+        [
+          1,
+          24,
+          162
+        ]
+      ],
+      "params": 10452,
+      "artefact_floats": 10782,
+      "macs": 10792,
+      "state_floats": 5808,
+      "nodes": 128,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.0838999985717237,
+      "mean_ms": 0.09481839994744708,
+      "p90_ms": 0.13930001296103,
+      "p99_ms": 0.16759999562054873,
+      "min_ms": 0.08140000863932073,
+      "max_ms": 0.22529999841935933,
+      "calls_per_second": 11918.951335203286
+    },
+    {
+      "name": "base3_5_w16_plain",
+      "layout": "base3_5",
+      "mirror": false,
+      "width_per_stream": 16,
+      "path": "<scratch>\\m1_graphs\\base3_5_w16_plain.onnx",
+      "shapes": [
+        [
+          1,
+          32,
+          2
+        ],
+        [
+          1,
+          32,
+          6
+        ],
+        [
+          1,
+          32,
+          18
+        ],
+        [
+          1,
+          32,
+          54
+        ],
+        [
+          1,
+          32,
+          162
+        ]
+      ],
+      "params": 17756,
+      "artefact_floats": 18086,
+      "macs": 18048,
+      "state_floats": 7744,
+      "nodes": 128,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.08594999962951988,
+      "mean_ms": 0.09595236673582501,
+      "p90_ms": 0.13639999378938228,
+      "p99_ms": 0.1683010009583086,
+      "min_ms": 0.08260001777671278,
+      "max_ms": 0.37140000495128334,
+      "calls_per_second": 11634.67137068545
+    },
+    {
+      "name": "base3_5_w20_plain",
+      "layout": "base3_5",
+      "mirror": false,
+      "width_per_stream": 20,
+      "path": "<scratch>\\m1_graphs\\base3_5_w20_plain.onnx",
+      "shapes": [
+        [
+          1,
+          40,
+          2
+        ],
+        [
+          1,
+          40,
+          6
+        ],
+        [
+          1,
+          40,
+          18
+        ],
+        [
+          1,
+          40,
+          54
+        ],
+        [
+          1,
+          40,
+          162
+        ]
+      ],
+      "params": 26980,
+      "artefact_floats": 27310,
+      "macs": 27224,
+      "state_floats": 9680,
+      "nodes": 128,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.08720002369955182,
+      "mean_ms": 0.09754351663771861,
+      "p90_ms": 0.139000010676682,
+      "p99_ms": 0.17120102304033938,
+      "min_ms": 0.0850000069476664,
+      "max_ms": 0.19219997921027243,
+      "calls_per_second": 11467.886791470444
+    },
+    {
+      "name": "base3_5_w24_plain",
+      "layout": "base3_5",
+      "mirror": false,
+      "width_per_stream": 24,
+      "path": "<scratch>\\m1_graphs\\base3_5_w24_plain.onnx",
+      "shapes": [
+        [
+          1,
+          48,
+          2
+        ],
+        [
+          1,
+          48,
+          6
+        ],
+        [
+          1,
+          48,
+          18
+        ],
+        [
+          1,
+          48,
+          54
+        ],
+        [
+          1,
+          48,
+          162
+        ]
+      ],
+      "params": 38124,
+      "artefact_floats": 38454,
+      "macs": 38320,
+      "state_floats": 11616,
+      "nodes": 128,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.08860000525601208,
+      "mean_ms": 0.09863586666566941,
+      "p90_ms": 0.1409099961165339,
+      "p99_ms": 0.1719019992742688,
+      "min_ms": 0.08659999002702534,
+      "max_ms": 0.21430000197142363,
+      "calls_per_second": 11286.681046016569
+    },
+    {
+      "name": "base3_5_w32_plain",
+      "layout": "base3_5",
+      "mirror": false,
+      "width_per_stream": 32,
+      "path": "<scratch>\\m1_graphs\\base3_5_w32_plain.onnx",
+      "shapes": [
+        [
+          1,
+          64,
+          2
+        ],
+        [
+          1,
+          64,
+          6
+        ],
+        [
+          1,
+          64,
+          18
+        ],
+        [
+          1,
+          64,
+          54
+        ],
+        [
+          1,
+          64,
+          162
+        ]
+      ],
+      "params": 66172,
+      "artefact_floats": 66502,
+      "macs": 66272,
+      "state_floats": 15488,
+      "nodes": 128,
+      "off_list": [
+        "Div",
+        "Less",
+        "LessOrEqual",
+        "ReduceSum",
+        "Sqrt",
+        "Sub",
+        "Where"
+      ],
+      "calls": 6000,
+      "median_ms": 0.09240000508725643,
+      "mean_ms": 0.1041123334725853,
+      "p90_ms": 0.14940000255592167,
+      "p99_ms": 0.17790301557397475,
+      "min_ms": 0.08980001439340413,
+      "max_ms": 0.215300009585917,
+      "calls_per_second": 10822.510226657092
+    }
+  ],
+  "fit": {
+    "intercept_ms": -0.017441318999912414,
+    "ms_per_node": 0.000747892134446564,
+    "ms_per_kmac": 0.00010622025610523286,
+    "ms_per_kstate": 0.0006270642416462032,
+    "r2": 0.994022683704425
+  },
+  "correlation": {
+    "nodes": 0.9302509720108916,
+    "macs": 0.440303704297407,
+    "state_floats": 0.38027866462480503
+  }
+}

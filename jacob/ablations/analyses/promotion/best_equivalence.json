@@ -1,0 +1,111 @@
+{
+  "1_configs": {
+    "files": [
+      "experimental/v6_gravity_mirror/configs/tcnn_v6.json",
+      "experimental/v6_gravity_mirror/configs/v6_run.json",
+      "experimental/v7_compact/configs/tcnn_v7.json",
+      "experimental/v7_compact/configs/tcnn_v7_base3_5_addons.json",
+      "experimental/v7_compact/configs/tcnn_v7_sep_base3_addons.json",
+      "experimental/v7_compact/configs/v7_confirm.json",
+      "experimental/v7_compact/configs/v7_extra.json",
+      "experimental/v7_compact/configs/v7_run.json",
+      "experimental/v7_compact/configs/v8_angular_confirm.json",
+      "experimental/v7_compact/configs/v8_no_gravity_confirm.json",
+      "experimental/v7_compact/configs/v8_recipe_screen.json",
+      "experimental/v9_lean/configs/tcnn_v9.json",
+      "experimental/v9_lean/configs/v9_confirm.json",
+      "experimental/v9_lean/configs/v9_distill.json",
+      "experimental/v9_lean/configs/v9_jitter.json",
+      "experimental/v9_lean/configs/v9_jitter_combined.json",
+      "experimental/v9_lean/configs/v9_screen.json"
+    ],
+    "combinations": 288,
+    "valid_under_both": 233,
+    "mismatches": [],
+    "pass": true
+  },
+  "2_checkpoints": {
+    "v9_confirm/k8_combined": {
+      "same_weights": true,
+      "max_abs_delta_trained": 0.0,
+      "max_abs_delta_deployed": 0.0,
+      "pass": true
+    },
+    "v9_confirm/k5_combined": {
+      "same_weights": true,
+      "max_abs_delta_trained": 0.0,
+      "max_abs_delta_deployed": 0.0,
+      "pass": true
+    },
+    "v8_recipe_sep_base3_addons/angular_loss": {
+      "same_weights": true,
+      "max_abs_delta_trained": 0.0,
+      "max_abs_delta_deployed": 0.0,
+      "pass": true
+    }
+  },
+  "3_exports": {
+    "tcnn_v9_k8_combined_ga2_stream.onnx": {
+      "best_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+      "v9_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+      "committed_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+      "pass": true
+    },
+    "tcnn_v9_k8_combined_padded_ga2_stream.onnx": {
+      "best_sha256": "df6b8b44542d1ae70d39bfad0f593977e6aeaeca1027034491ad4fccf0110aa1",
+      "v9_sha256": "df6b8b44542d1ae70d39bfad0f593977e6aeaeca1027034491ad4fccf0110aa1",
+      "committed_sha256": "df6b8b44542d1ae70d39bfad0f593977e6aeaeca1027034491ad4fccf0110aa1",
+      "pass": true
+    },
+    "tcnn_v9_k8_combined_padded_a4_ga2_stream.onnx": {
+      "best_sha256": "2100ae2a64960ebab81f5b22a875d2fbf1f2fdb2ea5dbd052fc91a3805ba8cd2",
+      "v9_sha256": "2100ae2a64960ebab81f5b22a875d2fbf1f2fdb2ea5dbd052fc91a3805ba8cd2",
+      "committed_sha256": "2100ae2a64960ebab81f5b22a875d2fbf1f2fdb2ea5dbd052fc91a3805ba8cd2",
+      "pass": true
+    }
+  },
+  "4_training": {
+    "checkpoint_keys": [
+      "best_validation_deg",
+      "config",
+      "cuda_rng",
+      "epoch",
+      "format_version",
+      "history",
+      "model_spec",
+      "model_state",
+      "optimizer_state",
+      "patience_best",
+      "provenance",
+      "scheduler_state",
+      "seed",
+      "stale_epochs",
+      "torch_rng",
+      "train_model_state"
+    ],
+    "tensor_dicts_compared": [
+      "model_state",
+      "train_model_state"
+    ],
+    "differing_keys": [
+      "history"
+    ],
+    "history_equal": true,
+    "epochs": 2,
+    "pass": true
+  },
+  "5_full_validation": {
+    "got": 4.247104990427709,
+    "expected": 4.247104990427709,
+    "cohort_fingerprint_equal": true,
+    "pass": true
+  },
+  "passed": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "torch": "2.7.1+cu118"
+}

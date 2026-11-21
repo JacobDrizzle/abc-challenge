@@ -1,0 +1,295 @@
+{
+  "schema": "bench-result-v1",
+  "bench_package_version": "0.1.0",
+  "created_utc": "2026-11-06T12:20:33.303070+00:00",
+  "bench": {
+    "name": "group-a-v2-test20",
+    "definition_sha256": "71ca343f35a17f85a8a30c9e434d7c7065b68dd9d1db3bbff15d79f216961bd2",
+    "cohort_fingerprint": "6303a55cc75316cc7a172b1162875e801350cd267cf7827a53d82edd364bcd48",
+    "legacy_cohort_fingerprint": "015851ffd032833b294db919929d2ad4b141df1794c0f3e4ceaf4b9ac73a51d5",
+    "windows": 931051,
+    "players": [
+      "0aefb728-86ee-4ea8-aba2-014f8b233587",
+      "0f0949b4-e42b-47a4-bf7e-cbbf63361225",
+      "141ce789-0a59-4858-bc0e-28846ab1672c",
+      "318e521e-281d-4d8d-b570-01db1c79ba20",
+      "35220c0e-fda1-4716-a70e-1a93e0819578",
+      "35f825eb-37f8-4fa5-8d40-a0f89fd5d553",
+      "36074619-270d-49c6-9f41-63c9c9a06df4",
+      "44af878e-4a76-44ea-bc2c-78a4c20ffe42",
+      "6338df1d-430d-47e1-8000-376c180fc232",
+      "67190adb-b000-4c7f-9702-cbe3aebdc9a6",
+      "6924807d-4ab4-4522-9da5-669132df4bfb",
+      "6ef6bfe7-c6d6-4a6a-a4cd-fcc7fd3dba27",
+      "73d4c8ec-6f7c-4dfa-89d4-382ccdd15d0d",
+      "7e372e75-5aa4-4465-9cf1-423502ed92a3",
+      "7ea2f8af-82e8-497e-bfca-e9c577c0d42d",
+      "89da1a5f-fdb6-4c84-b2eb-9d6e39df69a4",
+      "939fdaed-a8af-404c-b0be-52f50ca2f284",
+      "a3fcf0fa-4bbb-4500-bf4b-345710aec9b2",
+      "aecf2eb7-d872-4504-93b3-bdb31b748861",
+      "c825484a-10de-4f16-815f-610f5f708740"
+    ]
+  },
+  "inputs": {
+    "data_file": "qualified_head_100hz_20261026_131953.h5",
+    "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51"
+  },
+  "model": {
+    "name": "k8_800_refit_s44",
+    "kind": "onnx",
+    "onnx": "jacob\\training\\outputs\\v10_endpoint_refit_20261105\\onnx\\edited.onnx",
+    "onnx_sha256": "8328ce66928fea867097dc92f1cf559d4d1f4dbf07de7c059c4d67d08367be67",
+    "baseline": null,
+    "stateful": true,
+    "owner": null,
+    "group": null,
+    "declared_trainable_parameters": 7555,
+    "notes": null,
+    "threads": 1
+  },
+  "contamination": {
+    "status": "clean",
+    "trained_on": [
+      {
+        "spec": "jacob/ablations/results/v10_endpoint_bench_20261106/trained_on_800_train_120_validation.txt",
+        "kind": "list",
+        "sha256": "1f3d0bbd78f1ec9be26641f04c2c16267fb3a9bb6b52c60e4dd37f2a98e96791",
+        "players": 920
+      }
+    ],
+    "overlap": []
+  },
+  "git": {
+    "commit": "647f2ddd6702eb907be94a97febc08dca0575bd4",
+    "dirty": true
+  },
+  "machine": {
+    "label": "local-800-comparison",
+    "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "machine": "AMD64",
+    "os": "Windows-11-10.0.26200-SP0",
+    "logical_cores": 24,
+    "python": "3.12.10",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.2.6"
+  },
+  "efficiency": {
+    "opset": [
+      {
+        "domain": "ai.onnx",
+        "version": 17
+      }
+    ],
+    "stateful": true,
+    "states": [
+      {
+        "name": "state_in_0",
+        "shape": [
+          1,
+          32,
+          2,
+          7
+        ]
+      },
+      {
+        "name": "state_in_1",
+        "shape": [
+          1,
+          32,
+          2,
+          56
+        ]
+      },
+      {
+        "name": "state_in_2",
+        "shape": [
+          1,
+          32,
+          2,
+          329
+        ]
+      }
+    ],
+    "state_elements": 25088,
+    "initializer_elements": 7552,
+    "constant_node_elements": 548,
+    "macs_per_call": {
+      "total": 16222,
+      "by_operator": {
+        "MatMul": 1950,
+        "Conv": 14272
+      },
+      "recurrences": [],
+      "uncounted_einsum": []
+    },
+    "operators": {
+      "counts": {
+        "Constant": 64,
+        "MatMul": 11,
+        "Slice": 11,
+        "Concat": 9,
+        "Relu": 8,
+        "Conv": 7,
+        "Reshape": 7,
+        "Add": 3,
+        "Mul": 3,
+        "LayerNormalization": 1
+      },
+      "safe": [
+        "Add",
+        "Concat",
+        "Conv",
+        "LayerNormalization",
+        "MatMul",
+        "Mul",
+        "Relu",
+        "Reshape",
+        "Slice"
+      ],
+      "avoid": [],
+      "conditional": {},
+      "other": [],
+      "slow_on_npu": [],
+      "custom_domain": [],
+      "float64_tensors": [],
+      "sequence_tensors": [],
+      "long_recurrences": [],
+      "issues": []
+    },
+    "output_checks": {
+      "calls": 64,
+      "shape_ok": true,
+      "finite": true,
+      "output_norm_range": [
+        0.999999866575404,
+        1.0000001254654993
+      ],
+      "deterministic": true,
+      "max_abs_diff_rerun": 0.0,
+      "max_abs_diff_1_vs_4_threads": 0.0
+    },
+    "stream_parity": null
+  },
+  "accuracy": {
+    "protocol": "from-start",
+    "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+    "windows": 931051,
+    "mean_deg_step20": 4.210841016563756,
+    "mean_deg_step10": 2.161905684026531,
+    "mean_deg_by_horizon": [
+      0.0935433593750979,
+      0.25010367394312066,
+      0.4614841320504606,
+      0.7073061883815825,
+      0.9670162360267575,
+      1.2256128292017023,
+      1.4752755895737877,
+      1.7138008116467518,
+      1.9418803390765367,
+      2.161905684026531,
+      2.37689177992032,
+      2.588741400312194,
+      2.7983041866681444,
+      3.0060783834438816,
+      3.212028585749282,
+      3.415827577306518,
+      3.617475176394327,
+      3.817114060823932,
+      4.014773859636517,
+      4.210841016563756
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.509152276433143,
+    "p95_deg_step20": 9.761793855864497,
+    "p99_deg_step20": 14.852193132783917,
+    "equal_player_mean_deg_step20": 4.147168851975808,
+    "per_window_file": {
+      "path": "bench_runs/v10_endpoint_bench_20261106/windows/group-a-v2-test20/k8_800_refit_s44@local-800-comparison/endpoint_from-start.npy",
+      "sha256": "b4bd51fc98dbbd17fa98e8094de01dedbd01fd1f9d21ea17a88012b15ebff186",
+      "dtype": "float32"
+    }
+  },
+  "accuracy_cold_start": {
+    "protocol": "cold-start",
+    "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+    "windows": 931051,
+    "mean_deg_step20": 4.230417598107343,
+    "mean_deg_step10": 2.168178013720214,
+    "mean_deg_by_horizon": [
+      0.09377570024775164,
+      0.2504844315787247,
+      0.46209008936724694,
+      0.7082712215403871,
+      0.9685032791884332,
+      1.2277783317627982,
+      1.4782666685529933,
+      1.7177622069930019,
+      1.9469425362382604,
+      2.168178013720214,
+      2.3844568231248826,
+      2.5976733822617457,
+      2.8086637508659695,
+      3.0178944170744897,
+      3.2252963728466764,
+      3.430514801939059,
+      3.633525120119869,
+      3.834444951308886,
+      4.033286799617753,
+      4.230417598107343
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.5317937137240225,
+    "p95_deg_step20": 9.786363416697569,
+    "p99_deg_step20": 14.877123130057011,
+    "equal_player_mean_deg_step20": 4.1894071077393695,
+    "per_window_file": {
+      "path": "bench_runs/v10_endpoint_bench_20261106/windows/group-a-v2-test20/k8_800_refit_s44@local-800-comparison/endpoint_cold-start.npy",
+      "sha256": "942ed5f07b6d51e236f5fded7f2cc6a7114aa0742f5adff040457a5463105f67",
+      "dtype": "float32"
+    }
+  }
+}

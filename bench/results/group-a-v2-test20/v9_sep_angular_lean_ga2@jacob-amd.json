@@ -1,0 +1,313 @@
+{
+  "schema": "bench-result-v1",
+  "bench_package_version": "0.1.0",
+  "created_utc": "2026-10-29T12:41:22.254586+00:00",
+  "bench": {
+    "name": "group-a-v2-test20",
+    "definition_sha256": "71ca343f35a17f85a8a30c9e434d7c7065b68dd9d1db3bbff15d79f216961bd2",
+    "cohort_fingerprint": "6303a55cc75316cc7a172b1162875e801350cd267cf7827a53d82edd364bcd48",
+    "legacy_cohort_fingerprint": "015851ffd032833b294db919929d2ad4b141df1794c0f3e4ceaf4b9ac73a51d5",
+    "windows": 931051,
+    "players": [
+      "0aefb728-86ee-4ea8-aba2-014f8b233587",
+      "0f0949b4-e42b-47a4-bf7e-cbbf63361225",
+      "141ce789-0a59-4858-bc0e-28846ab1672c",
+      "318e521e-281d-4d8d-b570-01db1c79ba20",
+      "35220c0e-fda1-4716-a70e-1a93e0819578",
+      "35f825eb-37f8-4fa5-8d40-a0f89fd5d553",
+      "36074619-270d-49c6-9f41-63c9c9a06df4",
+      "44af878e-4a76-44ea-bc2c-78a4c20ffe42",
+      "6338df1d-430d-47e1-8000-376c180fc232",
+      "67190adb-b000-4c7f-9702-cbe3aebdc9a6",
+      "6924807d-4ab4-4522-9da5-669132df4bfb",
+      "6ef6bfe7-c6d6-4a6a-a4cd-fcc7fd3dba27",
+      "73d4c8ec-6f7c-4dfa-89d4-382ccdd15d0d",
+      "7e372e75-5aa4-4465-9cf1-423502ed92a3",
+      "7ea2f8af-82e8-497e-bfca-e9c577c0d42d",
+      "89da1a5f-fdb6-4c84-b2eb-9d6e39df69a4",
+      "939fdaed-a8af-404c-b0be-52f50ca2f284",
+      "a3fcf0fa-4bbb-4500-bf4b-345710aec9b2",
+      "aecf2eb7-d872-4504-93b3-bdb31b748861",
+      "c825484a-10de-4f16-815f-610f5f708740"
+    ]
+  },
+  "inputs": {
+    "data_file": "qualified_head_100hz_20261026_131953.h5",
+    "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51"
+  },
+  "model": {
+    "name": "v9_sep_angular_lean_ga2",
+    "kind": "onnx",
+    "onnx": "jacob\\training\\outputs\\v9_bench\\v9_sep_angular_lean_ga2\\model_fp32_stream.onnx",
+    "onnx_sha256": "62c86f21e3007909b2072bc2ee0c73191fb9d3d1513e7a45b035399533346baa",
+    "baseline": null,
+    "stateful": true,
+    "owner": null,
+    "group": null,
+    "declared_trainable_parameters": 6651,
+    "notes": null,
+    "threads": 1
+  },
+  "contamination": {
+    "status": "clean",
+    "trained_on": [
+      {
+        "spec": "bench/trained_on/group_a_v2_20261026_131953_trainval.txt",
+        "kind": "list",
+        "sha256": "8206c2f205715f4906fcdfc90447b54b0583457f2e383ef42f04c30bbec696ab",
+        "players": 115
+      }
+    ],
+    "overlap": []
+  },
+  "git": {
+    "commit": "daa253356e001261319c1a2a9346360ccd58aa85",
+    "dirty": false
+  },
+  "machine": {
+    "label": "jacob-amd",
+    "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "machine": "AMD64",
+    "os": "Windows-11-10.0.26200-SP0",
+    "logical_cores": 24,
+    "python": "3.12.10",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.2.6"
+  },
+  "efficiency": {
+    "opset": [
+      {
+        "domain": "ai.onnx",
+        "version": 17
+      }
+    ],
+    "stateful": true,
+    "states": [
+      {
+        "name": "state_in_0",
+        "shape": [
+          1,
+          24,
+          2,
+          2
+        ]
+      },
+      {
+        "name": "state_in_1",
+        "shape": [
+          1,
+          24,
+          2,
+          6
+        ]
+      },
+      {
+        "name": "state_in_2",
+        "shape": [
+          1,
+          24,
+          2,
+          18
+        ]
+      },
+      {
+        "name": "state_in_3",
+        "shape": [
+          1,
+          24,
+          2,
+          54
+        ]
+      },
+      {
+        "name": "state_in_4",
+        "shape": [
+          1,
+          24,
+          2,
+          162
+        ]
+      }
+    ],
+    "state_elements": 11616,
+    "initializer_elements": 6648,
+    "constant_node_elements": 552,
+    "macs_per_call": {
+      "total": 14446,
+      "by_operator": {
+        "MatMul": 1870,
+        "Conv": 12576
+      },
+      "recurrences": [],
+      "uncounted_einsum": []
+    },
+    "operators": {
+      "counts": {
+        "Constant": 82,
+        "Slice": 15,
+        "Concat": 13,
+        "MatMul": 13,
+        "Relu": 12,
+        "Conv": 11,
+        "Reshape": 7,
+        "Add": 6,
+        "Mul": 6,
+        "LayerNormalization": 1
+      },
+      "safe": [
+        "Add",
+        "Concat",
+        "Conv",
+        "LayerNormalization",
+        "MatMul",
+        "Mul",
+        "Relu",
+        "Reshape",
+        "Slice"
+      ],
+      "avoid": [],
+      "conditional": {},
+      "other": [],
+      "slow_on_npu": [],
+      "custom_domain": [],
+      "float64_tensors": [],
+      "sequence_tensors": [],
+      "long_recurrences": [],
+      "issues": []
+    },
+    "output_checks": {
+      "calls": 64,
+      "shape_ok": true,
+      "finite": true,
+      "output_norm_range": [
+        0.9999998825657125,
+        1.0000001234545723
+      ],
+      "deterministic": true,
+      "max_abs_diff_rerun": 0.0,
+      "max_abs_diff_1_vs_4_threads": 0.0
+    },
+    "stream_parity": null
+  },
+  "accuracy": {
+    "protocol": "from-start",
+    "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+    "windows": 931051,
+    "mean_deg_step20": 4.328915176620642,
+    "mean_deg_step10": 2.209655366065013,
+    "mean_deg_by_horizon": [
+      0.10301704802915194,
+      0.2661524555017607,
+      0.48043350766656334,
+      0.7274161796519126,
+      0.9883902480622374,
+      1.2494674755928377,
+      1.5032007639399165,
+      1.7473670729901682,
+      1.982269740577837,
+      2.209655366065013,
+      2.432048984944019,
+      2.65113665012268,
+      2.8676650278999167,
+      3.0821758034123414,
+      3.294766094015511,
+      3.5052368825202596,
+      3.7136813646626776,
+      3.9203427670709354,
+      4.125314707427603,
+      4.328915176620642
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.609502019806215,
+    "p95_deg_step20": 10.050320488884797,
+    "p99_deg_step20": 15.220662151031124,
+    "equal_player_mean_deg_step20": 4.27778477747613,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/v9_sep_angular_lean_ga2@jacob-amd/endpoint_from-start.npy",
+      "sha256": "c9c5d02f189314e1fee01ed9a382739b4729537e08bb68014aa9e0bae00568c6",
+      "dtype": "float32"
+    }
+  },
+  "accuracy_cold_start": {
+    "protocol": "cold-start",
+    "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+    "windows": 931051,
+    "mean_deg_step20": 4.331485173217389,
+    "mean_deg_step10": 2.210548026107252,
+    "mean_deg_by_horizon": [
+      0.10312039710547777,
+      0.26634826458433575,
+      0.4807038516524467,
+      0.7277485194884726,
+      0.9887824678490578,
+      1.2499280814189262,
+      1.5037417577171892,
+      1.7480076221752023,
+      1.9830285100874108,
+      2.210548026107252,
+      2.433083137663534,
+      2.652322051255628,
+      2.8690149753043586,
+      3.083697425736167,
+      3.296462953634059,
+      3.507107527183758,
+      3.715725092468793,
+      3.9225597486808237,
+      4.127707122809119,
+      4.331485173217389
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.6127360335390364,
+    "p95_deg_step20": 10.053338375916619,
+    "p99_deg_step20": 15.22280376653584,
+    "equal_player_mean_deg_step20": 4.28008655412018,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/v9_sep_angular_lean_ga2@jacob-amd/endpoint_cold-start.npy",
+      "sha256": "9a4e80c8042eb288fecb2f5bf8675429e6558a3b2dc852a09ffd7c2ff7d74b27",
+      "dtype": "float32"
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "passed": true,
+  "graph_structure_unchanged": true,
+  "models": {
+    "baseline": {
+      "source": "<repo>\\jacob\\training\\outputs\\v10_k8_800users_full_pass\\full_pass\\selected_model.pt",
+      "source_sha256": "c70aa91599322467134655b3e146f7eec837aef1aa6208640d8e9baf88f04771",
+      "onnx": "<repo>\\jacob\\training\\outputs\\v10_weight_edit_export_smoke_20261104\\real_edit\\baseline.onnx",
+      "onnx_sha256": "6133510eabc8a3e55b62670ed1c02b67c37995605e55275be9581d0475da8094",
+      "onnx_bytes": 44196,
+      "declared_parameters": 7555,
+      "initializer_parameters": 7552,
+      "nodes": 124,
+      "state_shapes": [
+        [
+          1,
+          32,
+          2,
+          7
+        ],
+        [
+          1,
+          32,
+          2,
+          56
+        ],
+        [
+          1,
+          32,
+          2,
+          329
+        ]
+      ],
+      "operators": {
+        "counts": {
+          "Constant": 64,
+          "Slice": 11,
+          "MatMul": 11,
+          "Concat": 9,
+          "Relu": 8,
+          "Reshape": 7,
+          "Conv": 7,
+          "Mul": 3,
+          "Add": 3,
+          "LayerNormalization": 1
+        },
+        "safe": [
+          "Add",
+          "Concat",
+          "Conv",
+          "LayerNormalization",
+          "MatMul",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice"
+        ],
+        "avoid": [],
+        "other": [],
+        "slow_on_npu": [],
+        "float64_tensors": []
+      },
+      "macs_per_call": {
+        "total": 16222,
+        "by_operator": {
+          "MatMul": 1950,
+          "Conv": 14272
+        }
+      },
+      "parity": {
+        "passed": true,
+        "synthetic_samples": 650,
+        "full_windows": 251,
+        "max_ort_vs_window_deg": 0.00010371981475760382,
+        "max_ort_vs_streaming_wrapper_deg": 8.229774686608734e-05,
+        "max_state_absolute_difference": 2.86102294921875e-06,
+        "max_unit_norm_error": 1.5831324662318735e-07,
+        "angle_tolerance_deg": 0.001,
+        "norm_tolerance": 1e-05,
+        "includes_quaternion_sign_flips": true
+      }
+    },
+    "edited": {
+      "source": "<repo>\\jacob\\training\\outputs\\v10_weight_edit_export_smoke_20261104\\smoke_scaled_head.pt",
+      "source_sha256": "96dba88d9fae42fb49748a91fec0a9bd765b9291d2426fbb6a2d92344f740a22",
+      "onnx": "<repo>\\jacob\\training\\outputs\\v10_weight_edit_export_smoke_20261104\\real_edit\\edited.onnx",
+      "onnx_sha256": "c8c925d3fe282a15664aa159f02c97ed56f6cd0c03d4611fff40c8ffc2b042af",
+      "onnx_bytes": 44196,
+      "declared_parameters": 7555,
+      "initializer_parameters": 7552,
+      "nodes": 124,
+      "state_shapes": [
+        [
+          1,
+          32,
+          2,
+          7
+        ],
+        [
+          1,
+          32,
+          2,
+          56
+        ],
+        [
+          1,
+          32,
+          2,
+          329
+        ]
+      ],
+      "operators": {
+        "counts": {
+          "Constant": 64,
+          "Slice": 11,
+          "MatMul": 11,
+          "Concat": 9,
+          "Relu": 8,
+          "Reshape": 7,
+          "Conv": 7,
+          "Mul": 3,
+          "Add": 3,
+          "LayerNormalization": 1
+        },
+        "safe": [
+          "Add",
+          "Concat",
+          "Conv",
+          "LayerNormalization",
+          "MatMul",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice"
+        ],
+        "avoid": [],
+        "other": [],
+        "slow_on_npu": [],
+        "float64_tensors": []
+      },
+      "macs_per_call": {
+        "total": 16222,
+        "by_operator": {
+          "MatMul": 1950,
+          "Conv": 14272
+        }
+      },
+      "parity": {
+        "passed": true,
+        "synthetic_samples": 650,
+        "full_windows": 251,
+        "max_ort_vs_window_deg": 8.974777781450307e-05,
+        "max_ort_vs_streaming_wrapper_deg": 8.465757281770298e-05,
+        "max_state_absolute_difference": 2.86102294921875e-06,
+        "max_unit_norm_error": 1.5994779889449973e-07,
+        "angle_tolerance_deg": 0.001,
+        "norm_tolerance": 1e-05,
+        "includes_quaternion_sign_flips": true
+      }
+    }
+  },
+  "latency": {
+    "baseline": {
+      "calls": 1000,
+      "median_us": 55.0,
+      "p95_us": 105.51499999999999
+    },
+    "edited": {
+      "calls": 1000,
+      "median_us": 55.2,
+      "p95_us": 80.61999999999998
+    },
+    "edited_over_baseline_median": 1.0036363636363637,
+    "rounds": [
+      {
+        "round": 1,
+        "order": [
+          "baseline",
+          "edited"
+        ],
+        "baseline": {
+          "median_us": 54.8,
+          "p95_us": 75.31999999999996
+        },
+        "edited": {
+          "median_us": 55.2,
+          "p95_us": 76.78499999999997
+        }
+      },
+      {
+        "round": 2,
+        "order": [
+          "edited",
+          "baseline"
+        ],
+        "edited": {
+          "median_us": 55.0,
+          "p95_us": 61.5
+        },
+        "baseline": {
+          "median_us": 54.7,
+          "p95_us": 71.02999999999999
+        }
+      },
+      {
+        "round": 3,
+        "order": [
+          "baseline",
+          "edited"
+        ],
+        "baseline": {
+          "median_us": 54.9,
+          "p95_us": 76.9
+        },
+        "edited": {
+          "median_us": 55.2,
+          "p95_us": 78.78499999999997
+        }
+      },
+      {
+        "round": 4,
+        "order": [
+          "edited",
+          "baseline"
+        ],
+        "edited": {
+          "median_us": 55.650000000000006,
+          "p95_us": 105.71
+        },
+        "baseline": {
+          "median_us": 82.05,
+          "p95_us": 111.02999999999999
+        }
+      },
+      {
+        "round": 5,
+        "order": [
+          "baseline",
+          "edited"
+        ],
+        "baseline": {
+          "median_us": 55.3,
+          "p95_us": 103.515
+        },
+        "edited": {
+          "median_us": 54.9,
+          "p95_us": 60.92499999999999
+        }
+      }
+    ],
+    "cpu_threads": 1,
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "scope": "Local single-thread ORT calls; not organiser hardware. Alternating paired rounds, but background load is not controlled; small differences may be timing noise."
+  },
+  "runtime": {
+    "torch": "2.7.1+cu118",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.0"
+  },
+  "test_data_used": false,
+  "source_checkpoint_hashes_unchanged": true
+}

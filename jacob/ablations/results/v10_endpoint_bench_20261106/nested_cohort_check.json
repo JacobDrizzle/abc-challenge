@@ -1,0 +1,18 @@
+{
+ "max_player_horizon_difference_deg": {
+  "constant_velocity_1step": 0.0,
+  "damped_velocity": 0.0,
+  "hold_last": 0.0,
+  "k8_800_gain105_s44": 0.0,
+  "k8_800_original_s44": 0.0,
+  "k8_800_refit_s44": 0.0,
+  "nic_ga2_gadst_s42": 0.0,
+  "nic_ga2_gru_s45": 0.0,
+  "v5_tcnn_ga2": 0.0,
+  "v6_tcnn_ga2": 0.0,
+  "v7_sep_base3_addons_angular_ga2": 0.0,
+  "v9_k5_combined_ga2": 0.0,
+  "v9_k8_combined_ga2": 0.0
+ },
+ "tolerance_deg": 1e-05
+}

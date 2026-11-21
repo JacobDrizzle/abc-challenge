@@ -1,0 +1,20 @@
+{
+  "test_evaluated": true,
+  "split": "test",
+  "synthetic": false,
+  "selection_sha256": "103f8106411de6ca64c4d3805bf818d3fd138d540006946cdd9c1b8808cfe5b4",
+  "checkpoint_sha256": "b819e04c5c55b5e056a41f4cd40a7cc8e21ce6f84908df57c631b4b49c7caaf5",
+  "results_sha256": "df4c627f4f13aeaf8745d27b32df8468299c615e7af0d3e2b8a566e384b7ff00",
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu118",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "11.8"
+  },
+  "cohort_fingerprint": "015851ffd032833b294db919929d2ad4b141df1794c0f3e4ceaf4b9ac73a51d5",
+  "windows": 931051
+}

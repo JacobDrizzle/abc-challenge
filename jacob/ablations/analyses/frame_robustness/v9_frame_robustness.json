@@ -1,0 +1,152 @@
+{
+ "stride": 5,
+ "windows": 131459,
+ "first_pose_tilt_deg": {
+  "median": 9.643726348876953,
+  "min": 1.3978779315948486,
+  "max": 38.79758071899414
+ },
+ "models": {
+  "sep+angular s44": {
+   "checkpoint": "v8_recipe_sep_base3_addons/angular_loss/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "v9 control s42": {
+   "checkpoint": "v9_screen/control/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "v9 tilt_15 s42": {
+   "checkpoint": "v9_screen/tilt_15/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "k8 screen s42": {
+   "checkpoint": "v9_screen/k8_3blocks_w32/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "k8_combined s42": {
+   "checkpoint": "v9_confirm/k8_combined/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "k5_combined s42": {
+   "checkpoint": "v9_confirm/k5_combined/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  }
+ },
+ "results": {
+  "identity": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "sep+angular s44": 4.3144687287188965,
+   "v9 control s42": 4.339006497542255,
+   "v9 tilt_15 s42": 4.330081445721595,
+   "k8 screen s42": 4.291614496071366,
+   "k8_combined s42": 4.247845713249281,
+   "k5_combined s42": 4.264900414783683
+  },
+  "heading +90 deg (world yaw)": {
+   "damped velocity (baseline)": 5.0497098530363616,
+   "sep+angular s44": 4.3144681327267005,
+   "v9 control s42": 4.339005785178778,
+   "v9 tilt_15 s42": 4.33008080111307,
+   "k8 screen s42": 4.291613923791944,
+   "k8_combined s42": 4.2478451858215065,
+   "k5_combined s42": 4.264899839391885
+  },
+  "re-centre heading on first pose": {
+   "damped velocity (baseline)": 5.049709990396995,
+   "sep+angular s44": 4.314468660845416,
+   "v9 control s42": 4.339006442422613,
+   "v9 tilt_15 s42": 4.330081409443305,
+   "k8 screen s42": 4.291614509927908,
+   "k8_combined s42": 4.247845719946572,
+   "k5_combined s42": 4.26490036836252
+  },
+  "left-right mirror (x = 0 plane)": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "sep+angular s44": 4.314468723259738,
+   "v9 control s42": 4.339006496847777,
+   "v9 tilt_15 s42": 4.330081445633699,
+   "k8 screen s42": 4.291614496098438,
+   "k8_combined s42": 4.247845714349939,
+   "k5_combined s42": 4.2649004163827495
+  },
+  "world tilted 5 deg": {
+   "damped velocity (baseline)": 5.049709985683454,
+   "sep+angular s44": 4.314366176926817,
+   "v9 control s42": 4.338028485613406,
+   "v9 tilt_15 s42": 4.333515563755038,
+   "k8 screen s42": 4.288091644651801,
+   "k8_combined s42": 4.248909039359279,
+   "k5_combined s42": 4.265394157214353
+  },
+  "world tilted 15 deg": {
+   "damped velocity (baseline)": 5.049709959593439,
+   "sep+angular s44": 4.3734126371625734,
+   "v9 control s42": 4.3984457889697595,
+   "v9 tilt_15 s42": 4.3819907918742125,
+   "k8 screen s42": 4.335347944109096,
+   "k8_combined s42": 4.275354926387379,
+   "k5_combined s42": 4.296002171705996
+  },
+  "z-up world (up axis off by 90 deg)": {
+   "damped velocity (baseline)": 5.049709987667518,
+   "sep+angular s44": 5.230312974718959,
+   "v9 control s42": 5.621624425757091,
+   "v9 tilt_15 s42": 5.363831542627464,
+   "k8 screen s42": 5.283058611363707,
+   "k8_combined s42": 5.085419818467046,
+   "k5_combined s42": 5.0336674369173
+  },
+  "re-centre full first pose": {
+   "damped velocity (baseline)": 5.049710028198693,
+   "sep+angular s44": 4.346026193099326,
+   "v9 control s42": 4.360302133340759,
+   "v9 tilt_15 s42": 4.335832124316269,
+   "k8 screen s42": 4.319558788475542,
+   "k8_combined s42": 4.258060692856203,
+   "k5_combined s42": 4.275083069796429
+  },
+  "OpenXR handedness (flip z)": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "sep+angular s44": 4.436795243262745,
+   "v9 control s42": 4.46507876163764,
+   "v9 tilt_15 s42": 4.462139946013374,
+   "k8 screen s42": 4.440219780699331,
+   "k8_combined s42": 4.382312363586945,
+   "k5_combined s42": 4.40649857084247
+  },
+  "ROS/ENU (z-up, x fwd, y left)": {
+   "damped velocity (baseline)": 5.049710015944998,
+   "sep+angular s44": 4.712450741418178,
+   "v9 control s42": 4.734576822950793,
+   "v9 tilt_15 s42": 4.748246544473801,
+   "k8 screen s42": 4.671800718053819,
+   "k8_combined s42": 4.631164317657917,
+   "k5_combined s42": 4.648645852947596
+  },
+  "ROS/ENU, player heading +90 deg": {
+   "damped velocity (baseline)": 5.0497098483873355,
+   "sep+angular s44": 5.742406543608912,
+   "v9 control s42": 5.525443461927089,
+   "v9 tilt_15 s42": 5.5487041069839105,
+   "k8 screen s42": 6.039592560004228,
+   "k8_combined s42": 5.383237377889578,
+   "k5_combined s42": 5.640447302836308
+  },
+  "ROS/ENU, player heading +180 deg": {
+   "damped velocity (baseline)": 5.049710012248816,
+   "sep+angular s44": 6.2416819504308725,
+   "v9 control s42": 5.765896376092407,
+   "v9 tilt_15 s42": 5.500614278885794,
+   "k8 screen s42": 5.951163335691853,
+   "k8_combined s42": 5.481311378070207,
+   "k5_combined s42": 6.119651337295314
+  }
+ },
+ "table_md": "| Stream convention | damped velocity (baseline) | sep+angular s44 | v9 control s42 | v9 tilt_15 s42 | k8 screen s42 | k8_combined s42 | k5_combined s42 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n| identity (BOXRR/Unity) | 5.0497 | 4.3145 | 4.3390 | 4.3301 | 4.2916 | 4.2478 | 4.2649 |\n| heading +90 deg (world yaw) | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 |\n| re-centre heading on first pose | -0.0000 | -0.0000 | -0.0000 | -0.0000 | +0.0000 | +0.0000 | -0.0000 |\n| left-right mirror (x = 0 plane) | +0.0000 | -0.0000 | -0.0000 | -0.0000 | +0.0000 | +0.0000 | +0.0000 |\n| world tilted 5 deg | -0.0000 | -0.0001 | -0.0010 | +0.0034 | -0.0035 | +0.0011 | +0.0005 |\n| world tilted 15 deg | -0.0000 | +0.0589 | +0.0594 | +0.0519 | +0.0437 | +0.0275 | +0.0311 |\n| z-up world (up axis off by 90 deg) | -0.0000 | +0.9158 | +1.2826 | +1.0338 | +0.9914 | +0.8376 | +0.7688 |\n| re-centre full first pose | +0.0000 | +0.0316 | +0.0213 | +0.0058 | +0.0279 | +0.0102 | +0.0102 |\n| OpenXR handedness (flip z) | +0.0000 | +0.1223 | +0.1261 | +0.1321 | +0.1486 | +0.1345 | +0.1416 |\n| ROS/ENU (z-up, x fwd, y left) | +0.0000 | +0.3980 | +0.3956 | +0.4182 | +0.3802 | +0.3833 | +0.3837 |\n| ROS/ENU, player heading +90 deg | -0.0000 | +1.4279 | +1.1864 | +1.2186 | +1.7480 | +1.1354 | +1.3755 |\n| ROS/ENU, player heading +180 deg | +0.0000 | +1.9272 | +1.4269 | +1.1705 | +1.6595 | +1.2335 | +1.8548 |"
+}

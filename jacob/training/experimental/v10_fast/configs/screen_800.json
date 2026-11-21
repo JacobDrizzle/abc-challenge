@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": {
+    "control": {
+      "steps_per_epoch": 3162
+    },
+    "dropout_0": {
+      "steps_per_epoch": 3162,
+      "dropout": 0.0
+    },
+    "passes_2": {
+      "steps_per_epoch": 6324
+    },
+    "jitter_1_5": {
+      "steps_per_epoch": 3162,
+      "jitter_augmentation_ms": 1.5
+    },
+    "width_96": {
+      "steps_per_epoch": 3162,
+      "channels": 96
+    }
+  },
+  "baseline_lags": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "baseline_tau_ms": [
+    25,
+    50,
+    100,
+    200,
+    500,
+    null
+  ]
+}

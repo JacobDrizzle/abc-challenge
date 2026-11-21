@@ -1,0 +1,106 @@
+{
+  "plan": {
+    "version": 1,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "reference": "outputs/v8_recipe_sep_base3_addons/angular_loss",
+    "candidates": {
+      "k8_combined": {
+        "output": "outputs/v9_confirm/k8_combined",
+        "overrides": {
+          "num_blocks": 3,
+          "kernel_sizes": [
+            8,
+            8,
+            8
+          ],
+          "dilations": [
+            1,
+            8,
+            47
+          ],
+          "channels": 64,
+          "effective_context": 400,
+          "sampling": "window",
+          "maps": "native",
+          "tilt_augmentation_deg": 15
+        }
+      },
+      "k5_combined": {
+        "output": "outputs/v9_confirm/k5_combined",
+        "overrides": {
+          "num_blocks": 4,
+          "kernel_sizes": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "dilations": [
+            1,
+            5,
+            25,
+            68
+          ],
+          "effective_context": 400,
+          "sampling": "window",
+          "maps": "native",
+          "tilt_augmentation_deg": 15
+        }
+      }
+    }
+  },
+  "reference": {
+    "candidate": "angular_loss (reference)",
+    "params": 6651,
+    "selected_seed": 44,
+    "scores": {
+      "42": 4.33864309608329,
+      "43": 4.337040160926192,
+      "44": 4.31335891839015
+    },
+    "cohort_fingerprints": [
+      "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    ],
+    "mean_deg": 4.329680725133211,
+    "std_deg": 0.014157802859124645,
+    "delta_vs_reference_deg": null
+  },
+  "rows": [
+    {
+      "candidate": "k8_combined",
+      "params": 7555,
+      "selected_seed": 42,
+      "scores": {
+        "42": 4.247104990427709,
+        "43": 4.25472255588162,
+        "44": 4.248472441691232
+      },
+      "cohort_fingerprints": [
+        "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+      ],
+      "mean_deg": 4.250099996000187,
+      "std_deg": 0.004061222184589716,
+      "delta_vs_reference_deg": -0.07958072913302416
+    },
+    {
+      "candidate": "k5_combined",
+      "params": 5595,
+      "selected_seed": 42,
+      "scores": {
+        "42": 4.2651538259856085,
+        "43": 4.271372548034009,
+        "44": 4.278478642088294
+      },
+      "cohort_fingerprints": [
+        "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+      ],
+      "mean_deg": 4.271668338702637,
+      "std_deg": 0.006667330810176904,
+      "delta_vs_reference_deg": -0.05801238643057438
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "reference": "outputs/v9_confirm/k8_combined",
+  "candidates": {
+    "control": {
+      "output": "outputs/v10_fast_check100/control",
+      "overrides": {}
+    }
+  }
+}

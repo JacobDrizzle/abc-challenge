@@ -1,0 +1,49 @@
+{
+  "selection_rule": "Lowest full stride-1 validation mean step-20 geodesic error; seed breaks ties",
+  "selected_seed": 42,
+  "checkpoint_sha256": "1857d399d6d31dc26d4a6e1a79b7d52fd43b8bc39c5fcbccbf1d42af864bc853",
+  "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51",
+  "split_sha256": "721a704c7f3a3b2da74acacdc992fb861d0b2adb7a7b5de3145bd1a5a575c86d",
+  "validation_candidates": [
+    {
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "1857d399d6d31dc26d4a6e1a79b7d52fd43b8bc39c5fcbccbf1d42af864bc853",
+      "validation_endpoint_deg": 4.247104990427709,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "seed": 43,
+      "checkpoint": "seed_43/best.pt",
+      "checkpoint_sha256": "9e10a50d4209d37fdd1de5c1d7d10f3cfe7e820c60d7adc65b995bbdf08ce0da",
+      "validation_endpoint_deg": 4.25472255588162,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "seed": 44,
+      "checkpoint": "seed_44/best.pt",
+      "checkpoint_sha256": "2e5e27ad797fc886cb7a8f8437306c2e85f6d17c6e06e13745696a9159115ea8",
+      "validation_endpoint_deg": 4.248472441691232,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    }
+  ],
+  "evaluated_seeds": [
+    42,
+    43,
+    44
+  ],
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu118",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "11.8"
+  },
+  "test_receipt": "Written separately after successful test evaluation"
+}

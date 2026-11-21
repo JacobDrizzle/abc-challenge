@@ -1,0 +1,229 @@
+{
+  "suite": {
+    "version": 1,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "variants": {
+      "control": {},
+      "no_gravity": {
+        "gravity_features": false
+      },
+      "no_mirror": {
+        "mirror_equivariant": false
+      },
+      "plain": {
+        "gravity_features": false,
+        "mirror_equivariant": false
+      },
+      "narrow": {
+        "channels": 32
+      }
+    },
+    "baseline_lags": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "baseline_tau_ms": [
+      25,
+      50,
+      100,
+      200,
+      500,
+      null
+    ]
+  },
+  "configs": {
+    "control": {
+      "effective_context": 256,
+      "velocity_features": false,
+      "loss_kind": "quaternion",
+      "endpoint_weight": 0.5,
+      "damped_prior_tau_ms": 100,
+      "ema_decay": 0.999,
+      "data_on_device": true,
+      "input_features": "body_velocity",
+      "num_blocks": 7,
+      "context": 400,
+      "horizon": 20,
+      "channels": 48,
+      "dropout": 0.1,
+      "batch_size": 256,
+      "steps_per_epoch": 1000,
+      "epochs": 40,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "patience": 10,
+      "minimum_improvement_deg": 0.005,
+      "validation_stride": 5,
+      "workers": 0,
+      "cache_mb_per_worker": 0,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "gravity_features": true,
+      "mirror_equivariant": true
+    },
+    "no_gravity": {
+      "effective_context": 256,
+      "velocity_features": false,
+      "loss_kind": "quaternion",
+      "endpoint_weight": 0.5,
+      "damped_prior_tau_ms": 100,
+      "ema_decay": 0.999,
+      "data_on_device": true,
+      "input_features": "body_velocity",
+      "num_blocks": 7,
+      "context": 400,
+      "horizon": 20,
+      "channels": 48,
+      "dropout": 0.1,
+      "batch_size": 256,
+      "steps_per_epoch": 1000,
+      "epochs": 40,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "patience": 10,
+      "minimum_improvement_deg": 0.005,
+      "validation_stride": 5,
+      "workers": 0,
+      "cache_mb_per_worker": 0,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "gravity_features": false,
+      "mirror_equivariant": true
+    },
+    "no_mirror": {
+      "effective_context": 256,
+      "velocity_features": false,
+      "loss_kind": "quaternion",
+      "endpoint_weight": 0.5,
+      "damped_prior_tau_ms": 100,
+      "ema_decay": 0.999,
+      "data_on_device": true,
+      "input_features": "body_velocity",
+      "num_blocks": 7,
+      "context": 400,
+      "horizon": 20,
+      "channels": 48,
+      "dropout": 0.1,
+      "batch_size": 256,
+      "steps_per_epoch": 1000,
+      "epochs": 40,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "patience": 10,
+      "minimum_improvement_deg": 0.005,
+      "validation_stride": 5,
+      "workers": 0,
+      "cache_mb_per_worker": 0,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "gravity_features": true,
+      "mirror_equivariant": false
+    },
+    "plain": {
+      "effective_context": 256,
+      "velocity_features": false,
+      "loss_kind": "quaternion",
+      "endpoint_weight": 0.5,
+      "damped_prior_tau_ms": 100,
+      "ema_decay": 0.999,
+      "data_on_device": true,
+      "input_features": "body_velocity",
+      "num_blocks": 7,
+      "context": 400,
+      "horizon": 20,
+      "channels": 48,
+      "dropout": 0.1,
+      "batch_size": 256,
+      "steps_per_epoch": 1000,
+      "epochs": 40,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "patience": 10,
+      "minimum_improvement_deg": 0.005,
+      "validation_stride": 5,
+      "workers": 0,
+      "cache_mb_per_worker": 0,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "gravity_features": false,
+      "mirror_equivariant": false
+    },
+    "narrow": {
+      "effective_context": 256,
+      "velocity_features": false,
+      "loss_kind": "quaternion",
+      "endpoint_weight": 0.5,
+      "damped_prior_tau_ms": 100,
+      "ema_decay": 0.999,
+      "data_on_device": true,
+      "input_features": "body_velocity",
+      "num_blocks": 7,
+      "context": 400,
+      "horizon": 20,
+      "channels": 32,
+      "dropout": 0.1,
+      "batch_size": 256,
+      "steps_per_epoch": 1000,
+      "epochs": 40,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "patience": 10,
+      "minimum_improvement_deg": 0.005,
+      "validation_stride": 5,
+      "workers": 0,
+      "cache_mb_per_worker": 0,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "gravity_features": true,
+      "mirror_equivariant": true
+    }
+  },
+  "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51",
+  "split_sha256": "721a704c7f3a3b2da74acacdc992fb861d0b2adb7a7b5de3145bd1a5a575c86d",
+  "device": "cuda",
+  "recipe": null,
+  "code_sha256": {
+    "train_tcnn.py": "fc836bc02561f6b5b004c0ecbb33ef13fbf41405e4ab5abfe17174c78783fc16",
+    "run_desktop.py": "bdec1d6e2b896e577eac2b72423c0d5f7e39e36c37978b9c47f653128fa00509",
+    "tcnn/model.py": "8a2967aeda64df139c0941489ae73c8d42e64146d59bf8de4f0a51fe54d2026a",
+    "tcnn/data.py": "d81508160d0ad847e0b377a7d926ec1d8714570a54e12eea85ab990c86f2f414",
+    "baseline_pipeline.py": "f41449832a0e7fe20103e99010ac373f4b3f15cb46ca4c5f14f6daef1c612c8c",
+    "tcnn_model_adapter.py": "a7648470c88adae8818522ea38da63c387b053b587e91aff72734f8f3ea5ea78",
+    "tcnn/configuration.py": "03704ee2b2ded7b5cfaede6d49f69b9716f2ce3b2486edbb64da472ea1ee91f8",
+    "tcnn/runtime.py": "6b8286a1b2240a3c790df853725c91bff54baac8ef26f53859fd63e04a6a52ab",
+    "experimental/v6_gravity_mirror/__init__.py": "0d438766dac9732f77ceaa241493a8d6922dbf6572bac70e9dedb34ab7b26234",
+    "experimental/v6_gravity_mirror/configuration.py": "7e5f90ebc74e17e22b9b3ca37730bd3a5a566a3b6a5ff690f0c51bd8218cb259",
+    "experimental/v6_gravity_mirror/export.py": "df0c64ac07e9dddbd0dbad9155bc142ac2785b2ec079c6d33b782b5a0b36c0bf",
+    "experimental/v6_gravity_mirror/hooks.py": "42fe5b492f700d5467820cb0875354c8572067d2c7e265acef24c5f9379356b8",
+    "experimental/v6_gravity_mirror/model.py": "2211693add4d913b6c0aeab4606884bbde273bc81129ff8640e9bde43321d871",
+    "run_next.py": "eaf0c19928538f0642ba3625c6198558c24e15225d11f2a9e5d110fb1cb0181d",
+    "tune_damped_baseline.py": "fdf933b64c2250be3e2df885f4e67ddf772e87e7273561ed270e8b41d932b51f",
+    "tcnn/damped.py": "49b25c74a9f1f59780e211c180c2ed9c3d29091a4cd299659a49325f3d092f7c"
+  }
+}

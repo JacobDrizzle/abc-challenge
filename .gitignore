@@ -1,0 +1,66 @@
+# Raw BOXRR-23 recordings and the data pipeline's local copies: never commit these (data use agreement)
+*.xror
+ray/saved/
+ray/cache/
+/users/
+
+# Per-run manifests written next to harvested results (jacob/ablations/results/*/manifest.json); the curated
+# manifests are committed under other names (ray/manifests/, Submission/.../weights/)
+manifest.json
+
+# Python environments and generated files
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Development caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# Datasets and experiment artifacts
+data/
+checkpoints/
+outputs/
+runs/
+wandb/
+mlruns/
+
+# Trained models and large data files
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.safetensors
+*.tflite
+
+# Personal scratch space (Nic)
+nic_scratch/
+
+# Local AI-tool folders (session data, plans, browser automation)
+.claude/
+.codex/
+.playwright-mcp/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Team benchmark: local per-window errors (bench/results/ is committed)
+bench_runs/
+
+# Challenge paper: local LaTeX draft and its zip (kept out of the repo)
+papers/

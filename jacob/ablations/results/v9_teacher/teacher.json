@@ -1,0 +1,23 @@
+{
+  "windows_fingerprint": "4bbd2b28a48406b13504b6951e93f04933f4c739ef7b5bea99de3caf8443cf30",
+  "shape": [
+    3844021,
+    20,
+    3
+  ],
+  "sha256": "0b4f5803d13acfd52c82a5a3e617dc905f12be8160d87da40ec02a447e64cbbf",
+  "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51",
+  "split_sha256": "721a704c7f3a3b2da74acacdc992fb861d0b2adb7a7b5de3145bd1a5a575c86d",
+  "rule": "Sign-aligned mean of unit quaternions [B, H, 4], renormalised (the chordal mean; C0's rule).",
+  "teachers": {
+    "outputs/v8_recipe_sep_base3_addons/angular_loss/seed_42/best.pt": "55bb41d8084ce86064b44bf129f31af46614d94cae0792816f45780bc1f789cb",
+    "outputs/v8_recipe_sep_base3_addons/angular_loss/seed_43/best.pt": "dd2f7bcd743e63a58dbd9bf70d976a063c4ead7bf67380c9e3d395392f960f9a",
+    "outputs/v8_recipe_sep_base3_addons/angular_loss/seed_44/best.pt": "7ed0e5317caa6cdbf1864a3066438f918b50ff38860bebc6f0094062e5731775",
+    "outputs/v8_recipe_base3_5_addons/angular_loss/seed_42/best.pt": "3c0f32951c9d6b81e2cbe9df7c0998cbadcd4b4ea3ad4f1549ec45415d5502c8",
+    "outputs/v8_recipe_base3_5_addons/angular_loss/seed_43/best.pt": "29aca7905ba6ce25122d516cc64d4a5054e7d95e5d7e45c8f2abcf73559c9962",
+    "outputs/v8_recipe_base3_5_addons/angular_loss/seed_44/best.pt": "bb8c569531e4dbbb98c7a390daa08fb12ab3f936c434cec83aa14f8a7e103bac",
+    "outputs/v6_group_a_v2/control/seed_42/best.pt": "505eca93ce980b78999e49cbb591f731d2eb0fa51cff0e183bb368087ccfda79",
+    "outputs/v6_group_a_v2/control/seed_43/best.pt": "5838315b89c2d04acdd71b1887b43533f819183b0979a9f9e1914eee081efefc",
+    "outputs/v6_group_a_v2/control/seed_44/best.pt": "b819e04c5c55b5e056a41f4cd40a7cc8e21ce6f84908df57c631b4b49c7caaf5"
+  }
+}

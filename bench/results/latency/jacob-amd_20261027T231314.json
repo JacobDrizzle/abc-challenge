@@ -1,0 +1,210 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "jacob-amd",
+ "created_utc": "2026-10-27T23:13:14.862784+00:00",
+ "machine": {
+  "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "machine": "AMD64",
+  "os": "Windows-11-10.0.26200-SP0",
+  "logical_cores": 24,
+  "python": "3.12.10",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "v7_sep_base3_addons_angular_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons_angular\\model_fp32_stream.onnx",
+   "onnx_sha256": "d9f48aa1f25e81371ca64c34757375e2e6be6b614755a8dcda80eca1a8c83e49",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.08889997843652964,
+     "mean_ms": 0.09872063301736489,
+     "p90_ms": 0.13111000880599022,
+     "p99_ms": 0.17700200900435442,
+     "min_ms": 0.08369999704882503,
+     "max_ms": 0.8359000203199685
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.13099994976073503,
+     "mean_ms": 0.12186920018090557,
+     "p90_ms": 0.14750001719221473,
+     "p99_ms": 0.1704019593307748,
+     "min_ms": 0.09109999518841505,
+     "max_ms": 0.547099974937737
+    }
+   }
+  },
+  "v7_base3_5_addons_angular_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\base3_5_addons_angular\\model_fp32_stream.onnx",
+   "onnx_sha256": "b9ee40502cdd8c172b976e5fb99497de3f115ec6f15e045169a7c804890f0357",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.08919998072087765,
+     "mean_ms": 0.09157649986445904,
+     "p90_ms": 0.09379996336065233,
+     "p99_ms": 0.15660502773243923,
+     "min_ms": 0.08549995254725218,
+     "max_ms": 0.19039999460801482
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09139999747276306,
+     "mean_ms": 0.09808036681109418,
+     "p90_ms": 0.13100000796839595,
+     "p99_ms": 0.14450099435634908,
+     "min_ms": 0.0885000335983932,
+     "max_ms": 0.18350000027567148
+    }
+   }
+  },
+  "v6_control_v7graph_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\v6_control_v7graph\\model_fp32_stream.onnx",
+   "onnx_sha256": "599f490d1a82f28705400f2a14162208309addf58bd36eb109a9c2afbea15575",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.1047999830916524,
+     "mean_ms": 0.11141543288249522,
+     "p90_ms": 0.14126002206467086,
+     "p99_ms": 0.1862020208500325,
+     "min_ms": 0.1002000062726438,
+     "max_ms": 0.35450002178549767
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.10840001050382853,
+     "mean_ms": 0.1154441333298261,
+     "p90_ms": 0.14693001285195348,
+     "p99_ms": 0.2004039549501612,
+     "min_ms": 0.10340003063902259,
+     "max_ms": 0.4202999989502132
+    }
+   }
+  },
+  "v6_tcnn_ga2": {
+   "onnx": "jacob\\models\\tcnn_v6_ga2_stream.onnx",
+   "onnx_sha256": "cf065dd37603859b90fad822dd94a8e816ed92dae217dc32e4b7a0dc7ab8fd5e",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.12030004290863872,
+     "mean_ms": 0.12300656660227105,
+     "p90_ms": 0.1264100254047662,
+     "p99_ms": 0.1946020266041159,
+     "min_ms": 0.11539994738996029,
+     "max_ms": 0.22089999401941895
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.1750999945215881,
+     "mean_ms": 0.16143963390883678,
+     "p90_ms": 0.18179999315179884,
+     "p99_ms": 0.208800018299371,
+     "min_ms": 0.1230000052601099,
+     "max_ms": 0.39679999463260174
+    }
+   }
+  },
+  "v5_tcnn_ga2": {
+   "onnx": "jacob\\models\\tcnn_v5_ga2_stream.onnx",
+   "onnx_sha256": "c746ce1611bbbbaa0af6a50d5dd0e76fd0f2807c353f48bc62a24b0a4c72d518",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09220000356435776,
+     "mean_ms": 0.09571419991940881,
+     "p90_ms": 0.10040000779554248,
+     "p99_ms": 0.17280303523875765,
+     "min_ms": 0.0885000335983932,
+     "max_ms": 0.3662999952211976
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09499996667727828,
+     "mean_ms": 0.0997131669234174,
+     "p90_ms": 0.10969996801577508,
+     "p99_ms": 0.16260401578620068,
+     "min_ms": 0.09250000584870577,
+     "max_ms": 0.19039999460801482
+    }
+   }
+  },
+  "nic_ga2_gru_s45": {
+   "onnx": "nic\\models\\group_a_v2\\s45\\gru_stateful_window.onnx",
+   "onnx_sha256": "6f4894a119e321939f7ad50bd9395dadeeae5540e8f6391da7e439386cf72e95",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.023200002033263445,
+     "mean_ms": 0.02365756667374323,
+     "p90_ms": 0.023900007363408804,
+     "p99_ms": 0.035004975507035734,
+     "min_ms": 0.021799991372972727,
+     "max_ms": 0.09310001041740179
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.02370000584051013,
+     "mean_ms": 0.025279766608340044,
+     "p90_ms": 0.027909979689866294,
+     "p99_ms": 0.04800295806489878,
+     "min_ms": 0.02239999594166875,
+     "max_ms": 0.1503999810665846
+    }
+   }
+  },
+  "nic_ga2_gadst_s42": {
+   "onnx": "nic\\models\\group_a_v2\\s42\\gadst.onnx",
+   "onnx_sha256": "778fc4d4d762ad58f0c2656472e2bee7e476a6f0ec32bbb85c853d9356feaddf",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.17019995721057057,
+     "mean_ms": 0.17755586622903743,
+     "p90_ms": 0.19589998410083354,
+     "p99_ms": 0.2834030042868107,
+     "min_ms": 0.16120000509545207,
+     "max_ms": 0.387399981264025
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.2552999649196863,
+     "mean_ms": 0.24578020044524843,
+     "p90_ms": 0.2638100238982588,
+     "p99_ms": 0.34829997457563877,
+     "min_ms": 0.1797000295482576,
+     "max_ms": 0.5934999790042639
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": "daa253356e001261319c1a2a9346360ccd58aa85",
+  "dirty": false
+ }
+}

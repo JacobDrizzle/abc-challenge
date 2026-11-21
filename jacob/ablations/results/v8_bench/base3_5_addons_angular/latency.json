@@ -1,0 +1,146 @@
+{
+  "created_utc": "2026-10-27T19:41:15.521908+00:00",
+  "checkpoint": "outputs\\v8_recipe_base3_5_addons\\angular_loss\\selected_model.pt",
+  "protocol": {
+    "batch_size": 1,
+    "warmup": 200,
+    "runs": 3000,
+    "rounds": 3,
+    "threads": [
+      1
+    ],
+    "stream": "validation users in <repo>\\data\\h5\\qualified_head_100hz_20261026_131953.h5",
+    "timed": "session.run per call, window slides by one sample"
+  },
+  "machine": {
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 24,
+    "onnxruntime": "1.31.0",
+    "torch": "2.7.1+cu118"
+  },
+  "model_spec": {
+    "context": 400,
+    "horizon": 20,
+    "channels": 48,
+    "dropout": 0.1,
+    "effective_context": 256,
+    "velocity_features": false,
+    "damped_prior_tau_ms": 100,
+    "input_features": "body_velocity",
+    "num_blocks": 5,
+    "gravity_features": true,
+    "mirror_equivariant": true,
+    "dilation_base": 3,
+    "separable": false,
+    "head_basis": 3,
+    "speed_feature": "l1"
+  },
+  "context": 400,
+  "effective_context": 256,
+  "opset": 17,
+  "trainable_parameters": 17811,
+  "variants": {
+    "stream": {
+      "onnx": "outputs\\v8_bench\\base3_5_addons_angular\\model_fp32_stream.onnx",
+      "onnx_bytes": 95721,
+      "options": {
+        "stateful": true
+      },
+      "state_shapes": [
+        [
+          2,
+          24,
+          2
+        ],
+        [
+          2,
+          24,
+          6
+        ],
+        [
+          2,
+          24,
+          18
+        ],
+        [
+          2,
+          24,
+          54
+        ],
+        [
+          2,
+          24,
+          162
+        ]
+      ],
+      "state_floats": 11616,
+      "description": "stateful: one new sample per call, per-layer inputs cached as state (no trig ops)",
+      "macs_per_step": {
+        "total": 36183,
+        "by_operator": {
+          "MatMul": 1287,
+          "Conv": 34896
+        }
+      },
+      "operators": {
+        "counts": {
+          "Constant": 131,
+          "Slice": 23,
+          "Mul": 23,
+          "Add": 21,
+          "Concat": 18,
+          "MatMul": 12,
+          "Relu": 12,
+          "Reshape": 9,
+          "Conv": 6,
+          "Clip": 1
+        },
+        "safe": [
+          "Add",
+          "Clip",
+          "Concat",
+          "Conv",
+          "MatMul",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice"
+        ],
+        "avoid": [],
+        "other": [],
+        "slow_on_npu": [],
+        "float64_tensors": []
+      },
+      "parity": {
+        "windows": 1000,
+        "max_difference_deg": 6.640009814911449e-05,
+        "mean_difference_deg": 4.949859909325713e-06,
+        "pytorch_endpoint_error_deg": 3.1959033612729044,
+        "onnx_endpoint_error_deg": 3.1959032198337245,
+        "finite": true,
+        "output_shape": [
+          1,
+          20,
+          4
+        ],
+        "note": "one session streamed from its first sample"
+      }
+    }
+  },
+  "latency": [
+    {
+      "model": "stream",
+      "threads": 1,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.0877000275067985,
+      "mean_ms": 0.09048513351202321,
+      "p90_ms": 0.09270000737160444,
+      "p99_ms": 0.13500300934538237,
+      "min_ms": 0.08569998317398131,
+      "max_ms": 0.26929998421110213,
+      "calls_per_second": 11402.504975525579
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "complete": false,
+  "rows": [
+    {
+      "variant": "users_100_half",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "cc432cd16e163e19bface12a4535280cf720addbbb28742b9193c5bc775a0870",
+      "validation_endpoint_deg": 4.268296091537321,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "users_50",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "74a85cce9198cf602f39b99cd95a8d4e22c09b2744cf85223e21b634bd8bcd31",
+      "validation_endpoint_deg": 4.276251691562482,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "users_25",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "ee6c99d80e5b24323906793975cf222db68202c4ac97ee00625f88f30088bca5",
+      "validation_endpoint_deg": 4.3271551149318634,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "plan": {
+    "version": 1,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "reference": "outputs/v10_k8_800users/control",
+    "candidates": {
+      "full_pass": {
+        "output": "outputs/v10_k8_800users_full_pass/full_pass",
+        "overrides": {
+          "steps_per_epoch": 3162
+        }
+      }
+    }
+  },
+  "reference": null,
+  "rows": [
+    {
+      "candidate": "full_pass",
+      "params": 7555,
+      "selected_seed": 44,
+      "scores": {
+        "42": 4.411100967788365,
+        "43": 4.40563696129901,
+        "44": 4.403628579547263
+      },
+      "cohort_fingerprints": [
+        "809e80aea87b0d07db0142f6978a4edd497d95409ff14c96df27fb0fe1adcbea"
+      ],
+      "mean_deg": 4.406788836211546,
+      "std_deg": 0.003867073618000943,
+      "delta_vs_reference_deg": null
+    }
+  ]
+}

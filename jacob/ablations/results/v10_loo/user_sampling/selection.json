@@ -1,0 +1,49 @@
+{
+  "selection_rule": "Lowest full stride-1 validation mean step-20 geodesic error; seed breaks ties",
+  "selected_seed": 44,
+  "checkpoint_sha256": "0f619f2039b5cbf8ac469619b1deebef622171c0ee5c48c3377f8ef3eb339172",
+  "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51",
+  "split_sha256": "721a704c7f3a3b2da74acacdc992fb861d0b2adb7a7b5de3145bd1a5a575c86d",
+  "validation_candidates": [
+    {
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "7d678500724d72fc51e24db2b495a9b9014f24d478440f0fd5ceb17d19581e9d",
+      "validation_endpoint_deg": 4.279034624539626,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "seed": 43,
+      "checkpoint": "seed_43/best.pt",
+      "checkpoint_sha256": "bf15f28c26d5396872f2ed851b812544f525347623f652ee6075afd18ae7a018",
+      "validation_endpoint_deg": 4.276317463826031,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "seed": 44,
+      "checkpoint": "seed_44/best.pt",
+      "checkpoint_sha256": "0f619f2039b5cbf8ac469619b1deebef622171c0ee5c48c3377f8ef3eb339172",
+      "validation_endpoint_deg": 4.269175120189751,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    }
+  ],
+  "evaluated_seeds": [
+    42,
+    43,
+    44
+  ],
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu118",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "11.8"
+  },
+  "test_receipt": "Written separately after successful test evaluation"
+}

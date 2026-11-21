@@ -1,0 +1,59 @@
+{
+ "stride": 5,
+ "windows": 131459,
+ "first_pose_tilt_deg": {
+  "median": 9.643726348876953,
+  "min": 1.3978779315948486,
+  "max": 38.79758071899414
+ },
+ "models": {
+  "sep+angular s44": {
+   "checkpoint": "v8_recipe_sep_base3_addons/angular_loss/seed_44/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "v9 control s42": {
+   "checkpoint": "v9_screen/control/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  },
+  "v9 tilt_15 s42": {
+   "checkpoint": "v9_screen/tilt_15/seed_42/best.pt",
+   "gravity": true,
+   "mirror": true
+  }
+ },
+ "results": {
+  "identity": {
+   "damped velocity (baseline)": 5.049710003106418,
+   "sep+angular s44": 4.3144687287188965,
+   "v9 control s42": 4.339006497542255,
+   "v9 tilt_15 s42": 4.330081445721595
+  },
+  "world tilted 5 deg": {
+   "damped velocity (baseline)": 5.049709985683454,
+   "sep+angular s44": 4.314366176926817,
+   "v9 control s42": 4.338028485613406,
+   "v9 tilt_15 s42": 4.333515563755038
+  },
+  "world tilted 15 deg": {
+   "damped velocity (baseline)": 5.049709959593439,
+   "sep+angular s44": 4.3734126371625734,
+   "v9 control s42": 4.3984457889697595,
+   "v9 tilt_15 s42": 4.3819907918742125
+  },
+  "z-up world (up axis off by 90 deg)": {
+   "damped velocity (baseline)": 5.049709987667518,
+   "sep+angular s44": 5.230312974718959,
+   "v9 control s42": 5.621624425757091,
+   "v9 tilt_15 s42": 5.363831542627464
+  },
+  "ROS/ENU (z-up, x fwd, y left)": {
+   "damped velocity (baseline)": 5.049710015944998,
+   "sep+angular s44": 4.712450741418178,
+   "v9 control s42": 4.734576822950793,
+   "v9 tilt_15 s42": 4.748246544473801
+  }
+ },
+ "table_md": "| Stream convention | damped velocity (baseline) | sep+angular s44 | v9 control s42 | v9 tilt_15 s42 |\n| --- | ---: | ---: | ---: | ---: |\n| identity (BOXRR/Unity) | 5.0497 | 4.3145 | 4.3390 | 4.3301 |\n| world tilted 5 deg | -0.0000 | -0.0001 | -0.0010 | +0.0034 |\n| world tilted 15 deg | -0.0000 | +0.0589 | +0.0594 | +0.0519 |\n| z-up world (up axis off by 90 deg) | -0.0000 | +0.9158 | +1.2826 | +1.0338 |\n| ROS/ENU (z-up, x fwd, y left) | +0.0000 | +0.3980 | +0.3956 | +0.4182 |"
+}

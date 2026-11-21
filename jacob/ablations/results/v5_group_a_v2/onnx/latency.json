@@ -1,0 +1,636 @@
+{
+  "created_utc": "2026-10-26T20:32:44.755590+00:00",
+  "checkpoint": "outputs\\v5_group_a_v2\\selected_model.pt",
+  "protocol": {
+    "batch_size": 1,
+    "warmup": 200,
+    "runs": 3000,
+    "rounds": 3,
+    "threads": [
+      1,
+      4
+    ],
+    "stream": "validation users in <repo>\\data\\h5\\qualified_head_100hz_20261026_131953.h5",
+    "timed": "session.run per call, window slides by one sample"
+  },
+  "machine": {
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 24,
+    "onnxruntime": "1.31.0",
+    "torch": "2.7.1+cu118"
+  },
+  "model_spec": {
+    "context": 400,
+    "horizon": 20,
+    "channels": 48,
+    "dropout": 0.1,
+    "effective_context": 256,
+    "velocity_features": false,
+    "damped_prior_tau_ms": 100,
+    "input_features": "body_velocity",
+    "num_blocks": 7
+  },
+  "context": 400,
+  "effective_context": 256,
+  "opset": 17,
+  "trainable_parameters": 51900,
+  "variants": {
+    "stream": {
+      "onnx": "outputs\\v5_group_a_v2\\onnx\\model_fp32_stream.onnx",
+      "onnx_bytes": 228455,
+      "options": {
+        "stateful": true
+      },
+      "state_shapes": [
+        [
+          1,
+          48,
+          2
+        ],
+        [
+          1,
+          48,
+          4
+        ],
+        [
+          1,
+          48,
+          8
+        ],
+        [
+          1,
+          48,
+          16
+        ],
+        [
+          1,
+          48,
+          32
+        ],
+        [
+          1,
+          48,
+          64
+        ],
+        [
+          1,
+          48,
+          128
+        ]
+      ],
+      "state_floats": 12192,
+      "description": "stateful: one new sample per call, per-layer inputs cached as state (no trig ops)",
+      "macs_per_step": {
+        "total": 51920,
+        "by_operator": {
+          "MatMul": 464,
+          "Conv": 48576,
+          "Gemm": 2880
+        }
+      },
+      "operators": {
+        "counts": {
+          "Constant": 93,
+          "Mul": 30,
+          "Add": 22,
+          "Relu": 15,
+          "Slice": 13,
+          "Concat": 9,
+          "Conv": 8,
+          "Reshape": 7,
+          "Div": 6,
+          "Clip": 5,
+          "MatMul": 4,
+          "ReduceSum": 4,
+          "Where": 3,
+          "Sqrt": 3,
+          "Less": 1,
+          "LessOrEqual": 1,
+          "Sub": 1,
+          "Gemm": 1
+        },
+        "safe": [
+          "Add",
+          "Clip",
+          "Concat",
+          "Conv",
+          "Gemm",
+          "MatMul",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice"
+        ],
+        "avoid": [],
+        "other": [
+          "Div",
+          "Less",
+          "LessOrEqual",
+          "ReduceSum",
+          "Sqrt",
+          "Sub",
+          "Where"
+        ],
+        "slow_on_npu": [],
+        "float64_tensors": []
+      },
+      "parity": {
+        "windows": 1000,
+        "max_difference_deg": 0.00010703100066619228,
+        "mean_difference_deg": 4.889909447749163e-06,
+        "pytorch_endpoint_error_deg": 3.3058926660683428,
+        "onnx_endpoint_error_deg": 3.3058922982498915,
+        "finite": true,
+        "output_shape": [
+          1,
+          20,
+          4
+        ],
+        "note": "one session streamed from its first sample"
+      }
+    },
+    "full": {
+      "onnx": "outputs\\v5_group_a_v2\\onnx\\model_fp32_full.onnx",
+      "onnx_bytes": 285117,
+      "options": {},
+      "description": "every layer computes all time steps (the trained graph as written)",
+      "macs_per_step": {
+        "total": 12438336,
+        "by_operator": {
+          "Conv": 12435456,
+          "Gemm": 2880
+        }
+      },
+      "operators": {
+        "counts": {
+          "Constant": 140,
+          "Mul": 47,
+          "Slice": 27,
+          "Add": 21,
+          "Relu": 15,
+          "Concat": 13,
+          "Sub": 13,
+          "Div": 11,
+          "Conv": 8,
+          "ReduceSum": 7,
+          "Sqrt": 7,
+          "Clip": 7,
+          "Where": 3,
+          "Greater": 2,
+          "Reshape": 2,
+          "Neg": 1,
+          "Less": 1,
+          "Atan": 1,
+          "Transpose": 1,
+          "Gemm": 1,
+          "Sin": 1,
+          "Cos": 1
+        },
+        "safe": [
+          "Add",
+          "Clip",
+          "Concat",
+          "Conv",
+          "Gemm",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice",
+          "Transpose"
+        ],
+        "avoid": [],
+        "other": [
+          "Atan",
+          "Cos",
+          "Div",
+          "Greater",
+          "Less",
+          "Neg",
+          "ReduceSum",
+          "Sin",
+          "Sqrt",
+          "Sub",
+          "Where"
+        ],
+        "slow_on_npu": [
+          "Atan",
+          "Cos",
+          "Sin"
+        ],
+        "float64_tensors": []
+      },
+      "parity": {
+        "windows": 1000,
+        "max_difference_deg": 0.0001263295004477421,
+        "mean_difference_deg": 2.631926693749024e-06,
+        "pytorch_endpoint_error_deg": 4.397375088888444,
+        "onnx_endpoint_error_deg": 4.397375167707209,
+        "finite": true,
+        "output_shape": [
+          1,
+          20,
+          4
+        ]
+      }
+    },
+    "strided": {
+      "onnx": "outputs\\v5_group_a_v2\\onnx\\model_fp32_strided.onnx",
+      "onnx_bytes": 240999,
+      "options": {
+        "strided": true
+      },
+      "description": "each layer computes only the time steps the prediction depends on (stride-2 Conv)",
+      "macs_per_step": {
+        "total": 1807680,
+        "by_operator": {
+          "Conv": 1804800,
+          "Gemm": 2880
+        }
+      },
+      "operators": {
+        "counts": {
+          "Constant": 168,
+          "Mul": 47,
+          "Slice": 34,
+          "Add": 21,
+          "Relu": 15,
+          "Concat": 13,
+          "Sub": 13,
+          "Div": 11,
+          "Conv": 8,
+          "ReduceSum": 7,
+          "Sqrt": 7,
+          "Clip": 7,
+          "Where": 3,
+          "Greater": 2,
+          "Reshape": 2,
+          "Neg": 1,
+          "Less": 1,
+          "Atan": 1,
+          "Transpose": 1,
+          "Gemm": 1,
+          "Sin": 1,
+          "Cos": 1
+        },
+        "safe": [
+          "Add",
+          "Clip",
+          "Concat",
+          "Conv",
+          "Gemm",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice",
+          "Transpose"
+        ],
+        "avoid": [],
+        "other": [
+          "Atan",
+          "Cos",
+          "Div",
+          "Greater",
+          "Less",
+          "Neg",
+          "ReduceSum",
+          "Sin",
+          "Sqrt",
+          "Sub",
+          "Where"
+        ],
+        "slow_on_npu": [
+          "Atan",
+          "Cos",
+          "Sin"
+        ],
+        "float64_tensors": []
+      },
+      "parity": {
+        "windows": 1000,
+        "max_difference_deg": 0.00012633933041563376,
+        "mean_difference_deg": 2.6278114940591115e-06,
+        "pytorch_endpoint_error_deg": 4.397375088888444,
+        "onnx_endpoint_error_deg": 4.397375155204968,
+        "finite": true,
+        "output_shape": [
+          1,
+          20,
+          4
+        ]
+      }
+    },
+    "fast": {
+      "onnx": "outputs\\v5_group_a_v2\\onnx\\model_fp32_fast.onnx",
+      "onnx_bytes": 226806,
+      "options": {
+        "strided": true,
+        "compact": true
+      },
+      "description": "strided, plus quaternion products as MatMul and zero padding inside Conv",
+      "macs_per_step": {
+        "total": 1828464,
+        "by_operator": {
+          "MatMul": 20784,
+          "Conv": 1804800,
+          "Gemm": 2880
+        }
+      },
+      "operators": {
+        "counts": {
+          "Constant": 94,
+          "Slice": 16,
+          "Relu": 15,
+          "Mul": 14,
+          "Div": 10,
+          "Add": 9,
+          "Conv": 8,
+          "Reshape": 6,
+          "ReduceSum": 6,
+          "Sqrt": 6,
+          "Clip": 6,
+          "MatMul": 4,
+          "Where": 3,
+          "Concat": 3,
+          "Greater": 2,
+          "Less": 1,
+          "Atan": 1,
+          "Transpose": 1,
+          "Gemm": 1,
+          "Sin": 1,
+          "Sub": 1,
+          "Cos": 1
+        },
+        "safe": [
+          "Add",
+          "Clip",
+          "Concat",
+          "Conv",
+          "Gemm",
+          "MatMul",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice",
+          "Transpose"
+        ],
+        "avoid": [],
+        "other": [
+          "Atan",
+          "Cos",
+          "Div",
+          "Greater",
+          "Less",
+          "ReduceSum",
+          "Sin",
+          "Sqrt",
+          "Sub",
+          "Where"
+        ],
+        "slow_on_npu": [
+          "Atan",
+          "Cos",
+          "Sin"
+        ],
+        "float64_tensors": []
+      },
+      "parity": {
+        "windows": 1000,
+        "max_difference_deg": 0.00021004348932434136,
+        "mean_difference_deg": 6.075967961316621e-06,
+        "pytorch_endpoint_error_deg": 4.397375088888444,
+        "onnx_endpoint_error_deg": 4.397375005388948,
+        "finite": true,
+        "output_shape": [
+          1,
+          20,
+          4
+        ]
+      }
+    },
+    "fast_notrig": {
+      "onnx": "outputs\\v5_group_a_v2\\onnx\\model_fp32_fast_notrig.onnx",
+      "onnx_bytes": 229454,
+      "options": {
+        "strided": true,
+        "compact": true,
+        "trig_free": true
+      },
+      "description": "fast, with atan/sin/cos as Mul/Add polynomials: no trigonometric operators",
+      "macs_per_step": {
+        "total": 1828464,
+        "by_operator": {
+          "MatMul": 20784,
+          "Conv": 1804800,
+          "Gemm": 2880
+        }
+      },
+      "operators": {
+        "counts": {
+          "Constant": 110,
+          "Mul": 30,
+          "Add": 22,
+          "Slice": 17,
+          "Relu": 15,
+          "Conv": 8,
+          "Div": 7,
+          "Reshape": 6,
+          "Clip": 5,
+          "MatMul": 4,
+          "ReduceSum": 4,
+          "Where": 3,
+          "Sqrt": 3,
+          "Concat": 3,
+          "Less": 1,
+          "LessOrEqual": 1,
+          "Sub": 1,
+          "Transpose": 1,
+          "Gemm": 1
+        },
+        "safe": [
+          "Add",
+          "Clip",
+          "Concat",
+          "Conv",
+          "Gemm",
+          "MatMul",
+          "Mul",
+          "Relu",
+          "Reshape",
+          "Slice",
+          "Transpose"
+        ],
+        "avoid": [],
+        "other": [
+          "Div",
+          "Less",
+          "LessOrEqual",
+          "ReduceSum",
+          "Sqrt",
+          "Sub",
+          "Where"
+        ],
+        "slow_on_npu": [],
+        "float64_tensors": []
+      },
+      "parity": {
+        "windows": 1000,
+        "max_difference_deg": 0.00021005264693733596,
+        "mean_difference_deg": 6.081038494711727e-06,
+        "pytorch_endpoint_error_deg": 4.397375088888444,
+        "onnx_endpoint_error_deg": 4.397375020037811,
+        "finite": true,
+        "output_shape": [
+          1,
+          20,
+          4
+        ]
+      }
+    }
+  },
+  "latency": [
+    {
+      "model": "stream",
+      "threads": 1,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.09400001727044582,
+      "mean_ms": 0.09487703330038737,
+      "p90_ms": 0.09600000339560211,
+      "p99_ms": 0.11340099037624893,
+      "min_ms": 0.09249997674487531,
+      "max_ms": 0.18740000086836517,
+      "calls_per_second": 10638.295917786028
+    },
+    {
+      "model": "full",
+      "threads": 1,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.3630999999586493,
+      "mean_ms": 0.3652566331535733,
+      "p90_ms": 0.36859998654108495,
+      "p99_ms": 0.3972099977545438,
+      "min_ms": 0.35949997254647315,
+      "max_ms": 0.5289000109769404,
+      "calls_per_second": 2754.0622421203043
+    },
+    {
+      "model": "strided",
+      "threads": 1,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.20710000535473228,
+      "mean_ms": 0.20984883311515054,
+      "p90_ms": 0.21209998812992126,
+      "p99_ms": 0.27033699181629256,
+      "min_ms": 0.20429998403415084,
+      "max_ms": 0.5132000078447163,
+      "calls_per_second": 4828.585099682374
+    },
+    {
+      "model": "fast",
+      "threads": 1,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.1720000000204891,
+      "mean_ms": 0.1743524330862177,
+      "p90_ms": 0.17590000061318278,
+      "p99_ms": 0.23600199259817595,
+      "min_ms": 0.169599981745705,
+      "max_ms": 0.3099000023212284,
+      "calls_per_second": 5813.95348767952
+    },
+    {
+      "model": "fast_notrig",
+      "threads": 1,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.20300000323913991,
+      "mean_ms": 0.2074881665951883,
+      "p90_ms": 0.2077000099234283,
+      "p99_ms": 0.3228079841937868,
+      "min_ms": 0.19859999883919954,
+      "max_ms": 0.6705000123474747,
+      "calls_per_second": 4926.108295781507
+    },
+    {
+      "model": "stream",
+      "threads": 4,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.09629997657611966,
+      "mean_ms": 0.09823326660747018,
+      "p90_ms": 0.1002000062726438,
+      "p99_ms": 0.145800004247576,
+      "min_ms": 0.09380001574754715,
+      "max_ms": 0.2894999925047159,
+      "calls_per_second": 10384.218517535743
+    },
+    {
+      "model": "full",
+      "threads": 4,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.25400001322850585,
+      "mean_ms": 0.29529016657033935,
+      "p90_ms": 0.3832200076431036,
+      "p99_ms": 0.4961169941816475,
+      "min_ms": 0.24920000578276813,
+      "max_ms": 0.538399996003136,
+      "calls_per_second": 3937.007668973508
+    },
+    {
+      "model": "strided",
+      "threads": 4,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.1984999980777502,
+      "mean_ms": 0.24911713343074857,
+      "p90_ms": 0.3470999945420772,
+      "p99_ms": 0.3596040024422108,
+      "min_ms": 0.19449999672360718,
+      "max_ms": 0.4045999958179891,
+      "calls_per_second": 5037.783424100142
+    },
+    {
+      "model": "fast",
+      "threads": 4,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.15800000983290374,
+      "mean_ms": 0.19401166669558734,
+      "p90_ms": 0.27570000384002924,
+      "p99_ms": 0.286302997265011,
+      "min_ms": 0.15509998775087297,
+      "max_ms": 0.5936999805271626,
+      "calls_per_second": 6329.113530167316
+    },
+    {
+      "model": "fast_notrig",
+      "threads": 4,
+      "runtime": "ONNX Runtime CPU",
+      "calls": 3000,
+      "median_ms": 0.19150000298395753,
+      "mean_ms": 0.22545793312019669,
+      "p90_ms": 0.2899999963119626,
+      "p99_ms": 0.3018009988591075,
+      "min_ms": 0.18540001474320889,
+      "max_ms": 0.4253000079188496,
+      "calls_per_second": 5221.932033514238
+    },
+    {
+      "model": "PyTorch eager (reference)",
+      "threads": 1,
+      "runtime": "PyTorch",
+      "calls": 3000,
+      "median_ms": 0.8698000019649044,
+      "mean_ms": 0.9117173329480769,
+      "p90_ms": 0.9806199872400612,
+      "p99_ms": 1.531545019824988,
+      "min_ms": 0.8470999891869724,
+      "max_ms": 2.3637000122107565,
+      "calls_per_second": 1149.6895812151872
+    }
+  ]
+}

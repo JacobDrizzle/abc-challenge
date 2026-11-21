@@ -1,0 +1,95 @@
+{
+ "stride": 5,
+ "windows": 131459,
+ "models": {
+  "sep+angular s44 (current best)": "v8_recipe_sep_base3_addons/angular_loss/seed_44/best.pt",
+  "k5_4blocks s42": "v9_screen/k5_4blocks/seed_42/best.pt",
+  "k8_3blocks_w32 s42": "v9_screen/k8_3blocks_w32/seed_42/best.pt",
+  "k8 jitter_3ms s42": "v9_jitter/jitter_3ms/seed_42/best.pt",
+  "k8_combined s42": "v9_confirm/k8_combined/seed_42/best.pt",
+  "k5_combined s42": "v9_confirm/k5_combined/seed_42/best.pt"
+ },
+ "scenarios": {
+  "exact 100 Hz grid": [
+   0,
+   0
+  ],
+  "jitter +-1 ms": [
+   1,
+   0
+  ],
+  "jitter +-2 ms": [
+   2,
+   0
+  ],
+  "jitter +-3 ms": [
+   3,
+   0
+  ],
+  "glitches 1%": [
+   0,
+   0.01
+  ],
+  "jitter +-2 ms + glitches 1%": [
+   2,
+   0.01
+  ]
+ },
+ "results": {
+  "exact 100 Hz grid": {
+   "damped velocity (baseline)": 5.049709996185713,
+   "sep+angular s44 (current best)": 4.314468708638133,
+   "k5_4blocks s42": 4.291581343018903,
+   "k8_3blocks_w32 s42": 4.2916144732826655,
+   "k8 jitter_3ms s42": 4.322751095240378,
+   "k8_combined s42": 4.247845692880245,
+   "k5_combined s42": 4.264900396215952
+  },
+  "jitter +-1 ms": {
+   "damped velocity (baseline)": 5.0506894002575535,
+   "sep+angular s44 (current best)": 4.368255517353588,
+   "k5_4blocks s42": 4.339263380532057,
+   "k8_3blocks_w32 s42": 4.339885181075728,
+   "k8 jitter_3ms s42": 4.326472156707878,
+   "k8_combined s42": 4.295861898358262,
+   "k5_combined s42": 4.315973634894207
+  },
+  "jitter +-2 ms": {
+   "damped velocity (baseline)": 5.068059270285969,
+   "sep+angular s44 (current best)": 4.481566507709945,
+   "k5_4blocks s42": 4.4523835007595896,
+   "k8_3blocks_w32 s42": 4.4499564199434305,
+   "k8 jitter_3ms s42": 4.350880637363652,
+   "k8_combined s42": 4.4051940987360245,
+   "k5_combined s42": 4.440687956099247
+  },
+  "jitter +-3 ms": {
+   "damped velocity (baseline)": 5.101631531875979,
+   "sep+angular s44 (current best)": 4.614393680169039,
+   "k5_4blocks s42": 4.583665595736612,
+   "k8_3blocks_w32 s42": 4.574140265327535,
+   "k8 jitter_3ms s42": 4.395990288103381,
+   "k8_combined s42": 4.530322697385663,
+   "k5_combined s42": 4.587552342782187
+  },
+  "glitches 1%": {
+   "damped velocity (baseline)": 5.069882065237673,
+   "sep+angular s44 (current best)": 4.358909395346467,
+   "k5_4blocks s42": 4.337249670851337,
+   "k8_3blocks_w32 s42": 4.33306088798536,
+   "k8 jitter_3ms s42": 4.352373913400409,
+   "k8_combined s42": 4.290568885850795,
+   "k5_combined s42": 4.31027645297756
+  },
+  "jitter +-2 ms + glitches 1%": {
+   "damped velocity (baseline)": 5.089091326150077,
+   "sep+angular s44 (current best)": 4.522855833159445,
+   "k5_4blocks s42": 4.492070668677154,
+   "k8_3blocks_w32 s42": 4.484371090953397,
+   "k8 jitter_3ms s42": 4.378733882134689,
+   "k8_combined s42": 4.437906917724898,
+   "k5_combined s42": 4.478215861175908
+  }
+ },
+ "table_md": "| Stream | damped velocity (baseline) | sep+angular s44 (current best) | k5_4blocks s42 | k8_3blocks_w32 s42 | k8 jitter_3ms s42 | k8_combined s42 | k5_combined s42 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n| exact 100 Hz grid | 5.0497 | 4.3145 | 4.2916 | 4.2916 | 4.3228 | 4.2478 | 4.2649 |\n| jitter +-1 ms | +0.0010 | +0.0538 | +0.0477 | +0.0483 | +0.0037 | +0.0480 | +0.0511 |\n| jitter +-2 ms | +0.0183 | +0.1671 | +0.1608 | +0.1583 | +0.0281 | +0.1573 | +0.1758 |\n| jitter +-3 ms | +0.0519 | +0.2999 | +0.2921 | +0.2825 | +0.0732 | +0.2825 | +0.3227 |\n| glitches 1% | +0.0202 | +0.0444 | +0.0457 | +0.0414 | +0.0296 | +0.0427 | +0.0454 |\n| jitter +-2 ms + glitches 1% | +0.0394 | +0.2084 | +0.2005 | +0.1928 | +0.0560 | +0.1901 | +0.2133 |"
+}

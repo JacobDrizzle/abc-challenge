@@ -1,0 +1,41 @@
+{
+  "v9_jitter": {
+    "control": {
+      "mean": 4.291080936372324,
+      "equal_user": 4.740148269078064,
+      "median": 3.435742783801261,
+      "p90": 7.961162908210052,
+      "p99": 17.258668235717085,
+      "step10_100ms": 2.1356592282720825,
+      "best_epoch": 37,
+      "epochs_run": 40,
+      "last_epoch_val_stride5": 4.292457095490376,
+      "train_end_deg_last": 4.717327913566426,
+      "window_level_share_better": 0.0
+    },
+    "jitter_3ms": {
+      "mean": 4.321199191524353,
+      "equal_user": 4.776144630465123,
+      "median": 3.45755602550658,
+      "p90": 8.022600264804923,
+      "p99": 17.45568393410077,
+      "step10_100ms": 2.164626117593282,
+      "best_epoch": 39,
+      "epochs_run": 40,
+      "last_epoch_val_stride5": 4.322857076700905,
+      "train_end_deg_last": 4.764291293291391,
+      "window_level_share_better": 0.4803077957786877,
+      "paired": {
+        "window_weighted_delta": 0.030118255152022783,
+        "equal_user_delta": 0.03599636138705741,
+        "users_better": 4,
+        "users": 15,
+        "user_bootstrap_ci95": [
+          0.0016655828136761543,
+          0.0565083081832959
+        ],
+        "sign_flip_p": 0.06515
+      }
+    }
+  }
+}

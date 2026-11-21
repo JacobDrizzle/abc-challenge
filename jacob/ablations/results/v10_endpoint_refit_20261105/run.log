@@ -1,0 +1,127 @@
+2026-11-05T23:46:52+00:00 Baseline: 5/120 users
+2026-11-05T23:47:13+00:00 Baseline: 10/120 users
+2026-11-05T23:47:27+00:00 Baseline: 15/120 users
+2026-11-05T23:47:42+00:00 Baseline: 20/120 users
+2026-11-05T23:48:08+00:00 Baseline: 25/120 users
+2026-11-05T23:48:25+00:00 Baseline: 30/120 users
+2026-11-05T23:48:33+00:00 Baseline: 35/120 users
+2026-11-05T23:48:43+00:00 Baseline: 40/120 users
+2026-11-05T23:48:55+00:00 Baseline: 45/120 users
+2026-11-05T23:49:11+00:00 Baseline: 50/120 users
+2026-11-05T23:49:22+00:00 Baseline: 55/120 users
+2026-11-05T23:49:34+00:00 Baseline: 60/120 users
+2026-11-05T23:49:48+00:00 Baseline: 65/120 users
+2026-11-05T23:50:04+00:00 Baseline: 70/120 users
+2026-11-05T23:50:16+00:00 Baseline: 75/120 users
+2026-11-05T23:50:28+00:00 Baseline: 80/120 users
+2026-11-05T23:50:46+00:00 Baseline: 85/120 users
+2026-11-05T23:51:04+00:00 Baseline: 90/120 users
+2026-11-05T23:51:19+00:00 Baseline: 95/120 users
+2026-11-05T23:51:35+00:00 Baseline: 100/120 users
+2026-11-05T23:51:48+00:00 Baseline: 105/120 users
+2026-11-05T23:52:10+00:00 Baseline: 110/120 users
+2026-11-05T23:52:30+00:00 Baseline: 115/120 users
+2026-11-05T23:52:43+00:00 Baseline: 120/120 users
+2026-11-05T23:52:44+00:00 Baseline reproduced: 4.403628580 degrees
+2026-11-05T23:52:52+00:00 Fit statistics seed44: 50/800 training users
+2026-11-05T23:53:02+00:00 Fit statistics seed44: 100/800 training users
+2026-11-05T23:53:10+00:00 Fit statistics seed44: 150/800 training users
+2026-11-05T23:53:20+00:00 Fit statistics seed44: 200/800 training users
+2026-11-05T23:53:29+00:00 Fit statistics seed44: 250/800 training users
+2026-11-05T23:53:37+00:00 Fit statistics seed44: 300/800 training users
+2026-11-05T23:53:45+00:00 Fit statistics seed44: 350/800 training users
+2026-11-05T23:53:54+00:00 Fit statistics seed44: 400/800 training users
+2026-11-05T23:54:02+00:00 Fit statistics seed44: 450/800 training users
+2026-11-05T23:54:09+00:00 Fit statistics seed44: 500/800 training users
+2026-11-05T23:54:16+00:00 Fit statistics seed44: 550/800 training users
+2026-11-05T23:54:25+00:00 Fit statistics seed44: 600/800 training users
+2026-11-05T23:54:34+00:00 Fit statistics seed44: 650/800 training users
+2026-11-05T23:54:41+00:00 Fit statistics seed44: 700/800 training users
+2026-11-05T23:54:50+00:00 Fit statistics seed44: 750/800 training users
+2026-11-05T23:54:59+00:00 Fit statistics seed44: 800/800 training users
+2026-11-05T23:55:05+00:00 Screen: 10/80 users, 21 fits and two controls
+2026-11-05T23:55:08+00:00 Screen: 20/80 users, 21 fits and two controls
+2026-11-05T23:55:13+00:00 Screen: 30/80 users, 21 fits and two controls
+2026-11-05T23:55:21+00:00 Screen: 40/80 users, 21 fits and two controls
+2026-11-05T23:55:26+00:00 Screen: 50/80 users, 21 fits and two controls
+2026-11-05T23:55:29+00:00 Screen: 60/80 users, 21 fits and two controls
+2026-11-05T23:55:37+00:00 Screen: 70/80 users, 21 fits and two controls
+2026-11-05T23:55:42+00:00 Screen: 80/80 users, 21 fits and two controls
+2026-11-05T23:55:42+00:00 Screen winner: ridge_0.0001_strength_1
+2026-11-05T23:56:17+00:00 discovery seed44: 5/80 users
+2026-11-05T23:56:49+00:00 discovery seed44: 10/80 users
+2026-11-05T23:57:01+00:00 discovery seed44: 15/80 users
+2026-11-05T23:57:18+00:00 discovery seed44: 20/80 users
+2026-11-05T23:57:46+00:00 discovery seed44: 25/80 users
+2026-11-05T23:58:21+00:00 discovery seed44: 30/80 users
+2026-11-05T23:59:14+00:00 discovery seed44: 35/80 users
+2026-11-05T23:59:45+00:00 discovery seed44: 40/80 users
+2026-11-06T00:00:24+00:00 discovery seed44: 45/80 users
+2026-11-06T00:00:39+00:00 discovery seed44: 50/80 users
+2026-11-06T00:00:59+00:00 discovery seed44: 55/80 users
+2026-11-06T00:01:13+00:00 discovery seed44: 60/80 users
+2026-11-06T00:02:05+00:00 discovery seed44: 65/80 users
+2026-11-06T00:02:47+00:00 discovery seed44: 70/80 users
+2026-11-06T00:03:19+00:00 discovery seed44: 75/80 users
+2026-11-06T00:03:42+00:00 discovery seed44: 80/80 users
+2026-11-06T00:03:42+00:00 discovery seed44: delta vs original -0.003260311 degrees
+2026-11-06T00:04:12+00:00 confirmation seed44: 5/40 users
+2026-11-06T00:04:40+00:00 confirmation seed44: 10/40 users
+2026-11-06T00:05:12+00:00 confirmation seed44: 15/40 users
+2026-11-06T00:05:40+00:00 confirmation seed44: 20/40 users
+2026-11-06T00:06:21+00:00 confirmation seed44: 25/40 users
+2026-11-06T00:06:39+00:00 confirmation seed44: 30/40 users
+2026-11-06T00:06:59+00:00 confirmation seed44: 35/40 users
+2026-11-06T00:07:48+00:00 confirmation seed44: 40/40 users
+2026-11-06T00:07:48+00:00 confirmation seed44: delta vs original -0.005865978 degrees
+2026-11-06T00:07:56+00:00 Fit statistics seed42: 50/800 training users
+2026-11-06T00:08:06+00:00 Fit statistics seed42: 100/800 training users
+2026-11-06T00:08:14+00:00 Fit statistics seed42: 150/800 training users
+2026-11-06T00:08:24+00:00 Fit statistics seed42: 200/800 training users
+2026-11-06T00:08:33+00:00 Fit statistics seed42: 250/800 training users
+2026-11-06T00:08:41+00:00 Fit statistics seed42: 300/800 training users
+2026-11-06T00:08:49+00:00 Fit statistics seed42: 350/800 training users
+2026-11-06T00:08:59+00:00 Fit statistics seed42: 400/800 training users
+2026-11-06T00:09:06+00:00 Fit statistics seed42: 450/800 training users
+2026-11-06T00:09:14+00:00 Fit statistics seed42: 500/800 training users
+2026-11-06T00:09:21+00:00 Fit statistics seed42: 550/800 training users
+2026-11-06T00:09:29+00:00 Fit statistics seed42: 600/800 training users
+2026-11-06T00:09:39+00:00 Fit statistics seed42: 650/800 training users
+2026-11-06T00:09:45+00:00 Fit statistics seed42: 700/800 training users
+2026-11-06T00:09:55+00:00 Fit statistics seed42: 750/800 training users
+2026-11-06T00:10:03+00:00 Fit statistics seed42: 800/800 training users
+2026-11-06T00:10:33+00:00 confirmation seed42: 5/40 users
+2026-11-06T00:11:02+00:00 confirmation seed42: 10/40 users
+2026-11-06T00:11:35+00:00 confirmation seed42: 15/40 users
+2026-11-06T00:12:03+00:00 confirmation seed42: 20/40 users
+2026-11-06T00:12:43+00:00 confirmation seed42: 25/40 users
+2026-11-06T00:13:01+00:00 confirmation seed42: 30/40 users
+2026-11-06T00:13:22+00:00 confirmation seed42: 35/40 users
+2026-11-06T00:14:10+00:00 confirmation seed42: 40/40 users
+2026-11-06T00:14:10+00:00 confirmation seed42: delta vs original -0.005409392 degrees
+2026-11-06T00:14:19+00:00 Fit statistics seed43: 50/800 training users
+2026-11-06T00:14:29+00:00 Fit statistics seed43: 100/800 training users
+2026-11-06T00:14:37+00:00 Fit statistics seed43: 150/800 training users
+2026-11-06T00:14:47+00:00 Fit statistics seed43: 200/800 training users
+2026-11-06T00:14:56+00:00 Fit statistics seed43: 250/800 training users
+2026-11-06T00:15:03+00:00 Fit statistics seed43: 300/800 training users
+2026-11-06T00:15:11+00:00 Fit statistics seed43: 350/800 training users
+2026-11-06T00:15:21+00:00 Fit statistics seed43: 400/800 training users
+2026-11-06T00:15:29+00:00 Fit statistics seed43: 450/800 training users
+2026-11-06T00:15:36+00:00 Fit statistics seed43: 500/800 training users
+2026-11-06T00:15:43+00:00 Fit statistics seed43: 550/800 training users
+2026-11-06T00:15:52+00:00 Fit statistics seed43: 600/800 training users
+2026-11-06T00:16:01+00:00 Fit statistics seed43: 650/800 training users
+2026-11-06T00:16:08+00:00 Fit statistics seed43: 700/800 training users
+2026-11-06T00:16:17+00:00 Fit statistics seed43: 750/800 training users
+2026-11-06T00:16:26+00:00 Fit statistics seed43: 800/800 training users
+2026-11-06T00:16:56+00:00 confirmation seed43: 5/40 users
+2026-11-06T00:17:25+00:00 confirmation seed43: 10/40 users
+2026-11-06T00:17:57+00:00 confirmation seed43: 15/40 users
+2026-11-06T00:18:25+00:00 confirmation seed43: 20/40 users
+2026-11-06T00:19:05+00:00 confirmation seed43: 25/40 users
+2026-11-06T00:19:24+00:00 confirmation seed43: 30/40 users
+2026-11-06T00:19:44+00:00 confirmation seed43: 35/40 users
+2026-11-06T00:20:32+00:00 confirmation seed43: 40/40 users
+2026-11-06T00:20:32+00:00 confirmation seed43: delta vs original -0.006093732 degrees
+2026-11-06T00:20:37+00:00 Endpoint refit status: promising_exploratory

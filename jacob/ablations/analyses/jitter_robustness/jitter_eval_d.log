@@ -1,0 +1,18 @@
+zero-jitter resample max |dq|: 1.4901161193847656e-08
+exact 100 Hz grid (4971 s) {'damped velocity (baseline)': 5.0497, 'sep+angular s44 (current best)': 4.3145, 'k5_4blocks s42': 4.2916, 'k8_3blocks_w32 s42': 4.2916, 'k8 jitter_3ms s42': 4.3228, 'k8_combined s42': 4.2478, 'k5_combined s42': 4.2649}
+jitter +-1 ms (4363 s) {'damped velocity (baseline)': 5.0507, 'sep+angular s44 (current best)': 4.3683, 'k5_4blocks s42': 4.3393, 'k8_3blocks_w32 s42': 4.3399, 'k8 jitter_3ms s42': 4.3265, 'k8_combined s42': 4.2959, 'k5_combined s42': 4.316}
+jitter +-2 ms (3865 s) {'damped velocity (baseline)': 5.0681, 'sep+angular s44 (current best)': 4.4816, 'k5_4blocks s42': 4.4524, 'k8_3blocks_w32 s42': 4.45, 'k8 jitter_3ms s42': 4.3509, 'k8_combined s42': 4.4052, 'k5_combined s42': 4.4407}
+jitter +-3 ms (3837 s) {'damped velocity (baseline)': 5.1016, 'sep+angular s44 (current best)': 4.6144, 'k5_4blocks s42': 4.5837, 'k8_3blocks_w32 s42': 4.5741, 'k8 jitter_3ms s42': 4.396, 'k8_combined s42': 4.5303, 'k5_combined s42': 4.5876}
+glitches 1% (4033 s) {'damped velocity (baseline)': 5.0699, 'sep+angular s44 (current best)': 4.3589, 'k5_4blocks s42': 4.3372, 'k8_3blocks_w32 s42': 4.3331, 'k8 jitter_3ms s42': 4.3524, 'k8_combined s42': 4.2906, 'k5_combined s42': 4.3103}
+jitter +-2 ms + glitches 1% (3977 s) {'damped velocity (baseline)': 5.0891, 'sep+angular s44 (current best)': 4.5229, 'k5_4blocks s42': 4.4921, 'k8_3blocks_w32 s42': 4.4844, 'k8 jitter_3ms s42': 4.3787, 'k8_combined s42': 4.4379, 'k5_combined s42': 4.4782}
+
+Step-20 mean (deg) on the exact grid; other rows are the change.
+| Stream | damped velocity (baseline) | sep+angular s44 (current best) | k5_4blocks s42 | k8_3blocks_w32 s42 | k8 jitter_3ms s42 | k8_combined s42 | k5_combined s42 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| exact 100 Hz grid | 5.0497 | 4.3145 | 4.2916 | 4.2916 | 4.3228 | 4.2478 | 4.2649 |
+| jitter +-1 ms | +0.0010 | +0.0538 | +0.0477 | +0.0483 | +0.0037 | +0.0480 | +0.0511 |
+| jitter +-2 ms | +0.0183 | +0.1671 | +0.1608 | +0.1583 | +0.0281 | +0.1573 | +0.1758 |
+| jitter +-3 ms | +0.0519 | +0.2999 | +0.2921 | +0.2825 | +0.0732 | +0.2825 | +0.3227 |
+| glitches 1% | +0.0202 | +0.0444 | +0.0457 | +0.0414 | +0.0296 | +0.0427 | +0.0454 |
+| jitter +-2 ms + glitches 1% | +0.0394 | +0.2084 | +0.2005 | +0.1928 | +0.0560 | +0.1901 | +0.2133 |
+wrote <scratch>\jitter_robustness_subset.json

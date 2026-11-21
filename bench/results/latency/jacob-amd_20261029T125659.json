@@ -1,0 +1,635 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "jacob-amd",
+ "created_utc": "2026-10-29T12:56:59.119591+00:00",
+ "machine": {
+  "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "machine": "AMD64",
+  "os": "Windows-11-10.0.26200-SP0",
+  "logical_cores": 24,
+  "python": "3.12.10",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 5,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "v9_k8_combined_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_k8_combined_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.056100019719451666,
+     "mean_ms": 0.06171859987080097,
+     "p90_ms": 0.07419998291879892,
+     "p99_ms": 0.1128009858075529,
+     "min_ms": 0.05299999611452222,
+     "max_ms": 0.26950001483783126
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09139999747276306,
+     "mean_ms": 0.09048033296130598,
+     "p90_ms": 0.1151999516878277,
+     "p99_ms": 0.14790396206080905,
+     "min_ms": 0.06220000796020031,
+     "max_ms": 0.42070000199601054
+    }
+   }
+  },
+  "v9_sep_angular_lean_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_sep_angular_lean_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "62c86f21e3007909b2072bc2ee0c73191fb9d3d1513e7a45b035399533346baa",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.07199996616691351,
+     "mean_ms": 0.07984563359059393,
+     "p90_ms": 0.11031001922674476,
+     "p99_ms": 0.14780801895540188,
+     "min_ms": 0.06769999163225293,
+     "max_ms": 0.3336999798193574
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.11309998808428645,
+     "mean_ms": 0.11626633338164538,
+     "p90_ms": 0.14459999511018395,
+     "p99_ms": 0.21951598348095974,
+     "min_ms": 0.08209998486563563,
+     "max_ms": 0.4382999613881111
+    }
+   }
+  },
+  "v9_k8_combined_padded_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_k8_combined_padded_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "df6b8b44542d1ae70d39bfad0f593977e6aeaeca1027034491ad4fccf0110aa1",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.04880002234131098,
+     "mean_ms": 0.05227243324043229,
+     "p90_ms": 0.06030999356880783,
+     "p99_ms": 0.09920399868860831,
+     "min_ms": 0.046200002543628216,
+     "max_ms": 0.2906000008806586
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.07569999434053898,
+     "mean_ms": 0.07721173367463052,
+     "p90_ms": 0.09630997665226458,
+     "p99_ms": 0.15610296628437928,
+     "min_ms": 0.0545999500900507,
+     "max_ms": 0.705899961758405
+    }
+   }
+  },
+  "v9_k8_combined_padded_a4_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_k8_combined_padded_a4_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "2100ae2a64960ebab81f5b22a875d2fbf1f2fdb2ea5dbd052fc91a3805ba8cd2",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.047200010158121586,
+     "mean_ms": 0.05049216630868614,
+     "p90_ms": 0.05649997037835419,
+     "p99_ms": 0.09680003859102726,
+     "min_ms": 0.04469999112188816,
+     "max_ms": 0.23280002642422915
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.07770000956952572,
+     "mean_ms": 0.08047650024915735,
+     "p90_ms": 0.10270002530887723,
+     "p99_ms": 0.1401040190830826,
+     "min_ms": 0.049400026910007,
+     "max_ms": 0.28390000807121396
+    }
+   }
+  },
+  "v9_k5_combined_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_k5_combined_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "86db84845f7092424ee40264d1b9b60265210e5b2803e3aa6319cadb10a5d526",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.0619000056758523,
+     "mean_ms": 0.06795130002622803,
+     "p90_ms": 0.08899998501874506,
+     "p99_ms": 0.12390201212838288,
+     "min_ms": 0.058399979025125504,
+     "max_ms": 0.31209998996928334
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09729998419061303,
+     "mean_ms": 0.10551770004288603,
+     "p90_ms": 0.12481001904234289,
+     "p99_ms": 0.1613100059330461,
+     "min_ms": 0.07180002285167575,
+     "max_ms": 16.019500035326928
+    }
+   }
+  },
+  "v9_k5_combined_padded_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_k5_combined_padded_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "821482da0a7226321570706f0bdc3e8ba0f1ec3c9dba806f1da2eccd6f5e92ae",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.05360000068321824,
+     "mean_ms": 0.05815523362252861,
+     "p90_ms": 0.07459998596459627,
+     "p99_ms": 0.1061059936182572,
+     "min_ms": 0.050799979362636805,
+     "max_ms": 0.20460004452615976
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.08560001151636243,
+     "mean_ms": 0.08514246641425416,
+     "p90_ms": 0.10620999382808803,
+     "p99_ms": 0.13830394775141022,
+     "min_ms": 0.060999998822808266,
+     "max_ms": 0.4591000033542514
+    }
+   }
+  },
+  "v9_k5_combined_padded_a4_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_k5_combined_padded_a4_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "ea052a073af22b0ed399960d04642636a8eef07c4857efa9277c6add63b85bd6",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.05219999002292752,
+     "mean_ms": 0.05696556701635321,
+     "p90_ms": 0.0716199690941721,
+     "p99_ms": 0.11191597906872593,
+     "min_ms": 0.04869996337220073,
+     "max_ms": 0.3598000039346516
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.08379999781027436,
+     "mean_ms": 0.08426013344433159,
+     "p90_ms": 0.0990999978967011,
+     "p99_ms": 0.14270098123233763,
+     "min_ms": 0.05979998968541622,
+     "max_ms": 0.30529999639838934
+    }
+   }
+  },
+  "v9_k8_jitter3_s42_ga2": {
+   "onnx": "jacob\\training\\outputs\\v9_bench\\v9_k8_jitter3_s42_ga2\\model_fp32_stream.onnx",
+   "onnx_sha256": "792cc9c50d691a5eef8549b9da7adbf7b48339b141af550842a44de6319e2564",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.058500037994235754,
+     "mean_ms": 0.06586206688856085,
+     "p90_ms": 0.08670996758155523,
+     "p99_ms": 0.15130298794247202,
+     "min_ms": 0.05460000829771161,
+     "max_ms": 0.6994999712333083
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09519999730400741,
+     "mean_ms": 0.10435766695688169,
+     "p90_ms": 0.13049994595348835,
+     "p99_ms": 0.1741010445402935,
+     "min_ms": 0.06659998325631022,
+     "max_ms": 0.501600035931915
+    }
+   }
+  },
+  "nic_ga2_gadst_s42": {
+   "onnx": "nic\\models\\group_a_v2\\s42\\gadst.onnx",
+   "onnx_sha256": "778fc4d4d762ad58f0c2656472e2bee7e476a6f0ec32bbb85c853d9356feaddf",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.1742999884299934,
+     "mean_ms": 0.18652566644595936,
+     "p90_ms": 0.22845999337732786,
+     "p99_ms": 0.30590700102038665,
+     "min_ms": 0.16120000509545207,
+     "max_ms": 0.6550999823957682
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.2734999870881438,
+     "mean_ms": 0.2948669667239301,
+     "p90_ms": 0.36642999621108174,
+     "p99_ms": 0.43760701431892796,
+     "min_ms": 0.1799999736249447,
+     "max_ms": 0.5960999988019466
+    }
+   }
+  },
+  "nic_ga2_gadst_s43": {
+   "onnx": "nic\\models\\group_a_v2\\s43\\gadst.onnx",
+   "onnx_sha256": "b6528f0f57a7c0301fdf41854ae8f724302b2920e98481462a3365a0e6357179",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.1724500034470111,
+     "mean_ms": 0.19012023349447796,
+     "p90_ms": 0.2636999764945358,
+     "p99_ms": 0.3054119972512123,
+     "min_ms": 0.16060000052675605,
+     "max_ms": 0.5780000356025994
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.25830004597082734,
+     "mean_ms": 0.2556855668469022,
+     "p90_ms": 0.30449999030679464,
+     "p99_ms": 0.38961299811489847,
+     "min_ms": 0.18089998047798872,
+     "max_ms": 0.858499959576875
+    }
+   }
+  },
+  "nic_ga2_gadst_s44": {
+   "onnx": "nic\\models\\group_a_v2\\s44\\gadst.onnx",
+   "onnx_sha256": "19366568f0640d76ca2adafeff7191152e2fc711f510b42af4a9b6d2e91ba131",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.17280003521591425,
+     "mean_ms": 0.18560716707725078,
+     "p90_ms": 0.23363002692349252,
+     "p99_ms": 0.31100998166948535,
+     "min_ms": 0.1610000035725534,
+     "max_ms": 0.5334000452421606
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.25759998243302107,
+     "mean_ms": 0.2565178330405615,
+     "p90_ms": 0.3121500427369028,
+     "p99_ms": 0.3943209757562722,
+     "min_ms": 0.17959997057914734,
+     "max_ms": 0.5663999472744763
+    }
+   }
+  },
+  "nic_ga2_gadst_s45": {
+   "onnx": "nic\\models\\group_a_v2\\s45\\gadst.onnx",
+   "onnx_sha256": "fd43bda7e8c1128b0ecd879f220649f57dfc88326b0d50e4b69d111569d55aa7",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.17259997548535466,
+     "mean_ms": 0.191739899746608,
+     "p90_ms": 0.26451002922840416,
+     "p99_ms": 0.3261070384178309,
+     "min_ms": 0.1601999974809587,
+     "max_ms": 0.6490999949164689
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.2740499912761152,
+     "mean_ms": 0.29543336655478925,
+     "p90_ms": 0.3591999993659556,
+     "p99_ms": 0.4557310353266068,
+     "min_ms": 0.18530001398175955,
+     "max_ms": 0.8603999740444124
+    }
+   }
+  },
+  "nic_ga2_gadst_s46": {
+   "onnx": "nic\\models\\group_a_v2\\s46\\gadst.onnx",
+   "onnx_sha256": "366e3083f8ebc2685fd922c2a33d46d16f125c3252c10d313d3090398021ff0e",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.1718999701552093,
+     "mean_ms": 0.1833090997339847,
+     "p90_ms": 0.22913999855518338,
+     "p99_ms": 0.2911230048630381,
+     "min_ms": 0.16009999671950936,
+     "max_ms": 0.5549000343307853
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.2922999847214669,
+     "mean_ms": 0.2962729669525288,
+     "p90_ms": 0.3569999826140702,
+     "p99_ms": 0.4616010218160227,
+     "min_ms": 0.18070003716275096,
+     "max_ms": 0.7129000150598586
+    }
+   }
+  },
+  "nic_ga2_gru_s42": {
+   "onnx": "nic\\models\\group_a_v2\\s42\\gru_stateful_window.onnx",
+   "onnx_sha256": "e57b5eba56db3d5fab2b730f1cc6c203d6aaa8cafe95fac0a4d279e79c93663d",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.02370000584051013,
+     "mean_ms": 0.025751732930075377,
+     "p90_ms": 0.03409996861591935,
+     "p99_ms": 0.048202017787843894,
+     "min_ms": 0.022099993657320738,
+     "max_ms": 0.14179997378960252
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.024500011932104826,
+     "mean_ms": 0.028023999999277294,
+     "p90_ms": 0.03490003291517496,
+     "p99_ms": 0.05380400223657479,
+     "min_ms": 0.022899999748915434,
+     "max_ms": 0.20509999012574553
+    }
+   }
+  },
+  "nic_ga2_gru_s43": {
+   "onnx": "nic\\models\\group_a_v2\\s43\\gru_stateful_window.onnx",
+   "onnx_sha256": "077313ec2a10e17bd09b4839ebe1bcb5a6a0f51fc2564fffb89619a215d78903",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.023600005079060793,
+     "mean_ms": 0.024714033196990687,
+     "p90_ms": 0.024800014216452837,
+     "p99_ms": 0.048600020818412304,
+     "min_ms": 0.022199994418770075,
+     "max_ms": 0.10649999603629112
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.024600012693554163,
+     "mean_ms": 0.027451433532405645,
+     "p90_ms": 0.034399976721033454,
+     "p99_ms": 0.059516987530514195,
+     "min_ms": 0.022499996703118086,
+     "max_ms": 0.17369998386129737
+    }
+   }
+  },
+  "nic_ga2_gru_s44": {
+   "onnx": "nic\\models\\group_a_v2\\s44\\gru_stateful_window.onnx",
+   "onnx_sha256": "01c1c1d6c096ebc29e7476dbb3b418907a579aacc5bf38b25e57912328868e33",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.02370000584051013,
+     "mean_ms": 0.02527930048139145,
+     "p90_ms": 0.030199997127056122,
+     "p99_ms": 0.04770601342897848,
+     "min_ms": 0.022599997464567423,
+     "max_ms": 0.10960001964122057
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.024500011932104826,
+     "mean_ms": 0.027423966598386567,
+     "p90_ms": 0.03831000067293643,
+     "p99_ms": 0.04760201321914787,
+     "min_ms": 0.023800006601959467,
+     "max_ms": 0.08329999400302768
+    }
+   }
+  },
+  "nic_ga2_gru_s45": {
+   "onnx": "nic\\models\\group_a_v2\\s45\\gru_stateful_window.onnx",
+   "onnx_sha256": "6f4894a119e321939f7ad50bd9395dadeeae5540e8f6391da7e439386cf72e95",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.023600005079060793,
+     "mean_ms": 0.02698190009687096,
+     "p90_ms": 0.03901000600308179,
+     "p99_ms": 0.05300499615259457,
+     "min_ms": 0.0219999928958714,
+     "max_ms": 0.14670001110062003
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.024499953724443913,
+     "mean_ms": 0.02634033306579416,
+     "p90_ms": 0.03011004882864653,
+     "p99_ms": 0.04810101701878009,
+     "min_ms": 0.023200002033263445,
+     "max_ms": 0.18839997937902808
+    }
+   }
+  },
+  "nic_ga2_gru_s46": {
+   "onnx": "nic\\models\\group_a_v2\\s46\\gru_stateful_window.onnx",
+   "onnx_sha256": "714d1043091d75dc6f17325eaf9eeb2916bcff382750a67c57c98d49aa887513",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.02370000584051013,
+     "mean_ms": 0.025647500238846987,
+     "p90_ms": 0.03173000877723095,
+     "p99_ms": 0.04780301474966102,
+     "min_ms": 0.022499996703118086,
+     "max_ms": 0.152299995534122
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.02429995220154524,
+     "mean_ms": 0.025882166946151603,
+     "p90_ms": 0.026910030283033837,
+     "p99_ms": 0.049900030717253685,
+     "min_ms": 0.022499996703118086,
+     "max_ms": 0.36940001882612705
+    }
+   }
+  },
+  "v6_control_v7graph_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\v6_control_v7graph\\model_fp32_stream.onnx",
+   "onnx_sha256": "599f490d1a82f28705400f2a14162208309addf58bd36eb109a9c2afbea15575",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.10810000821948051,
+     "mean_ms": 0.12056823263022427,
+     "p90_ms": 0.16671998891979453,
+     "p99_ms": 0.21630101662594822,
+     "min_ms": 0.10240002302452922,
+     "max_ms": 0.5565999890677631
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.11110003106296062,
+     "mean_ms": 0.11982216695711638,
+     "p90_ms": 0.1558999705594033,
+     "p99_ms": 0.20110301789827636,
+     "min_ms": 0.10519998613744974,
+     "max_ms": 0.40989997796714306
+    }
+   }
+  },
+  "v7_base3_5_addons_angular_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\base3_5_addons_angular\\model_fp32_stream.onnx",
+   "onnx_sha256": "b9ee40502cdd8c172b976e5fb99497de3f115ec6f15e045169a7c804890f0357",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09139999747276306,
+     "mean_ms": 0.09870623350919534,
+     "p90_ms": 0.12141004553996025,
+     "p99_ms": 0.17470599210355417,
+     "min_ms": 0.08719996549189091,
+     "max_ms": 0.3166000242345035
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09480002336204052,
+     "mean_ms": 0.10541413318909083,
+     "p90_ms": 0.13299996498972178,
+     "p99_ms": 0.1741040445631369,
+     "min_ms": 0.08940004045143723,
+     "max_ms": 0.36180001916363835
+    }
+   }
+  },
+  "v7_base3_5_addons_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\base3_5_addons\\model_fp32_stream.onnx",
+   "onnx_sha256": "4978a5804d9c264b41e297fc93d29daae54b07b1d35605af4dcb4dc432b805f0",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09159999899566174,
+     "mean_ms": 0.10030556670002018,
+     "p90_ms": 0.12770998291671276,
+     "p99_ms": 0.1719199703074987,
+     "min_ms": 0.08620001608505845,
+     "max_ms": 0.4160000244155526
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.11054999777115881,
+     "mean_ms": 0.114587699684004,
+     "p90_ms": 0.13609998859465122,
+     "p99_ms": 0.17310197930783028,
+     "min_ms": 0.08789997082203627,
+     "max_ms": 0.38899999344721437
+    }
+   }
+  },
+  "v7_sep_base3_addons_angular_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons_angular\\model_fp32_stream.onnx",
+   "onnx_sha256": "d9f48aa1f25e81371ca64c34757375e2e6be6b614755a8dcda80eca1a8c83e49",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09099999442696571,
+     "mean_ms": 0.09759003343060613,
+     "p90_ms": 0.11532000498846172,
+     "p99_ms": 0.17531599558424166,
+     "min_ms": 0.08590001380071044,
+     "max_ms": 0.28500001644715667
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.11205000919289887,
+     "mean_ms": 0.11924366662666823,
+     "p90_ms": 0.14289998216554523,
+     "p99_ms": 0.1830029964912682,
+     "min_ms": 0.0971999834291637,
+     "max_ms": 0.3332000342197716
+    }
+   }
+  },
+  "v7_sep_base3_addons_angular_split_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons_angular_split\\model_fp32_stream.onnx",
+   "onnx_sha256": "17de4af1def211e5888757d08d2d3f80760af9c2c76a8a65b4320a1a4aded4dc",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.10390003444626927,
+     "mean_ms": 0.11637303332099691,
+     "p90_ms": 0.15360000543296337,
+     "p99_ms": 0.20493098825681882,
+     "min_ms": 0.0955999712459743,
+     "max_ms": 0.4696999676525593
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.145650003105402,
+     "mean_ms": 0.13648509981188303,
+     "p90_ms": 0.16459997277706861,
+     "p99_ms": 0.20650600024964647,
+     "min_ms": 0.10529998689889908,
+     "max_ms": 0.4007000243291259
+    }
+   }
+  },
+  "v7_sep_base3_addons_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons\\model_fp32_stream.onnx",
+   "onnx_sha256": "f475f2f9b271d516462b0a73bea051dd8edc923d5cbe7479a60a9aa4ba0f4a79",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09139999747276306,
+     "mean_ms": 0.09841693347940843,
+     "p90_ms": 0.11859997757710516,
+     "p99_ms": 0.1786190207349132,
+     "min_ms": 0.08520000847056508,
+     "max_ms": 0.3092999686487019
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.1283999881707132,
+     "mean_ms": 0.1307825997743445,
+     "p90_ms": 0.15279999934136868,
+     "p99_ms": 0.1974040473578497,
+     "min_ms": 0.09699998190626502,
+     "max_ms": 0.37570000858977437
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": "daa253356e001261319c1a2a9346360ccd58aa85",
+  "dirty": false
+ }
+}

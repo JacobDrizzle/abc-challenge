@@ -1,0 +1,4 @@
+reference outputs/v8_recipe_sep_base3_addons/angular_loss: 4.3386, 4.3370, 4.3134  mean 4.3297
+outputs/v9_confirm/k8_combined: 4.2471, 4.2547, 4.2485  mean 4.2501 (sd 0.0041)  vs reference -0.0796  users better 15/15  CI95 [-0.1241, -0.0471]
+outputs/v9_confirm/k5_combined: 4.2652, 4.2714, 4.2785  mean 4.2717 (sd 0.0067)  vs reference -0.0580  users better 15/15  CI95 [-0.0944, -0.0320]
+wrote <scratch>\d_confirm_paired.json

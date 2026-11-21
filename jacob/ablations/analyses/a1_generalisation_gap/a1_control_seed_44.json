@@ -1,0 +1,46 @@
+{
+  "checkpoint": "<repo>\\jacob\\training\\outputs\\v6_group_a_v2\\control\\seed_44\\best.pt",
+  "stride": 25,
+  "splits": {
+    "train": {
+      "summary": {
+        "model": {
+          "window_weighted_step20": 4.862396554893505,
+          "equal_user_step20": 4.59464113216896
+        },
+        "hold_last": {
+          "window_weighted_step20": 6.972545634376145,
+          "equal_user_step20": 6.90863525404846
+        },
+        "damped_velocity": {
+          "window_weighted_step20": 5.945800005519811,
+          "equal_user_step20": 5.829677031490325
+        },
+        "model_over_damped_equal_user": 0.805102522954989,
+        "model_over_damped_window_weighted": 0.8177867655117018,
+        "users": 100,
+        "windows": 153893
+      }
+    },
+    "validation": {
+      "summary": {
+        "model": {
+          "window_weighted_step20": 4.338797900179449,
+          "equal_user_step20": 4.759245009709553
+        },
+        "hold_last": {
+          "window_weighted_step20": 6.074414800258221,
+          "equal_user_step20": 6.54832822223875
+        },
+        "damped_velocity": {
+          "window_weighted_step20": 5.054565702661617,
+          "equal_user_step20": 5.654604409868892
+        },
+        "model_over_damped_equal_user": 0.8461746628985577,
+        "model_over_damped_window_weighted": 0.8583918293701749,
+        "users": 15,
+        "windows": 26307
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "variant": "angular_loss",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "3c0f32951c9d6b81e2cbe9df7c0998cbadcd4b4ea3ad4f1549ec45415d5502c8",
+      "validation_endpoint_deg": 4.334038507360973,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "epochs_80",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "afab27ced2057b7d54a1a69b5009648832f772e039762eebf3aef29584f58bcf",
+      "validation_endpoint_deg": 4.376868251635988,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "control",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "87f6fd8c9683912b486ecab941c3c4f7494891458d0f2918b236d0be2a6d352f",
+      "validation_endpoint_deg": 4.380180600484573,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "lr_2e3",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "499cb6a8baf8c6f2b0c37d55a372fdb22b6b260322003927b4d13f2b11d0073e",
+      "validation_endpoint_deg": 4.41451589833807,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    }
+  ]
+}

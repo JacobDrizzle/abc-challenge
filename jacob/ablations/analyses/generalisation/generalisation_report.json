@@ -1,0 +1,2209 @@
+{
+  "created": "2026-11-05T21:14:07",
+  "labels": [
+    "k8_100_s42",
+    "k8_100_s43",
+    "k8_100_s44",
+    "k8_800_s42",
+    "k8_800_s43",
+    "k8_800_s44"
+  ],
+  "verification": [
+    {
+      "check": "scored the merged file",
+      "ok": true,
+      "detail": "data sha256 ['11b53c681e51cc1c03d5ba98b34aeb0683a17133bafff1edce0bc763c4cacf60']"
+    },
+    {
+      "check": "train windows match check_corpus",
+      "ok": true,
+      "detail": "32,378,176 vs 32,378,176"
+    },
+    {
+      "check": "validation windows match check_corpus",
+      "ok": true,
+      "detail": "4,755,761 vs 4,755,761"
+    },
+    {
+      "check": "validation scored at stride 1",
+      "ok": true,
+      "detail": "every window scored"
+    },
+    {
+      "check": "test windows match check_corpus",
+      "ok": true,
+      "detail": "6,359,967 vs 6,359,967"
+    },
+    {
+      "check": "test scored at stride 1",
+      "ok": true,
+      "detail": "every window scored"
+    },
+    {
+      "check": "test20 windows",
+      "ok": true,
+      "detail": "931,051"
+    },
+    {
+      "check": "hold_last on test20 = bench hold_last",
+      "ok": true,
+      "detail": "max per-user difference 2.45e-10 deg"
+    },
+    {
+      "check": "constant_velocity on test20 = bench constant_velocity_1step",
+      "ok": true,
+      "detail": "max per-user difference 2.08e-07 deg"
+    },
+    {
+      "check": "damped_velocity on test20 = bench damped_velocity",
+      "ok": true,
+      "detail": "max per-user difference 1.04e-07 deg"
+    },
+    {
+      "check": "k8_100_s42 on test20 = bench v9_k8_combined_ga2",
+      "ok": true,
+      "detail": "max per-user difference 2.01e-07 deg"
+    },
+    {
+      "check": "k8_100_s42 on val15 = trainer",
+      "ok": true,
+      "detail": "4.247105 vs 4.247105"
+    },
+    {
+      "check": "k8_100_s43 on val15 = trainer",
+      "ok": true,
+      "detail": "4.254723 vs 4.254723"
+    },
+    {
+      "check": "k8_100_s44 on val15 = trainer",
+      "ok": true,
+      "detail": "4.248472 vs 4.248472"
+    },
+    {
+      "check": "k8_100_s42 is the selected checkpoint",
+      "ok": true,
+      "detail": "1857d399d6d31dc2"
+    },
+    {
+      "check": "k8_100 roles are disjoint and cover every user",
+      "ok": true,
+      "detail": {
+        "trained": 100,
+        "selection": 15,
+        "unseen": 965
+      }
+    },
+    {
+      "check": "k8_800_s42 on val120 = trainer",
+      "ok": true,
+      "detail": "4.411101 vs 4.411101"
+    },
+    {
+      "check": "k8_800_s43 on val120 = trainer",
+      "ok": true,
+      "detail": "4.405637 vs 4.405637"
+    },
+    {
+      "check": "k8_800_s44 on val120 = trainer",
+      "ok": true,
+      "detail": "4.403629 vs 4.403629"
+    },
+    {
+      "check": "k8_800_s44 is the selected checkpoint",
+      "ok": true,
+      "detail": "c70aa91599322467"
+    },
+    {
+      "check": "k8_800 roles are disjoint and cover every user",
+      "ok": true,
+      "detail": {
+        "trained": 800,
+        "selection": 120,
+        "unseen": 160
+      }
+    }
+  ],
+  "A_unseen_accuracy": {
+    "k8_100": {
+      "test20": {
+        "users": 20,
+        "windows": 931051,
+        "mean_deg_step20": 4.266580555023758,
+        "ci95": [
+          3.747046522479196,
+          4.751080523265437
+        ],
+        "equal_user_mean_deg_step20": 4.210257489730548,
+        "mean_deg_step10": 2.1886876775243045,
+        "median_p95_p99_deg_step20": [
+          3.5544891357421875,
+          9.89711856842041,
+          15.007819175720215
+        ],
+        "between_user_sd": 1.2095337515082722,
+        "user_iqr": [
+          3.483790179818206,
+          4.976283684019913
+        ],
+        "baselines_deg_step20": {
+          "hold_last": 6.0372565738274035,
+          "constant_velocity": 6.943824983967123,
+          "damped_velocity": 5.1137398293628085
+        },
+        "skill": {
+          "hold_last": {
+            "equal_user_mean": 0.2930578917116764,
+            "users_better": 20
+          },
+          "constant_velocity": {
+            "equal_user_mean": 0.3887919244489201,
+            "users_better": 20
+          },
+          "damped_velocity": {
+            "equal_user_mean": 0.17251331664069353,
+            "users_better": 20
+          }
+        },
+        "paired_vs": {
+          "constant_velocity": {
+            "mean_diff_deg": -2.677244428943366,
+            "ci95": [
+              -3.1151914465226573,
+              -2.2388987391710398
+            ],
+            "equal_player_mean_diff_deg": -2.735897457572764,
+            "players_better": 20,
+            "players": 20,
+            "draws": 10000,
+            "seed": 0
+          },
+          "damped_velocity": {
+            "mean_diff_deg": -0.8471592743390509,
+            "ci95": [
+              -0.9857710272359836,
+              -0.7432688172122764
+            ],
+            "equal_player_mean_diff_deg": -0.8626685666405823,
+            "players_better": 20,
+            "players": 20,
+            "draws": 10000,
+            "seed": 0
+          }
+        },
+        "seeds": {
+          "42": 4.266580555023758,
+          "43": 4.2818242560588855,
+          "44": 4.275002559596851
+        },
+        "seed_mean_sd": [
+          4.2744691235598316,
+          0.0076358379249615565
+        ]
+      },
+      "test160": {
+        "users": 160,
+        "windows": 6359967,
+        "mean_deg_step20": 4.5839580294117575,
+        "ci95": [
+          4.377307359679548,
+          4.789264875779702
+        ],
+        "equal_user_mean_deg_step20": 4.5136575411165865,
+        "mean_deg_step10": 2.2926152601332537,
+        "median_p95_p99_deg_step20": [
+          3.682443380355835,
+          11.078242015838622,
+          17.651663246154776
+        ],
+        "between_user_sd": 1.1884987485791012,
+        "user_iqr": [
+          3.696933736881957,
+          5.094623378520764
+        ],
+        "baselines_deg_step20": {
+          "hold_last": 6.644809339733363,
+          "constant_velocity": 7.471961329056089,
+          "damped_velocity": 5.586980620199116
+        },
+        "skill": {
+          "hold_last": {
+            "equal_user_mean": 0.2973933449765803,
+            "users_better": 160
+          },
+          "constant_velocity": {
+            "equal_user_mean": 0.3772381417331762,
+            "users_better": 159
+          },
+          "damped_velocity": {
+            "equal_user_mean": 0.17218623803607797,
+            "users_better": 159
+          }
+        },
+        "paired_vs": {
+          "constant_velocity": {
+            "mean_diff_deg": -2.888003299644332,
+            "ci95": [
+              -3.1138496342996165,
+              -2.6741113610768554
+            ],
+            "equal_player_mean_diff_deg": -2.910070230602565,
+            "players_better": 159,
+            "players": 160,
+            "draws": 10000,
+            "seed": 0
+          },
+          "damped_velocity": {
+            "mean_diff_deg": -1.0030225907873584,
+            "ci95": [
+              -1.096560954689539,
+              -0.9219495083143063
+            ],
+            "equal_player_mean_diff_deg": -0.9659655516153995,
+            "players_better": 159,
+            "players": 160,
+            "draws": 10000,
+            "seed": 0
+          }
+        },
+        "seeds": {
+          "42": 4.5839580294117575,
+          "43": 4.5970400415833055,
+          "44": 4.5891689993958575
+        },
+        "seed_mean_sd": [
+          4.590055690130307,
+          0.006585926355346782
+        ]
+      },
+      "unseen pool (965)": {
+        "users": 965,
+        "windows": 38992694,
+        "mean_deg_step20": 4.615687334786559,
+        "ci95": [
+          4.526450344490088,
+          4.707770291702836
+        ],
+        "equal_user_mean_deg_step20": 4.5366880012852135,
+        "mean_deg_step10": 2.305933373610133,
+        "median_p95_p99_deg_step20": null,
+        "between_user_sd": 1.419207601056902,
+        "user_iqr": [
+          3.6297275497049006,
+          5.187819411031492
+        ],
+        "baselines_deg_step20": {
+          "hold_last": 6.698140680212159,
+          "constant_velocity": 7.423531394668074,
+          "damped_velocity": 5.592051963425811
+        },
+        "skill": {
+          "hold_last": {
+            "equal_user_mean": 0.3017358624787419,
+            "users_better": 961
+          },
+          "constant_velocity": {
+            "equal_user_mean": 0.36749695482921185,
+            "users_better": 963
+          },
+          "damped_velocity": {
+            "equal_user_mean": 0.17112268536237785,
+            "users_better": 963
+          }
+        },
+        "paired_vs": {
+          "constant_velocity": {
+            "mean_diff_deg": -2.807844059881515,
+            "ci95": [
+              -2.9048265250588425,
+              -2.7162636734015915
+            ],
+            "equal_player_mean_diff_deg": -2.84006279528651,
+            "players_better": 963,
+            "players": 965,
+            "draws": 10000,
+            "seed": 0
+          },
+          "damped_velocity": {
+            "mean_diff_deg": -0.9763646286392526,
+            "ci95": [
+              -1.0084745083404403,
+              -0.9450756754745435
+            ],
+            "equal_player_mean_diff_deg": -0.9585311082185194,
+            "players_better": 963,
+            "players": 965,
+            "draws": 10000,
+            "seed": 0
+          }
+        },
+        "seeds": {
+          "42": 4.615687334786559,
+          "43": 4.625808357682689,
+          "44": 4.620708815469642
+        },
+        "seed_mean_sd": [
+          4.620734835979629,
+          0.005060561620630927
+        ]
+      }
+    },
+    "k8_800": {
+      "test20": {
+        "users": 20,
+        "windows": 931051,
+        "mean_deg_step20": 4.214138576062568,
+        "ci95": [
+          3.6973720901524016,
+          4.696746594579099
+        ],
+        "equal_user_mean_deg_step20": 4.1520704269287485,
+        "mean_deg_step10": 2.1626179221193316,
+        "median_p95_p99_deg_step20": [
+          3.51267147064209,
+          9.774555206298828,
+          14.867181777954102
+        ],
+        "between_user_sd": 1.1998507124987876,
+        "user_iqr": [
+          3.4117910328685426,
+          4.937093414008226
+        ],
+        "baselines_deg_step20": {
+          "hold_last": 6.0372565738274035,
+          "constant_velocity": 6.943824983967123,
+          "damped_velocity": 5.1137398293628085
+        },
+        "skill": {
+          "hold_last": {
+            "equal_user_mean": 0.3032965961997728,
+            "users_better": 20
+          },
+          "constant_velocity": {
+            "equal_user_mean": 0.3974461748405622,
+            "users_better": 20
+          },
+          "damped_velocity": {
+            "equal_user_mean": 0.18435544647115995,
+            "users_better": 20
+          }
+        },
+        "paired_vs": {
+          "constant_velocity": {
+            "mean_diff_deg": -2.7296864079045573,
+            "ci95": [
+              -3.1682080463764244,
+              -2.2899852471887265
+            ],
+            "equal_player_mean_diff_deg": -2.7940845203745637,
+            "players_better": 20,
+            "players": 20,
+            "draws": 10000,
+            "seed": 0
+          },
+          "damped_velocity": {
+            "mean_diff_deg": -0.8996012533002411,
+            "ci95": [
+              -1.037660768226294,
+              -0.7956408661457088
+            ],
+            "equal_player_mean_diff_deg": -0.9208556294423819,
+            "players_better": 20,
+            "players": 20,
+            "draws": 10000,
+            "seed": 0
+          }
+        },
+        "seeds": {
+          "42": 4.220435939863804,
+          "43": 4.216261001049268,
+          "44": 4.214138576062568
+        },
+        "seed_mean_sd": [
+          4.216945172325214,
+          0.0032039452964121792
+        ]
+      },
+      "test160": {
+        "users": 160,
+        "windows": 6359967,
+        "mean_deg_step20": 4.520019676442937,
+        "ci95": [
+          4.316671607263105,
+          4.722877830896134
+        ],
+        "equal_user_mean_deg_step20": 4.447988058244439,
+        "mean_deg_step10": 2.258631684755477,
+        "median_p95_p99_deg_step20": [
+          3.634587526321411,
+          10.927109050750726,
+          17.426818885803222
+        ],
+        "between_user_sd": 1.1740682880528432,
+        "user_iqr": [
+          3.6158676615740744,
+          5.024806887622635
+        ],
+        "baselines_deg_step20": {
+          "hold_last": 6.644809339733363,
+          "constant_velocity": 7.471961329056089,
+          "damped_velocity": 5.586980620199116
+        },
+        "skill": {
+          "hold_last": {
+            "equal_user_mean": 0.3076552831694204,
+            "users_better": 160
+          },
+          "constant_velocity": {
+            "equal_user_mean": 0.38658298064251717,
+            "users_better": 160
+          },
+          "damped_velocity": {
+            "equal_user_mean": 0.18439944156328347,
+            "users_better": 159
+          }
+        },
+        "paired_vs": {
+          "constant_velocity": {
+            "mean_diff_deg": -2.9519416526131526,
+            "ci95": [
+              -3.1804886844699616,
+              -2.7352363477282053
+            ],
+            "equal_player_mean_diff_deg": -2.975739713474712,
+            "players_better": 160,
+            "players": 160,
+            "draws": 10000,
+            "seed": 0
+          },
+          "damped_velocity": {
+            "mean_diff_deg": -1.0669609437561796,
+            "ci95": [
+              -1.1653444841740808,
+              -0.9825215573522746
+            ],
+            "equal_player_mean_diff_deg": -1.0316350344875467,
+            "players_better": 159,
+            "players": 160,
+            "draws": 10000,
+            "seed": 0
+          }
+        },
+        "seeds": {
+          "42": 4.524834829624052,
+          "43": 4.519992932005054,
+          "44": 4.520019676442937
+        },
+        "seed_mean_sd": [
+          4.521615812690681,
+          0.0027877825111077416
+        ]
+      }
+    }
+  },
+  "B_gap": {
+    "k8_100": {
+      "roles": {
+        "trained": 100,
+        "selection": 15,
+        "unseen": 965,
+        "unseen_train_split": 700
+      },
+      "seeds": {
+        "42": {
+          "by_role": {
+            "trained": {
+              "users": 100,
+              "model_deg": 4.778353072084214,
+              "damped_deg": 5.945868264462021,
+              "mean_ratio": 0.8068668160535036,
+              "ratio_ci95": [
+                0.7948229838568163,
+                0.8180442759089609
+              ]
+            },
+            "selection": {
+              "users": 15,
+              "model_deg": 4.247104990257662,
+              "damped_deg": 5.049184397284896,
+              "mean_ratio": 0.8371641488524894,
+              "ratio_ci95": [
+                0.818618307612826,
+                0.8547524318999942
+              ]
+            },
+            "unseen": {
+              "users": 965,
+              "model_deg": 4.615687334786559,
+              "damped_deg": 5.592051963425811,
+              "mean_ratio": 0.8288773146376222,
+              "ratio_ci95": [
+                0.8252758606134037,
+                0.8323743570929866
+              ]
+            },
+            "unseen_train_split": {
+              "users": 700,
+              "model_deg": 4.637296515869929,
+              "damped_deg": 5.617682771519928,
+              "mean_ratio": 0.8284251824479442,
+              "ratio_ci95": [
+                0.8241931841602863,
+                0.8326386696567092
+              ]
+            }
+          },
+          "differences": {
+            "unseen - trained": {
+              "diff": 0.02201049858411852,
+              "ci95": [
+                0.010359567234577025,
+                0.03444886838056216
+              ],
+              "permutation_p": 0.00029997000299970003,
+              "users_a": 100,
+              "users_b": 965
+            },
+            "selection - trained": {
+              "diff": 0.03029733279898572,
+              "ci95": [
+                0.00831049885226474,
+                0.05143831140820075
+              ],
+              "permutation_p": 0.05779422057794221,
+              "users_a": 100,
+              "users_b": 15
+            },
+            "unseen - selection": {
+              "diff": -0.0082868342148672,
+              "ci95": [
+                -0.02556365725614575,
+                0.010533392468321747
+              ],
+              "permutation_p": 0.5646435356464353,
+              "users_a": 15,
+              "users_b": 965
+            },
+            "unseen_train_split - trained": {
+              "diff": 0.02155836639444053,
+              "ci95": [
+                0.00938992817456274,
+                0.03456949679910826
+              ],
+              "permutation_p": 0.00039996000399960006,
+              "users_a": 100,
+              "users_b": 700
+            }
+          }
+        },
+        "43": {
+          "by_role": {
+            "trained": {
+              "users": 100,
+              "model_deg": 4.795933873835815,
+              "damped_deg": 5.945868264462021,
+              "mean_ratio": 0.8099221371205612,
+              "ratio_ci95": [
+                0.7980862262404103,
+                0.8208915130496617
+              ]
+            },
+            "selection": {
+              "users": 15,
+              "model_deg": 4.254722555818116,
+              "damped_deg": 5.049184397284896,
+              "mean_ratio": 0.8397629405116025,
+              "ratio_ci95": [
+                0.82396458924368,
+                0.8558078403600833
+              ]
+            },
+            "unseen": {
+              "users": 965,
+              "model_deg": 4.625808357682689,
+              "damped_deg": 5.592051963425811,
+              "mean_ratio": 0.8310021522207723,
+              "ratio_ci95": [
+                0.8274630534250292,
+                0.8344582576345504
+              ]
+            },
+            "unseen_train_split": {
+              "users": 700,
+              "model_deg": 4.6473789066662174,
+              "damped_deg": 5.617682771519928,
+              "mean_ratio": 0.8305238991926901,
+              "ratio_ci95": [
+                0.8264067278034642,
+                0.8345409030681779
+              ]
+            }
+          },
+          "differences": {
+            "unseen - trained": {
+              "diff": 0.02108001510021118,
+              "ci95": [
+                0.009573995702927161,
+                0.03333289351635109
+              ],
+              "permutation_p": 0.00039996000399960006,
+              "users_a": 100,
+              "users_b": 965
+            },
+            "selection - trained": {
+              "diff": 0.029840803391041337,
+              "ci95": [
+                0.010234182424784554,
+                0.049664407409255984
+              ],
+              "permutation_p": 0.0570942905709429,
+              "users_a": 100,
+              "users_b": 15
+            },
+            "unseen - selection": {
+              "diff": -0.008760788290830157,
+              "ci95": [
+                -0.024717792717692085,
+                0.007238433369940189
+              ],
+              "permutation_p": 0.531046895310469,
+              "users_a": 15,
+              "users_b": 965
+            },
+            "unseen_train_split - trained": {
+              "diff": 0.020601762072128937,
+              "ci95": [
+                0.008649930265869228,
+                0.03317859534651229
+              ],
+              "permutation_p": 0.00029997000299970003,
+              "users_a": 100,
+              "users_b": 700
+            }
+          }
+        },
+        "44": {
+          "by_role": {
+            "trained": {
+              "users": 100,
+              "model_deg": 4.785604966789715,
+              "damped_deg": 5.945868264462021,
+              "mean_ratio": 0.8083147077294336,
+              "ratio_ci95": [
+                0.7962956307762604,
+                0.8194859663465822
+              ]
+            },
+            "selection": {
+              "users": 15,
+              "model_deg": 4.248472441557492,
+              "damped_deg": 5.049184397284896,
+              "mean_ratio": 0.83767012072083,
+              "ratio_ci95": [
+                0.8195048548155331,
+                0.8549602843441814
+              ]
+            },
+            "unseen": {
+              "users": 965,
+              "model_deg": 4.620708815469642,
+              "damped_deg": 5.592051963425811,
+              "mean_ratio": 0.8299224412472426,
+              "ratio_ci95": [
+                0.8263881728178953,
+                0.8333833746252658
+              ]
+            },
+            "unseen_train_split": {
+              "users": 700,
+              "model_deg": 4.643229812261843,
+              "damped_deg": 5.617682771519928,
+              "mean_ratio": 0.8298667913985511,
+              "ratio_ci95": [
+                0.8256866621799993,
+                0.8340017202009075
+              ]
+            }
+          },
+          "differences": {
+            "unseen - trained": {
+              "diff": 0.02160773351780898,
+              "ci95": [
+                0.009905021170927734,
+                0.03403329523513491
+              ],
+              "permutation_p": 0.00029997000299970003,
+              "users_a": 100,
+              "users_b": 965
+            },
+            "selection - trained": {
+              "diff": 0.029355412991396435,
+              "ci95": [
+                0.007863514765814697,
+                0.05016550992994862
+              ],
+              "permutation_p": 0.0638936106389361,
+              "users_a": 100,
+              "users_b": 15
+            },
+            "unseen - selection": {
+              "diff": -0.007747679473587454,
+              "ci95": [
+                -0.0247172041729548,
+                0.010485040512616978
+              ],
+              "permutation_p": 0.5851414858514149,
+              "users_a": 15,
+              "users_b": 965
+            },
+            "unseen_train_split - trained": {
+              "diff": 0.02155208366911754,
+              "ci95": [
+                0.009550202197570837,
+                0.03437006636915336
+              ],
+              "permutation_p": 0.00029997000299970003,
+              "users_a": 100,
+              "users_b": 700
+            }
+          }
+        }
+      },
+      "selected": {
+        "by_role": {
+          "trained": {
+            "users": 100,
+            "model_deg": 4.778353072084214,
+            "damped_deg": 5.945868264462021,
+            "mean_ratio": 0.8068668160535036,
+            "ratio_ci95": [
+              0.7948229838568163,
+              0.8180442759089609
+            ]
+          },
+          "selection": {
+            "users": 15,
+            "model_deg": 4.247104990257662,
+            "damped_deg": 5.049184397284896,
+            "mean_ratio": 0.8371641488524894,
+            "ratio_ci95": [
+              0.818618307612826,
+              0.8547524318999942
+            ]
+          },
+          "unseen": {
+            "users": 965,
+            "model_deg": 4.615687334786559,
+            "damped_deg": 5.592051963425811,
+            "mean_ratio": 0.8288773146376222,
+            "ratio_ci95": [
+              0.8252758606134037,
+              0.8323743570929866
+            ]
+          },
+          "unseen_train_split": {
+            "users": 700,
+            "model_deg": 4.637296515869929,
+            "damped_deg": 5.617682771519928,
+            "mean_ratio": 0.8284251824479442,
+            "ratio_ci95": [
+              0.8241931841602863,
+              0.8326386696567092
+            ]
+          }
+        },
+        "differences": {
+          "unseen - trained": {
+            "diff": 0.02201049858411852,
+            "ci95": [
+              0.010359567234577025,
+              0.03444886838056216
+            ],
+            "permutation_p": 0.00029997000299970003,
+            "users_a": 100,
+            "users_b": 965
+          },
+          "selection - trained": {
+            "diff": 0.03029733279898572,
+            "ci95": [
+              0.00831049885226474,
+              0.05143831140820075
+            ],
+            "permutation_p": 0.05779422057794221,
+            "users_a": 100,
+            "users_b": 15
+          },
+          "unseen - selection": {
+            "diff": -0.0082868342148672,
+            "ci95": [
+              -0.02556365725614575,
+              0.010533392468321747
+            ],
+            "permutation_p": 0.5646435356464353,
+            "users_a": 15,
+            "users_b": 965
+          },
+          "unseen_train_split - trained": {
+            "diff": 0.02155836639444053,
+            "ci95": [
+              0.00938992817456274,
+              0.03456949679910826
+            ],
+            "permutation_p": 0.00039996000399960006,
+            "users_a": 100,
+            "users_b": 700
+          }
+        }
+      }
+    },
+    "k8_800": {
+      "roles": {
+        "trained": 800,
+        "selection": 120,
+        "unseen": 160
+      },
+      "seeds": {
+        "42": {
+          "by_role": {
+            "trained": {
+              "users": 800,
+              "model_deg": 4.590759775240341,
+              "damped_deg": 5.656645804112152,
+              "mean_ratio": 0.8136363802755942,
+              "ratio_ci95": [
+                0.8095772894240537,
+                0.8175385622967556
+              ]
+            },
+            "selection": {
+              "users": 120,
+              "model_deg": 4.411100967948834,
+              "damped_deg": 5.370033559159922,
+              "mean_ratio": 0.8216204111065859,
+              "ratio_ci95": [
+                0.8117390784225491,
+                0.831358439514157
+              ]
+            },
+            "unseen": {
+              "users": 160,
+              "model_deg": 4.524834829624052,
+              "damped_deg": 5.586980620199116,
+              "mean_ratio": 0.8174579757394127,
+              "ratio_ci95": [
+                0.8092719633957878,
+                0.8260833700272114
+              ]
+            }
+          },
+          "differences": {
+            "unseen - trained": {
+              "diff": 0.00382159546381855,
+              "ci95": [
+                -0.005045096373613172,
+                0.013058202254564659
+              ],
+              "permutation_p": 0.4336566343365663,
+              "users_a": 800,
+              "users_b": 160
+            },
+            "selection - trained": {
+              "diff": 0.00798403083099175,
+              "ci95": [
+                -0.0027112189909191953,
+                0.018245212946177116
+              ],
+              "permutation_p": 0.15178482151784822,
+              "users_a": 800,
+              "users_b": 120
+            },
+            "unseen - selection": {
+              "diff": -0.004162435367173201,
+              "ci95": [
+                -0.01654845330825174,
+                0.008848240927727635
+              ],
+              "permutation_p": 0.5298470152984701,
+              "users_a": 120,
+              "users_b": 160
+            }
+          }
+        },
+        "43": {
+          "by_role": {
+            "trained": {
+              "users": 800,
+              "model_deg": 4.584702432609957,
+              "damped_deg": 5.656645804112152,
+              "mean_ratio": 0.8122658643751239,
+              "ratio_ci95": [
+                0.8081882444943631,
+                0.8162266314456791
+              ]
+            },
+            "selection": {
+              "users": 120,
+              "model_deg": 4.4056369612572235,
+              "damped_deg": 5.370033559159922,
+              "mean_ratio": 0.8203083466515821,
+              "ratio_ci95": [
+                0.8104690074817681,
+                0.8299270143235999
+              ]
+            },
+            "unseen": {
+              "users": 160,
+              "model_deg": 4.519992932005054,
+              "damped_deg": 5.586980620199116,
+              "mean_ratio": 0.8170606942180137,
+              "ratio_ci95": [
+                0.808412147207117,
+                0.8265949451407713
+              ]
+            }
+          },
+          "differences": {
+            "unseen - trained": {
+              "diff": 0.004794829842889814,
+              "ci95": [
+                -0.0046221173177361735,
+                0.014997618857488028
+              ],
+              "permutation_p": 0.3370662933706629,
+              "users_a": 800,
+              "users_b": 160
+            },
+            "selection - trained": {
+              "diff": 0.008042482276458207,
+              "ci95": [
+                -0.0026476917615640334,
+                0.01827717228869718
+              ],
+              "permutation_p": 0.1518848115188481,
+              "users_a": 800,
+              "users_b": 120
+            },
+            "unseen - selection": {
+              "diff": -0.003247652433568393,
+              "ci95": [
+                -0.015941427454763856,
+                0.010170691783448364
+              ],
+              "permutation_p": 0.6471352864713529,
+              "users_a": 120,
+              "users_b": 160
+            }
+          }
+        },
+        "44": {
+          "by_role": {
+            "trained": {
+              "users": 800,
+              "model_deg": 4.586308586872219,
+              "damped_deg": 5.656645804112152,
+              "mean_ratio": 0.8127946167760852,
+              "ratio_ci95": [
+                0.8087728535075351,
+                0.8167414642431838
+              ]
+            },
+            "selection": {
+              "users": 120,
+              "model_deg": 4.403628579569555,
+              "damped_deg": 5.370033559159922,
+              "mean_ratio": 0.8197171925506443,
+              "ratio_ci95": [
+                0.8095710335081506,
+                0.8295714843174656
+              ]
+            },
+            "unseen": {
+              "users": 160,
+              "model_deg": 4.520019676442937,
+              "damped_deg": 5.586980620199116,
+              "mean_ratio": 0.8156005584367165,
+              "ratio_ci95": [
+                0.8076799891318823,
+                0.8236982641380193
+              ]
+            }
+          },
+          "differences": {
+            "unseen - trained": {
+              "diff": 0.002805941660631306,
+              "ci95": [
+                -0.005818580140058465,
+                0.011650147228768644
+              ],
+              "permutation_p": 0.5603439656034397,
+              "users_a": 800,
+              "users_b": 160
+            },
+            "selection - trained": {
+              "diff": 0.006922575774559125,
+              "ci95": [
+                -0.003953720618218026,
+                0.017376031387728842
+              ],
+              "permutation_p": 0.21137886211378862,
+              "users_a": 800,
+              "users_b": 120
+            },
+            "unseen - selection": {
+              "diff": -0.0041166341139278195,
+              "ci95": [
+                -0.016477543861804934,
+                0.008794655525991618
+              ],
+              "permutation_p": 0.5269473052694731,
+              "users_a": 120,
+              "users_b": 160
+            }
+          }
+        }
+      },
+      "selected": {
+        "by_role": {
+          "trained": {
+            "users": 800,
+            "model_deg": 4.586308586872219,
+            "damped_deg": 5.656645804112152,
+            "mean_ratio": 0.8127946167760852,
+            "ratio_ci95": [
+              0.8087728535075351,
+              0.8167414642431838
+            ]
+          },
+          "selection": {
+            "users": 120,
+            "model_deg": 4.403628579569555,
+            "damped_deg": 5.370033559159922,
+            "mean_ratio": 0.8197171925506443,
+            "ratio_ci95": [
+              0.8095710335081506,
+              0.8295714843174656
+            ]
+          },
+          "unseen": {
+            "users": 160,
+            "model_deg": 4.520019676442937,
+            "damped_deg": 5.586980620199116,
+            "mean_ratio": 0.8156005584367165,
+            "ratio_ci95": [
+              0.8076799891318823,
+              0.8236982641380193
+            ]
+          }
+        },
+        "differences": {
+          "unseen - trained": {
+            "diff": 0.002805941660631306,
+            "ci95": [
+              -0.005818580140058465,
+              0.011650147228768644
+            ],
+            "permutation_p": 0.5603439656034397,
+            "users_a": 800,
+            "users_b": 160
+          },
+          "selection - trained": {
+            "diff": 0.006922575774559125,
+            "ci95": [
+              -0.003953720618218026,
+              0.017376031387728842
+            ],
+            "permutation_p": 0.21137886211378862,
+            "users_a": 800,
+            "users_b": 120
+          },
+          "unseen - selection": {
+            "diff": -0.0041166341139278195,
+            "ci95": [
+              -0.016477543861804934,
+              0.008794655525991618
+            ],
+            "permutation_p": 0.5269473052694731,
+            "users_a": 120,
+            "users_b": 160
+          }
+        }
+      }
+    }
+  },
+  "C_breakdown": {
+    "k8_100": {
+      "motion_cut_points": [
+        22.66055312131768,
+        30.569455008157732
+      ],
+      "test160": {
+        "headset family": {
+          "Index": {
+            "users": 12,
+            "recordings": 34,
+            "windows": 513411,
+            "model_deg": 3.978825685695062,
+            "damped_deg": 4.779754941082938,
+            "mean_ratio": 0.8447477896219174,
+            "ratio_ci95": [
+              0.8201310903764332,
+              0.867168037665448
+            ],
+            "trained_users_in_group": 12
+          },
+          "Pico": {
+            "users": 3,
+            "recordings": 9,
+            "windows": 161656,
+            "model_deg": 5.372743090034333,
+            "damped_deg": 6.07802458884381,
+            "mean_ratio": 0.8799235186382317,
+            "ratio_ci95": null,
+            "trained_users_in_group": 2
+          },
+          "Quest 1": {
+            "users": 4,
+            "recordings": 13,
+            "windows": 107594,
+            "model_deg": 4.320886119057776,
+            "damped_deg": 5.057298491374801,
+            "mean_ratio": 0.8620382932880584,
+            "ratio_ci95": null,
+            "trained_users_in_group": 1
+          },
+          "Quest 2": {
+            "users": 86,
+            "recordings": 235,
+            "windows": 3182344,
+            "model_deg": 4.917221936170582,
+            "damped_deg": 6.0366482298586135,
+            "mean_ratio": 0.8277464342078759,
+            "ratio_ci95": [
+              0.8158775137781652,
+              0.8404364294715855
+            ],
+            "trained_users_in_group": 56
+          },
+          "Rift CV1": {
+            "users": 15,
+            "recordings": 38,
+            "windows": 548778,
+            "model_deg": 4.083032562231632,
+            "damped_deg": 5.034473627472343,
+            "mean_ratio": 0.8255582886503063,
+            "ratio_ci95": [
+              0.8035988849046336,
+              0.8468956882576081
+            ],
+            "trained_users_in_group": 7
+          },
+          "Rift S": {
+            "users": 1,
+            "recordings": 4,
+            "windows": 24946,
+            "model_deg": 4.419132860911301,
+            "damped_deg": 5.3010806566210755,
+            "mean_ratio": 0.8336286782189933,
+            "ratio_ci95": null,
+            "trained_users_in_group": 2
+          },
+          "Unknown": {
+            "users": 19,
+            "recordings": 41,
+            "windows": 522767,
+            "model_deg": 3.265744954729572,
+            "damped_deg": 3.9542928017804475,
+            "mean_ratio": 0.8211008539248893,
+            "ratio_ci95": [
+              0.7926328489460245,
+              0.8483351135774642
+            ],
+            "trained_users_in_group": 10
+          },
+          "Vive family": {
+            "users": 25,
+            "recordings": 62,
+            "windows": 1077453,
+            "model_deg": 4.650773170911647,
+            "damped_deg": 5.713353860116117,
+            "mean_ratio": 0.8112396765466018,
+            "ratio_ci95": [
+              0.7940705313753413,
+              0.8266099997172549
+            ],
+            "trained_users_in_group": 12
+          },
+          "Windows MR": {
+            "users": 4,
+            "recordings": 12,
+            "windows": 221018,
+            "model_deg": 4.796841384756301,
+            "damped_deg": 5.536042542617108,
+            "mean_ratio": 0.8487906209475495,
+            "ratio_ci95": null,
+            "trained_users_in_group": 1
+          }
+        },
+        "source rate (Hz, nearest 5)": {
+          "85": {
+            "users": 4,
+            "recordings": 5,
+            "windows": 120011,
+            "model_deg": 4.535206815194617,
+            "damped_deg": 5.260710924508172,
+            "mean_ratio": 0.8629003858794513,
+            "ratio_ci95": null,
+            "trained_users_in_group": 4
+          },
+          "90": {
+            "users": 156,
+            "recordings": 419,
+            "windows": 5958799,
+            "model_deg": 4.585857514637855,
+            "damped_deg": 5.599783195504015,
+            "mean_ratio": 0.8265201806361211,
+            "ratio_ci95": [
+              0.8181310984847276,
+              0.8350618302817427
+            ],
+            "trained_users_in_group": 97
+          },
+          "95": {
+            "users": 8,
+            "recordings": 14,
+            "windows": 172708,
+            "model_deg": 4.1388943069088,
+            "damped_deg": 4.929902845384275,
+            "mean_ratio": 0.8441353145188257,
+            "ratio_ci95": [
+              0.819981517305141,
+              0.8720817092919684
+            ],
+            "trained_users_in_group": 7
+          },
+          "100": {
+            "users": 2,
+            "recordings": 4,
+            "windows": 44735,
+            "model_deg": 4.761943076053511,
+            "damped_deg": 5.778723048433524,
+            "mean_ratio": 0.820845744948457,
+            "ratio_ci95": null,
+            "trained_users_in_group": 2
+          },
+          "105": {
+            "users": 2,
+            "recordings": 2,
+            "windows": 12768,
+            "model_deg": 8.179148199461007,
+            "damped_deg": 9.890590229180585,
+            "mean_ratio": 0.7964526237463507,
+            "ratio_ci95": null,
+            "trained_users_in_group": 0
+          },
+          "110": {
+            "users": 3,
+            "recordings": 4,
+            "windows": 50946,
+            "model_deg": 4.928097854657321,
+            "damped_deg": 5.838707602562478,
+            "mean_ratio": 0.84948341910586,
+            "ratio_ci95": null,
+            "trained_users_in_group": 0
+          }
+        },
+        "motion intensity (velocity_deg_s tercile)": {
+          "low": {
+            "users": 95,
+            "recordings": 171,
+            "windows": 2412255,
+            "model_deg": 3.592016648380847,
+            "damped_deg": 4.248656649476908,
+            "mean_ratio": 0.8495213215577964,
+            "ratio_ci95": [
+              0.8392322993181082,
+              0.8602729256712504
+            ],
+            "trained_users_in_group": 52
+          },
+          "mid": {
+            "users": 96,
+            "recordings": 156,
+            "windows": 2340324,
+            "model_deg": 4.474782314306368,
+            "damped_deg": 5.40920856144252,
+            "mean_ratio": 0.8267353716965294,
+            "ratio_ci95": [
+              0.8170569044272025,
+              0.8360831983616924
+            ],
+            "trained_users_in_group": 50
+          },
+          "high": {
+            "users": 73,
+            "recordings": 121,
+            "windows": 1607388,
+            "model_deg": 6.23155158017674,
+            "damped_deg": 7.854275701182655,
+            "mean_ratio": 0.8001995920528151,
+            "ratio_ci95": [
+              0.7843939063398488,
+              0.815321071121461
+            ],
+            "trained_users_in_group": 45
+          }
+        },
+        "headsets absent from training users": {
+          "DELL VISOR VR1180": [
+            "37533998-e671-4e84-9f56-95cfa278b9fc"
+          ],
+          "HP Reverb VR Headset VR1000-2xxx0": [
+            "671f7d06-376a-4f22-9bfc-864d1ed8b0e0"
+          ],
+          "HP Reverb Virtual Reality Headset G20": [
+            "54fbade1-a30e-4c92-a62f-d39c188f8bcd"
+          ],
+          "Rift_S": [
+            "ddca002c-c0b7-4f7c-9ad3-e091ce1a07dc"
+          ],
+          "Samsung Windows Mixed Reality 800ZBA0": [
+            "6cbdee11-e04a-4d4d-baf9-f567231ba921"
+          ],
+          "Vive MV": [
+            "40453e9f-bd65-4991-8da9-b47f6d93d225",
+            "6924807d-4ab4-4522-9da5-669132df4bfb",
+            "9866ef28-dca5-4caa-8055-897d6a4f6f56",
+            "99cc8481-aea0-4faa-a705-fb184e4952f9"
+          ],
+          "Vive MV.": [
+            "13f83eab-6af9-45a8-b446-bd534e71836d"
+          ]
+        }
+      },
+      "unseen pool (965)": {
+        "headset family": {
+          "Index": {
+            "users": 95,
+            "recordings": 270,
+            "windows": 4393932,
+            "model_deg": 4.72727213070419,
+            "damped_deg": 5.759248657461239,
+            "mean_ratio": 0.8283457918166258,
+            "ratio_ci95": [
+              0.8170194217691665,
+              0.83902379894136
+            ],
+            "trained_users_in_group": 12
+          },
+          "Other": {
+            "users": 4,
+            "recordings": 7,
+            "windows": 100401,
+            "model_deg": 3.5181545816628446,
+            "damped_deg": 4.283697202636417,
+            "mean_ratio": 0.8264384729133396,
+            "ratio_ci95": null,
+            "trained_users_in_group": 0
+          },
+          "Pico": {
+            "users": 27,
+            "recordings": 61,
+            "windows": 994654,
+            "model_deg": 5.205935912708694,
+            "damped_deg": 6.044535750552773,
+            "mean_ratio": 0.8636877122505273,
+            "ratio_ci95": [
+              0.8438734378005451,
+              0.882789543847222
+            ],
+            "trained_users_in_group": 2
+          },
+          "Pimax": {
+            "users": 2,
+            "recordings": 5,
+            "windows": 102442,
+            "model_deg": 4.253008985213717,
+            "damped_deg": 5.00909425036995,
+            "mean_ratio": 0.8450667224187784,
+            "ratio_ci95": null,
+            "trained_users_in_group": 0
+          },
+          "Quest 1": {
+            "users": 17,
+            "recordings": 47,
+            "windows": 401634,
+            "model_deg": 5.2862424690943035,
+            "damped_deg": 6.450216484287441,
+            "mean_ratio": 0.8341299092997765,
+            "ratio_ci95": [
+              0.8026387911850639,
+              0.8646574529645525
+            ],
+            "trained_users_in_group": 1
+          },
+          "Quest 2": {
+            "users": 552,
+            "recordings": 1481,
+            "windows": 21035000,
+            "model_deg": 4.746075794840807,
+            "damped_deg": 5.752863011644815,
+            "mean_ratio": 0.8273529203331741,
+            "ratio_ci95": [
+              0.8224318817001279,
+              0.8323351951663069
+            ],
+            "trained_users_in_group": 56
+          },
+          "Rift CV1": {
+            "users": 79,
+            "recordings": 193,
+            "windows": 3036122,
+            "model_deg": 4.26977776387603,
+            "damped_deg": 5.220751120499234,
+            "mean_ratio": 0.8280989467027756,
+            "ratio_ci95": [
+              0.8141237524009293,
+              0.8415782522943773
+            ],
+            "trained_users_in_group": 7
+          },
+          "Rift S": {
+            "users": 2,
+            "recordings": 6,
+            "windows": 47553,
+            "model_deg": 4.407201872813199,
+            "damped_deg": 5.180862793325661,
+            "mean_ratio": 0.8520219946759076,
+            "ratio_ci95": null,
+            "trained_users_in_group": 2
+          },
+          "Unknown": {
+            "users": 85,
+            "recordings": 181,
+            "windows": 2311523,
+            "model_deg": 3.53486536877857,
+            "damped_deg": 4.281476591277146,
+            "mean_ratio": 0.8331775800081823,
+            "ratio_ci95": [
+              0.8219407127230283,
+              0.8436933367726455
+            ],
+            "trained_users_in_group": 10
+          },
+          "Vive family": {
+            "users": 121,
+            "recordings": 325,
+            "windows": 5578612,
+            "model_deg": 4.626838842281721,
+            "damped_deg": 5.606745417111463,
+            "mean_ratio": 0.8215859253586313,
+            "ratio_ci95": [
+              0.812290069802677,
+              0.8302977918392455
+            ],
+            "trained_users_in_group": 12
+          },
+          "Windows MR": {
+            "users": 28,
+            "recordings": 64,
+            "windows": 990821,
+            "model_deg": 4.165761099136964,
+            "damped_deg": 4.959648816586761,
+            "mean_ratio": 0.8443237314446701,
+            "ratio_ci95": [
+              0.8311380921844093,
+              0.8570626063445531
+            ],
+            "trained_users_in_group": 1
+          }
+        },
+        "source rate (Hz, nearest 5)": {
+          "85": {
+            "users": 46,
+            "recordings": 53,
+            "windows": 838494,
+            "model_deg": 4.8018441178449836,
+            "damped_deg": 5.673876397130297,
+            "mean_ratio": 0.8579846541263718,
+            "ratio_ci95": [
+              0.8417233615551919,
+              0.8738821389555059
+            ],
+            "trained_users_in_group": 4
+          },
+          "90": {
+            "users": 930,
+            "recordings": 2489,
+            "windows": 36744082,
+            "model_deg": 4.611473835217498,
+            "damped_deg": 5.594036345640624,
+            "mean_ratio": 0.8282414206325243,
+            "ratio_ci95": [
+              0.8247131496250122,
+              0.8318350230530619
+            ],
+            "trained_users_in_group": 97
+          },
+          "95": {
+            "users": 46,
+            "recordings": 58,
+            "windows": 866315,
+            "model_deg": 4.583807145538345,
+            "damped_deg": 5.474412716020444,
+            "mean_ratio": 0.8343893540673831,
+            "ratio_ci95": [
+              0.8086325172501766,
+              0.8549859339362603
+            ],
+            "trained_users_in_group": 7
+          },
+          "100": {
+            "users": 12,
+            "recordings": 17,
+            "windows": 247567,
+            "model_deg": 4.385138361543058,
+            "damped_deg": 5.242955355066467,
+            "mean_ratio": 0.8148616864059015,
+            "ratio_ci95": [
+              0.7595840790526476,
+              0.8582502576502496
+            ],
+            "trained_users_in_group": 2
+          },
+          "105": {
+            "users": 11,
+            "recordings": 15,
+            "windows": 196820,
+            "model_deg": 4.854753964171821,
+            "damped_deg": 5.7223889425712215,
+            "mean_ratio": 0.8490099113200201,
+            "ratio_ci95": [
+              0.8124364210190942,
+              0.8811820816151739
+            ],
+            "trained_users_in_group": 0
+          },
+          "110": {
+            "users": 7,
+            "recordings": 8,
+            "windows": 99416,
+            "model_deg": 4.983859198416667,
+            "damped_deg": 5.807577613723679,
+            "mean_ratio": 0.8654670471630983,
+            "ratio_ci95": [
+              0.8440930667743921,
+              0.8894582813535511
+            ],
+            "trained_users_in_group": 0
+          }
+        },
+        "motion intensity (velocity_deg_s tercile)": {
+          "low": {
+            "users": 556,
+            "recordings": 959,
+            "windows": 14350664,
+            "model_deg": 3.541594523953296,
+            "damped_deg": 4.203168771848576,
+            "mean_ratio": 0.8458050188803542,
+            "ratio_ci95": [
+              0.8419847472058899,
+              0.8497094315583674
+            ],
+            "trained_users_in_group": 52
+          },
+          "mid": {
+            "users": 583,
+            "recordings": 988,
+            "windows": 14957177,
+            "model_deg": 4.636112782996998,
+            "damped_deg": 5.566917883577468,
+            "mean_ratio": 0.8319954158031176,
+            "ratio_ci95": [
+              0.8278189856353234,
+              0.83624927459279
+            ],
+            "trained_users_in_group": 50
+          },
+          "high": {
+            "users": 401,
+            "recordings": 693,
+            "windows": 9684853,
+            "model_deg": 6.175691961450701,
+            "damped_deg": 7.688858671777485,
+            "mean_ratio": 0.8046469977854216,
+            "ratio_ci95": [
+              0.797106184131826,
+              0.8117588710197463
+            ],
+            "trained_users_in_group": 45
+          }
+        },
+        "headsets absent from training users": {
+          "3GLASSES S20": [
+            "b0636eef-056b-45d1-b4b4-7e74f900a10c"
+          ],
+          "Acer AH1010": [
+            "04e4e243-8400-4873-8f95-6f36085ffb59"
+          ],
+          "DELL VISOR VR1180": [
+            "37533998-e671-4e84-9f56-95cfa278b9fc"
+          ],
+          "HP Reverb VR Headset VR1000-2xxx0": [
+            "671f7d06-376a-4f22-9bfc-864d1ed8b0e0"
+          ],
+          "HP Reverb Virtual Reality Headset G20": [
+            "0cce1800-c2a2-4aa6-baed-b783d0238ae4",
+            "0db40ad8-b39a-486d-93da-8edc4de1ef96",
+            "2410ae5c-9f5f-44a6-bbfa-b6039c9ad0c1",
+            "27bca207-800d-4696-8b55-42d1b1208afc",
+            "42c90f47-944b-4540-b9b6-a9e917e9839e",
+            "4b3da5cf-0833-4568-9dd0-7b1c153b38fd",
+            "537f4f7e-1433-45aa-b630-d7992db0e0bc",
+            "54fbade1-a30e-4c92-a62f-d39c188f8bcd",
+            "706256ad-e369-47de-9907-f2ca945a7788",
+            "73077627-df36-44b1-ada9-2ab2628b8331",
+            "8d2de0e1-3e77-4abe-a73d-fcedff08df55",
+            "9d9581cb-d8f7-4a91-979c-dd0d6e54e2c8",
+            "b27c8a93-5405-41b8-ba0a-83848da00877",
+            "c219cfe9-f31c-4427-9fec-95832cc83894",
+            "c46b9a34-719a-4cc8-abbb-af7596039689",
+            "d29ee3e8-b3a1-4d41-99f0-7946a5ca727f",
+            "dd8df40b-3e02-460b-8209-39dae5c2794c",
+            "f8fd2f05-43e1-4b7e-9234-1de39a1d1e96"
+          ],
+          "Lenovo Explorer0": [
+            "f4b83747-8b68-49fb-8632-53625b7512ba"
+          ],
+          "Miramar": [
+            "cde3bd29-8758-4bfa-87a8-39afa2f8c31f",
+            "eafb5cd4-7768-4f0c-9ec9-0ada54e561a6"
+          ],
+          "PICO 4": [
+            "1b78885e-24e8-4e1e-b143-4553a845478b",
+            "25a27e9d-c3f0-43d4-9ba5-9b4248c1f78f",
+            "269cdce3-9bbc-459a-979b-2551a5a9f884",
+            "28933bdd-c0f0-4828-8cb8-6695c1cedec0",
+            "31d4fc9f-f89b-431b-be0c-c193ca94a706",
+            "3397c3bd-3194-43f1-8433-8e8a91f1f101",
+            "48920bc6-ebda-45d7-9b77-8f3c5edcdedb",
+            "7974ff4d-48bc-4759-a053-6f39814aad87",
+            "ab32620a-c748-4d2f-802d-939e6bb244cd",
+            "c783f748-f765-4081-877f-ff1ee6d86ca3",
+            "dca87fa7-6dcc-4e11-9c28-913e3de4a66c"
+          ],
+          "Pico Neo 2": [
+            "76e4a8ec-6203-43f6-b126-399d31f66339"
+          ],
+          "Pimax 5K Plus": [
+            "b02c7c88-cf45-4760-9322-c32799d6f5ac"
+          ],
+          "Pimax 5K Super": [
+            "b68e6327-c38f-47dc-b04e-da4857cb24fe"
+          ],
+          "Rift_S": [
+            "ddca002c-c0b7-4f7c-9ad3-e091ce1a07dc"
+          ],
+          "Samsung Windows Mixed Reality 800ZAA0": [
+            "b5a9b541-37a3-4911-8513-efa63b461ddf",
+            "d4656db9-0428-40a7-a4dc-6d836b0acf5c"
+          ],
+          "Samsung Windows Mixed Reality 800ZBA0": [
+            "3aac61d1-65b2-4dfd-922d-1152dd84e689",
+            "6cbdee11-e04a-4d4d-baf9-f567231ba921",
+            "8406c9b7-20a6-4cf0-a66e-a57e836021b8",
+            "f68dc60f-94f7-4d95-b42d-0c02222b11b6"
+          ],
+          "Vive": [
+            "03e37b04-36f2-45af-9984-6f42866b8f52",
+            "399d63a9-3c6a-45ad-a8c9-32875db0a2d7"
+          ],
+          "Vive MV": [
+            "06bd164a-67da-4f11-85f3-c2925b0a8ccd",
+            "08f29b51-226e-4674-8d1c-86c6b9ca868e",
+            "0f6eb82c-4ee1-4a82-a4d0-0bffc6f418fd",
+            "26b1209d-8816-4506-b8ca-c9e17223163b",
+            "2ef62b6b-0c96-4bda-9536-6529b21af21e",
+            "40453e9f-bd65-4991-8da9-b47f6d93d225",
+            "6924807d-4ab4-4522-9da5-669132df4bfb",
+            "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f",
+            "8df0d2e3-6bea-4cb5-9b00-42385cc13cf6",
+            "9866ef28-dca5-4caa-8055-897d6a4f6f56",
+            "99cc8481-aea0-4faa-a705-fb184e4952f9",
+            "9add3369-e37d-42cd-8c81-791623b4fc1b",
+            "9da6b1a6-b567-463c-a4c5-1dab0373631d",
+            "9fb16ab8-0420-4900-ae90-d45ec0553657",
+            "b678a4e2-ced3-4332-9ad1-2802144d70b3",
+            "b6bbe1ec-2262-45aa-8bb9-cacd0b31dad5",
+            "e32b7ccf-c9ac-4b66-bffd-ba68e31a0e16",
+            "e548e125-752d-4518-be0d-f3f122613f28",
+            "f35f3126-0524-431c-86d4-472e813633c8",
+            "fdf5bae0-d713-4601-9b49-fac9042d2105"
+          ],
+          "Vive MV.": [
+            "13f83eab-6af9-45a8-b446-bd534e71836d",
+            "9673a134-ff70-4168-8f86-f63d92dbf545",
+            "98a47026-d1c8-4629-990f-5fefe54dedc9",
+            "ec6f079e-8d4d-4fcf-8571-7eb05c63f7f3"
+          ],
+          "hedy": [
+            "de71bae7-36f5-4086-8bd2-5687967eae06"
+          ],
+          "vive_cosmos": [
+            "8a9b9b25-ce6b-4830-a19a-3c0c5df85ddc",
+            "b33e60eb-63dd-4165-a16a-4194ce62341a",
+            "b978de8a-6eb5-474a-9ad7-2d48405b0149"
+          ]
+        }
+      }
+    },
+    "k8_800": {
+      "motion_cut_points": [
+        22.325482312832218,
+        28.966572862457504
+      ],
+      "test160": {
+        "headset family": {
+          "Index": {
+            "users": 12,
+            "recordings": 34,
+            "windows": 513411,
+            "model_deg": 3.9154488627662056,
+            "damped_deg": 4.779754941082938,
+            "mean_ratio": 0.8301112186825829,
+            "ratio_ci95": [
+              0.8055464574860163,
+              0.852073025522521
+            ],
+            "trained_users_in_group": 89
+          },
+          "Pico": {
+            "users": 3,
+            "recordings": 9,
+            "windows": 161656,
+            "model_deg": 5.310323947781497,
+            "damped_deg": 6.07802458884381,
+            "mean_ratio": 0.8679995642698052,
+            "ratio_ci95": null,
+            "trained_users_in_group": 24
+          },
+          "Quest 1": {
+            "users": 4,
+            "recordings": 13,
+            "windows": 107594,
+            "model_deg": 4.233778088616397,
+            "damped_deg": 5.057298491374801,
+            "mean_ratio": 0.8350381007822743,
+            "ratio_ci95": null,
+            "trained_users_in_group": 13
+          },
+          "Quest 2": {
+            "users": 86,
+            "recordings": 235,
+            "windows": 3182344,
+            "model_deg": 4.846429995195328,
+            "damped_deg": 6.0366482298586135,
+            "mean_ratio": 0.8154670191120728,
+            "ratio_ci95": [
+              0.8040577778289224,
+              0.8278627075308516
+            ],
+            "trained_users_in_group": 463
+          },
+          "Rift CV1": {
+            "users": 15,
+            "recordings": 38,
+            "windows": 548778,
+            "model_deg": 4.018607145509449,
+            "damped_deg": 5.034473627472343,
+            "mean_ratio": 0.8143954407129714,
+            "ratio_ci95": [
+              0.792603611417248,
+              0.8352608116596933
+            ],
+            "trained_users_in_group": 62
+          },
+          "Rift S": {
+            "users": 1,
+            "recordings": 4,
+            "windows": 24946,
+            "model_deg": 4.313255332869492,
+            "damped_deg": 5.3010806566210755,
+            "mean_ratio": 0.8136558585431473,
+            "ratio_ci95": null,
+            "trained_users_in_group": 2
+          },
+          "Unknown": {
+            "users": 19,
+            "recordings": 41,
+            "windows": 522767,
+            "model_deg": 3.2213106248194556,
+            "damped_deg": 3.9542928017804475,
+            "mean_ratio": 0.8092781163110875,
+            "ratio_ci95": [
+              0.780711845150511,
+              0.837128022224561
+            ],
+            "trained_users_in_group": 67
+          },
+          "Vive family": {
+            "users": 25,
+            "recordings": 62,
+            "windows": 1077453,
+            "model_deg": 4.597530463925732,
+            "damped_deg": 5.713353860116117,
+            "mean_ratio": 0.801646665519138,
+            "ratio_ci95": [
+              0.7840757581973583,
+              0.8176456163818658
+            ],
+            "trained_users_in_group": 91
+          },
+          "Windows MR": {
+            "users": 4,
+            "recordings": 12,
+            "windows": 221018,
+            "model_deg": 4.748118520037918,
+            "damped_deg": 5.536042542617108,
+            "mean_ratio": 0.8386285362323234,
+            "ratio_ci95": null,
+            "trained_users_in_group": 23
+          }
+        },
+        "source rate (Hz, nearest 5)": {
+          "85": {
+            "users": 4,
+            "recordings": 5,
+            "windows": 120011,
+            "model_deg": 4.4936980937029185,
+            "damped_deg": 5.260710924508172,
+            "mean_ratio": 0.8546025581396982,
+            "ratio_ci95": null,
+            "trained_users_in_group": 43
+          },
+          "90": {
+            "users": 156,
+            "recordings": 419,
+            "windows": 5958799,
+            "model_deg": 4.521995729061899,
+            "damped_deg": 5.599783195504015,
+            "mean_ratio": 0.8144506350653242,
+            "ratio_ci95": [
+              0.8062009726917229,
+              0.8227014588867076
+            ],
+            "trained_users_in_group": 773
+          },
+          "95": {
+            "users": 8,
+            "recordings": 14,
+            "windows": 172708,
+            "model_deg": 4.0772716320281015,
+            "damped_deg": 4.929902845384275,
+            "mean_ratio": 0.83029118685581,
+            "ratio_ci95": [
+              0.805694034659297,
+              0.8578821978529743
+            ],
+            "trained_users_in_group": 40
+          },
+          "100": {
+            "users": 2,
+            "recordings": 4,
+            "windows": 44735,
+            "model_deg": 4.654356357740154,
+            "damped_deg": 5.778723048433524,
+            "mean_ratio": 0.8010158515704382,
+            "ratio_ci95": null,
+            "trained_users_in_group": 10
+          },
+          "105": {
+            "users": 2,
+            "recordings": 2,
+            "windows": 12768,
+            "model_deg": 8.031903059082742,
+            "damped_deg": 9.890590229180585,
+            "mean_ratio": 0.7800509897884798,
+            "ratio_ci95": null,
+            "trained_users_in_group": 8
+          },
+          "110": {
+            "users": 3,
+            "recordings": 4,
+            "windows": 50946,
+            "model_deg": 4.8537226145304855,
+            "damped_deg": 5.838707602562478,
+            "mean_ratio": 0.8331907204938664,
+            "ratio_ci95": null,
+            "trained_users_in_group": 4
+          }
+        },
+        "motion intensity (velocity_deg_s tercile)": {
+          "low": {
+            "users": 90,
+            "recordings": 162,
+            "windows": 2273293,
+            "model_deg": 3.508815761611651,
+            "damped_deg": 4.215926507936702,
+            "mean_ratio": 0.834682704564131,
+            "ratio_ci95": [
+              0.8240441917710729,
+              0.8458948760914481
+            ],
+            "trained_users_in_group": 428
+          },
+          "mid": {
+            "users": 93,
+            "recordings": 147,
+            "windows": 2239128,
+            "model_deg": 4.383714038992658,
+            "damped_deg": 5.339712459153166,
+            "mean_ratio": 0.8185732207728217,
+            "ratio_ci95": [
+              0.8085388818840051,
+              0.8280050219764725
+            ],
+            "trained_users_in_group": 467
+          },
+          "high": {
+            "users": 77,
+            "recordings": 139,
+            "windows": 1847546,
+            "model_deg": 5.929439821073338,
+            "damped_deg": 7.573655257222418,
+            "mean_ratio": 0.7918037420398817,
+            "ratio_ci95": [
+              0.7783429509866967,
+              0.8048440467658209
+            ],
+            "trained_users_in_group": 386
+          }
+        },
+        "headsets absent from training users": {
+          "DELL VISOR VR1180": [
+            "37533998-e671-4e84-9f56-95cfa278b9fc"
+          ],
+          "HP Reverb VR Headset VR1000-2xxx0": [
+            "671f7d06-376a-4f22-9bfc-864d1ed8b0e0"
+          ],
+          "Rift_S": [
+            "ddca002c-c0b7-4f7c-9ad3-e091ce1a07dc"
+          ]
+        }
+      }
+    }
+  },
+  "D_validation_to_test": {
+    "models": [
+      {
+        "bench": "v5_tcnn_ga2",
+        "ledger": "v5_group_a_v2/control",
+        "seed": 44,
+        "val15": 4.400396,
+        "test20": 4.453403863608939,
+        "test_minus_val": 0.053007863608939054
+      },
+      {
+        "bench": "v6_tcnn_ga2",
+        "ledger": "v6_group_a_v2/control",
+        "seed": 44,
+        "val15": 4.328529,
+        "test20": 4.358375767180318,
+        "test_minus_val": 0.029846767180318423
+      },
+      {
+        "bench": "v7_sep_base3_addons_ga2",
+        "ledger": "v7_extra/separable_base3_addons",
+        "seed": 43,
+        "val15": 4.369886,
+        "test20": 4.418629005144088,
+        "test_minus_val": 0.0487430051440878
+      },
+      {
+        "bench": "v7_base3_5_addons_ga2",
+        "ledger": "v7_confirm/base3_5_addons",
+        "seed": 43,
+        "val15": 4.356095,
+        "test20": 4.392306216182422,
+        "test_minus_val": 0.03621121618242196
+      },
+      {
+        "bench": "v7_sep_base3_addons_angular_ga2",
+        "ledger": "v8_recipe_sep_base3_addons/angular_loss",
+        "seed": 44,
+        "val15": 4.313359,
+        "test20": 4.328919894097841,
+        "test_minus_val": 0.015560894097840894
+      },
+      {
+        "bench": "v7_base3_5_addons_angular_ga2",
+        "ledger": "v8_recipe_base3_5_addons/angular_loss",
+        "seed": 44,
+        "val15": 4.313486,
+        "test20": 4.3419811978925535,
+        "test_minus_val": 0.028495197892553392
+      },
+      {
+        "bench": "v9_k5_combined_ga2",
+        "ledger": "v9_confirm/k5_combined",
+        "seed": 42,
+        "val15": 4.265154,
+        "test20": 4.287127231314385,
+        "test_minus_val": 0.021973231314385444
+      },
+      {
+        "bench": "v9_k8_combined_ga2",
+        "ledger": "v9_confirm/k8_combined",
+        "seed": 42,
+        "val15": 4.247105,
+        "test20": 4.26658054877607,
+        "test_minus_val": 0.01947554877606983
+      },
+      {
+        "bench": "v9_k8_jitter3_s42_ga2",
+        "ledger": "v9_jitter/jitter_3ms",
+        "seed": 42,
+        "val15": 4.321199,
+        "test20": 4.338779463910656,
+        "test_minus_val": 0.017580463910656263
+      }
+    ],
+    "spearman": 0.9833333333333333,
+    "kendall": 0.9444444444444445,
+    "pearson": 0.991870093912058,
+    "test_minus_val_mean_sd": [
+      0.03009935423414145,
+      0.013506322822451417
+    ],
+    "k8_800_minus_k8_100": {
+      "val15": {
+        "selected": {
+          "mean_diff_deg": -0.06684904078641178,
+          "ci95": [
+            -0.08246196980650325,
+            -0.05494175867540768
+          ],
+          "equal_player_mean_diff_deg": -0.07579192408155165,
+          "players_better": 15,
+          "players": 15,
+          "draws": 10000,
+          "seed": 0
+        },
+        "seed_averaged": {
+          "mean_diff_deg": -0.06649908254924765,
+          "ci95": [
+            -0.08387806131492963,
+            -0.0521798469718386
+          ],
+          "equal_player_mean_diff_deg": -0.0771866887327637,
+          "players_better": 15,
+          "players": 15,
+          "draws": 10000,
+          "seed": 0
+        }
+      },
+      "val105_new": {
+        "selected": {
+          "mean_diff_deg": -0.07503531809281037,
+          "ci95": [
+            -0.08540260487430909,
+            -0.0654241334567561
+          ],
+          "equal_player_mean_diff_deg": -0.0786932694384624,
+          "players_better": 103,
+          "players": 105,
+          "draws": 10000,
+          "seed": 0
+        },
+        "seed_averaged": {
+          "mean_diff_deg": -0.07329623179476968,
+          "ci95": [
+            -0.08272099896610739,
+            -0.06493727021880795
+          ],
+          "equal_player_mean_diff_deg": -0.07561377740273065,
+          "players_better": 105,
+          "players": 105,
+          "draws": 10000,
+          "seed": 0
+        }
+      },
+      "val120": {
+        "selected": {
+          "mean_diff_deg": -0.07390407297836606,
+          "ci95": [
+            -0.08312027244794622,
+            -0.06550580003501535
+          ],
+          "equal_player_mean_diff_deg": -0.07833060126884854,
+          "players_better": 118,
+          "players": 120,
+          "draws": 10000,
+          "seed": 0
+        },
+        "seed_averaged": {
+          "mean_diff_deg": -0.07235694747928045,
+          "ci95": [
+            -0.08103857735170286,
+            -0.06470977959064822
+          ],
+          "equal_player_mean_diff_deg": -0.07581039131898477,
+          "players_better": 120,
+          "players": 120,
+          "draws": 10000,
+          "seed": 0
+        }
+      },
+      "test20": {
+        "selected": {
+          "mean_diff_deg": -0.052441978961190336,
+          "ci95": [
+            -0.06125461788847235,
+            -0.04460341470543415
+          ],
+          "equal_player_mean_diff_deg": -0.058187062801799395,
+          "players_better": 20,
+          "players": 20,
+          "draws": 10000,
+          "seed": 0
+        },
+        "seed_averaged": {
+          "mean_diff_deg": -0.05752395123461823,
+          "ci95": [
+            -0.06704921356324159,
+            -0.04810883577297957
+          ],
+          "equal_player_mean_diff_deg": -0.05733067987422247,
+          "players_better": 20,
+          "players": 20,
+          "draws": 10000,
+          "seed": 0
+        }
+      },
+      "test160": {
+        "selected": {
+          "mean_diff_deg": -0.06393835296882121,
+          "ci95": [
+            -0.07254424772734343,
+            -0.05596041377832066
+          ],
+          "equal_player_mean_diff_deg": -0.06566948287214705,
+          "players_better": 151,
+          "players": 160,
+          "draws": 10000,
+          "seed": 0
+        },
+        "seed_averaged": {
+          "mean_diff_deg": -0.06843987743962573,
+          "ci95": [
+            -0.07733034182060865,
+            -0.06074150989762639
+          ],
+          "equal_player_mean_diff_deg": -0.0665575007859974,
+          "players_better": 157,
+          "players": 160,
+          "draws": 10000,
+          "seed": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "sources": {
+    "42": {
+      "source_unchanged": true,
+      "copy_unchanged": true
+    },
+    "43": {
+      "source_unchanged": true,
+      "copy_unchanged": true
+    },
+    "44": {
+      "source_unchanged": true,
+      "copy_unchanged": true
+    }
+  },
+  "code_unchanged": {
+    "baseline_pipeline.py": true,
+    "best\\export.py": true,
+    "best\\model.py": true,
+    "experimental\\v10_weight_edit\\__init__.py": true,
+    "experimental\\v10_weight_edit\\edits.py": true,
+    "experimental\\v10_weight_edit\\export_check.py": true,
+    "experimental\\v10_weight_edit\\metrics.py": true,
+    "experimental\\v10_weight_edit\\run.py": true,
+    "experimental\\v10_weight_edit\\test_edits.py": true,
+    "experimental\\v10_weight_edit\\test_metrics.py": true,
+    "experimental\\v10_weight_edit\\test_run.py": true,
+    "tcnn\\model.py": true,
+    "tcnn\\onnx_export.py": true,
+    "tcnn\\runtime.py": true,
+    "train_tcnn.py": true
+  },
+  "candidate_sha256": "05ee4587efd24336c2c0ea08e2a20d71be11d10990bae7b2906e6818a49d500d",
+  "changed_scalars": {
+    "head_bias_x": 3,
+    "head.weight": 288
+  },
+  "changed_scalar_count": 291,
+  "model_spec_unchanged": true
+}

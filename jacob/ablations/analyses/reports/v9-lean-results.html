@@ -1,0 +1,645 @@
+<title>v9 Lean Results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  /* Layout: one centred column; prose near 44rem, tables and charts up to 60rem; headline tiles, then evidence, then the open decisions */
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --ink: #111418;
+  --ink-2: #434a55;
+  --ink-3: #5f6774;
+  --rule: #dde2e8;
+  --rule-2: #c3cad4;
+  --accent: #1d5fb8;
+  --accent-soft: #e8eff9;
+  --good: #0ca30c;
+  --bad: #d03b3b;
+  --hold: #c98500;
+  --s-ref: #4b5059;
+  --s-k8: #2a78d6;
+  --s-k5: #eb6834;
+  --s-jit: #1baf7a;
+  --grid: #e5e9ee;
+  --font-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1216; --surface: #161a20; --ink: #e8ebef; --ink-2: #b4bcc7; --ink-3: #939cab;
+    --rule: #262c34; --rule-2: #3a424d; --accent: #82b2f5; --accent-soft: #172538;
+    --hold: #e0a020;
+    --s-ref: #c9ced6; --s-k8: #3987e5; --s-k5: #d95926; --s-jit: #199e70; --grid: #232931;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1216; --surface: #161a20; --ink: #e8ebef; --ink-2: #b4bcc7; --ink-3: #939cab;
+  --rule: #262c34; --rule-2: #3a424d; --accent: #82b2f5; --accent-soft: #172538;
+  --hold: #e0a020;
+  --s-ref: #c9ced6; --s-k8: #3987e5; --s-k5: #d95926; --s-jit: #199e70; --grid: #232931;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+.page { max-width: 60rem; margin: 0 auto; padding-block: 48px 72px; }
+.prose { max-width: 44rem; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-stretch: 85%; text-wrap: balance; color: var(--ink); }
+h1 { font-size: clamp(2.2rem, 6vw, 3.1rem); font-weight: 700; line-height: 1.04; letter-spacing: -0.01em; margin: 8px 0 16px; }
+h2 { font-size: 1.6rem; font-weight: 650; line-height: 1.2; margin: 0 0 12px; }
+h3 { font-size: 1.15rem; font-weight: 650; line-height: 1.3; margin: 0; }
+h4 { font-size: 1rem; font-weight: 650; margin: 0 0 4px; }
+p { margin: 0 0 14px; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.lede { font-size: 1.13rem; color: var(--ink-2); }
+.meta { font-size: 13.5px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 8px; }
+.note { font-size: 14px; color: var(--ink-2); }
+section { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--rule); }
+code { font-family: var(--font-mono); font-size: .86em; background: var(--accent-soft); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 32px; }
+@media (max-width: 780px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tile { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.tile .label { font-size: 13px; color: var(--ink-3); }
+.tile .value { font-weight: 600; font-size: clamp(1.5rem, 4vw, 1.95rem); line-height: 1.1; }
+.tile .delta { font-size: 13px; color: var(--ink-2); }
+
+.table-wrap { overflow-x: auto; margin: 18px 0; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+caption { caption-side: top; text-align: left; padding: 12px 12px 4px; font-weight: 600; font-size: 14px; color: var(--ink); }
+th, td { padding: 8px 12px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; white-space: nowrap; }
+thead th { font-size: 12.5px; font-weight: 600; color: var(--ink-2); }
+tbody tr:last-child td { border-bottom: 0; }
+.num { text-align: right; }
+td.wrap { white-space: normal; min-width: 15rem; }
+tr.pick td { background: var(--accent-soft); }
+tr.group td { font-size: 12.5px; font-weight: 600; color: var(--ink-3); padding-top: 12px; }
+.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; vertical-align: 0; }
+
+.out { display: inline-flex; align-items: center; gap: 6px; }
+.out svg { width: 14px; height: 14px; flex: none; }
+.out.pass svg { color: var(--good); }
+.out.fail svg { color: var(--bad); }
+.out.hold svg { color: var(--hold); }
+
+figure { margin: 22px 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 16px 12px; min-width: 0; }
+figure h3 { margin-bottom: 4px; }
+figcaption { font-size: 13.5px; color: var(--ink-2); margin-top: 6px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--ink-2); margin: 6px 0 4px; }
+.key { display: inline-flex; align-items: center; gap: 7px; }
+.key i { display: inline-block; width: 18px; height: 2px; border-radius: 1px; }
+.chart { position: relative; min-height: 240px; }
+.chart svg { display: block; overflow: visible; }
+.chart svg:focus-visible, .chart circle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--rule-2); border-radius: 6px; padding: 8px 10px; font-size: 13px; line-height: 1.45; box-shadow: 0 6px 18px rgba(0, 0, 0, .10); min-width: 11rem; z-index: 2; }
+.tip .head { color: var(--ink-3); font-size: 12px; margin-bottom: 2px; }
+.tip .row { display: flex; align-items: center; gap: 8px; }
+.tip .row i { width: 12px; height: 2px; display: inline-block; flex: none; }
+.tip strong { font-weight: 600; font-variant-numeric: tabular-nums; }
+.tip span { color: var(--ink-2); }
+
+.rf { display: grid; gap: 10px; margin-top: 10px; }
+.rf-row { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) 6.5rem; align-items: center; gap: 12px; font-size: 14px; }
+.rf-track { height: 12px; background: var(--grid); }
+.rf-fill { height: 100%; border-radius: 0 4px 4px 0; }
+.rf-val { color: var(--ink-2); font-variant-numeric: tabular-nums; text-align: right; }
+@media (max-width: 520px) { .rf-row { grid-template-columns: 6.5rem minmax(0, 1fr); } .rf-val { grid-column: 2; text-align: left; margin-top: -6px; } }
+
+.decisions { display: grid; gap: 16px; margin-top: 20px; }
+.decision { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px 20px; min-width: 0; }
+.decision > header { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin-bottom: 8px; }
+.decision .id { font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--accent); }
+.options { display: grid; grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr)); gap: 10px; margin: 12px 0 14px; }
+.option { border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; font-size: 14.5px; min-width: 0; }
+.option p { margin: 0; color: var(--ink-2); }
+.rec { font-size: 14.5px; margin: 0; }
+.rec b { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); margin-right: 6px; }
+.decision ul { margin: 6px 0 0; padding-left: 20px; }
+.decision li { margin-bottom: 6px; }
+.msg { background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; white-space: pre-wrap; font-family: var(--font-body); font-size: 14.5px; line-height: 1.55; margin: 10px 0; overflow-wrap: anywhere; }
+.copy { font: inherit; font-size: 13.5px; font-weight: 500; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--rule-2); background: var(--surface); color: var(--ink); cursor: pointer; }
+.copy:hover { border-color: var(--accent); }
+.copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.method { padding-left: 20px; }
+.method li { margin-bottom: 8px; }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-3); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="page">
+  <header class="prose">
+    <div class="eyebrow">ABC Challenge · head-pose forecast, 200 ms ahead</div>
+    <h1>v9 Lean Results</h1>
+    <p class="lede">The v9 programme looked for accuracy gains that cost no latency, using only the challenge's safe-list operators. The best candidate, k8_combined, cuts validation error by 0.080° against our current best and runs 39% faster on the CPU latency proxy. The model choice and five other decisions are for the team, listed at the end.</p>
+    <div class="meta"><span>29 Oct 2026</span><span>Prepared for the team with an AI assistant</span><span>Validation data only; the test set has not been scored</span></div>
+  </header>
+
+  <div class="tiles" role="list">
+    <div class="tile" role="listitem"><span class="label">Validation error, 3 seeds</span><span class="value">4.250°</span><span class="delta">−0.080° vs 4.330° today</span></div>
+    <div class="tile" role="listitem"><span class="label">Validation users better</span><span class="value">15 of 15</span><span class="delta">Median user −0.067°</span></div>
+    <div class="tile" role="listitem"><span class="label">CPU latency, lean graph</span><span class="value">55 µs</span><span class="delta">−39% vs 90 µs today</span></div>
+    <div class="tile" role="listitem"><span class="label">Parameters</span><span class="value">7,555</span><span class="delta">+904 vs 6,651 today</span></div>
+  </div>
+
+  <section id="candidates">
+    <div class="prose">
+      <h2>Two candidates, one recipe</h2>
+      <p>Both candidates keep what the current model already has: separable blocks, mirror and gravity features, the damped-velocity prior and the angular loss. Both add the same three training changes from the screen: window sampling, native maps and 15° tilt augmentation. They differ in the network. k8_combined has 3 blocks with kernel 8 and 32 channels per mirror stream. k5_combined has 4 blocks with kernel 5 and 24 channels per stream. Each sees 393 to 397 samples of history, where the current model sees 243.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Validation error at step 20, degrees (all 657,189 windows, 15 users)</caption>
+        <thead><tr><th>Model</th><th class="num">Seed 42</th><th class="num">Seed 43</th><th class="num">Seed 44</th><th class="num">Mean</th><th class="num">vs current</th><th class="num">Users better</th><th class="num">95% CI</th></tr></thead>
+        <tbody>
+          <tr><td><span class="swatch" style="background: var(--s-ref)"></span>Current best (sep + angular)</td><td class="num">4.3386</td><td class="num">4.3370</td><td class="num">4.3134</td><td class="num">4.3297</td><td class="num">reference</td><td class="num">–</td><td class="num">–</td></tr>
+          <tr class="pick"><td><span class="swatch" style="background: var(--s-k8)"></span>k8_combined</td><td class="num">4.2471</td><td class="num">4.2547</td><td class="num">4.2485</td><td class="num">4.2501</td><td class="num">−0.0796</td><td class="num">15 / 15</td><td class="num">−0.124 to −0.047</td></tr>
+          <tr><td><span class="swatch" style="background: var(--s-k5)"></span>k5_combined</td><td class="num">4.2652</td><td class="num">4.2714</td><td class="num">4.2785</td><td class="num">4.2717</td><td class="num">−0.0580</td><td class="num">15 / 15</td><td class="num">−0.094 to −0.032</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note prose">Compared directly, k8_combined beats k5_combined by 0.0216°, with 14 of 15 users better (95% CI −0.032 to −0.013). One validation user with about 12° error, 1.5% of the windows, improves by 0.89° with k8_combined. Without that user the gain is 0.067°, the same as the median user's. The selected seed is 42 for both candidates.</p>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Cost of each exportable graph</caption>
+        <thead><tr><th>Graph</th><th class="num">Nodes run</th><th class="num">Median µs</th><th class="num">p90 µs</th><th class="num">vs today</th><th class="num">Params</th><th class="num">Stored floats</th><th class="num">MACs</th><th class="num">State floats</th></tr></thead>
+        <tbody>
+          <tr class="group"><td colspan="9">Current best, receptive field 243</td></tr>
+          <tr><td>v7 graph (submitted today)</td><td class="num">130</td><td class="num">90.3</td><td class="num">132.2</td><td class="num">reference</td><td class="num">6,651</td><td class="num">6,648</td><td class="num">13,863</td><td class="num">11,616</td></tr>
+          <tr><td>lean</td><td class="num">84</td><td class="num">72.0</td><td class="num">102.8</td><td class="num">−20%</td><td class="num">6,651</td><td class="num">6,648</td><td class="num">14,446</td><td class="num">11,616</td></tr>
+          <tr><td>padded rows</td><td class="num">74</td><td class="num">60.6</td><td class="num">80.1</td><td class="num">−33%</td><td class="num">6,651</td><td class="num">6,648</td><td class="num">20,206</td><td class="num">11,616</td></tr>
+          <tr><td>padded rows + A4</td><td class="num">71</td><td class="num">60.2</td><td class="num">82.0</td><td class="num">−33%</td><td class="num">6,651</td><td class="num">6,651</td><td class="num">20,008</td><td class="num">11,616</td></tr>
+          <tr class="group"><td colspan="9">k8_combined, receptive field 393</td></tr>
+          <tr class="pick"><td>lean</td><td class="num">60</td><td class="num">55.2</td><td class="num">78.0</td><td class="num">−39%</td><td class="num">7,555</td><td class="num">7,552</td><td class="num">16,222</td><td class="num">25,088</td></tr>
+          <tr><td>padded rows</td><td class="num">54</td><td class="num">48.3</td><td class="num">69.1</td><td class="num">−47%</td><td class="num">7,555</td><td class="num">7,552</td><td class="num">22,366</td><td class="num">25,088</td></tr>
+          <tr><td>padded rows + A4</td><td class="num">51</td><td class="num">46.9</td><td class="num">63.1</td><td class="num">−48%</td><td class="num">7,555</td><td class="num">7,555</td><td class="num">22,168</td><td class="num">25,088</td></tr>
+          <tr class="group"><td colspan="9">k5_combined, receptive field 397</td></tr>
+          <tr><td>lean</td><td class="num">69</td><td class="num">61.9</td><td class="num">76.8</td><td class="num">−31%</td><td class="num">5,595</td><td class="num">5,592</td><td class="num">12,318</td><td class="num">19,008</td></tr>
+          <tr><td>padded rows</td><td class="num">61</td><td class="num">53.5</td><td class="num">76.0</td><td class="num">−41%</td><td class="num">5,595</td><td class="num">5,592</td><td class="num">16,926</td><td class="num">19,008</td></tr>
+          <tr><td>padded rows + A4</td><td class="num">58</td><td class="num">52.1</td><td class="num">73.2</td><td class="num">−42%</td><td class="num">5,595</td><td class="num">5,595</td><td class="num">16,728</td><td class="num">19,008</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note prose">Nodes run are counted after ONNX Runtime folds constants at load; the padded files hold 3 to 9 more nodes that fold away. All ten graphs match their PyTorch model to within 0.0001° on the longest validation session and use only safe-list operators. Only today's v7 graph contains a Clip.</p>
+
+    <figure>
+      <h3>Accuracy against latency</h3>
+      <div class="legend" aria-hidden="true">
+        <span class="key"><i style="background: var(--s-ref)"></i>Current best</span>
+        <span class="key"><i style="background: var(--s-k8)"></i>k8_combined</span>
+        <span class="key"><i style="background: var(--s-k5)"></i>k5_combined</span>
+      </div>
+      <div class="chart" id="chart-cost" role="group" aria-label="Validation error against CPU latency. k8_combined has the lowest error, 4.250 degrees, and the lowest latency, 46.9 to 55.2 microseconds. k5_combined is at 4.272 degrees and 52.1 to 61.9 microseconds. The current best is at 4.330 degrees and 60.2 to 90.3 microseconds."></div>
+      <figcaption>Each line is one set of weights exported as different graphs, so its error stays fixed along the line. Lower and further left is better. Hover or tab to a point for its graph and node count.</figcaption>
+    </figure>
+  </section>
+
+  <section id="gain">
+    <div class="prose">
+      <h2>Where the gain came from</h2>
+      <p>Each change was first screened alone on seed 42 and compared per user with the same control (4.3386°). Changes that passed the agreed rule were combined and confirmed on three seeds. For k8 the gains added up almost exactly: 0.092° on seed 42, against 0.094° summed from the screen. For k5 they added up to less, 0.073° against 0.095°.</p>
+    </div>
+
+    <figure>
+      <h3>History seen per prediction</h3>
+      <div class="rf">
+        <div class="rf-row"><span>Current best</span><div class="rf-track"><div class="rf-fill" style="width: 60.75%; background: var(--s-ref)"></div></div><span class="rf-val">243 of 400</span></div>
+        <div class="rf-row"><span>k8_combined</span><div class="rf-track"><div class="rf-fill" style="width: 98.25%; background: var(--s-k8)"></div></div><span class="rf-val">393 of 400</span></div>
+        <div class="rf-row"><span>k5_combined</span><div class="rf-track"><div class="rf-fill" style="width: 99.25%; background: var(--s-k5)"></div></div><span class="rf-val">397 of 400</span></div>
+      </div>
+      <figcaption>Receptive field in samples, out of the 400-sample window the harness provides. Longer history gave the largest single gain, which matches Nic's finding that 4 s beats 2 s.</figcaption>
+    </figure>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Screened changes (seed 42, paired per user)</caption>
+        <thead><tr><th>Change</th><th>What it does</th><th class="num">Error</th><th class="num">Δ</th><th class="num">Users better</th><th>Outcome</th></tr></thead>
+        <tbody>
+          <tr class="group"><td colspan="6">Against the control, 4.3386°</td></tr>
+          <tr><td>k5_4blocks</td><td class="wrap">4 blocks, kernel 5, dilations 1/5/25/68</td><td class="num">4.2898</td><td class="num">−0.0488</td><td class="num">15 / 15</td><td><span class="out pass"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pass, finalist</span></td></tr>
+          <tr><td>k8_3blocks_w32</td><td class="wrap">3 blocks, kernel 8, dilations 1/8/47, 32 channels per stream</td><td class="num">4.2911</td><td class="num">−0.0476</td><td class="num">15 / 15</td><td><span class="out pass"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pass, finalist</span></td></tr>
+          <tr><td>Window sampling</td><td class="wrap">Draws training windows uniformly, so small users are no longer re-drawn</td><td class="num">4.3094</td><td class="num">−0.0293</td><td class="num">14 / 15</td><td><span class="out pass"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pass, in both</span></td></tr>
+          <tr><td>rf_397</td><td class="wrap">Today's 5 blocks with a longer last dilation</td><td class="num">4.3098</td><td class="num">−0.0288</td><td class="num">13 / 15</td><td><span class="out pass"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pass, covered by k5 and k8</span></td></tr>
+          <tr><td>Sqrt sampling</td><td class="wrap">Weights each user by the square root of their windows</td><td class="num">4.3109</td><td class="num">−0.0278</td><td class="num">13 / 15</td><td><span class="out pass"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pass, window sampling better</span></td></tr>
+          <tr><td>Tilt 15°</td><td class="wrap">Tilts the world by up to 15° on half the training windows</td><td class="num">4.3289</td><td class="num">−0.0098</td><td class="num">8 / 15</td><td><span class="out pass"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pass on frame robustness, in both</span></td></tr>
+          <tr><td>rf_324</td><td class="wrap">A shorter version of rf_397</td><td class="num">4.3304</td><td class="num">−0.0083</td><td class="num">7 / 15</td><td><span class="out fail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Fail</span></td></tr>
+          <tr><td>Native maps</td><td class="wrap">Trains with the cheap rate input and Cayley output the lean graph computes</td><td class="num">4.3314</td><td class="num">−0.0072</td><td class="num">8 / 15</td><td><span class="out pass"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pass on latency (6 fewer nodes), in both</span></td></tr>
+          <tr><td>Endpoint weight 1</td><td class="wrap">Puts all the loss on step 20</td><td class="num">4.3315</td><td class="num">−0.0072</td><td class="num">12 / 15</td><td><span class="out fail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Fail</span></td></tr>
+          <tr class="group"><td colspan="6">Against k8_3blocks_w32, 4.2911°</td></tr>
+          <tr><td>Distillation, β 0.5</td><td class="wrap">Half the loss from a 9-model ensemble teacher</td><td class="num">4.3123</td><td class="num">+0.0212</td><td class="num">3 / 15</td><td><span class="out fail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Fail</span></td></tr>
+          <tr><td>Distillation, β 1.0</td><td class="wrap">All the loss from the teacher</td><td class="num">4.3240</td><td class="num">+0.0329</td><td class="num">0 / 15</td><td><span class="out fail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Fail</span></td></tr>
+          <tr><td>Jitter 3 ms</td><td class="wrap">Resamples training windows at jittered times, up to ±3 ms</td><td class="num">4.3212</td><td class="num">+0.0301</td><td class="num">4 / 15</td><td><span class="out hold"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5.5 8h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Fails the exact-grid rule; see jitter</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note prose">The ensemble teacher was only 0.017° better than the k8 student, which left distillation little to transfer.</p>
+  </section>
+
+  <section id="jitter">
+    <div class="prose">
+      <h2>Timing jitter is the open risk</h2>
+      <p>The organisers say the test stream is about 100 Hz with some jitter. We resampled validation at jittered times and fed the samples as if evenly spaced, as the harness will. Every model trained on our exact grid loses about 0.05° at ±1 ms and 0.16° at ±2 ms. Most of that comes from the network, which leans on step-to-step differences that are clean on an exact grid. The damped baseline uses the same last-step velocity and barely moves.</p>
+      <p>Training the k8 screen model with ±3 ms jitter almost removes the loss, but costs 0.030° on the exact grid. That failed the agreed rule (at most +0.01°), so jitter stayed out of the final candidates. Against k8_combined, the jitter-trained screen model only wins above about ±1.4 ms. A k8_combined trained with jitter would probably break even near ±0.8 ms. That figure is an estimate from the screen pair, not a measurement.</p>
+    </div>
+
+    <figure>
+      <h3>Error under timing jitter</h3>
+      <div class="legend" aria-hidden="true">
+        <span class="key"><i style="background: var(--s-ref)"></i>Current best</span>
+        <span class="key"><i style="background: var(--s-k8)"></i>k8_combined</span>
+        <span class="key"><i style="background: var(--s-jit)"></i>k8 + jitter 3 ms (screen)</span>
+      </div>
+      <div class="chart" id="chart-jitter" role="group" aria-label="Step-20 error against timing jitter of 0 to 3 milliseconds. The current best rises from 4.31 to 4.61 degrees and k8_combined from 4.25 to 4.53. The jitter-trained model starts higher at 4.32 but only reaches 4.40, crossing k8_combined near plus or minus 1.4 milliseconds."></div>
+      <figcaption>Uniform timing jitter of up to ±J ms on every sample, including the 20th future sample that is scored. Hover or focus the chart and use the arrow keys to read each column.</figcaption>
+    </figure>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Step-20 error on the exact grid, then the change under each stream condition (degrees)</caption>
+        <thead><tr><th>Stream</th><th class="num">Damped baseline</th><th class="num">Current best</th><th class="num">k8 screen</th><th class="num">k8 + jitter 3 ms</th><th class="num">k8_combined</th><th class="num">k5_combined</th></tr></thead>
+        <tbody>
+          <tr><td>Exact 100 Hz grid</td><td class="num">5.0497</td><td class="num">4.3145</td><td class="num">4.2916</td><td class="num">4.3228</td><td class="num">4.2478</td><td class="num">4.2649</td></tr>
+          <tr><td>Jitter ±1 ms</td><td class="num">+0.0010</td><td class="num">+0.0538</td><td class="num">+0.0483</td><td class="num">+0.0037</td><td class="num">+0.0480</td><td class="num">+0.0511</td></tr>
+          <tr><td>Jitter ±2 ms</td><td class="num">+0.0183</td><td class="num">+0.1671</td><td class="num">+0.1583</td><td class="num">+0.0281</td><td class="num">+0.1573</td><td class="num">+0.1758</td></tr>
+          <tr><td>Jitter ±3 ms</td><td class="num">+0.0519</td><td class="num">+0.2999</td><td class="num">+0.2825</td><td class="num">+0.0732</td><td class="num">+0.2825</td><td class="num">+0.3227</td></tr>
+          <tr><td>1% repeated samples</td><td class="num">+0.0202</td><td class="num">+0.0444</td><td class="num">+0.0414</td><td class="num">+0.0296</td><td class="num">+0.0427</td><td class="num">+0.0454</td></tr>
+          <tr><td>±2 ms and 1% repeats</td><td class="num">+0.0394</td><td class="num">+0.2084</td><td class="num">+0.1928</td><td class="num">+0.0560</td><td class="num">+0.1901</td><td class="num">+0.2133</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note prose">Validation windows at stride 5 (131,459), one jitter draw. A repeated sample stands in for a late frame. Checkpoints are seed 42, except the current best at seed 44, its selected seed.</p>
+  </section>
+
+  <section id="frames">
+    <div class="prose">
+      <h2>Frame conventions</h2>
+      <p>The organisers will convert the test data to the frame we document. These rows show what a conversion mistake would cost. Heading changes and left-right mirroring cost nothing, by design. Tilt augmentation halved the cost of a 15° world tilt. A wrong up axis or handedness still costs 0.1° to 1.9°, so the written frame spec matters more here than any model change.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <caption>Step-20 error in our training frame, then the change under each convention (degrees)</caption>
+        <thead><tr><th>Stream convention</th><th class="num">Current best</th><th class="num">k8 screen</th><th class="num">k8_combined</th><th class="num">k5_combined</th></tr></thead>
+        <tbody>
+          <tr><td>Training frame (BOXRR / Unity)</td><td class="num">4.3145</td><td class="num">4.2916</td><td class="num">4.2478</td><td class="num">4.2649</td></tr>
+          <tr><td>World yaw +90°, heading re-centred, left-right mirror</td><td class="num">0.0000</td><td class="num">0.0000</td><td class="num">0.0000</td><td class="num">0.0000</td></tr>
+          <tr><td>World tilted 5°</td><td class="num">−0.0001</td><td class="num">−0.0035</td><td class="num">+0.0011</td><td class="num">+0.0005</td></tr>
+          <tr><td>World tilted 15°</td><td class="num">+0.0589</td><td class="num">+0.0437</td><td class="num">+0.0275</td><td class="num">+0.0311</td></tr>
+          <tr><td>Full first pose re-centred</td><td class="num">+0.0316</td><td class="num">+0.0279</td><td class="num">+0.0102</td><td class="num">+0.0102</td></tr>
+          <tr><td>OpenXR handedness (z flipped)</td><td class="num">+0.1223</td><td class="num">+0.1486</td><td class="num">+0.1345</td><td class="num">+0.1416</td></tr>
+          <tr><td>ROS / ENU (z up, x forward)</td><td class="num">+0.3980</td><td class="num">+0.3802</td><td class="num">+0.3833</td><td class="num">+0.3837</td></tr>
+          <tr><td>z up (up axis off by 90°)</td><td class="num">+0.9158</td><td class="num">+0.9914</td><td class="num">+0.8376</td><td class="num">+0.7688</td></tr>
+          <tr><td>ROS / ENU, player heading +90°</td><td class="num">+1.4279</td><td class="num">+1.7480</td><td class="num">+1.1354</td><td class="num">+1.3755</td></tr>
+          <tr><td>ROS / ENU, player heading +180°</td><td class="num">+1.9272</td><td class="num">+1.6595</td><td class="num">+1.2335</td><td class="num">+1.8548</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="decisions">
+    <div class="prose">
+      <h2>Decisions for the team</h2>
+      <p>Nothing below has been decided. Recommendations were AI-generated and are labelled as such.</p>
+    </div>
+    <div class="decisions">
+      <article class="decision" id="d1">
+        <header><span class="id">D1</span><h3>Which model to submit</h3></header>
+        <div class="options">
+          <div class="option"><h4>k8_combined</h4><p>4.2501° (−0.080). 55.2 µs lean. 7,555 parameters, 16.2K MACs, 25,088 state floats (98 KB in fp32).</p></div>
+          <div class="option"><h4>k5_combined</h4><p>4.2717° (−0.058). 61.9 µs lean. 5,595 parameters, 12.3K MACs, 19,008 state floats (74 KB).</p></div>
+        </div>
+        <p>k8_combined is 0.022° more accurate and 6.7 µs faster. It is also 35% larger in parameters and 32% larger in MACs. The challenge has not said how size is scored.</p>
+        <p class="rec"><b>Recommendation</b>k8_combined, unless the team expects the size score to weigh parameters heavily.</p>
+      </article>
+
+      <article class="decision" id="d2">
+        <header><span class="id">D2</span><h3>Which graph form</h3></header>
+        <div class="options">
+          <div class="option"><h4>Lean</h4><p>60 nodes, 55.2 µs. Every weight is stored as it is used. The safest choice for an unknown runtime.</p></div>
+          <div class="option"><h4>Padded rows</h4><p>54 nodes after load-time folding (57 in the file), 48.3 µs (−13%). 38% more MACs. Tied weights are stored once and rebuilt by Concat nodes that ONNX Runtime folds at load.</p></div>
+          <div class="option"><h4>Padded rows + fused head (A4)</h4><p>51 nodes after folding (58 in the file), 46.9 µs (−15%). Stored weights equal the declared 7,555.</p></div>
+        </div>
+        <p>If ST's deployment tool does not fold constants at load, the padded graphs run their extra nodes on every call and may lose their lead.</p>
+        <p class="rec"><b>Recommendation</b>Lean, unless the organisers confirm that constants are folded. Keep padded as a measured option.</p>
+      </article>
+
+      <article class="decision" id="d3">
+        <header><span class="id">D3</span><h3>Whether to train for timing jitter</h3></header>
+        <div class="options">
+          <div class="option"><h4>Ship as trained</h4><p>Best if the test stream jitters by less than about ±1 ms.</p></div>
+          <div class="option"><h4>Add k8_combined + jitter 3 ms</h4><p>3 seeds, about 2.4 GPU hours. Expect about +0.03° on an exact grid, with most of the jitter loss removed.</p></div>
+          <div class="option"><h4>Screen a gentler setting first</h4><p>For example 1.5 ms on seed 42, about 50 minutes, to look for a cheaper point on the trade-off.</p></div>
+          <div class="option"><h4>Ask the organisers</h4><p>How large the jitter is, and whether it is in the samples or only in the timestamps. The text is in D4.</p></div>
+        </div>
+        <p class="rec"><b>Recommendation</b>Ask now, and train k8_combined + jitter 3 ms while waiting, so a hedge model is ready whichever way they answer. The GPU is free.</p>
+      </article>
+
+      <article class="decision" id="d4">
+        <header><span class="id">D4</span><h3>Question for the organisers</h3></header>
+        <p>For Jacob to send, to both addresses in the FAQ.</p>
+        <div class="msg" id="organiser-msg">Thank you for confirming that the test stream has some timing jitter. It affects which model we submit, so could you tell us a little more?
+
+1. Is the jitter in the sampling times (each quaternion is the true pose at an irregular instant), or only in the timestamps (the samples come from a fixed-rate sensor and are evenly spaced)?
+2. Roughly how large is it? For example, the standard deviation or the largest deviation of the interval between samples, in milliseconds.
+3. Are samples ever dropped or repeated?
+
+For context: on our validation data, ±2 ms of uniform jitter raises the 200 ms error of our current models by about 0.16°.</div>
+        <button class="copy" id="copy-msg" type="button">Copy text</button>
+      </article>
+
+      <article class="decision" id="d5">
+        <header><span class="id">D5</span><h3>Score the test set once</h3></header>
+        <p>Not run. The plan scores the test set once, for reporting, after D1 to D3 are settled. Scoring only the chosen model keeps the test set from steering the choice.</p>
+      </article>
+
+      <article class="decision" id="d6">
+        <header><span class="id">D6</span><h3>Model card items</h3></header>
+        <ul>
+          <li><strong>Frame:</strong> an exact spec with worked examples, checked against the ray pipeline first. A wrong up axis costs 0.8° to 1.0°, and flipped handedness costs 0.13°.</li>
+          <li><strong>Stateful use:</strong> feed the full [1, 400, 4] window on every call, newest sample last. Zero the three state tensors at session start. Start scoring after 400 calls; the receptive field is 393 for k8 and 397 for k5.</li>
+          <li><strong>Output:</strong> <code>prediction</code> is [1, 20, 4], unit quaternions normalised in the graph.</li>
+          <li><strong>Parameters:</strong> 7,555 declared. The ONNX file stores 7,552 floats because three head biases sit in a Constant node; with A4 it stores all 7,555.</li>
+          <li><strong>Operators</strong> in the k8 lean graph (60 nodes): MatMul 11, Slice 11, Concat 9, Relu 8, Conv 7, Reshape 7, Add 3, Mul 3, LayerNormalization 1. No Clip. List Add and Mul as the elementwise operators the organisers asked about.</li>
+          <li><strong>Jitter:</strong> whatever D3 decides, state that training used an evenly spaced 100 Hz grid.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="prose">
+      <h2>How this was measured</h2>
+      <ul class="method">
+        <li><strong>Accuracy:</strong> mean geodesic error at step 20 (200 ms) over all 657,189 validation windows from 15 users, on seeds 42, 43 and 44. Each candidate is compared per user with the reference, with a window-weighted bootstrap over users for the 95% CI.</li>
+        <li><strong>Reference:</strong> today's best, sep_base3_addons with angular loss, in <code>outputs/v8_recipe_sep_base3_addons/angular_loss</code>.</li>
+        <li><strong>Latency:</strong> ONNX Runtime on CPU, one thread, median over 5 alternating rounds of 3,000 calls, on jacob-amd at 07:57 on 29 Oct. The machine may not have been fully idle; the numbers agree with earlier sessions to within 4%.</li>
+        <li><strong>Robustness:</strong> validation at stride 5 (131,459 windows) with seed-42 checkpoints and a single jitter draw.</li>
+        <li><strong>Test set:</strong> not used.</li>
+        <li><strong>Code:</strong> <code>jacob/training/experimental/v9_lean/</code>, uncommitted. It imports <code>experimental/v7_compact/</code>, which is also uncommitted. The final plan is <code>experimental/v9_lean/configs/v9_confirm.json</code>; runs are in <code>outputs/v9_screen</code>, <code>v9_distill</code>, <code>v9_jitter</code> and <code>v9_confirm</code>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>Built on 29 Oct 2026 from local runs. Nothing has been committed; Jacob does all git operations.</footer>
+</div>
+
+<script>
+(function () {
+  const NS = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs, parent) {
+    const node = document.createElementNS(NS, tag);
+    for (const key in attrs) node.setAttribute(key, attrs[key]);
+    if (parent) parent.appendChild(node);
+    return node;
+  }
+  function signed(value, digits) {
+    return (value < 0 ? '−' : '') + Math.abs(value).toFixed(digits);
+  }
+  function scale(d0, d1, r0, r1) {
+    return (v) => r0 + (v - d0) / (d1 - d0) * (r1 - r0);
+  }
+  const COLORS = { ref: 'var(--s-ref)', k8: 'var(--s-k8)', k5: 'var(--s-k5)', jit: 'var(--s-jit)' };
+
+  function tipRow(tip, color, value, name) {
+    const row = document.createElement('div');
+    row.className = 'row';
+    const key = document.createElement('i');
+    key.style.background = color;
+    const strong = document.createElement('strong');
+    strong.textContent = value;
+    const span = document.createElement('span');
+    span.textContent = name;
+    row.append(key, strong, span);
+    tip.appendChild(row);
+  }
+  function placeTip(box, tip, x, y) {
+    const width = tip.offsetWidth, height = tip.offsetHeight;
+    let left = x + 14, top = y - height - 10;
+    if (left + width > box.clientWidth) left = x - width - 14;
+    if (left < 0) left = 0;
+    if (top < 0) top = y + 14;
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+  }
+  function axisText(svg, x, y, text, anchor, extra) {
+    const t = el('text', Object.assign({ x: x, y: y, 'text-anchor': anchor || 'middle', 'font-size': 12 }, extra || {}), svg);
+    t.style.fill = 'var(--ink-3)';
+    t.style.fontVariantNumeric = 'tabular-nums';
+    t.textContent = text;
+    return t;
+  }
+
+  const GRAPHS = [
+    { m: 'ref', name: 'Current best', err: 4.3297, pts: [['v7 graph (today)', 90.3, 130], ['lean', 72.0, 84], ['padded rows', 60.6, 74], ['padded rows + A4', 60.2, 71]] },
+    { m: 'k5', name: 'k5_combined', err: 4.2717, pts: [['lean', 61.9, 69], ['padded rows', 53.5, 61], ['padded rows + A4', 52.1, 58]] },
+    { m: 'k8', name: 'k8_combined', err: 4.2501, pts: [['lean', 55.2, 60], ['padded rows', 48.3, 54], ['padded rows + A4', 46.9, 51]] }
+  ];
+
+  function drawCost(box) {
+    box.textContent = '';
+    const width = Math.max(box.clientWidth, 280), height = 280;
+    const m = { top: 26, right: 18, bottom: 44, left: 48 };
+    const x = scale(40, 95, m.left, width - m.right);
+    const y = scale(4.24, 4.34, height - m.bottom, m.top);
+    const svg = el('svg', { width: width, height: height, viewBox: '0 0 ' + width + ' ' + height }, box);
+    const tip = document.createElement('div');
+    tip.className = 'tip';
+    tip.hidden = true;
+    box.appendChild(tip);
+
+    [4.24, 4.26, 4.28, 4.30, 4.32, 4.34].forEach((v) => {
+      const line = el('line', { x1: m.left, x2: width - m.right, y1: y(v), y2: y(v), 'stroke-width': 1 }, svg);
+      line.style.stroke = 'var(--grid)';
+      axisText(svg, m.left - 8, y(v) + 4, v.toFixed(2), 'end');
+    });
+    const ticks = width < 420 ? [40, 60, 80] : [40, 50, 60, 70, 80, 90];
+    ticks.forEach((v) => axisText(svg, x(v), height - m.bottom + 18, String(v)));
+    axisText(svg, m.left, 14, 'Validation error, 3-seed mean (°)', 'start');
+    axisText(svg, width - m.right, height - 6, 'Median latency, µs (ONNX Runtime CPU, 1 thread)', 'end');
+
+    GRAPHS.forEach((g) => {
+      const pts = g.pts.slice().sort((a, b) => a[1] - b[1]);
+      const path = el('polyline', { points: pts.map((p) => x(p[1]) + ',' + y(g.err)).join(' '), fill: 'none', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, svg);
+      path.style.stroke = COLORS[g.m];
+      const label = el('text', { x: x(pts[0][1]), y: y(g.err) - 11, 'font-size': 12.5, 'font-weight': 600 }, svg);
+      label.style.fill = 'var(--ink)';
+      label.textContent = g.name + ' · ' + g.err.toFixed(3) + '°';
+      pts.forEach((p) => {
+        const dot = el('circle', { cx: x(p[1]), cy: y(g.err), r: 4.5, 'stroke-width': 2, tabindex: 0, role: 'img', 'aria-label': g.name + ', ' + p[0] + ': ' + p[1] + ' microseconds, ' + p[2] + ' nodes' }, svg);
+        dot.style.fill = COLORS[g.m];
+        dot.style.stroke = 'var(--surface)';
+        const hit = el('circle', { cx: x(p[1]), cy: y(g.err), r: 12, fill: 'transparent' }, svg);
+        function show() {
+          tip.textContent = '';
+          const head = document.createElement('div');
+          head.className = 'head';
+          head.textContent = g.name + ' · ' + p[0];
+          tip.appendChild(head);
+          tipRow(tip, COLORS[g.m], p[1].toFixed(1) + ' µs', p[2] + ' nodes run');
+          tipRow(tip, COLORS[g.m], g.err.toFixed(4) + '°', 'validation error');
+          tip.hidden = false;
+          placeTip(box, tip, x(p[1]), y(g.err));
+          dot.setAttribute('r', 6);
+        }
+        function hide() { tip.hidden = true; dot.setAttribute('r', 4.5); }
+        [hit, dot].forEach((n) => {
+          n.addEventListener('pointerenter', show);
+          n.addEventListener('pointerleave', hide);
+        });
+        dot.addEventListener('focus', show);
+        dot.addEventListener('blur', hide);
+      });
+    });
+  }
+
+  const JITTER = {
+    x: [0, 1, 2, 3],
+    names: ['exact grid', '±1 ms', '±2 ms', '±3 ms'],
+    series: [
+      { m: 'ref', name: 'Current best', y: [4.3145, 4.3683, 4.4816, 4.6144] },
+      { m: 'k8', name: 'k8_combined', y: [4.2478, 4.2959, 4.4052, 4.5303] },
+      { m: 'jit', name: 'k8 + jitter 3 ms', y: [4.3228, 4.3265, 4.3509, 4.3960] }
+    ]
+  };
+
+  function drawJitter(box) {
+    box.textContent = '';
+    const width = Math.max(box.clientWidth, 280), height = 290;
+    const labels = width >= 560;
+    const m = { top: 26, right: labels ? 132 : 18, bottom: 44, left: 48 };
+    const x = scale(0, 3, m.left + 10, width - m.right - 10);
+    const y = scale(4.2, 4.65, height - m.bottom, m.top);
+    const svg = el('svg', { width: width, height: height, viewBox: '0 0 ' + width + ' ' + height, tabindex: 0, 'aria-label': 'Jitter chart; use left and right arrow keys to read each column' }, box);
+    const tip = document.createElement('div');
+    tip.className = 'tip';
+    tip.hidden = true;
+    box.appendChild(tip);
+
+    [4.2, 4.3, 4.4, 4.5, 4.6].forEach((v) => {
+      const line = el('line', { x1: m.left, x2: width - m.right, y1: y(v), y2: y(v), 'stroke-width': 1 }, svg);
+      line.style.stroke = 'var(--grid)';
+      axisText(svg, m.left - 8, y(v) + 4, v.toFixed(1), 'end');
+    });
+    JITTER.x.forEach((v, i) => axisText(svg, x(v), height - m.bottom + 18, width < 420 && i === 0 ? 'exact' : JITTER.names[i]));
+    axisText(svg, m.left, 14, 'Step-20 error (°)', 'start');
+    axisText(svg, width - m.right, height - 6, 'Timing jitter on each sample', 'end');
+
+    // Break-even of k8_combined and the jitter-trained model, by linear interpolation between ±1 and ±2 ms.
+    const a = JITTER.series[1].y, b = JITTER.series[2].y;
+    const t = (b[1] - a[1]) / ((a[2] - a[1]) - (b[2] - b[1]));
+    const cross = 1 + t, crossY = a[1] + t * (a[2] - a[1]);
+    const marker = el('line', { x1: x(cross), x2: x(cross), y1: y(4.2), y2: y(crossY), 'stroke-width': 1 }, svg);
+    marker.style.stroke = 'var(--ink-3)';
+    axisText(svg, x(cross) + 6, y(4.2) - 8, 'break-even ≈ ±' + cross.toFixed(1) + ' ms', 'start');
+
+    const cursor = el('line', { x1: 0, x2: 0, y1: m.top, y2: height - m.bottom, 'stroke-width': 1, visibility: 'hidden' }, svg);
+    cursor.style.stroke = 'var(--rule-2)';
+
+    const dots = [];
+    JITTER.series.forEach((s) => {
+      const path = el('polyline', { points: JITTER.x.map((v, i) => x(v) + ',' + y(s.y[i])).join(' '), fill: 'none', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, svg);
+      path.style.stroke = COLORS[s.m];
+      const row = JITTER.x.map((v, i) => {
+        const dot = el('circle', { cx: x(v), cy: y(s.y[i]), r: 4, 'stroke-width': 2 }, svg);
+        dot.style.fill = COLORS[s.m];
+        dot.style.stroke = 'var(--surface)';
+        return dot;
+      });
+      dots.push(row);
+      if (labels) {
+        const label = el('text', { x: x(3) + 12, y: y(s.y[3]) + 4, 'font-size': 12.5 }, svg);
+        label.style.fill = 'var(--ink)';
+        label.textContent = s.name;
+      }
+    });
+
+    let current = -1;
+    function show(i, px, py) {
+      current = i;
+      cursor.setAttribute('x1', x(JITTER.x[i]));
+      cursor.setAttribute('x2', x(JITTER.x[i]));
+      cursor.setAttribute('visibility', 'visible');
+      dots.forEach((row) => row.forEach((d, j) => d.setAttribute('r', j === i ? 5.5 : 4)));
+      tip.textContent = '';
+      const head = document.createElement('div');
+      head.className = 'head';
+      head.textContent = 'Jitter: ' + JITTER.names[i];
+      tip.appendChild(head);
+      JITTER.series.slice().sort((p, q) => p.y[i] - q.y[i]).forEach((s) => {
+        const change = i === 0 ? '' : ' (+' + (s.y[i] - s.y[0]).toFixed(3) + ')';
+        tipRow(tip, COLORS[s.m], s.y[i].toFixed(4) + '°', s.name + change);
+      });
+      tip.hidden = false;
+      placeTip(box, tip, px === undefined ? x(JITTER.x[i]) : px, py === undefined ? m.top + 40 : py);
+    }
+    function hide() {
+      current = -1;
+      cursor.setAttribute('visibility', 'hidden');
+      dots.forEach((row) => row.forEach((d) => d.setAttribute('r', 4)));
+      tip.hidden = true;
+    }
+    const overlay = el('rect', { x: m.left, y: m.top, width: width - m.left - m.right, height: height - m.top - m.bottom, fill: 'transparent' }, svg);
+    overlay.addEventListener('pointermove', (event) => {
+      const rect = svg.getBoundingClientRect();
+      const px = event.clientX - rect.left, py = event.clientY - rect.top;
+      let best = 0;
+      JITTER.x.forEach((v, i) => { if (Math.abs(x(v) - px) < Math.abs(x(JITTER.x[best]) - px)) best = i; });
+      show(best, px, py);
+    });
+    overlay.addEventListener('pointerleave', hide);
+    svg.addEventListener('focus', () => show(current < 0 ? 0 : current));
+    svg.addEventListener('blur', hide);
+    svg.addEventListener('keydown', (event) => {
+      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+      event.preventDefault();
+      const next = Math.min(3, Math.max(0, (current < 0 ? 0 : current) + (event.key === 'ArrowRight' ? 1 : -1)));
+      show(next);
+    });
+  }
+
+  const charts = [[document.getElementById('chart-cost'), drawCost], [document.getElementById('chart-jitter'), drawJitter]];
+  charts.forEach(([box, draw]) => draw(box));
+  let pending = false, lastWidths = charts.map(([box]) => box.clientWidth);
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(() => {
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(() => {
+        pending = false;
+        charts.forEach(([box, draw], i) => {
+          if (box.clientWidth !== lastWidths[i]) { lastWidths[i] = box.clientWidth; draw(box); }
+        });
+      });
+    });
+    charts.forEach(([box]) => observer.observe(box));
+  }
+
+  const button = document.getElementById('copy-msg');
+  const message = document.getElementById('organiser-msg');
+  button.addEventListener('click', () => {
+    const done = (text) => { button.textContent = text; setTimeout(() => { button.textContent = 'Copy text'; }, 2200); };
+    const select = () => {
+      const range = document.createRange();
+      range.selectNodeContents(message);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      done('Selected, press Ctrl+C');
+    };
+    try {
+      navigator.clipboard.writeText(message.textContent).then(() => done('Copied'), select);
+    } catch (error) {
+      select();
+    }
+  });
+})();
+</script>

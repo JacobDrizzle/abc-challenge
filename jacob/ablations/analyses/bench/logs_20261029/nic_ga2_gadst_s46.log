@@ -1,0 +1,6 @@
+Benchmark group-a-v2-test20: 20 players, 931,051 windows, fingerprint 6303a55cc75316cc
+Efficiency checks (generated motion, no benchmark data)...
+  nic_ga2_gadst_s46: stateless, 10,415 initializer elements (+713 in Constant nodes), 606,320 MACs per call {'MatMul': 40048, 'Gemm': 566272}, issues: none; off-list ops: none; slow on NPU: none; deterministic: True
+Scoring nic_ga2_gadst_s46 [stateless]...
+  mean error at step 20: 4.540366 deg (step 10: 2.328354); median 3.7874, p95 10.5150
+Wrote <repo>\bench\results\group-a-v2-test20\nic_ga2_gadst_s46@jacob-amd.json

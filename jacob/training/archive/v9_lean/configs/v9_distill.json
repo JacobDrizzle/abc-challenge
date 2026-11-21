@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": {
+    "control": {
+      "num_blocks": 3,
+      "kernel_sizes": [
+        8,
+        8,
+        8
+      ],
+      "dilations": [
+        1,
+        8,
+        47
+      ],
+      "channels": 64,
+      "effective_context": 400
+    },
+    "distill_b05": {
+      "num_blocks": 3,
+      "kernel_sizes": [
+        8,
+        8,
+        8
+      ],
+      "dilations": [
+        1,
+        8,
+        47
+      ],
+      "channels": 64,
+      "effective_context": 400,
+      "distill_beta": 0.5,
+      "teacher": "outputs/v9_teacher"
+    },
+    "distill_b10": {
+      "num_blocks": 3,
+      "kernel_sizes": [
+        8,
+        8,
+        8
+      ],
+      "dilations": [
+        1,
+        8,
+        47
+      ],
+      "channels": 64,
+      "effective_context": 400,
+      "distill_beta": 1.0,
+      "teacher": "outputs/v9_teacher"
+    }
+  },
+  "baseline_lags": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "baseline_tau_ms": [
+    25,
+    50,
+    100,
+    200,
+    500,
+    null
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": {
+    "control": {},
+    "rf_397": {
+      "kernel_sizes": [
+        3,
+        3,
+        3,
+        3,
+        5
+      ],
+      "dilations": [
+        1,
+        3,
+        9,
+        27,
+        79
+      ],
+      "effective_context": 400
+    },
+    "rf_324": {
+      "kernel_sizes": [
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      "dilations": [
+        1,
+        3,
+        9,
+        27,
+        81
+      ],
+      "effective_context": 400
+    },
+    "sampling_sqrt": {
+      "sampling": "sqrt"
+    },
+    "sampling_window": {
+      "sampling": "window"
+    },
+    "tilt_15": {
+      "tilt_augmentation_deg": 15
+    },
+    "endpoint_1": {
+      "endpoint_weight": 1.0
+    },
+    "native_maps": {
+      "maps": "native"
+    },
+    "k5_4blocks": {
+      "num_blocks": 4,
+      "kernel_sizes": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "dilations": [
+        1,
+        5,
+        25,
+        68
+      ],
+      "effective_context": 400
+    },
+    "k8_3blocks_w32": {
+      "num_blocks": 3,
+      "kernel_sizes": [
+        8,
+        8,
+        8
+      ],
+      "dilations": [
+        1,
+        8,
+        47
+      ],
+      "channels": 64,
+      "effective_context": 400
+    }
+  },
+  "baseline_lags": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "baseline_tau_ms": [
+    25,
+    50,
+    100,
+    200,
+    500,
+    null
+  ]
+}

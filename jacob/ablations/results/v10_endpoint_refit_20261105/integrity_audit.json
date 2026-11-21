@@ -1,0 +1,84 @@
+{
+  "sources": {
+    "42": {
+      "source": true,
+      "copy": true
+    },
+    "43": {
+      "source": true,
+      "copy": true
+    },
+    "44": {
+      "source": true,
+      "copy": true
+    }
+  },
+  "code": {
+    "baseline_pipeline.py": true,
+    "best\\export.py": true,
+    "best\\model.py": true,
+    "experimental\\v10_endpoint_refit\\__init__.py": true,
+    "experimental\\v10_endpoint_refit\\fit.py": true,
+    "experimental\\v10_endpoint_refit\\run.py": true,
+    "experimental\\v10_endpoint_refit\\test_refit.py": true,
+    "experimental\\v10_weight_edit\\__init__.py": true,
+    "experimental\\v10_weight_edit\\edits.py": true,
+    "experimental\\v10_weight_edit\\export_check.py": true,
+    "experimental\\v10_weight_edit\\metrics.py": true,
+    "experimental\\v10_weight_edit\\run.py": true,
+    "experimental\\v10_weight_edit\\test_edits.py": true,
+    "experimental\\v10_weight_edit\\test_metrics.py": true,
+    "experimental\\v10_weight_edit\\test_run.py": true,
+    "tcnn\\model.py": true,
+    "tcnn\\onnx_export.py": true,
+    "tcnn\\runtime.py": true,
+    "train_tcnn.py": true
+  },
+  "prior_experiment": {
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\baseline_reproduction.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\candidate_model.pt": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\cohort.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\confirmation_seed_42.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\confirmation_seed_43.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\confirmation_seed_44.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\discovery_seed_44.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\frozen_edit.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\manifest.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\preservation.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\screen.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\status.json": true
+  },
+  "candidate": {
+    "sha256": "ed24726e53790aeb6f06accad9afc89378daa708fbe5924288cd6b7ef40eb8ca",
+    "changed_scalars": {
+      "head_bias_x": 1,
+      "head.weight": 96
+    },
+    "parameters": 7555
+  },
+  "verified_candidate_files": {
+    "candidates\\seed_42\\ridge_0.0001_strength_1.pt": "d0f83157a31330412b4d0077e83c8bbf10da4052155ef6b5ed57ea1a45973513",
+    "candidates\\seed_43\\ridge_0.0001_strength_1.pt": "cf729e4bce072501990f27905445c7e040f08a7d50e35eace850c163309b1ddb",
+    "candidates\\seed_44\\ridge_0.0001_strength_0.25.pt": "2832c5d0a2a7c15305e2eba060a74705df92be28b7f56c5939d11dbcd9ad4f16",
+    "candidates\\seed_44\\ridge_0.0001_strength_0.5.pt": "a6edb40a6315e835e4fa86d32b5a5f0e9ab98d081f9d45c52e85de6229151120",
+    "candidates\\seed_44\\ridge_0.0001_strength_1.pt": "ed24726e53790aeb6f06accad9afc89378daa708fbe5924288cd6b7ef40eb8ca",
+    "candidates\\seed_44\\ridge_0.001_strength_0.25.pt": "1ae2d91b14f71737ec0a132aa7218055d1f55ade185ecdf0b08513718ed6c3e8",
+    "candidates\\seed_44\\ridge_0.001_strength_0.5.pt": "c24e193e5f2df206d389f7e20b7bbe7ddbc933ed6da8e0d2ddc603e041b38906",
+    "candidates\\seed_44\\ridge_0.001_strength_1.pt": "53313db6aa1f244f543a2b8a591995c1639346be7dd48a9ec482a52f1278dc5b",
+    "candidates\\seed_44\\ridge_0.01_strength_0.25.pt": "3e4d2753883b79f6b0195bd03874a97f75543148c02e8c0e3bbac6a654e275f2",
+    "candidates\\seed_44\\ridge_0.01_strength_0.5.pt": "358011ee6e95543e2ccc3f61a272300d70a08a144567f7387c07c76a871aa145",
+    "candidates\\seed_44\\ridge_0.01_strength_1.pt": "c0bea80cc28469f074a71abe95598af2d920d7558fb63ebf0c97382c0478c1d2",
+    "candidates\\seed_44\\ridge_0.1_strength_0.25.pt": "4ea1bc86c4c2b13472963f73ba6872c544f7b4a185533d0be6d6029fd6947b1f",
+    "candidates\\seed_44\\ridge_0.1_strength_0.5.pt": "12196d4cf3c3c9599a5b3f001175f7da85eeadd193c2e13ab464a24e49364eba",
+    "candidates\\seed_44\\ridge_0.1_strength_1.pt": "1888fc23a0bf18f20715bf8b104f2f5297a1ca9b8a1cece43c786cce0110929b",
+    "candidates\\seed_44\\ridge_100_strength_0.25.pt": "f496ec376120be3a4d763459c844502c26493672245b661467ca9bc2373240a6",
+    "candidates\\seed_44\\ridge_100_strength_0.5.pt": "34fd676c011f55260caa047166da6b6e2fd85e974065414464e0b5a063a9631e",
+    "candidates\\seed_44\\ridge_100_strength_1.pt": "87a8dcadaee12705bdeccba2ca164265a5b363d6813f134e6d81dd736d4d8421",
+    "candidates\\seed_44\\ridge_10_strength_0.25.pt": "013566834d7e93c5fd9c31c442f501724fa463a9d0255939033931293a7dab36",
+    "candidates\\seed_44\\ridge_10_strength_0.5.pt": "3d35dc126f7475fabf8be439efe8dc2b4ff192013501cb66bf119bb032ba70be",
+    "candidates\\seed_44\\ridge_10_strength_1.pt": "009430c8e9c852bc7b81a7bf3ee9d630663c50a33bb7d76a3ef5bb9d8387e4a6",
+    "candidates\\seed_44\\ridge_1_strength_0.25.pt": "e3ec4801472428246e25fc5a92118cf534f590ad90584969edc46937412c3f9e",
+    "candidates\\seed_44\\ridge_1_strength_0.5.pt": "5312cea47d34dbaef0735e1eb4683936b21a4981bf442d04887cc3b7e496b057",
+    "candidates\\seed_44\\ridge_1_strength_1.pt": "786341c3c35e4b45251db8e22e52e8a5db2dd3123563ffbeb40700bd16a07232"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "checkpoint": "outputs\\v6_group_a_v2\\selected_model.pt",
+  "data": "<repo>\\data\\h5\\qualified_head_100hz_20261026_131953.h5",
+  "calibration_inputs": 1000,
+  "include_projection": false,
+  "schemes": {
+    "int8_minmax": [
+      "QInt8",
+      "MinMax"
+    ],
+    "int8_percentile": [
+      "QInt8",
+      "Percentile"
+    ],
+    "w8a16_minmax": [
+      "QInt16",
+      "MinMax"
+    ]
+  },
+  "rows": [
+    {
+      "graph": "float32",
+      "file": "model_fp32_stream.onnx",
+      "kib": 129.7,
+      "windows": 657189,
+      "mean_endpoint_deg": 4.328528917952632,
+      "delta_vs_float_deg": 0.0,
+      "per_window_abs_delta_p99_deg": 0.0,
+      "macs": 52194,
+      "counts": {
+        "Constant": 154,
+        "Slice": 29,
+        "Mul": 25,
+        "Add": 24,
+        "Concat": 23,
+        "Relu": 15,
+        "MatMul": 10,
+        "Reshape": 9,
+        "Conv": 8,
+        "Clip": 1,
+        "Sqrt": 1
+      },
+      "off_list": [
+        "Sqrt"
+      ],
+      "latency": {
+        "calls": 3000,
+        "median_ms": 0.1506999833509326,
+        "mean_ms": 0.15396950016535507,
+        "p90_ms": 0.2162999880965799,
+        "p99_ms": 0.2314999877125956,
+        "min_ms": 0.11020002420991659,
+        "max_ms": 0.3243999963160604,
+        "calls_per_second": 6635.700799457398
+      }
+    },
+    {
+      "graph": "int8_minmax",
+      "file": "model_int8_minmax_stream.onnx",
+      "kib": 80.7,
+      "windows": 657189,
+      "mean_endpoint_deg": 4.349811311056816,
+      "delta_vs_float_deg": 0.021282393104184116,
+      "per_window_abs_delta_p99_deg": 0.7299186626579692,
+      "macs": 52194,
+      "counts": {
+        "Constant": 154,
+        "DequantizeLinear": 31,
+        "Slice": 29,
+        "Mul": 25,
+        "Add": 24,
+        "Concat": 23,
+        "QuantizeLinear": 16,
+        "Relu": 15,
+        "MatMul": 10,
+        "Reshape": 9,
+        "Conv": 8,
+        "Clip": 1,
+        "Sqrt": 1
+      },
+      "off_list": [
+        "DequantizeLinear",
+        "QuantizeLinear",
+        "Sqrt"
+      ],
+      "latency": {
+        "calls": 3000,
+        "median_ms": 0.13775000115856528,
+        "mean_ms": 0.17018093348209126,
+        "p90_ms": 0.24740002118051052,
+        "p99_ms": 0.26240301900543267,
+        "min_ms": 0.12689997674897313,
+        "max_ms": 0.3071999817620963,
+        "calls_per_second": 7259.528069614249
+      }
+    },
+    {
+      "graph": "int8_percentile",
+      "file": "model_int8_percentile_stream.onnx",
+      "kib": 80.7,
+      "windows": 657189,
+      "mean_endpoint_deg": 4.34097218822963,
+      "delta_vs_float_deg": 0.01244327027699832,
+      "per_window_abs_delta_p99_deg": 0.4581129374194301,
+      "macs": 52194,
+      "counts": {
+        "Constant": 154,
+        "DequantizeLinear": 31,
+        "Slice": 29,
+        "Mul": 25,
+        "Add": 24,
+        "Concat": 23,
+        "QuantizeLinear": 16,
+        "Relu": 15,
+        "MatMul": 10,
+        "Reshape": 9,
+        "Conv": 8,
+        "Clip": 1,
+        "Sqrt": 1
+      },
+      "off_list": [
+        "DequantizeLinear",
+        "QuantizeLinear",
+        "Sqrt"
+      ],
+      "latency": {
+        "calls": 3000,
+        "median_ms": 0.17449998995289207,
+        "mean_ms": 0.17836840016146502,
+        "p90_ms": 0.2491000050213188,
+        "p99_ms": 0.26490200863918284,
+        "min_ms": 0.1278999843634665,
+        "max_ms": 0.31869998201727867,
+        "calls_per_second": 5730.659355739559
+      }
+    },
+    {
+      "graph": "w8a16_minmax",
+      "file": "model_w8a16_minmax_stream.onnx",
+      "kib": 80.7,
+      "windows": 657189,
+      "mean_endpoint_deg": 4.334931782871271,
+      "delta_vs_float_deg": 0.006402864918639395,
+      "per_window_abs_delta_p99_deg": 0.13448861091644418,
+      "macs": 52194,
+      "counts": {
+        "Constant": 154,
+        "DequantizeLinear": 31,
+        "Slice": 29,
+        "Mul": 25,
+        "Add": 24,
+        "Concat": 23,
+        "QuantizeLinear": 16,
+        "Relu": 15,
+        "MatMul": 10,
+        "Reshape": 9,
+        "Conv": 8,
+        "Clip": 1,
+        "Sqrt": 1
+      },
+      "off_list": [
+        "DequantizeLinear",
+        "QuantizeLinear",
+        "Sqrt"
+      ],
+      "latency": {
+        "calls": 3000,
+        "median_ms": 0.19484999938867986,
+        "mean_ms": 0.20005723321810365,
+        "p90_ms": 0.2720000047702342,
+        "p99_ms": 0.2859999949578196,
+        "min_ms": 0.142700009746477,
+        "max_ms": 0.29999998514540493,
+        "calls_per_second": 5132.152954259114
+      }
+    }
+  ]
+}

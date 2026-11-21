@@ -1,0 +1,8 @@
+# The repo root's .gitignore ignores every folder named data/. tactical/data/ is not a dataset: it is the pipeline numbers and
+# examples the site's Data side loads at runtime (a few hundred KB), so it is let back in here.
+!tactical/data/
+# Blender autosave backups, if anyone rebuilds the board here
+*.blend1
+# The repo root also ignores every build/ folder (Python builds). three.js keeps its main module in vendor/three/build/, which every
+# page loads, so it is let back in too.
+!vendor/three/build/

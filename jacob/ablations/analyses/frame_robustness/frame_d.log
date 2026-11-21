@@ -1,0 +1,30 @@
+44 segments; head tilt from upright at each segment's first sample: median 9.6 deg, range 1.4-38.8
+identity {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3145, 'v9 control s42': 4.339, 'v9 tilt_15 s42': 4.3301, 'k8 screen s42': 4.2916, 'k8_combined s42': 4.2478, 'k5_combined s42': 4.2649}
+heading +90 deg (world yaw) {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3145, 'v9 control s42': 4.339, 'v9 tilt_15 s42': 4.3301, 'k8 screen s42': 4.2916, 'k8_combined s42': 4.2478, 'k5_combined s42': 4.2649}
+re-centre heading on first pose {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3145, 'v9 control s42': 4.339, 'v9 tilt_15 s42': 4.3301, 'k8 screen s42': 4.2916, 'k8_combined s42': 4.2478, 'k5_combined s42': 4.2649}
+left-right mirror (x = 0 plane) {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3145, 'v9 control s42': 4.339, 'v9 tilt_15 s42': 4.3301, 'k8 screen s42': 4.2916, 'k8_combined s42': 4.2478, 'k5_combined s42': 4.2649}
+world tilted 5 deg {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3144, 'v9 control s42': 4.338, 'v9 tilt_15 s42': 4.3335, 'k8 screen s42': 4.2881, 'k8_combined s42': 4.2489, 'k5_combined s42': 4.2654}
+world tilted 15 deg {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3734, 'v9 control s42': 4.3984, 'v9 tilt_15 s42': 4.382, 'k8 screen s42': 4.3353, 'k8_combined s42': 4.2754, 'k5_combined s42': 4.296}
+z-up world (up axis off by 90 deg) {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 5.2303, 'v9 control s42': 5.6216, 'v9 tilt_15 s42': 5.3638, 'k8 screen s42': 5.2831, 'k8_combined s42': 5.0854, 'k5_combined s42': 5.0337}
+re-centre full first pose {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.346, 'v9 control s42': 4.3603, 'v9 tilt_15 s42': 4.3358, 'k8 screen s42': 4.3196, 'k8_combined s42': 4.2581, 'k5_combined s42': 4.2751}
+OpenXR handedness (flip z) {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.4368, 'v9 control s42': 4.4651, 'v9 tilt_15 s42': 4.4621, 'k8 screen s42': 4.4402, 'k8_combined s42': 4.3823, 'k5_combined s42': 4.4065}
+ROS/ENU (z-up, x fwd, y left) {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.7125, 'v9 control s42': 4.7346, 'v9 tilt_15 s42': 4.7482, 'k8 screen s42': 4.6718, 'k8_combined s42': 4.6312, 'k5_combined s42': 4.6486}
+ROS/ENU, player heading +90 deg {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 5.7424, 'v9 control s42': 5.5254, 'v9 tilt_15 s42': 5.5487, 'k8 screen s42': 6.0396, 'k8_combined s42': 5.3832, 'k5_combined s42': 5.6404}
+ROS/ENU, player heading +180 deg {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 6.2417, 'v9 control s42': 5.7659, 'v9 tilt_15 s42': 5.5006, 'k8 screen s42': 5.9512, 'k8_combined s42': 5.4813, 'k5_combined s42': 6.1197}
+
+Step-20 mean (deg) on identity; other rows are the change vs identity.
+| Stream convention | damped velocity (baseline) | sep+angular s44 | v9 control s42 | v9 tilt_15 s42 | k8 screen s42 | k8_combined s42 | k5_combined s42 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| identity (BOXRR/Unity) | 5.0497 | 4.3145 | 4.3390 | 4.3301 | 4.2916 | 4.2478 | 4.2649 |
+| heading +90 deg (world yaw) | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 | -0.0000 |
+| re-centre heading on first pose | -0.0000 | -0.0000 | -0.0000 | -0.0000 | +0.0000 | +0.0000 | -0.0000 |
+| left-right mirror (x = 0 plane) | +0.0000 | -0.0000 | -0.0000 | -0.0000 | +0.0000 | +0.0000 | +0.0000 |
+| world tilted 5 deg | -0.0000 | -0.0001 | -0.0010 | +0.0034 | -0.0035 | +0.0011 | +0.0005 |
+| world tilted 15 deg | -0.0000 | +0.0589 | +0.0594 | +0.0519 | +0.0437 | +0.0275 | +0.0311 |
+| z-up world (up axis off by 90 deg) | -0.0000 | +0.9158 | +1.2826 | +1.0338 | +0.9914 | +0.8376 | +0.7688 |
+| re-centre full first pose | +0.0000 | +0.0316 | +0.0213 | +0.0058 | +0.0279 | +0.0102 | +0.0102 |
+| OpenXR handedness (flip z) | +0.0000 | +0.1223 | +0.1261 | +0.1321 | +0.1486 | +0.1345 | +0.1416 |
+| ROS/ENU (z-up, x fwd, y left) | +0.0000 | +0.3980 | +0.3956 | +0.4182 | +0.3802 | +0.3833 | +0.3837 |
+| ROS/ENU, player heading +90 deg | -0.0000 | +1.4279 | +1.1864 | +1.2186 | +1.7480 | +1.1354 | +1.3755 |
+| ROS/ENU, player heading +180 deg | +0.0000 | +1.9272 | +1.4269 | +1.1705 | +1.6595 | +1.2335 | +1.8548 |
+wrote <scratch>\v9_frame_robustness.json

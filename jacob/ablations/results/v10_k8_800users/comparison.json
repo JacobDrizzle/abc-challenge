@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "variant": "control",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "2a20e822860a168a888547f6e3694b5f0c710374386ff4d4bb6528b3e2835070",
+      "validation_endpoint_deg": 4.44505850724499,
+      "hold_last_endpoint_deg": 6.414602031717522,
+      "cohort_fingerprint": "809e80aea87b0d07db0142f6978a4edd497d95409ff14c96df27fb0fe1adcbea"
+    }
+  ]
+}

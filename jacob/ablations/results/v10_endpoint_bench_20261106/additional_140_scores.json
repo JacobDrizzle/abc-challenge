@@ -1,0 +1,2606 @@
+{
+  "parent_fingerprint": "be79081ac96bf9198d1b978749b586dead84b8818e2ebcb36c9b6d9703840aed",
+  "users": [
+    "020bfebe-9520-4908-a42b-d4ca33635f70",
+    "079640e7-c27e-4c56-b287-cadcc707a102",
+    "0871720a-91d0-462d-b8b7-8dbbd92bdb2e",
+    "0886b014-9f72-4d73-a414-e8f394a868f8",
+    "0cb68d84-ce48-4e7e-8ad8-df136329507c",
+    "0d6dc130-15a2-45c6-bd5a-0944ec59f639",
+    "0f535327-1eaa-4972-8d99-2904c460b5a6",
+    "10107668-9a5b-47ac-a132-49fbc02c2a22",
+    "10cd5465-97a2-4832-8f0e-eb1f5b1e1b0d",
+    "11168d76-b08b-4c84-9482-089544037507",
+    "134678be-2e65-4e35-8f62-76ef8a8b412b",
+    "13f83eab-6af9-45a8-b446-bd534e71836d",
+    "17ae4ab0-e147-43a4-9775-4bdc04a9d491",
+    "1ade9b70-4989-4c2c-8b7c-de8865d307ff",
+    "1b195990-7071-4d04-b840-456aa2dfa955",
+    "1bb7af37-493f-467f-81ce-fc8b9ecad81e",
+    "1c9e3622-41ff-4717-91eb-033ccce5b64d",
+    "1ca08774-4e11-4619-a3da-fcbb5918b9db",
+    "21e8dad5-dcf2-498a-95aa-3e1bed560a8e",
+    "2577d1da-9bf7-4561-9812-162d477fb874",
+    "25b068da-605c-4ac3-bcb2-6e70724f67ca",
+    "288dc9f3-6228-4ea0-be15-873687f2cf1e",
+    "29e6f1fe-fd67-49d3-ad7a-dde3ef77eadb",
+    "2a19a0ed-fdcf-45e2-aa50-bd86bc1841b6",
+    "2bbe12b6-f0e1-44f5-9752-0c8e826a6df0",
+    "31fea059-8b42-4609-a318-4184ac67aae0",
+    "34f250ea-796a-46a6-b56d-6d57e109f2cf",
+    "36be1947-c33a-46fa-bdae-86440ec7d8a5",
+    "37533998-e671-4e84-9f56-95cfa278b9fc",
+    "3774966b-349b-47da-b554-29b7e3f064b2",
+    "386e46ee-c294-474e-ba1d-8d5f76bb575a",
+    "38eb53d1-bae5-446d-b4b4-c24a702c1ab3",
+    "38f484fd-c0c8-483f-8a69-1264fab7f449",
+    "38f92607-fe4e-430a-b9e9-d10275cbc93a",
+    "3a5674bf-7c32-4510-a687-ee88b12bd95b",
+    "3c0e6791-41bd-4d1e-83b3-15bf5c8e6e7d",
+    "3c147cb2-b104-4eab-aa48-822b6827812b",
+    "3ceb9f31-d312-40f0-a0b9-2ca18ebcbb98",
+    "40453e9f-bd65-4991-8da9-b47f6d93d225",
+    "457baccc-253f-4bc8-9dba-bcd466c87700",
+    "45c0290f-ff27-4fa4-b425-964ac1f7c939",
+    "45d92a7e-f83e-4e40-9b8e-a2d79c2d0b61",
+    "47362f5b-7515-4a1e-b7bf-e4f0c8326032",
+    "47a09b8d-dc20-4652-ae1e-5d4fdbf950b5",
+    "48141705-c57f-4b23-942c-43cf6a203c1e",
+    "4c27ac5c-8d81-4b48-bbf9-df7b0e06c826",
+    "4d344ee7-d733-4b6a-bbe6-b19284ef0808",
+    "5443cab6-a1ac-44e7-af43-e4f0b59f8ad0",
+    "54fbade1-a30e-4c92-a62f-d39c188f8bcd",
+    "586ab5d5-0526-46b5-a661-9e2419472504",
+    "5c827ca5-54ec-4664-848c-5abc47132c85",
+    "5dac8ce2-6f3a-4273-bfaa-deeb81361733",
+    "5ea3be91-38b3-4946-99e9-f0d759fca105",
+    "615460c7-1321-4745-9fd8-570ac4ee4978",
+    "62c2d6ab-cb1f-4944-9aad-e113e8893049",
+    "643ea9bf-ca78-4806-8096-c2cd14e914d7",
+    "658f4a88-7ed0-4ffd-a544-32f0f5d4498a",
+    "671f7d06-376a-4f22-9bfc-864d1ed8b0e0",
+    "6c0a22dd-03f8-444d-8850-4e0b3118fcbe",
+    "6c7613be-880f-474b-b751-57383c1e528b",
+    "6cbdee11-e04a-4d4d-baf9-f567231ba921",
+    "70dd7580-6ea4-4a05-a154-519c5cb4a5ba",
+    "73524d1d-8715-4713-9eb4-356fd4cda2b3",
+    "77051cd4-22c4-4dac-a14f-32b2d4c4805d",
+    "77c83f7d-4bcc-415a-8183-e4515824a634",
+    "7d779207-8c8d-48ef-bf5f-b08e0deafb45",
+    "7e6a9e9a-daa2-46fd-8697-fd96ea15be87",
+    "80032da3-436a-4eef-89c7-7cbe314139e2",
+    "80287eee-5287-4e29-8061-70590ac6923b",
+    "80e4f97a-d8f6-443c-87d1-611718bc65fb",
+    "8c23c7bf-a351-4b5a-8211-63aa91b1408c",
+    "8da45f52-db4e-46d2-a04c-b7b4b87a6dbd",
+    "944b3bee-ead9-44df-9c18-393972e2902a",
+    "95859a19-0ec8-432d-9423-b4379eb07d68",
+    "95e73629-7974-430a-aa3d-a9224db443b9",
+    "96f04fbc-cf5a-449a-81b3-e7e33fdff569",
+    "9866ef28-dca5-4caa-8055-897d6a4f6f56",
+    "99cc8481-aea0-4faa-a705-fb184e4952f9",
+    "9aa9cae4-0deb-4845-a502-c5f77f8e5e76",
+    "9bde4b6e-4cce-4596-b97d-28c0ccb9a467",
+    "9deb1ed6-03db-4afe-be25-994a3f964169",
+    "a090e0e2-6e57-4f35-ab72-30e4110abd44",
+    "a0bc1343-b1d2-42f8-af9a-f8b067971361",
+    "a2b1a24a-7d62-4b34-8a21-207ba03afa49",
+    "a3ce320f-d41c-4e81-8315-5bf720209cf2",
+    "a51890f2-ec0a-48a9-83b7-f4a5ffd45a97",
+    "a93160e2-cd54-417e-996d-2de541034600",
+    "acc6ce7c-a848-436c-a4ea-d7147fadb35d",
+    "b06bfe2a-717d-4647-9ba1-61f79a530e98",
+    "b1603ee7-207b-4d72-af9b-6b5c470e971c",
+    "b2555bad-5d62-4815-ae90-769f27e5455d",
+    "b32de58f-7920-401b-ac10-93ad08d1af21",
+    "b3be401e-0393-4072-a8f6-401ccc78a2be",
+    "b60bad3e-4cc2-47ce-9e17-9a7ca989a521",
+    "b7387bcf-1298-41ee-8b45-4121ba696e40",
+    "b9ccee53-e077-45ed-81b0-35a8269bc1fa",
+    "baf481e1-bc46-4c70-9129-910d783e77c6",
+    "bd053185-ef81-4ef1-b38f-e1e12ac71c3c",
+    "bd162859-40cc-4870-8c7f-bea412be590f",
+    "be612552-04eb-4d8b-907b-17efa9c1368f",
+    "c26ea33c-faa3-45a4-9ad8-bc2846114ee9",
+    "c2d4b427-390f-49a6-97d9-b6bd889f76e6",
+    "c35cb134-d0f3-48df-85f5-a500e5c9a164",
+    "c63dca31-b0f3-4d60-a389-ef1e68a19ce4",
+    "c674f31b-f1f4-4047-bb6a-9deaf02e6df9",
+    "c9cb2931-0960-4435-9fff-5f61935a2381",
+    "c9d004f1-4d15-4652-ac1f-eda4010f9705",
+    "cbd92c16-428c-4b12-87a4-1341e7ab3368",
+    "cc38aa8b-ea91-4bfa-9e09-a1b15b9bf400",
+    "cd49f46c-ea2a-4e37-9252-c7c6acb2a7f9",
+    "cffce2e2-2663-440f-b6cb-3facd493519a",
+    "d0832d61-f244-4411-a5b5-89cf6bfbd5fe",
+    "d0eae678-48fa-4e73-85d4-25067280226b",
+    "d2a21d91-4e8b-43a7-bcaa-2fdab016e33f",
+    "d2dc7d12-f9f7-4b17-8bb9-ad1d27cb148b",
+    "d97df845-5cd1-466a-9a5d-4c5b5cb36f33",
+    "d9d41718-e939-4f45-97b8-169866943e8b",
+    "d9f4fda6-9d03-4a8e-9ad4-68a52190463e",
+    "da38fb86-5855-48d1-b8a4-5962ba1ead6c",
+    "ddca002c-c0b7-4f7c-9ad3-e091ce1a07dc",
+    "df940821-751f-49f1-be6b-6a991a78e96d",
+    "e0ea36d0-031a-4aed-a2ff-d937d8100c45",
+    "e42f2216-aa6b-4503-9676-f2f1cf8a5e97",
+    "e7183343-4fcd-4ce8-92ed-052e5d8b7678",
+    "e7a4bcc0-9353-4351-bf1c-69e4f97cb4e6",
+    "e865cb67-2d54-4f10-b7e2-786173231487",
+    "e9cef681-54cf-40cf-90a8-04e9561ff962",
+    "ef560251-11f4-42be-832c-0aa900b2493d",
+    "f08b440b-886e-4fe0-bc5e-a51580f93a0e",
+    "f26cacf0-1268-4c46-86c3-79f119e48993",
+    "f5bd1d5b-c187-46b6-906e-4d4eca93d11c",
+    "f78fbbfa-a79f-46ef-a428-cfa3e072008e",
+    "f7eb5f0b-06b2-4063-803c-5f74bc51f974",
+    "f8a448ca-8e07-4cf5-be88-eefedf9f2093",
+    "fa4ee548-718c-4a6c-93c3-0a5f1162c0bb",
+    "fa718664-79e6-46ba-90ad-feaa8e45dcb1",
+    "fc965c45-a179-4d26-a41c-69dcfac0e4f6",
+    "fe7fd92f-d010-46f0-beb9-f259960a9bf3",
+    "feb27ae4-8c57-49c2-ac71-c7874baa32c7",
+    "fed7fba0-7f5e-4229-8031-5efb58325deb"
+  ],
+  "windows": 5428916,
+  "quantiles": "archived float32 endpoint values",
+  "scores": {
+    "constant_velocity_1step": {
+      "model": {
+        "name": "constant_velocity_1step",
+        "kind": "baseline",
+        "onnx": null,
+        "onnx_sha256": null,
+        "baseline": "constant_velocity",
+        "stateful": false,
+        "owner": null,
+        "group": null,
+        "declared_trainable_parameters": 0,
+        "notes": null,
+        "threads": 1
+      },
+      "efficiency": null,
+      "accuracy": {
+        "protocol": "stateless",
+        "protocol_text": "Stateless: each window is a fresh call on the 400-sample context.",
+        "windows": 5428916,
+        "mean_deg_step20": 7.562535806567798,
+        "mean_deg_step10": 3.2171743882868555,
+        "mean_deg_by_horizon": [
+          0.12470741168974236,
+          0.33715335313943046,
+          0.6176592602439345,
+          0.9458139335666973,
+          1.3023659328814576,
+          1.673651161875883,
+          2.052282255207627,
+          2.4356586721579183,
+          2.823641967648931,
+          3.2171743882868555,
+          3.617647151193327,
+          4.025649280732687,
+          4.440995676834001,
+          4.863839734222796,
+          5.294326452590697,
+          5.732533906413264,
+          6.178681826576141,
+          6.63270065886747,
+          7.094144059131168,
+          7.562535806567798
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 5.894396543502808,
+        "p95_deg_step20": 19.15560531616211,
+        "p99_deg_step20": 31.49362010955806,
+        "equal_player_mean_deg_step20": 7.491952349454678
+      },
+      "accuracy_cold_start": null
+    },
+    "damped_velocity": {
+      "model": {
+        "name": "damped_velocity",
+        "kind": "baseline",
+        "onnx": null,
+        "onnx_sha256": null,
+        "baseline": "damped_velocity",
+        "stateful": false,
+        "owner": null,
+        "group": null,
+        "declared_trainable_parameters": 0,
+        "notes": null,
+        "threads": 1
+      },
+      "efficiency": null,
+      "accuracy": {
+        "protocol": "stateless",
+        "protocol_text": "Stateless: each window is a fresh call on the 400-sample context.",
+        "windows": 5428916,
+        "mean_deg_step20": 5.668140681310203,
+        "mean_deg_step10": 2.775933151684429,
+        "mean_deg_by_horizon": [
+          0.12388523186480838,
+          0.3318057904291395,
+          0.5993610938837839,
+          0.9027495046052351,
+          1.2217083544453298,
+          1.5429254091565519,
+          1.8597969667632779,
+          2.1704571039927187,
+          2.4753551997412773,
+          2.775933151684429,
+          3.0735878461781936,
+          3.3689896390063865,
+          3.6623171757442097,
+          3.95371731493105,
+          4.243367270545787,
+          4.531481173128346,
+          4.818242025779862,
+          5.103529452309169,
+          5.386965165144004,
+          5.668140681310203
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 4.48449182510376,
+        "p95_deg_step20": 14.036197423934937,
+        "p99_deg_step20": 22.916028785705528,
+        "equal_player_mean_deg_step20": 5.537722636908515
+      },
+      "accuracy_cold_start": null
+    },
+    "hold_last": {
+      "model": {
+        "name": "hold_last",
+        "kind": "baseline",
+        "onnx": null,
+        "onnx_sha256": null,
+        "baseline": "hold_last",
+        "stateful": false,
+        "owner": null,
+        "group": null,
+        "declared_trainable_parameters": 0,
+        "notes": null,
+        "threads": 1
+      },
+      "efficiency": null,
+      "accuracy": {
+        "protocol": "stateless",
+        "protocol_text": "Stateless: each window is a fresh call on the 400-sample context.",
+        "windows": 5428916,
+        "mean_deg_step20": 6.74900373327106,
+        "mean_deg_step10": 3.8525874716740587,
+        "mean_deg_by_horizon": [
+          0.4528952031699889,
+          0.8957612976463842,
+          1.323307216516751,
+          1.7323343942680642,
+          2.1221961973787042,
+          2.494240545279787,
+          2.850860129908627,
+          3.19468495962228,
+          3.528016931930288,
+          3.8525874716740587,
+          4.169488820564647,
+          4.479452004552714,
+          4.782995266687454,
+          5.0805236327155905,
+          5.372374097843327,
+          5.658741869042239,
+          5.939670356154688,
+          6.215076858545891,
+          6.484875778131366,
+          6.74900373327106
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 5.248943090438843,
+        "p95_deg_step20": 17.041443347930908,
+        "p99_deg_step20": 27.83442230224604,
+        "equal_player_mean_deg_step20": 6.525296370734618
+      },
+      "accuracy_cold_start": null
+    },
+    "k8_800_gain105_s44": {
+      "model": {
+        "name": "k8_800_gain105_s44",
+        "kind": "onnx",
+        "onnx": "bench_runs\\v10_endpoint_bench_20261106\\prior_gain_export\\edited.onnx",
+        "onnx_sha256": "34f149efeb084fdcd0621ece45e93c9ac15ccf2ecf485979c9351e4a5c929ab5",
+        "baseline": null,
+        "stateful": true,
+        "owner": null,
+        "group": null,
+        "declared_trainable_parameters": 7555,
+        "notes": null,
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              1,
+              32,
+              2,
+              7
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              1,
+              32,
+              2,
+              56
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              1,
+              32,
+              2,
+              329
+            ]
+          }
+        ],
+        "state_elements": 25088,
+        "initializer_elements": 7552,
+        "constant_node_elements": 548,
+        "macs_per_call": {
+          "total": 16222,
+          "by_operator": {
+            "MatMul": 1950,
+            "Conv": 14272
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 64,
+            "MatMul": 11,
+            "Slice": 11,
+            "Concat": 9,
+            "Relu": 8,
+            "Conv": 7,
+            "Reshape": 7,
+            "Add": 3,
+            "Mul": 3,
+            "LayerNormalization": 1
+          },
+          "safe": [
+            "Add",
+            "Concat",
+            "Conv",
+            "LayerNormalization",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.9999998825523049,
+            1.0000001358609996
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.568534634005941,
+        "mean_deg_step10": 2.272221813824555,
+        "mean_deg_by_horizon": [
+          0.1071531799822873,
+          0.2708801805746465,
+          0.48772390093115053,
+          0.7394302075792847,
+          1.0061323909491122,
+          1.273462487696644,
+          1.5343244679681107,
+          1.7870537126990735,
+          2.0323616178628776,
+          2.272221813824555,
+          2.5090626282205837,
+          2.7442082401257473,
+          2.977811035615903,
+          3.210053787578647,
+          3.440953159932338,
+          3.6701663403980658,
+          3.897592743986004,
+          4.123210397467481,
+          4.34682025739357,
+          4.568534634005941
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.6574323177337646,
+        "p95_deg_step20": 11.098672866821289,
+        "p99_deg_step20": 17.749128723144523,
+        "equal_player_mean_deg_step20": 4.488191000666106
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.588639555895133,
+        "mean_deg_step10": 2.2787308194801494,
+        "mean_deg_by_horizon": [
+          0.10741520622821929,
+          0.2713293937076229,
+          0.48843242553435723,
+          0.7405268319760924,
+          1.0077647602675186,
+          1.2757891080376302,
+          1.5374983847309942,
+          1.7912178290206051,
+          2.037642361087767,
+          2.2787308194801494,
+          2.5168919851688942,
+          2.753422998421308,
+          2.988451338233071,
+          3.2221392958415755,
+          3.4544876416538184,
+          3.685136107383645,
+          3.9139641500226974,
+          4.140922421944878,
+          4.365785117294128,
+          4.588639555895133
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.6789190769195557,
+        "p95_deg_step20": 11.125169515609741,
+        "p99_deg_step20": 17.77363939285277,
+        "equal_player_mean_deg_step20": 4.524145987224168
+      }
+    },
+    "k8_800_original_s44": {
+      "model": {
+        "name": "k8_800_original_s44",
+        "kind": "onnx",
+        "onnx": "jacob\\training\\outputs\\v10_endpoint_refit_20261105\\onnx\\baseline.onnx",
+        "onnx_sha256": "6133510eabc8a3e55b62670ed1c02b67c37995605e55275be9581d0475da8094",
+        "baseline": null,
+        "stateful": true,
+        "owner": null,
+        "group": null,
+        "declared_trainable_parameters": 7555,
+        "notes": null,
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              1,
+              32,
+              2,
+              7
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              1,
+              32,
+              2,
+              56
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              1,
+              32,
+              2,
+              329
+            ]
+          }
+        ],
+        "state_elements": 25088,
+        "initializer_elements": 7552,
+        "constant_node_elements": 548,
+        "macs_per_call": {
+          "total": 16222,
+          "by_operator": {
+            "MatMul": 1950,
+            "Conv": 14272
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 64,
+            "MatMul": 11,
+            "Slice": 11,
+            "Concat": 9,
+            "Relu": 8,
+            "Conv": 7,
+            "Reshape": 7,
+            "Add": 3,
+            "Mul": 3,
+            "LayerNormalization": 1
+          },
+          "safe": [
+            "Add",
+            "Concat",
+            "Conv",
+            "LayerNormalization",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.9999998686654239,
+            1.0000001364086104
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.572477820869721,
+        "mean_deg_step10": 2.275097900736027,
+        "mean_deg_by_horizon": [
+          0.1055102191055464,
+          0.26980873072770706,
+          0.4877056179589767,
+          0.740414081868026,
+          1.0079335127459075,
+          1.2758794604991455,
+          1.5371571318577888,
+          1.7900947578412847,
+          2.035410108173175,
+          2.275097900736027,
+          2.5115955331215103,
+          2.746263025274368,
+          2.9793250929982436,
+          3.2110364758114587,
+          3.4415230069412943,
+          3.6705759658020876,
+          3.898203620480597,
+          4.12445295842262,
+          4.349170835067717,
+          4.572477820869721
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.6564425230026245,
+        "p95_deg_step20": 11.12635588645935,
+        "p99_deg_step20": 17.820465373992835,
+        "equal_player_mean_deg_step20": 4.4902620010715335
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.591188953148179,
+        "mean_deg_step10": 2.28115417301891,
+        "mean_deg_by_horizon": [
+          0.10575371723751709,
+          0.27022413987845956,
+          0.48836165490927247,
+          0.7414313109824634,
+          1.009449395759068,
+          1.2780420419157865,
+          1.5401091207377997,
+          1.7939685936106653,
+          2.0403234271510122,
+          2.28115417301891,
+          2.5188815686507193,
+          2.7548400427573863,
+          2.9892315546388266,
+          3.2222906815486,
+          3.454128243980626,
+          3.6845198963373003,
+          3.9134524632798504,
+          4.140948785523444,
+          4.3668284232635886,
+          4.591188953148179
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.676331639289856,
+        "p95_deg_step20": 11.150392293930054,
+        "p99_deg_step20": 17.845363426208472,
+        "equal_player_mean_deg_step20": 4.523647130411845
+      }
+    },
+    "k8_800_refit_s44": {
+      "model": {
+        "name": "k8_800_refit_s44",
+        "kind": "onnx",
+        "onnx": "jacob\\training\\outputs\\v10_endpoint_refit_20261105\\onnx\\edited.onnx",
+        "onnx_sha256": "8328ce66928fea867097dc92f1cf559d4d1f4dbf07de7c059c4d67d08367be67",
+        "baseline": null,
+        "stateful": true,
+        "owner": null,
+        "group": null,
+        "declared_trainable_parameters": 7555,
+        "notes": null,
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              1,
+              32,
+              2,
+              7
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              1,
+              32,
+              2,
+              56
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              1,
+              32,
+              2,
+              329
+            ]
+          }
+        ],
+        "state_elements": 25088,
+        "initializer_elements": 7552,
+        "constant_node_elements": 548,
+        "macs_per_call": {
+          "total": 16222,
+          "by_operator": {
+            "MatMul": 1950,
+            "Conv": 14272
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 64,
+            "MatMul": 11,
+            "Slice": 11,
+            "Concat": 9,
+            "Relu": 8,
+            "Conv": 7,
+            "Reshape": 7,
+            "Add": 3,
+            "Mul": 3,
+            "LayerNormalization": 1
+          },
+          "safe": [
+            "Add",
+            "Concat",
+            "Conv",
+            "LayerNormalization",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.999999866575404,
+            1.0000001254654993
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.565463065184657,
+        "mean_deg_step10": 2.274111648266006,
+        "mean_deg_by_horizon": [
+          0.10551305561813565,
+          0.26981908474444194,
+          0.4877149053443094,
+          0.7403992436381833,
+          1.0078616604883146,
+          1.2757112844641207,
+          1.536849868775217,
+          1.7896047621415407,
+          2.0346938787383095,
+          2.274111648266006,
+          2.5102993992215823,
+          2.744620734687396,
+          2.9772995395295605,
+          3.208590812605655,
+          3.438610333837697,
+          3.667124619622237,
+          3.8941126694831536,
+          4.119585511108685,
+          4.343346988388227,
+          4.565463065184657
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.654024124145508,
+        "p95_deg_step20": 11.095566272735596,
+        "p99_deg_step20": 17.756051635742182,
+        "equal_player_mean_deg_step20": 4.485285735908376
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.583800452840307,
+        "mean_deg_step10": 2.2801345736530365,
+        "mean_deg_by_horizon": [
+          0.10575662519295549,
+          0.27023483517364416,
+          0.4883715387089342,
+          0.7414169824994817,
+          1.0093772065353828,
+          1.2778715201739013,
+          1.5397958280718098,
+          1.793466653176744,
+          2.039586307629075,
+          2.2801345736530365,
+          2.517535284458569,
+          2.753126340461651,
+          2.9871082931375894,
+          3.219715777285846,
+          3.4510503864761937,
+          3.680863557769315,
+          3.9091138531965486,
+          4.135789771281096,
+          4.3606703014110035,
+          4.583800452840307
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.6735719442367554,
+        "p95_deg_step20": 11.120664119720459,
+        "p99_deg_step20": 17.77986660003659,
+        "equal_player_mean_deg_step20": 4.517555990006526
+      }
+    },
+    "nic_ga2_gadst_s42": {
+      "model": {
+        "name": "nic_ga2_gadst_s42",
+        "kind": "onnx",
+        "onnx": "nic\\models\\group_a_v2\\s42\\gadst.onnx",
+        "onnx_sha256": "778fc4d4d762ad58f0c2656472e2bee7e476a6f0ec32bbb85c853d9356feaddf",
+        "baseline": null,
+        "stateful": false,
+        "owner": "nic",
+        "group": "nic_ga2_gadst",
+        "declared_trainable_parameters": 10352,
+        "notes": "GADS-T, rotation + velocity input, seed 42; trained only on group-a-v2 /train, stopped on /validation",
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": false,
+        "states": [],
+        "state_elements": 0,
+        "initializer_elements": 10415,
+        "constant_node_elements": 713,
+        "macs_per_call": {
+          "total": 606320,
+          "by_operator": {
+            "MatMul": 40048,
+            "Gemm": 566272
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Reshape": 24,
+            "Slice": 18,
+            "Add": 13,
+            "Mul": 11,
+            "Gemm": 9,
+            "Constant": 8,
+            "MatMul": 8,
+            "Relu": 8,
+            "Transpose": 5,
+            "Concat": 4,
+            "LayerNormalization": 1,
+            "Softmax": 1
+          },
+          "safe": [
+            "Add",
+            "Concat",
+            "Gemm",
+            "LayerNormalization",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice",
+            "Transpose"
+          ],
+          "avoid": [],
+          "conditional": {
+            "Softmax": "allowed only as plain MatMul-Softmax-MatMul attention"
+          },
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.7412396878530763,
+            1.072178106190202
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "stateless",
+        "protocol_text": "Stateless: each window is a fresh call on the 400-sample context.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.8748519717446825,
+        "mean_deg_step10": 2.441475462461152,
+        "mean_deg_by_horizon": [
+          0.13109849124049233,
+          0.3092209626933535,
+          0.5438281963954987,
+          0.8239542992875045,
+          1.123388249254098,
+          1.4094647594178902,
+          1.676781385666285,
+          1.9392509939685179,
+          2.192079923134742,
+          2.441475462461152,
+          2.689249362468658,
+          2.934969729783172,
+          3.1783116880362288,
+          3.422020318946381,
+          3.6657711442795162,
+          3.909076336668201,
+          4.152386694583228,
+          4.3946799375772425,
+          4.6352334695604585,
+          4.8748519717446825
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.872386336326599,
+        "p95_deg_step20": 11.895453929901123,
+        "p99_deg_step20": 19.39581842422484,
+        "equal_player_mean_deg_step20": 4.805158003245
+      },
+      "accuracy_cold_start": null
+    },
+    "nic_ga2_gru_s45": {
+      "model": {
+        "name": "nic_ga2_gru_s45",
+        "kind": "onnx",
+        "onnx": "nic\\models\\group_a_v2\\s45\\gru_stateful_window.onnx",
+        "onnx_sha256": "6f4894a119e321939f7ad50bd9395dadeeae5540e8f6391da7e439386cf72e95",
+        "baseline": null,
+        "stateful": true,
+        "owner": "nic",
+        "group": "nic_ga2_gru",
+        "declared_trainable_parameters": 6192,
+        "notes": "Stateful GRU, velocity-only input, 32 units, patience 30, seed 45; trained only on group-a-v2 /train, stopped on /validation",
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              1,
+              32
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              1,
+              4
+            ]
+          }
+        ],
+        "state_elements": 36,
+        "initializer_elements": 2663,
+        "constant_node_elements": 3621,
+        "macs_per_call": {
+          "total": 6384,
+          "by_operator": {
+            "MatMul": 464,
+            "Gemm": 5920
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Slice": 8,
+            "Constant": 7,
+            "Mul": 6,
+            "Reshape": 6,
+            "Add": 5,
+            "MatMul": 4,
+            "Gemm": 3,
+            "Sigmoid": 2,
+            "Tanh": 1
+          },
+          "safe": [
+            "Add",
+            "Gemm",
+            "MatMul",
+            "Mul",
+            "Reshape",
+            "Sigmoid",
+            "Slice",
+            "Tanh"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.8521738380800075,
+            1.154922722863934
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.860030375791272,
+        "mean_deg_step10": 2.395795590354631,
+        "mean_deg_by_horizon": [
+          0.10821857086411484,
+          0.27883297651334416,
+          0.4998281977020123,
+          0.762581615153018,
+          1.0496190466625643,
+          1.3363932123109181,
+          1.617515031943124,
+          1.8851502693038038,
+          2.142095574246151,
+          2.395795590354631,
+          2.6495047717705216,
+          2.902043378117068,
+          3.153238742143874,
+          3.40133633471135,
+          3.647413396485328,
+          3.8916111027639553,
+          4.134793025080015,
+          4.377830186296136,
+          4.619994006372001,
+          4.860030375791272
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.881636381149292,
+        "p95_deg_step20": 11.819738626480103,
+        "p99_deg_step20": 18.952331352233877,
+        "equal_player_mean_deg_step20": 4.774447739615504
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.862846356440296,
+        "mean_deg_step10": 2.3968360601504064,
+        "mean_deg_by_horizon": [
+          0.10822318006856967,
+          0.2788846071073239,
+          0.4999269652489578,
+          0.7627580663138815,
+          1.0498990911220998,
+          1.3367875868409713,
+          1.6180206993800892,
+          1.885813068565847,
+          2.1429496295920774,
+          2.3968360601504064,
+          2.6507138020752103,
+          2.903410409572811,
+          3.154763040114857,
+          3.4030424955140064,
+          3.6492868052841105,
+          3.8936476300820706,
+          4.136997853501869,
+          4.380225552984124,
+          4.622590685482629,
+          4.862846356440296
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.883859157562256,
+        "p95_deg_step20": 11.827481746673584,
+        "p99_deg_step20": 18.96110296249387,
+        "equal_player_mean_deg_step20": 4.78028989210186
+      }
+    },
+    "v5_tcnn_ga2": {
+      "model": {
+        "name": "v5_tcnn_ga2",
+        "kind": "onnx",
+        "onnx": "jacob\\models\\tcnn_v5_ga2_stream.onnx",
+        "onnx_sha256": "c746ce1611bbbbaa0af6a50d5dd0e76fd0f2807c353f48bc62a24b0a4c72d518",
+        "baseline": null,
+        "stateful": true,
+        "owner": "jacob",
+        "group": null,
+        "declared_trainable_parameters": 51900,
+        "notes": "v5 retrained on group-a-v2 (20261026_131953): 100 train / 15 val users; control variant, seed 44 of 42-44; stateless twin: model_fp32_fast_notrig.onnx",
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              1,
+              48,
+              2
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              1,
+              48,
+              4
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              1,
+              48,
+              8
+            ]
+          },
+          {
+            "name": "state_in_3",
+            "shape": [
+              1,
+              48,
+              16
+            ]
+          },
+          {
+            "name": "state_in_4",
+            "shape": [
+              1,
+              48,
+              32
+            ]
+          },
+          {
+            "name": "state_in_5",
+            "shape": [
+              1,
+              48,
+              64
+            ]
+          },
+          {
+            "name": "state_in_6",
+            "shape": [
+              1,
+              48,
+              128
+            ]
+          }
+        ],
+        "state_elements": 12192,
+        "initializer_elements": 51900,
+        "constant_node_elements": 260,
+        "macs_per_call": {
+          "total": 51920,
+          "by_operator": {
+            "MatMul": 464,
+            "Conv": 48576,
+            "Gemm": 2880
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 93,
+            "Mul": 30,
+            "Add": 22,
+            "Relu": 15,
+            "Slice": 13,
+            "Concat": 9,
+            "Conv": 8,
+            "Reshape": 7,
+            "Div": 6,
+            "Clip": 5,
+            "MatMul": 4,
+            "ReduceSum": 4,
+            "Sqrt": 3,
+            "Where": 3,
+            "Gemm": 1,
+            "Less": 1,
+            "LessOrEqual": 1,
+            "Sub": 1
+          },
+          "safe": [
+            "Add",
+            "Clip",
+            "Concat",
+            "Conv",
+            "Gemm",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [
+            "Div",
+            "Less",
+            "LessOrEqual",
+            "ReduceSum",
+            "Sqrt",
+            "Sub",
+            "Where"
+          ],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.9999999426818416,
+            1.0000001034226917
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.839524898242773,
+        "mean_deg_step10": 2.3899201692455923,
+        "mean_deg_by_horizon": [
+          0.11055269233158985,
+          0.29413411350375024,
+          0.5294993033635506,
+          0.7955064829307021,
+          1.0730428166898105,
+          1.349452405856412,
+          1.61921988226604,
+          1.8816568333220967,
+          2.137913704048156,
+          2.3899201692455923,
+          2.6396408756936,
+          2.887999105799316,
+          3.1351199012983897,
+          3.381295726655699,
+          3.626717964882475,
+          3.8712882938492563,
+          4.115030443239508,
+          4.357933365731402,
+          4.599557319647988,
+          4.839524898242773
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.876537561416626,
+        "p95_deg_step20": 11.744800806045532,
+        "p99_deg_step20": 18.706167030334463,
+        "equal_player_mean_deg_step20": 4.745329074201059
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.842130067152784,
+        "mean_deg_step10": 2.3909478125913823,
+        "mean_deg_by_horizon": [
+          0.11057829331460238,
+          0.29420809308178975,
+          0.5296467621352879,
+          0.7957496203215371,
+          1.0733992534025556,
+          1.3499328472178445,
+          1.6198317639881394,
+          1.8824053658172482,
+          2.138802644213016,
+          2.3909478125913823,
+          2.640807958169535,
+          2.889309195316006,
+          3.1365804008498035,
+          3.3829156932218956,
+          3.628502681276158,
+          3.873238673857187,
+          4.117144900353049,
+          4.36021122150176,
+          4.6019993278454345,
+          4.842130067152784
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.8781954050064087,
+        "p95_deg_step20": 11.750715970993042,
+        "p99_deg_step20": 18.715344238281176,
+        "equal_player_mean_deg_step20": 4.74864205734172
+      }
+    },
+    "v6_tcnn_ga2": {
+      "model": {
+        "name": "v6_tcnn_ga2",
+        "kind": "onnx",
+        "onnx": "jacob\\models\\tcnn_v6_ga2_stream.onnx",
+        "onnx_sha256": "cf065dd37603859b90fad822dd94a8e816ed92dae217dc32e4b7a0dc7ab8fd5e",
+        "baseline": null,
+        "stateful": true,
+        "owner": "jacob",
+        "group": null,
+        "declared_trainable_parameters": 26012,
+        "notes": "v6 retrained on group-a-v2 (20261026_131953): 100 train / 15 val users; control variant, seed 44 of 42-44. ONNX initializers hold 25,992: the head bias was folded into a Constant",
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              2,
+              24,
+              2
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              2,
+              24,
+              4
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              2,
+              24,
+              8
+            ]
+          },
+          {
+            "name": "state_in_3",
+            "shape": [
+              2,
+              24,
+              16
+            ]
+          },
+          {
+            "name": "state_in_4",
+            "shape": [
+              2,
+              24,
+              32
+            ]
+          },
+          {
+            "name": "state_in_5",
+            "shape": [
+              2,
+              24,
+              64
+            ]
+          },
+          {
+            "name": "state_in_6",
+            "shape": [
+              2,
+              24,
+              128
+            ]
+          }
+        ],
+        "state_elements": 12192,
+        "initializer_elements": 25992,
+        "constant_node_elements": 536,
+        "macs_per_call": {
+          "total": 52144,
+          "by_operator": {
+            "MatMul": 3424,
+            "Conv": 48720
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 171,
+            "Mul": 32,
+            "Slice": 31,
+            "Add": 24,
+            "Concat": 23,
+            "Relu": 15,
+            "Reshape": 9,
+            "Conv": 8,
+            "Div": 7,
+            "MatMul": 7,
+            "Clip": 5,
+            "ReduceSum": 4,
+            "Sqrt": 3,
+            "Where": 3,
+            "Less": 1,
+            "LessOrEqual": 1,
+            "Sub": 1
+          },
+          "safe": [
+            "Add",
+            "Clip",
+            "Concat",
+            "Conv",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [
+            "Div",
+            "Less",
+            "LessOrEqual",
+            "ReduceSum",
+            "Sqrt",
+            "Sub",
+            "Where"
+          ],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.9999999456495603,
+            1.0000000983918864
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.734923543221726,
+        "mean_deg_step10": 2.3587991537473285,
+        "mean_deg_by_horizon": [
+          0.10517245220534709,
+          0.28264885646474364,
+          0.513735012116173,
+          0.7777442664746325,
+          1.054478497762685,
+          1.3301684610933129,
+          1.5985565828760895,
+          1.858611641405233,
+          2.1113571147349504,
+          2.3587991537473285,
+          2.603155243680599,
+          2.845507734021368,
+          3.0860614908519852,
+          3.32516250279205,
+          3.563039835966484,
+          3.7997330355151804,
+          4.035394670148057,
+          4.270111954892154,
+          4.503430351264775,
+          4.734923543221726
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.8085750341415405,
+        "p95_deg_step20": 11.420252799987793,
+        "p99_deg_step20": 18.148581600189193,
+        "equal_player_mean_deg_step20": 4.646348351385421
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.739062140840315,
+        "mean_deg_step10": 2.3606425299485094,
+        "mean_deg_by_horizon": [
+          0.1051999113966276,
+          0.28273809180664417,
+          0.5139292302276434,
+          0.7780899676058147,
+          1.0550201846223928,
+          1.3309440779535373,
+          1.5995913333226708,
+          1.8599193157802745,
+          2.1129358595267784,
+          2.3606425299485094,
+          2.6052588779601695,
+          2.8478687864121808,
+          3.0886720611800778,
+          3.3280128371495454,
+          3.5661217400991325,
+          3.8030390395050673,
+          4.038918547110281,
+          4.273846954784658,
+          4.507368523926674,
+          4.739062140840315
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.8126187324523926,
+        "p95_deg_step20": 11.426603555679321,
+        "p99_deg_step20": 18.15821828842161,
+        "equal_player_mean_deg_step20": 4.655942355834499
+      }
+    },
+    "v7_sep_base3_addons_angular_ga2": {
+      "model": {
+        "name": "v7_sep_base3_addons_angular_ga2",
+        "kind": "onnx",
+        "onnx": "jacob\\models\\tcnn_v7_sep_base3_addons_angular_ga2_stream.onnx",
+        "onnx_sha256": "d9f48aa1f25e81371ca64c34757375e2e6be6b614755a8dcda80eca1a8c83e49",
+        "baseline": null,
+        "stateful": true,
+        "owner": "jacob",
+        "group": null,
+        "declared_trainable_parameters": 6651,
+        "notes": "v7 separable_base3_addons + angular loss: 5 separable mirror blocks, dilation base 3 (receptive field 243), basis head P=3, L1 speed. Seed 44 of 42-44 (validation 3-seed mean 4.3297); v7 streaming graph (contains one Clip)",
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              2,
+              24,
+              2
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              2,
+              24,
+              6
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              2,
+              24,
+              18
+            ]
+          },
+          {
+            "name": "state_in_3",
+            "shape": [
+              2,
+              24,
+              54
+            ]
+          },
+          {
+            "name": "state_in_4",
+            "shape": [
+              2,
+              24,
+              162
+            ]
+          }
+        ],
+        "state_elements": 11616,
+        "initializer_elements": 6648,
+        "constant_node_elements": 464,
+        "macs_per_call": {
+          "total": 13863,
+          "by_operator": {
+            "MatMul": 1287,
+            "Conv": 12576
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 131,
+            "Mul": 23,
+            "Slice": 23,
+            "Add": 21,
+            "Concat": 18,
+            "MatMul": 12,
+            "Relu": 12,
+            "Conv": 11,
+            "Reshape": 9,
+            "Clip": 1
+          },
+          "safe": [
+            "Add",
+            "Clip",
+            "Concat",
+            "Conv",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.9999998695680854,
+            1.0000001241912029
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.720814426787998,
+        "mean_deg_step10": 2.3289956857437226,
+        "mean_deg_by_horizon": [
+          0.11528703074878084,
+          0.28638542140967466,
+          0.5072241363107218,
+          0.7611293551336838,
+          1.0301189676223552,
+          1.30104212263075,
+          1.567208443486252,
+          1.8268430045460489,
+          2.0802855115644534,
+          2.3289956857437226,
+          2.5748549736829864,
+          2.818879052202061,
+          3.0611595097956315,
+          3.301944365202114,
+          3.541443917729421,
+          3.7796313858936466,
+          4.016627948443992,
+          4.2525842297280265,
+          4.487332398713113,
+          4.720814426787998
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.7623785734176636,
+        "p95_deg_step20": 11.530544996261597,
+        "p99_deg_step20": 18.52636508941631,
+        "equal_player_mean_deg_step20": 4.622741180688199
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.723224609239258,
+        "mean_deg_step10": 2.3299743917516516,
+        "mean_deg_by_horizon": [
+          0.11535464324791785,
+          0.28653163123606706,
+          0.5074525754008821,
+          0.7614408133481356,
+          1.0305175363341816,
+          1.301536303625516,
+          1.5678085701313704,
+          1.8275601681268396,
+          2.081128793059767,
+          2.3299743917516516,
+          2.575973391928322,
+          2.820140246968616,
+          3.0625651570485304,
+          3.30349366372233,
+          3.5431361711870437,
+          3.781467763797401,
+          4.018609948823397,
+          4.254710601528404,
+          4.4896003669225335,
+          4.723224609239258
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.7646560668945312,
+        "p95_deg_step20": 11.534791946411133,
+        "p99_deg_step20": 18.532343959808347,
+        "equal_player_mean_deg_step20": 4.627035676841206
+      }
+    },
+    "v9_k5_combined_ga2": {
+      "model": {
+        "name": "v9_k5_combined_ga2",
+        "kind": "onnx",
+        "onnx": "jacob\\models\\tcnn_v9_k5_combined_ga2_stream.onnx",
+        "onnx_sha256": "86db84845f7092424ee40264d1b9b60265210e5b2803e3aa6319cadb10a5d526",
+        "baseline": null,
+        "stateful": true,
+        "owner": "jacob",
+        "group": null,
+        "declared_trainable_parameters": 5595,
+        "notes": "v9 k5_combined: 4 separable mirror blocks, kernel 5, dilations 1/5/25/68 (receptive field 397), 48 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2717); v9 lean streaming graph",
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              1,
+              24,
+              2,
+              4
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              1,
+              24,
+              2,
+              20
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              1,
+              24,
+              2,
+              100
+            ]
+          },
+          {
+            "name": "state_in_3",
+            "shape": [
+              1,
+              24,
+              2,
+              272
+            ]
+          }
+        ],
+        "state_elements": 19008,
+        "initializer_elements": 5592,
+        "constant_node_elements": 556,
+        "macs_per_call": {
+          "total": 12318,
+          "by_operator": {
+            "MatMul": 1806,
+            "Conv": 10512
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 72,
+            "Slice": 13,
+            "Concat": 11,
+            "MatMul": 11,
+            "Relu": 10,
+            "Conv": 9,
+            "Reshape": 7,
+            "Add": 4,
+            "Mul": 3,
+            "LayerNormalization": 1
+          },
+          "safe": [
+            "Add",
+            "Concat",
+            "Conv",
+            "LayerNormalization",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.9999998842726465,
+            1.0000001202313311
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.658356228750722,
+        "mean_deg_step10": 2.3189939486245796,
+        "mean_deg_by_horizon": [
+          0.11587444854014335,
+          0.2880237672080157,
+          0.5099646716059714,
+          0.7646479880086842,
+          1.0337421958230348,
+          1.3038473847198195,
+          1.5681751755856137,
+          1.8249603774097953,
+          2.074666536823546,
+          2.3189939486245796,
+          2.5601020858266703,
+          2.7991504573732517,
+          3.0362977292452142,
+          3.2718515357609177,
+          3.506057180968017,
+          3.738947068532804,
+          3.970688270723484,
+          4.201361354850691,
+          4.43064552982589,
+          4.658356228750722
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.721022605895996,
+        "p95_deg_step20": 11.338150978088379,
+        "p99_deg_step20": 18.178653717040987,
+        "equal_player_mean_deg_step20": 4.574945822774629
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.664449420767914,
+        "mean_deg_step10": 2.3207332547426174,
+        "mean_deg_by_horizon": [
+          0.11596540494067718,
+          0.28820745351716137,
+          0.5102555870716776,
+          0.7650666530473301,
+          1.034315052179188,
+          1.3046026073332557,
+          1.5691406072330851,
+          1.8261596117312837,
+          2.0761247541779313,
+          2.3207332547426174,
+          2.5621429025684397,
+          2.8015133325807122,
+          3.0390049203401635,
+          3.274930628021835,
+          3.509538761282292,
+          3.742865359947048,
+          3.9750783120630886,
+          4.206266754263908,
+          4.4361166206295595,
+          4.664449420767914
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.7275936603546143,
+        "p95_deg_step20": 11.346015214920044,
+        "p99_deg_step20": 18.185337066650334,
+        "equal_player_mean_deg_step20": 4.584210335840053
+      }
+    },
+    "v9_k8_combined_ga2": {
+      "model": {
+        "name": "v9_k8_combined_ga2",
+        "kind": "onnx",
+        "onnx": "jacob\\models\\tcnn_v9_k8_combined_ga2_stream.onnx",
+        "onnx_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+        "baseline": null,
+        "stateful": true,
+        "owner": "jacob",
+        "group": null,
+        "declared_trainable_parameters": 7555,
+        "notes": "v9 k8_combined: 3 separable mirror blocks, kernel 8, dilations 1/8/47 (receptive field 393), 64 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2501); v9 lean streaming graph",
+        "threads": 1
+      },
+      "efficiency": {
+        "opset": [
+          {
+            "domain": "ai.onnx",
+            "version": 17
+          }
+        ],
+        "stateful": true,
+        "states": [
+          {
+            "name": "state_in_0",
+            "shape": [
+              1,
+              32,
+              2,
+              7
+            ]
+          },
+          {
+            "name": "state_in_1",
+            "shape": [
+              1,
+              32,
+              2,
+              56
+            ]
+          },
+          {
+            "name": "state_in_2",
+            "shape": [
+              1,
+              32,
+              2,
+              329
+            ]
+          }
+        ],
+        "state_elements": 25088,
+        "initializer_elements": 7552,
+        "constant_node_elements": 548,
+        "macs_per_call": {
+          "total": 16222,
+          "by_operator": {
+            "MatMul": 1950,
+            "Conv": 14272
+          },
+          "recurrences": [],
+          "uncounted_einsum": []
+        },
+        "operators": {
+          "counts": {
+            "Constant": 64,
+            "MatMul": 11,
+            "Slice": 11,
+            "Concat": 9,
+            "Relu": 8,
+            "Conv": 7,
+            "Reshape": 7,
+            "Add": 3,
+            "Mul": 3,
+            "LayerNormalization": 1
+          },
+          "safe": [
+            "Add",
+            "Concat",
+            "Conv",
+            "LayerNormalization",
+            "MatMul",
+            "Mul",
+            "Relu",
+            "Reshape",
+            "Slice"
+          ],
+          "avoid": [],
+          "conditional": {},
+          "other": [],
+          "slow_on_npu": [],
+          "custom_domain": [],
+          "float64_tensors": [],
+          "sequence_tensors": [],
+          "long_recurrences": [],
+          "issues": []
+        },
+        "output_checks": {
+          "calls": 64,
+          "shape_ok": true,
+          "finite": true,
+          "output_norm_range": [
+            0.9999998762675598,
+            1.0000001369430171
+          ],
+          "deterministic": true,
+          "max_abs_diff_rerun": 0.0,
+          "max_abs_diff_1_vs_4_threads": 0.0
+        },
+        "stream_parity": null
+      },
+      "accuracy": {
+        "protocol": "from-start",
+        "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.638387788767905,
+        "mean_deg_step10": 2.310438684703143,
+        "mean_deg_by_horizon": [
+          0.1125628937335567,
+          0.280942259176127,
+          0.5004956202966243,
+          0.7541831106648265,
+          1.0232033797189288,
+          1.2936915406180087,
+          1.558587358037421,
+          1.8158994181329822,
+          2.0659584501857564,
+          2.310438684703143,
+          2.5515050370694206,
+          2.790311752008802,
+          3.0269961081853656,
+          3.261826531640592,
+          3.4950143902898643,
+          3.7265492916636807,
+          3.9566145172994114,
+          4.185374370375272,
+          4.412651216768901,
+          4.638387788767905
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.705235004425049,
+        "p95_deg_step20": 11.279525518417358,
+        "p99_deg_step20": 18.041737079620344,
+        "equal_player_mean_deg_step20": 4.557000402883225
+      },
+      "accuracy_cold_start": {
+        "protocol": "cold-start",
+        "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+        "windows": 5428916,
+        "mean_deg_step20": 4.642999298594817,
+        "mean_deg_step10": 2.31230736242617,
+        "mean_deg_by_horizon": [
+          0.11270450233624404,
+          0.2812425234210593,
+          0.5009694466526055,
+          0.7548413239163947,
+          1.0240521851786102,
+          1.2947360347178942,
+          1.5598326004110408,
+          1.8173489418957158,
+          2.067616492542127,
+          2.31230736242617,
+          2.553587448732718,
+          2.7926131926350557,
+          3.02952656475827,
+          3.264592883442,
+          3.498032248255579,
+          3.729841282503537,
+          3.960203348611607,
+          4.189282895164077,
+          4.416900244659733,
+          4.642999298594817
+        ],
+        "horizon_ms": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0,
+          180.0,
+          190.0,
+          200.0
+        ],
+        "median_deg_step20": 3.709678053855896,
+        "p95_deg_step20": 11.287353038787842,
+        "p99_deg_step20": 18.05749340057364,
+        "equal_player_mean_deg_step20": 4.563223466481908
+      }
+    }
+  }
+}

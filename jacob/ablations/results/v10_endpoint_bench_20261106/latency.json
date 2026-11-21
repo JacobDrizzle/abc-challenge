@@ -1,0 +1,281 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "local-800-comparison",
+ "created_utc": "2026-11-06T12:38:03.468893+00:00",
+ "machine": {
+  "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "machine": "AMD64",
+  "os": "Windows-11-10.0.26200-SP0",
+  "logical_cores": 24,
+  "python": "3.12.10",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "k8_800_refit_s44": {
+   "onnx": "jacob/training/outputs/v10_endpoint_refit_20261105/onnx/edited.onnx",
+   "onnx_sha256": "8328ce66928fea867097dc92f1cf559d4d1f4dbf07de7c059c4d67d08367be67",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.05649999366141856,
+     "mean_ms": 0.05809656620840542,
+     "p90_ms": 0.06039999716449529,
+     "p99_ms": 0.08130200760206203,
+     "min_ms": 0.05529998452402651,
+     "max_ms": 0.2057999954558909
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09119999594986439,
+     "mean_ms": 0.09281410020776093,
+     "p90_ms": 0.09629997657611966,
+     "p99_ms": 0.12622200039913825,
+     "min_ms": 0.07870001718401909,
+     "max_ms": 0.24699998903088272
+    }
+   }
+  },
+  "k8_800_original_s44": {
+   "onnx": "jacob/training/outputs/v10_endpoint_refit_20261105/onnx/baseline.onnx",
+   "onnx_sha256": "6133510eabc8a3e55b62670ed1c02b67c37995605e55275be9581d0475da8094",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.056199991377070546,
+     "mean_ms": 0.07044069960829802,
+     "p90_ms": 0.10471000859979539,
+     "p99_ms": 0.23431397974491086,
+     "min_ms": 0.05500001134350896,
+     "max_ms": 1.0209999745711684
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.08779999916441739,
+     "mean_ms": 0.09027176671467411,
+     "p90_ms": 0.10241002019029109,
+     "p99_ms": 0.15380700700916333,
+     "min_ms": 0.07440001354552805,
+     "max_ms": 0.34160001087002456
+    }
+   }
+  },
+  "k8_800_gain105_s44": {
+   "onnx": "bench_runs/v10_endpoint_bench_20261106/prior_gain_export/edited.onnx",
+   "onnx_sha256": "34f149efeb084fdcd0621ece45e93c9ac15ccf2ecf485979c9351e4a5c929ab5",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.05639999289996922,
+     "mean_ms": 0.06130089983344078,
+     "p90_ms": 0.06809999467805028,
+     "p99_ms": 0.11851100018247936,
+     "min_ms": 0.05500001134350896,
+     "max_ms": 0.5064999859314412
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.08685002103447914,
+     "mean_ms": 0.09214286693410638,
+     "p90_ms": 0.12479999277275056,
+     "p99_ms": 0.16541100805625295,
+     "min_ms": 0.06269998266361654,
+     "max_ms": 2.467899990733713
+    }
+   }
+  },
+  "v9_k8_combined_ga2": {
+   "onnx": "jacob/models/tcnn_v9_k8_combined_ga2_stream.onnx",
+   "onnx_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.05800000508315861,
+     "mean_ms": 0.06171723331014315,
+     "p90_ms": 0.06490999949164687,
+     "p99_ms": 0.10070001007989049,
+     "min_ms": 0.05569998756982386,
+     "max_ms": 0.3148999821860343
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.08850000449456275,
+     "mean_ms": 0.09403056630981155,
+     "p90_ms": 0.1305999787291512,
+     "p99_ms": 0.15300200087949628,
+     "min_ms": 0.06690001464448869,
+     "max_ms": 0.35539999953471124
+    }
+   }
+  },
+  "v9_k5_combined_ga2": {
+   "onnx": "jacob/models/tcnn_v9_k5_combined_ga2_stream.onnx",
+   "onnx_sha256": "86db84845f7092424ee40264d1b9b60265210e5b2803e3aa6319cadb10a5d526",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.06640001083724201,
+     "mean_ms": 0.07453643355014113,
+     "p90_ms": 0.10551001469139008,
+     "p99_ms": 0.1267030043527483,
+     "min_ms": 0.062000006437301636,
+     "max_ms": 0.3212000010535121
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.10320000001229346,
+     "mean_ms": 0.10629243329943468,
+     "p90_ms": 0.12792001070920375,
+     "p99_ms": 0.17880799365229885,
+     "min_ms": 0.07139999070204794,
+     "max_ms": 0.3581999917514622
+    }
+   }
+  },
+  "v7_sep_base3_addons_angular_ga2": {
+   "onnx": "jacob/models/tcnn_v7_sep_base3_addons_angular_ga2_stream.onnx",
+   "onnx_sha256": "d9f48aa1f25e81371ca64c34757375e2e6be6b614755a8dcda80eca1a8c83e49",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09529999806545675,
+     "mean_ms": 0.09881229973204124,
+     "p90_ms": 0.10461000783834605,
+     "p99_ms": 0.16361399437300828,
+     "min_ms": 0.08880000677891076,
+     "max_ms": 0.45330001739785075
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.11549999180715531,
+     "mean_ms": 0.1170453665254172,
+     "p90_ms": 0.13581001257989556,
+     "p99_ms": 0.1870239977142768,
+     "min_ms": 0.0974999857135117,
+     "max_ms": 0.5561000143643469
+    }
+   }
+  },
+  "v6_tcnn_ga2": {
+   "onnx": "jacob/models/tcnn_v6_ga2_stream.onnx",
+   "onnx_sha256": "cf065dd37603859b90fad822dd94a8e816ed92dae217dc32e4b7a0dc7ab8fd5e",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.12929999502375722,
+     "mean_ms": 0.13002196665426405,
+     "p90_ms": 0.1340000017080456,
+     "p99_ms": 0.15870298608206204,
+     "min_ms": 0.12250000145286322,
+     "max_ms": 0.5157999985385686
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.13540001236833632,
+     "mean_ms": 0.13532776688225567,
+     "p90_ms": 0.13909998524468392,
+     "p99_ms": 0.15060001169331372,
+     "min_ms": 0.12699997751042247,
+     "max_ms": 0.20820001373067498
+    }
+   }
+  },
+  "v5_tcnn_ga2": {
+   "onnx": "jacob/models/tcnn_v5_ga2_stream.onnx",
+   "onnx_sha256": "c746ce1611bbbbaa0af6a50d5dd0e76fd0f2807c353f48bc62a24b0a4c72d518",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.0999000039882958,
+     "mean_ms": 0.1015780666784849,
+     "p90_ms": 0.10340000153519213,
+     "p99_ms": 0.16680801840266193,
+     "min_ms": 0.09469999349676073,
+     "max_ms": 0.27150000096298754
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.10289999772794545,
+     "mean_ms": 0.10384923357438917,
+     "p90_ms": 0.1066999975591898,
+     "p99_ms": 0.15550101961707694,
+     "min_ms": 0.0976000155787915,
+     "max_ms": 0.32869999995455146
+    }
+   }
+  },
+  "nic_ga2_gru_s45": {
+   "onnx": "nic/models/group_a_v2/s45/gru_stateful_window.onnx",
+   "onnx_sha256": "6f4894a119e321939f7ad50bd9395dadeeae5540e8f6391da7e439386cf72e95",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.024900014977902174,
+     "mean_ms": 0.02594823343679309,
+     "p90_ms": 0.0315000070258975,
+     "p99_ms": 0.032400013878941536,
+     "min_ms": 0.024200009647756815,
+     "max_ms": 0.04360001184977591
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.025299988919869065,
+     "mean_ms": 0.025328133497775223,
+     "p90_ms": 0.02570002106949687,
+     "p99_ms": 0.02960099256597457,
+     "min_ms": 0.023899978259578347,
+     "max_ms": 0.09389998740516603
+    }
+   }
+  },
+  "nic_ga2_gadst_s42": {
+   "onnx": "nic/models/group_a_v2/s42/gadst.onnx",
+   "onnx_sha256": "778fc4d4d762ad58f0c2656472e2bee7e476a6f0ec32bbb85c853d9356feaddf",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.17549999756738544,
+     "mean_ms": 0.17930723361981413,
+     "p90_ms": 0.18279999494552612,
+     "p99_ms": 0.28150398982688773,
+     "min_ms": 0.16820000018924475,
+     "max_ms": 0.6639999919570982
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.2515499945729971,
+     "mean_ms": 0.2564941330056172,
+     "p90_ms": 0.2736999886110425,
+     "p99_ms": 0.35930199985159555,
+     "min_ms": 0.18220001948066056,
+     "max_ms": 0.8926000155042857
+    }
+   }
+  }
+ }
+}

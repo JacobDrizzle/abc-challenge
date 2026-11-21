@@ -1,0 +1,168 @@
+<title>Real-NPU Latency Checks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column; numbered steps because the order matters; code blocks scroll on their own. */
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --fg: #1b2230; --muted: #5a6475; --line: #dde1e8;
+  --accent: #2b55a8; --accent-soft: #e6ecf8; --code-bg: #eef1f6; --warn: #8a5a00; --warn-soft: #fbf1dc;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12161d; --surface: #1a2029; --fg: #e3e8f0; --muted: #9aa5b6; --line: #2c3442;
+  --accent: #8fb0ff; --accent-soft: #1f2a40; --code-bg: #0e1218; --warn: #f0c46a; --warn-soft: #2e2615; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12161d; --surface: #1a2029; --fg: #e3e8f0; --muted: #9aa5b6; --line: #2c3442;
+  --accent: #8fb0ff; --accent-soft: #1f2a40; --code-bg: #0e1218; --warn: #f0c46a; --warn-soft: #2e2615; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); }
+.page { max-width: 46rem; margin: 0 auto; padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+h1, h2 { font-family: var(--display); text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.25rem; display: flex; gap: 10px; align-items: baseline; }
+h2 .n { font-family: var(--mono); font-size: .85rem; color: var(--accent); }
+p, ul, ol { margin: 0; }
+ul, ol { padding-left: 1.3rem; display: grid; gap: 4px; }
+section { display: grid; gap: 12px; min-width: 0; }
+.lede { color: var(--muted); }
+.weights { display: flex; flex-wrap: wrap; gap: 8px; font-family: var(--mono); font-size: .85rem; }
+.weights span { padding: 3px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
+.weights .hot { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.rule { background: var(--warn-soft); color: var(--fg); border-left: 3px solid var(--warn); padding: 10px 14px; border-radius: 4px; }
+.rule b { color: var(--warn); }
+code { font-family: var(--mono); font-size: .88em; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+.code { position: relative; min-width: 0; }
+.code pre { margin: 0; overflow-x: auto; background: var(--code-bg); border: 1px solid var(--line); border-radius: 6px;
+  padding: 14px 16px; font: 13.5px/1.55 var(--mono); }
+.code pre code { background: none; padding: 0; font-size: inherit; }
+.copy { position: absolute; top: 8px; right: 8px; font: 600 12px var(--body); color: var(--accent); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 4px; padding: 3px 9px; cursor: pointer; }
+.copy:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+a { color: var(--accent); }
+.note { color: var(--muted); font-size: .92rem; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; font-variant-numeric: tabular-nums; }
+th, td { border-bottom: 1px solid var(--line); padding: 7px 10px; text-align: left; white-space: nowrap; }
+th { font-family: var(--mono); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+td.ex { color: var(--muted); font-style: italic; }
+</style>
+
+<main class="page">
+  <header style="display:grid;gap:12px">
+    <h1>Measuring our models' latency on a real NPU</h1>
+    <p class="lede">The challenge measures latency on an XR edge-AI target, and the rules say "MACs are a proxy, not the score". On a desktop CPU, our TCN's latency followed the number of graph nodes (about 0.75 µs each) far more than its MACs. These two free services run an uploaded ONNX file on real hardware and report the inference time. Neither is an emulator.</p>
+    <div class="weights" aria-label="Score weights"><span>Accuracy 40%</span><span class="hot">Latency 30%</span><span>Innovation 20%</span><span>Parameters 10%</span></div>
+  </header>
+
+  <p class="rule"><b>Upload random-weight copies only.</b> Latency doesn't depend on the weight values, so a copy with the same graph and random weights measures the same thing and keeps our trained models private.</p>
+
+  <section>
+    <h2><span class="n">1</span>Make a random-weight copy of your ONNX file</h2>
+    <p>This works for any exported model. It replaces every float weight tensor with random numbers of the same shape and spread. Integer tensors, such as Reshape shapes, are left alone.</p>
+    <div class="code"><button class="copy" type="button" id="copy-random">Copy</button><pre><code>import numpy as np, onnx
+from onnx import numpy_helper
+
+model = onnx.load("model.onnx")
+rng = np.random.default_rng(0)
+for t in model.graph.initializer:
+    w = numpy_helper.to_array(t)
+    if w.dtype == np.float32 and w.size &gt; 16:
+        noise = (rng.standard_normal(w.shape) * (w.std() or 0.05)).astype(np.float32)
+        t.CopyFrom(numpy_helper.from_array(noise, t.name))
+onnx.save(model, "model_random.onnx")</code></pre></div>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>Optional: an int8 copy</h2>
+    <p>The STM32N6's NPU runs int8 models. Quantise the random copy yourself, so you don't upload any calibration data. Random calibration inputs are fine for timing, but they make the int8 file useless for accuracy.</p>
+    <div class="code"><button class="copy" type="button" id="copy-int8">Copy</button><pre><code>import numpy as np, onnxruntime as ort
+from onnxruntime.quantization import (CalibrationDataReader, QuantFormat,
+                                      QuantType, quantize_static)
+
+inputs = ort.InferenceSession("model_random.onnx").get_inputs()
+
+class RandomInputs(CalibrationDataReader):
+    def __init__(self): self.n = 0
+    def get_next(self):
+        self.n += 1
+        if self.n &gt; 32: return None
+        rng = np.random.default_rng(self.n)
+        return {i.name: rng.standard_normal([d if isinstance(d, int) else 1 for d in i.shape])
+                          .astype(np.float32) for i in inputs}
+
+quantize_static("model_random.onnx", "model_random_int8.onnx", RandomInputs(),
+                quant_format=QuantFormat.QDQ, per_channel=True,
+                activation_type=QuantType.QInt8, weight_type=QuantType.QInt8)</code></pre></div>
+    <p class="note">Keep 8-bit activations. 16-bit ones force ONNX opset 21, which ST probably doesn't accept yet.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>ST Edge AI Developer Cloud (ST does the official measuring)</h2>
+    <ol>
+      <li>Create a free myST account and open <a href="https://stm32ai.st.com/st-edge-ai-dc/" target="_blank" rel="noopener">ST Edge AI Developer Cloud</a>.</li>
+      <li><b>Upload</b> the <code>.onnx</code> file. Uploads are private to your workspace.</li>
+      <li><b>Choose the STM32N6 board</b>, which has the Neural-ART NPU.</li>
+      <li><b>Skip Quantize</b> if you made your own int8 copy. Its quantiser wants your data, or calibrates on random numbers.</li>
+      <li><b>Optimize</b>, then <b>Benchmark</b>: the model runs on ST's hosted boards and you get the inference time, RAM and flash.</li>
+      <li><b>Results</b> compares runs side by side.</li>
+    </ol>
+    <p class="note">As far as we know, the NPU runs int8 only, so a float32 upload runs on the board's Cortex-M55 CPU. Comparing float with int8 there compares CPU with NPU.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>Qualcomm AI Hub (Snapdragon NPUs)</h2>
+    <ol>
+      <li>Sign up at <a href="https://workbench.aihub.qualcomm.com/" target="_blank" rel="noopener">workbench.aihub.qualcomm.com</a>. Your token is under Account, then Settings, then API Token.</li>
+      <li>Install the client in a separate Python environment, then list the devices and look for an XR one. If there isn't one, a recent Snapdragon phone is the closest substitute.</li>
+    </ol>
+    <div class="code"><button class="copy" type="button" id="copy-qai-setup">Copy</button><pre><code>pip install qai-hub
+qai-hub configure --api_token YOUR_TOKEN
+qai-hub list-devices</code></pre></div>
+    <div class="code"><button class="copy" type="button" id="copy-qai-run">Copy</button><pre><code>import qai_hub as hub
+
+device = hub.Device("Samsung Galaxy S24 (Family)")   # pick one from list-devices
+compiled = hub.submit_compile_job(model="model_random.onnx", device=device,
+                                  options="--target_runtime qnn_dlc").get_target_model()
+profile = hub.submit_profile_job(model=compiled, device=device).download_profile()
+print(profile["execution_summary"])   # inference time is in here (microseconds)</code></pre></div>
+    <p class="note">Two details weren't confirmed in the docs we could reach: <code>submit_profile_job</code> (the getting-started page uses <code>submit_inference_job(..., profile=True)</code>) and the latency field's name. Check both with <code>help(hub)</code> the first time. Float models run in fp16 on the NPU.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>Snags to expect</h2>
+    <ul>
+      <li><b>A batch size other than 1 inside the graph.</b> Microcontroller toolchains often assume batch 1. Our mirror model keeps its two streams in the batch axis, for example.</li>
+      <li><b>Many state inputs and outputs</b> in a stateful graph. They should be supported, but it's untested on both services.</li>
+      <li><b>Unrolled recurrences longer than about 64 steps</b> are on the challenge's avoid list. A stateless GRU that unrolls all 400 samples would hit this; a stateful one-step graph wouldn't.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>Record one row per file</h2>
+    <p>Use the same columns, so we can compare all our models on the same devices.</p>
+    <div class="table"><table>
+      <thead><tr><th>Model</th><th>File</th><th>Service</th><th>Device</th><th>Median latency</th><th>Params</th><th>MACs/step</th><th>Nodes</th></tr></thead>
+      <tbody><tr><td class="ex">example: v6 TCN</td><td class="ex">int8</td><td class="ex">ST</td><td class="ex">STM32N6</td><td class="ex">… ms</td><td class="ex">26,012</td><td class="ex">52,194</td><td class="ex">145</td></tr></tbody>
+    </table></div>
+  </section>
+</main>
+
+<script>
+document.querySelectorAll(".copy").forEach(function (button) {
+  button.addEventListener("click", function () {
+    var code = button.parentElement.querySelector("code");
+    function selectIt() {
+      var range = document.createRange(); range.selectNodeContents(code);
+      var selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+      button.textContent = "Selected";
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code.textContent).then(function () { button.textContent = "Copied"; }, selectIt);
+    } else { selectIt(); }
+    setTimeout(function () { button.textContent = "Copy"; }, 1600);
+  });
+});
+</script>

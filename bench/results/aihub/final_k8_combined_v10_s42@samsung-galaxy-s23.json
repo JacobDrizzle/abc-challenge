@@ -1,0 +1,56 @@
+{
+ "schema": "bench-aihub-v1",
+ "model": {
+  "name": "final_k8_combined_v10_s42",
+  "onnx": "Submission/Motion_Pending_headpose/model_fp32.onnx",
+  "onnx_sha256": "28221e1e0b559e8d4d900f8b448acd22a0fbe0da38f904cb12d4e268aca53cad",
+  "stateful": true
+ },
+ "device": {
+  "name": "Samsung Galaxy S23 (Family)",
+  "chipset": "Snapdragon 8 Gen 2 (SM8550)",
+  "why": "one generation newer, as a bracket"
+ },
+ "created_utc": "2026-11-11T16:15:42Z",
+ "protocol": {
+  "service": "Qualcomm AI Hub Workbench (hosted devices)",
+  "client": "qai-hub 0.57.0",
+  "time": "estimated_inference_time over AI Hub's own loop of up to 100 calls, random inputs; aggregation not documented",
+  "parity": "8 snapshots of a generated head-motion stream (bench.geometry.random_motion seed 1) at calls 400-750, states warmed on ONNX Runtime float32; device output vs ONNX Runtime float32, sign-invariant angle"
+ },
+ "runs": [
+  {
+   "runtime": "NPU: Qualcomm QNN runtime, float16",
+   "estimated_inference_time_us": 117,
+   "warm_load_time_us": 206662,
+   "layers_by_compute_unit": {
+    "NPU": 83
+   },
+   "parity_mean_deg": 0.4675,
+   "parity_max_deg": 2.0372,
+   "parity_snapshots": 8
+  },
+  {
+   "runtime": "NPU: ONNX Runtime with the QNN provider, float16",
+   "estimated_inference_time_us": 126,
+   "warm_load_time_us": 411017,
+   "layers_by_compute_unit": {
+    "NPU": 77
+   },
+   "parity_mean_deg": 0.4675,
+   "parity_max_deg": 2.0372,
+   "parity_snapshots": 8
+  },
+  {
+   "runtime": "CPU: ONNX Runtime, float32",
+   "estimated_inference_time_us": 77,
+   "warm_load_time_us": 28944,
+   "layers_by_compute_unit": {
+    "CPU": 55
+   },
+   "parity_mean_deg": 0.0,
+   "parity_max_deg": 0.0,
+   "parity_snapshots": 8
+  }
+ ]
+}

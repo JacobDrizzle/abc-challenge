@@ -1,0 +1,133 @@
+{
+  "selection_rule": "Lowest full stride-1 validation mean step-20 geodesic error; seed breaks ties",
+  "selected_seed": 44,
+  "checkpoint_sha256": "b819e04c5c55b5e056a41f4cd40a7cc8e21ce6f84908df57c631b4b49c7caaf5",
+  "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51",
+  "split_sha256": "721a704c7f3a3b2da74acacdc992fb861d0b2adb7a7b5de3145bd1a5a575c86d",
+  "validation_candidates": [
+    {
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "505eca93ce980b78999e49cbb591f731d2eb0fa51cff0e183bb368087ccfda79",
+      "validation_endpoint_deg": 4.351109900525913,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "seed": 43,
+      "checkpoint": "seed_43/best.pt",
+      "checkpoint_sha256": "5838315b89c2d04acdd71b1887b43533f819183b0979a9f9e1914eee081efefc",
+      "validation_endpoint_deg": 4.347249622450061,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "seed": 44,
+      "checkpoint": "seed_44/best.pt",
+      "checkpoint_sha256": "b819e04c5c55b5e056a41f4cd40a7cc8e21ce6f84908df57c631b4b49c7caaf5",
+      "validation_endpoint_deg": 4.328528902119155,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    }
+  ],
+  "evaluated_seeds": [
+    42,
+    43,
+    44
+  ],
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu118",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "11.8"
+  },
+  "test_receipt": "Written separately after successful test evaluation",
+  "selected_variant": "control",
+  "selected_config": {
+    "effective_context": 256,
+    "velocity_features": false,
+    "loss_kind": "quaternion",
+    "endpoint_weight": 0.5,
+    "damped_prior_tau_ms": 100,
+    "ema_decay": 0.999,
+    "data_on_device": true,
+    "input_features": "body_velocity",
+    "num_blocks": 7,
+    "context": 400,
+    "horizon": 20,
+    "channels": 48,
+    "dropout": 0.1,
+    "batch_size": 256,
+    "steps_per_epoch": 1000,
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "patience": 10,
+    "minimum_improvement_deg": 0.005,
+    "validation_stride": 5,
+    "workers": 0,
+    "cache_mb_per_worker": 0,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "gravity_features": true,
+    "mirror_equivariant": true
+  },
+  "screening": [
+    {
+      "variant": "control",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "505eca93ce980b78999e49cbb591f731d2eb0fa51cff0e183bb368087ccfda79",
+      "validation_endpoint_deg": 4.351109900525913,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "no_gravity",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "a048e0bdfadafb136cb508322fafb5e004bdc8468475331b6a73088da38b2368",
+      "validation_endpoint_deg": 4.368451413476956,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "narrow",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "1d65a5c00e5a8b632149bdb69783bac4c3c7a8d0cb6c2c4c9bac5a87b7a39514",
+      "validation_endpoint_deg": 4.379513957854416,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "no_mirror",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "7ebfe2b0e76caa4aad8ab3d3036e7604557d6fa110518a43c130aa7f3b005a74",
+      "validation_endpoint_deg": 4.380311256976286,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "plain",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "1782f51db408ff0ea0621ee69f8b38e60d5e2f372ea3c7d60ac3f10583d74740",
+      "validation_endpoint_deg": 4.405738404830756,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    }
+  ],
+  "suite_sha256": "aeebafbf622b85d486fa3836cbeca7bb03ac341db09aa863381c3d38cd961f88",
+  "data": "C:\\Users\\cloud\\Documents\\abc-challenge\\data\\h5\\qualified_head_100hz_20261026_131953.h5",
+  "damped_selection": "damped_baseline/selection.json"
+}

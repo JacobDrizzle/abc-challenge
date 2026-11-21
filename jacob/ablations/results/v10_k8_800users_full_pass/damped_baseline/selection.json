@@ -1,0 +1,243 @@
+{
+  "data_sha256": "11b53c681e51cc1c03d5ba98b34aeb0683a17133bafff1edce0bc763c4cacf60",
+  "split_sha256": "9816b9d36658ffc660a2070cf8871fa226eeb6e7852c048a17b03d2785894686",
+  "split": "validation",
+  "config": {
+    "context": 400,
+    "horizon": 20,
+    "rate_hz": 100.0,
+    "stride": 1,
+    "batch_size": 1024
+  },
+  "candidates": [
+    {
+      "lag": 1,
+      "tau_ms": 25
+    },
+    {
+      "lag": 1,
+      "tau_ms": 50
+    },
+    {
+      "lag": 1,
+      "tau_ms": 100
+    },
+    {
+      "lag": 1,
+      "tau_ms": 200
+    },
+    {
+      "lag": 1,
+      "tau_ms": 500
+    },
+    {
+      "lag": 1,
+      "tau_ms": null
+    },
+    {
+      "lag": 3,
+      "tau_ms": 25
+    },
+    {
+      "lag": 3,
+      "tau_ms": 50
+    },
+    {
+      "lag": 3,
+      "tau_ms": 100
+    },
+    {
+      "lag": 3,
+      "tau_ms": 200
+    },
+    {
+      "lag": 3,
+      "tau_ms": 500
+    },
+    {
+      "lag": 3,
+      "tau_ms": null
+    },
+    {
+      "lag": 5,
+      "tau_ms": 25
+    },
+    {
+      "lag": 5,
+      "tau_ms": 50
+    },
+    {
+      "lag": 5,
+      "tau_ms": 100
+    },
+    {
+      "lag": 5,
+      "tau_ms": 200
+    },
+    {
+      "lag": 5,
+      "tau_ms": 500
+    },
+    {
+      "lag": 5,
+      "tau_ms": null
+    },
+    {
+      "lag": 10,
+      "tau_ms": 25
+    },
+    {
+      "lag": 10,
+      "tau_ms": 50
+    },
+    {
+      "lag": 10,
+      "tau_ms": 100
+    },
+    {
+      "lag": 10,
+      "tau_ms": 200
+    },
+    {
+      "lag": 10,
+      "tau_ms": 500
+    },
+    {
+      "lag": 10,
+      "tau_ms": null
+    }
+  ],
+  "code_sha256": {
+    "tune_damped_baseline.py": "fdf933b64c2250be3e2df885f4e67ddf772e87e7273561ed270e8b41d932b51f",
+    "tcnn/damped.py": "bb5a0ca8b695583c42a671d81fd14e0aa0eef56fa09d358cf91e6bca4799d9b1",
+    "baseline_pipeline.py": "a5cae2796f6ceedfead12bbe1e78e57f81d5e3925e7773fe3b41868fec796f7d"
+  },
+  "windows": 4755761,
+  "selected": {
+    "lag": 1,
+    "tau_ms": 100
+  },
+  "selection_rule": "Lowest full stride-1 validation endpoint mean; grid order breaks ties",
+  "scores": [
+    {
+      "lag": 1,
+      "tau_ms": 25,
+      "endpoint_deg": 5.899470525347186
+    },
+    {
+      "lag": 1,
+      "tau_ms": 50,
+      "endpoint_deg": 5.5602530566464266
+    },
+    {
+      "lag": 1,
+      "tau_ms": 100,
+      "endpoint_deg": 5.370033534807227
+    },
+    {
+      "lag": 1,
+      "tau_ms": 200,
+      "endpoint_deg": 5.632264920635569
+    },
+    {
+      "lag": 1,
+      "tau_ms": 500,
+      "endpoint_deg": 6.299663871952317
+    },
+    {
+      "lag": 1,
+      "tau_ms": null,
+      "endpoint_deg": 7.1888937149806145
+    },
+    {
+      "lag": 3,
+      "tau_ms": 25,
+      "endpoint_deg": 5.955122811061337
+    },
+    {
+      "lag": 3,
+      "tau_ms": 50,
+      "endpoint_deg": 5.659380230892335
+    },
+    {
+      "lag": 3,
+      "tau_ms": 100,
+      "endpoint_deg": 5.514215224082013
+    },
+    {
+      "lag": 3,
+      "tau_ms": 200,
+      "endpoint_deg": 5.794094066361733
+    },
+    {
+      "lag": 3,
+      "tau_ms": 500,
+      "endpoint_deg": 6.449771600248799
+    },
+    {
+      "lag": 3,
+      "tau_ms": null,
+      "endpoint_deg": 7.309532331458095
+    },
+    {
+      "lag": 5,
+      "tau_ms": 25,
+      "endpoint_deg": 5.996548763384189
+    },
+    {
+      "lag": 5,
+      "tau_ms": 50,
+      "endpoint_deg": 5.7286562097741776
+    },
+    {
+      "lag": 5,
+      "tau_ms": 100,
+      "endpoint_deg": 5.603000277371069
+    },
+    {
+      "lag": 5,
+      "tau_ms": 200,
+      "endpoint_deg": 5.873241744748741
+    },
+    {
+      "lag": 5,
+      "tau_ms": 500,
+      "endpoint_deg": 6.492918410443182
+    },
+    {
+      "lag": 5,
+      "tau_ms": null,
+      "endpoint_deg": 7.303343469990391
+    },
+    {
+      "lag": 10,
+      "tau_ms": 25,
+      "endpoint_deg": 6.068331068564634
+    },
+    {
+      "lag": 10,
+      "tau_ms": 50,
+      "endpoint_deg": 5.8468111279258785
+    },
+    {
+      "lag": 10,
+      "tau_ms": 100,
+      "endpoint_deg": 5.74739441507426
+    },
+    {
+      "lag": 10,
+      "tau_ms": 200,
+      "endpoint_deg": 5.983959261893052
+    },
+    {
+      "lag": 10,
+      "tau_ms": 500,
+      "endpoint_deg": 6.515894663729729
+    },
+    {
+      "lag": 10,
+      "tau_ms": null,
+      "endpoint_deg": 7.211703629910646
+    }
+  ]
+}

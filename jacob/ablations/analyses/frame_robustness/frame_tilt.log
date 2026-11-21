@@ -1,0 +1,16 @@
+44 segments; head tilt from upright at each segment's first sample: median 9.6 deg, range 1.4-38.8
+identity {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3145, 'v9 control s42': 4.339, 'v9 tilt_15 s42': 4.3301}
+world tilted 5 deg {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3144, 'v9 control s42': 4.338, 'v9 tilt_15 s42': 4.3335}
+world tilted 15 deg {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.3734, 'v9 control s42': 4.3984, 'v9 tilt_15 s42': 4.382}
+z-up world (up axis off by 90 deg) {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 5.2303, 'v9 control s42': 5.6216, 'v9 tilt_15 s42': 5.3638}
+ROS/ENU (z-up, x fwd, y left) {'damped velocity (baseline)': 5.0497, 'sep+angular s44': 4.7125, 'v9 control s42': 4.7346, 'v9 tilt_15 s42': 4.7482}
+
+Step-20 mean (deg) on identity; other rows are the change vs identity.
+| Stream convention | damped velocity (baseline) | sep+angular s44 | v9 control s42 | v9 tilt_15 s42 |
+| --- | ---: | ---: | ---: | ---: |
+| identity (BOXRR/Unity) | 5.0497 | 4.3145 | 4.3390 | 4.3301 |
+| world tilted 5 deg | -0.0000 | -0.0001 | -0.0010 | +0.0034 |
+| world tilted 15 deg | -0.0000 | +0.0589 | +0.0594 | +0.0519 |
+| z-up world (up axis off by 90 deg) | -0.0000 | +0.9158 | +1.2826 | +1.0338 |
+| ROS/ENU (z-up, x fwd, y left) | +0.0000 | +0.3980 | +0.3956 | +0.4182 |
+wrote <scratch>\v9_frame_robustness_subset.json

@@ -1,0 +1,280 @@
+{
+  "schema": "bench-result-v1",
+  "bench_package_version": "0.1.0",
+  "created_utc": "2026-10-26T17:32:16.522729+00:00",
+  "bench": {
+    "name": "group-a-v2-test20",
+    "definition_sha256": "5f35187cc24d6a739f05694c20b908a8ed56451638df100c3d38257e2064cc17",
+    "cohort_fingerprint": "6303a55cc75316cc7a172b1162875e801350cd267cf7827a53d82edd364bcd48",
+    "legacy_cohort_fingerprint": "015851ffd032833b294db919929d2ad4b141df1794c0f3e4ceaf4b9ac73a51d5",
+    "windows": 931051,
+    "players": [
+      "0aefb728-86ee-4ea8-aba2-014f8b233587",
+      "0f0949b4-e42b-47a4-bf7e-cbbf63361225",
+      "141ce789-0a59-4858-bc0e-28846ab1672c",
+      "318e521e-281d-4d8d-b570-01db1c79ba20",
+      "35220c0e-fda1-4716-a70e-1a93e0819578",
+      "35f825eb-37f8-4fa5-8d40-a0f89fd5d553",
+      "36074619-270d-49c6-9f41-63c9c9a06df4",
+      "44af878e-4a76-44ea-bc2c-78a4c20ffe42",
+      "6338df1d-430d-47e1-8000-376c180fc232",
+      "67190adb-b000-4c7f-9702-cbe3aebdc9a6",
+      "6924807d-4ab4-4522-9da5-669132df4bfb",
+      "6ef6bfe7-c6d6-4a6a-a4cd-fcc7fd3dba27",
+      "73d4c8ec-6f7c-4dfa-89d4-382ccdd15d0d",
+      "7e372e75-5aa4-4465-9cf1-423502ed92a3",
+      "7ea2f8af-82e8-497e-bfca-e9c577c0d42d",
+      "89da1a5f-fdb6-4c84-b2eb-9d6e39df69a4",
+      "939fdaed-a8af-404c-b0be-52f50ca2f284",
+      "a3fcf0fa-4bbb-4500-bf4b-345710aec9b2",
+      "aecf2eb7-d872-4504-93b3-bdb31b748861",
+      "c825484a-10de-4f16-815f-610f5f708740"
+    ]
+  },
+  "inputs": {
+    "data_file": "qualified_head_100hz_20261026_131953.h5",
+    "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51"
+  },
+  "model": {
+    "name": "nic_ga2_gru_s45",
+    "kind": "onnx",
+    "onnx": "nic/models/group_a_v2/s45/gru_stateful_window.onnx",
+    "onnx_sha256": "6f4894a119e321939f7ad50bd9395dadeeae5540e8f6391da7e439386cf72e95",
+    "baseline": null,
+    "stateful": true,
+    "owner": "nic",
+    "group": "nic_ga2_gru",
+    "declared_trainable_parameters": 6192,
+    "notes": "Stateful GRU, velocity-only input, 32 units, patience 30, seed 45; trained only on group-a-v2 /train, stopped on /validation",
+    "threads": 1
+  },
+  "contamination": {
+    "status": "clean",
+    "trained_on": [
+      {
+        "spec": "bench/trained_on/group_a_v2_20261026_131953_trainval.txt",
+        "kind": "list",
+        "sha256": "655f91c29bf8dadffc8a7ed1ce4959229e0ff0ebc5a56cc775bcc40035d1b6e2",
+        "players": 115
+      }
+    ],
+    "overlap": []
+  },
+  "git": {
+    "commit": "4734b8b879a27d2b83bf0f2b0894dbfe984abc2c",
+    "dirty": true
+  },
+  "machine": {
+    "label": "nic-mac",
+    "cpu": "Apple M5 Pro",
+    "processor": "arm",
+    "machine": "arm64",
+    "os": "macOS-27.0.1-arm64-arm-64bit",
+    "logical_cores": 18,
+    "python": "3.12.14",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.2.6"
+  },
+  "efficiency": {
+    "opset": [
+      {
+        "domain": "ai.onnx",
+        "version": 17
+      }
+    ],
+    "stateful": true,
+    "states": [
+      {
+        "name": "state_in_0",
+        "shape": [
+          1,
+          32
+        ]
+      },
+      {
+        "name": "state_in_1",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "state_elements": 36,
+    "initializer_elements": 2663,
+    "constant_node_elements": 3621,
+    "macs_per_call": {
+      "total": 6384,
+      "by_operator": {
+        "MatMul": 464,
+        "Gemm": 5920
+      },
+      "recurrences": [],
+      "uncounted_einsum": []
+    },
+    "operators": {
+      "counts": {
+        "Slice": 8,
+        "Constant": 7,
+        "Mul": 6,
+        "Reshape": 6,
+        "Add": 5,
+        "MatMul": 4,
+        "Gemm": 3,
+        "Sigmoid": 2,
+        "Tanh": 1
+      },
+      "safe": [
+        "Add",
+        "Gemm",
+        "MatMul",
+        "Mul",
+        "Reshape",
+        "Sigmoid",
+        "Slice",
+        "Tanh"
+      ],
+      "avoid": [],
+      "conditional": {},
+      "other": [],
+      "slow_on_npu": [],
+      "custom_domain": [],
+      "float64_tensors": [],
+      "sequence_tensors": [],
+      "long_recurrences": [],
+      "issues": []
+    },
+    "output_checks": {
+      "calls": 64,
+      "shape_ok": true,
+      "finite": true,
+      "output_norm_range": [
+        0.8521738379688308,
+        1.15492278024547
+      ],
+      "deterministic": true,
+      "max_abs_diff_rerun": 0.0,
+      "max_abs_diff_1_vs_4_threads": 0.0
+    },
+    "stream_parity": null
+  },
+  "accuracy": {
+    "protocol": "from-start",
+    "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+    "windows": 931051,
+    "mean_deg_step20": 4.45735792658853,
+    "mean_deg_step10": 2.259657968240634,
+    "mean_deg_by_horizon": [
+      0.09532160815865193,
+      0.25506899043523085,
+      0.46355784730838484,
+      0.715820359731838,
+      0.9919260685781741,
+      1.2681271801801637,
+      1.5363222640576728,
+      1.7889016232408161,
+      2.0272817170446618,
+      2.259657968240634,
+      2.490652034795643,
+      2.718856315245982,
+      2.944801810260242,
+      3.167404976670779,
+      3.3875804439159993,
+      3.605004999277678,
+      3.8202931463469985,
+      4.034684385760603,
+      4.2472800461648985,
+      4.45735792658853
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.725514194977335,
+    "p95_deg_step20": 10.26344634779174,
+    "p99_deg_step20": 15.525471070448637,
+    "equal_player_mean_deg_step20": 4.407703178413168,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/nic_ga2_gru_s45@nic-mac/endpoint_from-start.npy",
+      "sha256": "0e2b43e79f47c59f508db434f4d35516a14022a2d73e41ea3283a7c0ba3e2a58",
+      "dtype": "float32"
+    }
+  },
+  "accuracy_cold_start": {
+    "protocol": "cold-start",
+    "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+    "windows": 931051,
+    "mean_deg_step20": 4.459860789060446,
+    "mean_deg_step10": 2.260387392968596,
+    "mean_deg_by_horizon": [
+      0.09532504040511915,
+      0.25512031663627044,
+      0.46364814625475054,
+      0.715957912273947,
+      0.9921260586918553,
+      1.2684060921720635,
+      1.536682606311133,
+      1.7893710452075346,
+      2.0278832722371316,
+      2.260387392968596,
+      2.4915036813043563,
+      2.7198435400742675,
+      2.9459424932240807,
+      3.168724391409429,
+      3.3890742721073317,
+      3.6066781749596832,
+      3.8221602744359386,
+      4.036754497679098,
+      4.249556738997083,
+      4.459860789060446
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.7283346808272375,
+    "p95_deg_step20": 10.267922306591501,
+    "p99_deg_step20": 15.540849526508785,
+    "equal_player_mean_deg_step20": 4.4088622661749906,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/nic_ga2_gru_s45@nic-mac/endpoint_cold-start.npy",
+      "sha256": "b24a6e0ed3489f05ca9e8ad6153e289dfa6d627c6cba3d5a1cb63aa43d0eb26f",
+      "dtype": "float32"
+    }
+  }
+}

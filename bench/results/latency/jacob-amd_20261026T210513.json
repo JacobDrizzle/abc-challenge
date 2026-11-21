@@ -1,0 +1,85 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "jacob-amd",
+ "created_utc": "2026-10-26T21:05:13.547795+00:00",
+ "machine": {
+  "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "machine": "AMD64",
+  "os": "Windows-11-10.0.26200-SP0",
+  "logical_cores": 24,
+  "python": "3.12.10",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "v5_tcnn_ga2": {
+   "onnx": "jacob\\models\\tcnn_v5_ga2_stream.onnx",
+   "onnx_sha256": "c746ce1611bbbbaa0af6a50d5dd0e76fd0f2807c353f48bc62a24b0a4c72d518",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09240000508725643,
+     "mean_ms": 0.0942206997036313,
+     "p90_ms": 0.09640000644139946,
+     "p99_ms": 0.140502993017435,
+     "min_ms": 0.089899986051023,
+     "max_ms": 0.35409998963586986
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09419998968951404,
+     "mean_ms": 0.0952493334771134,
+     "p90_ms": 0.0974999857135117,
+     "p99_ms": 0.1168040162883698,
+     "min_ms": 0.09200000204145908,
+     "max_ms": 0.17939999816007912
+    }
+   }
+  },
+  "v6_tcnn_ga2": {
+   "onnx": "jacob\\models\\tcnn_v6_ga2_stream.onnx",
+   "onnx_sha256": "cf065dd37603859b90fad822dd94a8e816ed92dae217dc32e4b7a0dc7ab8fd5e",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.11989998165518045,
+     "mean_ms": 0.12260926672024652,
+     "p90_ms": 0.12451001384761183,
+     "p99_ms": 0.19890200113877649,
+     "min_ms": 0.11589998030103743,
+     "max_ms": 0.6605999951716512
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.12349997996352613,
+     "mean_ms": 0.1266288335803741,
+     "p90_ms": 0.1275999820791185,
+     "p99_ms": 0.22769998759031296,
+     "min_ms": 0.1210999907925725,
+     "max_ms": 0.23979999241419137
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": "4734b8b879a27d2b83bf0f2b0894dbfe984abc2c",
+  "dirty": true
+ }
+}

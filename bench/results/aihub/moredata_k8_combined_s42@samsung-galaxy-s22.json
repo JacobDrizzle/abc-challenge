@@ -1,0 +1,56 @@
+{
+ "schema": "bench-aihub-v1",
+ "model": {
+  "name": "moredata_k8_combined_s42",
+  "onnx": "jacob/models/tcnn_v9_k8_combined_moredata_ga2_stream.onnx",
+  "onnx_sha256": "ad70b624ae5bd9a76a4cfb550731b78fc13be0807297757bcfe202c9a1b4add4",
+  "stateful": true
+ },
+ "device": {
+  "name": "Samsung Galaxy S22 (Family)",
+  "chipset": "Snapdragon 8 Gen 1 (SM8450)",
+  "why": "Qualcomm lists it as similar to the Snapdragon XR2 Gen 2"
+ },
+ "created_utc": "2026-11-07T23:30:00Z",
+ "protocol": {
+  "service": "Qualcomm AI Hub Workbench (hosted devices)",
+  "client": "qai-hub 0.57.0",
+  "time": "estimated_inference_time over AI Hub's own loop of up to 100 calls, random inputs; aggregation not documented",
+  "parity": "8 snapshots of a generated head-motion stream (bench.geometry.random_motion seed 1) at calls 400-750, states warmed on ONNX Runtime float32; device output vs ONNX Runtime float32, sign-invariant angle"
+ },
+ "runs": [
+  {
+   "runtime": "NPU: Qualcomm QNN runtime, float16",
+   "estimated_inference_time_us": 161,
+   "warm_load_time_us": 172730,
+   "layers_by_compute_unit": {
+    "NPU": 74
+   },
+   "parity_mean_deg": 0.4056,
+   "parity_max_deg": 1.5182,
+   "parity_snapshots": 8
+  },
+  {
+   "runtime": "NPU: ONNX Runtime with the QNN provider, float16",
+   "estimated_inference_time_us": 183,
+   "warm_load_time_us": 320993,
+   "layers_by_compute_unit": {
+    "NPU": 77
+   },
+   "parity_mean_deg": 0.4056,
+   "parity_max_deg": 1.5182,
+   "parity_snapshots": 8
+  },
+  {
+   "runtime": "CPU: ONNX Runtime, float32",
+   "estimated_inference_time_us": 64,
+   "warm_load_time_us": 29554,
+   "layers_by_compute_unit": {
+    "CPU": 55
+   },
+   "parity_mean_deg": 0.0,
+   "parity_max_deg": 0.0,
+   "parity_snapshots": 8
+  }
+ ]
+}

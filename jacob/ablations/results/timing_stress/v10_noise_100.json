@@ -1,0 +1,93 @@
+{
+  "data": "<repo>\\data\\h5\\qualified_head_100hz_20261026_131953.h5",
+  "stride": 5,
+  "seed": 2026,
+  "models": {
+    "k8": "v9_confirm/k8_combined/selected_model.pt",
+    "k8_800": "v10_k8_800users_full_pass/full_pass/selected_model.pt",
+    "jitter_1_5": "v9_jitter_combined/combined_jitter_1_5ms/screen_model.pt",
+    "jitter_3": "v9_jitter_combined/combined_jitter_3ms/screen_model.pt"
+  },
+  "scenarios": {
+    "exact 100 Hz grid": {},
+    "jitter +-1 ms": {
+      "jitter_ms": 1
+    },
+    "jitter +-2 ms": {
+      "jitter_ms": 2
+    },
+    "noise 0.005 deg": {
+      "noise_deg": 0.005
+    },
+    "noise 0.01 deg": {
+      "noise_deg": 0.01
+    },
+    "noise 0.02 deg": {
+      "noise_deg": 0.02
+    },
+    "noise 0.05 deg": {
+      "noise_deg": 0.05
+    }
+  },
+  "windows": {
+    "exact 100 Hz grid": 131459,
+    "jitter +-1 ms": 131459,
+    "jitter +-2 ms": 131459,
+    "noise 0.005 deg": 131459,
+    "noise 0.01 deg": 131459,
+    "noise 0.02 deg": 131459,
+    "noise 0.05 deg": 131459
+  },
+  "results": {
+    "exact 100 Hz grid": {
+      "damped velocity (baseline)": 5.049709996185718,
+      "k8": 4.247845692880244,
+      "k8_800": 4.181197079984868,
+      "jitter_1_5": 4.256593251732552,
+      "jitter_3": 4.279298868557234
+    },
+    "jitter +-1 ms": {
+      "damped velocity (baseline)": 5.050689400257553,
+      "k8": 4.295861898358262,
+      "k8_800": 4.234399087114415,
+      "jitter_1_5": 4.273390794173377,
+      "jitter_3": 4.2830604478118115
+    },
+    "jitter +-2 ms": {
+      "damped velocity (baseline)": 5.068059270285965,
+      "k8": 4.405194098736023,
+      "k8_800": 4.336304397170327,
+      "jitter_1_5": 4.3343470812343625,
+      "jitter_3": 4.306973533739986
+    },
+    "noise 0.005 deg": {
+      "damped velocity (baseline)": 5.050160016882441,
+      "k8": 4.2509046596485724,
+      "k8_800": 4.185278563263523,
+      "jitter_1_5": 4.258690091146704,
+      "jitter_3": 4.280705582764876
+    },
+    "noise 0.01 deg": {
+      "damped velocity (baseline)": 5.051563973494922,
+      "k8": 4.260155793931384,
+      "k8_800": 4.197020230787885,
+      "jitter_1_5": 4.264933714539475,
+      "jitter_3": 4.284883818796325
+    },
+    "noise 0.02 deg": {
+      "damped velocity (baseline)": 5.057196664133725,
+      "k8": 4.293638206350019,
+      "k8_800": 4.2356953452659045,
+      "jitter_1_5": 4.288427195333818,
+      "jitter_3": 4.301077853369661
+    },
+    "noise 0.05 deg": {
+      "damped velocity (baseline)": 5.095961042918305,
+      "k8": 4.457340140577507,
+      "k8_800": 4.393320778795815,
+      "jitter_1_5": 4.4201541277117,
+      "jitter_3": 4.400394971935448
+    }
+  },
+  "reference": "k8"
+}

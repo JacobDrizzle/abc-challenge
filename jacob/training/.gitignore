@@ -1,0 +1,2 @@
+# matplotlib's cache (tcnn/plots.py sets MPLCONFIGDIR here)
+.mplconfig/

@@ -1,0 +1,127 @@
+{
+  "checkpoint": "outputs\\v9_confirm\\k8_combined\\selected_model.pt",
+  "data": "<repo>\\data\\h5\\qualified_head_100hz_20261026_131953.h5",
+  "calibration_inputs": 1000,
+  "include_projection": false,
+  "schemes": {
+    "int8_minmax": [
+      "QInt8",
+      "MinMax"
+    ],
+    "int8_percentile": [
+      "QInt8",
+      "Percentile"
+    ]
+  },
+  "rows": [
+    {
+      "graph": "float32",
+      "file": "model_fp32_stream.onnx",
+      "kib": 43.2,
+      "windows": 657189,
+      "mean_endpoint_deg": 4.24710495449599,
+      "delta_vs_float_deg": 0.0,
+      "per_window_abs_delta_p99_deg": 0.0,
+      "macs": 16222,
+      "counts": {
+        "Constant": 64,
+        "Slice": 11,
+        "MatMul": 11,
+        "Concat": 9,
+        "Relu": 8,
+        "Reshape": 7,
+        "Conv": 7,
+        "Mul": 3,
+        "Add": 3,
+        "LayerNormalization": 1
+      },
+      "off_list": [],
+      "latency": {
+        "calls": 3000,
+        "median_ms": 0.052799994591623545,
+        "mean_ms": 0.05333723365523232,
+        "p90_ms": 0.05390000296756625,
+        "p99_ms": 0.06380699109286053,
+        "min_ms": 0.05139998393133283,
+        "max_ms": 0.12290000449866056,
+        "calls_per_second": 18939.39587938225
+      }
+    },
+    {
+      "graph": "int8_minmax",
+      "file": "model_int8_minmax_stream.onnx",
+      "kib": 38.2,
+      "windows": 657189,
+      "mean_endpoint_deg": 4.3487754243492045,
+      "delta_vs_float_deg": 0.10167046985321448,
+      "per_window_abs_delta_p99_deg": 1.6634686683262543,
+      "macs": 16222,
+      "counts": {
+        "Constant": 64,
+        "DequantizeLinear": 24,
+        "QuantizeLinear": 14,
+        "Slice": 11,
+        "MatMul": 11,
+        "Concat": 9,
+        "Relu": 8,
+        "Reshape": 7,
+        "Conv": 7,
+        "Mul": 3,
+        "Add": 3,
+        "LayerNormalization": 1
+      },
+      "off_list": [
+        "DequantizeLinear",
+        "QuantizeLinear"
+      ],
+      "latency": {
+        "calls": 3000,
+        "median_ms": 0.08659999002702534,
+        "mean_ms": 0.0876587666280102,
+        "p90_ms": 0.0900000159163028,
+        "p99_ms": 0.10760300443507724,
+        "min_ms": 0.08480000542476773,
+        "max_ms": 0.17169999773614109,
+        "calls_per_second": 11547.345440662626
+      }
+    },
+    {
+      "graph": "int8_percentile",
+      "file": "model_int8_percentile_stream.onnx",
+      "kib": 38.2,
+      "windows": 657189,
+      "mean_endpoint_deg": 4.271998660167863,
+      "delta_vs_float_deg": 0.024893705671872546,
+      "per_window_abs_delta_p99_deg": 0.7482135049168134,
+      "macs": 16222,
+      "counts": {
+        "Constant": 64,
+        "DequantizeLinear": 24,
+        "QuantizeLinear": 14,
+        "Slice": 11,
+        "MatMul": 11,
+        "Concat": 9,
+        "Relu": 8,
+        "Reshape": 7,
+        "Conv": 7,
+        "Mul": 3,
+        "Add": 3,
+        "LayerNormalization": 1
+      },
+      "off_list": [
+        "DequantizeLinear",
+        "QuantizeLinear"
+      ],
+      "latency": {
+        "calls": 3000,
+        "median_ms": 0.08609998621977866,
+        "mean_ms": 0.08688833342360643,
+        "p90_ms": 0.08872000616975127,
+        "p99_ms": 0.10120498482137906,
+        "min_ms": 0.08450000314041972,
+        "max_ms": 0.16009999671950936,
+        "calls_per_second": 11614.403717178327
+      }
+    }
+  ]
+}

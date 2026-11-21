@@ -1,0 +1,193 @@
+{
+  "stride": 5,
+  "seed": 2026,
+  "models": {
+    "k8_combined": "v9_confirm/k8_combined/seed_42/best.pt",
+    "combined_jitter_1_5ms": "v9_jitter_combined/combined_jitter_1_5ms/seed_42/best.pt",
+    "combined_jitter_3ms": "v9_jitter_combined/combined_jitter_3ms/seed_42/best.pt",
+    "k8_jitter3_bare": "v9_jitter/jitter_3ms/seed_42/best.pt"
+  },
+  "scenarios": {
+    "exact 100 Hz grid": {},
+    "jitter +-0.5 ms": {
+      "jitter_ms": 0.5
+    },
+    "jitter +-1 ms": {
+      "jitter_ms": 1
+    },
+    "jitter +-1.5 ms": {
+      "jitter_ms": 1.5
+    },
+    "jitter +-2 ms": {
+      "jitter_ms": 2
+    },
+    "jitter +-3 ms": {
+      "jitter_ms": 3
+    },
+    "rate 90 Hz": {
+      "rate_hz": 90
+    },
+    "rate 95 Hz": {
+      "rate_hz": 95
+    },
+    "rate 98 Hz": {
+      "rate_hz": 98
+    },
+    "rate 102 Hz": {
+      "rate_hz": 102
+    },
+    "rate 105 Hz": {
+      "rate_hz": 105
+    },
+    "rate 110 Hz": {
+      "rate_hz": 110
+    },
+    "rate 98 Hz + jitter +-1 ms": {
+      "rate_hz": 98,
+      "jitter_ms": 1
+    },
+    "repeats 1%": {
+      "repeat": 0.01
+    },
+    "drops 1%": {
+      "drop": 0.01
+    },
+    "jitter +-2 ms + repeats 1%": {
+      "jitter_ms": 2,
+      "repeat": 0.01
+    }
+  },
+  "windows": {
+    "exact 100 Hz grid": 131459,
+    "jitter +-0.5 ms": 131459,
+    "jitter +-1 ms": 131459,
+    "jitter +-1.5 ms": 131459,
+    "jitter +-2 ms": 131459,
+    "jitter +-3 ms": 131459,
+    "rate 90 Hz": 117941,
+    "rate 95 Hz": 124695,
+    "rate 98 Hz": 128749,
+    "rate 102 Hz": 134154,
+    "rate 105 Hz": 138207,
+    "rate 110 Hz": 144965,
+    "rate 98 Hz + jitter +-1 ms": 128749,
+    "repeats 1%": 131459,
+    "drops 1%": 130102,
+    "jitter +-2 ms + repeats 1%": 131459
+  },
+  "results": {
+    "exact 100 Hz grid": {
+      "damped velocity (baseline)": 5.049709996185718,
+      "k8_combined": 4.247845692880244,
+      "combined_jitter_1_5ms": 4.256593251732552,
+      "combined_jitter_3ms": 4.279298868557234,
+      "k8_jitter3_bare": 4.322751095240379
+    },
+    "jitter +-0.5 ms": {
+      "damped velocity (baseline)": 5.048158740877099,
+      "k8_combined": 4.2593466300882445,
+      "combined_jitter_1_5ms": 4.258918826714209,
+      "combined_jitter_3ms": 4.27865128448322,
+      "k8_jitter3_bare": 4.322015536842515
+    },
+    "jitter +-1 ms": {
+      "damped velocity (baseline)": 5.050689400257553,
+      "k8_combined": 4.295861898358262,
+      "combined_jitter_1_5ms": 4.273390794173377,
+      "combined_jitter_3ms": 4.2830604478118115,
+      "k8_jitter3_bare": 4.326472156707876
+    },
+    "jitter +-1.5 ms": {
+      "damped velocity (baseline)": 5.057328437195561,
+      "k8_combined": 4.346781542321376,
+      "combined_jitter_1_5ms": 4.299081788358159,
+      "combined_jitter_3ms": 4.292465613742459,
+      "k8_jitter3_bare": 4.336101255533493
+    },
+    "jitter +-2 ms": {
+      "damped velocity (baseline)": 5.068059270285965,
+      "k8_combined": 4.405194098736023,
+      "combined_jitter_1_5ms": 4.3343470812343625,
+      "combined_jitter_3ms": 4.306973533739986,
+      "k8_jitter3_bare": 4.3508806373636535
+    },
+    "jitter +-3 ms": {
+      "damped velocity (baseline)": 5.101631531875976,
+      "k8_combined": 4.530322697385662,
+      "combined_jitter_1_5ms": 4.4278636975537475,
+      "combined_jitter_3ms": 4.351792619086913,
+      "k8_jitter3_bare": 4.395990288103383
+    },
+    "rate 90 Hz": {
+      "damped velocity (baseline)": 5.584926411097471,
+      "k8_combined": 4.680918465952764,
+      "combined_jitter_1_5ms": 4.697048633861218,
+      "combined_jitter_3ms": 4.729804447167112,
+      "k8_jitter3_bare": 4.780447386287058
+    },
+    "rate 95 Hz": {
+      "damped velocity (baseline)": 5.289118597352814,
+      "k8_combined": 4.429756411588831,
+      "combined_jitter_1_5ms": 4.446929770562043,
+      "combined_jitter_3ms": 4.478807116685127,
+      "k8_jitter3_bare": 4.522513802763717
+    },
+    "rate 98 Hz": {
+      "damped velocity (baseline)": 5.128149672632332,
+      "k8_combined": 4.294486705584832,
+      "combined_jitter_1_5ms": 4.311200342441589,
+      "combined_jitter_3ms": 4.341170573560498,
+      "k8_jitter3_bare": 4.384907467410816
+    },
+    "rate 102 Hz": {
+      "damped velocity (baseline)": 4.925910489422702,
+      "k8_combined": 4.126635498778189,
+      "combined_jitter_1_5ms": 4.14347828769016,
+      "combined_jitter_3ms": 4.170538303713109,
+      "k8_jitter3_bare": 4.213735517997225
+    },
+    "rate 105 Hz": {
+      "damped velocity (baseline)": 4.7860743237740255,
+      "k8_combined": 4.01366582409331,
+      "combined_jitter_1_5ms": 4.027940284473526,
+      "combined_jitter_3ms": 4.054783054227826,
+      "k8_jitter3_bare": 4.093472546109788
+    },
+    "rate 110 Hz": {
+      "damped velocity (baseline)": 4.569833639097168,
+      "k8_combined": 3.8327590093185315,
+      "combined_jitter_1_5ms": 3.846319180229985,
+      "combined_jitter_3ms": 3.8711623914900177,
+      "k8_jitter3_bare": 3.906669316303579
+    },
+    "rate 98 Hz + jitter +-1 ms": {
+      "damped velocity (baseline)": 5.135458443584744,
+      "k8_combined": 4.352085567223743,
+      "combined_jitter_1_5ms": 4.3356576827105915,
+      "combined_jitter_3ms": 4.35066439202007,
+      "k8_jitter3_bare": 4.394519164487628
+    },
+    "repeats 1%": {
+      "damped velocity (baseline)": 5.069882065237672,
+      "k8_combined": 4.290568885850794,
+      "combined_jitter_1_5ms": 4.296919586268171,
+      "combined_jitter_3ms": 4.3111984647940425,
+      "k8_jitter3_bare": 4.352373913400408
+    },
+    "drops 1%": {
+      "damped velocity (baseline)": 5.1085652170834175,
+      "k8_combined": 4.311077046459303,
+      "combined_jitter_1_5ms": 4.313531449920406,
+      "combined_jitter_3ms": 4.333308052047325,
+      "k8_jitter3_bare": 4.374671009085196
+    },
+    "jitter +-2 ms + repeats 1%": {
+      "damped velocity (baseline)": 5.089091326150078,
+      "k8_combined": 4.437906917724898,
+      "combined_jitter_1_5ms": 4.370225676025969,
+      "combined_jitter_3ms": 4.335383796299714,
+      "k8_jitter3_bare": 4.378733882134691
+    }
+  },
+  "reference": "k8_combined"
+}

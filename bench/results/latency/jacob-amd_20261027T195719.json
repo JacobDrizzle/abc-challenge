@@ -1,0 +1,210 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "jacob-amd",
+ "created_utc": "2026-10-27T19:57:19.729141+00:00",
+ "machine": {
+  "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "machine": "AMD64",
+  "os": "Windows-11-10.0.26200-SP0",
+  "logical_cores": 24,
+  "python": "3.12.10",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "v5_tcnn_ga2": {
+   "onnx": "jacob\\models\\tcnn_v5_ga2_stream.onnx",
+   "onnx_sha256": "c746ce1611bbbbaa0af6a50d5dd0e76fd0f2807c353f48bc62a24b0a4c72d518",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09180000051856041,
+     "mean_ms": 0.09372143339714967,
+     "p90_ms": 0.09579997276887298,
+     "p99_ms": 0.1370019954629242,
+     "min_ms": 0.089899986051023,
+     "max_ms": 0.17800001660361886
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09499999578110874,
+     "mean_ms": 0.09612046672070089,
+     "p90_ms": 0.09779998799785972,
+     "p99_ms": 0.13940298464149228,
+     "min_ms": 0.09059999138116837,
+     "max_ms": 0.32809999538585544
+    }
+   }
+  },
+  "v6_tcnn_ga2": {
+   "onnx": "jacob\\models\\tcnn_v6_ga2_stream.onnx",
+   "onnx_sha256": "cf065dd37603859b90fad822dd94a8e816ed92dae217dc32e4b7a0dc7ab8fd5e",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.11940000695176423,
+     "mean_ms": 0.12176290000206791,
+     "p90_ms": 0.12490999069996177,
+     "p99_ms": 0.16580201103352005,
+     "min_ms": 0.11679998715408146,
+     "max_ms": 0.2410000015515834
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.17690000822767615,
+     "mean_ms": 0.1562942331074737,
+     "p90_ms": 0.18169998656958342,
+     "p99_ms": 0.19389999215491116,
+     "min_ms": 0.11819999781437218,
+     "max_ms": 1.1454000195953995
+    }
+   }
+  },
+  "v6_control_v7graph_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\v6_control_v7graph\\model_fp32_stream.onnx",
+   "onnx_sha256": "599f490d1a82f28705400f2a14162208309addf58bd36eb109a9c2afbea15575",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.1036000030580908,
+     "mean_ms": 0.1067601000055826,
+     "p90_ms": 0.10930001735687256,
+     "p99_ms": 0.1687059752293861,
+     "min_ms": 0.09989997488446534,
+     "max_ms": 0.4241999995429069
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.10939998901449144,
+     "mean_ms": 0.11604990022412191,
+     "p90_ms": 0.1498999772593379,
+     "p99_ms": 0.1849400109495027,
+     "min_ms": 0.10380000458098948,
+     "max_ms": 0.361700018402189
+    }
+   }
+  },
+  "v7_sep_base3_addons_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons\\model_fp32_stream.onnx",
+   "onnx_sha256": "f475f2f9b271d516462b0a73bea051dd8edc923d5cbe7479a60a9aa4ba0f4a79",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.08639998850412667,
+     "mean_ms": 0.08774490000602479,
+     "p90_ms": 0.08970001363195479,
+     "p99_ms": 0.10020097717642781,
+     "min_ms": 0.08480000542476773,
+     "max_ms": 0.1438999897800386
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.11139997513964772,
+     "mean_ms": 0.1219776334570876,
+     "p90_ms": 0.1472999865654856,
+     "p99_ms": 0.1572010037489235,
+     "min_ms": 0.09199997293762863,
+     "max_ms": 0.31269999453797936
+    }
+   }
+  },
+  "v7_base3_5_addons_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\base3_5_addons\\model_fp32_stream.onnx",
+   "onnx_sha256": "4978a5804d9c264b41e297fc93d29daae54b07b1d35605af4dcb4dc432b805f0",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.08779999916441739,
+     "mean_ms": 0.08937930005292098,
+     "p90_ms": 0.09109999518841505,
+     "p99_ms": 0.12220799922943096,
+     "min_ms": 0.08590001380071044,
+     "max_ms": 0.16369999502785504
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.0942000187933445,
+     "mean_ms": 0.10077256655010085,
+     "p90_ms": 0.12660000356845558,
+     "p99_ms": 0.13750199927017087,
+     "min_ms": 0.08900000830180943,
+     "max_ms": 0.23960001999512315
+    }
+   }
+  },
+  "v7_sep_base3_addons_angular_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons_angular\\model_fp32_stream.onnx",
+   "onnx_sha256": "d9f48aa1f25e81371ca64c34757375e2e6be6b614755a8dcda80eca1a8c83e49",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.08800000068731606,
+     "mean_ms": 0.08869363338453695,
+     "p90_ms": 0.08999998681247234,
+     "p99_ms": 0.11752702121157135,
+     "min_ms": 0.08420000085607171,
+     "max_ms": 0.2799999783746898
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.13040000339969993,
+     "mean_ms": 0.11972176655156848,
+     "p90_ms": 0.1351000100839883,
+     "p99_ms": 0.14449999434873462,
+     "min_ms": 0.09169999975711107,
+     "max_ms": 0.15589999384246767
+    }
+   }
+  },
+  "v7_base3_5_addons_angular_ga2": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\base3_5_addons_angular\\model_fp32_stream.onnx",
+   "onnx_sha256": "b9ee40502cdd8c172b976e5fb99497de3f115ec6f15e045169a7c804890f0357",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.08870000601746142,
+     "mean_ms": 0.08903870008847055,
+     "p90_ms": 0.09049999061971903,
+     "p99_ms": 0.10600102104945106,
+     "min_ms": 0.08579998393543065,
+     "max_ms": 0.1412999990861863
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09280000813305378,
+     "mean_ms": 0.09539936669170856,
+     "p90_ms": 0.09779998799785972,
+     "p99_ms": 0.13710202503716568,
+     "min_ms": 0.08939998224377632,
+     "max_ms": 0.1784000196494162
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": "b432d9fd8ee6d6a5197b568e485c2475e05f2346",
+  "dirty": false
+ }
+}

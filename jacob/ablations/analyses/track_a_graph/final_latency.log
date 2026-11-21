@@ -1,0 +1,22 @@
+sep+angular s44 | v7 graph {'file_nodes': 130, 'executed_nodes': 130, 'params': 6651, 'stored_floats': 6648, 'macs': 13863, 'state_floats': 11616, 'off_list_ops': [], 'parity_max_deg': 7.50708529853898e-05}
+sep+angular s44 | lean {'file_nodes': 84, 'executed_nodes': 84, 'params': 6651, 'stored_floats': 6648, 'macs': 14446, 'state_floats': 11616, 'off_list_ops': [], 'parity_max_deg': 7.595681144020191e-05}
+sep+angular s44 | padded {'file_nodes': 79, 'executed_nodes': 74, 'params': 6651, 'stored_floats': 6648, 'macs': 20206, 'state_floats': 11616, 'off_list_ops': [], 'parity_max_deg': 7.595060619389263e-05}
+sep+angular s44 | padded+A4 {'file_nodes': 80, 'executed_nodes': 71, 'params': 6651, 'stored_floats': 6651, 'macs': 20008, 'state_floats': 11616, 'off_list_ops': [], 'parity_max_deg': 7.592431150274996e-05}
+k8_combined | lean {'file_nodes': 60, 'executed_nodes': 60, 'params': 7555, 'stored_floats': 7552, 'macs': 16222, 'state_floats': 25088, 'off_list_ops': [], 'parity_max_deg': 9.352144271824672e-05}
+k8_combined | padded {'file_nodes': 57, 'executed_nodes': 54, 'params': 7555, 'stored_floats': 7552, 'macs': 22366, 'state_floats': 25088, 'off_list_ops': [], 'parity_max_deg': 9.363679334867061e-05}
+k8_combined | padded+A4 {'file_nodes': 58, 'executed_nodes': 51, 'params': 7555, 'stored_floats': 7555, 'macs': 22168, 'state_floats': 25088, 'off_list_ops': [], 'parity_max_deg': 9.375394359682807e-05}
+k5_combined | lean {'file_nodes': 69, 'executed_nodes': 69, 'params': 5595, 'stored_floats': 5592, 'macs': 12318, 'state_floats': 19008, 'off_list_ops': [], 'parity_max_deg': 9.754604227798799e-05}
+k5_combined | padded {'file_nodes': 65, 'executed_nodes': 61, 'params': 5595, 'stored_floats': 5592, 'macs': 16926, 'state_floats': 19008, 'off_list_ops': [], 'parity_max_deg': 9.757983481879255e-05}
+k5_combined | padded+A4 {'file_nodes': 66, 'executed_nodes': 58, 'params': 5595, 'stored_floats': 5595, 'macs': 16728, 'state_floats': 19008, 'off_list_ops': [], 'parity_max_deg': 9.754604227798799e-05}
+
+graph                                         run params stored   MACs  state median us    p90 vs first
+sep+angular s44 | v7 graph                    130   6651   6648  13863  11616      90.3  132.2      +0%
+sep+angular s44 | lean                         84   6651   6648  14446  11616      72.0  102.8     -20%
+sep+angular s44 | padded                       74   6651   6648  20206  11616      60.6   80.1     -33%
+sep+angular s44 | padded+A4                    71   6651   6651  20008  11616      60.2   82.0     -33%
+k8_combined | lean                             60   7555   7552  16222  25088      55.2   78.0     -39%
+k8_combined | padded                           54   7555   7552  22366  25088      48.3   69.1     -47%
+k8_combined | padded+A4                        51   7555   7555  22168  25088      46.9   63.1     -48%
+k5_combined | lean                             69   5595   5592  12318  19008      61.9   76.8     -31%
+k5_combined | padded                           61   5595   5592  16926  19008      53.5   76.0     -41%
+k5_combined | padded+A4                        58   5595   5595  16728  19008      52.1   73.2     -42%

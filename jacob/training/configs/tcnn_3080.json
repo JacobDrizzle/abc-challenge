@@ -1,0 +1,18 @@
+{
+  "context": 400,
+  "horizon": 20,
+  "channels": 32,
+  "dropout": 0.1,
+  "batch_size": 128,
+  "steps_per_epoch": 200,
+  "epochs": 50,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "patience": 8,
+  "minimum_improvement_deg": 0.001,
+  "validation_stride": 20,
+  "workers": 2,
+  "cache_mb_per_worker": 128,
+  "seeds": [42, 43, 44]
+}

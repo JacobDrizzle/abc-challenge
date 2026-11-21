@@ -1,0 +1,9 @@
+# Nic's Mac export environment (nic_scratch/abc_onnx), which made every ONNX file in ../models/group_a_v2/.
+# Training ran on the PC in the ml-base:cu130 image (PyTorch 2.14 on CUDA 13); train.py itself needs only torch, numpy, matplotlib.
+torch==2.14.1
+numpy==2.5.4
+matplotlib==3.11.2
+onnx==1.23.2
+onnxruntime==1.31.0
+onnxsim==0.8.1
+h5py==3.13.0

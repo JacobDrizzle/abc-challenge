@@ -1,0 +1,80 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code, the models or the results, please cite the paper below and BOXRR-23, whose data use
+  agreement asks for it.
+title: "Motion_Pending: compact head-pose prediction for the 9th ABC Challenge"
+type: software
+authors:
+  - given-names: Jacob
+    family-names: Dorrill
+    affiliation: Munster Technological University
+  - given-names: Nicholas
+    family-names: Groenewald
+    affiliation: Munster Technological University
+  - given-names: Ray
+    family-names: Crowley
+    affiliation: Munster Technological University
+  - given-names: Duncan
+    family-names: "O'Regan"
+    affiliation: Munster Technological University
+  - given-names: Ruairi
+    family-names: "O'Reilly"
+    affiliation: Munster Technological University
+  - given-names: Jing Hua
+    family-names: Ye
+    affiliation: Munster Technological University
+license: MIT
+keywords:
+  - head-motion prediction
+  - extended reality
+  - temporal convolutional network
+  - model compression
+  - mirror symmetry
+preferred-citation:
+  type: article
+  title: "Symmetry in Motion: A Compact Network for Head-Pose Prediction"
+  authors:
+    - given-names: Jacob
+      family-names: Dorrill
+      affiliation: Munster Technological University
+    - given-names: Nicholas
+      family-names: Groenewald
+      affiliation: Munster Technological University
+    - given-names: Ray
+      family-names: Crowley
+      affiliation: Munster Technological University
+    - given-names: Duncan
+      family-names: "O'Regan"
+      affiliation: Munster Technological University
+    - given-names: Ruairi
+      family-names: "O'Reilly"
+      affiliation: Munster Technological University
+    - given-names: Jing Hua
+      family-names: Ye
+      affiliation: Munster Technological University
+  journal: International Journal of Activity and Behavior Computing
+  status: submitted
+references:
+  - type: article
+    title: >-
+      Berkeley Open Extended Reality Recordings 2023 (BOXRR-23): 4.7 Million Motion Capture Recordings from
+      105,000 XR Users
+    authors:
+      - given-names: Vivek
+        family-names: Nair
+      - given-names: Wenbo
+        family-names: Guo
+      - given-names: Rui
+        family-names: Wang
+      - given-names: James F.
+        family-names: "O'Brien"
+      - given-names: Louis
+        family-names: Rosenberg
+      - given-names: Dawn
+        family-names: Song
+    journal: IEEE Transactions on Visualization and Computer Graphics
+    volume: 30
+    issue: 5
+    start: 2239
+    end: 2246
+    year: 2024

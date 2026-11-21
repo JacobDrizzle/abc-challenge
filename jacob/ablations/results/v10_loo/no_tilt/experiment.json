@@ -1,0 +1,83 @@
+{
+  "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51",
+  "split_sha256": "721a704c7f3a3b2da74acacdc992fb861d0b2adb7a7b5de3145bd1a5a575c86d",
+  "config": {
+    "effective_context": 400,
+    "velocity_features": false,
+    "loss_kind": "angular",
+    "endpoint_weight": 0.5,
+    "damped_prior_tau_ms": 100,
+    "ema_decay": 0.999,
+    "data_on_device": true,
+    "input_features": "body_velocity",
+    "num_blocks": 3,
+    "context": 400,
+    "horizon": 20,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "batch_size": 256,
+    "steps_per_epoch": 1000,
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "patience": 40,
+    "minimum_improvement_deg": 0.005,
+    "validation_stride": 5,
+    "workers": 0,
+    "cache_mb_per_worker": 0,
+    "channels": 64,
+    "dropout": 0.1,
+    "gravity_features": true,
+    "mirror_equivariant": true,
+    "dilation_base": 3,
+    "separable": true,
+    "head_basis": 3,
+    "speed_feature": "l1",
+    "kernel_sizes": [
+      8,
+      8,
+      8
+    ],
+    "dilations": [
+      1,
+      8,
+      47
+    ],
+    "maps": "native",
+    "sampling": "window",
+    "tilt_augmentation_deg": 0,
+    "jitter_augmentation_ms": 0,
+    "distill_beta": 0,
+    "teacher": null
+  },
+  "device": "cuda",
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu118",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "11.8"
+  },
+  "code_sha256": {
+    "train_tcnn.py": "fc836bc02561f6b5b004c0ecbb33ef13fbf41405e4ab5abfe17174c78783fc16",
+    "run_desktop.py": "bdec1d6e2b896e577eac2b72423c0d5f7e39e36c37978b9c47f653128fa00509",
+    "tcnn/model.py": "eef50be3a5cbec5ccfb5d8037e03c9d869b88baac9ddb3426ef098ace97498e4",
+    "tcnn/data.py": "f4431ad8d1c5e7eb92af33924a33dd6d8ea2c94045b55abee0e131d62c1be718",
+    "baseline_pipeline.py": "a5cae2796f6ceedfead12bbe1e78e57f81d5e3925e7773fe3b41868fec796f7d",
+    "tcnn_model_adapter.py": "bc79f35065a817f7755763ea7ee276215e3bfc3444accfd8af0427e441338b91",
+    "tcnn/configuration.py": "3527ca54eab310d023258911b28bdfc3ca0073daf21e40c64d84beeb1d850815",
+    "tcnn/runtime.py": "a94ce9c4cf05eeae6304bc8c669d3de0c0533ccf94870360ae996cf9a3323f1b",
+    "best/__init__.py": "cc24d3615c7ce2812465f541f2b25d25b08b1e344929d1cef5466306a1022415",
+    "best/configuration.py": "cccc0d8be3f0c7916eb797ea03b652437353afd0692fc1bd80654403e6df3224",
+    "best/hooks.py": "046ff93c998049f7eb7c348298286492799b70192e36456a0f5d2eaca12505e4",
+    "best/model.py": "cc6a0611aecbe78ba38f59fe49dd67b7b2d7e6bf4d1ce942df19c42633b743cf",
+    "best/training.py": "5ee475601189706990a8abd4c6851a289a46dd18b27eeb9853b60f9e6d8483ef"
+  }
+}

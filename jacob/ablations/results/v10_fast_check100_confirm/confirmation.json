@@ -1,0 +1,51 @@
+{
+  "plan": {
+    "version": 1,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "reference": "outputs/v9_confirm/k8_combined",
+    "candidates": {
+      "control": {
+        "output": "outputs/v10_fast_check100/control",
+        "overrides": {}
+      }
+    }
+  },
+  "reference": {
+    "candidate": "k8_combined (reference)",
+    "params": 7555,
+    "selected_seed": 42,
+    "scores": {
+      "42": 4.247104990427709,
+      "43": 4.25472255588162,
+      "44": 4.248472441691232
+    },
+    "cohort_fingerprints": [
+      "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    ],
+    "mean_deg": 4.250099996000187,
+    "std_deg": 0.004061222184589716,
+    "delta_vs_reference_deg": null
+  },
+  "rows": [
+    {
+      "candidate": "control",
+      "params": 7555,
+      "selected_seed": 42,
+      "scores": {
+        "42": 4.2390052517930545,
+        "43": 4.2394012504776395,
+        "44": 4.251326890829206
+      },
+      "cohort_fingerprints": [
+        "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+      ],
+      "mean_deg": 4.243244464366633,
+      "std_deg": 0.007002386513305065,
+      "delta_vs_reference_deg": -0.006855531633553902
+    }
+  ]
+}

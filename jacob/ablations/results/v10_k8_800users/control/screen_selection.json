@@ -1,0 +1,31 @@
+{
+  "selection_rule": "Lowest full stride-1 validation mean step-20 geodesic error; seed breaks ties",
+  "selected_seed": 42,
+  "checkpoint_sha256": "2a20e822860a168a888547f6e3694b5f0c710374386ff4d4bb6528b3e2835070",
+  "data_sha256": "11b53c681e51cc1c03d5ba98b34aeb0683a17133bafff1edce0bc763c4cacf60",
+  "split_sha256": "9816b9d36658ffc660a2070cf8871fa226eeb6e7852c048a17b03d2785894686",
+  "validation_candidates": [
+    {
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "2a20e822860a168a888547f6e3694b5f0c710374386ff4d4bb6528b3e2835070",
+      "validation_endpoint_deg": 4.44505850724499,
+      "hold_last_endpoint_deg": 6.414602031717522,
+      "cohort_fingerprint": "809e80aea87b0d07db0142f6978a4edd497d95409ff14c96df27fb0fe1adcbea"
+    }
+  ],
+  "evaluated_seeds": [
+    42
+  ],
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu118",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "11.8"
+  },
+  "test_receipt": "Written separately after successful test evaluation"
+}

@@ -1,0 +1,56 @@
+{
+  "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51",
+  "split_sha256": "721a704c7f3a3b2da74acacdc992fb861d0b2adb7a7b5de3145bd1a5a575c86d",
+  "config": {
+    "effective_context": 128,
+    "velocity_features": false,
+    "loss_kind": "quaternion",
+    "endpoint_weight": 0.5,
+    "damped_prior_tau_ms": 100,
+    "ema_decay": 0.999,
+    "data_on_device": true,
+    "input_features": "body_velocity",
+    "num_blocks": 6,
+    "context": 400,
+    "horizon": 20,
+    "channels": 48,
+    "dropout": 0.1,
+    "batch_size": 256,
+    "steps_per_epoch": 1000,
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "patience": 10,
+    "minimum_improvement_deg": 0.005,
+    "validation_stride": 5,
+    "workers": 0,
+    "cache_mb_per_worker": 0,
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "device": "cuda",
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu118",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "11.8"
+  },
+  "code_sha256": {
+    "train_tcnn.py": "fc836bc02561f6b5b004c0ecbb33ef13fbf41405e4ab5abfe17174c78783fc16",
+    "run_desktop.py": "bdec1d6e2b896e577eac2b72423c0d5f7e39e36c37978b9c47f653128fa00509",
+    "tcnn/model.py": "8a2967aeda64df139c0941489ae73c8d42e64146d59bf8de4f0a51fe54d2026a",
+    "tcnn/data.py": "d81508160d0ad847e0b377a7d926ec1d8714570a54e12eea85ab990c86f2f414",
+    "baseline_pipeline.py": "f41449832a0e7fe20103e99010ac373f4b3f15cb46ca4c5f14f6daef1c612c8c",
+    "tcnn_model_adapter.py": "a7648470c88adae8818522ea38da63c387b053b587e91aff72734f8f3ea5ea78",
+    "tcnn/configuration.py": "03704ee2b2ded7b5cfaede6d49f69b9716f2ce3b2486edbb64da472ea1ee91f8",
+    "tcnn/runtime.py": "6b8286a1b2240a3c790df853725c91bff54baac8ef26f53859fd63e04a6a52ab"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "plan": {
+    "version": 1,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "tolerance_deg": 4.382,
+    "reference": "outputs/v6_group_a_v2/control",
+    "candidates": {
+      "separable_base3_addons_angular": {
+        "output": "outputs/v8_recipe_sep_base3_addons/angular_loss",
+        "overrides": {
+          "separable": true,
+          "dilation_base": 3,
+          "num_blocks": 5,
+          "speed_feature": "l1",
+          "head_basis": 3,
+          "loss_kind": "angular"
+        }
+      },
+      "separable_base3_addons_angular_no_gravity": {
+        "output": "outputs/v8_no_gravity/separable_base3_addons_angular_no_gravity",
+        "overrides": {
+          "separable": true,
+          "dilation_base": 3,
+          "num_blocks": 5,
+          "speed_feature": "l1",
+          "head_basis": 3,
+          "loss_kind": "angular",
+          "gravity_features": false
+        }
+      }
+    }
+  },
+  "reference": {
+    "candidate": "v6 control (reference)",
+    "params": 26012,
+    "selected_seed": 44,
+    "scores": {
+      "42": 4.351109900525913,
+      "43": 4.347249622450061,
+      "44": 4.328528902119155
+    },
+    "cohort_fingerprints": [
+      "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    ],
+    "mean_deg": 4.342296141698376,
+    "std_deg": 0.01207800070083965,
+    "within_tolerance": true
+  },
+  "tolerance_deg": 4.382,
+  "rows": [
+    {
+      "candidate": "separable_base3_addons_angular",
+      "params": 6651,
+      "selected_seed": 44,
+      "scores": {
+        "42": 4.33864309608329,
+        "43": 4.337040160926192,
+        "44": 4.31335891839015
+      },
+      "cohort_fingerprints": [
+        "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+      ],
+      "mean_deg": 4.329680725133211,
+      "std_deg": 0.014157802859124645,
+      "within_tolerance": true
+    },
+    {
+      "candidate": "separable_base3_addons_angular_no_gravity",
+      "params": 6579,
+      "selected_seed": 42,
+      "scores": {
+        "42": 4.3630078964974714,
+        "43": 4.368603273662373,
+        "44": 4.379856887728432
+      },
+      "cohort_fingerprints": [
+        "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+      ],
+      "mean_deg": 4.370489352629426,
+      "std_deg": 0.008581380819991467,
+      "within_tolerance": true
+    }
+  ],
+  "plan_rule_finalist": "separable_base3_addons_angular_no_gravity"
+}

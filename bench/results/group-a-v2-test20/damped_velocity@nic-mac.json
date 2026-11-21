@@ -1,0 +1,140 @@
+{
+  "schema": "bench-result-v1",
+  "bench_package_version": "0.1.0",
+  "created_utc": "2026-11-07T08:57:17.592861+00:00",
+  "bench": {
+    "name": "group-a-v2-test20",
+    "definition_sha256": "5f35187cc24d6a739f05694c20b908a8ed56451638df100c3d38257e2064cc17",
+    "cohort_fingerprint": "6303a55cc75316cc7a172b1162875e801350cd267cf7827a53d82edd364bcd48",
+    "legacy_cohort_fingerprint": "d48763257d2e6f5a4f8288ebf1038359c6af4d43152ad9aac59b2f9d839dfbe3",
+    "windows": 931051,
+    "players": [
+      "0aefb728-86ee-4ea8-aba2-014f8b233587",
+      "0f0949b4-e42b-47a4-bf7e-cbbf63361225",
+      "141ce789-0a59-4858-bc0e-28846ab1672c",
+      "318e521e-281d-4d8d-b570-01db1c79ba20",
+      "35220c0e-fda1-4716-a70e-1a93e0819578",
+      "35f825eb-37f8-4fa5-8d40-a0f89fd5d553",
+      "36074619-270d-49c6-9f41-63c9c9a06df4",
+      "44af878e-4a76-44ea-bc2c-78a4c20ffe42",
+      "6338df1d-430d-47e1-8000-376c180fc232",
+      "67190adb-b000-4c7f-9702-cbe3aebdc9a6",
+      "6924807d-4ab4-4522-9da5-669132df4bfb",
+      "6ef6bfe7-c6d6-4a6a-a4cd-fcc7fd3dba27",
+      "73d4c8ec-6f7c-4dfa-89d4-382ccdd15d0d",
+      "7e372e75-5aa4-4465-9cf1-423502ed92a3",
+      "7ea2f8af-82e8-497e-bfca-e9c577c0d42d",
+      "89da1a5f-fdb6-4c84-b2eb-9d6e39df69a4",
+      "939fdaed-a8af-404c-b0be-52f50ca2f284",
+      "a3fcf0fa-4bbb-4500-bf4b-345710aec9b2",
+      "aecf2eb7-d872-4504-93b3-bdb31b748861",
+      "c825484a-10de-4f16-815f-610f5f708740"
+    ]
+  },
+  "inputs": {
+    "data_file": "moredata_1600.h5",
+    "data_sha256": "730e74144fa95c601aeb851e34760281c5c36ec3bba00084539330d565457dc4"
+  },
+  "model": {
+    "name": "damped_velocity",
+    "kind": "baseline",
+    "onnx": null,
+    "onnx_sha256": null,
+    "baseline": "damped_velocity",
+    "stateful": false,
+    "owner": null,
+    "group": null,
+    "declared_trainable_parameters": 0,
+    "notes": null,
+    "threads": 1
+  },
+  "contamination": {
+    "status": "clean",
+    "trained_on": [
+      {
+        "spec": "none",
+        "kind": "none",
+        "sha256": null,
+        "players": 0
+      }
+    ],
+    "overlap": []
+  },
+  "git": {
+    "commit": "64b2622567a483b4d9ac4dba22370e266ccf29af",
+    "dirty": true
+  },
+  "machine": {
+    "label": "nic-mac",
+    "cpu": "Apple M5 Pro",
+    "processor": "arm",
+    "machine": "arm64",
+    "os": "macOS-27.2-arm64-arm-64bit",
+    "logical_cores": 18,
+    "python": "3.12.14",
+    "onnxruntime": "1.31.1",
+    "numpy": "2.5.4"
+  },
+  "efficiency": null,
+  "accuracy": {
+    "protocol": "stateless",
+    "protocol_text": "Stateless: each window is a fresh call on the 400-sample context.",
+    "windows": 931051,
+    "mean_deg_step20": 5.1137397989376305,
+    "mean_deg_step10": 2.59029291259109,
+    "mean_deg_by_horizon": [
+      0.11547428147336529,
+      0.31344519190599485,
+      0.568748691032078,
+      0.8577644193595095,
+      1.1604119078508186,
+      1.463034143418114,
+      1.7584457687133535,
+      2.0442093214953316,
+      2.3208240431404,
+      2.59029291259109,
+      2.8549685476341016,
+      3.116498106232729,
+      3.375599026149195,
+      3.6324024129565777,
+      3.886665912041106,
+      4.138035370902657,
+      4.386345443950201,
+      4.631632069602961,
+      4.87396776029503,
+      5.1137397989376305
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 4.298484968018572,
+    "p95_deg_step20": 11.781809429758496,
+    "p99_deg_step20": 17.676993114861325,
+    "equal_player_mean_deg_step20": 5.072926026499255,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/damped_velocity@nic-mac/endpoint_stateless.npy",
+      "sha256": "2739bc91f286714ce69eba9ef379ebd21fb81a9a86c10de2bebb7fb16bf96ef4",
+      "dtype": "float32"
+    }
+  },
+  "accuracy_cold_start": null
+}

@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "variant": "control",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "4d7620ba519c4ac27cbbef0097962e03062023044ba51cb3f48377bee2beada8",
+      "validation_endpoint_deg": 4.405738404830756,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "short_128",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "561e3c7a1d5a265a90556873c97f8ef2d8ddf8107f9c1f2391037af3583e080b",
+      "validation_endpoint_deg": 4.434549937985014,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    },
+    {
+      "variant": "width_32",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "2d408f4a36a32f2001452c0082c79d09d2a9f78c143781e13801251111247a30",
+      "validation_endpoint_deg": 4.435411193384597,
+      "hold_last_endpoint_deg": 6.082598408365678,
+      "cohort_fingerprint": "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+ {
+  "name": "gadst",
+  "macs": 606320,
+  "macs_by_op": {
+   "MatMul": 40048,
+   "Gemm": 566272
+  },
+  "ms_1thread": 0.19641650033008773,
+  "max_deg_vs_torch": 0.03426402062177658,
+  "n_ops": 110,
+  "off_list": {},
+  "avoid": [],
+  "float64": 0,
+  "kb": 62.87890625
+ },
+ {
+  "name": "stateful_step",
+  "macs": 6384,
+  "macs_by_op": {
+   "MatMul": 464,
+   "Gemm": 5920
+  },
+  "ms_1thread": 0.011291998816886917,
+  "max_deg_vs_torch": 0.02797645330429077,
+  "n_ops": 41,
+  "off_list": {},
+  "avoid": [],
+  "float64": 0,
+  "kb": 31.953125
+ },
+ {
+  "name": "stateful_window",
+  "macs": 6384,
+  "macs_by_op": {
+   "MatMul": 464,
+   "Gemm": 5920
+  },
+  "ms_1thread": 0.011833002645289525,
+  "max_deg_vs_torch": 0.02797645330429077,
+  "n_ops": 42,
+  "off_list": {},
+  "avoid": [],
+  "float64": 0,
+  "kb": 32.8076171875
+ }
+]

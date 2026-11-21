@@ -1,0 +1,860 @@
+{
+  "v6 export (control weights)": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\control_v6maths.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        4
+      ],
+      [
+        2,
+        24,
+        8
+      ],
+      [
+        2,
+        24,
+        16
+      ],
+      [
+        2,
+        24,
+        32
+      ],
+      [
+        2,
+        24,
+        64
+      ],
+      [
+        2,
+        24,
+        128
+      ]
+    ],
+    "params": 26012,
+    "macs": 52144,
+    "state_floats": 12192,
+    "nodes": 174,
+    "off_list": [
+      "Div",
+      "Less",
+      "LessOrEqual",
+      "ReduceSum",
+      "Sqrt",
+      "Sub",
+      "Where"
+    ],
+    "kib": 133.4,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.12469998910091817,
+      "mean_ms": 0.12941278673048753,
+      "p90_ms": 0.13240001862868667,
+      "p99_ms": 0.21460200427100068,
+      "min_ms": 0.12179999612271786,
+      "max_ms": 0.4165999998804182,
+      "calls_per_second": 8019.246891759648
+    }
+  },
+  "control": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\control.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        4
+      ],
+      [
+        2,
+        24,
+        8
+      ],
+      [
+        2,
+        24,
+        16
+      ],
+      [
+        2,
+        24,
+        32
+      ],
+      [
+        2,
+        24,
+        64
+      ],
+      [
+        2,
+        24,
+        128
+      ]
+    ],
+    "endpoint_mean": 4.351109900525913,
+    "endpoint_median": 3.511170956997633,
+    "endpoint_p95": 10.316125554570759,
+    "endpoint_p99": 17.18623986396113,
+    "all_horizon_mean": 2.235753856787256,
+    "step5": 0.9439461561458823,
+    "step10": 2.1669225291692036,
+    "equal_user_mean": 4.7744578347706765,
+    "worst_user": 11.139543884431362,
+    "vs_hold_last_pct": -28.466263783885015,
+    "epochs": 40,
+    "best_epoch": 33,
+    "train_minutes": 17.719292883331946,
+    "peak_gpu_mb": 1182.347264,
+    "params": 26012,
+    "macs": 52194,
+    "state_floats": 12192,
+    "nodes": 145,
+    "off_list": [
+      "Sqrt"
+    ],
+    "kib": 129.7,
+    "parity_deg": 5.629729301590595e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.10840001050382853,
+      "mean_ms": 0.11293854666485761,
+      "p90_ms": 0.11580000864341855,
+      "p99_ms": 0.19010099262231964,
+      "min_ms": 0.1033000007737428,
+      "max_ms": 0.398799980757758,
+      "calls_per_second": 9225.091357022346
+    }
+  },
+  "speed_l1": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\speed_l1.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        4
+      ],
+      [
+        2,
+        24,
+        8
+      ],
+      [
+        2,
+        24,
+        16
+      ],
+      [
+        2,
+        24,
+        32
+      ],
+      [
+        2,
+        24,
+        64
+      ],
+      [
+        2,
+        24,
+        128
+      ]
+    ],
+    "endpoint_mean": 4.337796914603368,
+    "endpoint_median": 3.497984665367883,
+    "endpoint_p95": 10.265699652595398,
+    "endpoint_p99": 17.111583086533123,
+    "all_horizon_mean": 2.2299465756990413,
+    "step5": 0.9425165602201004,
+    "step10": 2.161702612174714,
+    "equal_user_mean": 4.76626267804567,
+    "worst_user": 11.129912495951803,
+    "vs_hold_last_pct": -28.685133829690347,
+    "epochs": 40,
+    "best_epoch": 39,
+    "train_minutes": 17.149968406667178,
+    "peak_gpu_mb": 1182.347264,
+    "params": 26012,
+    "macs": 52215,
+    "state_floats": 12192,
+    "nodes": 145,
+    "off_list": [],
+    "kib": 129.9,
+    "parity_deg": 4.527416020825686e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.10820000898092985,
+      "mean_ms": 0.1130690200390139,
+      "p90_ms": 0.11701001494657252,
+      "p99_ms": 0.18820100696757439,
+      "min_ms": 0.10550001752562821,
+      "max_ms": 0.4488999838940799,
+      "calls_per_second": 9242.14341032309
+    }
+  },
+  "basis_head": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\basis_head.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        4
+      ],
+      [
+        2,
+        24,
+        8
+      ],
+      [
+        2,
+        24,
+        16
+      ],
+      [
+        2,
+        24,
+        32
+      ],
+      [
+        2,
+        24,
+        64
+      ],
+      [
+        2,
+        24,
+        128
+      ]
+    ],
+    "endpoint_mean": 4.340691534283504,
+    "endpoint_median": 3.498618013911574,
+    "endpoint_p95": 10.308487847816243,
+    "endpoint_p99": 17.148008334798167,
+    "all_horizon_mean": 2.238861269490581,
+    "step5": 0.9608637549460609,
+    "step10": 2.1638491445615045,
+    "equal_user_mean": 4.773737962868979,
+    "worst_user": 11.228872719720153,
+    "vs_hold_last_pct": -28.63754529127632,
+    "epochs": 40,
+    "best_epoch": 33,
+    "train_minutes": 16.83887026833254,
+    "peak_gpu_mb": 1182.756864,
+    "params": 24771,
+    "macs": 49986,
+    "state_floats": 12192,
+    "nodes": 145,
+    "off_list": [
+      "Sqrt"
+    ],
+    "kib": 124.8,
+    "parity_deg": 5.709441698939539e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.10864999785553664,
+      "mean_ms": 0.1133118667115923,
+      "p90_ms": 0.11600001016631722,
+      "p99_ms": 0.19130100117763507,
+      "min_ms": 0.10649999603629112,
+      "max_ms": 0.2744999947026372,
+      "calls_per_second": 9203.865805221842
+    }
+  },
+  "base3_5": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\base3_5.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        6
+      ],
+      [
+        2,
+        24,
+        18
+      ],
+      [
+        2,
+        24,
+        54
+      ],
+      [
+        2,
+        24,
+        162
+      ]
+    ],
+    "endpoint_mean": 4.343335272561915,
+    "endpoint_median": 3.499552009346252,
+    "endpoint_p95": 10.310918623352814,
+    "endpoint_p99": 17.16748461584922,
+    "all_horizon_mean": 2.231216580923738,
+    "step5": 0.9443337954853711,
+    "step10": 2.1599826523820784,
+    "equal_user_mean": 4.783870784474841,
+    "worst_user": 11.383083126913963,
+    "vs_hold_last_pct": -28.594081328987198,
+    "epochs": 40,
+    "best_epoch": 37,
+    "train_minutes": 13.76042032166685,
+    "peak_gpu_mb": 1196.007424,
+    "params": 19052,
+    "macs": 38370,
+    "state_floats": 11616,
+    "nodes": 125,
+    "off_list": [
+      "Sqrt"
+    ],
+    "kib": 98.2,
+    "parity_deg": 5.830717711957461e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.09129999671131372,
+      "mean_ms": 0.09507253986472884,
+      "p90_ms": 0.0971999834291637,
+      "p99_ms": 0.16130100586451593,
+      "min_ms": 0.08940001134760678,
+      "max_ms": 0.1954999752342701,
+      "calls_per_second": 10952.902913698374
+    }
+  },
+  "width_20": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\width_20.onnx",
+    "shapes": [
+      [
+        2,
+        20,
+        2
+      ],
+      [
+        2,
+        20,
+        4
+      ],
+      [
+        2,
+        20,
+        8
+      ],
+      [
+        2,
+        20,
+        16
+      ],
+      [
+        2,
+        20,
+        32
+      ],
+      [
+        2,
+        20,
+        64
+      ],
+      [
+        2,
+        20,
+        128
+      ]
+    ],
+    "endpoint_mean": 4.357258685474504,
+    "endpoint_median": 3.5178499257779046,
+    "endpoint_p95": 10.289739489349577,
+    "endpoint_p99": 17.171955714246813,
+    "all_horizon_mean": 2.2384101720752207,
+    "step5": 0.9479555110652915,
+    "step10": 2.1673948579892652,
+    "equal_user_mean": 4.798574601856876,
+    "worst_user": 11.346473595306803,
+    "vs_hold_last_pct": -28.36517565450705,
+    "epochs": 40,
+    "best_epoch": 33,
+    "train_minutes": 15.722194613332977,
+    "peak_gpu_mb": 1022.80704,
+    "params": 18320,
+    "macs": 36874,
+    "state_floats": 10160,
+    "nodes": 145,
+    "off_list": [
+      "Sqrt"
+    ],
+    "kib": 99.7,
+    "parity_deg": 5.701776300496675e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.10539998766034842,
+      "mean_ms": 0.11099333338012608,
+      "p90_ms": 0.11629998625721782,
+      "p99_ms": 0.18640102207427847,
+      "min_ms": 0.10070001007989049,
+      "max_ms": 0.583500019274652,
+      "calls_per_second": 9487.66714491942
+    }
+  },
+  "narrow_full": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\narrow_full.onnx",
+    "shapes": [
+      [
+        2,
+        16,
+        2
+      ],
+      [
+        2,
+        16,
+        4
+      ],
+      [
+        2,
+        16,
+        8
+      ],
+      [
+        2,
+        16,
+        16
+      ],
+      [
+        2,
+        16,
+        32
+      ],
+      [
+        2,
+        16,
+        64
+      ],
+      [
+        2,
+        16,
+        128
+      ]
+    ],
+    "endpoint_mean": 4.377728735556143,
+    "endpoint_median": 3.529996441475707,
+    "endpoint_p95": 10.379077791681318,
+    "endpoint_p99": 17.295265434853523,
+    "all_horizon_mean": 2.2503671630769966,
+    "step5": 0.9536812097948247,
+    "step10": 2.178168973619562,
+    "equal_user_mean": 4.813771105580882,
+    "worst_user": 11.475283898602152,
+    "vs_hold_last_pct": -28.02864102395366,
+    "epochs": 40,
+    "best_epoch": 39,
+    "train_minutes": 13.683182478333281,
+    "peak_gpu_mb": 863.2832,
+    "params": 11972,
+    "macs": 24242,
+    "state_floats": 8128,
+    "nodes": 145,
+    "off_list": [
+      "Sqrt"
+    ],
+    "kib": 74.9,
+    "parity_deg": 8.525775252752566e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.10200001997873187,
+      "mean_ms": 0.10666818678534279,
+      "p90_ms": 0.1092999882530421,
+      "p99_ms": 0.18160101462854075,
+      "min_ms": 0.09679998038336635,
+      "max_ms": 0.42389999725855887,
+      "calls_per_second": 9803.919648334491
+    }
+  },
+  "separable_24": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\separable_24.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        4
+      ],
+      [
+        2,
+        24,
+        8
+      ],
+      [
+        2,
+        24,
+        16
+      ],
+      [
+        2,
+        24,
+        32
+      ],
+      [
+        2,
+        24,
+        64
+      ],
+      [
+        2,
+        24,
+        128
+      ]
+    ],
+    "endpoint_mean": 4.355023495225712,
+    "endpoint_median": 3.513282446548473,
+    "endpoint_p95": 10.315408808739791,
+    "endpoint_p99": 17.186982926489396,
+    "all_horizon_mean": 2.234192464324984,
+    "step5": 0.9386999232623688,
+    "step10": 2.1621681069868246,
+    "equal_user_mean": 4.7845066833759935,
+    "worst_user": 11.222483120615328,
+    "vs_hold_last_pct": -28.40192294733699,
+    "epochs": 40,
+    "best_epoch": 31,
+    "train_minutes": 21.511210088334337,
+    "peak_gpu_mb": 1383.55968,
+    "params": 10388,
+    "macs": 20946,
+    "state_floats": 12192,
+    "nodes": 152,
+    "off_list": [
+      "Sqrt"
+    ],
+    "kib": 70.3,
+    "parity_deg": 4.5595029993676494e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.1112000027205795,
+      "mean_ms": 0.11496142662363126,
+      "p90_ms": 0.1168999879155308,
+      "p99_ms": 0.19010199233889585,
+      "min_ms": 0.10810000821948051,
+      "max_ms": 0.371000001905486,
+      "calls_per_second": 8992.805535380914
+    }
+  },
+  "narrow_base3": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\narrow_base3.onnx",
+    "shapes": [
+      [
+        2,
+        16,
+        2
+      ],
+      [
+        2,
+        16,
+        6
+      ],
+      [
+        2,
+        16,
+        18
+      ],
+      [
+        2,
+        16,
+        54
+      ],
+      [
+        2,
+        16,
+        162
+      ]
+    ],
+    "endpoint_mean": 4.411898857540722,
+    "endpoint_median": 3.545713982907398,
+    "endpoint_p95": 10.475477408384709,
+    "endpoint_p99": 17.426823739972427,
+    "all_horizon_mean": 2.268808369838205,
+    "step5": 0.9716672403473218,
+    "step10": 2.1931632156651952,
+    "equal_user_mean": 4.873903833769408,
+    "worst_user": 11.879395963082091,
+    "vs_hold_last_pct": -27.466872521571805,
+    "epochs": 40,
+    "best_epoch": 40,
+    "train_minutes": 10.942646344998503,
+    "peak_gpu_mb": 872.528896,
+    "params": 8868,
+    "macs": 18098,
+    "state_floats": 7744,
+    "nodes": 125,
+    "off_list": [
+      "Sqrt"
+    ],
+    "kib": 58.4,
+    "parity_deg": 6.486432549639956e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.08690002141520381,
+      "mean_ms": 0.09001859321142547,
+      "p90_ms": 0.09159999899566174,
+      "p99_ms": 0.15600099461153152,
+      "min_ms": 0.0850000069476664,
+      "max_ms": 0.36979999276809394,
+      "calls_per_second": 11507.477026064835
+    }
+  },
+  "separable_base3_addons": {
+    "trained": true,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_trained\\separable_base3_addons.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        6
+      ],
+      [
+        2,
+        24,
+        18
+      ],
+      [
+        2,
+        24,
+        54
+      ],
+      [
+        2,
+        24,
+        162
+      ]
+    ],
+    "endpoint_mean": 4.385524494905276,
+    "endpoint_median": 3.5327943361203906,
+    "endpoint_p95": 10.382788511756589,
+    "endpoint_p99": 17.31872947701352,
+    "all_horizon_mean": 2.2539010094253378,
+    "step5": 0.9628241067957916,
+    "step10": 2.172752236284737,
+    "equal_user_mean": 4.8393036820772535,
+    "worst_user": 11.719476508070704,
+    "vs_hold_last_pct": -27.900476071646253,
+    "epochs": 40,
+    "best_epoch": 40,
+    "train_minutes": 15.596180723332509,
+    "peak_gpu_mb": 1396.639232,
+    "params": 6651,
+    "macs": 13863,
+    "state_floats": 11616,
+    "nodes": 130,
+    "off_list": [],
+    "kib": 51.0,
+    "parity_deg": 6.359324278379978e-05,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.09239997598342597,
+      "mean_ms": 0.09617799997795373,
+      "p90_ms": 0.0982999918051064,
+      "p99_ms": 0.16300101851811635,
+      "min_ms": 0.09029998909682035,
+      "max_ms": 0.30640000477433205,
+      "calls_per_second": 10822.513635494588
+    }
+  },
+  "base3_5_addons": {
+    "trained": false,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_random\\base3_5_addons.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        6
+      ],
+      [
+        2,
+        24,
+        18
+      ],
+      [
+        2,
+        24,
+        54
+      ],
+      [
+        2,
+        24,
+        162
+      ]
+    ],
+    "params": 17811,
+    "macs": 36183,
+    "state_floats": 11616,
+    "nodes": 125,
+    "off_list": [],
+    "kib": 93.5,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.09280000813305378,
+      "mean_ms": 0.09624148005386815,
+      "p90_ms": 0.09809999319259077,
+      "p99_ms": 0.16450200113467878,
+      "min_ms": 0.08870000601746142,
+      "max_ms": 0.3209999995306134,
+      "calls_per_second": 10775.861124561874
+    }
+  },
+  "separable_24_addons": {
+    "trained": false,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_random\\separable_24_addons.onnx",
+    "shapes": [
+      [
+        2,
+        24,
+        2
+      ],
+      [
+        2,
+        24,
+        4
+      ],
+      [
+        2,
+        24,
+        8
+      ],
+      [
+        2,
+        24,
+        16
+      ],
+      [
+        2,
+        24,
+        32
+      ],
+      [
+        2,
+        24,
+        64
+      ],
+      [
+        2,
+        24,
+        128
+      ]
+    ],
+    "params": 9147,
+    "macs": 18759,
+    "state_floats": 12192,
+    "nodes": 152,
+    "off_list": [],
+    "kib": 65.6,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.11170000652782619,
+      "mean_ms": 0.11614174009106742,
+      "p90_ms": 0.11900000390596688,
+      "p99_ms": 0.19349998940015212,
+      "min_ms": 0.10890001431107521,
+      "max_ms": 0.3628999984357506,
+      "calls_per_second": 8952.550953977649
+    }
+  },
+  "narrow_full_addons": {
+    "trained": false,
+    "path": "<repo>\\jacob\\training\\outputs\\v7_metrics\\graphs_random\\narrow_full_addons.onnx",
+    "shapes": [
+      [
+        2,
+        16,
+        2
+      ],
+      [
+        2,
+        16,
+        4
+      ],
+      [
+        2,
+        16,
+        8
+      ],
+      [
+        2,
+        16,
+        16
+      ],
+      [
+        2,
+        16,
+        32
+      ],
+      [
+        2,
+        16,
+        64
+      ],
+      [
+        2,
+        16,
+        128
+      ]
+    ],
+    "params": 11139,
+    "macs": 22871,
+    "state_floats": 8128,
+    "nodes": 145,
+    "off_list": [],
+    "kib": 71.8,
+    "latency": {
+      "calls": 15000,
+      "median_ms": 0.10269999620504677,
+      "mean_ms": 0.10649698660320912,
+      "p90_ms": 0.10839998139999807,
+      "p99_ms": 0.1817020153976046,
+      "min_ms": 0.09849999332800508,
+      "max_ms": 0.44639999396167696,
+      "calls_per_second": 9737.098704496924
+    }
+  }
+}

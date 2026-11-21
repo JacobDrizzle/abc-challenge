@@ -1,0 +1,135 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "nic-mac",
+ "created_utc": "2026-10-26T22:25:36.771476+00:00",
+ "machine": {
+  "cpu": "Apple M5 Pro",
+  "processor": "arm",
+  "machine": "arm64",
+  "os": "macOS-27.0.1-arm64-arm-64bit",
+  "logical_cores": 18,
+  "python": "3.12.14",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "v6_tcnn_ga2": {
+   "onnx": "jacob/models/tcnn_v6_ga2_stream.onnx",
+   "onnx_sha256": "cf065dd37603859b90fad822dd94a8e816ed92dae217dc32e4b7a0dc7ab8fd5e",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.07554100011475384,
+     "mean_ms": 0.07630151298023218,
+     "p90_ms": 0.0827499978186097,
+     "p99_ms": 0.09600208621122869,
+     "min_ms": 0.06849999772384763,
+     "max_ms": 0.1290419968427159
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.07833299605408683,
+     "mean_ms": 0.07812363132446383,
+     "p90_ms": 0.08204099940485321,
+     "p99_ms": 0.10104908193170542,
+     "min_ms": 0.07083300442900509,
+     "max_ms": 0.18383299902779981
+    }
+   }
+  },
+  "v5_tcnn_ga2": {
+   "onnx": "jacob/models/tcnn_v5_ga2_stream.onnx",
+   "onnx_sha256": "c746ce1611bbbbaa0af6a50d5dd0e76fd0f2807c353f48bc62a24b0a4c72d518",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.05233300180407241,
+     "mean_ms": 0.05369005694471222,
+     "p90_ms": 0.05733810030505992,
+     "p99_ms": 0.06775332934921599,
+     "min_ms": 0.04824999632546678,
+     "max_ms": 0.09391699859406799
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.05270900146570057,
+     "mean_ms": 0.05411232599726645,
+     "p90_ms": 0.05775420286227017,
+     "p99_ms": 0.07120981688785831,
+     "min_ms": 0.048999994760379195,
+     "max_ms": 0.1140000022132881
+    }
+   }
+  },
+  "nic_ga2_gru_s45": {
+   "onnx": "nic/models/group_a_v2/s45/gru_stateful_window.onnx",
+   "onnx_sha256": "6f4894a119e321939f7ad50bd9395dadeeae5540e8f6391da7e439386cf72e95",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.011874995834659785,
+     "mean_ms": 0.012115027605129095,
+     "p90_ms": 0.012208001862745732,
+     "p99_ms": 0.020208007335895672,
+     "min_ms": 0.010832998668774962,
+     "max_ms": 0.04425000224728137
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.012125005014240742,
+     "mean_ms": 0.012335696342537025,
+     "p90_ms": 0.012500000593718141,
+     "p99_ms": 0.018835248192772238,
+     "min_ms": 0.011040996469091624,
+     "max_ms": 0.057249999372288585
+    }
+   }
+  },
+  "nic_ga2_gadst_s42": {
+   "onnx": "nic/models/group_a_v2/s42/gadst.onnx",
+   "onnx_sha256": "778fc4d4d762ad58f0c2656472e2bee7e476a6f0ec32bbb85c853d9356feaddf",
+   "stateful": false,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.18970800010720268,
+     "mean_ms": 0.1957416916581375,
+     "p90_ms": 0.21213330037426203,
+     "p99_ms": 0.2545008424203843,
+     "min_ms": 0.17941700207302347,
+     "max_ms": 0.3311670006951317
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.21662500512320548,
+     "mean_ms": 0.23144458126140913,
+     "p90_ms": 0.2745830985077191,
+     "p99_ms": 0.3265634978015436,
+     "min_ms": 0.19970799621660262,
+     "max_ms": 0.48116599646164104
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": "1ed9c5c55275c3e2ad7041ad2b501bdd736aa041",
+  "dirty": true
+ }
+}

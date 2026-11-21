@@ -1,0 +1,125 @@
+# =====================================================================================================
+#  Python environment for the ABC Challenge training PC: setup notes for the technician
+# =====================================================================================================
+#  Lines starting with # are notes for people. pip skips them and reads only the package lines below.
+#
+#  STEP 1. INSTALL THESE ON THE PC FIRST
+#    a) An NVIDIA GPU with NVIDIA driver 520 or newer. Running nvidia-smi should list the GPU.
+#       No CUDA toolkit or cuDNN install is needed: PyTorch brings its own CUDA 11.8 libraries.
+#       Supported GPUs: GTX 10-series up to RTX 40-series, A100, H100 and similar.
+#       NOT supported by this PyTorch build: RTX 50-series and other Blackwell GPUs.
+#       If the PC has one of those, please tell us before installing.
+#    b) Python 3.12, 64-bit. Any 3.12.x works; 3.13 and 3.14 won't.
+#         Windows:      the 64-bit Windows installer from python.org
+#         Ubuntu 24.04: sudo apt install python3.12 python3.12-venv
+#    c) Git, on the PATH. pip uses it to download one package (xror) from GitHub.
+#         Windows:      git-scm.com
+#         Ubuntu:       sudo apt install git
+#    d) Internet access to pypi.org, files.pythonhosted.org, download.pytorch.org and github.com.
+#       The install downloads about 3.5 GB, and the finished environment takes about 6-7 GB of disk.
+#
+#  STEP 2. CREATE THE ENVIRONMENT
+#    Open a terminal in the folder where you saved this file and run the two lines for your system.
+#    The environment folder (C:\abc-env or /opt/abc-env here) can go anywhere our user account can read.
+#      Windows:  py -3.12 -m venv C:\abc-env
+#                C:\abc-env\Scripts\python -m pip install -r requirements.txt
+#      Linux:    python3.12 -m venv /opt/abc-env
+#                /opt/abc-env/bin/python -m pip install -r requirements.txt
+#    If the network needs a proxy, add  --proxy http://HOST:PORT  to the pip command.
+#
+#  STEP 3. CHECK IT WORKS
+#    Run the line for your system. It should print "Environment OK:" with the PyTorch version and GPU
+#    name. Anything else means the PC isn't ready yet.
+#      Windows:  C:\abc-env\Scripts\python -c "import numpy, scipy, h5py, onnx, onnxruntime, onnxsim, matplotlib, huggingface_hub, bson, fpzip, xror, pytest, torch; x = torch.ones(512, 512, device='cuda'); assert (x @ x)[0, 0].item() == 512; print('Environment OK:', torch.__version__, 'on', torch.cuda.get_device_name(0))"
+#      Linux:    /opt/abc-env/bin/python -c "import numpy, scipy, h5py, onnx, onnxruntime, onnxsim, matplotlib, huggingface_hub, bson, fpzip, xror, pytest, torch; x = torch.ones(512, 512, device='cuda'); assert (x @ x)[0, 0].item() == 512; print('Environment OK:', torch.__version__, 'on', torch.cuda.get_device_name(0))"
+#    Please send us what it prints and the environment folder's path. That's everything: we bring our
+#    own code and data.
+#
+#  IF SOMETHING FAILS
+#    "Cannot find command 'git'"
+#        Install Git (step 1c), open a new terminal and run the pip command again.
+#    "No matching distribution found for torch==2.7.1+cu118"
+#        Python isn't 3.12 64-bit (step 1b), or download.pytorch.org is blocked (step 1d).
+#    "[WinError 126]" naming a .dll file (Windows)
+#        Install the latest Microsoft Visual C++ Redistributable (x64) from Microsoft.
+#    "no kernel image is available for execution on the device"
+#        The GPU is too new for CUDA 11.8 (step 1a). Please tell us.
+#    Any other error mentioning CUDA, the GPU or the driver
+#        Check that nvidia-smi lists the GPU, and install or update the NVIDIA driver.
+#
+#  Tested 6 Nov 2026: clean install on Windows 11, Python 3.12.10, RTX 3080; all our tests passed.
+#  On Linux x86_64 every package below is available, but the environment hasn't been run there yet.
+#
+# =====================================================================================================
+#  PACKAGES. Nothing to edit below: the pip command in step 2 reads these lines.
+#  Every version is pinned, so the PC gets exactly the set we tested.
+# =====================================================================================================
+
+# PyTorch's CUDA 11.8 build comes from PyTorch's own server. (macOS has no CUDA and gets the plain build.)
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# ---- Packages our code uses directly ----
+
+# Numerics and data files
+numpy==2.2.6
+scipy==1.15.3
+h5py==3.13.0
+
+# ONNX model export, checks and inference
+onnx==1.23.2
+onnxruntime==1.31.0
+onnxsim==0.8.1
+
+# Training and plots
+torch==2.7.1+cu118; sys_platform != "darwin"
+torch==2.7.1; sys_platform == "darwin"
+matplotlib==3.10.3
+
+# Dataset download and decoding
+huggingface_hub==2.3.0
+pymongo==4.13.2             # provides bson
+fpzip==1.2.5
+# Not on PyPI, so pip downloads it from GitHub (this is why Git is needed). Pinned to a fixed commit.
+xror @ git+https://github.com/MetaGuard/xror.git@b2177253d97066038ab52bf59714f1966ece903e
+
+# Test runner
+pytest==9.1.1
+
+# ---- Packages the ones above depend on (pinned to the tested versions) ----
+anyio==4.16.0               # via httpx2
+click==8.5.0                # via huggingface_hub
+colorama==0.4.6; sys_platform == "win32"     # via pytest, tqdm (Windows only)
+contourpy==1.4.0            # via matplotlib
+cycler==0.12.1              # via matplotlib
+dnspython==2.9.2            # via pymongo
+filelock==4.2.9             # via huggingface_hub, torch
+flatbuffers==25.12.19       # via onnxruntime
+fonttools==4.68.0           # via matplotlib
+fsspec==2026.9.0            # via huggingface_hub, torch
+h11==0.16.0                 # via httpcore2
+hf-xet==1.8.0               # via huggingface_hub
+httpcore2==2.16.0           # via httpx2
+httpx2==2.16.0              # via huggingface_hub
+idna==3.20                  # via anyio, httpx2
+iniconfig==2.3.1            # via pytest
+Jinja2==3.1.6               # via torch
+kiwisolver==1.5.1           # via matplotlib
+MarkupSafe==3.0.4           # via Jinja2
+ml_dtypes==0.6.0            # via onnx
+mpmath==1.3.0               # via sympy
+networkx==3.7               # via torch
+packaging==26.3             # via huggingface_hub, matplotlib, onnxruntime, pytest
+pillow==13.0.0              # via matplotlib
+pluggy==1.7.0               # via pytest
+protobuf==7.36.2            # via onnx, onnxruntime
+Pygments==2.21.0            # via pytest
+pyparsing==3.3.3            # via matplotlib
+python-dateutil==4.0.0      # via matplotlib
+PyYAML==6.0.3               # via huggingface_hub
+setuptools==84.2.1          # via torch
+sympy==1.14.0               # via torch
+tqdm==4.70.1                # via huggingface_hub
+truststore==0.10.5          # via httpcore2, httpx2
+typing_extensions==4.16.0   # via anyio, httpx2, huggingface_hub, onnx, torch
+tzdata==2026.6              # via python-dateutil
+# On Linux, PyTorch also installs its own CUDA libraries (nvidia-*-cu11) and triton, at fixed versions.

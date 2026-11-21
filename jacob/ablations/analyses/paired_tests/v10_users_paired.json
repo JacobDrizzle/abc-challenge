@@ -1,0 +1,89 @@
+{
+  "v10_users": {
+    "control": {
+      "mean": 4.247104990427709,
+      "equal_user": 4.663373428186619,
+      "median": 3.41138984170987,
+      "p90": 7.892622950881384,
+      "p99": 16.94372988308746,
+      "step10_100ms": 2.115940639721756,
+      "best_epoch": 37,
+      "epochs_run": 40,
+      "last_epoch_val_stride5": 4.248356495143371,
+      "train_end_deg_last": 4.86625853392756,
+      "window_level_share_better": 0.0
+    },
+    "users_100_half": {
+      "mean": 4.268296091537321,
+      "equal_user": 4.699082212389518,
+      "median": 3.4254217210942084,
+      "p90": 7.928970761347184,
+      "p99": 17.081115756249506,
+      "step10_100ms": 2.1219628581481444,
+      "best_epoch": 37,
+      "epochs_run": 40,
+      "last_epoch_val_stride5": 4.268633651235901,
+      "train_end_deg_last": 4.856387639412756,
+      "window_level_share_better": 0.48888675860368935,
+      "paired": {
+        "window_weighted_delta": 0.0211911011096051,
+        "equal_user_delta": 0.03570878420290053,
+        "users_better": 4,
+        "users": 15,
+        "user_bootstrap_ci95": [
+          0.00558662262827916,
+          0.03982082752993556
+        ],
+        "sign_flip_p": 0.03695
+      }
+    },
+    "users_25": {
+      "mean": 4.3271551149318634,
+      "equal_user": 4.798386537807371,
+      "median": 3.4624955429959132,
+      "p90": 8.020833598546352,
+      "p99": 17.584847210710617,
+      "step10_100ms": 2.146769179355289,
+      "best_epoch": 38,
+      "epochs_run": 40,
+      "last_epoch_val_stride5": 4.328992247907164,
+      "train_end_deg_last": 4.640746119609922,
+      "window_level_share_better": 0.4692546588576498,
+      "paired": {
+        "window_weighted_delta": 0.08005012450414406,
+        "equal_user_delta": 0.13501310962075133,
+        "users_better": 0,
+        "users": 15,
+        "user_bootstrap_ci95": [
+          0.03867543094603781,
+          0.13660724797007232
+        ],
+        "sign_flip_p": 0.00015
+      }
+    },
+    "users_50": {
+      "mean": 4.276251691562482,
+      "equal_user": 4.700519174799965,
+      "median": 3.4285817897079265,
+      "p90": 7.94444165696369,
+      "p99": 17.106071818881095,
+      "step10_100ms": 2.1237911215027485,
+      "best_epoch": 39,
+      "epochs_run": 40,
+      "last_epoch_val_stride5": 4.277172824920999,
+      "train_end_deg_last": 4.807300148449486,
+      "window_level_share_better": 0.486724519126157,
+      "paired": {
+        "window_weighted_delta": 0.02914670113476478,
+        "equal_user_delta": 0.03714574661334564,
+        "users_better": 2,
+        "users": 15,
+        "user_bootstrap_ci95": [
+          0.009002510519911229,
+          0.05122708030898867
+        ],
+        "sign_flip_p": 0.0133
+      }
+    }
+  }
+}

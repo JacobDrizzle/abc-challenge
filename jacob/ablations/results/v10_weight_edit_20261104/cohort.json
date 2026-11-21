@@ -1,0 +1,3004 @@
+{
+  "context": 400,
+  "horizon": 20,
+  "stride": 1,
+  "segments": [
+    {
+      "key": "002b7eb3-a566-4662-a32a-2bb66fe24b7e/718a44d0-e25e-4f5d-ae41-155550a69e47/segment_000",
+      "path": "validation/002b7eb3-a566-4662-a32a-2bb66fe24b7e/718a44d0-e25e-4f5d-ae41-155550a69e47/segment_000",
+      "user": "002b7eb3-a566-4662-a32a-2bb66fe24b7e",
+      "recording": "718a44d0-e25e-4f5d-ae41-155550a69e47",
+      "samples": 20511,
+      "windows": 20092,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "012ffd64-4d94-4b46-b63c-3a30f38b1842/00ed47cc-edb2-4769-b6ee-7eea086d10bb/segment_000",
+      "path": "validation/012ffd64-4d94-4b46-b63c-3a30f38b1842/00ed47cc-edb2-4769-b6ee-7eea086d10bb/segment_000",
+      "user": "012ffd64-4d94-4b46-b63c-3a30f38b1842",
+      "recording": "00ed47cc-edb2-4769-b6ee-7eea086d10bb",
+      "samples": 20265,
+      "windows": 19846,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/14b4251c-1951-4cf3-b612-725e68494858/segment_000",
+      "path": "validation/01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/14b4251c-1951-4cf3-b612-725e68494858/segment_000",
+      "user": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab",
+      "recording": "14b4251c-1951-4cf3-b612-725e68494858",
+      "samples": 22511,
+      "windows": 22092,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/88c7aed9-3a08-4004-92bf-43e9bffcc69a/segment_000",
+      "path": "validation/01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/88c7aed9-3a08-4004-92bf-43e9bffcc69a/segment_000",
+      "user": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab",
+      "recording": "88c7aed9-3a08-4004-92bf-43e9bffcc69a",
+      "samples": 13965,
+      "windows": 13546,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/d639a908-e9cf-4454-b609-8be4e75c1f58/segment_000",
+      "path": "validation/01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/d639a908-e9cf-4454-b609-8be4e75c1f58/segment_000",
+      "user": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab",
+      "recording": "d639a908-e9cf-4454-b609-8be4e75c1f58",
+      "samples": 22933,
+      "windows": 22514,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/e9d233c6-2743-49e3-b34c-50914dd83377/segment_000",
+      "path": "validation/01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/e9d233c6-2743-49e3-b34c-50914dd83377/segment_000",
+      "user": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab",
+      "recording": "e9d233c6-2743-49e3-b34c-50914dd83377",
+      "samples": 11643,
+      "windows": 11224,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/f30aa09b-9e32-4098-a384-c50d1c5c98b9/segment_000",
+      "path": "validation/01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab/f30aa09b-9e32-4098-a384-c50d1c5c98b9/segment_000",
+      "user": "01a44ddc-cd1d-4ee2-b3ce-8fcc3c69e3ab",
+      "recording": "f30aa09b-9e32-4098-a384-c50d1c5c98b9",
+      "samples": 11235,
+      "windows": 10816,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0318b6ca-9870-4107-8097-4b02b44e7202/ab6a0fa8-ca0e-43f8-8133-db8e71218434/segment_000",
+      "path": "validation/0318b6ca-9870-4107-8097-4b02b44e7202/ab6a0fa8-ca0e-43f8-8133-db8e71218434/segment_000",
+      "user": "0318b6ca-9870-4107-8097-4b02b44e7202",
+      "recording": "ab6a0fa8-ca0e-43f8-8133-db8e71218434",
+      "samples": 11156,
+      "windows": 10737,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0318b6ca-9870-4107-8097-4b02b44e7202/bebf3488-1e5c-4fde-891c-3dba8576a8bd/segment_000",
+      "path": "validation/0318b6ca-9870-4107-8097-4b02b44e7202/bebf3488-1e5c-4fde-891c-3dba8576a8bd/segment_000",
+      "user": "0318b6ca-9870-4107-8097-4b02b44e7202",
+      "recording": "bebf3488-1e5c-4fde-891c-3dba8576a8bd",
+      "samples": 4814,
+      "windows": 4395,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0318b6ca-9870-4107-8097-4b02b44e7202/bebf3488-1e5c-4fde-891c-3dba8576a8bd/segment_001",
+      "path": "validation/0318b6ca-9870-4107-8097-4b02b44e7202/bebf3488-1e5c-4fde-891c-3dba8576a8bd/segment_001",
+      "user": "0318b6ca-9870-4107-8097-4b02b44e7202",
+      "recording": "bebf3488-1e5c-4fde-891c-3dba8576a8bd",
+      "samples": 8106,
+      "windows": 7687,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0318b6ca-9870-4107-8097-4b02b44e7202/ea7fc1e6-fc2c-4397-ae54-853f156518fb/segment_000",
+      "path": "validation/0318b6ca-9870-4107-8097-4b02b44e7202/ea7fc1e6-fc2c-4397-ae54-853f156518fb/segment_000",
+      "user": "0318b6ca-9870-4107-8097-4b02b44e7202",
+      "recording": "ea7fc1e6-fc2c-4397-ae54-853f156518fb",
+      "samples": 19528,
+      "windows": 19109,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0318b6ca-9870-4107-8097-4b02b44e7202/fab23c89-8078-4d13-a4e6-678b80de81ca/segment_000",
+      "path": "validation/0318b6ca-9870-4107-8097-4b02b44e7202/fab23c89-8078-4d13-a4e6-678b80de81ca/segment_000",
+      "user": "0318b6ca-9870-4107-8097-4b02b44e7202",
+      "recording": "fab23c89-8078-4d13-a4e6-678b80de81ca",
+      "samples": 19122,
+      "windows": 18703,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0318b6ca-9870-4107-8097-4b02b44e7202/febe0fd9-c2b4-4b71-b3da-4f89e50b8f7b/segment_000",
+      "path": "validation/0318b6ca-9870-4107-8097-4b02b44e7202/febe0fd9-c2b4-4b71-b3da-4f89e50b8f7b/segment_000",
+      "user": "0318b6ca-9870-4107-8097-4b02b44e7202",
+      "recording": "febe0fd9-c2b4-4b71-b3da-4f89e50b8f7b",
+      "samples": 14299,
+      "windows": 13880,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "05ed8169-28cc-4b47-9e14-f7bf5b8ddc78/d87446af-0088-4302-b90c-9cba45c36e6d/segment_000",
+      "path": "validation/05ed8169-28cc-4b47-9e14-f7bf5b8ddc78/d87446af-0088-4302-b90c-9cba45c36e6d/segment_000",
+      "user": "05ed8169-28cc-4b47-9e14-f7bf5b8ddc78",
+      "recording": "d87446af-0088-4302-b90c-9cba45c36e6d",
+      "samples": 5816,
+      "windows": 5397,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "066a4999-a1db-499a-a0bb-06a02db0c865/0ca3d3f3-72f8-45db-b375-eea642b44ad8/segment_000",
+      "path": "validation/066a4999-a1db-499a-a0bb-06a02db0c865/0ca3d3f3-72f8-45db-b375-eea642b44ad8/segment_000",
+      "user": "066a4999-a1db-499a-a0bb-06a02db0c865",
+      "recording": "0ca3d3f3-72f8-45db-b375-eea642b44ad8",
+      "samples": 17124,
+      "windows": 16705,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "066a4999-a1db-499a-a0bb-06a02db0c865/0f4b8c38-ae94-49ec-9fd7-07f885cb9957/segment_000",
+      "path": "validation/066a4999-a1db-499a-a0bb-06a02db0c865/0f4b8c38-ae94-49ec-9fd7-07f885cb9957/segment_000",
+      "user": "066a4999-a1db-499a-a0bb-06a02db0c865",
+      "recording": "0f4b8c38-ae94-49ec-9fd7-07f885cb9957",
+      "samples": 28329,
+      "windows": 27910,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "066a4999-a1db-499a-a0bb-06a02db0c865/869a2c8d-38d0-422c-b2aa-1397a537eeee/segment_000",
+      "path": "validation/066a4999-a1db-499a-a0bb-06a02db0c865/869a2c8d-38d0-422c-b2aa-1397a537eeee/segment_000",
+      "user": "066a4999-a1db-499a-a0bb-06a02db0c865",
+      "recording": "869a2c8d-38d0-422c-b2aa-1397a537eeee",
+      "samples": 10880,
+      "windows": 10461,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "066a4999-a1db-499a-a0bb-06a02db0c865/a84b5446-2863-4956-82a5-49630407fdfb/segment_000",
+      "path": "validation/066a4999-a1db-499a-a0bb-06a02db0c865/a84b5446-2863-4956-82a5-49630407fdfb/segment_000",
+      "user": "066a4999-a1db-499a-a0bb-06a02db0c865",
+      "recording": "a84b5446-2863-4956-82a5-49630407fdfb",
+      "samples": 16677,
+      "windows": 16258,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "066a4999-a1db-499a-a0bb-06a02db0c865/ed837ec3-726a-43a8-8c2b-9a2e902b1008/segment_000",
+      "path": "validation/066a4999-a1db-499a-a0bb-06a02db0c865/ed837ec3-726a-43a8-8c2b-9a2e902b1008/segment_000",
+      "user": "066a4999-a1db-499a-a0bb-06a02db0c865",
+      "recording": "ed837ec3-726a-43a8-8c2b-9a2e902b1008",
+      "samples": 21326,
+      "windows": 20907,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "066a4999-a1db-499a-a0bb-06a02db0c865/ed837ec3-726a-43a8-8c2b-9a2e902b1008/segment_001",
+      "path": "validation/066a4999-a1db-499a-a0bb-06a02db0c865/ed837ec3-726a-43a8-8c2b-9a2e902b1008/segment_001",
+      "user": "066a4999-a1db-499a-a0bb-06a02db0c865",
+      "recording": "ed837ec3-726a-43a8-8c2b-9a2e902b1008",
+      "samples": 8885,
+      "windows": 8466,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "066a4999-a1db-499a-a0bb-06a02db0c865/ed837ec3-726a-43a8-8c2b-9a2e902b1008/segment_002",
+      "path": "validation/066a4999-a1db-499a-a0bb-06a02db0c865/ed837ec3-726a-43a8-8c2b-9a2e902b1008/segment_002",
+      "user": "066a4999-a1db-499a-a0bb-06a02db0c865",
+      "recording": "ed837ec3-726a-43a8-8c2b-9a2e902b1008",
+      "samples": 1564,
+      "windows": 1145,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0db40ad8-b39a-486d-93da-8edc4de1ef96/7e3b533a-7703-4847-a2e0-edff94f92d53/segment_000",
+      "path": "validation/0db40ad8-b39a-486d-93da-8edc4de1ef96/7e3b533a-7703-4847-a2e0-edff94f92d53/segment_000",
+      "user": "0db40ad8-b39a-486d-93da-8edc4de1ef96",
+      "recording": "7e3b533a-7703-4847-a2e0-edff94f92d53",
+      "samples": 21243,
+      "windows": 20824,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0db40ad8-b39a-486d-93da-8edc4de1ef96/8a5a9efb-dbad-4fc0-902a-90afe8aaa13e/segment_000",
+      "path": "validation/0db40ad8-b39a-486d-93da-8edc4de1ef96/8a5a9efb-dbad-4fc0-902a-90afe8aaa13e/segment_000",
+      "user": "0db40ad8-b39a-486d-93da-8edc4de1ef96",
+      "recording": "8a5a9efb-dbad-4fc0-902a-90afe8aaa13e",
+      "samples": 16447,
+      "windows": 16028,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0db40ad8-b39a-486d-93da-8edc4de1ef96/b360435e-cfbe-483b-896f-d4d6e50fcfa1/segment_000",
+      "path": "validation/0db40ad8-b39a-486d-93da-8edc4de1ef96/b360435e-cfbe-483b-896f-d4d6e50fcfa1/segment_000",
+      "user": "0db40ad8-b39a-486d-93da-8edc4de1ef96",
+      "recording": "b360435e-cfbe-483b-896f-d4d6e50fcfa1",
+      "samples": 16955,
+      "windows": 16536,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0db40ad8-b39a-486d-93da-8edc4de1ef96/c78e1379-bb7c-48d7-9e70-7374b13126d1/segment_000",
+      "path": "validation/0db40ad8-b39a-486d-93da-8edc4de1ef96/c78e1379-bb7c-48d7-9e70-7374b13126d1/segment_000",
+      "user": "0db40ad8-b39a-486d-93da-8edc4de1ef96",
+      "recording": "c78e1379-bb7c-48d7-9e70-7374b13126d1",
+      "samples": 18229,
+      "windows": 17810,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0db40ad8-b39a-486d-93da-8edc4de1ef96/dfb69acb-c3be-44a2-b5a2-1983defee057/segment_000",
+      "path": "validation/0db40ad8-b39a-486d-93da-8edc4de1ef96/dfb69acb-c3be-44a2-b5a2-1983defee057/segment_000",
+      "user": "0db40ad8-b39a-486d-93da-8edc4de1ef96",
+      "recording": "dfb69acb-c3be-44a2-b5a2-1983defee057",
+      "samples": 20166,
+      "windows": 19747,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0f6eb82c-4ee1-4a82-a4d0-0bffc6f418fd/67fe1d76-ae61-4d86-b18b-2069e108fd4e/segment_000",
+      "path": "validation/0f6eb82c-4ee1-4a82-a4d0-0bffc6f418fd/67fe1d76-ae61-4d86-b18b-2069e108fd4e/segment_000",
+      "user": "0f6eb82c-4ee1-4a82-a4d0-0bffc6f418fd",
+      "recording": "67fe1d76-ae61-4d86-b18b-2069e108fd4e",
+      "samples": 9340,
+      "windows": 8921,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba/12c11ffc-62a7-4cb0-b1c1-c9944acff831/segment_000",
+      "path": "validation/0fee2050-9be4-4b85-9a9c-8e207f3fbcba/12c11ffc-62a7-4cb0-b1c1-c9944acff831/segment_000",
+      "user": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba",
+      "recording": "12c11ffc-62a7-4cb0-b1c1-c9944acff831",
+      "samples": 2079,
+      "windows": 1660,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba/16da50cf-61cd-4f43-b45b-e54af0d8f89a/segment_000",
+      "path": "validation/0fee2050-9be4-4b85-9a9c-8e207f3fbcba/16da50cf-61cd-4f43-b45b-e54af0d8f89a/segment_000",
+      "user": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba",
+      "recording": "16da50cf-61cd-4f43-b45b-e54af0d8f89a",
+      "samples": 8396,
+      "windows": 7977,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba/27b26986-8f79-4ab9-85d3-f732503da392/segment_000",
+      "path": "validation/0fee2050-9be4-4b85-9a9c-8e207f3fbcba/27b26986-8f79-4ab9-85d3-f732503da392/segment_000",
+      "user": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba",
+      "recording": "27b26986-8f79-4ab9-85d3-f732503da392",
+      "samples": 15157,
+      "windows": 14738,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba/72873c00-99c3-46d8-b1e5-935c48a0512d/segment_000",
+      "path": "validation/0fee2050-9be4-4b85-9a9c-8e207f3fbcba/72873c00-99c3-46d8-b1e5-935c48a0512d/segment_000",
+      "user": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba",
+      "recording": "72873c00-99c3-46d8-b1e5-935c48a0512d",
+      "samples": 27534,
+      "windows": 27115,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba/8669a5de-46cb-4b8f-9d91-0a6102a91e58/segment_000",
+      "path": "validation/0fee2050-9be4-4b85-9a9c-8e207f3fbcba/8669a5de-46cb-4b8f-9d91-0a6102a91e58/segment_000",
+      "user": "0fee2050-9be4-4b85-9a9c-8e207f3fbcba",
+      "recording": "8669a5de-46cb-4b8f-9d91-0a6102a91e58",
+      "samples": 6851,
+      "windows": 6432,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "108c4a3e-b452-4061-bede-a43479bd3e06/523f3e67-d0a5-4463-9a89-0be93bd3dc36/segment_000",
+      "path": "validation/108c4a3e-b452-4061-bede-a43479bd3e06/523f3e67-d0a5-4463-9a89-0be93bd3dc36/segment_000",
+      "user": "108c4a3e-b452-4061-bede-a43479bd3e06",
+      "recording": "523f3e67-d0a5-4463-9a89-0be93bd3dc36",
+      "samples": 2480,
+      "windows": 2061,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "108c4a3e-b452-4061-bede-a43479bd3e06/7cf6c6a6-13c2-4663-9f34-a8071e987ea7/segment_000",
+      "path": "validation/108c4a3e-b452-4061-bede-a43479bd3e06/7cf6c6a6-13c2-4663-9f34-a8071e987ea7/segment_000",
+      "user": "108c4a3e-b452-4061-bede-a43479bd3e06",
+      "recording": "7cf6c6a6-13c2-4663-9f34-a8071e987ea7",
+      "samples": 8606,
+      "windows": 8187,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "108c4a3e-b452-4061-bede-a43479bd3e06/af240767-7f63-45eb-9e07-8d639c87b790/segment_000",
+      "path": "validation/108c4a3e-b452-4061-bede-a43479bd3e06/af240767-7f63-45eb-9e07-8d639c87b790/segment_000",
+      "user": "108c4a3e-b452-4061-bede-a43479bd3e06",
+      "recording": "af240767-7f63-45eb-9e07-8d639c87b790",
+      "samples": 2479,
+      "windows": 2060,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "170a2955-b122-49d5-9562-466e59c803b9/2699ade5-ac16-4edd-b2fc-0d2965e1b71e/segment_000",
+      "path": "validation/170a2955-b122-49d5-9562-466e59c803b9/2699ade5-ac16-4edd-b2fc-0d2965e1b71e/segment_000",
+      "user": "170a2955-b122-49d5-9562-466e59c803b9",
+      "recording": "2699ade5-ac16-4edd-b2fc-0d2965e1b71e",
+      "samples": 1078,
+      "windows": 659,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "1aa1035b-41c2-45c6-9530-1e7ad76e65e3/2f43f480-0a34-4ba7-b27f-0c49b46d8701/segment_000",
+      "path": "validation/1aa1035b-41c2-45c6-9530-1e7ad76e65e3/2f43f480-0a34-4ba7-b27f-0c49b46d8701/segment_000",
+      "user": "1aa1035b-41c2-45c6-9530-1e7ad76e65e3",
+      "recording": "2f43f480-0a34-4ba7-b27f-0c49b46d8701",
+      "samples": 4162,
+      "windows": 3743,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "1aa1035b-41c2-45c6-9530-1e7ad76e65e3/c94064f7-f2a7-4935-ab99-275d71945b18/segment_000",
+      "path": "validation/1aa1035b-41c2-45c6-9530-1e7ad76e65e3/c94064f7-f2a7-4935-ab99-275d71945b18/segment_000",
+      "user": "1aa1035b-41c2-45c6-9530-1e7ad76e65e3",
+      "recording": "c94064f7-f2a7-4935-ab99-275d71945b18",
+      "samples": 1652,
+      "windows": 1233,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8/202d379c-1e92-48d4-817f-2d9eaec63cac/segment_000",
+      "path": "validation/1df2899d-6a4c-4b0c-9c12-99b79593f6d8/202d379c-1e92-48d4-817f-2d9eaec63cac/segment_000",
+      "user": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8",
+      "recording": "202d379c-1e92-48d4-817f-2d9eaec63cac",
+      "samples": 17423,
+      "windows": 17004,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8/3e83b1da-3592-47db-8666-289d7ba1504b/segment_000",
+      "path": "validation/1df2899d-6a4c-4b0c-9c12-99b79593f6d8/3e83b1da-3592-47db-8666-289d7ba1504b/segment_000",
+      "user": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8",
+      "recording": "3e83b1da-3592-47db-8666-289d7ba1504b",
+      "samples": 15551,
+      "windows": 15132,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8/60dfb602-5d67-4470-8001-fd9ef6d033a6/segment_000",
+      "path": "validation/1df2899d-6a4c-4b0c-9c12-99b79593f6d8/60dfb602-5d67-4470-8001-fd9ef6d033a6/segment_000",
+      "user": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8",
+      "recording": "60dfb602-5d67-4470-8001-fd9ef6d033a6",
+      "samples": 18892,
+      "windows": 18473,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8/7f5ea6df-86f7-41a4-a74f-74e75e25c15a/segment_000",
+      "path": "validation/1df2899d-6a4c-4b0c-9c12-99b79593f6d8/7f5ea6df-86f7-41a4-a74f-74e75e25c15a/segment_000",
+      "user": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8",
+      "recording": "7f5ea6df-86f7-41a4-a74f-74e75e25c15a",
+      "samples": 20474,
+      "windows": 20055,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8/f2ee3fb4-9fec-4f25-b7bf-e061d9b8e08e/segment_000",
+      "path": "validation/1df2899d-6a4c-4b0c-9c12-99b79593f6d8/f2ee3fb4-9fec-4f25-b7bf-e061d9b8e08e/segment_000",
+      "user": "1df2899d-6a4c-4b0c-9c12-99b79593f6d8",
+      "recording": "f2ee3fb4-9fec-4f25-b7bf-e061d9b8e08e",
+      "samples": 23744,
+      "windows": 23325,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "201c75f2-cdca-414f-8d0d-39501ec3cdcd/40957d15-752d-4c15-9ce4-fefbe4183041/segment_000",
+      "path": "validation/201c75f2-cdca-414f-8d0d-39501ec3cdcd/40957d15-752d-4c15-9ce4-fefbe4183041/segment_000",
+      "user": "201c75f2-cdca-414f-8d0d-39501ec3cdcd",
+      "recording": "40957d15-752d-4c15-9ce4-fefbe4183041",
+      "samples": 12045,
+      "windows": 11626,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "201c75f2-cdca-414f-8d0d-39501ec3cdcd/40957d15-752d-4c15-9ce4-fefbe4183041/segment_001",
+      "path": "validation/201c75f2-cdca-414f-8d0d-39501ec3cdcd/40957d15-752d-4c15-9ce4-fefbe4183041/segment_001",
+      "user": "201c75f2-cdca-414f-8d0d-39501ec3cdcd",
+      "recording": "40957d15-752d-4c15-9ce4-fefbe4183041",
+      "samples": 8884,
+      "windows": 8465,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "201c75f2-cdca-414f-8d0d-39501ec3cdcd/40957d15-752d-4c15-9ce4-fefbe4183041/segment_002",
+      "path": "validation/201c75f2-cdca-414f-8d0d-39501ec3cdcd/40957d15-752d-4c15-9ce4-fefbe4183041/segment_002",
+      "user": "201c75f2-cdca-414f-8d0d-39501ec3cdcd",
+      "recording": "40957d15-752d-4c15-9ce4-fefbe4183041",
+      "samples": 1588,
+      "windows": 1169,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "201c75f2-cdca-414f-8d0d-39501ec3cdcd/d869182a-c843-4c88-9d27-424c2b63bdc2/segment_000",
+      "path": "validation/201c75f2-cdca-414f-8d0d-39501ec3cdcd/d869182a-c843-4c88-9d27-424c2b63bdc2/segment_000",
+      "user": "201c75f2-cdca-414f-8d0d-39501ec3cdcd",
+      "recording": "d869182a-c843-4c88-9d27-424c2b63bdc2",
+      "samples": 55861,
+      "windows": 55442,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "20963ec1-88e6-4b3a-953e-71ed00f02524/9fff1482-fdcd-4802-91a0-34e34de99aa5/segment_000",
+      "path": "validation/20963ec1-88e6-4b3a-953e-71ed00f02524/9fff1482-fdcd-4802-91a0-34e34de99aa5/segment_000",
+      "user": "20963ec1-88e6-4b3a-953e-71ed00f02524",
+      "recording": "9fff1482-fdcd-4802-91a0-34e34de99aa5",
+      "samples": 15826,
+      "windows": 15407,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "22027b26-e962-4f45-b9c3-e68aadf692ed/23413f24-6207-40ea-8d0f-ce26afbfdc62/segment_000",
+      "path": "validation/22027b26-e962-4f45-b9c3-e68aadf692ed/23413f24-6207-40ea-8d0f-ce26afbfdc62/segment_000",
+      "user": "22027b26-e962-4f45-b9c3-e68aadf692ed",
+      "recording": "23413f24-6207-40ea-8d0f-ce26afbfdc62",
+      "samples": 13202,
+      "windows": 12783,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "22027b26-e962-4f45-b9c3-e68aadf692ed/c989f909-0421-4144-9235-66dbf7fa2573/segment_000",
+      "path": "validation/22027b26-e962-4f45-b9c3-e68aadf692ed/c989f909-0421-4144-9235-66dbf7fa2573/segment_000",
+      "user": "22027b26-e962-4f45-b9c3-e68aadf692ed",
+      "recording": "c989f909-0421-4144-9235-66dbf7fa2573",
+      "samples": 13201,
+      "windows": 12782,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "23112382-b6b2-4852-a101-56a553616e47/7536f9ea-82bf-453b-abee-c3f19f1c6769/segment_000",
+      "path": "validation/23112382-b6b2-4852-a101-56a553616e47/7536f9ea-82bf-453b-abee-c3f19f1c6769/segment_000",
+      "user": "23112382-b6b2-4852-a101-56a553616e47",
+      "recording": "7536f9ea-82bf-453b-abee-c3f19f1c6769",
+      "samples": 1389,
+      "windows": 970,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "23112382-b6b2-4852-a101-56a553616e47/a3df9a70-0764-41b9-885d-7bb2bac9565e/segment_000",
+      "path": "validation/23112382-b6b2-4852-a101-56a553616e47/a3df9a70-0764-41b9-885d-7bb2bac9565e/segment_000",
+      "user": "23112382-b6b2-4852-a101-56a553616e47",
+      "recording": "a3df9a70-0764-41b9-885d-7bb2bac9565e",
+      "samples": 27595,
+      "windows": 27176,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "24e70a0f-f349-4e66-9c1b-a5a930569387/07409000-17e6-4219-8cc9-4d0d3c118f42/segment_000",
+      "path": "validation/24e70a0f-f349-4e66-9c1b-a5a930569387/07409000-17e6-4219-8cc9-4d0d3c118f42/segment_000",
+      "user": "24e70a0f-f349-4e66-9c1b-a5a930569387",
+      "recording": "07409000-17e6-4219-8cc9-4d0d3c118f42",
+      "samples": 21123,
+      "windows": 20704,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "24e70a0f-f349-4e66-9c1b-a5a930569387/324445ba-e322-483c-bcef-7b5181d7260f/segment_000",
+      "path": "validation/24e70a0f-f349-4e66-9c1b-a5a930569387/324445ba-e322-483c-bcef-7b5181d7260f/segment_000",
+      "user": "24e70a0f-f349-4e66-9c1b-a5a930569387",
+      "recording": "324445ba-e322-483c-bcef-7b5181d7260f",
+      "samples": 23022,
+      "windows": 22603,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "24e70a0f-f349-4e66-9c1b-a5a930569387/afa2f2ab-cf0c-4443-b14c-6df7b2062879/segment_000",
+      "path": "validation/24e70a0f-f349-4e66-9c1b-a5a930569387/afa2f2ab-cf0c-4443-b14c-6df7b2062879/segment_000",
+      "user": "24e70a0f-f349-4e66-9c1b-a5a930569387",
+      "recording": "afa2f2ab-cf0c-4443-b14c-6df7b2062879",
+      "samples": 20211,
+      "windows": 19792,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "27e09a34-44ca-4f00-a3b5-3444e76788c0/1ac8892e-48d8-42c4-9376-9a2b650911e1/segment_000",
+      "path": "validation/27e09a34-44ca-4f00-a3b5-3444e76788c0/1ac8892e-48d8-42c4-9376-9a2b650911e1/segment_000",
+      "user": "27e09a34-44ca-4f00-a3b5-3444e76788c0",
+      "recording": "1ac8892e-48d8-42c4-9376-9a2b650911e1",
+      "samples": 16731,
+      "windows": 16312,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "27e09a34-44ca-4f00-a3b5-3444e76788c0/39914024-9aa9-41bd-af90-31e03c58f2ac/segment_000",
+      "path": "validation/27e09a34-44ca-4f00-a3b5-3444e76788c0/39914024-9aa9-41bd-af90-31e03c58f2ac/segment_000",
+      "user": "27e09a34-44ca-4f00-a3b5-3444e76788c0",
+      "recording": "39914024-9aa9-41bd-af90-31e03c58f2ac",
+      "samples": 6674,
+      "windows": 6255,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "27e09a34-44ca-4f00-a3b5-3444e76788c0/580d5357-b8c5-4b56-8c57-69bffd3b25fc/segment_000",
+      "path": "validation/27e09a34-44ca-4f00-a3b5-3444e76788c0/580d5357-b8c5-4b56-8c57-69bffd3b25fc/segment_000",
+      "user": "27e09a34-44ca-4f00-a3b5-3444e76788c0",
+      "recording": "580d5357-b8c5-4b56-8c57-69bffd3b25fc",
+      "samples": 17329,
+      "windows": 16910,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "27e09a34-44ca-4f00-a3b5-3444e76788c0/5e1c21cf-66c3-4755-b24c-e1ba00023edc/segment_000",
+      "path": "validation/27e09a34-44ca-4f00-a3b5-3444e76788c0/5e1c21cf-66c3-4755-b24c-e1ba00023edc/segment_000",
+      "user": "27e09a34-44ca-4f00-a3b5-3444e76788c0",
+      "recording": "5e1c21cf-66c3-4755-b24c-e1ba00023edc",
+      "samples": 3452,
+      "windows": 3033,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "27e09a34-44ca-4f00-a3b5-3444e76788c0/b7e0aa23-c30b-4f4d-87e2-e288d70c4122/segment_000",
+      "path": "validation/27e09a34-44ca-4f00-a3b5-3444e76788c0/b7e0aa23-c30b-4f4d-87e2-e288d70c4122/segment_000",
+      "user": "27e09a34-44ca-4f00-a3b5-3444e76788c0",
+      "recording": "b7e0aa23-c30b-4f4d-87e2-e288d70c4122",
+      "samples": 16750,
+      "windows": 16331,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "28933bdd-c0f0-4828-8cb8-6695c1cedec0/2eebe669-ec65-4764-b253-862c35f532db/segment_000",
+      "path": "validation/28933bdd-c0f0-4828-8cb8-6695c1cedec0/2eebe669-ec65-4764-b253-862c35f532db/segment_000",
+      "user": "28933bdd-c0f0-4828-8cb8-6695c1cedec0",
+      "recording": "2eebe669-ec65-4764-b253-862c35f532db",
+      "samples": 11537,
+      "windows": 11118,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2977023c-246d-4feb-84f0-f5074c0cc35a/226129c4-8c4d-473c-85dc-cfd04bc33da0/segment_000",
+      "path": "validation/2977023c-246d-4feb-84f0-f5074c0cc35a/226129c4-8c4d-473c-85dc-cfd04bc33da0/segment_000",
+      "user": "2977023c-246d-4feb-84f0-f5074c0cc35a",
+      "recording": "226129c4-8c4d-473c-85dc-cfd04bc33da0",
+      "samples": 18330,
+      "windows": 17911,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2977023c-246d-4feb-84f0-f5074c0cc35a/5a733132-4797-40cb-9e19-69ad32fac780/segment_000",
+      "path": "validation/2977023c-246d-4feb-84f0-f5074c0cc35a/5a733132-4797-40cb-9e19-69ad32fac780/segment_000",
+      "user": "2977023c-246d-4feb-84f0-f5074c0cc35a",
+      "recording": "5a733132-4797-40cb-9e19-69ad32fac780",
+      "samples": 16867,
+      "windows": 16448,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2977023c-246d-4feb-84f0-f5074c0cc35a/a69a24e9-06ba-45ff-9764-071951325a4b/segment_000",
+      "path": "validation/2977023c-246d-4feb-84f0-f5074c0cc35a/a69a24e9-06ba-45ff-9764-071951325a4b/segment_000",
+      "user": "2977023c-246d-4feb-84f0-f5074c0cc35a",
+      "recording": "a69a24e9-06ba-45ff-9764-071951325a4b",
+      "samples": 26241,
+      "windows": 25822,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2a4b171c-217c-4efd-9663-dbb554488831/24528d8f-f04e-42da-a58d-a017d48c9b60/segment_000",
+      "path": "validation/2a4b171c-217c-4efd-9663-dbb554488831/24528d8f-f04e-42da-a58d-a017d48c9b60/segment_000",
+      "user": "2a4b171c-217c-4efd-9663-dbb554488831",
+      "recording": "24528d8f-f04e-42da-a58d-a017d48c9b60",
+      "samples": 15826,
+      "windows": 15407,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2a4b171c-217c-4efd-9663-dbb554488831/3756715e-93d5-42b7-ba3c-3542771fa73c/segment_000",
+      "path": "validation/2a4b171c-217c-4efd-9663-dbb554488831/3756715e-93d5-42b7-ba3c-3542771fa73c/segment_000",
+      "user": "2a4b171c-217c-4efd-9663-dbb554488831",
+      "recording": "3756715e-93d5-42b7-ba3c-3542771fa73c",
+      "samples": 7421,
+      "windows": 7002,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2a4b171c-217c-4efd-9663-dbb554488831/49abbe8a-c14d-40da-a60b-3b337deb8177/segment_000",
+      "path": "validation/2a4b171c-217c-4efd-9663-dbb554488831/49abbe8a-c14d-40da-a60b-3b337deb8177/segment_000",
+      "user": "2a4b171c-217c-4efd-9663-dbb554488831",
+      "recording": "49abbe8a-c14d-40da-a60b-3b337deb8177",
+      "samples": 20185,
+      "windows": 19766,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2a4b171c-217c-4efd-9663-dbb554488831/7f57a0a4-d221-4914-b205-cdd13c833d39/segment_000",
+      "path": "validation/2a4b171c-217c-4efd-9663-dbb554488831/7f57a0a4-d221-4914-b205-cdd13c833d39/segment_000",
+      "user": "2a4b171c-217c-4efd-9663-dbb554488831",
+      "recording": "7f57a0a4-d221-4914-b205-cdd13c833d39",
+      "samples": 23287,
+      "windows": 22868,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2a4b171c-217c-4efd-9663-dbb554488831/a5a0010d-cbd7-4fff-b8d3-ce7aafd1eef1/segment_000",
+      "path": "validation/2a4b171c-217c-4efd-9663-dbb554488831/a5a0010d-cbd7-4fff-b8d3-ce7aafd1eef1/segment_000",
+      "user": "2a4b171c-217c-4efd-9663-dbb554488831",
+      "recording": "a5a0010d-cbd7-4fff-b8d3-ce7aafd1eef1",
+      "samples": 20892,
+      "windows": 20473,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "2e879189-4dde-4019-8fdb-744e58512a46/7e0bcf4d-8564-49b9-b9b0-5a6a95db2282/segment_000",
+      "path": "validation/2e879189-4dde-4019-8fdb-744e58512a46/7e0bcf4d-8564-49b9-b9b0-5a6a95db2282/segment_000",
+      "user": "2e879189-4dde-4019-8fdb-744e58512a46",
+      "recording": "7e0bcf4d-8564-49b9-b9b0-5a6a95db2282",
+      "samples": 17030,
+      "windows": 16611,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "307a7009-59e1-43b7-bc79-343c536dd9ac/3566981a-dd37-4b55-aff6-72e905cd66b6/segment_000",
+      "path": "validation/307a7009-59e1-43b7-bc79-343c536dd9ac/3566981a-dd37-4b55-aff6-72e905cd66b6/segment_000",
+      "user": "307a7009-59e1-43b7-bc79-343c536dd9ac",
+      "recording": "3566981a-dd37-4b55-aff6-72e905cd66b6",
+      "samples": 17431,
+      "windows": 17012,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "307a7009-59e1-43b7-bc79-343c536dd9ac/440525d9-2266-4e94-afa2-f2d038251708/segment_000",
+      "path": "validation/307a7009-59e1-43b7-bc79-343c536dd9ac/440525d9-2266-4e94-afa2-f2d038251708/segment_000",
+      "user": "307a7009-59e1-43b7-bc79-343c536dd9ac",
+      "recording": "440525d9-2266-4e94-afa2-f2d038251708",
+      "samples": 21282,
+      "windows": 20863,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "307a7009-59e1-43b7-bc79-343c536dd9ac/a7145202-3c75-40bc-86b3-de39f7c637d0/segment_000",
+      "path": "validation/307a7009-59e1-43b7-bc79-343c536dd9ac/a7145202-3c75-40bc-86b3-de39f7c637d0/segment_000",
+      "user": "307a7009-59e1-43b7-bc79-343c536dd9ac",
+      "recording": "a7145202-3c75-40bc-86b3-de39f7c637d0",
+      "samples": 19592,
+      "windows": 19173,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "307a7009-59e1-43b7-bc79-343c536dd9ac/c65946a6-6e36-46ca-92e2-0934c2afc4bb/segment_000",
+      "path": "validation/307a7009-59e1-43b7-bc79-343c536dd9ac/c65946a6-6e36-46ca-92e2-0934c2afc4bb/segment_000",
+      "user": "307a7009-59e1-43b7-bc79-343c536dd9ac",
+      "recording": "c65946a6-6e36-46ca-92e2-0934c2afc4bb",
+      "samples": 17430,
+      "windows": 17011,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "307a7009-59e1-43b7-bc79-343c536dd9ac/d2c2c3d6-7f01-49eb-8ea2-040789490aac/segment_000",
+      "path": "validation/307a7009-59e1-43b7-bc79-343c536dd9ac/d2c2c3d6-7f01-49eb-8ea2-040789490aac/segment_000",
+      "user": "307a7009-59e1-43b7-bc79-343c536dd9ac",
+      "recording": "d2c2c3d6-7f01-49eb-8ea2-040789490aac",
+      "samples": 13046,
+      "windows": 12627,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "30bfbb58-6b42-42c1-a931-2c4d3075c736/61fb2452-65d6-4140-8e26-ce13d193acdc/segment_000",
+      "path": "validation/30bfbb58-6b42-42c1-a931-2c4d3075c736/61fb2452-65d6-4140-8e26-ce13d193acdc/segment_000",
+      "user": "30bfbb58-6b42-42c1-a931-2c4d3075c736",
+      "recording": "61fb2452-65d6-4140-8e26-ce13d193acdc",
+      "samples": 13476,
+      "windows": 13057,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "30bfbb58-6b42-42c1-a931-2c4d3075c736/afb2203e-fbb4-4c37-806b-ac048c87ab25/segment_000",
+      "path": "validation/30bfbb58-6b42-42c1-a931-2c4d3075c736/afb2203e-fbb4-4c37-806b-ac048c87ab25/segment_000",
+      "user": "30bfbb58-6b42-42c1-a931-2c4d3075c736",
+      "recording": "afb2203e-fbb4-4c37-806b-ac048c87ab25",
+      "samples": 19364,
+      "windows": 18945,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "30bfbb58-6b42-42c1-a931-2c4d3075c736/c3252a9e-b404-4407-90fa-3616fd283c78/segment_000",
+      "path": "validation/30bfbb58-6b42-42c1-a931-2c4d3075c736/c3252a9e-b404-4407-90fa-3616fd283c78/segment_000",
+      "user": "30bfbb58-6b42-42c1-a931-2c4d3075c736",
+      "recording": "c3252a9e-b404-4407-90fa-3616fd283c78",
+      "samples": 21724,
+      "windows": 21305,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "30bfbb58-6b42-42c1-a931-2c4d3075c736/c6c3ec0f-35b8-49ad-a9a4-0634b5197a8e/segment_000",
+      "path": "validation/30bfbb58-6b42-42c1-a931-2c4d3075c736/c6c3ec0f-35b8-49ad-a9a4-0634b5197a8e/segment_000",
+      "user": "30bfbb58-6b42-42c1-a931-2c4d3075c736",
+      "recording": "c6c3ec0f-35b8-49ad-a9a4-0634b5197a8e",
+      "samples": 25923,
+      "windows": 25504,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "30bfbb58-6b42-42c1-a931-2c4d3075c736/f142ea9e-9664-4191-91e1-3022030640f6/segment_000",
+      "path": "validation/30bfbb58-6b42-42c1-a931-2c4d3075c736/f142ea9e-9664-4191-91e1-3022030640f6/segment_000",
+      "user": "30bfbb58-6b42-42c1-a931-2c4d3075c736",
+      "recording": "f142ea9e-9664-4191-91e1-3022030640f6",
+      "samples": 23336,
+      "windows": 22917,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "35c433d4-c3ac-40af-82c7-680c378f494f/3e64be53-a40b-4c00-9548-d716157da175/segment_000",
+      "path": "validation/35c433d4-c3ac-40af-82c7-680c378f494f/3e64be53-a40b-4c00-9548-d716157da175/segment_000",
+      "user": "35c433d4-c3ac-40af-82c7-680c378f494f",
+      "recording": "3e64be53-a40b-4c00-9548-d716157da175",
+      "samples": 23879,
+      "windows": 23460,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "35c433d4-c3ac-40af-82c7-680c378f494f/5d3973fd-84b1-4860-a088-8bd7bcd4c7ae/segment_000",
+      "path": "validation/35c433d4-c3ac-40af-82c7-680c378f494f/5d3973fd-84b1-4860-a088-8bd7bcd4c7ae/segment_000",
+      "user": "35c433d4-c3ac-40af-82c7-680c378f494f",
+      "recording": "5d3973fd-84b1-4860-a088-8bd7bcd4c7ae",
+      "samples": 20556,
+      "windows": 20137,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "35c433d4-c3ac-40af-82c7-680c378f494f/80d0caab-f120-4af4-a4f5-66ca20addab1/segment_000",
+      "path": "validation/35c433d4-c3ac-40af-82c7-680c378f494f/80d0caab-f120-4af4-a4f5-66ca20addab1/segment_000",
+      "user": "35c433d4-c3ac-40af-82c7-680c378f494f",
+      "recording": "80d0caab-f120-4af4-a4f5-66ca20addab1",
+      "samples": 9304,
+      "windows": 8885,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "35c433d4-c3ac-40af-82c7-680c378f494f/9643eed9-8e1f-470b-bb8a-aa812aeb931f/segment_000",
+      "path": "validation/35c433d4-c3ac-40af-82c7-680c378f494f/9643eed9-8e1f-470b-bb8a-aa812aeb931f/segment_000",
+      "user": "35c433d4-c3ac-40af-82c7-680c378f494f",
+      "recording": "9643eed9-8e1f-470b-bb8a-aa812aeb931f",
+      "samples": 23376,
+      "windows": 22957,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "35c433d4-c3ac-40af-82c7-680c378f494f/ea5066d5-4d29-4f3f-abe9-0c9d0499fe41/segment_000",
+      "path": "validation/35c433d4-c3ac-40af-82c7-680c378f494f/ea5066d5-4d29-4f3f-abe9-0c9d0499fe41/segment_000",
+      "user": "35c433d4-c3ac-40af-82c7-680c378f494f",
+      "recording": "ea5066d5-4d29-4f3f-abe9-0c9d0499fe41",
+      "samples": 4871,
+      "windows": 4452,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "35c433d4-c3ac-40af-82c7-680c378f494f/ea5066d5-4d29-4f3f-abe9-0c9d0499fe41/segment_001",
+      "path": "validation/35c433d4-c3ac-40af-82c7-680c378f494f/ea5066d5-4d29-4f3f-abe9-0c9d0499fe41/segment_001",
+      "user": "35c433d4-c3ac-40af-82c7-680c378f494f",
+      "recording": "ea5066d5-4d29-4f3f-abe9-0c9d0499fe41",
+      "samples": 16120,
+      "windows": 15701,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "3ac20a29-45fd-40e1-b99d-829d2a3c265a/371ec31e-6225-449f-8048-c065200d30f6/segment_000",
+      "path": "validation/3ac20a29-45fd-40e1-b99d-829d2a3c265a/371ec31e-6225-449f-8048-c065200d30f6/segment_000",
+      "user": "3ac20a29-45fd-40e1-b99d-829d2a3c265a",
+      "recording": "371ec31e-6225-449f-8048-c065200d30f6",
+      "samples": 8736,
+      "windows": 8317,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "3ac20a29-45fd-40e1-b99d-829d2a3c265a/883774af-d759-4b94-92f2-70f4841b9a1a/segment_000",
+      "path": "validation/3ac20a29-45fd-40e1-b99d-829d2a3c265a/883774af-d759-4b94-92f2-70f4841b9a1a/segment_000",
+      "user": "3ac20a29-45fd-40e1-b99d-829d2a3c265a",
+      "recording": "883774af-d759-4b94-92f2-70f4841b9a1a",
+      "samples": 13125,
+      "windows": 12706,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "3ac20a29-45fd-40e1-b99d-829d2a3c265a/8adfc572-2f1a-4355-9ab7-28a15b89a325/segment_000",
+      "path": "validation/3ac20a29-45fd-40e1-b99d-829d2a3c265a/8adfc572-2f1a-4355-9ab7-28a15b89a325/segment_000",
+      "user": "3ac20a29-45fd-40e1-b99d-829d2a3c265a",
+      "recording": "8adfc572-2f1a-4355-9ab7-28a15b89a325",
+      "samples": 14635,
+      "windows": 14216,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "3ac20a29-45fd-40e1-b99d-829d2a3c265a/d09da463-2f6e-41d7-bb02-aa70f2b0b49b/segment_000",
+      "path": "validation/3ac20a29-45fd-40e1-b99d-829d2a3c265a/d09da463-2f6e-41d7-bb02-aa70f2b0b49b/segment_000",
+      "user": "3ac20a29-45fd-40e1-b99d-829d2a3c265a",
+      "recording": "d09da463-2f6e-41d7-bb02-aa70f2b0b49b",
+      "samples": 22773,
+      "windows": 22354,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "3ac20a29-45fd-40e1-b99d-829d2a3c265a/d743ba15-cd79-4d4b-8969-b3c9b5467487/segment_000",
+      "path": "validation/3ac20a29-45fd-40e1-b99d-829d2a3c265a/d743ba15-cd79-4d4b-8969-b3c9b5467487/segment_000",
+      "user": "3ac20a29-45fd-40e1-b99d-829d2a3c265a",
+      "recording": "d743ba15-cd79-4d4b-8969-b3c9b5467487",
+      "samples": 8736,
+      "windows": 8317,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "3e8c2b74-dc48-4a6e-bd57-e99602bddeeb/42aa4ebe-4bec-46f6-9291-94693356942f/segment_000",
+      "path": "validation/3e8c2b74-dc48-4a6e-bd57-e99602bddeeb/42aa4ebe-4bec-46f6-9291-94693356942f/segment_000",
+      "user": "3e8c2b74-dc48-4a6e-bd57-e99602bddeeb",
+      "recording": "42aa4ebe-4bec-46f6-9291-94693356942f",
+      "samples": 24053,
+      "windows": 23634,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "3ef3494e-8dcc-469d-941a-a19553b51fc8/a0ed4913-3482-43b4-93ba-51f492f0e336/segment_000",
+      "path": "validation/3ef3494e-8dcc-469d-941a-a19553b51fc8/a0ed4913-3482-43b4-93ba-51f492f0e336/segment_000",
+      "user": "3ef3494e-8dcc-469d-941a-a19553b51fc8",
+      "recording": "a0ed4913-3482-43b4-93ba-51f492f0e336",
+      "samples": 12152,
+      "windows": 11733,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "40af88bb-637b-437b-8dbf-777ca8a25276/faf25b15-6f69-459e-93a0-9dda462b2c0e/segment_000",
+      "path": "validation/40af88bb-637b-437b-8dbf-777ca8a25276/faf25b15-6f69-459e-93a0-9dda462b2c0e/segment_000",
+      "user": "40af88bb-637b-437b-8dbf-777ca8a25276",
+      "recording": "faf25b15-6f69-459e-93a0-9dda462b2c0e",
+      "samples": 19993,
+      "windows": 19574,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "41612f57-1c0a-4c10-a72f-163da7857139/6e0f66e5-f679-4848-8de6-c9ee62f2a44c/segment_000",
+      "path": "validation/41612f57-1c0a-4c10-a72f-163da7857139/6e0f66e5-f679-4848-8de6-c9ee62f2a44c/segment_000",
+      "user": "41612f57-1c0a-4c10-a72f-163da7857139",
+      "recording": "6e0f66e5-f679-4848-8de6-c9ee62f2a44c",
+      "samples": 20113,
+      "windows": 19694,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "4b681b4c-c8b5-44ab-ae61-6e6c9d5cdb58/6a9830f8-aa10-47b7-84a2-4c7aac5b2d31/segment_000",
+      "path": "validation/4b681b4c-c8b5-44ab-ae61-6e6c9d5cdb58/6a9830f8-aa10-47b7-84a2-4c7aac5b2d31/segment_000",
+      "user": "4b681b4c-c8b5-44ab-ae61-6e6c9d5cdb58",
+      "recording": "6a9830f8-aa10-47b7-84a2-4c7aac5b2d31",
+      "samples": 1851,
+      "windows": 1432,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "4b681b4c-c8b5-44ab-ae61-6e6c9d5cdb58/faeb94cc-6bc2-4e5b-9186-648516e8dc48/segment_000",
+      "path": "validation/4b681b4c-c8b5-44ab-ae61-6e6c9d5cdb58/faeb94cc-6bc2-4e5b-9186-648516e8dc48/segment_000",
+      "user": "4b681b4c-c8b5-44ab-ae61-6e6c9d5cdb58",
+      "recording": "faeb94cc-6bc2-4e5b-9186-648516e8dc48",
+      "samples": 18865,
+      "windows": 18446,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "4f7198bd-e2da-43f2-a568-01fbd02fecff/58c57224-9cd9-446c-b693-f24bc1c3aa4f/segment_000",
+      "path": "validation/4f7198bd-e2da-43f2-a568-01fbd02fecff/58c57224-9cd9-446c-b693-f24bc1c3aa4f/segment_000",
+      "user": "4f7198bd-e2da-43f2-a568-01fbd02fecff",
+      "recording": "58c57224-9cd9-446c-b693-f24bc1c3aa4f",
+      "samples": 1247,
+      "windows": 828,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "527f07e9-1f35-497f-aeac-a7fb23004bf0/3bc0fcfd-e904-4a46-8e90-978bc16579dc/segment_000",
+      "path": "validation/527f07e9-1f35-497f-aeac-a7fb23004bf0/3bc0fcfd-e904-4a46-8e90-978bc16579dc/segment_000",
+      "user": "527f07e9-1f35-497f-aeac-a7fb23004bf0",
+      "recording": "3bc0fcfd-e904-4a46-8e90-978bc16579dc",
+      "samples": 15270,
+      "windows": 14851,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "527f07e9-1f35-497f-aeac-a7fb23004bf0/72a12d04-0840-4eb0-a34d-c9a4d794cdab/segment_000",
+      "path": "validation/527f07e9-1f35-497f-aeac-a7fb23004bf0/72a12d04-0840-4eb0-a34d-c9a4d794cdab/segment_000",
+      "user": "527f07e9-1f35-497f-aeac-a7fb23004bf0",
+      "recording": "72a12d04-0840-4eb0-a34d-c9a4d794cdab",
+      "samples": 25852,
+      "windows": 25433,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "537f4f7e-1433-45aa-b630-d7992db0e0bc/07924449-c403-4564-af1c-a6a4d7f8b9df/segment_000",
+      "path": "validation/537f4f7e-1433-45aa-b630-d7992db0e0bc/07924449-c403-4564-af1c-a6a4d7f8b9df/segment_000",
+      "user": "537f4f7e-1433-45aa-b630-d7992db0e0bc",
+      "recording": "07924449-c403-4564-af1c-a6a4d7f8b9df",
+      "samples": 3100,
+      "windows": 2681,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "537f4f7e-1433-45aa-b630-d7992db0e0bc/df022126-e593-4b0b-8a88-0b30aaf08606/segment_000",
+      "path": "validation/537f4f7e-1433-45aa-b630-d7992db0e0bc/df022126-e593-4b0b-8a88-0b30aaf08606/segment_000",
+      "user": "537f4f7e-1433-45aa-b630-d7992db0e0bc",
+      "recording": "df022126-e593-4b0b-8a88-0b30aaf08606",
+      "samples": 15235,
+      "windows": 14816,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "58549f26-d371-44d5-8d2c-372e877df06e/ab1d424e-bbea-4d63-9137-25a65584bb19/segment_000",
+      "path": "validation/58549f26-d371-44d5-8d2c-372e877df06e/ab1d424e-bbea-4d63-9137-25a65584bb19/segment_000",
+      "user": "58549f26-d371-44d5-8d2c-372e877df06e",
+      "recording": "ab1d424e-bbea-4d63-9137-25a65584bb19",
+      "samples": 22883,
+      "windows": 22464,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "58549f26-d371-44d5-8d2c-372e877df06e/f23a1db1-4cd3-41c6-9656-48840259c4be/segment_000",
+      "path": "validation/58549f26-d371-44d5-8d2c-372e877df06e/f23a1db1-4cd3-41c6-9656-48840259c4be/segment_000",
+      "user": "58549f26-d371-44d5-8d2c-372e877df06e",
+      "recording": "f23a1db1-4cd3-41c6-9656-48840259c4be",
+      "samples": 2481,
+      "windows": 2062,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "5cacfa49-ccbc-49e2-aa62-705b5ef7bbdb/c8f879a7-ebe1-4ab0-ac4d-4e378c4b0365/segment_000",
+      "path": "validation/5cacfa49-ccbc-49e2-aa62-705b5ef7bbdb/c8f879a7-ebe1-4ab0-ac4d-4e378c4b0365/segment_000",
+      "user": "5cacfa49-ccbc-49e2-aa62-705b5ef7bbdb",
+      "recording": "c8f879a7-ebe1-4ab0-ac4d-4e378c4b0365",
+      "samples": 20247,
+      "windows": 19828,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "5e025106-2840-46f0-8d5e-fc0e9afb61b4/99a53ad1-1fda-4ded-8e47-11400e7b1961/segment_000",
+      "path": "validation/5e025106-2840-46f0-8d5e-fc0e9afb61b4/99a53ad1-1fda-4ded-8e47-11400e7b1961/segment_000",
+      "user": "5e025106-2840-46f0-8d5e-fc0e9afb61b4",
+      "recording": "99a53ad1-1fda-4ded-8e47-11400e7b1961",
+      "samples": 11592,
+      "windows": 11173,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "5e4d5b18-cb0c-42fa-bc2b-275f076cdf2c/47d76aea-5b42-42ae-8cd4-e47e79975858/segment_000",
+      "path": "validation/5e4d5b18-cb0c-42fa-bc2b-275f076cdf2c/47d76aea-5b42-42ae-8cd4-e47e79975858/segment_000",
+      "user": "5e4d5b18-cb0c-42fa-bc2b-275f076cdf2c",
+      "recording": "47d76aea-5b42-42ae-8cd4-e47e79975858",
+      "samples": 33687,
+      "windows": 33268,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "5e4d5b18-cb0c-42fa-bc2b-275f076cdf2c/c65743b4-c01a-4b5a-aebc-1e4451c34bbe/segment_000",
+      "path": "validation/5e4d5b18-cb0c-42fa-bc2b-275f076cdf2c/c65743b4-c01a-4b5a-aebc-1e4451c34bbe/segment_000",
+      "user": "5e4d5b18-cb0c-42fa-bc2b-275f076cdf2c",
+      "recording": "c65743b4-c01a-4b5a-aebc-1e4451c34bbe",
+      "samples": 22760,
+      "windows": 22341,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "65220687-30d3-44f9-84e1-2d5205371041/39d90502-fae2-497f-871f-e1ae9b7c37bc/segment_000",
+      "path": "validation/65220687-30d3-44f9-84e1-2d5205371041/39d90502-fae2-497f-871f-e1ae9b7c37bc/segment_000",
+      "user": "65220687-30d3-44f9-84e1-2d5205371041",
+      "recording": "39d90502-fae2-497f-871f-e1ae9b7c37bc",
+      "samples": 24523,
+      "windows": 24104,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "684a4d7c-c93b-414e-9343-b28ba9d6cd38/386929d0-9c87-498c-880c-169bc243cde7/segment_000",
+      "path": "validation/684a4d7c-c93b-414e-9343-b28ba9d6cd38/386929d0-9c87-498c-880c-169bc243cde7/segment_000",
+      "user": "684a4d7c-c93b-414e-9343-b28ba9d6cd38",
+      "recording": "386929d0-9c87-498c-880c-169bc243cde7",
+      "samples": 18120,
+      "windows": 17701,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "684a4d7c-c93b-414e-9343-b28ba9d6cd38/f1d96f3f-d587-49c8-8c81-fe5f0a3ff147/segment_000",
+      "path": "validation/684a4d7c-c93b-414e-9343-b28ba9d6cd38/f1d96f3f-d587-49c8-8c81-fe5f0a3ff147/segment_000",
+      "user": "684a4d7c-c93b-414e-9343-b28ba9d6cd38",
+      "recording": "f1d96f3f-d587-49c8-8c81-fe5f0a3ff147",
+      "samples": 6061,
+      "windows": 5642,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "6cda0eaf-793c-4cbe-84fb-3e157cf75304/0f2296c9-1c07-4a71-a019-771eff564122/segment_000",
+      "path": "validation/6cda0eaf-793c-4cbe-84fb-3e157cf75304/0f2296c9-1c07-4a71-a019-771eff564122/segment_000",
+      "user": "6cda0eaf-793c-4cbe-84fb-3e157cf75304",
+      "recording": "0f2296c9-1c07-4a71-a019-771eff564122",
+      "samples": 14492,
+      "windows": 14073,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "6e2a8615-0b56-4d1d-ae61-04ed12bb3ee2/f13e240c-91da-4ffe-8330-90ad98e0df4d/segment_000",
+      "path": "validation/6e2a8615-0b56-4d1d-ae61-04ed12bb3ee2/f13e240c-91da-4ffe-8330-90ad98e0df4d/segment_000",
+      "user": "6e2a8615-0b56-4d1d-ae61-04ed12bb3ee2",
+      "recording": "f13e240c-91da-4ffe-8330-90ad98e0df4d",
+      "samples": 21224,
+      "windows": 20805,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "72a10a85-b590-407e-b5ab-e1fb6e5bb73b/38c31738-625e-417a-be69-5ac4e5058710/segment_000",
+      "path": "validation/72a10a85-b590-407e-b5ab-e1fb6e5bb73b/38c31738-625e-417a-be69-5ac4e5058710/segment_000",
+      "user": "72a10a85-b590-407e-b5ab-e1fb6e5bb73b",
+      "recording": "38c31738-625e-417a-be69-5ac4e5058710",
+      "samples": 18825,
+      "windows": 18406,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "72a10a85-b590-407e-b5ab-e1fb6e5bb73b/7d089b7d-901f-4dcc-a2bc-7654844b1bdd/segment_000",
+      "path": "validation/72a10a85-b590-407e-b5ab-e1fb6e5bb73b/7d089b7d-901f-4dcc-a2bc-7654844b1bdd/segment_000",
+      "user": "72a10a85-b590-407e-b5ab-e1fb6e5bb73b",
+      "recording": "7d089b7d-901f-4dcc-a2bc-7654844b1bdd",
+      "samples": 3755,
+      "windows": 3336,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "72a10a85-b590-407e-b5ab-e1fb6e5bb73b/c194aefc-9780-4ce9-916c-4e1de2e21386/segment_000",
+      "path": "validation/72a10a85-b590-407e-b5ab-e1fb6e5bb73b/c194aefc-9780-4ce9-916c-4e1de2e21386/segment_000",
+      "user": "72a10a85-b590-407e-b5ab-e1fb6e5bb73b",
+      "recording": "c194aefc-9780-4ce9-916c-4e1de2e21386",
+      "samples": 13811,
+      "windows": 13392,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "77cb4ac4-9e69-4bd4-aac5-992b517ee881/1717a9cb-3935-430c-9095-aaff13c38097/segment_000",
+      "path": "validation/77cb4ac4-9e69-4bd4-aac5-992b517ee881/1717a9cb-3935-430c-9095-aaff13c38097/segment_000",
+      "user": "77cb4ac4-9e69-4bd4-aac5-992b517ee881",
+      "recording": "1717a9cb-3935-430c-9095-aaff13c38097",
+      "samples": 25410,
+      "windows": 24991,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "77cb4ac4-9e69-4bd4-aac5-992b517ee881/a1e7c8ec-925d-415e-a269-7dadefe1fef0/segment_000",
+      "path": "validation/77cb4ac4-9e69-4bd4-aac5-992b517ee881/a1e7c8ec-925d-415e-a269-7dadefe1fef0/segment_000",
+      "user": "77cb4ac4-9e69-4bd4-aac5-992b517ee881",
+      "recording": "a1e7c8ec-925d-415e-a269-7dadefe1fef0",
+      "samples": 17121,
+      "windows": 16702,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "77cb4ac4-9e69-4bd4-aac5-992b517ee881/bfbdcaa6-2265-43c3-9549-4ac86ca541c1/segment_000",
+      "path": "validation/77cb4ac4-9e69-4bd4-aac5-992b517ee881/bfbdcaa6-2265-43c3-9549-4ac86ca541c1/segment_000",
+      "user": "77cb4ac4-9e69-4bd4-aac5-992b517ee881",
+      "recording": "bfbdcaa6-2265-43c3-9549-4ac86ca541c1",
+      "samples": 16491,
+      "windows": 16072,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/1d2f1652-abd0-4fb7-a8ab-32b2972ec264/segment_000",
+      "path": "validation/78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/1d2f1652-abd0-4fb7-a8ab-32b2972ec264/segment_000",
+      "user": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f",
+      "recording": "1d2f1652-abd0-4fb7-a8ab-32b2972ec264",
+      "samples": 12242,
+      "windows": 11823,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/240f6f07-e535-40e5-b84e-b2ccb2c7bd9f/segment_000",
+      "path": "validation/78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/240f6f07-e535-40e5-b84e-b2ccb2c7bd9f/segment_000",
+      "user": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f",
+      "recording": "240f6f07-e535-40e5-b84e-b2ccb2c7bd9f",
+      "samples": 15937,
+      "windows": 15518,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/7d330465-f46e-4758-a488-c0cbc5453d0a/segment_000",
+      "path": "validation/78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/7d330465-f46e-4758-a488-c0cbc5453d0a/segment_000",
+      "user": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f",
+      "recording": "7d330465-f46e-4758-a488-c0cbc5453d0a",
+      "samples": 24273,
+      "windows": 23854,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/935f12d9-3bc4-41f9-b8cf-badca9966fa7/segment_000",
+      "path": "validation/78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/935f12d9-3bc4-41f9-b8cf-badca9966fa7/segment_000",
+      "user": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f",
+      "recording": "935f12d9-3bc4-41f9-b8cf-badca9966fa7",
+      "samples": 21862,
+      "windows": 21443,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/a6667293-9768-49d8-b56a-e3150dbbf392/segment_000",
+      "path": "validation/78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f/a6667293-9768-49d8-b56a-e3150dbbf392/segment_000",
+      "user": "78ee4ebb-d2e0-4d66-a2d0-ac88a279af2f",
+      "recording": "a6667293-9768-49d8-b56a-e3150dbbf392",
+      "samples": 22548,
+      "windows": 22129,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "7aff6650-e370-4738-9c5b-e174add7b696/b42bb4f0-d339-4a20-ae81-132aa4b10395/segment_000",
+      "path": "validation/7aff6650-e370-4738-9c5b-e174add7b696/b42bb4f0-d339-4a20-ae81-132aa4b10395/segment_000",
+      "user": "7aff6650-e370-4738-9c5b-e174add7b696",
+      "recording": "b42bb4f0-d339-4a20-ae81-132aa4b10395",
+      "samples": 12289,
+      "windows": 11870,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "7b3993f2-34d5-4a48-b68c-e74544a3d6f3/53fbe5f9-2d65-4e8b-9d53-550583ea118c/segment_000",
+      "path": "validation/7b3993f2-34d5-4a48-b68c-e74544a3d6f3/53fbe5f9-2d65-4e8b-9d53-550583ea118c/segment_000",
+      "user": "7b3993f2-34d5-4a48-b68c-e74544a3d6f3",
+      "recording": "53fbe5f9-2d65-4e8b-9d53-550583ea118c",
+      "samples": 20189,
+      "windows": 19770,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "7e4e7542-d048-4cd7-810e-d54b4d3a9aa0/6ba9e2b9-03a8-4502-9635-3653a2f0d9c0/segment_000",
+      "path": "validation/7e4e7542-d048-4cd7-810e-d54b4d3a9aa0/6ba9e2b9-03a8-4502-9635-3653a2f0d9c0/segment_000",
+      "user": "7e4e7542-d048-4cd7-810e-d54b4d3a9aa0",
+      "recording": "6ba9e2b9-03a8-4502-9635-3653a2f0d9c0",
+      "samples": 21058,
+      "windows": 20639,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "823d23d9-5d4e-4336-9522-571628d206e9/46892450-a1fe-4bf2-b5b1-2d9d97e0a2b6/segment_000",
+      "path": "validation/823d23d9-5d4e-4336-9522-571628d206e9/46892450-a1fe-4bf2-b5b1-2d9d97e0a2b6/segment_000",
+      "user": "823d23d9-5d4e-4336-9522-571628d206e9",
+      "recording": "46892450-a1fe-4bf2-b5b1-2d9d97e0a2b6",
+      "samples": 13252,
+      "windows": 12833,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "823d23d9-5d4e-4336-9522-571628d206e9/512b454d-9070-402b-b951-3bcb6c9f8ad3/segment_000",
+      "path": "validation/823d23d9-5d4e-4336-9522-571628d206e9/512b454d-9070-402b-b951-3bcb6c9f8ad3/segment_000",
+      "user": "823d23d9-5d4e-4336-9522-571628d206e9",
+      "recording": "512b454d-9070-402b-b951-3bcb6c9f8ad3",
+      "samples": 17236,
+      "windows": 16817,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "823d23d9-5d4e-4336-9522-571628d206e9/66224548-a94e-4caa-9219-4f310de600b2/segment_000",
+      "path": "validation/823d23d9-5d4e-4336-9522-571628d206e9/66224548-a94e-4caa-9219-4f310de600b2/segment_000",
+      "user": "823d23d9-5d4e-4336-9522-571628d206e9",
+      "recording": "66224548-a94e-4caa-9219-4f310de600b2",
+      "samples": 17675,
+      "windows": 17256,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "823d23d9-5d4e-4336-9522-571628d206e9/c1f27941-d61b-4f4a-b287-bca4da6e2899/segment_000",
+      "path": "validation/823d23d9-5d4e-4336-9522-571628d206e9/c1f27941-d61b-4f4a-b287-bca4da6e2899/segment_000",
+      "user": "823d23d9-5d4e-4336-9522-571628d206e9",
+      "recording": "c1f27941-d61b-4f4a-b287-bca4da6e2899",
+      "samples": 3451,
+      "windows": 3032,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "823d23d9-5d4e-4336-9522-571628d206e9/f0b50512-3fe1-45f7-8614-70313ee2ab3d/segment_000",
+      "path": "validation/823d23d9-5d4e-4336-9522-571628d206e9/f0b50512-3fe1-45f7-8614-70313ee2ab3d/segment_000",
+      "user": "823d23d9-5d4e-4336-9522-571628d206e9",
+      "recording": "f0b50512-3fe1-45f7-8614-70313ee2ab3d",
+      "samples": 9446,
+      "windows": 9027,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/4672d65e-5c8f-484e-936f-87fbdee2565d/segment_000",
+      "path": "validation/83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/4672d65e-5c8f-484e-936f-87fbdee2565d/segment_000",
+      "user": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7",
+      "recording": "4672d65e-5c8f-484e-936f-87fbdee2565d",
+      "samples": 6771,
+      "windows": 6352,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/5660f12e-9cac-4be9-8594-f1772d92d331/segment_000",
+      "path": "validation/83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/5660f12e-9cac-4be9-8594-f1772d92d331/segment_000",
+      "user": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7",
+      "recording": "5660f12e-9cac-4be9-8594-f1772d92d331",
+      "samples": 12170,
+      "windows": 11751,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/85386171-50fc-4a3d-a5b7-f036917a351c/segment_000",
+      "path": "validation/83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/85386171-50fc-4a3d-a5b7-f036917a351c/segment_000",
+      "user": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7",
+      "recording": "85386171-50fc-4a3d-a5b7-f036917a351c",
+      "samples": 15915,
+      "windows": 15496,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/b7941116-3436-42a4-bb09-dc435f6b4179/segment_000",
+      "path": "validation/83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/b7941116-3436-42a4-bb09-dc435f6b4179/segment_000",
+      "user": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7",
+      "recording": "b7941116-3436-42a4-bb09-dc435f6b4179",
+      "samples": 17364,
+      "windows": 16945,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/cde05485-e1c0-47df-845f-03d142252cd3/segment_000",
+      "path": "validation/83f8b906-146b-46d3-82f4-c0fb6ef3fcc7/cde05485-e1c0-47df-845f-03d142252cd3/segment_000",
+      "user": "83f8b906-146b-46d3-82f4-c0fb6ef3fcc7",
+      "recording": "cde05485-e1c0-47df-845f-03d142252cd3",
+      "samples": 1861,
+      "windows": 1442,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "87e7b614-7d8d-4ba0-99a2-e62748121a35/2af7bcd4-c7c1-4bcb-bfdf-d6fa025fba9f/segment_000",
+      "path": "validation/87e7b614-7d8d-4ba0-99a2-e62748121a35/2af7bcd4-c7c1-4bcb-bfdf-d6fa025fba9f/segment_000",
+      "user": "87e7b614-7d8d-4ba0-99a2-e62748121a35",
+      "recording": "2af7bcd4-c7c1-4bcb-bfdf-d6fa025fba9f",
+      "samples": 25861,
+      "windows": 25442,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "88013506-f5f6-4e3e-8e11-26386876369d/7d44f653-e3da-4825-b83c-061cfc59a987/segment_000",
+      "path": "validation/88013506-f5f6-4e3e-8e11-26386876369d/7d44f653-e3da-4825-b83c-061cfc59a987/segment_000",
+      "user": "88013506-f5f6-4e3e-8e11-26386876369d",
+      "recording": "7d44f653-e3da-4825-b83c-061cfc59a987",
+      "samples": 28097,
+      "windows": 27678,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/0f6465a3-2715-4840-a700-8e69ac21fc8a/segment_000",
+      "path": "validation/886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/0f6465a3-2715-4840-a700-8e69ac21fc8a/segment_000",
+      "user": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212",
+      "recording": "0f6465a3-2715-4840-a700-8e69ac21fc8a",
+      "samples": 15896,
+      "windows": 15477,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/441983e5-c318-48ea-b8ae-ad7ceadf90e2/segment_000",
+      "path": "validation/886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/441983e5-c318-48ea-b8ae-ad7ceadf90e2/segment_000",
+      "user": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212",
+      "recording": "441983e5-c318-48ea-b8ae-ad7ceadf90e2",
+      "samples": 2949,
+      "windows": 2530,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/74e8d154-2bd2-44cb-ac8c-bbf3c677a7d5/segment_000",
+      "path": "validation/886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/74e8d154-2bd2-44cb-ac8c-bbf3c677a7d5/segment_000",
+      "user": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212",
+      "recording": "74e8d154-2bd2-44cb-ac8c-bbf3c677a7d5",
+      "samples": 5797,
+      "windows": 5378,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/d6dd718b-abbf-4dfe-b664-21b844638a6e/segment_000",
+      "path": "validation/886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/d6dd718b-abbf-4dfe-b664-21b844638a6e/segment_000",
+      "user": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212",
+      "recording": "d6dd718b-abbf-4dfe-b664-21b844638a6e",
+      "samples": 1842,
+      "windows": 1423,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/f2274eae-31fc-485b-be4f-81145a364ea5/segment_000",
+      "path": "validation/886ccbc5-a7f6-4d50-a7ee-54c07d6ee212/f2274eae-31fc-485b-be4f-81145a364ea5/segment_000",
+      "user": "886ccbc5-a7f6-4d50-a7ee-54c07d6ee212",
+      "recording": "f2274eae-31fc-485b-be4f-81145a364ea5",
+      "samples": 2565,
+      "windows": 2146,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8a9b9b25-ce6b-4830-a19a-3c0c5df85ddc/f0495cd1-883a-49f2-b7f8-de2b7b95c41c/segment_000",
+      "path": "validation/8a9b9b25-ce6b-4830-a19a-3c0c5df85ddc/f0495cd1-883a-49f2-b7f8-de2b7b95c41c/segment_000",
+      "user": "8a9b9b25-ce6b-4830-a19a-3c0c5df85ddc",
+      "recording": "f0495cd1-883a-49f2-b7f8-de2b7b95c41c",
+      "samples": 12887,
+      "windows": 12468,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8c57ac6c-4029-4775-92ea-096ab9ec7693/e36a4b6a-8bd1-431c-ba08-b6a9734526ce/segment_000",
+      "path": "validation/8c57ac6c-4029-4775-92ea-096ab9ec7693/e36a4b6a-8bd1-431c-ba08-b6a9734526ce/segment_000",
+      "user": "8c57ac6c-4029-4775-92ea-096ab9ec7693",
+      "recording": "e36a4b6a-8bd1-431c-ba08-b6a9734526ce",
+      "samples": 15826,
+      "windows": 15407,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8dfe012a-7255-4206-915c-968862e8218e/03648faa-0e57-49f1-821f-3c834e2e78ac/segment_000",
+      "path": "validation/8dfe012a-7255-4206-915c-968862e8218e/03648faa-0e57-49f1-821f-3c834e2e78ac/segment_000",
+      "user": "8dfe012a-7255-4206-915c-968862e8218e",
+      "recording": "03648faa-0e57-49f1-821f-3c834e2e78ac",
+      "samples": 17284,
+      "windows": 16865,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8dfe012a-7255-4206-915c-968862e8218e/bca620bb-ea15-4680-9460-09e076633cd2/segment_000",
+      "path": "validation/8dfe012a-7255-4206-915c-968862e8218e/bca620bb-ea15-4680-9460-09e076633cd2/segment_000",
+      "user": "8dfe012a-7255-4206-915c-968862e8218e",
+      "recording": "bca620bb-ea15-4680-9460-09e076633cd2",
+      "samples": 8897,
+      "windows": 8478,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8e51d2bc-94e7-4988-b98a-86922041631d/acd12960-3c42-4b80-867f-02a9588edacc/segment_000",
+      "path": "validation/8e51d2bc-94e7-4988-b98a-86922041631d/acd12960-3c42-4b80-867f-02a9588edacc/segment_000",
+      "user": "8e51d2bc-94e7-4988-b98a-86922041631d",
+      "recording": "acd12960-3c42-4b80-867f-02a9588edacc",
+      "samples": 18572,
+      "windows": 18153,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8e51d2bc-94e7-4988-b98a-86922041631d/cb9bc4c2-2ead-4946-afaf-c72778f6f5ea/segment_000",
+      "path": "validation/8e51d2bc-94e7-4988-b98a-86922041631d/cb9bc4c2-2ead-4946-afaf-c72778f6f5ea/segment_000",
+      "user": "8e51d2bc-94e7-4988-b98a-86922041631d",
+      "recording": "cb9bc4c2-2ead-4946-afaf-c72778f6f5ea",
+      "samples": 21281,
+      "windows": 20862,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/9096b307-1fed-43f6-8a74-87f563a1fb52/segment_000",
+      "path": "validation/8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/9096b307-1fed-43f6-8a74-87f563a1fb52/segment_000",
+      "user": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1",
+      "recording": "9096b307-1fed-43f6-8a74-87f563a1fb52",
+      "samples": 10732,
+      "windows": 10313,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/c0db84c5-e054-4400-baa1-7cbd0c5b8414/segment_000",
+      "path": "validation/8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/c0db84c5-e054-4400-baa1-7cbd0c5b8414/segment_000",
+      "user": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1",
+      "recording": "c0db84c5-e054-4400-baa1-7cbd0c5b8414",
+      "samples": 19454,
+      "windows": 19035,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/e9077b39-ade1-4859-99fa-6498952dba90/segment_000",
+      "path": "validation/8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/e9077b39-ade1-4859-99fa-6498952dba90/segment_000",
+      "user": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1",
+      "recording": "e9077b39-ade1-4859-99fa-6498952dba90",
+      "samples": 23902,
+      "windows": 23483,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/f09ee64f-4871-4c0c-83de-f822ec2555ff/segment_000",
+      "path": "validation/8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/f09ee64f-4871-4c0c-83de-f822ec2555ff/segment_000",
+      "user": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1",
+      "recording": "f09ee64f-4871-4c0c-83de-f822ec2555ff",
+      "samples": 1805,
+      "windows": 1386,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/f09ee64f-4871-4c0c-83de-f822ec2555ff/segment_001",
+      "path": "validation/8fb7bb80-0622-4372-8d2e-55f4c47fc2f1/f09ee64f-4871-4c0c-83de-f822ec2555ff/segment_001",
+      "user": "8fb7bb80-0622-4372-8d2e-55f4c47fc2f1",
+      "recording": "f09ee64f-4871-4c0c-83de-f822ec2555ff",
+      "samples": 17272,
+      "windows": 16853,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "92c21abc-016d-4aab-9974-7ceeaf3ef041/cf6bf5c8-75d0-4f6b-8ae8-fbee876fb3be/segment_000",
+      "path": "validation/92c21abc-016d-4aab-9974-7ceeaf3ef041/cf6bf5c8-75d0-4f6b-8ae8-fbee876fb3be/segment_000",
+      "user": "92c21abc-016d-4aab-9974-7ceeaf3ef041",
+      "recording": "cf6bf5c8-75d0-4f6b-8ae8-fbee876fb3be",
+      "samples": 8470,
+      "windows": 8051,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "92e31238-1a55-41b6-ad0e-d143c7ce900c/1026728d-6c42-4383-989c-9a5c812330cc/segment_000",
+      "path": "validation/92e31238-1a55-41b6-ad0e-d143c7ce900c/1026728d-6c42-4383-989c-9a5c812330cc/segment_000",
+      "user": "92e31238-1a55-41b6-ad0e-d143c7ce900c",
+      "recording": "1026728d-6c42-4383-989c-9a5c812330cc",
+      "samples": 24197,
+      "windows": 23778,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "930236f4-e96d-4a71-bd11-e43bcb85d569/7a42b33d-343b-4837-b1a5-fd95ef1b16b9/segment_000",
+      "path": "validation/930236f4-e96d-4a71-bd11-e43bcb85d569/7a42b33d-343b-4837-b1a5-fd95ef1b16b9/segment_000",
+      "user": "930236f4-e96d-4a71-bd11-e43bcb85d569",
+      "recording": "7a42b33d-343b-4837-b1a5-fd95ef1b16b9",
+      "samples": 17681,
+      "windows": 17262,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "930236f4-e96d-4a71-bd11-e43bcb85d569/8803a350-0ddf-48a3-8088-ef5396f97cdc/segment_000",
+      "path": "validation/930236f4-e96d-4a71-bd11-e43bcb85d569/8803a350-0ddf-48a3-8088-ef5396f97cdc/segment_000",
+      "user": "930236f4-e96d-4a71-bd11-e43bcb85d569",
+      "recording": "8803a350-0ddf-48a3-8088-ef5396f97cdc",
+      "samples": 19771,
+      "windows": 19352,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "930236f4-e96d-4a71-bd11-e43bcb85d569/9153da7a-c096-45a9-82ea-8cf0755a90b1/segment_000",
+      "path": "validation/930236f4-e96d-4a71-bd11-e43bcb85d569/9153da7a-c096-45a9-82ea-8cf0755a90b1/segment_000",
+      "user": "930236f4-e96d-4a71-bd11-e43bcb85d569",
+      "recording": "9153da7a-c096-45a9-82ea-8cf0755a90b1",
+      "samples": 24738,
+      "windows": 24319,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "930236f4-e96d-4a71-bd11-e43bcb85d569/b5779b07-b8e4-4419-9bc7-20ba6901f6dd/segment_000",
+      "path": "validation/930236f4-e96d-4a71-bd11-e43bcb85d569/b5779b07-b8e4-4419-9bc7-20ba6901f6dd/segment_000",
+      "user": "930236f4-e96d-4a71-bd11-e43bcb85d569",
+      "recording": "b5779b07-b8e4-4419-9bc7-20ba6901f6dd",
+      "samples": 19453,
+      "windows": 19034,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "930236f4-e96d-4a71-bd11-e43bcb85d569/d5f6ef5c-fbbc-442a-bdb7-9db4b1982431/segment_000",
+      "path": "validation/930236f4-e96d-4a71-bd11-e43bcb85d569/d5f6ef5c-fbbc-442a-bdb7-9db4b1982431/segment_000",
+      "user": "930236f4-e96d-4a71-bd11-e43bcb85d569",
+      "recording": "d5f6ef5c-fbbc-442a-bdb7-9db4b1982431",
+      "samples": 19842,
+      "windows": 19423,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "94190164-833c-4ee3-bee9-7220e34314b8/1cfe3e48-d3f4-4b39-a8bf-c03d9705f991/segment_000",
+      "path": "validation/94190164-833c-4ee3-bee9-7220e34314b8/1cfe3e48-d3f4-4b39-a8bf-c03d9705f991/segment_000",
+      "user": "94190164-833c-4ee3-bee9-7220e34314b8",
+      "recording": "1cfe3e48-d3f4-4b39-a8bf-c03d9705f991",
+      "samples": 12152,
+      "windows": 11733,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "94190164-833c-4ee3-bee9-7220e34314b8/6b56599b-393a-4df4-be95-67f92477ef46/segment_000",
+      "path": "validation/94190164-833c-4ee3-bee9-7220e34314b8/6b56599b-393a-4df4-be95-67f92477ef46/segment_000",
+      "user": "94190164-833c-4ee3-bee9-7220e34314b8",
+      "recording": "6b56599b-393a-4df4-be95-67f92477ef46",
+      "samples": 5305,
+      "windows": 4886,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "94190164-833c-4ee3-bee9-7220e34314b8/a8b2b85a-eecb-4568-8267-6234046159f5/segment_000",
+      "path": "validation/94190164-833c-4ee3-bee9-7220e34314b8/a8b2b85a-eecb-4568-8267-6234046159f5/segment_000",
+      "user": "94190164-833c-4ee3-bee9-7220e34314b8",
+      "recording": "a8b2b85a-eecb-4568-8267-6234046159f5",
+      "samples": 6315,
+      "windows": 5896,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "964e50f4-9348-4240-a1c0-26efa52e79ad/9ed2a7c3-3c70-435a-a39b-45e313075262/segment_000",
+      "path": "validation/964e50f4-9348-4240-a1c0-26efa52e79ad/9ed2a7c3-3c70-435a-a39b-45e313075262/segment_000",
+      "user": "964e50f4-9348-4240-a1c0-26efa52e79ad",
+      "recording": "9ed2a7c3-3c70-435a-a39b-45e313075262",
+      "samples": 15920,
+      "windows": 15501,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9731a47b-18f3-4a3b-b096-bc4e304d78c5/e0abc88d-c3e4-4146-8399-f1f814fb5c3f/segment_000",
+      "path": "validation/9731a47b-18f3-4a3b-b096-bc4e304d78c5/e0abc88d-c3e4-4146-8399-f1f814fb5c3f/segment_000",
+      "user": "9731a47b-18f3-4a3b-b096-bc4e304d78c5",
+      "recording": "e0abc88d-c3e4-4146-8399-f1f814fb5c3f",
+      "samples": 11536,
+      "windows": 11117,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "986b44d4-4572-4ad8-93bb-82b3acb325cf/6f6c367f-8c86-4ec3-b85e-d74165eba409/segment_000",
+      "path": "validation/986b44d4-4572-4ad8-93bb-82b3acb325cf/6f6c367f-8c86-4ec3-b85e-d74165eba409/segment_000",
+      "user": "986b44d4-4572-4ad8-93bb-82b3acb325cf",
+      "recording": "6f6c367f-8c86-4ec3-b85e-d74165eba409",
+      "samples": 22639,
+      "windows": 22220,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9f8d2fa0-9172-473e-81b1-f591826d5139/20083366-30ef-425f-96ef-408edae924a9/segment_000",
+      "path": "validation/9f8d2fa0-9172-473e-81b1-f591826d5139/20083366-30ef-425f-96ef-408edae924a9/segment_000",
+      "user": "9f8d2fa0-9172-473e-81b1-f591826d5139",
+      "recording": "20083366-30ef-425f-96ef-408edae924a9",
+      "samples": 16647,
+      "windows": 16228,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9f8d2fa0-9172-473e-81b1-f591826d5139/40bce1e1-1573-4862-9313-d1ff6399b5e0/segment_000",
+      "path": "validation/9f8d2fa0-9172-473e-81b1-f591826d5139/40bce1e1-1573-4862-9313-d1ff6399b5e0/segment_000",
+      "user": "9f8d2fa0-9172-473e-81b1-f591826d5139",
+      "recording": "40bce1e1-1573-4862-9313-d1ff6399b5e0",
+      "samples": 21125,
+      "windows": 20706,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9f8d2fa0-9172-473e-81b1-f591826d5139/766a61c1-9cb3-43b8-ab98-f56ee3071c8b/segment_000",
+      "path": "validation/9f8d2fa0-9172-473e-81b1-f591826d5139/766a61c1-9cb3-43b8-ab98-f56ee3071c8b/segment_000",
+      "user": "9f8d2fa0-9172-473e-81b1-f591826d5139",
+      "recording": "766a61c1-9cb3-43b8-ab98-f56ee3071c8b",
+      "samples": 21123,
+      "windows": 20704,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9f8d2fa0-9172-473e-81b1-f591826d5139/d08e4d9a-f803-4ba6-a7c8-d1a9e2eddf07/segment_000",
+      "path": "validation/9f8d2fa0-9172-473e-81b1-f591826d5139/d08e4d9a-f803-4ba6-a7c8-d1a9e2eddf07/segment_000",
+      "user": "9f8d2fa0-9172-473e-81b1-f591826d5139",
+      "recording": "d08e4d9a-f803-4ba6-a7c8-d1a9e2eddf07",
+      "samples": 20232,
+      "windows": 19813,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9f8d2fa0-9172-473e-81b1-f591826d5139/d11226e0-b544-49b1-820d-097c321db6e9/segment_000",
+      "path": "validation/9f8d2fa0-9172-473e-81b1-f591826d5139/d11226e0-b544-49b1-820d-097c321db6e9/segment_000",
+      "user": "9f8d2fa0-9172-473e-81b1-f591826d5139",
+      "recording": "d11226e0-b544-49b1-820d-097c321db6e9",
+      "samples": 6049,
+      "windows": 5630,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9fb16ab8-0420-4900-ae90-d45ec0553657/132fa5f2-9ff7-41e3-a05b-0fac313520b9/segment_000",
+      "path": "validation/9fb16ab8-0420-4900-ae90-d45ec0553657/132fa5f2-9ff7-41e3-a05b-0fac313520b9/segment_000",
+      "user": "9fb16ab8-0420-4900-ae90-d45ec0553657",
+      "recording": "132fa5f2-9ff7-41e3-a05b-0fac313520b9",
+      "samples": 6061,
+      "windows": 5642,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9fb16ab8-0420-4900-ae90-d45ec0553657/5eb719e6-350b-4d7b-8aeb-397daa5724e3/segment_000",
+      "path": "validation/9fb16ab8-0420-4900-ae90-d45ec0553657/5eb719e6-350b-4d7b-8aeb-397daa5724e3/segment_000",
+      "user": "9fb16ab8-0420-4900-ae90-d45ec0553657",
+      "recording": "5eb719e6-350b-4d7b-8aeb-397daa5724e3",
+      "samples": 18119,
+      "windows": 17700,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9fb16ab8-0420-4900-ae90-d45ec0553657/979ddee2-584d-46dc-b3ce-e0eb603df729/segment_000",
+      "path": "validation/9fb16ab8-0420-4900-ae90-d45ec0553657/979ddee2-584d-46dc-b3ce-e0eb603df729/segment_000",
+      "user": "9fb16ab8-0420-4900-ae90-d45ec0553657",
+      "recording": "979ddee2-584d-46dc-b3ce-e0eb603df729",
+      "samples": 8963,
+      "windows": 8544,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9fb16ab8-0420-4900-ae90-d45ec0553657/9f2a1c6d-fb0c-4010-9798-378815e2794a/segment_000",
+      "path": "validation/9fb16ab8-0420-4900-ae90-d45ec0553657/9f2a1c6d-fb0c-4010-9798-378815e2794a/segment_000",
+      "user": "9fb16ab8-0420-4900-ae90-d45ec0553657",
+      "recording": "9f2a1c6d-fb0c-4010-9798-378815e2794a",
+      "samples": 1143,
+      "windows": 724,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "9fb16ab8-0420-4900-ae90-d45ec0553657/b955798f-ec40-456e-95ed-b14ddfe6371e/segment_000",
+      "path": "validation/9fb16ab8-0420-4900-ae90-d45ec0553657/b955798f-ec40-456e-95ed-b14ddfe6371e/segment_000",
+      "user": "9fb16ab8-0420-4900-ae90-d45ec0553657",
+      "recording": "b955798f-ec40-456e-95ed-b14ddfe6371e",
+      "samples": 11560,
+      "windows": 11141,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "a08bbc12-a4f9-48e8-99f5-45f2a160d93c/8f667e08-bf41-4311-b9ad-964da625502e/segment_000",
+      "path": "validation/a08bbc12-a4f9-48e8-99f5-45f2a160d93c/8f667e08-bf41-4311-b9ad-964da625502e/segment_000",
+      "user": "a08bbc12-a4f9-48e8-99f5-45f2a160d93c",
+      "recording": "8f667e08-bf41-4311-b9ad-964da625502e",
+      "samples": 19591,
+      "windows": 19172,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "a08bbc12-a4f9-48e8-99f5-45f2a160d93c/eecc9728-a188-461f-97a5-0a0f3d7a9126/segment_000",
+      "path": "validation/a08bbc12-a4f9-48e8-99f5-45f2a160d93c/eecc9728-a188-461f-97a5-0a0f3d7a9126/segment_000",
+      "user": "a08bbc12-a4f9-48e8-99f5-45f2a160d93c",
+      "recording": "eecc9728-a188-461f-97a5-0a0f3d7a9126",
+      "samples": 27981,
+      "windows": 27562,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "a203f8f3-90a0-40ea-8bad-321196f37f75/d28f7dc9-09b6-4886-aa36-7abfbb8d210c/segment_000",
+      "path": "validation/a203f8f3-90a0-40ea-8bad-321196f37f75/d28f7dc9-09b6-4886-aa36-7abfbb8d210c/segment_000",
+      "user": "a203f8f3-90a0-40ea-8bad-321196f37f75",
+      "recording": "d28f7dc9-09b6-4886-aa36-7abfbb8d210c",
+      "samples": 17355,
+      "windows": 16936,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "a2762add-316c-40d2-bd1a-9a840cab28ec/6718bad5-48b3-4356-b226-897b49acb3b2/segment_000",
+      "path": "validation/a2762add-316c-40d2-bd1a-9a840cab28ec/6718bad5-48b3-4356-b226-897b49acb3b2/segment_000",
+      "user": "a2762add-316c-40d2-bd1a-9a840cab28ec",
+      "recording": "6718bad5-48b3-4356-b226-897b49acb3b2",
+      "samples": 17570,
+      "windows": 17151,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "a4ac8697-9f9a-4526-8777-24ff8308fa74/7a66136d-63f3-40ae-86ad-b29599a628a6/segment_000",
+      "path": "validation/a4ac8697-9f9a-4526-8777-24ff8308fa74/7a66136d-63f3-40ae-86ad-b29599a628a6/segment_000",
+      "user": "a4ac8697-9f9a-4526-8777-24ff8308fa74",
+      "recording": "7a66136d-63f3-40ae-86ad-b29599a628a6",
+      "samples": 19989,
+      "windows": 19570,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ab4b18d0-9273-4490-a3cb-f02fc06c4fea/10b0c298-f959-4661-91f5-a59b60fcb0d9/segment_000",
+      "path": "validation/ab4b18d0-9273-4490-a3cb-f02fc06c4fea/10b0c298-f959-4661-91f5-a59b60fcb0d9/segment_000",
+      "user": "ab4b18d0-9273-4490-a3cb-f02fc06c4fea",
+      "recording": "10b0c298-f959-4661-91f5-a59b60fcb0d9",
+      "samples": 1132,
+      "windows": 713,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ab4b18d0-9273-4490-a3cb-f02fc06c4fea/10b0c298-f959-4661-91f5-a59b60fcb0d9/segment_001",
+      "path": "validation/ab4b18d0-9273-4490-a3cb-f02fc06c4fea/10b0c298-f959-4661-91f5-a59b60fcb0d9/segment_001",
+      "user": "ab4b18d0-9273-4490-a3cb-f02fc06c4fea",
+      "recording": "10b0c298-f959-4661-91f5-a59b60fcb0d9",
+      "samples": 13322,
+      "windows": 12903,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ab4b18d0-9273-4490-a3cb-f02fc06c4fea/37f341a9-892b-4b19-bc6f-f975ab59f2f2/segment_000",
+      "path": "validation/ab4b18d0-9273-4490-a3cb-f02fc06c4fea/37f341a9-892b-4b19-bc6f-f975ab59f2f2/segment_000",
+      "user": "ab4b18d0-9273-4490-a3cb-f02fc06c4fea",
+      "recording": "37f341a9-892b-4b19-bc6f-f975ab59f2f2",
+      "samples": 16291,
+      "windows": 15872,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "abf93e1d-3f47-45c9-abc0-2677d68d9fce/0fb2ce3c-cbcf-4025-866e-61ea6d690711/segment_000",
+      "path": "validation/abf93e1d-3f47-45c9-abc0-2677d68d9fce/0fb2ce3c-cbcf-4025-866e-61ea6d690711/segment_000",
+      "user": "abf93e1d-3f47-45c9-abc0-2677d68d9fce",
+      "recording": "0fb2ce3c-cbcf-4025-866e-61ea6d690711",
+      "samples": 17095,
+      "windows": 16676,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "abf93e1d-3f47-45c9-abc0-2677d68d9fce/158fdbba-d17e-440f-9b1d-c58b668d33fb/segment_000",
+      "path": "validation/abf93e1d-3f47-45c9-abc0-2677d68d9fce/158fdbba-d17e-440f-9b1d-c58b668d33fb/segment_000",
+      "user": "abf93e1d-3f47-45c9-abc0-2677d68d9fce",
+      "recording": "158fdbba-d17e-440f-9b1d-c58b668d33fb",
+      "samples": 17661,
+      "windows": 17242,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "abf93e1d-3f47-45c9-abc0-2677d68d9fce/1a61fccf-bbe9-49a1-b3a3-0818a588cdb9/segment_000",
+      "path": "validation/abf93e1d-3f47-45c9-abc0-2677d68d9fce/1a61fccf-bbe9-49a1-b3a3-0818a588cdb9/segment_000",
+      "user": "abf93e1d-3f47-45c9-abc0-2677d68d9fce",
+      "recording": "1a61fccf-bbe9-49a1-b3a3-0818a588cdb9",
+      "samples": 20539,
+      "windows": 20120,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "abf93e1d-3f47-45c9-abc0-2677d68d9fce/62e647a5-1702-44bc-bdf2-379c84fc3384/segment_000",
+      "path": "validation/abf93e1d-3f47-45c9-abc0-2677d68d9fce/62e647a5-1702-44bc-bdf2-379c84fc3384/segment_000",
+      "user": "abf93e1d-3f47-45c9-abc0-2677d68d9fce",
+      "recording": "62e647a5-1702-44bc-bdf2-379c84fc3384",
+      "samples": 19560,
+      "windows": 19141,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "abf93e1d-3f47-45c9-abc0-2677d68d9fce/d6a3b29d-c819-453d-8192-4a503cba7b23/segment_000",
+      "path": "validation/abf93e1d-3f47-45c9-abc0-2677d68d9fce/d6a3b29d-c819-453d-8192-4a503cba7b23/segment_000",
+      "user": "abf93e1d-3f47-45c9-abc0-2677d68d9fce",
+      "recording": "d6a3b29d-c819-453d-8192-4a503cba7b23",
+      "samples": 1850,
+      "windows": 1431,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "b194aa1d-c7a0-4691-820f-5c797cac41d3/24409490-5a7d-4df3-858c-3db66a6123ce/segment_000",
+      "path": "validation/b194aa1d-c7a0-4691-820f-5c797cac41d3/24409490-5a7d-4df3-858c-3db66a6123ce/segment_000",
+      "user": "b194aa1d-c7a0-4691-820f-5c797cac41d3",
+      "recording": "24409490-5a7d-4df3-858c-3db66a6123ce",
+      "samples": 9055,
+      "windows": 8636,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "b194aa1d-c7a0-4691-820f-5c797cac41d3/24409490-5a7d-4df3-858c-3db66a6123ce/segment_001",
+      "path": "validation/b194aa1d-c7a0-4691-820f-5c797cac41d3/24409490-5a7d-4df3-858c-3db66a6123ce/segment_001",
+      "user": "b194aa1d-c7a0-4691-820f-5c797cac41d3",
+      "recording": "24409490-5a7d-4df3-858c-3db66a6123ce",
+      "samples": 7620,
+      "windows": 7201,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "b68e6327-c38f-47dc-b04e-da4857cb24fe/1b05b01e-ea4f-4355-a312-08496f1c1ba6/segment_000",
+      "path": "validation/b68e6327-c38f-47dc-b04e-da4857cb24fe/1b05b01e-ea4f-4355-a312-08496f1c1ba6/segment_000",
+      "user": "b68e6327-c38f-47dc-b04e-da4857cb24fe",
+      "recording": "1b05b01e-ea4f-4355-a312-08496f1c1ba6",
+      "samples": 23541,
+      "windows": 23122,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "b824c9a0-66dc-4b45-8614-86f99993b8ec/f910de0e-92c4-4fb6-b8b9-82a9b9642ead/segment_000",
+      "path": "validation/b824c9a0-66dc-4b45-8614-86f99993b8ec/f910de0e-92c4-4fb6-b8b9-82a9b9642ead/segment_000",
+      "user": "b824c9a0-66dc-4b45-8614-86f99993b8ec",
+      "recording": "f910de0e-92c4-4fb6-b8b9-82a9b9642ead",
+      "samples": 1066,
+      "windows": 647,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "b9d3405a-1d27-4bb1-a78e-8e6dc3bc0ac0/31e4a26e-e79b-4bf0-ae5d-1af663705bad/segment_000",
+      "path": "validation/b9d3405a-1d27-4bb1-a78e-8e6dc3bc0ac0/31e4a26e-e79b-4bf0-ae5d-1af663705bad/segment_000",
+      "user": "b9d3405a-1d27-4bb1-a78e-8e6dc3bc0ac0",
+      "recording": "31e4a26e-e79b-4bf0-ae5d-1af663705bad",
+      "samples": 18765,
+      "windows": 18346,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "b9d3405a-1d27-4bb1-a78e-8e6dc3bc0ac0/71038064-9c0a-44b1-9ed7-3b33757348a3/segment_000",
+      "path": "validation/b9d3405a-1d27-4bb1-a78e-8e6dc3bc0ac0/71038064-9c0a-44b1-9ed7-3b33757348a3/segment_000",
+      "user": "b9d3405a-1d27-4bb1-a78e-8e6dc3bc0ac0",
+      "recording": "71038064-9c0a-44b1-9ed7-3b33757348a3",
+      "samples": 2175,
+      "windows": 1756,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "bc20efac-aba4-4edf-875b-4549384d6761/556409d2-eac0-4d31-b720-850308da13ed/segment_000",
+      "path": "validation/bc20efac-aba4-4edf-875b-4549384d6761/556409d2-eac0-4d31-b720-850308da13ed/segment_000",
+      "user": "bc20efac-aba4-4edf-875b-4549384d6761",
+      "recording": "556409d2-eac0-4d31-b720-850308da13ed",
+      "samples": 16566,
+      "windows": 16147,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e/4e7b2556-fb48-4314-9dfd-d145fcfcf637/segment_000",
+      "path": "validation/bcc999f6-ebc6-4b27-b84f-65d562d34f4e/4e7b2556-fb48-4314-9dfd-d145fcfcf637/segment_000",
+      "user": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e",
+      "recording": "4e7b2556-fb48-4314-9dfd-d145fcfcf637",
+      "samples": 25015,
+      "windows": 24596,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e/5377bef3-3f6b-4348-b5af-c9a18157a9d7/segment_000",
+      "path": "validation/bcc999f6-ebc6-4b27-b84f-65d562d34f4e/5377bef3-3f6b-4348-b5af-c9a18157a9d7/segment_000",
+      "user": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e",
+      "recording": "5377bef3-3f6b-4348-b5af-c9a18157a9d7",
+      "samples": 19832,
+      "windows": 19413,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e/8cabb51c-b10f-44ca-b75d-d48055857a64/segment_000",
+      "path": "validation/bcc999f6-ebc6-4b27-b84f-65d562d34f4e/8cabb51c-b10f-44ca-b75d-d48055857a64/segment_000",
+      "user": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e",
+      "recording": "8cabb51c-b10f-44ca-b75d-d48055857a64",
+      "samples": 25619,
+      "windows": 25200,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e/ea3f75d2-0ccf-430a-b175-9717c695c2ab/segment_000",
+      "path": "validation/bcc999f6-ebc6-4b27-b84f-65d562d34f4e/ea3f75d2-0ccf-430a-b175-9717c695c2ab/segment_000",
+      "user": "bcc999f6-ebc6-4b27-b84f-65d562d34f4e",
+      "recording": "ea3f75d2-0ccf-430a-b175-9717c695c2ab",
+      "samples": 17359,
+      "windows": 16940,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "bf9355ec-770e-42c8-a575-aaed089cd1ac/56e099f7-ee40-4c37-a8a1-b8aec4c59deb/segment_000",
+      "path": "validation/bf9355ec-770e-42c8-a575-aaed089cd1ac/56e099f7-ee40-4c37-a8a1-b8aec4c59deb/segment_000",
+      "user": "bf9355ec-770e-42c8-a575-aaed089cd1ac",
+      "recording": "56e099f7-ee40-4c37-a8a1-b8aec4c59deb",
+      "samples": 1610,
+      "windows": 1191,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "bf9355ec-770e-42c8-a575-aaed089cd1ac/7d92e54f-77f3-4b7d-9b91-96506a048cb1/segment_000",
+      "path": "validation/bf9355ec-770e-42c8-a575-aaed089cd1ac/7d92e54f-77f3-4b7d-9b91-96506a048cb1/segment_000",
+      "user": "bf9355ec-770e-42c8-a575-aaed089cd1ac",
+      "recording": "7d92e54f-77f3-4b7d-9b91-96506a048cb1",
+      "samples": 1072,
+      "windows": 653,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/44ccf679-bd27-42f1-a573-c875b8275221/segment_000",
+      "path": "validation/c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/44ccf679-bd27-42f1-a573-c875b8275221/segment_000",
+      "user": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d",
+      "recording": "44ccf679-bd27-42f1-a573-c875b8275221",
+      "samples": 16406,
+      "windows": 15987,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/8292d193-fd4e-419b-b3c2-ea259dbf7231/segment_000",
+      "path": "validation/c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/8292d193-fd4e-419b-b3c2-ea259dbf7231/segment_000",
+      "user": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d",
+      "recording": "8292d193-fd4e-419b-b3c2-ea259dbf7231",
+      "samples": 15248,
+      "windows": 14829,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/8f697ee3-04df-4b91-9e73-b12bcb6fad97/segment_000",
+      "path": "validation/c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/8f697ee3-04df-4b91-9e73-b12bcb6fad97/segment_000",
+      "user": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d",
+      "recording": "8f697ee3-04df-4b91-9e73-b12bcb6fad97",
+      "samples": 7370,
+      "windows": 6951,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/9128a208-7257-45dc-85fd-45b1a20cd116/segment_000",
+      "path": "validation/c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/9128a208-7257-45dc-85fd-45b1a20cd116/segment_000",
+      "user": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d",
+      "recording": "9128a208-7257-45dc-85fd-45b1a20cd116",
+      "samples": 18528,
+      "windows": 18109,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/d164a8b7-dcdf-4654-ab04-9a56a6a537f4/segment_000",
+      "path": "validation/c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d/d164a8b7-dcdf-4654-ab04-9a56a6a537f4/segment_000",
+      "user": "c682b5f5-91ec-4ac3-9b4a-afd6296a8f6d",
+      "recording": "d164a8b7-dcdf-4654-ab04-9a56a6a537f4",
+      "samples": 16503,
+      "windows": 16084,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c783f748-f765-4081-877f-ff1ee6d86ca3/34f159bf-9409-4f9b-9941-82e923c2a895/segment_000",
+      "path": "validation/c783f748-f765-4081-877f-ff1ee6d86ca3/34f159bf-9409-4f9b-9941-82e923c2a895/segment_000",
+      "user": "c783f748-f765-4081-877f-ff1ee6d86ca3",
+      "recording": "34f159bf-9409-4f9b-9941-82e923c2a895",
+      "samples": 18799,
+      "windows": 18380,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c783f748-f765-4081-877f-ff1ee6d86ca3/89ce2916-8ccd-4831-871c-69cf701feb23/segment_000",
+      "path": "validation/c783f748-f765-4081-877f-ff1ee6d86ca3/89ce2916-8ccd-4831-871c-69cf701feb23/segment_000",
+      "user": "c783f748-f765-4081-877f-ff1ee6d86ca3",
+      "recording": "89ce2916-8ccd-4831-871c-69cf701feb23",
+      "samples": 18798,
+      "windows": 18379,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c783f748-f765-4081-877f-ff1ee6d86ca3/c4c2ddc7-d732-4cb6-9734-b3bcf6adb2a3/segment_000",
+      "path": "validation/c783f748-f765-4081-877f-ff1ee6d86ca3/c4c2ddc7-d732-4cb6-9734-b3bcf6adb2a3/segment_000",
+      "user": "c783f748-f765-4081-877f-ff1ee6d86ca3",
+      "recording": "c4c2ddc7-d732-4cb6-9734-b3bcf6adb2a3",
+      "samples": 21383,
+      "windows": 20964,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c783f748-f765-4081-877f-ff1ee6d86ca3/cb3675b1-4f80-4d13-b4d4-68f6d06ad0df/segment_000",
+      "path": "validation/c783f748-f765-4081-877f-ff1ee6d86ca3/cb3675b1-4f80-4d13-b4d4-68f6d06ad0df/segment_000",
+      "user": "c783f748-f765-4081-877f-ff1ee6d86ca3",
+      "recording": "cb3675b1-4f80-4d13-b4d4-68f6d06ad0df",
+      "samples": 7989,
+      "windows": 7570,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c783f748-f765-4081-877f-ff1ee6d86ca3/cb3675b1-4f80-4d13-b4d4-68f6d06ad0df/segment_001",
+      "path": "validation/c783f748-f765-4081-877f-ff1ee6d86ca3/cb3675b1-4f80-4d13-b4d4-68f6d06ad0df/segment_001",
+      "user": "c783f748-f765-4081-877f-ff1ee6d86ca3",
+      "recording": "cb3675b1-4f80-4d13-b4d4-68f6d06ad0df",
+      "samples": 3422,
+      "windows": 3003,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "c783f748-f765-4081-877f-ff1ee6d86ca3/cb3675b1-4f80-4d13-b4d4-68f6d06ad0df/segment_002",
+      "path": "validation/c783f748-f765-4081-877f-ff1ee6d86ca3/cb3675b1-4f80-4d13-b4d4-68f6d06ad0df/segment_002",
+      "user": "c783f748-f765-4081-877f-ff1ee6d86ca3",
+      "recording": "cb3675b1-4f80-4d13-b4d4-68f6d06ad0df",
+      "samples": 6811,
+      "windows": 6392,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cb8ea613-bf08-422a-b0a3-8b80f89aa955/455d852f-1269-405b-a2d6-b26dfe673914/segment_000",
+      "path": "validation/cb8ea613-bf08-422a-b0a3-8b80f89aa955/455d852f-1269-405b-a2d6-b26dfe673914/segment_000",
+      "user": "cb8ea613-bf08-422a-b0a3-8b80f89aa955",
+      "recording": "455d852f-1269-405b-a2d6-b26dfe673914",
+      "samples": 16661,
+      "windows": 16242,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cb8ea613-bf08-422a-b0a3-8b80f89aa955/55aa4798-ba4d-4a88-84c5-134ada4521ab/segment_000",
+      "path": "validation/cb8ea613-bf08-422a-b0a3-8b80f89aa955/55aa4798-ba4d-4a88-84c5-134ada4521ab/segment_000",
+      "user": "cb8ea613-bf08-422a-b0a3-8b80f89aa955",
+      "recording": "55aa4798-ba4d-4a88-84c5-134ada4521ab",
+      "samples": 7942,
+      "windows": 7523,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cb8ea613-bf08-422a-b0a3-8b80f89aa955/63b87f9a-d6ca-441a-bdf8-4861256fec34/segment_000",
+      "path": "validation/cb8ea613-bf08-422a-b0a3-8b80f89aa955/63b87f9a-d6ca-441a-bdf8-4861256fec34/segment_000",
+      "user": "cb8ea613-bf08-422a-b0a3-8b80f89aa955",
+      "recording": "63b87f9a-d6ca-441a-bdf8-4861256fec34",
+      "samples": 22994,
+      "windows": 22575,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cb8ea613-bf08-422a-b0a3-8b80f89aa955/9f5bfd08-10a1-4f46-baae-a905fcd116b3/segment_000",
+      "path": "validation/cb8ea613-bf08-422a-b0a3-8b80f89aa955/9f5bfd08-10a1-4f46-baae-a905fcd116b3/segment_000",
+      "user": "cb8ea613-bf08-422a-b0a3-8b80f89aa955",
+      "recording": "9f5bfd08-10a1-4f46-baae-a905fcd116b3",
+      "samples": 15541,
+      "windows": 15122,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cb8ea613-bf08-422a-b0a3-8b80f89aa955/eb8c2e31-be5d-435a-ad3c-797131ef986d/segment_000",
+      "path": "validation/cb8ea613-bf08-422a-b0a3-8b80f89aa955/eb8c2e31-be5d-435a-ad3c-797131ef986d/segment_000",
+      "user": "cb8ea613-bf08-422a-b0a3-8b80f89aa955",
+      "recording": "eb8c2e31-be5d-435a-ad3c-797131ef986d",
+      "samples": 18502,
+      "windows": 18083,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ccf3ef71-cf8d-40fd-8fb6-bb580bebe165/1269d3f1-cfea-4e1d-8820-f21be6045927/segment_000",
+      "path": "validation/ccf3ef71-cf8d-40fd-8fb6-bb580bebe165/1269d3f1-cfea-4e1d-8820-f21be6045927/segment_000",
+      "user": "ccf3ef71-cf8d-40fd-8fb6-bb580bebe165",
+      "recording": "1269d3f1-cfea-4e1d-8820-f21be6045927",
+      "samples": 2418,
+      "windows": 1999,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ccf3ef71-cf8d-40fd-8fb6-bb580bebe165/1269d3f1-cfea-4e1d-8820-f21be6045927/segment_001",
+      "path": "validation/ccf3ef71-cf8d-40fd-8fb6-bb580bebe165/1269d3f1-cfea-4e1d-8820-f21be6045927/segment_001",
+      "user": "ccf3ef71-cf8d-40fd-8fb6-bb580bebe165",
+      "recording": "1269d3f1-cfea-4e1d-8820-f21be6045927",
+      "samples": 5600,
+      "windows": 5181,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ccf3ef71-cf8d-40fd-8fb6-bb580bebe165/1269d3f1-cfea-4e1d-8820-f21be6045927/segment_002",
+      "path": "validation/ccf3ef71-cf8d-40fd-8fb6-bb580bebe165/1269d3f1-cfea-4e1d-8820-f21be6045927/segment_002",
+      "user": "ccf3ef71-cf8d-40fd-8fb6-bb580bebe165",
+      "recording": "1269d3f1-cfea-4e1d-8820-f21be6045927",
+      "samples": 7218,
+      "windows": 6799,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd8441d3-903b-431e-b269-ffdd7f5bfbfa/8caec316-f246-4f3e-9086-7bb326b9b90a/segment_000",
+      "path": "validation/cd8441d3-903b-431e-b269-ffdd7f5bfbfa/8caec316-f246-4f3e-9086-7bb326b9b90a/segment_000",
+      "user": "cd8441d3-903b-431e-b269-ffdd7f5bfbfa",
+      "recording": "8caec316-f246-4f3e-9086-7bb326b9b90a",
+      "samples": 22417,
+      "windows": 21998,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/61998671-3b28-411b-8673-0177b6a6716e/segment_000",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/61998671-3b28-411b-8673-0177b6a6716e/segment_000",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "61998671-3b28-411b-8673-0177b6a6716e",
+      "samples": 21861,
+      "windows": 21442,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_000",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_000",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "a60087f4-9236-4e5e-9eb6-579f1296be45",
+      "samples": 3075,
+      "windows": 2656,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_001",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_001",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "a60087f4-9236-4e5e-9eb6-579f1296be45",
+      "samples": 11459,
+      "windows": 11040,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_002",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_002",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "a60087f4-9236-4e5e-9eb6-579f1296be45",
+      "samples": 1271,
+      "windows": 852,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_003",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/a60087f4-9236-4e5e-9eb6-579f1296be45/segment_003",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "a60087f4-9236-4e5e-9eb6-579f1296be45",
+      "samples": 15377,
+      "windows": 14958,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/b004fb43-399f-4923-a184-9ccc25a9eccb/segment_000",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/b004fb43-399f-4923-a184-9ccc25a9eccb/segment_000",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "b004fb43-399f-4923-a184-9ccc25a9eccb",
+      "samples": 21502,
+      "windows": 21083,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/d9e5998b-77ff-489a-9693-88a2c175649d/segment_000",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/d9e5998b-77ff-489a-9693-88a2c175649d/segment_000",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "d9e5998b-77ff-489a-9693-88a2c175649d",
+      "samples": 24013,
+      "windows": 23594,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/dcccc365-6919-4a7b-8c5e-a869c07808d9/segment_000",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/dcccc365-6919-4a7b-8c5e-a869c07808d9/segment_000",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "dcccc365-6919-4a7b-8c5e-a869c07808d9",
+      "samples": 3703,
+      "windows": 3284,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/dcccc365-6919-4a7b-8c5e-a869c07808d9/segment_001",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/dcccc365-6919-4a7b-8c5e-a869c07808d9/segment_001",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "dcccc365-6919-4a7b-8c5e-a869c07808d9",
+      "samples": 7929,
+      "windows": 7510,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cd96afcc-440d-4c32-968f-9da64979827d/dcccc365-6919-4a7b-8c5e-a869c07808d9/segment_002",
+      "path": "validation/cd96afcc-440d-4c32-968f-9da64979827d/dcccc365-6919-4a7b-8c5e-a869c07808d9/segment_002",
+      "user": "cd96afcc-440d-4c32-968f-9da64979827d",
+      "recording": "dcccc365-6919-4a7b-8c5e-a869c07808d9",
+      "samples": 11006,
+      "windows": 10587,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cdb3f126-8637-4aee-902f-863a327bad94/07402940-0dc3-4418-949a-7515ffbe68ce/segment_000",
+      "path": "validation/cdb3f126-8637-4aee-902f-863a327bad94/07402940-0dc3-4418-949a-7515ffbe68ce/segment_000",
+      "user": "cdb3f126-8637-4aee-902f-863a327bad94",
+      "recording": "07402940-0dc3-4418-949a-7515ffbe68ce",
+      "samples": 12211,
+      "windows": 11792,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ce3d9826-c089-47b4-8bcb-94648db5cbf6/11377689-9f60-4b74-9730-10e00a9033e5/segment_000",
+      "path": "validation/ce3d9826-c089-47b4-8bcb-94648db5cbf6/11377689-9f60-4b74-9730-10e00a9033e5/segment_000",
+      "user": "ce3d9826-c089-47b4-8bcb-94648db5cbf6",
+      "recording": "11377689-9f60-4b74-9730-10e00a9033e5",
+      "samples": 1842,
+      "windows": 1423,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ce3d9826-c089-47b4-8bcb-94648db5cbf6/214580a7-4197-42a9-89b8-72ea1fd9bba1/segment_000",
+      "path": "validation/ce3d9826-c089-47b4-8bcb-94648db5cbf6/214580a7-4197-42a9-89b8-72ea1fd9bba1/segment_000",
+      "user": "ce3d9826-c089-47b4-8bcb-94648db5cbf6",
+      "recording": "214580a7-4197-42a9-89b8-72ea1fd9bba1",
+      "samples": 1842,
+      "windows": 1423,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf267a0e-ce07-419b-a894-575189eca309/268ad693-467f-444b-acd6-a731b3061534/segment_000",
+      "path": "validation/cf267a0e-ce07-419b-a894-575189eca309/268ad693-467f-444b-acd6-a731b3061534/segment_000",
+      "user": "cf267a0e-ce07-419b-a894-575189eca309",
+      "recording": "268ad693-467f-444b-acd6-a731b3061534",
+      "samples": 16119,
+      "windows": 15700,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf267a0e-ce07-419b-a894-575189eca309/5ab58f8d-5718-44ab-85b0-04ab32356226/segment_000",
+      "path": "validation/cf267a0e-ce07-419b-a894-575189eca309/5ab58f8d-5718-44ab-85b0-04ab32356226/segment_000",
+      "user": "cf267a0e-ce07-419b-a894-575189eca309",
+      "recording": "5ab58f8d-5718-44ab-85b0-04ab32356226",
+      "samples": 17030,
+      "windows": 16611,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf267a0e-ce07-419b-a894-575189eca309/a10fe610-de0d-48ec-9e66-392fec7ff0de/segment_000",
+      "path": "validation/cf267a0e-ce07-419b-a894-575189eca309/a10fe610-de0d-48ec-9e66-392fec7ff0de/segment_000",
+      "user": "cf267a0e-ce07-419b-a894-575189eca309",
+      "recording": "a10fe610-de0d-48ec-9e66-392fec7ff0de",
+      "samples": 11061,
+      "windows": 10642,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf267a0e-ce07-419b-a894-575189eca309/aaf7a7fe-5dfc-4ee3-bbf6-df8313cd6c83/segment_000",
+      "path": "validation/cf267a0e-ce07-419b-a894-575189eca309/aaf7a7fe-5dfc-4ee3-bbf6-df8313cd6c83/segment_000",
+      "user": "cf267a0e-ce07-419b-a894-575189eca309",
+      "recording": "aaf7a7fe-5dfc-4ee3-bbf6-df8313cd6c83",
+      "samples": 20730,
+      "windows": 20311,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf267a0e-ce07-419b-a894-575189eca309/dee43a4f-c941-40d6-9ef0-7e99e43d1a0f/segment_000",
+      "path": "validation/cf267a0e-ce07-419b-a894-575189eca309/dee43a4f-c941-40d6-9ef0-7e99e43d1a0f/segment_000",
+      "user": "cf267a0e-ce07-419b-a894-575189eca309",
+      "recording": "dee43a4f-c941-40d6-9ef0-7e99e43d1a0f",
+      "samples": 13679,
+      "windows": 13260,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e/76dfb02c-6e30-4f1a-8124-b6e763ab1102/segment_000",
+      "path": "validation/cf7e3852-f837-4d36-8c0d-46c0c473ec2e/76dfb02c-6e30-4f1a-8124-b6e763ab1102/segment_000",
+      "user": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e",
+      "recording": "76dfb02c-6e30-4f1a-8124-b6e763ab1102",
+      "samples": 14135,
+      "windows": 13716,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e/92a10bfa-065a-4ffb-9bc2-363f81f9c17c/segment_000",
+      "path": "validation/cf7e3852-f837-4d36-8c0d-46c0c473ec2e/92a10bfa-065a-4ffb-9bc2-363f81f9c17c/segment_000",
+      "user": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e",
+      "recording": "92a10bfa-065a-4ffb-9bc2-363f81f9c17c",
+      "samples": 14996,
+      "windows": 14577,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e/c4d9befa-183e-4f5a-aab3-184490f30c40/segment_000",
+      "path": "validation/cf7e3852-f837-4d36-8c0d-46c0c473ec2e/c4d9befa-183e-4f5a-aab3-184490f30c40/segment_000",
+      "user": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e",
+      "recording": "c4d9befa-183e-4f5a-aab3-184490f30c40",
+      "samples": 14141,
+      "windows": 13722,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e/db8f6e2e-1bfa-44ce-ae37-9991efe78813/segment_000",
+      "path": "validation/cf7e3852-f837-4d36-8c0d-46c0c473ec2e/db8f6e2e-1bfa-44ce-ae37-9991efe78813/segment_000",
+      "user": "cf7e3852-f837-4d36-8c0d-46c0c473ec2e",
+      "recording": "db8f6e2e-1bfa-44ce-ae37-9991efe78813",
+      "samples": 11842,
+      "windows": 11423,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "cf9b2ba4-5131-4fed-876f-b25447cdfec4/d31136be-cef6-4773-9f4b-96a20a0a836d/segment_000",
+      "path": "validation/cf9b2ba4-5131-4fed-876f-b25447cdfec4/d31136be-cef6-4773-9f4b-96a20a0a836d/segment_000",
+      "user": "cf9b2ba4-5131-4fed-876f-b25447cdfec4",
+      "recording": "d31136be-cef6-4773-9f4b-96a20a0a836d",
+      "samples": 13529,
+      "windows": 13110,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d0a314f4-b927-48b7-83d6-3056b227b4f2/35e4ff18-47e6-4724-90aa-08005252d57c/segment_000",
+      "path": "validation/d0a314f4-b927-48b7-83d6-3056b227b4f2/35e4ff18-47e6-4724-90aa-08005252d57c/segment_000",
+      "user": "d0a314f4-b927-48b7-83d6-3056b227b4f2",
+      "recording": "35e4ff18-47e6-4724-90aa-08005252d57c",
+      "samples": 2213,
+      "windows": 1794,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d0a314f4-b927-48b7-83d6-3056b227b4f2/3647f770-a649-4b42-8797-d5f6e4e8b34b/segment_000",
+      "path": "validation/d0a314f4-b927-48b7-83d6-3056b227b4f2/3647f770-a649-4b42-8797-d5f6e4e8b34b/segment_000",
+      "user": "d0a314f4-b927-48b7-83d6-3056b227b4f2",
+      "recording": "3647f770-a649-4b42-8797-d5f6e4e8b34b",
+      "samples": 5816,
+      "windows": 5397,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d4fe5d14-3574-4eb3-9a04-771ec73551d6/3ca1a25b-ec2d-4b43-a293-0619e8a26172/segment_000",
+      "path": "validation/d4fe5d14-3574-4eb3-9a04-771ec73551d6/3ca1a25b-ec2d-4b43-a293-0619e8a26172/segment_000",
+      "user": "d4fe5d14-3574-4eb3-9a04-771ec73551d6",
+      "recording": "3ca1a25b-ec2d-4b43-a293-0619e8a26172",
+      "samples": 20951,
+      "windows": 20532,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c/1f905caf-0d82-4084-acd7-9aa34d723b71/segment_000",
+      "path": "validation/d53d1784-ffe9-47b0-b7b9-6af28b54e83c/1f905caf-0d82-4084-acd7-9aa34d723b71/segment_000",
+      "user": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c",
+      "recording": "1f905caf-0d82-4084-acd7-9aa34d723b71",
+      "samples": 19684,
+      "windows": 19265,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c/370b5b59-ddf2-44d0-b26a-0c45a00a87b3/segment_000",
+      "path": "validation/d53d1784-ffe9-47b0-b7b9-6af28b54e83c/370b5b59-ddf2-44d0-b26a-0c45a00a87b3/segment_000",
+      "user": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c",
+      "recording": "370b5b59-ddf2-44d0-b26a-0c45a00a87b3",
+      "samples": 23323,
+      "windows": 22904,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c/4837d76a-14ff-4af1-89b4-d93ee4d6cb7d/segment_000",
+      "path": "validation/d53d1784-ffe9-47b0-b7b9-6af28b54e83c/4837d76a-14ff-4af1-89b4-d93ee4d6cb7d/segment_000",
+      "user": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c",
+      "recording": "4837d76a-14ff-4af1-89b4-d93ee4d6cb7d",
+      "samples": 15600,
+      "windows": 15181,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c/82151f77-cae8-4284-ac09-e8635308d575/segment_000",
+      "path": "validation/d53d1784-ffe9-47b0-b7b9-6af28b54e83c/82151f77-cae8-4284-ac09-e8635308d575/segment_000",
+      "user": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c",
+      "recording": "82151f77-cae8-4284-ac09-e8635308d575",
+      "samples": 24115,
+      "windows": 23696,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c/d0ca7b5e-c25e-42f1-8717-c918f039bcc8/segment_000",
+      "path": "validation/d53d1784-ffe9-47b0-b7b9-6af28b54e83c/d0ca7b5e-c25e-42f1-8717-c918f039bcc8/segment_000",
+      "user": "d53d1784-ffe9-47b0-b7b9-6af28b54e83c",
+      "recording": "d0ca7b5e-c25e-42f1-8717-c918f039bcc8",
+      "samples": 21079,
+      "windows": 20660,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6/13f38b38-8c4c-43a8-82dc-5a1b1baa339c/segment_000",
+      "path": "validation/d5705bf9-5ac2-44a2-adc7-e68feb881bc6/13f38b38-8c4c-43a8-82dc-5a1b1baa339c/segment_000",
+      "user": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6",
+      "recording": "13f38b38-8c4c-43a8-82dc-5a1b1baa339c",
+      "samples": 2777,
+      "windows": 2358,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6/3e66713d-8be6-4eb4-b3b5-fa8c5ee5ed5b/segment_000",
+      "path": "validation/d5705bf9-5ac2-44a2-adc7-e68feb881bc6/3e66713d-8be6-4eb4-b3b5-fa8c5ee5ed5b/segment_000",
+      "user": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6",
+      "recording": "3e66713d-8be6-4eb4-b3b5-fa8c5ee5ed5b",
+      "samples": 2743,
+      "windows": 2324,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6/7746b706-7ae5-4a91-a479-e461cd947c59/segment_000",
+      "path": "validation/d5705bf9-5ac2-44a2-adc7-e68feb881bc6/7746b706-7ae5-4a91-a479-e461cd947c59/segment_000",
+      "user": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6",
+      "recording": "7746b706-7ae5-4a91-a479-e461cd947c59",
+      "samples": 21880,
+      "windows": 21461,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6/adb4d2a7-7366-4758-aa59-5b4ad2d93b6b/segment_000",
+      "path": "validation/d5705bf9-5ac2-44a2-adc7-e68feb881bc6/adb4d2a7-7366-4758-aa59-5b4ad2d93b6b/segment_000",
+      "user": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6",
+      "recording": "adb4d2a7-7366-4758-aa59-5b4ad2d93b6b",
+      "samples": 3941,
+      "windows": 3522,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6/b2079356-a6e3-4eda-a32d-10b31ce364b1/segment_000",
+      "path": "validation/d5705bf9-5ac2-44a2-adc7-e68feb881bc6/b2079356-a6e3-4eda-a32d-10b31ce364b1/segment_000",
+      "user": "d5705bf9-5ac2-44a2-adc7-e68feb881bc6",
+      "recording": "b2079356-a6e3-4eda-a32d-10b31ce364b1",
+      "samples": 4844,
+      "windows": 4425,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/0fa5dc64-5fd2-43f5-b4ae-b9dcd881c05f/segment_000",
+      "path": "validation/d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/0fa5dc64-5fd2-43f5-b4ae-b9dcd881c05f/segment_000",
+      "user": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3",
+      "recording": "0fa5dc64-5fd2-43f5-b4ae-b9dcd881c05f",
+      "samples": 18087,
+      "windows": 17668,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/515d6287-f3de-4bc4-ad4e-dcd11fa9181d/segment_000",
+      "path": "validation/d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/515d6287-f3de-4bc4-ad4e-dcd11fa9181d/segment_000",
+      "user": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3",
+      "recording": "515d6287-f3de-4bc4-ad4e-dcd11fa9181d",
+      "samples": 14976,
+      "windows": 14557,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/85a080db-b3ba-4632-b3ca-86bfba0b6240/segment_000",
+      "path": "validation/d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/85a080db-b3ba-4632-b3ca-86bfba0b6240/segment_000",
+      "user": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3",
+      "recording": "85a080db-b3ba-4632-b3ca-86bfba0b6240",
+      "samples": 27432,
+      "windows": 27013,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/9ca21d4f-8d48-4ac7-943b-c86c9b8bad22/segment_000",
+      "path": "validation/d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/9ca21d4f-8d48-4ac7-943b-c86c9b8bad22/segment_000",
+      "user": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3",
+      "recording": "9ca21d4f-8d48-4ac7-943b-c86c9b8bad22",
+      "samples": 23835,
+      "windows": 23416,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/f1ca15ff-abde-4b80-bef2-328821bcee0e/segment_000",
+      "path": "validation/d5a91369-e2c3-41aa-b47c-f807e4bfe3c3/f1ca15ff-abde-4b80-bef2-328821bcee0e/segment_000",
+      "user": "d5a91369-e2c3-41aa-b47c-f807e4bfe3c3",
+      "recording": "f1ca15ff-abde-4b80-bef2-328821bcee0e",
+      "samples": 20773,
+      "windows": 20354,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d7c6c903-4133-4284-aff4-dfb120a450c7/c143bb84-bb53-4d15-a4a8-5812f6dc0c6f/segment_000",
+      "path": "validation/d7c6c903-4133-4284-aff4-dfb120a450c7/c143bb84-bb53-4d15-a4a8-5812f6dc0c6f/segment_000",
+      "user": "d7c6c903-4133-4284-aff4-dfb120a450c7",
+      "recording": "c143bb84-bb53-4d15-a4a8-5812f6dc0c6f",
+      "samples": 26345,
+      "windows": 25926,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d8fd65cb-6dca-4677-8149-eec9a868e8ec/e40cc169-9e0e-45bf-a400-b9b3e6e876e6/segment_000",
+      "path": "validation/d8fd65cb-6dca-4677-8149-eec9a868e8ec/e40cc169-9e0e-45bf-a400-b9b3e6e876e6/segment_000",
+      "user": "d8fd65cb-6dca-4677-8149-eec9a868e8ec",
+      "recording": "e40cc169-9e0e-45bf-a400-b9b3e6e876e6",
+      "samples": 15904,
+      "windows": 15485,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d8fd65cb-6dca-4677-8149-eec9a868e8ec/eaff6a33-5ffd-457d-bd7b-2c53de5baf19/segment_000",
+      "path": "validation/d8fd65cb-6dca-4677-8149-eec9a868e8ec/eaff6a33-5ffd-457d-bd7b-2c53de5baf19/segment_000",
+      "user": "d8fd65cb-6dca-4677-8149-eec9a868e8ec",
+      "recording": "eaff6a33-5ffd-457d-bd7b-2c53de5baf19",
+      "samples": 16030,
+      "windows": 15611,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "d8fd65cb-6dca-4677-8149-eec9a868e8ec/f66de25a-37bd-4ea4-a806-511af78a1bdd/segment_000",
+      "path": "validation/d8fd65cb-6dca-4677-8149-eec9a868e8ec/f66de25a-37bd-4ea4-a806-511af78a1bdd/segment_000",
+      "user": "d8fd65cb-6dca-4677-8149-eec9a868e8ec",
+      "recording": "f66de25a-37bd-4ea4-a806-511af78a1bdd",
+      "samples": 6011,
+      "windows": 5592,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "daa4c4dd-9027-43c7-8ab4-4aae36e59c99/945aa7d5-b07b-46a7-8284-bf282789502f/segment_000",
+      "path": "validation/daa4c4dd-9027-43c7-8ab4-4aae36e59c99/945aa7d5-b07b-46a7-8284-bf282789502f/segment_000",
+      "user": "daa4c4dd-9027-43c7-8ab4-4aae36e59c99",
+      "recording": "945aa7d5-b07b-46a7-8284-bf282789502f",
+      "samples": 10394,
+      "windows": 9975,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "dd0742f5-bedb-4935-a4c3-aad3e3b80252/35aad86e-5d84-43ea-a1b3-e91a8e1714dc/segment_000",
+      "path": "validation/dd0742f5-bedb-4935-a4c3-aad3e3b80252/35aad86e-5d84-43ea-a1b3-e91a8e1714dc/segment_000",
+      "user": "dd0742f5-bedb-4935-a4c3-aad3e3b80252",
+      "recording": "35aad86e-5d84-43ea-a1b3-e91a8e1714dc",
+      "samples": 17316,
+      "windows": 16897,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "dd7bf2bb-4c4d-45f7-9b4b-2d8c9f119eed/b05f9ff8-7d0a-4172-92f2-3483026e7211/segment_000",
+      "path": "validation/dd7bf2bb-4c4d-45f7-9b4b-2d8c9f119eed/b05f9ff8-7d0a-4172-92f2-3483026e7211/segment_000",
+      "user": "dd7bf2bb-4c4d-45f7-9b4b-2d8c9f119eed",
+      "recording": "b05f9ff8-7d0a-4172-92f2-3483026e7211",
+      "samples": 2416,
+      "windows": 1997,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e050c001-e20e-41c8-ac21-42a333e42a87/3624d019-9ded-49a4-b902-4bc2d038f268/segment_000",
+      "path": "validation/e050c001-e20e-41c8-ac21-42a333e42a87/3624d019-9ded-49a4-b902-4bc2d038f268/segment_000",
+      "user": "e050c001-e20e-41c8-ac21-42a333e42a87",
+      "recording": "3624d019-9ded-49a4-b902-4bc2d038f268",
+      "samples": 21960,
+      "windows": 21541,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e050c001-e20e-41c8-ac21-42a333e42a87/579f6494-64d3-419a-9eb9-0d2f148e1d7a/segment_000",
+      "path": "validation/e050c001-e20e-41c8-ac21-42a333e42a87/579f6494-64d3-419a-9eb9-0d2f148e1d7a/segment_000",
+      "user": "e050c001-e20e-41c8-ac21-42a333e42a87",
+      "recording": "579f6494-64d3-419a-9eb9-0d2f148e1d7a",
+      "samples": 49445,
+      "windows": 49026,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e050c001-e20e-41c8-ac21-42a333e42a87/a8c5c7ec-2088-4b84-a90e-01e9b5ba51ea/segment_000",
+      "path": "validation/e050c001-e20e-41c8-ac21-42a333e42a87/a8c5c7ec-2088-4b84-a90e-01e9b5ba51ea/segment_000",
+      "user": "e050c001-e20e-41c8-ac21-42a333e42a87",
+      "recording": "a8c5c7ec-2088-4b84-a90e-01e9b5ba51ea",
+      "samples": 18747,
+      "windows": 18328,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e050c001-e20e-41c8-ac21-42a333e42a87/b79bb7e7-c0fc-46e2-ad22-e323a5694c05/segment_000",
+      "path": "validation/e050c001-e20e-41c8-ac21-42a333e42a87/b79bb7e7-c0fc-46e2-ad22-e323a5694c05/segment_000",
+      "user": "e050c001-e20e-41c8-ac21-42a333e42a87",
+      "recording": "b79bb7e7-c0fc-46e2-ad22-e323a5694c05",
+      "samples": 19617,
+      "windows": 19198,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e050c001-e20e-41c8-ac21-42a333e42a87/b9d823cc-0c23-4b56-930f-dd514e847869/segment_000",
+      "path": "validation/e050c001-e20e-41c8-ac21-42a333e42a87/b9d823cc-0c23-4b56-930f-dd514e847869/segment_000",
+      "user": "e050c001-e20e-41c8-ac21-42a333e42a87",
+      "recording": "b9d823cc-0c23-4b56-930f-dd514e847869",
+      "samples": 15722,
+      "windows": 15303,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e3e8a68f-5014-4b7e-9d8c-53f33682e3b2/5468c8af-0559-4e50-81d9-1dfd0c70ee3e/segment_000",
+      "path": "validation/e3e8a68f-5014-4b7e-9d8c-53f33682e3b2/5468c8af-0559-4e50-81d9-1dfd0c70ee3e/segment_000",
+      "user": "e3e8a68f-5014-4b7e-9d8c-53f33682e3b2",
+      "recording": "5468c8af-0559-4e50-81d9-1dfd0c70ee3e",
+      "samples": 3602,
+      "windows": 3183,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e3e8a68f-5014-4b7e-9d8c-53f33682e3b2/b3968bc2-4b7e-4675-9378-b19a1251b910/segment_000",
+      "path": "validation/e3e8a68f-5014-4b7e-9d8c-53f33682e3b2/b3968bc2-4b7e-4675-9378-b19a1251b910/segment_000",
+      "user": "e3e8a68f-5014-4b7e-9d8c-53f33682e3b2",
+      "recording": "b3968bc2-4b7e-4675-9378-b19a1251b910",
+      "samples": 3601,
+      "windows": 3182,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e548e125-752d-4518-be0d-f3f122613f28/c33776e8-827a-4b66-a58a-cbda32fb2470/segment_000",
+      "path": "validation/e548e125-752d-4518-be0d-f3f122613f28/c33776e8-827a-4b66-a58a-cbda32fb2470/segment_000",
+      "user": "e548e125-752d-4518-be0d-f3f122613f28",
+      "recording": "c33776e8-827a-4b66-a58a-cbda32fb2470",
+      "samples": 17332,
+      "windows": 16913,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e7cf4f2e-5cbb-4213-b432-900fcbb343bb/71375ea2-7146-46a1-8927-e623d072234a/segment_000",
+      "path": "validation/e7cf4f2e-5cbb-4213-b432-900fcbb343bb/71375ea2-7146-46a1-8927-e623d072234a/segment_000",
+      "user": "e7cf4f2e-5cbb-4213-b432-900fcbb343bb",
+      "recording": "71375ea2-7146-46a1-8927-e623d072234a",
+      "samples": 22233,
+      "windows": 21814,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e7cf4f2e-5cbb-4213-b432-900fcbb343bb/906cf937-58c3-41ed-b104-dcf85de9d99f/segment_000",
+      "path": "validation/e7cf4f2e-5cbb-4213-b432-900fcbb343bb/906cf937-58c3-41ed-b104-dcf85de9d99f/segment_000",
+      "user": "e7cf4f2e-5cbb-4213-b432-900fcbb343bb",
+      "recording": "906cf937-58c3-41ed-b104-dcf85de9d99f",
+      "samples": 21847,
+      "windows": 21428,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "e7cf4f2e-5cbb-4213-b432-900fcbb343bb/91af26a4-42c7-4dd1-9868-acd7b960a979/segment_000",
+      "path": "validation/e7cf4f2e-5cbb-4213-b432-900fcbb343bb/91af26a4-42c7-4dd1-9868-acd7b960a979/segment_000",
+      "user": "e7cf4f2e-5cbb-4213-b432-900fcbb343bb",
+      "recording": "91af26a4-42c7-4dd1-9868-acd7b960a979",
+      "samples": 15393,
+      "windows": 14974,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "eadf5eb8-0cad-47ff-9347-da97e528c91d/675e00c0-06c1-4c91-be60-a89f50304638/segment_000",
+      "path": "validation/eadf5eb8-0cad-47ff-9347-da97e528c91d/675e00c0-06c1-4c91-be60-a89f50304638/segment_000",
+      "user": "eadf5eb8-0cad-47ff-9347-da97e528c91d",
+      "recording": "675e00c0-06c1-4c91-be60-a89f50304638",
+      "samples": 17586,
+      "windows": 17167,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "eadf5eb8-0cad-47ff-9347-da97e528c91d/8a27ae73-6176-4e38-a2cf-fe964694bc0d/segment_000",
+      "path": "validation/eadf5eb8-0cad-47ff-9347-da97e528c91d/8a27ae73-6176-4e38-a2cf-fe964694bc0d/segment_000",
+      "user": "eadf5eb8-0cad-47ff-9347-da97e528c91d",
+      "recording": "8a27ae73-6176-4e38-a2cf-fe964694bc0d",
+      "samples": 13434,
+      "windows": 13015,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "eadf5eb8-0cad-47ff-9347-da97e528c91d/a451745e-d635-4efc-b693-4c4fd335903c/segment_000",
+      "path": "validation/eadf5eb8-0cad-47ff-9347-da97e528c91d/a451745e-d635-4efc-b693-4c4fd335903c/segment_000",
+      "user": "eadf5eb8-0cad-47ff-9347-da97e528c91d",
+      "recording": "a451745e-d635-4efc-b693-4c4fd335903c",
+      "samples": 7130,
+      "windows": 6711,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "eadf5eb8-0cad-47ff-9347-da97e528c91d/c195bda9-fd0a-4bf0-bb7f-c42aa3d259f6/segment_000",
+      "path": "validation/eadf5eb8-0cad-47ff-9347-da97e528c91d/c195bda9-fd0a-4bf0-bb7f-c42aa3d259f6/segment_000",
+      "user": "eadf5eb8-0cad-47ff-9347-da97e528c91d",
+      "recording": "c195bda9-fd0a-4bf0-bb7f-c42aa3d259f6",
+      "samples": 5859,
+      "windows": 5440,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "eadf5eb8-0cad-47ff-9347-da97e528c91d/c73e7046-6e3f-4f4c-9b68-f4da9946f41c/segment_000",
+      "path": "validation/eadf5eb8-0cad-47ff-9347-da97e528c91d/c73e7046-6e3f-4f4c-9b68-f4da9946f41c/segment_000",
+      "user": "eadf5eb8-0cad-47ff-9347-da97e528c91d",
+      "recording": "c73e7046-6e3f-4f4c-9b68-f4da9946f41c",
+      "samples": 1138,
+      "windows": 719,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ebe9bda0-0663-4331-8be9-040ffaa60487/c5837c08-9a58-427f-9ee5-255182155b66/segment_000",
+      "path": "validation/ebe9bda0-0663-4331-8be9-040ffaa60487/c5837c08-9a58-427f-9ee5-255182155b66/segment_000",
+      "user": "ebe9bda0-0663-4331-8be9-040ffaa60487",
+      "recording": "c5837c08-9a58-427f-9ee5-255182155b66",
+      "samples": 1048,
+      "windows": 629,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa/02da05c5-3f0a-487a-9498-81176ff7cf22/segment_000",
+      "path": "validation/ec41cfd5-8618-4658-b0f0-0fd15a4835fa/02da05c5-3f0a-487a-9498-81176ff7cf22/segment_000",
+      "user": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa",
+      "recording": "02da05c5-3f0a-487a-9498-81176ff7cf22",
+      "samples": 35407,
+      "windows": 34988,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa/12cff909-9483-45a2-b2a0-785dc634cdd5/segment_000",
+      "path": "validation/ec41cfd5-8618-4658-b0f0-0fd15a4835fa/12cff909-9483-45a2-b2a0-785dc634cdd5/segment_000",
+      "user": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa",
+      "recording": "12cff909-9483-45a2-b2a0-785dc634cdd5",
+      "samples": 21236,
+      "windows": 20817,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa/3c017f25-de41-42d6-9b14-85075f8b6ac5/segment_000",
+      "path": "validation/ec41cfd5-8618-4658-b0f0-0fd15a4835fa/3c017f25-de41-42d6-9b14-85075f8b6ac5/segment_000",
+      "user": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa",
+      "recording": "3c017f25-de41-42d6-9b14-85075f8b6ac5",
+      "samples": 15322,
+      "windows": 14903,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa/6ccf852d-15ac-4c4c-b24f-6210f9cc04ef/segment_000",
+      "path": "validation/ec41cfd5-8618-4658-b0f0-0fd15a4835fa/6ccf852d-15ac-4c4c-b24f-6210f9cc04ef/segment_000",
+      "user": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa",
+      "recording": "6ccf852d-15ac-4c4c-b24f-6210f9cc04ef",
+      "samples": 20133,
+      "windows": 19714,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa/79ef2ece-fa27-4887-9e92-ca86b7c34312/segment_000",
+      "path": "validation/ec41cfd5-8618-4658-b0f0-0fd15a4835fa/79ef2ece-fa27-4887-9e92-ca86b7c34312/segment_000",
+      "user": "ec41cfd5-8618-4658-b0f0-0fd15a4835fa",
+      "recording": "79ef2ece-fa27-4887-9e92-ca86b7c34312",
+      "samples": 12158,
+      "windows": 11739,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c/8054206d-d88f-4ddd-8ea4-6fdaf7c6af61/segment_000",
+      "path": "validation/f26d4c80-7d9f-4143-ad6a-585d8e920d7c/8054206d-d88f-4ddd-8ea4-6fdaf7c6af61/segment_000",
+      "user": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c",
+      "recording": "8054206d-d88f-4ddd-8ea4-6fdaf7c6af61",
+      "samples": 12601,
+      "windows": 12182,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c/ac292ae1-9bbe-454b-a1d7-220cd2ae077c/segment_000",
+      "path": "validation/f26d4c80-7d9f-4143-ad6a-585d8e920d7c/ac292ae1-9bbe-454b-a1d7-220cd2ae077c/segment_000",
+      "user": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c",
+      "recording": "ac292ae1-9bbe-454b-a1d7-220cd2ae077c",
+      "samples": 14981,
+      "windows": 14562,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c/d08fca9d-7715-419c-81c1-169ef0f3a826/segment_000",
+      "path": "validation/f26d4c80-7d9f-4143-ad6a-585d8e920d7c/d08fca9d-7715-419c-81c1-169ef0f3a826/segment_000",
+      "user": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c",
+      "recording": "d08fca9d-7715-419c-81c1-169ef0f3a826",
+      "samples": 20926,
+      "windows": 20507,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c/e027a211-afe0-4d1b-ac4c-9836fc2a12be/segment_000",
+      "path": "validation/f26d4c80-7d9f-4143-ad6a-585d8e920d7c/e027a211-afe0-4d1b-ac4c-9836fc2a12be/segment_000",
+      "user": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c",
+      "recording": "e027a211-afe0-4d1b-ac4c-9836fc2a12be",
+      "samples": 23650,
+      "windows": 23231,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c/e027a211-afe0-4d1b-ac4c-9836fc2a12be/segment_001",
+      "path": "validation/f26d4c80-7d9f-4143-ad6a-585d8e920d7c/e027a211-afe0-4d1b-ac4c-9836fc2a12be/segment_001",
+      "user": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c",
+      "recording": "e027a211-afe0-4d1b-ac4c-9836fc2a12be",
+      "samples": 10471,
+      "windows": 10052,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c/e2851ca5-aaba-4b52-aa8c-0747900aaa44/segment_000",
+      "path": "validation/f26d4c80-7d9f-4143-ad6a-585d8e920d7c/e2851ca5-aaba-4b52-aa8c-0747900aaa44/segment_000",
+      "user": "f26d4c80-7d9f-4143-ad6a-585d8e920d7c",
+      "recording": "e2851ca5-aaba-4b52-aa8c-0747900aaa44",
+      "samples": 1617,
+      "windows": 1198,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f27574d0-20c2-4f4e-8d0b-7f4bb71a7f8f/2b6777ed-274e-4749-b400-a9079ce20b4d/segment_000",
+      "path": "validation/f27574d0-20c2-4f4e-8d0b-7f4bb71a7f8f/2b6777ed-274e-4749-b400-a9079ce20b4d/segment_000",
+      "user": "f27574d0-20c2-4f4e-8d0b-7f4bb71a7f8f",
+      "recording": "2b6777ed-274e-4749-b400-a9079ce20b4d",
+      "samples": 13959,
+      "windows": 13540,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f27574d0-20c2-4f4e-8d0b-7f4bb71a7f8f/346358d6-8436-43e6-8a55-1207cfa714c9/segment_000",
+      "path": "validation/f27574d0-20c2-4f4e-8d0b-7f4bb71a7f8f/346358d6-8436-43e6-8a55-1207cfa714c9/segment_000",
+      "user": "f27574d0-20c2-4f4e-8d0b-7f4bb71a7f8f",
+      "recording": "346358d6-8436-43e6-8a55-1207cfa714c9",
+      "samples": 15826,
+      "windows": 15407,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f280a461-4512-4d28-89c6-1a84a7cb6765/20205448-d873-4d8e-a3d5-031f3e5b803c/segment_000",
+      "path": "validation/f280a461-4512-4d28-89c6-1a84a7cb6765/20205448-d873-4d8e-a3d5-031f3e5b803c/segment_000",
+      "user": "f280a461-4512-4d28-89c6-1a84a7cb6765",
+      "recording": "20205448-d873-4d8e-a3d5-031f3e5b803c",
+      "samples": 11323,
+      "windows": 10904,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f280a461-4512-4d28-89c6-1a84a7cb6765/5afe9913-f982-4b71-b201-b03c952e1db9/segment_000",
+      "path": "validation/f280a461-4512-4d28-89c6-1a84a7cb6765/5afe9913-f982-4b71-b201-b03c952e1db9/segment_000",
+      "user": "f280a461-4512-4d28-89c6-1a84a7cb6765",
+      "recording": "5afe9913-f982-4b71-b201-b03c952e1db9",
+      "samples": 16340,
+      "windows": 15921,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f280a461-4512-4d28-89c6-1a84a7cb6765/925a9e10-f38b-4068-8bd5-4786d3c5ee7d/segment_000",
+      "path": "validation/f280a461-4512-4d28-89c6-1a84a7cb6765/925a9e10-f38b-4068-8bd5-4786d3c5ee7d/segment_000",
+      "user": "f280a461-4512-4d28-89c6-1a84a7cb6765",
+      "recording": "925a9e10-f38b-4068-8bd5-4786d3c5ee7d",
+      "samples": 17225,
+      "windows": 16806,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f280a461-4512-4d28-89c6-1a84a7cb6765/df54fb1a-eb5a-45ac-9eda-957e9d119ccf/segment_000",
+      "path": "validation/f280a461-4512-4d28-89c6-1a84a7cb6765/df54fb1a-eb5a-45ac-9eda-957e9d119ccf/segment_000",
+      "user": "f280a461-4512-4d28-89c6-1a84a7cb6765",
+      "recording": "df54fb1a-eb5a-45ac-9eda-957e9d119ccf",
+      "samples": 18658,
+      "windows": 18239,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f35f3126-0524-431c-86d4-472e813633c8/0bf92f59-9830-4ab9-92a8-c5911960cac9/segment_000",
+      "path": "validation/f35f3126-0524-431c-86d4-472e813633c8/0bf92f59-9830-4ab9-92a8-c5911960cac9/segment_000",
+      "user": "f35f3126-0524-431c-86d4-472e813633c8",
+      "recording": "0bf92f59-9830-4ab9-92a8-c5911960cac9",
+      "samples": 16690,
+      "windows": 16271,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f35f3126-0524-431c-86d4-472e813633c8/553faa29-3468-46c8-967a-e22ff6932601/segment_000",
+      "path": "validation/f35f3126-0524-431c-86d4-472e813633c8/553faa29-3468-46c8-967a-e22ff6932601/segment_000",
+      "user": "f35f3126-0524-431c-86d4-472e813633c8",
+      "recording": "553faa29-3468-46c8-967a-e22ff6932601",
+      "samples": 19470,
+      "windows": 19051,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f35f3126-0524-431c-86d4-472e813633c8/e47aa147-82aa-4174-9b83-75ddcb2210b9/segment_000",
+      "path": "validation/f35f3126-0524-431c-86d4-472e813633c8/e47aa147-82aa-4174-9b83-75ddcb2210b9/segment_000",
+      "user": "f35f3126-0524-431c-86d4-472e813633c8",
+      "recording": "e47aa147-82aa-4174-9b83-75ddcb2210b9",
+      "samples": 19368,
+      "windows": 18949,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f35f3126-0524-431c-86d4-472e813633c8/f095cff8-7f9a-45d9-bbb8-c4c3c7ca44b1/segment_000",
+      "path": "validation/f35f3126-0524-431c-86d4-472e813633c8/f095cff8-7f9a-45d9-bbb8-c4c3c7ca44b1/segment_000",
+      "user": "f35f3126-0524-431c-86d4-472e813633c8",
+      "recording": "f095cff8-7f9a-45d9-bbb8-c4c3c7ca44b1",
+      "samples": 21700,
+      "windows": 21281,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f35f3126-0524-431c-86d4-472e813633c8/f0ff7f89-776d-4d86-a13c-840b4fee6f56/segment_000",
+      "path": "validation/f35f3126-0524-431c-86d4-472e813633c8/f0ff7f89-776d-4d86-a13c-840b4fee6f56/segment_000",
+      "user": "f35f3126-0524-431c-86d4-472e813633c8",
+      "recording": "f0ff7f89-776d-4d86-a13c-840b4fee6f56",
+      "samples": 22662,
+      "windows": 22243,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f411f256-1f34-454b-87f0-637de4e1be37/00afc633-d53c-48cc-afd3-47e7e43d5512/segment_000",
+      "path": "validation/f411f256-1f34-454b-87f0-637de4e1be37/00afc633-d53c-48cc-afd3-47e7e43d5512/segment_000",
+      "user": "f411f256-1f34-454b-87f0-637de4e1be37",
+      "recording": "00afc633-d53c-48cc-afd3-47e7e43d5512",
+      "samples": 17104,
+      "windows": 16685,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f411f256-1f34-454b-87f0-637de4e1be37/621e70c7-8eff-47ae-a440-ffae40b18652/segment_000",
+      "path": "validation/f411f256-1f34-454b-87f0-637de4e1be37/621e70c7-8eff-47ae-a440-ffae40b18652/segment_000",
+      "user": "f411f256-1f34-454b-87f0-637de4e1be37",
+      "recording": "621e70c7-8eff-47ae-a440-ffae40b18652",
+      "samples": 3232,
+      "windows": 2813,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f411f256-1f34-454b-87f0-637de4e1be37/7954f7ac-e0ed-404c-8f9d-dc72731800e3/segment_000",
+      "path": "validation/f411f256-1f34-454b-87f0-637de4e1be37/7954f7ac-e0ed-404c-8f9d-dc72731800e3/segment_000",
+      "user": "f411f256-1f34-454b-87f0-637de4e1be37",
+      "recording": "7954f7ac-e0ed-404c-8f9d-dc72731800e3",
+      "samples": 20244,
+      "windows": 19825,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f411f256-1f34-454b-87f0-637de4e1be37/8f971ff6-1869-40e4-ab53-39ab3f611a99/segment_000",
+      "path": "validation/f411f256-1f34-454b-87f0-637de4e1be37/8f971ff6-1869-40e4-ab53-39ab3f611a99/segment_000",
+      "user": "f411f256-1f34-454b-87f0-637de4e1be37",
+      "recording": "8f971ff6-1869-40e4-ab53-39ab3f611a99",
+      "samples": 3451,
+      "windows": 3032,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f411f256-1f34-454b-87f0-637de4e1be37/aaaa4b1b-4889-42f8-9caf-d98ba407ba1c/segment_000",
+      "path": "validation/f411f256-1f34-454b-87f0-637de4e1be37/aaaa4b1b-4889-42f8-9caf-d98ba407ba1c/segment_000",
+      "user": "f411f256-1f34-454b-87f0-637de4e1be37",
+      "recording": "aaaa4b1b-4889-42f8-9caf-d98ba407ba1c",
+      "samples": 17960,
+      "windows": 17541,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f59669d5-4325-402c-b584-eebed5635840/8fb5c72f-8774-4307-a18d-1374021a1d62/segment_000",
+      "path": "validation/f59669d5-4325-402c-b584-eebed5635840/8fb5c72f-8774-4307-a18d-1374021a1d62/segment_000",
+      "user": "f59669d5-4325-402c-b584-eebed5635840",
+      "recording": "8fb5c72f-8774-4307-a18d-1374021a1d62",
+      "samples": 1249,
+      "windows": 830,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f59669d5-4325-402c-b584-eebed5635840/efbfee8a-f0bb-467b-9bbd-7b3c237c25ab/segment_000",
+      "path": "validation/f59669d5-4325-402c-b584-eebed5635840/efbfee8a-f0bb-467b-9bbd-7b3c237c25ab/segment_000",
+      "user": "f59669d5-4325-402c-b584-eebed5635840",
+      "recording": "efbfee8a-f0bb-467b-9bbd-7b3c237c25ab",
+      "samples": 3908,
+      "windows": 3489,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f7912a19-76ad-444e-ac79-fd881c71beca/5303b007-cc7f-44e4-a439-1d01a80149a8/segment_000",
+      "path": "validation/f7912a19-76ad-444e-ac79-fd881c71beca/5303b007-cc7f-44e4-a439-1d01a80149a8/segment_000",
+      "user": "f7912a19-76ad-444e-ac79-fd881c71beca",
+      "recording": "5303b007-cc7f-44e4-a439-1d01a80149a8",
+      "samples": 10688,
+      "windows": 10269,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "f7cb5e5a-8d48-47c5-8fb1-f355d001c80d/900caa5d-e055-4dc4-b7d4-e6fca4ab819a/segment_000",
+      "path": "validation/f7cb5e5a-8d48-47c5-8fb1-f355d001c80d/900caa5d-e055-4dc4-b7d4-e6fca4ab819a/segment_000",
+      "user": "f7cb5e5a-8d48-47c5-8fb1-f355d001c80d",
+      "recording": "900caa5d-e055-4dc4-b7d4-e6fca4ab819a",
+      "samples": 35110,
+      "windows": 34691,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ff5f75fd-2686-42c4-a94b-ada1f2f36a66/8f1872ed-7e19-483c-9fff-3920bdf1558b/segment_000",
+      "path": "validation/ff5f75fd-2686-42c4-a94b-ada1f2f36a66/8f1872ed-7e19-483c-9fff-3920bdf1558b/segment_000",
+      "user": "ff5f75fd-2686-42c4-a94b-ada1f2f36a66",
+      "recording": "8f1872ed-7e19-483c-9fff-3920bdf1558b",
+      "samples": 22176,
+      "windows": 21757,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ff5f75fd-2686-42c4-a94b-ada1f2f36a66/8f1872ed-7e19-483c-9fff-3920bdf1558b/segment_001",
+      "path": "validation/ff5f75fd-2686-42c4-a94b-ada1f2f36a66/8f1872ed-7e19-483c-9fff-3920bdf1558b/segment_001",
+      "user": "ff5f75fd-2686-42c4-a94b-ada1f2f36a66",
+      "recording": "8f1872ed-7e19-483c-9fff-3920bdf1558b",
+      "samples": 8326,
+      "windows": 7907,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ff90ad60-716b-42ef-a7b0-7a50089fded8/02de25f1-9303-4f10-9737-9f2577bec9e3/segment_000",
+      "path": "validation/ff90ad60-716b-42ef-a7b0-7a50089fded8/02de25f1-9303-4f10-9737-9f2577bec9e3/segment_000",
+      "user": "ff90ad60-716b-42ef-a7b0-7a50089fded8",
+      "recording": "02de25f1-9303-4f10-9737-9f2577bec9e3",
+      "samples": 2402,
+      "windows": 1983,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ff90ad60-716b-42ef-a7b0-7a50089fded8/6c30d8e5-12d2-4deb-b117-4e9a4197f422/segment_000",
+      "path": "validation/ff90ad60-716b-42ef-a7b0-7a50089fded8/6c30d8e5-12d2-4deb-b117-4e9a4197f422/segment_000",
+      "user": "ff90ad60-716b-42ef-a7b0-7a50089fded8",
+      "recording": "6c30d8e5-12d2-4deb-b117-4e9a4197f422",
+      "samples": 1995,
+      "windows": 1576,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ff90ad60-716b-42ef-a7b0-7a50089fded8/92904f8d-9849-4828-b4cb-5a329d6e3216/segment_000",
+      "path": "validation/ff90ad60-716b-42ef-a7b0-7a50089fded8/92904f8d-9849-4828-b4cb-5a329d6e3216/segment_000",
+      "user": "ff90ad60-716b-42ef-a7b0-7a50089fded8",
+      "recording": "92904f8d-9849-4828-b4cb-5a329d6e3216",
+      "samples": 2402,
+      "windows": 1983,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ff90ad60-716b-42ef-a7b0-7a50089fded8/f1462562-cd9a-40c9-939e-3fe698dc292b/segment_000",
+      "path": "validation/ff90ad60-716b-42ef-a7b0-7a50089fded8/f1462562-cd9a-40c9-939e-3fe698dc292b/segment_000",
+      "user": "ff90ad60-716b-42ef-a7b0-7a50089fded8",
+      "recording": "f1462562-cd9a-40c9-939e-3fe698dc292b",
+      "samples": 2481,
+      "windows": 2062,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ffe97968-68f6-4e80-bc39-70df3ef11a99/3078eb2e-d3d3-42af-950a-2be5a4769f9d/segment_000",
+      "path": "validation/ffe97968-68f6-4e80-bc39-70df3ef11a99/3078eb2e-d3d3-42af-950a-2be5a4769f9d/segment_000",
+      "user": "ffe97968-68f6-4e80-bc39-70df3ef11a99",
+      "recording": "3078eb2e-d3d3-42af-950a-2be5a4769f9d",
+      "samples": 20910,
+      "windows": 20491,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ffe97968-68f6-4e80-bc39-70df3ef11a99/67c599da-79fd-456d-bab6-036f60bea118/segment_000",
+      "path": "validation/ffe97968-68f6-4e80-bc39-70df3ef11a99/67c599da-79fd-456d-bab6-036f60bea118/segment_000",
+      "user": "ffe97968-68f6-4e80-bc39-70df3ef11a99",
+      "recording": "67c599da-79fd-456d-bab6-036f60bea118",
+      "samples": 14264,
+      "windows": 13845,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ffe97968-68f6-4e80-bc39-70df3ef11a99/87f4e57f-c0da-4cae-822e-e3566fffd497/segment_000",
+      "path": "validation/ffe97968-68f6-4e80-bc39-70df3ef11a99/87f4e57f-c0da-4cae-822e-e3566fffd497/segment_000",
+      "user": "ffe97968-68f6-4e80-bc39-70df3ef11a99",
+      "recording": "87f4e57f-c0da-4cae-822e-e3566fffd497",
+      "samples": 22221,
+      "windows": 21802,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ffe97968-68f6-4e80-bc39-70df3ef11a99/9a3a98b5-6428-483d-bb5f-95c233a874c7/segment_000",
+      "path": "validation/ffe97968-68f6-4e80-bc39-70df3ef11a99/9a3a98b5-6428-483d-bb5f-95c233a874c7/segment_000",
+      "user": "ffe97968-68f6-4e80-bc39-70df3ef11a99",
+      "recording": "9a3a98b5-6428-483d-bb5f-95c233a874c7",
+      "samples": 5724,
+      "windows": 5305,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ffe97968-68f6-4e80-bc39-70df3ef11a99/9a3a98b5-6428-483d-bb5f-95c233a874c7/segment_001",
+      "path": "validation/ffe97968-68f6-4e80-bc39-70df3ef11a99/9a3a98b5-6428-483d-bb5f-95c233a874c7/segment_001",
+      "user": "ffe97968-68f6-4e80-bc39-70df3ef11a99",
+      "recording": "9a3a98b5-6428-483d-bb5f-95c233a874c7",
+      "samples": 15188,
+      "windows": 14769,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ffe97968-68f6-4e80-bc39-70df3ef11a99/dd907544-72d9-4be5-b006-fcda217f1923/segment_000",
+      "path": "validation/ffe97968-68f6-4e80-bc39-70df3ef11a99/dd907544-72d9-4be5-b006-fcda217f1923/segment_000",
+      "user": "ffe97968-68f6-4e80-bc39-70df3ef11a99",
+      "recording": "dd907544-72d9-4be5-b006-fcda217f1923",
+      "samples": 7576,
+      "windows": 7157,
+      "challenge_filter_pass": true
+    },
+    {
+      "key": "ffe97968-68f6-4e80-bc39-70df3ef11a99/dd907544-72d9-4be5-b006-fcda217f1923/segment_001",
+      "path": "validation/ffe97968-68f6-4e80-bc39-70df3ef11a99/dd907544-72d9-4be5-b006-fcda217f1923/segment_001",
+      "user": "ffe97968-68f6-4e80-bc39-70df3ef11a99",
+      "recording": "dd907544-72d9-4be5-b006-fcda217f1923",
+      "samples": 9087,
+      "windows": 8668,
+      "challenge_filter_pass": true
+    }
+  ]
+}

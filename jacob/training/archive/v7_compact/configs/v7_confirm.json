@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "tolerance_deg": 4.382,
+  "reference": "outputs/v6_group_a_v2/control",
+  "candidates": {
+    "separable_base3_addons": {
+      "output": "outputs/v7_extra/separable_base3_addons",
+      "overrides": {
+        "separable": true,
+        "dilation_base": 3,
+        "num_blocks": 5,
+        "speed_feature": "l1",
+        "head_basis": 3
+      }
+    },
+    "base3_5_addons": {
+      "output": "outputs/v7_confirm/base3_5_addons",
+      "overrides": {
+        "dilation_base": 3,
+        "num_blocks": 5,
+        "speed_feature": "l1",
+        "head_basis": 3
+      }
+    }
+  }
+}

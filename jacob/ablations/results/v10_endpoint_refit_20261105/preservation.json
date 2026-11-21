@@ -1,0 +1,51 @@
+{
+  "originals": {
+    "42": {
+      "source": true,
+      "copy": true
+    },
+    "43": {
+      "source": true,
+      "copy": true
+    },
+    "44": {
+      "source": true,
+      "copy": true
+    }
+  },
+  "source_code": {
+    "baseline_pipeline.py": true,
+    "best\\export.py": true,
+    "best\\model.py": true,
+    "experimental\\v10_endpoint_refit\\__init__.py": true,
+    "experimental\\v10_endpoint_refit\\fit.py": true,
+    "experimental\\v10_endpoint_refit\\run.py": true,
+    "experimental\\v10_endpoint_refit\\test_refit.py": true,
+    "experimental\\v10_weight_edit\\__init__.py": true,
+    "experimental\\v10_weight_edit\\edits.py": true,
+    "experimental\\v10_weight_edit\\export_check.py": true,
+    "experimental\\v10_weight_edit\\metrics.py": true,
+    "experimental\\v10_weight_edit\\run.py": true,
+    "experimental\\v10_weight_edit\\test_edits.py": true,
+    "experimental\\v10_weight_edit\\test_metrics.py": true,
+    "experimental\\v10_weight_edit\\test_run.py": true,
+    "tcnn\\model.py": true,
+    "tcnn\\onnx_export.py": true,
+    "tcnn\\runtime.py": true,
+    "train_tcnn.py": true
+  },
+  "previous_experiment": {
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\baseline_reproduction.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\candidate_model.pt": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\cohort.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\confirmation_seed_42.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\confirmation_seed_43.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\confirmation_seed_44.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\discovery_seed_44.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\frozen_edit.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\manifest.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\preservation.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\screen.json": true,
+    "<repo>\\jacob\\training\\outputs\\v10_weight_edit_20261104\\status.json": true
+  }
+}

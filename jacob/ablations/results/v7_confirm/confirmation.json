@@ -1,0 +1,85 @@
+{
+  "plan": {
+    "version": 1,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "tolerance_deg": 4.382,
+    "reference": "outputs/v6_group_a_v2/control",
+    "candidates": {
+      "separable_base3_addons": {
+        "output": "outputs/v7_extra/separable_base3_addons",
+        "overrides": {
+          "separable": true,
+          "dilation_base": 3,
+          "num_blocks": 5,
+          "speed_feature": "l1",
+          "head_basis": 3
+        }
+      },
+      "base3_5_addons": {
+        "output": "outputs/v7_confirm/base3_5_addons",
+        "overrides": {
+          "dilation_base": 3,
+          "num_blocks": 5,
+          "speed_feature": "l1",
+          "head_basis": 3
+        }
+      }
+    }
+  },
+  "reference": {
+    "candidate": "v6 control (reference)",
+    "params": 26012,
+    "selected_seed": 44,
+    "scores": {
+      "42": 4.351109900525913,
+      "43": 4.347249622450061,
+      "44": 4.328528902119155
+    },
+    "cohort_fingerprints": [
+      "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+    ],
+    "mean_deg": 4.342296141698376,
+    "std_deg": 0.01207800070083965,
+    "within_tolerance": true
+  },
+  "tolerance_deg": 4.382,
+  "rows": [
+    {
+      "candidate": "separable_base3_addons",
+      "params": 6651,
+      "selected_seed": 43,
+      "scores": {
+        "42": 4.385524494905276,
+        "43": 4.36988551153269,
+        "44": 4.3933120801501975
+      },
+      "cohort_fingerprints": [
+        "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+      ],
+      "mean_deg": 4.382907362196055,
+      "std_deg": 0.011930551831786932,
+      "within_tolerance": false
+    },
+    {
+      "candidate": "base3_5_addons",
+      "params": 17811,
+      "selected_seed": 43,
+      "scores": {
+        "42": 4.380180600484573,
+        "43": 4.3560951873631995,
+        "44": 4.3654959487372205
+      },
+      "cohort_fingerprints": [
+        "9424cb8bffc53d2b50ffb88040876537a5083dc7cdc53b5b722b70d8d73bf65a"
+      ],
+      "mean_deg": 4.367257245528331,
+      "std_deg": 0.012138921125725923,
+      "within_tolerance": true
+    }
+  ],
+  "plan_rule_finalist": "base3_5_addons"
+}

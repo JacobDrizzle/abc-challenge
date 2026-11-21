@@ -1,0 +1,288 @@
+{
+ "final_k8_combined_v10_s42": {
+  "onnx_sha256": "28221e1e0b559e8d4d900f8b448acd22a0fbe0da38f904cb12d4e268aca53cad",
+  "source": "Submission/Motion_Pending_headpose/model_fp32.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/moredata_final_trainval.txt"
+  ],
+  "declared_trainable_parameters": 7555,
+  "group": "final_k8_v10",
+  "notes": "Final submission candidate. k8_combined, v10_speed recipe (dropout 0, 3,162 x 40 = 126k steps), seed 42 (chosen on validation of 3 seeds), trained on moredata_final.h5 (5,243 train / 786 validation users: moredata_1600 plus 3,643/546 newly pulled). Not comparable with models trained on the 100-user group-a-v2 data."
+ },
+ "moredata_k8_combined_s42": {
+  "onnx_sha256": "ad70b624ae5bd9a76a4cfb550731b78fc13be0807297757bcfe202c9a1b4add4",
+  "source": "jacob/models/tcnn_v9_k8_combined_moredata_ga2_stream.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/moredata_1600_trainval.txt"
+  ],
+  "declared_trainable_parameters": 7555,
+  "group": "moredata_k8",
+  "notes": "k8_combined, Jacob's recipe and seed 42, trained on moredata_1600.h5 (1,600 train / 240 validation users: Jacob's 800/120 plus 800/120 newly pulled). Not comparable with models trained on the 100-user group-a-v2 data."
+ },
+ "moredata_k8_combined_s43": {
+  "onnx_sha256": "f1e764ce4e995d834c3bae57610a39496eb7a7174cb39dc1544446b05e7fe0b0",
+  "source": "jacob/models/tcnn_v9_k8_combined_moredata_s43_ga2_stream.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/moredata_1600_trainval.txt"
+  ],
+  "declared_trainable_parameters": 7555,
+  "group": "moredata_k8",
+  "notes": "k8_combined, Jacob's recipe and seed 43, trained on moredata_1600.h5 (1,600 train / 240 validation users: Jacob's 800/120 plus 800/120 newly pulled). Not comparable with models trained on the 100-user group-a-v2 data."
+ },
+ "moredata_k8_combined_s44": {
+  "onnx_sha256": "78e6cf0b31b8ec35758e913c14d79ae878f1cd7d4988fa55fa62e6698dfa2f2c",
+  "source": "jacob/models/tcnn_v9_k8_combined_moredata_s44_ga2_stream.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/moredata_1600_trainval.txt"
+  ],
+  "declared_trainable_parameters": 7555,
+  "group": "moredata_k8",
+  "notes": "k8_combined, Jacob's recipe and seed 44, trained on moredata_1600.h5 (1,600 train / 240 validation users: Jacob's 800/120 plus 800/120 newly pulled). Not comparable with models trained on the 100-user group-a-v2 data."
+ },
+ "nic_ga2_gadst_s42": {
+  "onnx_sha256": "778fc4d4d762ad58f0c2656472e2bee7e476a6f0ec32bbb85c853d9356feaddf",
+  "source": "nic/models/group_a_v2/s42/gadst.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 10352,
+  "group": "nic_ga2_gadst",
+  "notes": "GADS-T, rotation + velocity input, seed 42; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gadst_s43": {
+  "onnx_sha256": "b6528f0f57a7c0301fdf41854ae8f724302b2920e98481462a3365a0e6357179",
+  "source": "nic/models/group_a_v2/s43/gadst.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 10352,
+  "group": "nic_ga2_gadst",
+  "notes": "GADS-T, rotation + velocity input, seed 43; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gadst_s44": {
+  "onnx_sha256": "19366568f0640d76ca2adafeff7191152e2fc711f510b42af4a9b6d2e91ba131",
+  "source": "nic/models/group_a_v2/s44/gadst.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 10352,
+  "group": "nic_ga2_gadst",
+  "notes": "GADS-T, rotation + velocity input, seed 44; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gadst_s45": {
+  "onnx_sha256": "fd43bda7e8c1128b0ecd879f220649f57dfc88326b0d50e4b69d111569d55aa7",
+  "source": "nic/models/group_a_v2/s45/gadst.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 10352,
+  "group": "nic_ga2_gadst",
+  "notes": "GADS-T, rotation + velocity input, seed 45; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gadst_s46": {
+  "onnx_sha256": "366e3083f8ebc2685fd922c2a33d46d16f125c3252c10d313d3090398021ff0e",
+  "source": "nic/models/group_a_v2/s46/gadst.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 10352,
+  "group": "nic_ga2_gadst",
+  "notes": "GADS-T, rotation + velocity input, seed 46; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gru_s42": {
+  "onnx_sha256": "e57b5eba56db3d5fab2b730f1cc6c203d6aaa8cafe95fac0a4d279e79c93663d",
+  "source": "nic/models/group_a_v2/s42/gru_stateful_window.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 6192,
+  "group": "nic_ga2_gru",
+  "notes": "Stateful GRU, velocity-only input, 32 units, patience 30, seed 42; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gru_s43": {
+  "onnx_sha256": "077313ec2a10e17bd09b4839ebe1bcb5a6a0f51fc2564fffb89619a215d78903",
+  "source": "nic/models/group_a_v2/s43/gru_stateful_window.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 6192,
+  "group": "nic_ga2_gru",
+  "notes": "Stateful GRU, velocity-only input, 32 units, patience 30, seed 43; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gru_s44": {
+  "onnx_sha256": "01c1c1d6c096ebc29e7476dbb3b418907a579aacc5bf38b25e57912328868e33",
+  "source": "nic/models/group_a_v2/s44/gru_stateful_window.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 6192,
+  "group": "nic_ga2_gru",
+  "notes": "Stateful GRU, velocity-only input, 32 units, patience 30, seed 44; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gru_s45": {
+  "onnx_sha256": "6f4894a119e321939f7ad50bd9395dadeeae5540e8f6391da7e439386cf72e95",
+  "source": "nic/models/group_a_v2/s45/gru_stateful_window.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 6192,
+  "group": "nic_ga2_gru",
+  "notes": "Stateful GRU, velocity-only input, 32 units, patience 30, seed 45; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_ga2_gru_s46": {
+  "onnx_sha256": "714d1043091d75dc6f17325eaf9eeb2916bcff382750a67c57c98d49aa887513",
+  "source": "nic/models/group_a_v2/s46/gru_stateful_window.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 6192,
+  "group": "nic_ga2_gru",
+  "notes": "Stateful GRU, velocity-only input, 32 units, patience 30, seed 46; trained only on group-a-v2 /train, stopped on /validation"
+ },
+ "nic_gads_t": {
+  "onnx_sha256": "c6ef354c9b9f5bd6e96645212fe894e4195fa198ee6778370b2269efc4c7e847",
+  "source": "nic/models/archived/gadst_velmag_s42.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "csv:nic/splits/splits_fri.csv"
+  ],
+  "declared_trainable_parameters": 10416,
+  "group": null,
+  "notes": "GADS-T, vel+mag inputs, seed 42, Friday snapshot (409 train / 48 val)"
+ },
+ "nic_gru32": {
+  "onnx_sha256": "4b9a62033218a9f49c7f06af7f6466aff2f355a5c6ef580535ef544d0887259d",
+  "source": "nic/models/archived/gru32_velmag_s42.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "csv:nic/splits/splits_fri.csv"
+  ],
+  "declared_trainable_parameters": 6768,
+  "group": null,
+  "notes": "GRU hidden 32, vel+mag inputs, seed 42, Friday snapshot (409 train / 48 val)"
+ },
+ "nic_gru42": {
+  "onnx_sha256": "6eb724f6e785b5f97435bc4acb1b758935fc610eeb53260525bdb83d97916894",
+  "source": "nic/models/archived/gru42_velmag_s42.onnx",
+  "owner": "nic",
+  "trained_on": [
+   "csv:nic/splits/splits_fri.csv"
+  ],
+  "declared_trainable_parameters": 10118,
+  "group": null,
+  "notes": "GRU hidden 42, vel+mag inputs, seed 42, Friday snapshot (409 train / 48 val)"
+ },
+ "v5_tcnn_ga2": {
+  "onnx_sha256": "c746ce1611bbbbaa0af6a50d5dd0e76fd0f2807c353f48bc62a24b0a4c72d518",
+  "source": "jacob/models/tcnn_v5_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 51900,
+  "group": null,
+  "notes": "v5 retrained on group-a-v2 (20261026_131953): 100 train / 15 val users; control variant, seed 44 of 42-44; stateless twin: model_fp32_fast_notrig.onnx"
+ },
+ "v6_tcnn_ga2": {
+  "onnx_sha256": "cf065dd37603859b90fad822dd94a8e816ed92dae217dc32e4b7a0dc7ab8fd5e",
+  "source": "jacob/models/tcnn_v6_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 26012,
+  "group": null,
+  "notes": "v6 retrained on group-a-v2 (20261026_131953): 100 train / 15 val users; control variant, seed 44 of 42-44. ONNX initializers hold 25,992: the head bias was folded into a Constant"
+ },
+ "v7_sep_base3_addons_angular_ga2": {
+  "onnx_sha256": "d9f48aa1f25e81371ca64c34757375e2e6be6b614755a8dcda80eca1a8c83e49",
+  "source": "jacob/models/tcnn_v7_sep_base3_addons_angular_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 6651,
+  "group": null,
+  "notes": "v7 separable_base3_addons + angular loss: 5 separable mirror blocks, dilation base 3 (receptive field 243), basis head P=3, L1 speed. Seed 44 of 42-44 (validation 3-seed mean 4.3297); v7 streaming graph (contains one Clip)"
+ },
+ "v9_k5_combined_ga2": {
+  "onnx_sha256": "86db84845f7092424ee40264d1b9b60265210e5b2803e3aa6319cadb10a5d526",
+  "source": "jacob/models/tcnn_v9_k5_combined_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 5595,
+  "group": null,
+  "notes": "v9 k5_combined: 4 separable mirror blocks, kernel 5, dilations 1/5/25/68 (receptive field 397), 48 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2717); v9 lean streaming graph"
+ },
+ "v9_k5_combined_padded_a4_ga2": {
+  "onnx_sha256": "ea052a073af22b0ed399960d04642636a8eef07c4857efa9277c6add63b85bd6",
+  "source": "jacob/models/tcnn_v9_k5_combined_padded_a4_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 5595,
+  "group": null,
+  "notes": "v9 k5_combined: 4 separable mirror blocks, kernel 5, dilations 1/5/25/68 (receptive field 397), 48 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2717); v9 graph with padded_rows + fused_head A4 (same weights as v9_k5_combined_ga2)"
+ },
+ "v9_k5_combined_padded_ga2": {
+  "onnx_sha256": "821482da0a7226321570706f0bdc3e8ba0f1ec3c9dba806f1da2eccd6f5e92ae",
+  "source": "jacob/models/tcnn_v9_k5_combined_padded_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 5595,
+  "group": null,
+  "notes": "v9 k5_combined: 4 separable mirror blocks, kernel 5, dilations 1/5/25/68 (receptive field 397), 48 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2717); v9 graph with padded_rows (same weights as v9_k5_combined_ga2)"
+ },
+ "v9_k8_combined_ga2": {
+  "onnx_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+  "source": "jacob/models/tcnn_v9_k8_combined_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 7555,
+  "group": null,
+  "notes": "v9 k8_combined: 3 separable mirror blocks, kernel 8, dilations 1/8/47 (receptive field 393), 64 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2501); v9 lean streaming graph"
+ },
+ "v9_k8_combined_padded_a4_ga2": {
+  "onnx_sha256": "2100ae2a64960ebab81f5b22a875d2fbf1f2fdb2ea5dbd052fc91a3805ba8cd2",
+  "source": "jacob/models/tcnn_v9_k8_combined_padded_a4_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 7555,
+  "group": null,
+  "notes": "v9 k8_combined: 3 separable mirror blocks, kernel 8, dilations 1/8/47 (receptive field 393), 64 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2501); v9 graph with padded_rows + fused_head A4 (same weights as v9_k8_combined_ga2)"
+ },
+ "v9_k8_combined_padded_ga2": {
+  "onnx_sha256": "df6b8b44542d1ae70d39bfad0f593977e6aeaeca1027034491ad4fccf0110aa1",
+  "source": "jacob/models/tcnn_v9_k8_combined_padded_ga2_stream.onnx",
+  "owner": "jacob",
+  "trained_on": [
+   "bench/trained_on/group_a_v2_20261026_131953_trainval.txt"
+  ],
+  "declared_trainable_parameters": 7555,
+  "group": null,
+  "notes": "v9 k8_combined: 3 separable mirror blocks, kernel 8, dilations 1/8/47 (receptive field 393), 64 channels, native maps; angular loss, window sampling, tilt 15 deg. Seed 42 of 42-44 (validation 3-seed mean 4.2501); v9 graph with padded_rows (same weights as v9_k8_combined_ga2)"
+ }
+}

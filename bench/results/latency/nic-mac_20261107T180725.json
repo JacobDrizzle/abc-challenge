@@ -1,0 +1,66 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "nic-mac",
+ "created_utc": "2026-11-07T18:07:25.528481+00:00",
+ "machine": {
+  "cpu": "Apple M5 Pro",
+  "processor": "arm",
+  "machine": "arm64",
+  "os": "macOS-27.2-arm64-arm-64bit",
+  "logical_cores": 18,
+  "python": "3.12.14",
+  "onnxruntime": "1.31.1",
+  "numpy": "2.5.4"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "moredata": {
+   "onnx": "jacob/models/tcnn_v9_k8_combined_moredata_ga2_stream.onnx",
+   "onnx_sha256": "ad70b624ae5bd9a76a4cfb550731b78fc13be0807297757bcfe202c9a1b4add4",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.03241701051592827,
+     "mean_ms": 0.03473528831576308,
+     "p90_ms": 0.03579610493034124,
+     "p99_ms": 0.09304391802288585,
+     "min_ms": 0.030624913051724434,
+     "max_ms": 0.31195895280689
+    }
+   }
+  },
+  "k8_100users": {
+   "onnx": "jacob/models/tcnn_v9_k8_combined_ga2_stream.onnx",
+   "onnx_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.03220804501324892,
+     "mean_ms": 0.03452198634234568,
+     "p90_ms": 0.03545801155269146,
+     "p99_ms": 0.09438749169930787,
+     "min_ms": 0.030374969355762005,
+     "max_ms": 0.2738339826464653
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": "64b2622567a483b4d9ac4dba22370e266ccf29af",
+  "dirty": true
+ }
+}

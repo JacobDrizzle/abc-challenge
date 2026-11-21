@@ -1,0 +1,7 @@
+# Team benchmark (python -m bench). Pinned to the versions the regression was verified with (Python 3.12).
+# No torch: models are tested as ONNX, the deployed format.
+numpy==2.2.6
+scipy==1.15.3
+h5py==3.13.0
+onnx==1.23.2
+onnxruntime==1.31.0

@@ -1,0 +1,560 @@
+<title>k8_combined Architecture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one technical column of white drawing sheets on a cool grey ground; the main sheet carries its own spec column */
+:root {
+  --paper: #F3F5F8;
+  --panel: #FFFFFF;
+  --ink: #16202C;
+  --muted: #5A6676;
+  --rule: #D5DBE3;
+  --line: #7A8696;
+  --s0: #2361C6;
+  --s0-tint: #E3EBFA;
+  --s1: #B8580A;
+  --s1-tint: #FBE9DA;
+  --learn: #E8ECF2;
+  --cell: #E1E6ED;
+  --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --cond: "IBM Plex Sans Condensed", "Arial Narrow", "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0E1217; --panel: #151A21; --ink: #E3E8EF; --muted: #97A2B0; --rule: #2A323D; --line: #7F8A98;
+    --s0: #72A3F4; --s0-tint: #172540; --s1: #EF9D57; --s1-tint: #33220F; --learn: #1F2630; --cell: #262E39;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0E1217; --panel: #151A21; --ink: #E3E8EF; --muted: #97A2B0; --rule: #2A323D; --line: #7F8A98;
+  --s0: #72A3F4; --s0-tint: #172540; --s1: #EF9D57; --s1-tint: #33220F; --learn: #1F2630; --cell: #262E39;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 72px;
+}
+main { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px; }
+
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+h1 { font-family: var(--cond); font-weight: 600; font-size: clamp(34px, 6vw, 48px); line-height: 1.05; margin: 6px 0 12px; letter-spacing: -.01em; }
+h2 { font-family: var(--cond); font-weight: 600; font-size: 23px; line-height: 1.2; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+.lede { max-width: 66ch; font-size: 16.5px; }
+.sub { max-width: 66ch; color: var(--muted); }
+header { display: flex; flex-direction: column; gap: 4px; }
+
+.spec { display: grid; grid-template-columns: repeat(auto-fit, minmax(132px, 1fr)); margin: 22px 0 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.spec div { padding: 12px 14px 12px 0; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.spec dt { font-family: var(--mono); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.spec dd { margin: 0; font-family: var(--mono); font-size: 19px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.spec dd small { font-size: 12px; color: var(--muted); font-weight: 400; }
+.score { margin-top: 12px; font-size: 14px; color: var(--muted); }
+.score b { color: var(--ink); font-family: var(--mono); font-weight: 500; }
+
+section { display: flex; flex-direction: column; gap: 14px; }
+section > .sub { margin-top: -4px; }
+figure { margin: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+figcaption { font-size: 14px; color: var(--muted); max-width: 72ch; }
+figcaption b { color: var(--ink); font-weight: 600; }
+.scroll { overflow-x: auto; min-width: 0; }
+.scroll svg { display: block; width: 100%; height: auto; min-width: 760px; }
+
+.legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 13px; color: var(--muted); }
+.legend li { display: flex; align-items: center; gap: 8px; }
+.sw { display: inline-block; flex: none; width: 24px; height: 14px; border-radius: 3px; }
+.sw-s0 { background: var(--s0-tint); border: 1.3px solid var(--s0); }
+.sw-s1 { background: var(--s1-tint); border: 1.3px solid var(--s1); }
+.sw-learn { background: var(--learn); border: 1.3px solid var(--ink); }
+.sw-fixed { background: var(--panel); border: 1px solid var(--line); }
+.sw-tie { height: 0; border-radius: 0; border-top: 1.6px dashed var(--muted); }
+
+table { width: 100%; min-width: 600px; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: 0 12px 8px 0; border-bottom: 1px solid var(--rule); }
+td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+td.n, th.n { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+th.n { font-family: var(--mono); }
+tr.total td { font-weight: 600; border-bottom: 0; }
+td .note { color: var(--muted); font-size: 13px; }
+
+.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+.pair > section { min-width: 0; }
+ul.plain { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+code { font-family: var(--mono); font-size: 13px; overflow-wrap: anywhere; }
+
+/* SVG drawing classes (page CSS styles the inline SVG, so both themes follow the tokens) */
+svg .tx { fill: var(--ink); font-family: var(--sans); font-size: 12.5px; }
+svg .tm { fill: var(--ink); font-family: var(--mono); font-size: 12px; }
+svg .ts { font-size: 11px; }
+svg .tb { font-weight: 600; }
+svg .big { font-size: 15px; }
+svg .mu { fill: var(--muted); }
+svg .c0 { fill: var(--s0); }
+svg .c1 { fill: var(--s1); }
+svg .cap { fill: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; }
+svg .bx-fixed { fill: var(--panel); stroke: var(--line); stroke-width: 1; }
+svg .bx-learn { fill: var(--learn); stroke: var(--ink); stroke-width: 1.2; }
+svg .bx-tied { fill: var(--learn); stroke: var(--ink); stroke-width: 1.2; stroke-dasharray: 4 3; }
+svg .bx-s0 { fill: var(--s0-tint); stroke: var(--s0); stroke-width: 1.2; }
+svg .bx-s1 { fill: var(--s1-tint); stroke: var(--s1); stroke-width: 1.2; }
+svg .bx-data { fill: var(--panel); stroke: var(--ink); stroke-width: 1.2; }
+svg .ar { fill: none; stroke: var(--line); stroke-width: 1.4; }
+svg .ar0 { stroke: var(--s0); }
+svg .ar1 { stroke: var(--s1); }
+svg .tie { fill: none; stroke: var(--muted); stroke-width: 1.3; stroke-dasharray: 4 3; }
+svg .rl { stroke: var(--rule); stroke-width: 1; }
+svg .mk { fill: var(--line); }
+svg .mk0 { fill: var(--s0); }
+svg .mk1 { fill: var(--s1); }
+svg .cell { fill: var(--cell); }
+svg .tap0 { fill: var(--s0); }
+svg .tap1 { fill: var(--s1); }
+svg .bar0 { fill: var(--s0); }
+svg .bar0b { fill: var(--s0); fill-opacity: .45; }
+svg .win { fill: var(--s0); fill-opacity: .2; stroke: var(--s0); stroke-width: 1; }
+svg .barref { fill: var(--line); }
+svg .gap { fill: none; stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+svg .tick { stroke: var(--ink); stroke-width: 1.3; }
+svg .ax { stroke: var(--line); stroke-width: 1; }
+</style>
+
+<main>
+  <header>
+    <p class="eyebrow">ABC Challenge · v9 lean TCNN · seed 42</p>
+    <h1>k8_combined</h1>
+    <p class="lede">The model reads 4 s of head orientation at 100 Hz and forecasts the next 20 orientations, 10 to 200 ms ahead. It is a mirror-symmetric, separable temporal convolutional network. Its 9 outputs are a correction to a damped-velocity forecast.</p>
+    <dl class="spec">
+      <div><dt>Parameters</dt><dd>7,555</dd></div>
+      <div><dt>MACs per step</dt><dd>16.2K</dd></div>
+      <div><dt>Receptive field</dt><dd>393 <small>samples</small></dd></div>
+      <div><dt>Stream state</dt><dd>25,088 <small>floats</small></dd></div>
+      <div><dt>ONNX graph</dt><dd>60 <small>nodes</small></dd></div>
+      <div><dt>Latency</dt><dd>56 <small>µs, 1 thread</small></dd></div>
+    </dl>
+    <p class="score">Mean angular error at 200 ms. Validation: <b>4.2501°</b> (mean of seeds 42–44). Test s20: <b>4.2666°</b> (seed 42). The current best scores 4.3297° and 4.3289°.</p>
+  </header>
+
+  <section>
+    <h2>Data flow for one forecast</h2>
+    <figure>
+      <ul class="legend" aria-label="Legend">
+        <li><span class="sw sw-s0"></span>stream 0, observed input</li>
+        <li><span class="sw sw-s1"></span>stream 1, mirrored input</li>
+        <li><span class="sw sw-learn"></span>learned weights</li>
+        <li><span class="sw sw-fixed"></span>fixed maths, no weights</li>
+        <li><span class="sw sw-tie"></span>tied: stored once</li>
+      </ul>
+      <div class="scroll">
+        <svg viewBox="0 0 840 1060" role="img" aria-label="k8_combined data flow. 400 quaternions become 7 features per step. The features feed two mirror streams, which pass through a shared projection and three kernel-8 dilated separable blocks. A mirror head turns the newest step into 9 coefficients. A polynomial basis turns those into a correction, which is added to a damped-velocity prior. A Cayley map applied to the last pose gives 20 forecast quaternions.">
+          <defs>
+            <marker id="f1a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+            <marker id="f1a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk0"/></marker>
+            <marker id="f1a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk1"/></marker>
+          </defs>
+
+          <!-- spec column -->
+          <text x="536" y="16" class="cap">TENSOR</text>
+          <text x="640" y="16" class="cap">NOTE</text>
+          <text x="830" y="16" class="cap" text-anchor="end">LEARNED</text>
+          <line x1="530" y1="24" x2="830" y2="24" class="rl"/>
+
+          <!-- bypasses: last pose and last step -->
+          <path d="M355,54 H500 V922 H443" class="ar" marker-end="url(#f1a)"/>
+          <text transform="translate(496 862) rotate(-90)" text-anchor="middle" class="tx ts mu">last pose q[t]</text>
+          <path d="M440,152 H478 V764 H443" class="ar" marker-end="url(#f1a)"/>
+          <text transform="translate(474 690) rotate(-90)" text-anchor="middle" class="tx ts mu">last step Δ = ω / 100</text>
+
+          <!-- input -->
+          <rect x="155" y="28" width="200" height="52" rx="26" class="bx-data"/>
+          <text x="255" y="50" text-anchor="middle" class="tm">q₁ … q₄₀₀</text>
+          <text x="255" y="68" text-anchor="middle" class="tx ts mu">head orientation quaternions</text>
+          <text x="536" y="58" class="tm">400 × 4</text>
+          <text x="640" y="58" class="tx ts mu">4 s at 100 Hz</text>
+          <text x="830" y="58" class="tm mu" text-anchor="end">—</text>
+          <line x1="255" y1="80" x2="255" y2="107" class="ar" marker-end="url(#f1a)"/>
+
+          <!-- features -->
+          <rect x="70" y="110" width="370" height="94" rx="4" class="bx-fixed"/>
+          <text x="84" y="130" class="tx tb">Per-step features</text>
+          <text x="84" y="153" class="tm">ω</text>
+          <text x="124" y="153" class="tx ts">rate 200·w·v, (w, v) = conj(q[t−1]) ⊗ q[t]</text>
+          <text x="428" y="153" class="tm ts mu" text-anchor="end">3</text>
+          <text x="84" y="173" class="tm">|ω|₁</text>
+          <text x="124" y="173" class="tx ts">speed |ωx| + |ωy| + |ωz|</text>
+          <text x="428" y="173" class="tm ts mu" text-anchor="end">1</text>
+          <text x="84" y="193" class="tm">g</text>
+          <text x="124" y="193" class="tx ts">world up in the head frame, R(q)ᵀ·ŷ</text>
+          <text x="428" y="193" class="tm ts mu" text-anchor="end">3</text>
+          <text x="536" y="161" class="tm">400 × 7</text>
+          <text x="640" y="161" class="tx ts mu">rate, speed, gravity</text>
+          <text x="830" y="161" class="tm mu" text-anchor="end">—</text>
+
+          <!-- mirror split -->
+          <line x1="155" y1="204" x2="155" y2="267" class="ar ar0" marker-end="url(#f1a0)"/>
+          <line x1="355" y1="204" x2="355" y2="223" class="ar ar1"/>
+          <circle cx="355" cy="237" r="14" class="bx-s1"/>
+          <text x="355" y="241" text-anchor="middle" class="tm ts">×s</text>
+          <line x1="355" y1="251" x2="355" y2="267" class="ar ar1" marker-end="url(#f1a1)"/>
+          <text x="333" y="241" text-anchor="end" class="tm ts c1">s = (+−−+ −++)</text>
+          <text x="536" y="241" class="tm">400 × 7</text>
+          <text x="640" y="241" class="tx ts mu">mirror flips ωy, ωz, gx</text>
+          <text x="830" y="241" class="tm mu" text-anchor="end">—</text>
+
+          <!-- projection -->
+          <rect x="70" y="270" width="170" height="56" rx="4" class="bx-s0"/>
+          <text x="155" y="292" text-anchor="middle" class="tx tb c0">stream 0 · observed</text>
+          <text x="155" y="311" text-anchor="middle" class="tx ts">1×1 conv 7 → 32, ReLU</text>
+          <rect x="270" y="270" width="170" height="56" rx="4" class="bx-s1"/>
+          <text x="355" y="292" text-anchor="middle" class="tx tb c1">stream 1 · mirrored</text>
+          <text x="355" y="311" text-anchor="middle" class="tx ts">1×1 conv 7 → 32, ReLU</text>
+          <line x1="240" y1="298" x2="270" y2="298" class="tie"/>
+          <text x="536" y="302" class="tm">64 × 400</text>
+          <text x="640" y="302" class="tx ts mu">same W, b in both</text>
+          <text x="830" y="302" class="tm" text-anchor="end">256</text>
+          <line x1="155" y1="326" x2="155" y2="353" class="ar ar0" marker-end="url(#f1a0)"/>
+          <line x1="355" y1="326" x2="355" y2="353" class="ar ar1" marker-end="url(#f1a1)"/>
+
+          <!-- blocks bracket -->
+          <path d="M62,356 H56 V582 H62" class="ar"/>
+          <text transform="translate(48 469) rotate(-90)" text-anchor="middle" class="tx ts tb">KernelBlock × 3</text>
+
+          <!-- block 1 -->
+          <rect x="70" y="356" width="170" height="58" rx="4" class="bx-s0"/>
+          <rect x="270" y="356" width="170" height="58" rx="4" class="bx-s1"/>
+          <text x="155" y="380" text-anchor="middle" class="tx tb">8 taps, d = 1</text>
+          <text x="155" y="398" text-anchor="middle" class="tx ts mu">depthwise → pointwise</text>
+          <text x="355" y="380" text-anchor="middle" class="tx tb">8 taps, d = 1</text>
+          <text x="355" y="398" text-anchor="middle" class="tx ts mu">depthwise → pointwise</text>
+          <line x1="243" y1="380" x2="266" y2="380" class="ar" marker-end="url(#f1a)"/>
+          <line x1="267" y1="390" x2="244" y2="390" class="ar" marker-end="url(#f1a)"/>
+          <text x="536" y="389" class="tm">64 × 400</text>
+          <text x="640" y="389" class="tx ts mu">reach 8 · state 448</text>
+          <text x="830" y="389" class="tm" text-anchor="end">2,336</text>
+          <line x1="155" y1="414" x2="155" y2="437" class="ar ar0" marker-end="url(#f1a0)"/>
+          <line x1="355" y1="414" x2="355" y2="437" class="ar ar1" marker-end="url(#f1a1)"/>
+
+          <!-- block 2 -->
+          <rect x="70" y="440" width="170" height="58" rx="4" class="bx-s0"/>
+          <rect x="270" y="440" width="170" height="58" rx="4" class="bx-s1"/>
+          <text x="155" y="464" text-anchor="middle" class="tx tb">8 taps, d = 8</text>
+          <text x="155" y="482" text-anchor="middle" class="tx ts mu">depthwise → pointwise</text>
+          <text x="355" y="464" text-anchor="middle" class="tx tb">8 taps, d = 8</text>
+          <text x="355" y="482" text-anchor="middle" class="tx ts mu">depthwise → pointwise</text>
+          <line x1="243" y1="464" x2="266" y2="464" class="ar" marker-end="url(#f1a)"/>
+          <line x1="267" y1="474" x2="244" y2="474" class="ar" marker-end="url(#f1a)"/>
+          <text x="536" y="473" class="tm">64 × 400</text>
+          <text x="640" y="473" class="tx ts mu">reach 64 · state 3,584</text>
+          <text x="830" y="473" class="tm" text-anchor="end">2,336</text>
+          <line x1="155" y1="498" x2="155" y2="521" class="ar ar0" marker-end="url(#f1a0)"/>
+          <line x1="355" y1="498" x2="355" y2="521" class="ar ar1" marker-end="url(#f1a1)"/>
+
+          <!-- block 3 -->
+          <rect x="70" y="524" width="170" height="58" rx="4" class="bx-s0"/>
+          <rect x="270" y="524" width="170" height="58" rx="4" class="bx-s1"/>
+          <text x="155" y="548" text-anchor="middle" class="tx tb">8 taps, d = 47</text>
+          <text x="155" y="566" text-anchor="middle" class="tx ts mu">depthwise → pointwise</text>
+          <text x="355" y="548" text-anchor="middle" class="tx tb">8 taps, d = 47</text>
+          <text x="355" y="566" text-anchor="middle" class="tx ts mu">depthwise → pointwise</text>
+          <line x1="243" y1="548" x2="266" y2="548" class="ar" marker-end="url(#f1a)"/>
+          <line x1="267" y1="558" x2="244" y2="558" class="ar" marker-end="url(#f1a)"/>
+          <text x="536" y="557" class="tm">64 × 400</text>
+          <text x="640" y="557" class="tx ts mu">reach 393 · state 21,056</text>
+          <text x="830" y="557" class="tm" text-anchor="end">2,336</text>
+
+          <!-- readout -->
+          <line x1="155" y1="582" x2="155" y2="637" class="ar ar0" marker-end="url(#f1a0)"/>
+          <line x1="355" y1="582" x2="355" y2="637" class="ar ar1" marker-end="url(#f1a1)"/>
+          <text x="164" y="614" class="tm ts c0">h₀ (32)</text>
+          <text x="364" y="614" class="tm ts c1">h₁ (32)</text>
+          <text x="536" y="614" class="tm">2 × 32</text>
+          <text x="640" y="614" class="tx ts mu">newest step t only</text>
+          <text x="830" y="614" class="tm mu" text-anchor="end">—</text>
+
+          <!-- head -->
+          <rect x="70" y="640" width="370" height="60" rx="4" class="bx-learn"/>
+          <text x="255" y="663" text-anchor="middle" class="tx tb">Mirror head</text>
+          <text x="255" y="686" text-anchor="middle" class="tm">c = W·h₀ + s′ ⊙ W·h₁ + b</text>
+          <text x="536" y="674" class="tm">3 × 3</text>
+          <text x="640" y="674" class="tx ts mu">s′ = (+,−,−), x-bias only</text>
+          <text x="830" y="674" class="tm" text-anchor="end">291</text>
+          <line x1="155" y1="700" x2="155" y2="729" class="ar" marker-end="url(#f1a)"/>
+
+          <!-- basis and prior -->
+          <rect x="70" y="732" width="170" height="68" rx="4" class="bx-fixed"/>
+          <text x="155" y="752" text-anchor="middle" class="tx tb">Polynomial basis</text>
+          <text x="155" y="771" text-anchor="middle" class="tm">c₁κ + c₂κ² + c₃κ³</text>
+          <text x="155" y="789" text-anchor="middle" class="tx ts mu">κ = k/20, k = 1…20</text>
+          <rect x="270" y="732" width="170" height="68" rx="4" class="bx-fixed"/>
+          <text x="355" y="752" text-anchor="middle" class="tx tb">Damped prior</text>
+          <text x="355" y="771" text-anchor="middle" class="tm">Δ·τ·(1 − e^(−k/τ))</text>
+          <text x="355" y="789" text-anchor="middle" class="tx ts mu">τ = 10 steps (100 ms)</text>
+          <text x="536" y="770" class="tm">20 × 3</text>
+          <text x="640" y="770" class="tx ts mu">correction + prior</text>
+          <text x="830" y="770" class="tm mu" text-anchor="end">—</text>
+          <path d="M155,800 V836 H238" class="ar" marker-end="url(#f1a)"/>
+          <path d="M355,800 V836 H272" class="ar" marker-end="url(#f1a)"/>
+          <circle cx="255" cy="836" r="14" class="bx-fixed"/>
+          <text x="255" y="841" text-anchor="middle" class="tm big">+</text>
+          <line x1="255" y1="850" x2="255" y2="889" class="ar" marker-end="url(#f1a)"/>
+          <text x="264" y="874" class="tm ts">r[k], rotation vectors</text>
+
+          <!-- Cayley and compose -->
+          <rect x="70" y="892" width="370" height="60" rx="4" class="bx-fixed"/>
+          <text x="255" y="915" text-anchor="middle" class="tx tb">Cayley map, then rotate the last pose</text>
+          <text x="255" y="938" text-anchor="middle" class="tm">q̂[k] = norm(q[t] ⊗ norm([2, r[k]]))</text>
+          <text x="536" y="926" class="tm">20 × 4</text>
+          <text x="640" y="926" class="tx ts mu">angle 2·atan(|r| / 2)</text>
+          <text x="830" y="926" class="tm mu" text-anchor="end">—</text>
+          <line x1="255" y1="952" x2="255" y2="981" class="ar" marker-end="url(#f1a)"/>
+
+          <!-- output -->
+          <rect x="155" y="984" width="200" height="52" rx="26" class="bx-data"/>
+          <text x="255" y="1006" text-anchor="middle" class="tm">q̂₁ … q̂₂₀</text>
+          <text x="255" y="1024" text-anchor="middle" class="tx ts mu">10 → 200 ms ahead</text>
+          <text x="536" y="1010" class="tm">20 × 4</text>
+          <text x="640" y="1010" class="tx ts mu">step 20 is scored</text>
+          <text x="830" y="1010" class="tm mu" text-anchor="end">—</text>
+
+          <line x1="530" y1="1028" x2="830" y2="1028" class="rl"/>
+          <text x="640" y="1048" class="tx tb">total</text>
+          <text x="830" y="1048" class="tm tb" text-anchor="end">7,555</text>
+        </svg>
+      </div>
+      <figcaption>Blue and orange are the two mirror streams. Stream 1 sees the same motion reflected left to right, and every learned layer treats the two streams alike, so <b>model(mirror(x)) = mirror(model(x)) exactly</b>. The exchange arrows between the streams are the pointwise layer's cross-stream weights. Only the filled boxes hold weights; everything after the head is fixed maths. The streaming ONNX graph computes one new column per sample, and each block keeps its last (k − 1)·d inputs as state.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Inside a KernelBlock</h2>
+    <figure>
+      <div class="scroll">
+        <svg viewBox="0 0 840 312" role="img" aria-label="One KernelBlock. Each channel's 8-tap dilated depthwise filter is shared by both streams. The pointwise weight [[A, B], [B, A]] applies A to a stream's own channels and B to the other stream's. It is followed by bias, ReLU, dropout, a residual add and a final ReLU.">
+          <defs>
+            <marker id="f2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+            <marker id="f2a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk0"/></marker>
+            <marker id="f2a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk1"/></marker>
+          </defs>
+          <text x="30" y="16" class="cap">WEIGHT TYING</text>
+
+          <!-- stream 0 strip: 20 time cells, taps every 2nd ending at t -->
+          <text x="30" y="54" class="tx ts c0">stream 0 · one channel</text>
+          <rect x="30" y="62" width="10" height="14" class="cell"/><rect x="42" y="62" width="10" height="14" class="cell"/>
+          <rect x="54" y="62" width="10" height="14" class="cell"/><rect x="66" y="62" width="10" height="14" class="cell"/>
+          <rect x="78" y="62" width="10" height="14" class="cell"/><rect x="90" y="62" width="10" height="14" class="tap0"/>
+          <rect x="102" y="62" width="10" height="14" class="cell"/><rect x="114" y="62" width="10" height="14" class="tap0"/>
+          <rect x="126" y="62" width="10" height="14" class="cell"/><rect x="138" y="62" width="10" height="14" class="tap0"/>
+          <rect x="150" y="62" width="10" height="14" class="cell"/><rect x="162" y="62" width="10" height="14" class="tap0"/>
+          <rect x="174" y="62" width="10" height="14" class="cell"/><rect x="186" y="62" width="10" height="14" class="tap0"/>
+          <rect x="198" y="62" width="10" height="14" class="cell"/><rect x="210" y="62" width="10" height="14" class="tap0"/>
+          <rect x="222" y="62" width="10" height="14" class="cell"/><rect x="234" y="62" width="10" height="14" class="tap0"/>
+          <rect x="246" y="62" width="10" height="14" class="cell"/><rect x="258" y="62" width="10" height="14" class="tap0"/>
+
+          <!-- stream 1 strip -->
+          <text x="30" y="102" class="tx ts c1">stream 1 · same channel</text>
+          <rect x="30" y="110" width="10" height="14" class="cell"/><rect x="42" y="110" width="10" height="14" class="cell"/>
+          <rect x="54" y="110" width="10" height="14" class="cell"/><rect x="66" y="110" width="10" height="14" class="cell"/>
+          <rect x="78" y="110" width="10" height="14" class="cell"/><rect x="90" y="110" width="10" height="14" class="tap1"/>
+          <rect x="102" y="110" width="10" height="14" class="cell"/><rect x="114" y="110" width="10" height="14" class="tap1"/>
+          <rect x="126" y="110" width="10" height="14" class="cell"/><rect x="138" y="110" width="10" height="14" class="tap1"/>
+          <rect x="150" y="110" width="10" height="14" class="cell"/><rect x="162" y="110" width="10" height="14" class="tap1"/>
+          <rect x="174" y="110" width="10" height="14" class="cell"/><rect x="186" y="110" width="10" height="14" class="tap1"/>
+          <rect x="198" y="110" width="10" height="14" class="cell"/><rect x="210" y="110" width="10" height="14" class="tap1"/>
+          <rect x="222" y="110" width="10" height="14" class="cell"/><rect x="234" y="110" width="10" height="14" class="tap1"/>
+          <rect x="246" y="110" width="10" height="14" class="cell"/><rect x="258" y="110" width="10" height="14" class="tap1"/>
+          <text x="95" y="142" text-anchor="middle" class="tm ts mu">t − 7d</text>
+          <text x="263" y="142" text-anchor="middle" class="tm ts mu">t</text>
+          <text x="30" y="164" class="tx ts mu">Drawn with d = 2; the blocks use d = 1, 8 and 47.</text>
+
+          <!-- depthwise -->
+          <line x1="272" y1="69" x2="297" y2="69" class="ar ar0" marker-end="url(#f2a0)"/>
+          <line x1="272" y1="117" x2="297" y2="117" class="ar ar1" marker-end="url(#f2a1)"/>
+          <text x="300" y="36" class="tx tb">Depthwise</text>
+          <rect x="300" y="56" width="130" height="26" rx="4" class="bx-learn"/>
+          <text x="365" y="73" text-anchor="middle" class="tm ts">Σ wᵢ·x(t − i·d)</text>
+          <rect x="300" y="104" width="130" height="26" rx="4" class="bx-learn"/>
+          <text x="365" y="121" text-anchor="middle" class="tm ts">Σ wᵢ·x(t − i·d)</text>
+          <line x1="365" y1="82" x2="365" y2="104" class="tie"/>
+          <text x="373" y="97" class="tx ts mu">same wᵢ</text>
+
+          <!-- pointwise -->
+          <line x1="430" y1="69" x2="467" y2="69" class="ar ar0" marker-end="url(#f2a0)"/>
+          <line x1="430" y1="117" x2="467" y2="117" class="ar ar1" marker-end="url(#f2a1)"/>
+          <text x="449" y="62" text-anchor="middle" class="tm ts c0">u₀</text>
+          <text x="449" y="110" text-anchor="middle" class="tm ts c1">u₁</text>
+          <text x="470" y="36" class="tx tb">Pointwise</text>
+          <rect x="470" y="45" width="48" height="48" class="bx-learn"/>
+          <rect x="518" y="45" width="48" height="48" class="bx-learn"/>
+          <rect x="470" y="93" width="48" height="48" class="bx-tied"/>
+          <rect x="518" y="93" width="48" height="48" class="bx-tied"/>
+          <text x="494" y="74" text-anchor="middle" class="tx tb big">A</text>
+          <text x="542" y="74" text-anchor="middle" class="tx tb big">B</text>
+          <text x="494" y="122" text-anchor="middle" class="tx tb big">B</text>
+          <text x="542" y="122" text-anchor="middle" class="tx tb big">A</text>
+          <text x="580" y="73" class="tm c0">out₀ = A·u₀ + B·u₁ + b</text>
+          <text x="580" y="121" class="tm c1">out₁ = B·u₀ + A·u₁ + b</text>
+          <text x="580" y="150" class="tx ts mu">Stored once as [A | B]: 32 × 64 + 32 bias.</text>
+          <text x="580" y="166" class="tx ts mu">The dashed row is built from the top row.</text>
+
+          <!-- data path -->
+          <text x="30" y="200" class="cap">DATA PATH · ONE BLOCK, BOTH STREAMS (64 CHANNELS)</text>
+          <path d="M55,246 V226 H640 V250" class="ar" marker-end="url(#f2a)"/>
+          <text x="350" y="220" text-anchor="middle" class="tx ts mu">residual: the block input is added back</text>
+          <rect x="30" y="246" width="50" height="40" rx="20" class="bx-data"/>
+          <text x="55" y="271" text-anchor="middle" class="tm">x</text>
+          <text x="55" y="303" text-anchor="middle" class="tm ts mu">64 × T</text>
+          <line x1="80" y1="266" x2="107" y2="266" class="ar" marker-end="url(#f2a)"/>
+          <rect x="110" y="246" width="120" height="40" rx="4" class="bx-learn"/>
+          <text x="170" y="262" text-anchor="middle" class="tx ts tb">Depthwise</text>
+          <text x="170" y="278" text-anchor="middle" class="tm ts">k = 8, step d</text>
+          <line x1="230" y1="266" x2="257" y2="266" class="ar" marker-end="url(#f2a)"/>
+          <rect x="260" y="246" width="130" height="40" rx="4" class="bx-learn"/>
+          <text x="325" y="262" text-anchor="middle" class="tx ts tb">Pointwise</text>
+          <text x="325" y="278" text-anchor="middle" class="tm ts">[[A,B],[B,A]] + b</text>
+          <line x1="390" y1="266" x2="417" y2="266" class="ar" marker-end="url(#f2a)"/>
+          <rect x="420" y="246" width="60" height="40" rx="4" class="bx-fixed"/>
+          <text x="450" y="270" text-anchor="middle" class="tx ts">ReLU</text>
+          <line x1="480" y1="266" x2="507" y2="266" class="ar" marker-end="url(#f2a)"/>
+          <rect x="510" y="246" width="90" height="40" rx="4" class="bx-fixed"/>
+          <text x="555" y="262" text-anchor="middle" class="tx ts">Dropout</text>
+          <text x="555" y="278" text-anchor="middle" class="tx ts mu">0.1, training</text>
+          <line x1="600" y1="266" x2="624" y2="266" class="ar" marker-end="url(#f2a)"/>
+          <circle cx="640" cy="266" r="14" class="bx-fixed"/>
+          <text x="640" y="271" text-anchor="middle" class="tm big">+</text>
+          <line x1="654" y1="266" x2="680" y2="266" class="ar" marker-end="url(#f2a)"/>
+          <rect x="683" y="246" width="60" height="40" rx="4" class="bx-fixed"/>
+          <text x="713" y="270" text-anchor="middle" class="tx ts">ReLU</text>
+          <line x1="743" y1="266" x2="770" y2="266" class="ar" marker-end="url(#f2a)"/>
+          <rect x="773" y="246" width="50" height="40" rx="20" class="bx-data"/>
+          <text x="798" y="271" text-anchor="middle" class="tm">out</text>
+          <text x="798" y="303" text-anchor="middle" class="tm ts mu">64 × T</text>
+        </svg>
+      </div>
+      <figcaption><b>Top:</b> how the mirror symmetry is wired. Both streams use the same 8-tap filter for each channel. The pointwise layer applies A to a stream's own channels and B to the other stream's, so swapping the streams swaps the outputs. <b>Bottom:</b> the order of operations. The depthwise conv has no bias and no nonlinearity, so the two convs act as one factored 8-tap conv. Each block has 256 depthwise and 2,080 pointwise weights.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>How far back each block sees</h2>
+    <figure>
+      <div class="scroll">
+        <svg viewBox="0 0 840 262" role="img" aria-label="Receptive field to scale. Block 1 reaches 8 samples, block 2 reaches 64 and block 3 reaches 393. The current best reaches 243. The rules allow 400.">
+          <!-- x = 130 + 1.4 × lag -->
+          <text x="12" y="32" class="tx ts">block 1 · d = 1</text>
+          <rect x="130" y="20" width="11.2" height="16" class="bar0"/>
+          <text x="149" y="32" class="tm ts">8</text>
+
+          <text x="12" y="58" class="tx ts">block 2 · d = 8</text>
+          <rect x="130" y="46" width="11.2" height="16" class="bar0"/>
+          <rect x="141.2" y="46" width="11.2" height="16" class="bar0b"/>
+          <rect x="152.4" y="46" width="11.2" height="16" class="bar0"/>
+          <rect x="163.6" y="46" width="11.2" height="16" class="bar0b"/>
+          <rect x="174.8" y="46" width="11.2" height="16" class="bar0"/>
+          <rect x="186" y="46" width="11.2" height="16" class="bar0b"/>
+          <rect x="197.2" y="46" width="11.2" height="16" class="bar0"/>
+          <rect x="208.4" y="46" width="11.2" height="16" class="bar0b"/>
+          <text x="228" y="58" class="tm ts">64</text>
+
+          <text x="12" y="90" class="tx ts">block 3 · d = 47</text>
+          <rect x="130" y="74" width="89.6" height="26" class="win"/>
+          <rect x="195.8" y="74" width="89.6" height="26" class="win"/>
+          <rect x="261.6" y="74" width="89.6" height="26" class="win"/>
+          <rect x="327.4" y="74" width="89.6" height="26" class="win"/>
+          <rect x="393.2" y="74" width="89.6" height="26" class="win"/>
+          <rect x="459" y="74" width="89.6" height="26" class="win"/>
+          <rect x="524.8" y="74" width="89.6" height="26" class="win"/>
+          <rect x="590.6" y="74" width="89.6" height="26" class="win"/>
+          <line x1="130" y1="70" x2="130" y2="104" class="tick"/>
+          <line x1="195.8" y1="70" x2="195.8" y2="104" class="tick"/>
+          <line x1="261.6" y1="70" x2="261.6" y2="104" class="tick"/>
+          <line x1="327.4" y1="70" x2="327.4" y2="104" class="tick"/>
+          <line x1="393.2" y1="70" x2="393.2" y2="104" class="tick"/>
+          <line x1="459" y1="70" x2="459" y2="104" class="tick"/>
+          <line x1="524.8" y1="70" x2="524.8" y2="104" class="tick"/>
+          <line x1="590.6" y1="70" x2="590.6" y2="104" class="tick"/>
+          <text x="688" y="91" class="tm ts">393</text>
+
+          <line x1="12" y1="114" x2="828" y2="114" class="rl"/>
+
+          <text x="12" y="136" class="tx ts tb">k8_combined</text>
+          <rect x="130" y="124" width="550.2" height="16" class="bar0"/>
+          <text x="688" y="136" class="tm ts">393 (3.9 s)</text>
+
+          <text x="12" y="162" class="tx ts">current best</text>
+          <rect x="130" y="150" width="340.2" height="16" class="barref"/>
+          <rect x="470.2" y="150" width="219.8" height="16" class="gap"/>
+          <text x="478" y="162" class="tm ts mu">243 (2.4 s) · rest never seen</text>
+
+          <text x="12" y="190" class="tx ts">rules allow</text>
+          <path d="M130,180 V192 M130,186 H690 M690,180 V192" class="ax"/>
+          <text x="698" y="190" class="tm ts">400 (4 s)</text>
+
+          <line x1="130" y1="210" x2="690" y2="210" class="ax"/>
+          <path d="M130,210 v6 M200,210 v6 M270,210 v6 M340,210 v6 M410,210 v6 M480,210 v6 M550,210 v6 M620,210 v6 M690,210 v6" class="ax"/>
+          <text x="130" y="230" text-anchor="middle" class="tm ts mu">0</text>
+          <text x="200" y="230" text-anchor="middle" class="tm ts mu">50</text>
+          <text x="270" y="230" text-anchor="middle" class="tm ts mu">100</text>
+          <text x="340" y="230" text-anchor="middle" class="tm ts mu">150</text>
+          <text x="410" y="230" text-anchor="middle" class="tm ts mu">200</text>
+          <text x="480" y="230" text-anchor="middle" class="tm ts mu">250</text>
+          <text x="550" y="230" text-anchor="middle" class="tm ts mu">300</text>
+          <text x="620" y="230" text-anchor="middle" class="tm ts mu">350</text>
+          <text x="690" y="230" text-anchor="middle" class="tm ts mu">400</text>
+          <text x="410" y="252" text-anchor="middle" class="tx ts mu">samples before the newest one (10 ms each)</text>
+        </svg>
+      </div>
+      <figcaption>Drawn to scale. Blocks 1 and 2 cover lags 0–63 exactly once. Block 3's taps (ticks) are 47 apart, but each tap sees a 64-sample window, so neighbouring windows overlap by 17 and leave no gaps. Total reach is 1 + 7 × (1 + 8 + 47) = <b>393</b>, against <b>243</b> for the current best (5 blocks, kernel 3, dilations 1 to 81). Dilation 47 is the largest the config rule allows (reach + 1 ≤ 400). Dilation 64 would tile exactly but would reach 512.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Where the 7,555 parameters sit</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Part</th><th class="n">Learned</th><th>Stored as</th><th class="n">Stream state</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Projection, 1×1 conv 7 → 32</td><td class="n">256</td><td>W 32 × 7 + b 32, used by both streams</td><td class="n">—</td></tr>
+          <tr><td>Block 1, k 8, d 1</td><td class="n">2,336</td><td>depthwise 32 × 8; pointwise [A | B] 32 × 64 + b 32</td><td class="n">448</td></tr>
+          <tr><td>Block 2, k 8, d 8</td><td class="n">2,336</td><td>as block 1</td><td class="n">3,584</td></tr>
+          <tr><td>Block 3, k 8, d 47</td><td class="n">2,336</td><td>as block 1</td><td class="n">21,056</td></tr>
+          <tr><td>Mirror head</td><td class="n">291</td><td>W 9 × 32 + 3 x-biases</td><td class="n">—</td></tr>
+          <tr class="total"><td>Total</td><td class="n">7,555</td><td><span class="note">The ONNX file stores 7,552; the 3 x-biases sit in a Constant.</span></td><td class="n">25,088</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sub">Stream state per block = 32 channels × 2 streams × (k − 1)·d. The current best keeps 11,616 floats.</p>
+  </section>
+
+  <div class="pair">
+    <section>
+      <h2>Trained with</h2>
+      <ul class="plain">
+        <li>Angular loss: the exact geodesic angle, weighted half on all 20 steps and half on step 20.</li>
+        <li>Window sampling: every training window is equally likely, so small users are not re-drawn and memorised.</li>
+        <li>World tilt: half the windows are turned 0–15° about a random horizontal axis. Only the gravity channels change.</li>
+        <li>Native maps: training uses the same sin θ input and Cayley output as the graph, so the graph needs no series.</li>
+        <li>40 epochs × 1,000 steps, batch 256, lr 1e-3, weight decay 1e-4, dropout 0.1, weight EMA 0.999.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>In the code</h2>
+      <ul class="plain">
+        <li><code>experimental/v9_lean/model.py</code>: <code>LeanTCNN</code>, <code>KernelBlock</code>, native maps</li>
+        <li><code>experimental/v7_compact/model.py</code>: <code>SeparableBlock</code>, polynomial head, L1 speed</li>
+        <li><code>experimental/v6_gravity_mirror/model.py</code>: gravity feature, mirror streams and head</li>
+        <li><code>experimental/v9_lean/configs/v9_confirm.json</code>: the <code>k8_combined</code> overrides</li>
+      </ul>
+    </section>
+  </div>
+</main>

@@ -1,0 +1,20 @@
+{
+  "python": "3.13.16",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "torch": "2.7.1+cu126",
+  "cuda_build": "12.6",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "numpy": "2.4.6",
+  "h5py": "3.13.0",
+  "runtime": {
+    "policy": "float32-deterministic-v2",
+    "torch": "2.7.1+cu126",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cpu_threads": 4,
+    "cuda_build": "12.6"
+  },
+  "created_utc": "2026-11-10T22:51:12.474975+00:00"
+}

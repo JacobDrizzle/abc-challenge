@@ -1,0 +1,1246 @@
+{
+ "group-a-v2-test20": {
+  "constant_velocity_1step": {
+   "from_start": {
+    "mean_diff_deg": -2.7329838502270776,
+    "ci95": [
+     -3.172022877070953,
+     -2.2947461983963584
+    ],
+    "equal_player_mean_diff_deg": -2.798985996116462,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "damped_velocity": {
+   "from_start": {
+    "mean_diff_deg": -0.9028987823738769,
+    "ci95": [
+     -1.043697677009548,
+     -0.7966062327650786
+    ],
+    "equal_player_mean_diff_deg": -0.9257571745234496,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "hold_last": {
+   "from_start": {
+    "mean_diff_deg": -1.8264155572584466,
+    "ci95": [
+     -2.044471268325639,
+     -1.6315656667977976
+    ],
+    "equal_player_mean_diff_deg": -1.7909327343208166,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gadst_s42": {
+   "from_start": {
+    "mean_diff_deg": -0.23510227968764963,
+    "ci95": [
+     -0.2829275622079466,
+     -0.1993754475916738
+    ],
+    "equal_player_mean_diff_deg": -0.25084438083300403,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gadst_s43": {
+   "from_start": {
+    "mean_diff_deg": -0.3144753398387531,
+    "ci95": [
+     -0.37440416864481824,
+     -0.26916087006315054
+    ],
+    "equal_player_mean_diff_deg": -0.33297227614621105,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gadst_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.2826272013695418,
+    "ci95": [
+     -0.34067257005456,
+     -0.2402978922241085
+    ],
+    "equal_player_mean_diff_deg": -0.30535832768537,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gadst_s45": {
+   "from_start": {
+    "mean_diff_deg": -0.3122957197504377,
+    "ci95": [
+     -0.3677101567437619,
+     -0.2691965276346644
+    ],
+    "equal_player_mean_diff_deg": -0.3324228246513521,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gadst_s46": {
+   "from_start": {
+    "mean_diff_deg": -0.32952524429575325,
+    "ci95": [
+     -0.3892633240753705,
+     -0.2831398867728319
+    ],
+    "equal_player_mean_diff_deg": -0.3521326591758291,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gru_s42": {
+   "from_start": {
+    "mean_diff_deg": -0.2712400344773826,
+    "ci95": [
+     -0.3118624875974367,
+     -0.23679816378760918
+    ],
+    "equal_player_mean_diff_deg": -0.2851717350014503,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.25365697590418695,
+    "ci95": [
+     -0.29462579479798273,
+     -0.21709596643712384
+    ],
+    "equal_player_mean_diff_deg": -0.24259888380580447,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gru_s43": {
+   "from_start": {
+    "mean_diff_deg": -0.2424505149785455,
+    "ci95": [
+     -0.2864042963692516,
+     -0.2027453404445184
+    ],
+    "equal_player_mean_diff_deg": -0.24969360853595254,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.22578314036015254,
+    "ci95": [
+     -0.2711956962691603,
+     -0.18326573942677782
+    ],
+    "equal_player_mean_diff_deg": -0.2106715781399325,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gru_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.2552654226059438,
+    "ci95": [
+     -0.2919175976684336,
+     -0.22564504073702665
+    ],
+    "equal_player_mean_diff_deg": -0.2674685156013249,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.23738412374666068,
+    "ci95": [
+     -0.2743782904347141,
+     -0.20492039355673905
+    ],
+    "equal_player_mean_diff_deg": -0.22397321582473154,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gru_s45": {
+   "from_start": {
+    "mean_diff_deg": -0.24651690776810248,
+    "ci95": [
+     -0.2772617613551507,
+     -0.22203935979255743
+    ],
+    "equal_player_mean_diff_deg": -0.26053432025873213,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.22944318957674925,
+    "ci95": [
+     -0.26058959119226893,
+     -0.20269109870430974
+    ],
+    "equal_player_mean_diff_deg": -0.219455150689293,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gru_s46": {
+   "from_start": {
+    "mean_diff_deg": -0.26510845138237316,
+    "ci95": [
+     -0.30541028202342396,
+     -0.23182335380998667
+    ],
+    "equal_player_mean_diff_deg": -0.27688228188913916,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.24707683209018008,
+    "ci95": [
+     -0.28809598141706866,
+     -0.21139948062445782
+    ],
+    "equal_player_mean_diff_deg": -0.23502813987680216,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v5_tcnn_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.24256284704518236,
+    "ci95": [
+     -0.279397453870876,
+     -0.21001529963784832
+    ],
+    "equal_player_mean_diff_deg": -0.24575146519775837,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.2255867600820314,
+    "ci95": [
+     -0.26281334840580767,
+     -0.19292720688790552
+    ],
+    "equal_player_mean_diff_deg": -0.2066593030253331,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v6_control_v7graph_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.1475347602554866,
+    "ci95": [
+     -0.16450716361112389,
+     -0.13266184351538024
+    ],
+    "equal_player_mean_diff_deg": -0.15075722972540304,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.13200977029935979,
+    "ci95": [
+     -0.14883706364114757,
+     -0.11629999471414133
+    ],
+    "equal_player_mean_diff_deg": -0.11421362824014954,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v6_tcnn_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.14753475061656174,
+    "ci95": [
+     -0.1645071452574071,
+     -0.13266183519254424
+    ],
+    "equal_player_mean_diff_deg": -0.150757223986022,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.13200976038048168,
+    "ci95": [
+     -0.14883704815422286,
+     -0.11629999646216667
+    ],
+    "equal_player_mean_diff_deg": -0.11421362153366013,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v7_base3_5_addons_angular_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.13114018132879676,
+    "ci95": [
+     -0.15575697598588542,
+     -0.11247277338316007
+    ],
+    "equal_player_mean_diff_deg": -0.14076284145315,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.1136386220754229,
+    "ci95": [
+     -0.13640193014218469,
+     -0.09565450105627761
+    ],
+    "equal_player_mean_diff_deg": -0.10052734587458242,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v7_base3_5_addons_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.181465199618666,
+    "ci95": [
+     -0.20047958441504563,
+     -0.1651167219028366
+    ],
+    "equal_player_mean_diff_deg": -0.18984281729594335,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.16421255476459762,
+    "ci95": [
+     -0.1825631205280059,
+     -0.1474155993136534
+    ],
+    "equal_player_mean_diff_deg": -0.15167006824473864,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v7_sep_base3_addons_angular_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.11807887753408527,
+    "ci95": [
+     -0.14275076842642503,
+     -0.0981945786354041
+    ],
+    "equal_player_mean_diff_deg": -0.13061954288466365,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.1010722912089992,
+    "ci95": [
+     -0.12474096207137714,
+     -0.08214615823157023
+    ],
+    "equal_player_mean_diff_deg": -0.0906830631056621,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v7_sep_base3_addons_angular_split_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.11807887588156697,
+    "ci95": [
+     -0.142750765103312,
+     -0.09819457668165703
+    ],
+    "equal_player_mean_diff_deg": -0.13061954068406956,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.10107228966180093,
+    "ci95": [
+     -0.12474095848864698,
+     -0.08214615850783234
+    ],
+    "equal_player_mean_diff_deg": -0.09068306076003407,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v7_sep_base3_addons_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.2077879885803328,
+    "ci95": [
+     -0.2341449547926768,
+     -0.18393583483035877
+    ],
+    "equal_player_mean_diff_deg": -0.21728355896016632,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.1920672173643055,
+    "ci95": [
+     -0.2179894292931761,
+     -0.168163191623315
+    ],
+    "equal_player_mean_diff_deg": -0.18049461609545472,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k5_combined_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.07628621475063053,
+    "ci95": [
+     -0.08971468381607253,
+     -0.06702640724979715
+    ],
+    "equal_player_mean_diff_deg": -0.0817578849000455,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.06331737780953563,
+    "ci95": [
+     -0.07623576874749069,
+     -0.053288056343056216
+    ],
+    "equal_player_mean_diff_deg": -0.04998417173980929,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k5_combined_padded_a4_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.07628621516419437,
+    "ci95": [
+     -0.08971468630273584,
+     -0.06702640755924565
+    ],
+    "equal_player_mean_diff_deg": -0.08175788481008676,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.0633173782092282,
+    "ci95": [
+     -0.07623576889389211,
+     -0.05328805579177745
+    ],
+    "equal_player_mean_diff_deg": -0.049984172052783785,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k5_combined_padded_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.0762862148806114,
+    "ci95": [
+     -0.08971468580841621,
+     -0.06702640693563842
+    ],
+    "equal_player_mean_diff_deg": -0.08175788508065171,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.06331737794913134,
+    "ci95": [
+     -0.07623576869417252,
+     -0.05328805507631078
+    ],
+    "equal_player_mean_diff_deg": -0.049984172004901975,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k8_combined_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.05573953221231422,
+    "ci95": [
+     -0.06668301921998501,
+     -0.046552232788658075
+    ],
+    "equal_player_mean_diff_deg": -0.06308864238702545,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.040899565986719455,
+    "ci95": [
+     -0.05220086978848397,
+     -0.03155483047008009
+    ],
+    "equal_player_mean_diff_deg": -0.03222648289688228,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k8_combined_padded_a4_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.05573953343420795,
+    "ci95": [
+     -0.06668301891361265,
+     -0.04655223408043336
+    ],
+    "equal_player_mean_diff_deg": -0.06308864417707272,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.040899567143950225,
+    "ci95": [
+     -0.05220086928913809,
+     -0.031554832853195484
+    ],
+    "equal_player_mean_diff_deg": -0.032226482433978035,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k8_combined_padded_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.05573953177652693,
+    "ci95": [
+     -0.06668301862535725,
+     -0.046552232446672615
+    ],
+    "equal_player_mean_diff_deg": -0.0630886411543912,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.04089956560191622,
+    "ci95": [
+     -0.05220086978800037,
+     -0.03155482969188521
+    ],
+    "equal_player_mean_diff_deg": -0.032226482624411634,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k8_jitter3_s42_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.1279384473469006,
+    "ci95": [
+     -0.1555377044119975,
+     -0.10665864346818066
+    ],
+    "equal_player_mean_diff_deg": -0.14727719656170363,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.11250917102590374,
+    "ci95": [
+     -0.13956817627378745,
+     -0.09120691647539617
+    ],
+    "equal_player_mean_diff_deg": -0.11304427780819999,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_sep_angular_lean_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.11807416005688609,
+    "ci95": [
+     -0.14274610034657548,
+     -0.0981902958641015
+    ],
+    "equal_player_mean_diff_deg": -0.13061592550032125,
+    "players_better": 20,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.10106757511004522,
+    "ci95": [
+     -0.12473623839767924,
+     -0.08214053295571817
+    ],
+    "equal_player_mean_diff_deg": -0.09067944638080956,
+    "players_better": 19,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "k8_800_gain105_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.002232934756796124,
+    "ci95": [
+     -0.006521492994123917,
+     0.0020391505808174
+    ],
+    "equal_player_mean_diff_deg": -0.0029436764523928403,
+    "players_better": 14,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.004071821912253071,
+    "ci95": [
+     -0.008622869581765887,
+     0.0003028209967510517
+    ],
+    "equal_player_mean_diff_deg": -0.007668471518123799,
+    "players_better": 16,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "k8_800_original_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.0032975630156654094,
+    "ci95": [
+     -0.0075308475065570465,
+     0.0020315751020975248
+    ],
+    "equal_player_mean_diff_deg": -0.004901585967856304,
+    "players_better": 15,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.0036579932119378458,
+    "ci95": [
+     -0.007784391268767708,
+     0.0015010988611959663
+    ],
+    "equal_player_mean_diff_deg": -0.006468259942023602,
+    "players_better": 17,
+    "players": 20,
+    "draws": 10000,
+    "seed": 0
+   }
+  }
+ },
+ "additional-140": {
+  "constant_velocity_1step": {
+   "from_start": {
+    "mean_diff_deg": -2.997072741383139,
+    "ci95": [
+     -3.2489475532087084,
+     -2.7578246025379505
+    ],
+    "equal_player_mean_diff_deg": -3.0066666135463014,
+    "players_better": 139,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "damped_velocity": {
+   "from_start": {
+    "mean_diff_deg": -1.102677616125544,
+    "ci95": [
+     -1.2141312770301036,
+     -1.0044427036848995
+    ],
+    "equal_player_mean_diff_deg": -1.0524369010001386,
+    "players_better": 139,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "hold_last": {
+   "from_start": {
+    "mean_diff_deg": -2.1835406680864007,
+    "ci95": [
+     -2.356764463961007,
+     -2.0196944857961308
+    ],
+    "equal_player_mean_diff_deg": -2.0400106348262423,
+    "players_better": 140,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "k8_800_gain105_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.003071568821283108,
+    "ci95": [
+     -0.004317856665757461,
+     -0.0017858235009323984
+    ],
+    "equal_player_mean_diff_deg": -0.0029052647577289268,
+    "players_better": 100,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.004839103054826669,
+    "ci95": [
+     -0.006101692246967981,
+     -0.0035650327639009873
+    ],
+    "equal_player_mean_diff_deg": -0.006589997217641806,
+    "players_better": 112,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "k8_800_original_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.007014755685061941,
+    "ci95": [
+     -0.010035450734314494,
+     -0.004424880351421052
+    ],
+    "equal_player_mean_diff_deg": -0.004976265163157662,
+    "players_better": 100,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.007388500307876281,
+    "ci95": [
+     -0.010371148092789103,
+     -0.004825188083387967
+    ],
+    "equal_player_mean_diff_deg": -0.006091140405319068,
+    "players_better": 110,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gadst_s42": {
+   "from_start": {
+    "mean_diff_deg": -0.30938890656002543,
+    "ci95": [
+     -0.35359566447973556,
+     -0.27267409422011224
+    ],
+    "equal_player_mean_diff_deg": -0.31987226733662544,
+    "players_better": 139,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gru_s45": {
+   "from_start": {
+    "mean_diff_deg": -0.29456731060661434,
+    "ci95": [
+     -0.3298644478198028,
+     -0.2643009874593736
+    ],
+    "equal_player_mean_diff_deg": -0.28916200370712825,
+    "players_better": 138,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.2790459035999918,
+    "ci95": [
+     -0.3141049057937767,
+     -0.24861005085848267
+    ],
+    "equal_player_mean_diff_deg": -0.2627339020953334,
+    "players_better": 136,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v5_tcnn_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.2740618330581169,
+    "ci95": [
+     -0.30392244969751403,
+     -0.2492228321527185
+    ],
+    "equal_player_mean_diff_deg": -0.26004333829268367,
+    "players_better": 139,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.25832961431247536,
+    "ci95": [
+     -0.28826375644101265,
+     -0.23330683766176283
+    ],
+    "equal_player_mean_diff_deg": -0.2310860673351936,
+    "players_better": 136,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v6_tcnn_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.16946047803706912,
+    "ci95": [
+     -0.186781194079062,
+     -0.15361794285111968
+    ],
+    "equal_player_mean_diff_deg": -0.16106261547704467,
+    "players_better": 137,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.1552616880000101,
+    "ci95": [
+     -0.1722752231367902,
+     -0.13954976394773427
+    ],
+    "equal_player_mean_diff_deg": -0.13838636582797323,
+    "players_better": 136,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v7_sep_base3_addons_angular_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.15535136160334118,
+    "ci95": [
+     -0.18509861146782927,
+     -0.1322731039136276
+    ],
+    "equal_player_mean_diff_deg": -0.1374554447798233,
+    "players_better": 137,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.13942415639895311,
+    "ci95": [
+     -0.16924950781170706,
+     -0.11599166754515382
+    ],
+    "equal_player_mean_diff_deg": -0.1094796868346798,
+    "players_better": 129,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k5_combined_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.09289316356606568,
+    "ci95": [
+     -0.10718206206489357,
+     -0.08106207828712321
+    ],
+    "equal_player_mean_diff_deg": -0.08966008686625342,
+    "players_better": 138,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.08064896792760892,
+    "ci95": [
+     -0.0947742059847821,
+     -0.06893523814426232
+    ],
+    "equal_player_mean_diff_deg": -0.06665434583352818,
+    "players_better": 130,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k8_combined_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.07292472358324804,
+    "ci95": [
+     -0.08441466001650827,
+     -0.0626801661626583
+    ],
+    "equal_player_mean_diff_deg": -0.07171466697484905,
+    "players_better": 133,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.05919884575451534,
+    "ci95": [
+     -0.07083750295138472,
+     -0.04894482948017095
+    ],
+    "equal_player_mean_diff_deg": -0.04566747647538195,
+    "players_better": 122,
+    "players": 140,
+    "draws": 10000,
+    "seed": 0
+   }
+  }
+ },
+ "merged-800-test160": {
+  "constant_velocity_1step": {
+   "from_start": {
+    "mean_diff_deg": -2.958412127861129,
+    "ci95": [
+     -3.1893785819107277,
+     -2.7405312004514326
+    ],
+    "equal_player_mean_diff_deg": -2.9807065363675713,
+    "players_better": 159,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "damped_velocity": {
+   "from_start": {
+    "mean_diff_deg": -1.07343150793924,
+    "ci95": [
+     -1.17366432793621,
+     -0.9869706363853965
+    ],
+    "equal_player_mean_diff_deg": -1.0366019351905529,
+    "players_better": 159,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "hold_last": {
+   "from_start": {
+    "mean_diff_deg": -2.1312602566374927,
+    "ci95": [
+     -2.2856664178589168,
+     -1.9832023225509694
+    ],
+    "equal_player_mean_diff_deg": -2.0088758972630636,
+    "players_better": 160,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "k8_800_gain105_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.0029487991458469506,
+    "ci95": [
+     -0.004193143981893859,
+     -0.0016412885271937171
+    ],
+    "equal_player_mean_diff_deg": -0.0029100662195619157,
+    "players_better": 114,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.004726778906749441,
+    "ci95": [
+     -0.005990583342907163,
+     -0.0034112432365624415
+    ],
+    "equal_player_mean_diff_deg": -0.006724806505202055,
+    "players_better": 128,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "k8_800_original_s44": {
+   "from_start": {
+    "mean_diff_deg": -0.006470586831350229,
+    "ci95": [
+     -0.009201725726747663,
+     -0.004058689985109647
+    ],
+    "equal_player_mean_diff_deg": -0.0049669302637449925,
+    "players_better": 115,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.006842382322958973,
+    "ci95": [
+     -0.00955181314460178,
+     -0.004472691669801135
+    ],
+    "equal_player_mean_diff_deg": -0.0061382803474071355,
+    "players_better": 127,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gadst_s42": {
+   "from_start": {
+    "mean_diff_deg": -0.2985139070142491,
+    "ci95": [
+     -0.3374842646605985,
+     -0.2658340543902639
+    ],
+    "equal_player_mean_diff_deg": -0.3112437815236727,
+    "players_better": 159,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "nic_ga2_gru_s45": {
+   "from_start": {
+    "mean_diff_deg": -0.28753309555279416,
+    "ci95": [
+     -0.31854098326018654,
+     -0.2607407871102204
+    ],
+    "equal_player_mean_diff_deg": -0.2855835432760787,
+    "players_better": 158,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.2717844419455439,
+    "ci95": [
+     -0.3026859626901308,
+     -0.24477161309605233
+    ],
+    "equal_player_mean_diff_deg": -0.2573240581695784,
+    "players_better": 155,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v5_tcnn_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.2694506200712683,
+    "ci95": [
+     -0.2952975608869315,
+     -0.24737514445777864
+    ],
+    "equal_player_mean_diff_deg": -0.258256854155818,
+    "players_better": 159,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.2535363084393303,
+    "ci95": [
+     -0.2794356355704759,
+     -0.23120064767214468
+    ],
+    "equal_player_mean_diff_deg": -0.22803272179646106,
+    "players_better": 155,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v6_tcnn_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.16625071760268467,
+    "ci95": [
+     -0.1815106707672192,
+     -0.15260499331026814
+    ],
+    "equal_player_mean_diff_deg": -0.15977444154066683,
+    "players_better": 157,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.1518577819007977,
+    "ci95": [
+     -0.16708175951707227,
+     -0.1382526370539921
+    ],
+    "equal_player_mean_diff_deg": -0.13536477279118408,
+    "players_better": 155,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v7_sep_base3_addons_angular_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.14989495222807792,
+    "ci95": [
+     -0.17612026639817613,
+     -0.12933829189603707
+    ],
+    "equal_player_mean_diff_deg": -0.13660095704292835,
+    "players_better": 157,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.13380973380258246,
+    "ci95": [
+     -0.16010413014000316,
+     -0.11328246721319532
+    ],
+    "equal_player_mean_diff_deg": -0.1071301088685526,
+    "players_better": 148,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k5_combined_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.0904620320363644,
+    "ci95": [
+     -0.10304806644590775,
+     -0.08020025593770398
+    ],
+    "equal_player_mean_diff_deg": -0.08867231162047742,
+    "players_better": 158,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.07811175439945346,
+    "ci95": [
+     -0.09040602330404635,
+     -0.06790561731451787
+    ],
+    "equal_player_mean_diff_deg": -0.06457057407181331,
+    "players_better": 149,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  },
+  "v9_k8_combined_ga2": {
+   "from_start": {
+    "mean_diff_deg": -0.0704089417228863,
+    "ci95": [
+     -0.08055102669433263,
+     -0.06147410928068101
+    ],
+    "equal_player_mean_diff_deg": -0.0706364139013711,
+    "players_better": 153,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   },
+   "cold_start": {
+    "mean_diff_deg": -0.05651996979067998,
+    "ci95": [
+     -0.06666353769117768,
+     -0.04761182975214903
+    ],
+    "equal_player_mean_diff_deg": -0.04398735227806949,
+    "players_better": 141,
+    "players": 160,
+    "draws": 10000,
+    "seed": 0
+   }
+  }
+ }
+}

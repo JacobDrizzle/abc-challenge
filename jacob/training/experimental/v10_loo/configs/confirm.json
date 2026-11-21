@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "reference": "outputs/v9_confirm/k8_combined",
+  "candidates": {
+    "no_prior": {
+      "output": "outputs/v10_loo/no_prior",
+      "overrides": {
+        "damped_prior_tau_ms": null
+      }
+    },
+    "no_gravity": {
+      "output": "outputs/v10_loo/no_gravity",
+      "overrides": {
+        "gravity_features": false
+      }
+    },
+    "no_mirror": {
+      "output": "outputs/v10_loo/no_mirror",
+      "overrides": {
+        "mirror_equivariant": false
+      }
+    },
+    "quaternion_loss": {
+      "output": "outputs/v10_loo/quaternion_loss",
+      "overrides": {
+        "loss_kind": "quaternion"
+      }
+    },
+    "user_sampling": {
+      "output": "outputs/v10_loo/user_sampling",
+      "overrides": {
+        "sampling": "user"
+      }
+    },
+    "rf_243": {
+      "output": "outputs/v10_loo/rf_243",
+      "overrides": {
+        "num_blocks": 5,
+        "kernel_sizes": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "dilations": [
+          1,
+          3,
+          9,
+          27,
+          81
+        ]
+      }
+    },
+    "exact_maps": {
+      "output": "outputs/v10_loo/exact_maps",
+      "overrides": {
+        "maps": "exact"
+      }
+    },
+    "no_tilt": {
+      "output": "outputs/v10_loo/no_tilt",
+      "overrides": {
+        "tilt_augmentation_deg": 0
+      }
+    }
+  }
+}

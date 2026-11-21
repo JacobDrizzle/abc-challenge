@@ -1,0 +1,371 @@
+Confirming separable_base3_addons_angular on seeds [42, 43, 44]
+Training seed 42 on cuda; 6,651 parameters; 1000 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (131,459 windows, stride 5): hold-last 6.0825 deg | damped velocity 5.0497 deg
+Training seed 43 on cuda; 6,651 parameters; 1000 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (131,459 windows, stride 5): hold-last 6.0825 deg | damped velocity 5.0497 deg
+epoch 01/40 | loss 0.070022 | train end 5.286 deg | val end 4.5029 deg (best 4.5029 @1, stale 0/40) | val 100ms 2.251 deg | vs damped -0.547 deg (-10.8%) | lr 1.00e-03 | 12.7k win/s | 22.5s | ETA <= 15m
+epoch 02/40 | loss 0.067772 | train end 5.122 deg | val end 4.4475 deg (best 4.4475 @2, stale 0/40) | val 100ms 2.210 deg | vs damped -0.602 deg (-11.9%) | lr 9.98e-04 | 12.3k win/s | 23.1s | ETA <= 14m
+epoch 03/40 | loss 0.066184 | train end 5.009 deg | val end 4.4160 deg (best 4.4160 @3, stale 0/40) | val 100ms 2.183 deg | vs damped -0.634 deg (-12.5%) | lr 9.94e-04 | 12.0k win/s | 23.7s | ETA <= 14m
+epoch 04/40 | loss 0.066068 | train end 5.001 deg | val end 4.3939 deg (best 4.3939 @4, stale 0/40) | val 100ms 2.168 deg | vs damped -0.656 deg (-13.0%) | lr 9.86e-04 | 11.9k win/s | 23.9s | ETA <= 14m
+epoch 05/40 | loss 0.065356 | train end 4.947 deg | val end 4.3824 deg (best 4.3824 @5, stale 0/40) | val 100ms 2.161 deg | vs damped -0.667 deg (-13.2%) | lr 9.76e-04 | 12.0k win/s | 23.7s | ETA <= 14m
+epoch 06/40 | loss 0.065063 | train end 4.924 deg | val end 4.3717 deg (best 4.3717 @6, stale 0/40) | val 100ms 2.155 deg | vs damped -0.678 deg (-13.4%) | lr 9.62e-04 | 12.0k win/s | 23.6s | ETA <= 13m
+epoch 07/40 | loss 0.064989 | train end 4.918 deg | val end 4.3662 deg (best 4.3662 @7, stale 0/40) | val 100ms 2.152 deg | vs damped -0.684 deg (-13.5%) | lr 9.46e-04 | 11.9k win/s | 23.9s | ETA <= 13m
+epoch 08/40 | loss 0.064764 | train end 4.899 deg | val end 4.3621 deg (best 4.3621 @8, stale 1/40) | val 100ms 2.150 deg | vs damped -0.688 deg (-13.6%) | lr 9.26e-04 | 12.1k win/s | 23.6s | ETA <= 13m
+epoch 09/40 | loss 0.064726 | train end 4.895 deg | val end 4.3602 deg (best 4.3602 @9, stale 0/40) | val 100ms 2.149 deg | vs damped -0.690 deg (-13.7%) | lr 9.05e-04 | 12.1k win/s | 23.4s | ETA <= 12m
+epoch 10/40 | loss 0.064660 | train end 4.891 deg | val end 4.3568 deg (best 4.3568 @10, stale 1/40) | val 100ms 2.147 deg | vs damped -0.693 deg (-13.7%) | lr 8.80e-04 | 12.1k win/s | 23.6s | ETA <= 12m
+epoch 11/40 | loss 0.064417 | train end 4.872 deg | val end 4.3531 deg (best 4.3531 @11, stale 0/40) | val 100ms 2.146 deg | vs damped -0.697 deg (-13.8%) | lr 8.54e-04 | 12.1k win/s | 23.5s | ETA <= 11m
+epoch 12/40 | loss 0.064412 | train end 4.870 deg | val end 4.3507 deg (best 4.3507 @12, stale 1/40) | val 100ms 2.146 deg | vs damped -0.699 deg (-13.8%) | lr 8.25e-04 | 12.1k win/s | 23.5s | ETA <= 11m
+epoch 13/40 | loss 0.064317 | train end 4.865 deg | val end 4.3504 deg (best 4.3504 @13, stale 2/40) | val 100ms 2.146 deg | vs damped -0.699 deg (-13.8%) | lr 7.94e-04 | 12.1k win/s | 23.6s | ETA <= 11m
+epoch 14/40 | loss 0.064204 | train end 4.854 deg | val end 4.3492 deg (best 4.3492 @14, stale 3/40) | val 100ms 2.145 deg | vs damped -0.701 deg (-13.9%) | lr 7.61e-04 | 12.1k win/s | 23.5s | ETA <= 10m
+epoch 15/40 | loss 0.064233 | train end 4.856 deg | val end 4.3479 deg (best 4.3479 @15, stale 0/40) | val 100ms 2.144 deg | vs damped -0.702 deg (-13.9%) | lr 7.27e-04 | 12.1k win/s | 23.5s | ETA <= 10m
+epoch 16/40 | loss 0.064076 | train end 4.846 deg | val end 4.3465 deg (best 4.3465 @16, stale 1/40) | val 100ms 2.144 deg | vs damped -0.703 deg (-13.9%) | lr 6.91e-04 | 12.1k win/s | 23.5s | ETA <= 9m
+epoch 17/40 | loss 0.063887 | train end 4.827 deg | val end 4.3447 deg (best 4.3447 @17, stale 2/40) | val 100ms 2.143 deg | vs damped -0.705 deg (-14.0%) | lr 6.55e-04 | 12.1k win/s | 23.5s | ETA <= 9m
+epoch 18/40 | loss 0.063752 | train end 4.819 deg | val end 4.3430 deg (best 4.3430 @18, stale 3/40) | val 100ms 2.142 deg | vs damped -0.707 deg (-14.0%) | lr 6.17e-04 | 12.1k win/s | 23.5s | ETA <= 9m
+epoch 19/40 | loss 0.063984 | train end 4.837 deg | val end 4.3434 deg (best 4.3430 @18, stale 4/40) | val 100ms 2.142 deg | vs damped -0.706 deg (-14.0%) | lr 5.78e-04 | 12.1k win/s | 23.6s | ETA <= 8m
+epoch 20/40 | loss 0.063723 | train end 4.815 deg | val end 4.3429 deg (best 4.3429 @20, stale 5/40) | val 100ms 2.141 deg | vs damped -0.707 deg (-14.0%) | lr 5.39e-04 | 12.1k win/s | 23.6s | ETA <= 8m
+epoch 21/40 | loss 0.063640 | train end 4.808 deg | val end 4.3427 deg (best 4.3427 @21, stale 0/40) | val 100ms 2.142 deg | vs damped -0.707 deg (-14.0%) | lr 5.00e-04 | 12.1k win/s | 23.5s | ETA <= 7m
+epoch 22/40 | loss 0.063760 | train end 4.819 deg | val end 4.3427 deg (best 4.3427 @22, stale 1/40) | val 100ms 2.141 deg | vs damped -0.707 deg (-14.0%) | lr 4.61e-04 | 12.1k win/s | 23.6s | ETA <= 7m
+epoch 23/40 | loss 0.063768 | train end 4.819 deg | val end 4.3415 deg (best 4.3415 @23, stale 2/40) | val 100ms 2.141 deg | vs damped -0.708 deg (-14.0%) | lr 4.22e-04 | 12.1k win/s | 23.5s | ETA <= 7m
+epoch 24/40 | loss 0.063575 | train end 4.805 deg | val end 4.3416 deg (best 4.3415 @23, stale 3/40) | val 100ms 2.141 deg | vs damped -0.708 deg (-14.0%) | lr 3.83e-04 | 12.1k win/s | 23.5s | ETA <= 6m
+epoch 25/40 | loss 0.063623 | train end 4.807 deg | val end 4.3420 deg (best 4.3415 @23, stale 4/40) | val 100ms 2.141 deg | vs damped -0.708 deg (-14.0%) | lr 3.45e-04 | 12.1k win/s | 23.6s | ETA <= 6m
+epoch 26/40 | loss 0.063560 | train end 4.800 deg | val end 4.3405 deg (best 4.3405 @26, stale 5/40) | val 100ms 2.140 deg | vs damped -0.709 deg (-14.0%) | lr 3.09e-04 | 12.1k win/s | 23.5s | ETA <= 5m
+epoch 27/40 | loss 0.063411 | train end 4.792 deg | val end 4.3402 deg (best 4.3402 @27, stale 6/40) | val 100ms 2.140 deg | vs damped -0.710 deg (-14.1%) | lr 2.73e-04 | 12.1k win/s | 23.5s | ETA <= 5m
+epoch 28/40 | loss 0.063512 | train end 4.797 deg | val end 4.3403 deg (best 4.3402 @27, stale 7/40) | val 100ms 2.140 deg | vs damped -0.709 deg (-14.0%) | lr 2.39e-04 | 12.1k win/s | 23.6s | ETA <= 5m
+epoch 29/40 | loss 0.063435 | train end 4.794 deg | val end 4.3410 deg (best 4.3402 @27, stale 8/40) | val 100ms 2.140 deg | vs damped -0.709 deg (-14.0%) | lr 2.06e-04 | 12.1k win/s | 23.5s | ETA <= 4m
+epoch 30/40 | loss 0.063231 | train end 4.776 deg | val end 4.3406 deg (best 4.3402 @27, stale 9/40) | val 100ms 2.140 deg | vs damped -0.709 deg (-14.0%) | lr 1.75e-04 | 12.1k win/s | 23.6s | ETA <= 4m
+epoch 31/40 | loss 0.063271 | train end 4.780 deg | val end 4.3406 deg (best 4.3402 @27, stale 10/40) | val 100ms 2.140 deg | vs damped -0.709 deg (-14.0%) | lr 1.46e-04 | 12.1k win/s | 23.6s | ETA <= 4m
+epoch 32/40 | loss 0.063339 | train end 4.785 deg | val end 4.3391 deg (best 4.3391 @32, stale 11/40) | val 100ms 2.140 deg | vs damped -0.711 deg (-14.1%) | lr 1.20e-04 | 12.1k win/s | 23.5s | ETA <= 3m
+epoch 33/40 | loss 0.063453 | train end 4.793 deg | val end 4.3389 deg (best 4.3389 @33, stale 12/40) | val 100ms 2.140 deg | vs damped -0.711 deg (-14.1%) | lr 9.55e-05 | 12.1k win/s | 23.5s | ETA <= 3m
+epoch 34/40 | loss 0.063265 | train end 4.778 deg | val end 4.3390 deg (best 4.3389 @33, stale 13/40) | val 100ms 2.140 deg | vs damped -0.711 deg (-14.1%) | lr 7.37e-05 | 12.1k win/s | 23.6s | ETA <= 2m
+epoch 35/40 | loss 0.063362 | train end 4.788 deg | val end 4.3387 deg (best 4.3387 @35, stale 14/40) | val 100ms 2.139 deg | vs damped -0.711 deg (-14.1%) | lr 5.45e-05 | 12.1k win/s | 23.5s | ETA <= 2m
+epoch 36/40 | loss 0.063048 | train end 4.762 deg | val end 4.3392 deg (best 4.3387 @35, stale 15/40) | val 100ms 2.139 deg | vs damped -0.711 deg (-14.1%) | lr 3.81e-05 | 12.1k win/s | 23.5s | ETA <= 2m
+epoch 37/40 | loss 0.063296 | train end 4.781 deg | val end 4.3393 deg (best 4.3387 @35, stale 16/40) | val 100ms 2.140 deg | vs damped -0.710 deg (-14.1%) | lr 2.45e-05 | 12.1k win/s | 23.5s | ETA <= 1m
+epoch 38/40 | loss 0.063164 | train end 4.772 deg | val end 4.3391 deg (best 4.3387 @35, stale 17/40) | val 100ms 2.140 deg | vs damped -0.711 deg (-14.1%) | lr 1.38e-05 | 12.1k win/s | 23.6s | ETA <= 1m
+epoch 39/40 | loss 0.063339 | train end 4.787 deg | val end 4.3387 deg (best 4.3387 @39, stale 18/40) | val 100ms 2.140 deg | vs damped -0.711 deg (-14.1%) | lr 6.16e-06 | 12.1k win/s | 23.5s | ETA <= 0m
+epoch 40/40 | loss 0.063324 | train end 4.783 deg | val end 4.3385 deg (best 4.3385 @40, stale 19/40) | val 100ms 2.140 deg | vs damped -0.711 deg (-14.1%) | lr 1.54e-06 | 12.1k win/s | 23.6s | ETA <= 0m
+Scoring 657,189 windows from 44 segments / 15 users; filter-qualified according to input metadata.
+  Segment 1/44: 22,092/657,189 windows
+  Segment 2/44: 35,638/657,189 windows
+  Segment 3/44: 58,152/657,189 windows
+  Segment 4/44: 69,376/657,189 windows
+  Segment 5/44: 80,192/657,189 windows
+  Segment 6/44: 97,204/657,189 windows
+  Segment 7/44: 118,067/657,189 windows
+  Segment 8/44: 137,240/657,189 windows
+  Segment 9/44: 154,251/657,189 windows
+  Segment 10/44: 166,878/657,189 windows
+  Segment 11/44: 179,935/657,189 windows
+  Segment 12/44: 198,880/657,189 windows
+  Segment 13/44: 220,185/657,189 windows
+  Segment 14/44: 245,689/657,189 windows
+  Segment 15/44: 268,606/657,189 windows
+  Segment 16/44: 270,038/657,189 windows
+  Segment 17/44: 288,484/657,189 windows
+  Segment 18/44: 299,657/657,189 windows
+  Segment 19/44: 332,925/657,189 windows
+  Segment 20/44: 355,266/657,189 windows
+  Segment 21/44: 380,708/657,189 windows
+  Segment 22/44: 381,355/657,189 windows
+  Segment 23/44: 397,597/657,189 windows
+  Segment 24/44: 405,120/657,189 windows
+  Segment 25/44: 427,695/657,189 windows
+  Segment 26/44: 442,817/657,189 windows
+  Segment 27/44: 460,900/657,189 windows
+  Segment 28/44: 482,898/657,189 windows
+  Segment 29/44: 496,008/657,189 windows
+  Segment 30/44: 505,983/657,189 windows
+  Segment 31/44: 518,165/657,189 windows
+  Segment 32/44: 532,727/657,189 windows
+  Segment 33/44: 553,234/657,189 windows
+  Segment 34/44: 576,465/657,189 windows
+  Segment 35/44: 586,517/657,189 windows
+  Segment 36/44: 587,715/657,189 windows
+  Segment 37/44: 598,619/657,189 windows
+  Segment 38/44: 614,540/657,189 windows
+  Segment 39/44: 631,346/657,189 windows
+  Segment 40/44: 649,585/657,189 windows
+  Segment 41/44: 651,568/657,189 windows
+  Segment 42/44: 653,144/657,189 windows
+  Segment 43/44: 655,127/657,189 windows
+  Segment 44/44: 657,189/657,189 windows
+Training seed 44 on cuda; 6,651 parameters; 1000 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (131,459 windows, stride 5): hold-last 6.0825 deg | damped velocity 5.0497 deg
+epoch 01/40 | loss 0.070557 | train end 5.328 deg | val end 4.5099 deg (best 4.5099 @1, stale 0/40) | val 100ms 2.262 deg | vs damped -0.540 deg (-10.7%) | lr 1.00e-03 | 11.9k win/s | 23.9s | ETA <= 16m
+epoch 02/40 | loss 0.068187 | train end 5.154 deg | val end 4.4570 deg (best 4.4570 @2, stale 0/40) | val 100ms 2.220 deg | vs damped -0.593 deg (-11.7%) | lr 9.98e-04 | 12.0k win/s | 23.8s | ETA <= 15m
+epoch 03/40 | loss 0.066867 | train end 5.055 deg | val end 4.4185 deg (best 4.4185 @3, stale 0/40) | val 100ms 2.191 deg | vs damped -0.631 deg (-12.5%) | lr 9.94e-04 | 12.4k win/s | 23.0s | ETA <= 15m
+epoch 04/40 | loss 0.065867 | train end 4.980 deg | val end 4.3969 deg (best 4.3969 @4, stale 0/40) | val 100ms 2.177 deg | vs damped -0.653 deg (-12.9%) | lr 9.86e-04 | 12.3k win/s | 23.1s | ETA <= 14m
+epoch 05/40 | loss 0.065505 | train end 4.953 deg | val end 4.3831 deg (best 4.3831 @5, stale 0/40) | val 100ms 2.169 deg | vs damped -0.667 deg (-13.2%) | lr 9.76e-04 | 12.2k win/s | 23.3s | ETA <= 14m
+epoch 06/40 | loss 0.065044 | train end 4.919 deg | val end 4.3701 deg (best 4.3701 @6, stale 0/40) | val 100ms 2.162 deg | vs damped -0.680 deg (-13.5%) | lr 9.62e-04 | 12.0k win/s | 23.6s | ETA <= 13m
+epoch 07/40 | loss 0.065250 | train end 4.935 deg | val end 4.3593 deg (best 4.3593 @7, stale 0/40) | val 100ms 2.156 deg | vs damped -0.690 deg (-13.7%) | lr 9.46e-04 | 12.0k win/s | 23.6s | ETA <= 13m
+epoch 08/40 | loss 0.064763 | train end 4.897 deg | val end 4.3535 deg (best 4.3535 @8, stale 0/40) | val 100ms 2.154 deg | vs damped -0.696 deg (-13.8%) | lr 9.26e-04 | 12.1k win/s | 23.6s | ETA <= 13m
+epoch 09/40 | loss 0.064490 | train end 4.873 deg | val end 4.3489 deg (best 4.3489 @9, stale 1/40) | val 100ms 2.152 deg | vs damped -0.701 deg (-13.9%) | lr 9.05e-04 | 12.1k win/s | 23.5s | ETA <= 12m
+epoch 10/40 | loss 0.064375 | train end 4.865 deg | val end 4.3440 deg (best 4.3440 @10, stale 0/40) | val 100ms 2.151 deg | vs damped -0.706 deg (-14.0%) | lr 8.80e-04 | 12.1k win/s | 23.6s | ETA <= 12m
+epoch 11/40 | loss 0.064295 | train end 4.860 deg | val end 4.3423 deg (best 4.3423 @11, stale 1/40) | val 100ms 2.149 deg | vs damped -0.707 deg (-14.0%) | lr 8.54e-04 | 12.1k win/s | 23.5s | ETA <= 11m
+epoch 12/40 | loss 0.064163 | train end 4.849 deg | val end 4.3389 deg (best 4.3389 @12, stale 0/40) | val 100ms 2.148 deg | vs damped -0.711 deg (-14.1%) | lr 8.25e-04 | 12.1k win/s | 23.5s | ETA <= 11m
+epoch 13/40 | loss 0.064299 | train end 4.860 deg | val end 4.3358 deg (best 4.3358 @13, stale 1/40) | val 100ms 2.147 deg | vs damped -0.714 deg (-14.1%) | lr 7.94e-04 | 12.1k win/s | 23.6s | ETA <= 11m
+epoch 14/40 | loss 0.063924 | train end 4.832 deg | val end 4.3335 deg (best 4.3335 @14, stale 0/40) | val 100ms 2.146 deg | vs damped -0.716 deg (-14.2%) | lr 7.61e-04 | 12.1k win/s | 23.5s | ETA <= 10m
+epoch 15/40 | loss 0.064008 | train end 4.838 deg | val end 4.3319 deg (best 4.3319 @15, stale 1/40) | val 100ms 2.145 deg | vs damped -0.718 deg (-14.2%) | lr 7.27e-04 | 12.1k win/s | 23.5s | ETA <= 10m
+epoch 16/40 | loss 0.063917 | train end 4.830 deg | val end 4.3291 deg (best 4.3291 @16, stale 2/40) | val 100ms 2.144 deg | vs damped -0.721 deg (-14.3%) | lr 6.91e-04 | 12.1k win/s | 23.5s | ETA <= 9m
+epoch 17/40 | loss 0.063793 | train end 4.821 deg | val end 4.3266 deg (best 4.3266 @17, stale 0/40) | val 100ms 2.142 deg | vs damped -0.723 deg (-14.3%) | lr 6.55e-04 | 12.1k win/s | 23.5s | ETA <= 9m
+epoch 18/40 | loss 0.063787 | train end 4.820 deg | val end 4.3258 deg (best 4.3258 @18, stale 1/40) | val 100ms 2.142 deg | vs damped -0.724 deg (-14.3%) | lr 6.17e-04 | 12.1k win/s | 23.5s | ETA <= 9m
+epoch 19/40 | loss 0.063686 | train end 4.813 deg | val end 4.3228 deg (best 4.3228 @19, stale 2/40) | val 100ms 2.140 deg | vs damped -0.727 deg (-14.4%) | lr 5.78e-04 | 12.1k win/s | 23.6s | ETA <= 8m
+epoch 20/40 | loss 0.063604 | train end 4.805 deg | val end 4.3225 deg (best 4.3225 @20, stale 3/40) | val 100ms 2.140 deg | vs damped -0.727 deg (-14.4%) | lr 5.39e-04 | 12.1k win/s | 23.5s | ETA <= 8m
+epoch 21/40 | loss 0.063506 | train end 4.799 deg | val end 4.3212 deg (best 4.3212 @21, stale 0/40) | val 100ms 2.139 deg | vs damped -0.729 deg (-14.4%) | lr 5.00e-04 | 12.5k win/s | 22.7s | ETA <= 7m
+epoch 22/40 | loss 0.063754 | train end 4.818 deg | val end 4.3197 deg (best 4.3197 @22, stale 1/40) | val 100ms 2.139 deg | vs damped -0.730 deg (-14.5%) | lr 4.61e-04 | 12.5k win/s | 22.7s | ETA <= 7m
+epoch 23/40 | loss 0.063464 | train end 4.795 deg | val end 4.3194 deg (best 4.3194 @23, stale 2/40) | val 100ms 2.139 deg | vs damped -0.730 deg (-14.5%) | lr 4.22e-04 | 12.5k win/s | 22.7s | ETA <= 7m
+epoch 24/40 | loss 0.063325 | train end 4.783 deg | val end 4.3182 deg (best 4.3182 @24, stale 3/40) | val 100ms 2.138 deg | vs damped -0.731 deg (-14.5%) | lr 3.83e-04 | 12.5k win/s | 22.7s | ETA <= 6m
+epoch 25/40 | loss 0.063532 | train end 4.800 deg | val end 4.3186 deg (best 4.3182 @24, stale 4/40) | val 100ms 2.138 deg | vs damped -0.731 deg (-14.5%) | lr 3.45e-04 | 12.5k win/s | 22.7s | ETA <= 6m
+epoch 26/40 | loss 0.063319 | train end 4.782 deg | val end 4.3172 deg (best 4.3172 @26, stale 5/40) | val 100ms 2.137 deg | vs damped -0.732 deg (-14.5%) | lr 3.09e-04 | 12.5k win/s | 22.7s | ETA <= 5m
+epoch 27/40 | loss 0.063511 | train end 4.799 deg | val end 4.3160 deg (best 4.3160 @27, stale 0/40) | val 100ms 2.137 deg | vs damped -0.734 deg (-14.5%) | lr 2.73e-04 | 12.5k win/s | 22.7s | ETA <= 5m
+epoch 28/40 | loss 0.063426 | train end 4.791 deg | val end 4.3167 deg (best 4.3160 @27, stale 1/40) | val 100ms 2.137 deg | vs damped -0.733 deg (-14.5%) | lr 2.39e-04 | 12.5k win/s | 22.7s | ETA <= 5m
+epoch 29/40 | loss 0.063364 | train end 4.787 deg | val end 4.3158 deg (best 4.3158 @29, stale 2/40) | val 100ms 2.137 deg | vs damped -0.734 deg (-14.5%) | lr 2.06e-04 | 12.5k win/s | 22.7s | ETA <= 4m
+epoch 30/40 | loss 0.063313 | train end 4.781 deg | val end 4.3164 deg (best 4.3158 @29, stale 3/40) | val 100ms 2.137 deg | vs damped -0.733 deg (-14.5%) | lr 1.75e-04 | 12.5k win/s | 22.7s | ETA <= 4m
+epoch 31/40 | loss 0.063131 | train end 4.769 deg | val end 4.3165 deg (best 4.3158 @29, stale 4/40) | val 100ms 2.137 deg | vs damped -0.733 deg (-14.5%) | lr 1.46e-04 | 12.5k win/s | 22.7s | ETA <= 3m
+epoch 32/40 | loss 0.063019 | train end 4.760 deg | val end 4.3159 deg (best 4.3158 @29, stale 5/40) | val 100ms 2.136 deg | vs damped -0.734 deg (-14.5%) | lr 1.20e-04 | 12.5k win/s | 22.8s | ETA <= 3m
+epoch 33/40 | loss 0.062971 | train end 4.757 deg | val end 4.3160 deg (best 4.3158 @29, stale 6/40) | val 100ms 2.137 deg | vs damped -0.734 deg (-14.5%) | lr 9.55e-05 | 12.6k win/s | 22.7s | ETA <= 3m
+epoch 34/40 | loss 0.063007 | train end 4.757 deg | val end 4.3153 deg (best 4.3153 @34, stale 7/40) | val 100ms 2.136 deg | vs damped -0.734 deg (-14.5%) | lr 7.37e-05 | 12.5k win/s | 22.8s | ETA <= 2m
+epoch 35/40 | loss 0.063003 | train end 4.758 deg | val end 4.3152 deg (best 4.3152 @35, stale 8/40) | val 100ms 2.136 deg | vs damped -0.734 deg (-14.5%) | lr 5.45e-05 | 12.5k win/s | 22.7s | ETA <= 2m
+epoch 36/40 | loss 0.063262 | train end 4.778 deg | val end 4.3145 deg (best 4.3145 @36, stale 9/40) | val 100ms 2.136 deg | vs damped -0.735 deg (-14.6%) | lr 3.81e-05 | 12.5k win/s | 22.7s | ETA <= 2m
+epoch 37/40 | loss 0.063042 | train end 4.761 deg | val end 4.3148 deg (best 4.3145 @36, stale 10/40) | val 100ms 2.136 deg | vs damped -0.735 deg (-14.6%) | lr 2.45e-05 | 12.5k win/s | 22.8s | ETA <= 1m
+epoch 38/40 | loss 0.062873 | train end 4.749 deg | val end 4.3145 deg (best 4.3145 @36, stale 11/40) | val 100ms 2.136 deg | vs damped -0.735 deg (-14.6%) | lr 1.38e-05 | 12.5k win/s | 22.7s | ETA <= 1m
+epoch 39/40 | loss 0.062950 | train end 4.754 deg | val end 4.3147 deg (best 4.3145 @36, stale 12/40) | val 100ms 2.136 deg | vs damped -0.735 deg (-14.6%) | lr 6.16e-06 | 12.5k win/s | 22.7s | ETA <= 0m
+epoch 40/40 | loss 0.063348 | train end 4.786 deg | val end 4.3147 deg (best 4.3145 @36, stale 13/40) | val 100ms 2.136 deg | vs damped -0.735 deg (-14.6%) | lr 1.54e-06 | 12.5k win/s | 22.7s | ETA <= 0m
+Scoring 657,189 windows from 44 segments / 15 users; filter-qualified according to input metadata.
+  Segment 1/44: 22,092/657,189 windows
+  Segment 2/44: 35,638/657,189 windows
+  Segment 3/44: 58,152/657,189 windows
+  Segment 4/44: 69,376/657,189 windows
+  Segment 5/44: 80,192/657,189 windows
+  Segment 6/44: 97,204/657,189 windows
+  Segment 7/44: 118,067/657,189 windows
+  Segment 8/44: 137,240/657,189 windows
+  Segment 9/44: 154,251/657,189 windows
+  Segment 10/44: 166,878/657,189 windows
+  Segment 11/44: 179,935/657,189 windows
+  Segment 12/44: 198,880/657,189 windows
+  Segment 13/44: 220,185/657,189 windows
+  Segment 14/44: 245,689/657,189 windows
+  Segment 15/44: 268,606/657,189 windows
+  Segment 16/44: 270,038/657,189 windows
+  Segment 17/44: 288,484/657,189 windows
+  Segment 18/44: 299,657/657,189 windows
+  Segment 19/44: 332,925/657,189 windows
+  Segment 20/44: 355,266/657,189 windows
+  Segment 21/44: 380,708/657,189 windows
+  Segment 22/44: 381,355/657,189 windows
+  Segment 23/44: 397,597/657,189 windows
+  Segment 24/44: 405,120/657,189 windows
+  Segment 25/44: 427,695/657,189 windows
+  Segment 26/44: 442,817/657,189 windows
+  Segment 27/44: 460,900/657,189 windows
+  Segment 28/44: 482,898/657,189 windows
+  Segment 29/44: 496,008/657,189 windows
+  Segment 30/44: 505,983/657,189 windows
+  Segment 31/44: 518,165/657,189 windows
+  Segment 32/44: 532,727/657,189 windows
+  Segment 33/44: 553,234/657,189 windows
+  Segment 34/44: 576,465/657,189 windows
+  Segment 35/44: 586,517/657,189 windows
+  Segment 36/44: 587,715/657,189 windows
+  Segment 37/44: 598,619/657,189 windows
+  Segment 38/44: 614,540/657,189 windows
+  Segment 39/44: 631,346/657,189 windows
+  Segment 40/44: 649,585/657,189 windows
+  Segment 41/44: 651,568/657,189 windows
+  Segment 42/44: 653,144/657,189 windows
+  Segment 43/44: 655,127/657,189 windows
+  Segment 44/44: 657,189/657,189 windows
+Selected seed 44: validation endpoint 4.3134 degrees.
+Confirming base3_5_addons_angular on seeds [42, 43, 44]
+Training seed 42 on cuda; 17,811 parameters; 1000 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (131,459 windows, stride 5): hold-last 6.0825 deg | damped velocity 5.0497 deg
+Training seed 43 on cuda; 17,811 parameters; 1000 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (131,459 windows, stride 5): hold-last 6.0825 deg | damped velocity 5.0497 deg
+epoch 01/40 | loss 0.069303 | train end 5.230 deg | val end 4.4700 deg (best 4.4700 @1, stale 0/40) | val 100ms 2.231 deg | vs damped -0.580 deg (-11.5%) | lr 1.00e-03 | 14.4k win/s | 19.3s | ETA <= 13m
+epoch 02/40 | loss 0.066704 | train end 5.037 deg | val end 4.4220 deg (best 4.4220 @2, stale 0/40) | val 100ms 2.196 deg | vs damped -0.628 deg (-12.4%) | lr 9.98e-04 | 14.5k win/s | 19.2s | ETA <= 12m
+epoch 03/40 | loss 0.065490 | train end 4.949 deg | val end 4.4023 deg (best 4.4023 @3, stale 0/40) | val 100ms 2.180 deg | vs damped -0.647 deg (-12.8%) | lr 9.94e-04 | 14.5k win/s | 19.2s | ETA <= 12m
+epoch 04/40 | loss 0.065489 | train end 4.946 deg | val end 4.3852 deg (best 4.3852 @4, stale 0/40) | val 100ms 2.172 deg | vs damped -0.665 deg (-13.2%) | lr 9.86e-04 | 14.5k win/s | 19.2s | ETA <= 12m
+epoch 05/40 | loss 0.064795 | train end 4.893 deg | val end 4.3765 deg (best 4.3765 @5, stale 0/40) | val 100ms 2.168 deg | vs damped -0.673 deg (-13.3%) | lr 9.76e-04 | 14.5k win/s | 19.2s | ETA <= 11m
+epoch 06/40 | loss 0.064479 | train end 4.868 deg | val end 4.3689 deg (best 4.3689 @6, stale 0/40) | val 100ms 2.164 deg | vs damped -0.681 deg (-13.5%) | lr 9.62e-04 | 14.5k win/s | 19.2s | ETA <= 11m
+epoch 07/40 | loss 0.064460 | train end 4.866 deg | val end 4.3669 deg (best 4.3669 @7, stale 1/40) | val 100ms 2.163 deg | vs damped -0.683 deg (-13.5%) | lr 9.46e-04 | 14.5k win/s | 19.2s | ETA <= 11m
+epoch 08/40 | loss 0.064171 | train end 4.843 deg | val end 4.3623 deg (best 4.3623 @8, stale 0/40) | val 100ms 2.161 deg | vs damped -0.687 deg (-13.6%) | lr 9.26e-04 | 14.5k win/s | 19.2s | ETA <= 10m
+epoch 09/40 | loss 0.064182 | train end 4.842 deg | val end 4.3593 deg (best 4.3593 @9, stale 1/40) | val 100ms 2.159 deg | vs damped -0.690 deg (-13.7%) | lr 9.05e-04 | 14.5k win/s | 19.2s | ETA <= 10m
+epoch 10/40 | loss 0.064051 | train end 4.833 deg | val end 4.3565 deg (best 4.3565 @10, stale 0/40) | val 100ms 2.159 deg | vs damped -0.693 deg (-13.7%) | lr 8.80e-04 | 14.5k win/s | 19.2s | ETA <= 10m
+epoch 11/40 | loss 0.063837 | train end 4.817 deg | val end 4.3551 deg (best 4.3551 @11, stale 1/40) | val 100ms 2.157 deg | vs damped -0.695 deg (-13.8%) | lr 8.54e-04 | 14.5k win/s | 19.2s | ETA <= 9m
+epoch 12/40 | loss 0.063847 | train end 4.817 deg | val end 4.3537 deg (best 4.3537 @12, stale 2/40) | val 100ms 2.156 deg | vs damped -0.696 deg (-13.8%) | lr 8.25e-04 | 14.5k win/s | 19.2s | ETA <= 9m
+epoch 13/40 | loss 0.063671 | train end 4.805 deg | val end 4.3521 deg (best 4.3521 @13, stale 3/40) | val 100ms 2.155 deg | vs damped -0.698 deg (-13.8%) | lr 7.94e-04 | 14.5k win/s | 19.2s | ETA <= 9m
+epoch 14/40 | loss 0.063580 | train end 4.796 deg | val end 4.3516 deg (best 4.3516 @14, stale 4/40) | val 100ms 2.154 deg | vs damped -0.698 deg (-13.8%) | lr 7.61e-04 | 14.4k win/s | 19.3s | ETA <= 8m
+epoch 15/40 | loss 0.063630 | train end 4.799 deg | val end 4.3493 deg (best 4.3493 @15, stale 0/40) | val 100ms 2.153 deg | vs damped -0.700 deg (-13.9%) | lr 7.27e-04 | 14.5k win/s | 19.2s | ETA <= 8m
+epoch 16/40 | loss 0.063463 | train end 4.789 deg | val end 4.3478 deg (best 4.3478 @16, stale 1/40) | val 100ms 2.152 deg | vs damped -0.702 deg (-13.9%) | lr 6.91e-04 | 14.4k win/s | 19.3s | ETA <= 8m
+epoch 17/40 | loss 0.063241 | train end 4.768 deg | val end 4.3469 deg (best 4.3469 @17, stale 2/40) | val 100ms 2.152 deg | vs damped -0.703 deg (-13.9%) | lr 6.55e-04 | 14.4k win/s | 19.3s | ETA <= 7m
+epoch 18/40 | loss 0.063104 | train end 4.759 deg | val end 4.3454 deg (best 4.3454 @18, stale 3/40) | val 100ms 2.151 deg | vs damped -0.704 deg (-13.9%) | lr 6.17e-04 | 14.5k win/s | 19.2s | ETA <= 7m
+epoch 19/40 | loss 0.063338 | train end 4.778 deg | val end 4.3445 deg (best 4.3445 @19, stale 4/40) | val 100ms 2.151 deg | vs damped -0.705 deg (-14.0%) | lr 5.78e-04 | 14.5k win/s | 19.2s | ETA <= 7m
+epoch 20/40 | loss 0.063068 | train end 4.755 deg | val end 4.3421 deg (best 4.3421 @20, stale 0/40) | val 100ms 2.149 deg | vs damped -0.708 deg (-14.0%) | lr 5.39e-04 | 14.5k win/s | 19.2s | ETA <= 6m
+epoch 21/40 | loss 0.062938 | train end 4.744 deg | val end 4.3408 deg (best 4.3408 @21, stale 1/40) | val 100ms 2.149 deg | vs damped -0.709 deg (-14.0%) | lr 5.00e-04 | 14.5k win/s | 19.2s | ETA <= 6m
+epoch 22/40 | loss 0.063022 | train end 4.753 deg | val end 4.3393 deg (best 4.3393 @22, stale 2/40) | val 100ms 2.148 deg | vs damped -0.710 deg (-14.1%) | lr 4.61e-04 | 14.5k win/s | 19.2s | ETA <= 6m
+epoch 23/40 | loss 0.063083 | train end 4.757 deg | val end 4.3377 deg (best 4.3377 @23, stale 3/40) | val 100ms 2.147 deg | vs damped -0.712 deg (-14.1%) | lr 4.22e-04 | 14.5k win/s | 19.2s | ETA <= 5m
+epoch 24/40 | loss 0.062850 | train end 4.739 deg | val end 4.3359 deg (best 4.3359 @24, stale 0/40) | val 100ms 2.146 deg | vs damped -0.714 deg (-14.1%) | lr 3.83e-04 | 14.5k win/s | 19.3s | ETA <= 5m
+epoch 25/40 | loss 0.062859 | train end 4.738 deg | val end 4.3334 deg (best 4.3334 @25, stale 1/40) | val 100ms 2.146 deg | vs damped -0.716 deg (-14.2%) | lr 3.45e-04 | 14.5k win/s | 19.2s | ETA <= 5m
+epoch 26/40 | loss 0.062807 | train end 4.732 deg | val end 4.3318 deg (best 4.3318 @26, stale 2/40) | val 100ms 2.145 deg | vs damped -0.718 deg (-14.2%) | lr 3.09e-04 | 14.5k win/s | 19.2s | ETA <= 4m
+epoch 27/40 | loss 0.062625 | train end 4.721 deg | val end 4.3327 deg (best 4.3318 @26, stale 3/40) | val 100ms 2.146 deg | vs damped -0.717 deg (-14.2%) | lr 2.73e-04 | 14.5k win/s | 19.2s | ETA <= 4m
+epoch 28/40 | loss 0.062744 | train end 4.728 deg | val end 4.3319 deg (best 4.3318 @26, stale 4/40) | val 100ms 2.145 deg | vs damped -0.718 deg (-14.2%) | lr 2.39e-04 | 14.5k win/s | 19.2s | ETA <= 4m
+epoch 29/40 | loss 0.062619 | train end 4.721 deg | val end 4.3319 deg (best 4.3318 @26, stale 5/40) | val 100ms 2.145 deg | vs damped -0.718 deg (-14.2%) | lr 2.06e-04 | 14.5k win/s | 19.2s | ETA <= 4m
+epoch 30/40 | loss 0.062477 | train end 4.708 deg | val end 4.3317 deg (best 4.3317 @30, stale 6/40) | val 100ms 2.145 deg | vs damped -0.718 deg (-14.2%) | lr 1.75e-04 | 14.5k win/s | 19.2s | ETA <= 3m
+epoch 31/40 | loss 0.062484 | train end 4.710 deg | val end 4.3307 deg (best 4.3307 @31, stale 0/40) | val 100ms 2.145 deg | vs damped -0.719 deg (-14.2%) | lr 1.46e-04 | 14.2k win/s | 19.7s | ETA <= 3m
+epoch 32/40 | loss 0.062543 | train end 4.713 deg | val end 4.3300 deg (best 4.3300 @32, stale 1/40) | val 100ms 2.145 deg | vs damped -0.720 deg (-14.3%) | lr 1.20e-04 | 14.0k win/s | 19.9s | ETA <= 3m
+epoch 33/40 | loss 0.062583 | train end 4.716 deg | val end 4.3298 deg (best 4.3298 @33, stale 2/40) | val 100ms 2.144 deg | vs damped -0.720 deg (-14.3%) | lr 9.55e-05 | 13.9k win/s | 19.9s | ETA <= 2m
+epoch 34/40 | loss 0.062471 | train end 4.707 deg | val end 4.3295 deg (best 4.3295 @34, stale 3/40) | val 100ms 2.144 deg | vs damped -0.720 deg (-14.3%) | lr 7.37e-05 | 14.0k win/s | 19.9s | ETA <= 2m
+epoch 35/40 | loss 0.062565 | train end 4.717 deg | val end 4.3285 deg (best 4.3285 @35, stale 4/40) | val 100ms 2.144 deg | vs damped -0.721 deg (-14.3%) | lr 5.45e-05 | 14.0k win/s | 19.9s | ETA <= 2m
+epoch 36/40 | loss 0.062267 | train end 4.692 deg | val end 4.3281 deg (best 4.3281 @36, stale 5/40) | val 100ms 2.144 deg | vs damped -0.722 deg (-14.3%) | lr 3.81e-05 | 14.0k win/s | 20.0s | ETA <= 1m
+epoch 37/40 | loss 0.062445 | train end 4.705 deg | val end 4.3282 deg (best 4.3281 @36, stale 6/40) | val 100ms 2.144 deg | vs damped -0.721 deg (-14.3%) | lr 2.45e-05 | 13.9k win/s | 20.1s | ETA <= 1m
+epoch 38/40 | loss 0.062355 | train end 4.700 deg | val end 4.3284 deg (best 4.3281 @36, stale 7/40) | val 100ms 2.144 deg | vs damped -0.721 deg (-14.3%) | lr 1.38e-05 | 14.0k win/s | 19.9s | ETA <= 1m
+epoch 39/40 | loss 0.062441 | train end 4.708 deg | val end 4.3280 deg (best 4.3280 @39, stale 8/40) | val 100ms 2.144 deg | vs damped -0.722 deg (-14.3%) | lr 6.16e-06 | 14.0k win/s | 19.9s | ETA <= 0m
+epoch 40/40 | loss 0.062510 | train end 4.711 deg | val end 4.3279 deg (best 4.3279 @40, stale 9/40) | val 100ms 2.144 deg | vs damped -0.722 deg (-14.3%) | lr 1.54e-06 | 14.0k win/s | 20.0s | ETA <= 0m
+Scoring 657,189 windows from 44 segments / 15 users; filter-qualified according to input metadata.
+  Segment 1/44: 22,092/657,189 windows
+  Segment 2/44: 35,638/657,189 windows
+  Segment 3/44: 58,152/657,189 windows
+  Segment 4/44: 69,376/657,189 windows
+  Segment 5/44: 80,192/657,189 windows
+  Segment 6/44: 97,204/657,189 windows
+  Segment 7/44: 118,067/657,189 windows
+  Segment 8/44: 137,240/657,189 windows
+  Segment 9/44: 154,251/657,189 windows
+  Segment 10/44: 166,878/657,189 windows
+  Segment 11/44: 179,935/657,189 windows
+  Segment 12/44: 198,880/657,189 windows
+  Segment 13/44: 220,185/657,189 windows
+  Segment 14/44: 245,689/657,189 windows
+  Segment 15/44: 268,606/657,189 windows
+  Segment 16/44: 270,038/657,189 windows
+  Segment 17/44: 288,484/657,189 windows
+  Segment 18/44: 299,657/657,189 windows
+  Segment 19/44: 332,925/657,189 windows
+  Segment 20/44: 355,266/657,189 windows
+  Segment 21/44: 380,708/657,189 windows
+  Segment 22/44: 381,355/657,189 windows
+  Segment 23/44: 397,597/657,189 windows
+  Segment 24/44: 405,120/657,189 windows
+  Segment 25/44: 427,695/657,189 windows
+  Segment 26/44: 442,817/657,189 windows
+  Segment 27/44: 460,900/657,189 windows
+  Segment 28/44: 482,898/657,189 windows
+  Segment 29/44: 496,008/657,189 windows
+  Segment 30/44: 505,983/657,189 windows
+  Segment 31/44: 518,165/657,189 windows
+  Segment 32/44: 532,727/657,189 windows
+  Segment 33/44: 553,234/657,189 windows
+  Segment 34/44: 576,465/657,189 windows
+  Segment 35/44: 586,517/657,189 windows
+  Segment 36/44: 587,715/657,189 windows
+  Segment 37/44: 598,619/657,189 windows
+  Segment 38/44: 614,540/657,189 windows
+  Segment 39/44: 631,346/657,189 windows
+  Segment 40/44: 649,585/657,189 windows
+  Segment 41/44: 651,568/657,189 windows
+  Segment 42/44: 653,144/657,189 windows
+  Segment 43/44: 655,127/657,189 windows
+  Segment 44/44: 657,189/657,189 windows
+Training seed 44 on cuda; 17,811 parameters; 1000 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (131,459 windows, stride 5): hold-last 6.0825 deg | damped velocity 5.0497 deg
+epoch 01/40 | loss 0.069716 | train end 5.264 deg | val end 4.4819 deg (best 4.4819 @1, stale 0/40) | val 100ms 2.243 deg | vs damped -0.568 deg (-11.2%) | lr 1.00e-03 | 14.0k win/s | 19.9s | ETA <= 13m
+epoch 02/40 | loss 0.067198 | train end 5.076 deg | val end 4.4330 deg (best 4.4330 @2, stale 0/40) | val 100ms 2.208 deg | vs damped -0.617 deg (-12.2%) | lr 9.98e-04 | 14.0k win/s | 19.9s | ETA <= 13m
+epoch 03/40 | loss 0.066079 | train end 4.990 deg | val end 4.4080 deg (best 4.4080 @3, stale 0/40) | val 100ms 2.188 deg | vs damped -0.642 deg (-12.7%) | lr 9.94e-04 | 14.0k win/s | 19.9s | ETA <= 12m
+epoch 04/40 | loss 0.065273 | train end 4.930 deg | val end 4.3939 deg (best 4.3939 @4, stale 0/40) | val 100ms 2.177 deg | vs damped -0.656 deg (-13.0%) | lr 9.86e-04 | 14.0k win/s | 19.9s | ETA <= 12m
+epoch 05/40 | loss 0.065027 | train end 4.911 deg | val end 4.3841 deg (best 4.3841 @5, stale 0/40) | val 100ms 2.168 deg | vs damped -0.666 deg (-13.2%) | lr 9.76e-04 | 13.9k win/s | 20.0s | ETA <= 12m
+epoch 06/40 | loss 0.064605 | train end 4.879 deg | val end 4.3740 deg (best 4.3740 @6, stale 0/40) | val 100ms 2.164 deg | vs damped -0.676 deg (-13.4%) | lr 9.62e-04 | 13.9k win/s | 20.0s | ETA <= 11m
+epoch 07/40 | loss 0.064821 | train end 4.896 deg | val end 4.3643 deg (best 4.3643 @7, stale 0/40) | val 100ms 2.159 deg | vs damped -0.685 deg (-13.6%) | lr 9.46e-04 | 14.0k win/s | 19.9s | ETA <= 11m
+epoch 08/40 | loss 0.064373 | train end 4.861 deg | val end 4.3586 deg (best 4.3586 @8, stale 0/40) | val 100ms 2.155 deg | vs damped -0.691 deg (-13.7%) | lr 9.26e-04 | 14.0k win/s | 19.9s | ETA <= 11m
+epoch 09/40 | loss 0.064102 | train end 4.838 deg | val end 4.3557 deg (best 4.3557 @9, stale 1/40) | val 100ms 2.154 deg | vs damped -0.694 deg (-13.7%) | lr 9.05e-04 | 13.9k win/s | 20.0s | ETA <= 10m
+epoch 10/40 | loss 0.063921 | train end 4.824 deg | val end 4.3525 deg (best 4.3525 @10, stale 0/40) | val 100ms 2.152 deg | vs damped -0.697 deg (-13.8%) | lr 8.80e-04 | 13.9k win/s | 20.0s | ETA <= 10m
+epoch 11/40 | loss 0.063887 | train end 4.823 deg | val end 4.3500 deg (best 4.3500 @11, stale 1/40) | val 100ms 2.150 deg | vs damped -0.700 deg (-13.9%) | lr 8.54e-04 | 14.0k win/s | 20.0s | ETA <= 10m
+epoch 12/40 | loss 0.063778 | train end 4.813 deg | val end 4.3474 deg (best 4.3474 @12, stale 0/40) | val 100ms 2.149 deg | vs damped -0.702 deg (-13.9%) | lr 8.25e-04 | 13.9k win/s | 20.0s | ETA <= 9m
+epoch 13/40 | loss 0.063817 | train end 4.818 deg | val end 4.3440 deg (best 4.3440 @13, stale 1/40) | val 100ms 2.148 deg | vs damped -0.706 deg (-14.0%) | lr 7.94e-04 | 14.0k win/s | 19.9s | ETA <= 9m
+epoch 14/40 | loss 0.063523 | train end 4.795 deg | val end 4.3404 deg (best 4.3404 @14, stale 0/40) | val 100ms 2.147 deg | vs damped -0.709 deg (-14.0%) | lr 7.61e-04 | 14.0k win/s | 20.0s | ETA <= 9m
+epoch 15/40 | loss 0.063579 | train end 4.799 deg | val end 4.3371 deg (best 4.3371 @15, stale 1/40) | val 100ms 2.145 deg | vs damped -0.713 deg (-14.1%) | lr 7.27e-04 | 14.0k win/s | 19.9s | ETA <= 8m
+epoch 16/40 | loss 0.063510 | train end 4.794 deg | val end 4.3361 deg (best 4.3361 @16, stale 2/40) | val 100ms 2.145 deg | vs damped -0.714 deg (-14.1%) | lr 6.91e-04 | 13.9k win/s | 20.0s | ETA <= 8m
+epoch 17/40 | loss 0.063352 | train end 4.781 deg | val end 4.3329 deg (best 4.3329 @17, stale 0/40) | val 100ms 2.143 deg | vs damped -0.717 deg (-14.2%) | lr 6.55e-04 | 14.0k win/s | 19.9s | ETA <= 8m
+epoch 18/40 | loss 0.063355 | train end 4.782 deg | val end 4.3328 deg (best 4.3328 @18, stale 1/40) | val 100ms 2.142 deg | vs damped -0.717 deg (-14.2%) | lr 6.17e-04 | 14.0k win/s | 20.0s | ETA <= 7m
+epoch 19/40 | loss 0.063236 | train end 4.773 deg | val end 4.3292 deg (best 4.3292 @19, stale 2/40) | val 100ms 2.141 deg | vs damped -0.720 deg (-14.3%) | lr 5.78e-04 | 14.0k win/s | 20.0s | ETA <= 7m
+epoch 20/40 | loss 0.063121 | train end 4.761 deg | val end 4.3283 deg (best 4.3283 @20, stale 3/40) | val 100ms 2.140 deg | vs damped -0.721 deg (-14.3%) | lr 5.39e-04 | 14.0k win/s | 19.9s | ETA <= 7m
+epoch 21/40 | loss 0.063001 | train end 4.754 deg | val end 4.3272 deg (best 4.3272 @21, stale 0/40) | val 100ms 2.140 deg | vs damped -0.723 deg (-14.3%) | lr 5.00e-04 | 14.0k win/s | 19.9s | ETA <= 6m
+epoch 22/40 | loss 0.063262 | train end 4.773 deg | val end 4.3256 deg (best 4.3256 @22, stale 1/40) | val 100ms 2.140 deg | vs damped -0.724 deg (-14.3%) | lr 4.61e-04 | 14.0k win/s | 19.9s | ETA <= 6m
+epoch 23/40 | loss 0.062996 | train end 4.753 deg | val end 4.3243 deg (best 4.3243 @23, stale 2/40) | val 100ms 2.139 deg | vs damped -0.725 deg (-14.4%) | lr 4.22e-04 | 14.0k win/s | 19.9s | ETA <= 6m
+epoch 24/40 | loss 0.062790 | train end 4.736 deg | val end 4.3250 deg (best 4.3243 @23, stale 3/40) | val 100ms 2.139 deg | vs damped -0.725 deg (-14.4%) | lr 3.83e-04 | 14.0k win/s | 19.9s | ETA <= 5m
+epoch 25/40 | loss 0.063004 | train end 4.753 deg | val end 4.3234 deg (best 4.3234 @25, stale 4/40) | val 100ms 2.138 deg | vs damped -0.726 deg (-14.4%) | lr 3.45e-04 | 14.0k win/s | 19.9s | ETA <= 5m
+epoch 26/40 | loss 0.062777 | train end 4.734 deg | val end 4.3214 deg (best 4.3214 @26, stale 0/40) | val 100ms 2.137 deg | vs damped -0.728 deg (-14.4%) | lr 3.09e-04 | 14.0k win/s | 19.9s | ETA <= 5m
+epoch 27/40 | loss 0.062867 | train end 4.743 deg | val end 4.3202 deg (best 4.3202 @27, stale 1/40) | val 100ms 2.137 deg | vs damped -0.730 deg (-14.4%) | lr 2.73e-04 | 14.0k win/s | 19.9s | ETA <= 4m
+epoch 28/40 | loss 0.062789 | train end 4.736 deg | val end 4.3201 deg (best 4.3201 @28, stale 2/40) | val 100ms 2.137 deg | vs damped -0.730 deg (-14.4%) | lr 2.39e-04 | 14.0k win/s | 19.9s | ETA <= 4m
+epoch 29/40 | loss 0.062764 | train end 4.734 deg | val end 4.3183 deg (best 4.3183 @29, stale 3/40) | val 100ms 2.136 deg | vs damped -0.731 deg (-14.5%) | lr 2.06e-04 | 14.0k win/s | 19.9s | ETA <= 4m
+epoch 30/40 | loss 0.062709 | train end 4.728 deg | val end 4.3189 deg (best 4.3183 @29, stale 4/40) | val 100ms 2.136 deg | vs damped -0.731 deg (-14.5%) | lr 1.75e-04 | 14.0k win/s | 19.9s | ETA <= 3m
+epoch 31/40 | loss 0.062519 | train end 4.716 deg | val end 4.3197 deg (best 4.3183 @29, stale 5/40) | val 100ms 2.136 deg | vs damped -0.730 deg (-14.5%) | lr 1.46e-04 | 13.9k win/s | 20.0s | ETA <= 3m
+epoch 32/40 | loss 0.062332 | train end 4.700 deg | val end 4.3189 deg (best 4.3183 @29, stale 6/40) | val 100ms 2.136 deg | vs damped -0.731 deg (-14.5%) | lr 1.20e-04 | 14.0k win/s | 19.9s | ETA <= 3m
+epoch 33/40 | loss 0.062303 | train end 4.699 deg | val end 4.3185 deg (best 4.3183 @29, stale 7/40) | val 100ms 2.136 deg | vs damped -0.731 deg (-14.5%) | lr 9.55e-05 | 14.0k win/s | 19.9s | ETA <= 2m
+epoch 34/40 | loss 0.062333 | train end 4.698 deg | val end 4.3165 deg (best 4.3165 @34, stale 8/40) | val 100ms 2.135 deg | vs damped -0.733 deg (-14.5%) | lr 7.37e-05 | 13.9k win/s | 20.0s | ETA <= 2m
+epoch 35/40 | loss 0.062371 | train end 4.704 deg | val end 4.3171 deg (best 4.3165 @34, stale 9/40) | val 100ms 2.135 deg | vs damped -0.733 deg (-14.5%) | lr 5.45e-05 | 14.1k win/s | 19.7s | ETA <= 2m
+epoch 36/40 | loss 0.062607 | train end 4.720 deg | val end 4.3175 deg (best 4.3165 @34, stale 10/40) | val 100ms 2.135 deg | vs damped -0.732 deg (-14.5%) | lr 3.81e-05 | 14.0k win/s | 19.8s | ETA <= 1m
+epoch 37/40 | loss 0.062392 | train end 4.704 deg | val end 4.3167 deg (best 4.3165 @34, stale 11/40) | val 100ms 2.135 deg | vs damped -0.733 deg (-14.5%) | lr 2.45e-05 | 13.6k win/s | 20.5s | ETA <= 1m
+epoch 38/40 | loss 0.062193 | train end 4.690 deg | val end 4.3159 deg (best 4.3159 @38, stale 0/40) | val 100ms 2.135 deg | vs damped -0.734 deg (-14.5%) | lr 1.38e-05 | 13.5k win/s | 20.6s | ETA <= 1m
+epoch 39/40 | loss 0.062236 | train end 4.692 deg | val end 4.3157 deg (best 4.3157 @39, stale 1/40) | val 100ms 2.135 deg | vs damped -0.734 deg (-14.5%) | lr 6.16e-06 | 13.5k win/s | 20.6s | ETA <= 0m
+epoch 40/40 | loss 0.062589 | train end 4.720 deg | val end 4.3157 deg (best 4.3157 @40, stale 2/40) | val 100ms 2.135 deg | vs damped -0.734 deg (-14.5%) | lr 1.54e-06 | 13.5k win/s | 20.6s | ETA <= 0m
+Scoring 657,189 windows from 44 segments / 15 users; filter-qualified according to input metadata.
+  Segment 1/44: 22,092/657,189 windows
+  Segment 2/44: 35,638/657,189 windows
+  Segment 3/44: 58,152/657,189 windows
+  Segment 4/44: 69,376/657,189 windows
+  Segment 5/44: 80,192/657,189 windows
+  Segment 6/44: 97,204/657,189 windows
+  Segment 7/44: 118,067/657,189 windows
+  Segment 8/44: 137,240/657,189 windows
+  Segment 9/44: 154,251/657,189 windows
+  Segment 10/44: 166,878/657,189 windows
+  Segment 11/44: 179,935/657,189 windows
+  Segment 12/44: 198,880/657,189 windows
+  Segment 13/44: 220,185/657,189 windows
+  Segment 14/44: 245,689/657,189 windows
+  Segment 15/44: 268,606/657,189 windows
+  Segment 16/44: 270,038/657,189 windows
+  Segment 17/44: 288,484/657,189 windows
+  Segment 18/44: 299,657/657,189 windows
+  Segment 19/44: 332,925/657,189 windows
+  Segment 20/44: 355,266/657,189 windows
+  Segment 21/44: 380,708/657,189 windows
+  Segment 22/44: 381,355/657,189 windows
+  Segment 23/44: 397,597/657,189 windows
+  Segment 24/44: 405,120/657,189 windows
+  Segment 25/44: 427,695/657,189 windows
+  Segment 26/44: 442,817/657,189 windows
+  Segment 27/44: 460,900/657,189 windows
+  Segment 28/44: 482,898/657,189 windows
+  Segment 29/44: 496,008/657,189 windows
+  Segment 30/44: 505,983/657,189 windows
+  Segment 31/44: 518,165/657,189 windows
+  Segment 32/44: 532,727/657,189 windows
+  Segment 33/44: 553,234/657,189 windows
+  Segment 34/44: 576,465/657,189 windows
+  Segment 35/44: 586,517/657,189 windows
+  Segment 36/44: 587,715/657,189 windows
+  Segment 37/44: 598,619/657,189 windows
+  Segment 38/44: 614,540/657,189 windows
+  Segment 39/44: 631,346/657,189 windows
+  Segment 40/44: 649,585/657,189 windows
+  Segment 41/44: 651,568/657,189 windows
+  Segment 42/44: 653,144/657,189 windows
+  Segment 43/44: 655,127/657,189 windows
+  Segment 44/44: 657,189/657,189 windows
+Selected seed 44: validation endpoint 4.3135 degrees.
+# v7 confirmation: validation, every seed
+
+Step-20 mean geodesic error over all validation windows (degrees). Test was not evaluated. Plan tolerance for the 3-seed mean: 4.382.
+
+| Candidate | Params | Seed 42 | Seed 43 | Seed 44 | Mean | SD | Within tolerance | Selected seed |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| v6 control (reference) | 26,012 | 4.3511 | 4.3472 | 4.3285 | 4.3423 | 0.0121 | reference | 44 |
+| separable_base3_addons | 6,651 | 4.3855 | 4.3699 | 4.3933 | 4.3829 | 0.0119 | no | 43 |
+| base3_5_addons | 17,811 | 4.3802 | 4.3561 | 4.3655 | 4.3673 | 0.0121 | yes | 43 |
+| separable_base3_addons_angular | 6,651 | 4.3386 | 4.3370 | 4.3134 | 4.3297 | 0.0142 | yes | 44 |
+| base3_5_addons_angular | 17,811 | 4.3340 | 4.3265 | 4.3135 | 4.3247 | 0.0104 | yes | 44 |
+
+Plan rule (smallest candidate within tolerance): **separable_base3_addons_angular**.
+This is the plan's rule, not a decision: the submission is chosen by the team after the hardware latencies.
+

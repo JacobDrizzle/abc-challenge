@@ -1,0 +1,295 @@
+{
+  "schema": "bench-result-v1",
+  "bench_package_version": "0.1.0",
+  "created_utc": "2026-11-11T23:10:51.263781+00:00",
+  "bench": {
+    "name": "group-a-v2-test20",
+    "definition_sha256": "71ca343f35a17f85a8a30c9e434d7c7065b68dd9d1db3bbff15d79f216961bd2",
+    "cohort_fingerprint": "6303a55cc75316cc7a172b1162875e801350cd267cf7827a53d82edd364bcd48",
+    "legacy_cohort_fingerprint": "015851ffd032833b294db919929d2ad4b141df1794c0f3e4ceaf4b9ac73a51d5",
+    "windows": 931051,
+    "players": [
+      "0aefb728-86ee-4ea8-aba2-014f8b233587",
+      "0f0949b4-e42b-47a4-bf7e-cbbf63361225",
+      "141ce789-0a59-4858-bc0e-28846ab1672c",
+      "318e521e-281d-4d8d-b570-01db1c79ba20",
+      "35220c0e-fda1-4716-a70e-1a93e0819578",
+      "35f825eb-37f8-4fa5-8d40-a0f89fd5d553",
+      "36074619-270d-49c6-9f41-63c9c9a06df4",
+      "44af878e-4a76-44ea-bc2c-78a4c20ffe42",
+      "6338df1d-430d-47e1-8000-376c180fc232",
+      "67190adb-b000-4c7f-9702-cbe3aebdc9a6",
+      "6924807d-4ab4-4522-9da5-669132df4bfb",
+      "6ef6bfe7-c6d6-4a6a-a4cd-fcc7fd3dba27",
+      "73d4c8ec-6f7c-4dfa-89d4-382ccdd15d0d",
+      "7e372e75-5aa4-4465-9cf1-423502ed92a3",
+      "7ea2f8af-82e8-497e-bfca-e9c577c0d42d",
+      "89da1a5f-fdb6-4c84-b2eb-9d6e39df69a4",
+      "939fdaed-a8af-404c-b0be-52f50ca2f284",
+      "a3fcf0fa-4bbb-4500-bf4b-345710aec9b2",
+      "aecf2eb7-d872-4504-93b3-bdb31b748861",
+      "c825484a-10de-4f16-815f-610f5f708740"
+    ]
+  },
+  "inputs": {
+    "data_file": "qualified_head_100hz_20261026_131953.h5",
+    "data_sha256": "a56c3a607dc53f9156d5ac13eed24e3bccc91018a187ab3dba2b641facca2d51"
+  },
+  "model": {
+    "name": "final_k8_combined_v10_s42",
+    "kind": "onnx",
+    "onnx": "jacob\\models\\tcnn_v9_k8_combined_moredata_final_v10_s42_stream.onnx",
+    "onnx_sha256": "28221e1e0b559e8d4d900f8b448acd22a0fbe0da38f904cb12d4e268aca53cad",
+    "baseline": null,
+    "stateful": true,
+    "owner": "nic",
+    "group": null,
+    "declared_trainable_parameters": 7555,
+    "notes": "Final submission model: k8_combined, v10 recipe (dropout 0, 126k steps) and seed 42, trained on moredata_final.h5 (5,243 train / 786 validation users: moredata_1600's 1,600/240 plus 3,643/546 of 4,918 newly pulled users, split 20:3:4). Byte-identical to Submission/Motion_Pending_headpose/model_fp32.onnx. Not comparable with models trained on the 100-user group-a-v2 data.",
+    "threads": 1
+  },
+  "contamination": {
+    "status": "clean",
+    "trained_on": [
+      {
+        "spec": "bench/trained_on/moredata_final_trainval.txt",
+        "kind": "list",
+        "sha256": "97ee8c3c1bdbc6e51722d6df3a7138c283408e21153fec9986e2f566c171333f",
+        "players": 6029
+      }
+    ],
+    "overlap": []
+  },
+  "git": {
+    "commit": "de7e4940a5f2f91d8975c55789bd026f8dd15759",
+    "dirty": true
+  },
+  "machine": {
+    "label": "jacob-amd",
+    "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "machine": "AMD64",
+    "os": "Windows-11-10.0.26200-SP0",
+    "logical_cores": 24,
+    "python": "3.12.10",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.2.6"
+  },
+  "efficiency": {
+    "opset": [
+      {
+        "domain": "ai.onnx",
+        "version": 17
+      }
+    ],
+    "stateful": true,
+    "states": [
+      {
+        "name": "state_in_0",
+        "shape": [
+          1,
+          32,
+          2,
+          7
+        ]
+      },
+      {
+        "name": "state_in_1",
+        "shape": [
+          1,
+          32,
+          2,
+          56
+        ]
+      },
+      {
+        "name": "state_in_2",
+        "shape": [
+          1,
+          32,
+          2,
+          329
+        ]
+      }
+    ],
+    "state_elements": 25088,
+    "initializer_elements": 7552,
+    "constant_node_elements": 548,
+    "macs_per_call": {
+      "total": 16222,
+      "by_operator": {
+        "MatMul": 1950,
+        "Conv": 14272
+      },
+      "recurrences": [],
+      "uncounted_einsum": []
+    },
+    "operators": {
+      "counts": {
+        "Constant": 64,
+        "MatMul": 11,
+        "Slice": 11,
+        "Concat": 9,
+        "Relu": 8,
+        "Conv": 7,
+        "Reshape": 7,
+        "Add": 3,
+        "Mul": 3,
+        "LayerNormalization": 1
+      },
+      "safe": [
+        "Add",
+        "Concat",
+        "Conv",
+        "LayerNormalization",
+        "MatMul",
+        "Mul",
+        "Relu",
+        "Reshape",
+        "Slice"
+      ],
+      "avoid": [],
+      "conditional": {},
+      "other": [],
+      "slow_on_npu": [],
+      "custom_domain": [],
+      "float64_tensors": [],
+      "sequence_tensors": [],
+      "long_recurrences": [],
+      "issues": []
+    },
+    "output_checks": {
+      "calls": 64,
+      "shape_ok": true,
+      "finite": true,
+      "output_norm_range": [
+        0.9999998695159951,
+        1.0000001396285203
+      ],
+      "deterministic": true,
+      "max_abs_diff_rerun": 0.0,
+      "max_abs_diff_1_vs_4_threads": 0.0
+    },
+    "stream_parity": null
+  },
+  "accuracy": {
+    "protocol": "from-start",
+    "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+    "windows": 931051,
+    "mean_deg_step20": 4.183629707715891,
+    "mean_deg_step10": 2.1468945687764887,
+    "mean_deg_by_horizon": [
+      0.09599568618557203,
+      0.24585802502255114,
+      0.4513180201788822,
+      0.6935479116774859,
+      0.9515368735968467,
+      1.209536047351696,
+      1.459225820755977,
+      1.698124982103514,
+      1.9266220653694128,
+      2.1468945687764887,
+      2.3618378821981882,
+      2.573280481852247,
+      2.7820301036217363,
+      2.988635248164978,
+      3.193191241432158,
+      3.3953916523790806,
+      3.595259757816176,
+      3.7930685461969618,
+      3.989005279551592,
+      4.183629707715891
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.4900485514542736,
+    "p95_deg_step20": 9.679349778342742,
+    "p99_deg_step20": 14.714030822770013,
+    "equal_player_mean_deg_step20": 4.124260443699583,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/final_k8_combined_v10_s42@jacob-amd/endpoint_from-start.npy",
+      "sha256": "3350ad418a3bc4edd79404f75408608c08308149fcff4f25f24d7576f1174a0c",
+      "dtype": "float32"
+    }
+  },
+  "accuracy_cold_start": {
+    "protocol": "cold-start",
+    "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+    "windows": 931051,
+    "mean_deg_step20": 4.1945936828218295,
+    "mean_deg_step10": 2.1526019659219116,
+    "mean_deg_by_horizon": [
+      0.09687007128929367,
+      0.24739527638725167,
+      0.45337196302327665,
+      0.6960616604700213,
+      0.9545151494696181,
+      1.213012971443189,
+      1.463231158319291,
+      1.7026869999232386,
+      1.9317584287850573,
+      2.1526019659219116,
+      2.368114859644121,
+      2.5801255931432197,
+      2.7894365034492505,
+      2.9965866182071226,
+      3.2016613624136316,
+      3.4043637349110205,
+      3.60471970898491,
+      3.803018389767874,
+      3.9994572503949755,
+      4.1945936828218295
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.5020772544418204,
+    "p95_deg_step20": 9.69789521336227,
+    "p99_deg_step20": 14.741388977066247,
+    "equal_player_mean_deg_step20": 4.145773997965529,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/final_k8_combined_v10_s42@jacob-amd/endpoint_cold-start.npy",
+      "sha256": "709837c3b2fccd50238469d57b66c69d95f9c365af0ab85aebe185f0763f8ba4",
+      "dtype": "float32"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "jacob-amd",
+ "created_utc": "2026-10-27T23:42:08.206139+00:00",
+ "machine": {
+  "cpu": "AMD Ryzen 9 7900X 12-Core Processor",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "machine": "AMD64",
+  "os": "Windows-11-10.0.26200-SP0",
+  "logical_cores": 24,
+  "python": "3.12.10",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 5,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "v7_sep_angular_reduced": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons_angular\\model_fp32_stream.onnx",
+   "onnx_sha256": "d9f48aa1f25e81371ca64c34757375e2e6be6b614755a8dcda80eca1a8c83e49",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.08700002217665315,
+     "mean_ms": 0.08797496716336657,
+     "p90_ms": 0.08949998300522566,
+     "p99_ms": 0.10770700522698445,
+     "min_ms": 0.08450000314041972,
+     "max_ms": 0.17699995078146458
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.09419996058568358,
+     "mean_ms": 0.10001493317152683,
+     "p90_ms": 0.11369999265298247,
+     "p99_ms": 0.16100200358778233,
+     "min_ms": 0.09199994383379817,
+     "max_ms": 0.5698999739252031
+    }
+   }
+  },
+  "v7_sep_angular_split": {
+   "onnx": "jacob\\training\\outputs\\v8_bench\\sep_base3_addons_angular_split\\model_fp32_stream.onnx",
+   "onnx_sha256": "17de4af1def211e5888757d08d2d3f80760af9c2c76a8a65b4320a1a4aded4dc",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.09849999332800508,
+     "mean_ms": 0.10019436637715746,
+     "p90_ms": 0.10181001271121203,
+     "p99_ms": 0.14730601571500287,
+     "min_ms": 0.096399977337569,
+     "max_ms": 0.39379997178912163
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.10299996938556433,
+     "mean_ms": 0.10741436654158558,
+     "p90_ms": 0.11811002041213213,
+     "p99_ms": 0.1697000116109848,
+     "min_ms": 0.10070001007989049,
+     "max_ms": 0.3627000260166824
+    }
+   }
+  }
+ }
+}

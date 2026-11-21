@@ -1,0 +1,295 @@
+{
+  "schema": "bench-result-v1",
+  "bench_package_version": "0.1.0",
+  "created_utc": "2026-11-07T08:57:05.073951+00:00",
+  "bench": {
+    "name": "group-a-v2-test20",
+    "definition_sha256": "5f35187cc24d6a739f05694c20b908a8ed56451638df100c3d38257e2064cc17",
+    "cohort_fingerprint": "6303a55cc75316cc7a172b1162875e801350cd267cf7827a53d82edd364bcd48",
+    "legacy_cohort_fingerprint": "d48763257d2e6f5a4f8288ebf1038359c6af4d43152ad9aac59b2f9d839dfbe3",
+    "windows": 931051,
+    "players": [
+      "0aefb728-86ee-4ea8-aba2-014f8b233587",
+      "0f0949b4-e42b-47a4-bf7e-cbbf63361225",
+      "141ce789-0a59-4858-bc0e-28846ab1672c",
+      "318e521e-281d-4d8d-b570-01db1c79ba20",
+      "35220c0e-fda1-4716-a70e-1a93e0819578",
+      "35f825eb-37f8-4fa5-8d40-a0f89fd5d553",
+      "36074619-270d-49c6-9f41-63c9c9a06df4",
+      "44af878e-4a76-44ea-bc2c-78a4c20ffe42",
+      "6338df1d-430d-47e1-8000-376c180fc232",
+      "67190adb-b000-4c7f-9702-cbe3aebdc9a6",
+      "6924807d-4ab4-4522-9da5-669132df4bfb",
+      "6ef6bfe7-c6d6-4a6a-a4cd-fcc7fd3dba27",
+      "73d4c8ec-6f7c-4dfa-89d4-382ccdd15d0d",
+      "7e372e75-5aa4-4465-9cf1-423502ed92a3",
+      "7ea2f8af-82e8-497e-bfca-e9c577c0d42d",
+      "89da1a5f-fdb6-4c84-b2eb-9d6e39df69a4",
+      "939fdaed-a8af-404c-b0be-52f50ca2f284",
+      "a3fcf0fa-4bbb-4500-bf4b-345710aec9b2",
+      "aecf2eb7-d872-4504-93b3-bdb31b748861",
+      "c825484a-10de-4f16-815f-610f5f708740"
+    ]
+  },
+  "inputs": {
+    "data_file": "moredata_1600.h5",
+    "data_sha256": "730e74144fa95c601aeb851e34760281c5c36ec3bba00084539330d565457dc4"
+  },
+  "model": {
+    "name": "moredata_k8_combined_s42",
+    "kind": "onnx",
+    "onnx": "jacob/models/tcnn_v9_k8_combined_moredata_ga2_stream.onnx",
+    "onnx_sha256": "ad70b624ae5bd9a76a4cfb550731b78fc13be0807297757bcfe202c9a1b4add4",
+    "baseline": null,
+    "stateful": true,
+    "owner": "nic",
+    "group": "moredata_k8",
+    "declared_trainable_parameters": 7555,
+    "notes": null,
+    "threads": 1
+  },
+  "contamination": {
+    "status": "clean",
+    "trained_on": [
+      {
+        "spec": "bench/trained_on/moredata_1600_trainval.txt",
+        "kind": "list",
+        "sha256": "8e6c74d14224e4327f6fc6a6ce06510b27772b9a9616392cff5edb16b140f1a4",
+        "players": 1840
+      }
+    ],
+    "overlap": []
+  },
+  "git": {
+    "commit": "64b2622567a483b4d9ac4dba22370e266ccf29af",
+    "dirty": true
+  },
+  "machine": {
+    "label": "nic-mac",
+    "cpu": "Apple M5 Pro",
+    "processor": "arm",
+    "machine": "arm64",
+    "os": "macOS-27.2-arm64-arm-64bit",
+    "logical_cores": 18,
+    "python": "3.12.14",
+    "onnxruntime": "1.31.1",
+    "numpy": "2.5.4"
+  },
+  "efficiency": {
+    "opset": [
+      {
+        "domain": "ai.onnx",
+        "version": 17
+      }
+    ],
+    "stateful": true,
+    "states": [
+      {
+        "name": "state_in_0",
+        "shape": [
+          1,
+          32,
+          2,
+          7
+        ]
+      },
+      {
+        "name": "state_in_1",
+        "shape": [
+          1,
+          32,
+          2,
+          56
+        ]
+      },
+      {
+        "name": "state_in_2",
+        "shape": [
+          1,
+          32,
+          2,
+          329
+        ]
+      }
+    ],
+    "state_elements": 25088,
+    "initializer_elements": 7552,
+    "constant_node_elements": 548,
+    "macs_per_call": {
+      "total": 16222,
+      "by_operator": {
+        "MatMul": 1950,
+        "Conv": 14272
+      },
+      "recurrences": [],
+      "uncounted_einsum": []
+    },
+    "operators": {
+      "counts": {
+        "Constant": 64,
+        "MatMul": 11,
+        "Slice": 11,
+        "Concat": 9,
+        "Relu": 8,
+        "Conv": 7,
+        "Reshape": 7,
+        "Add": 3,
+        "Mul": 3,
+        "LayerNormalization": 1
+      },
+      "safe": [
+        "Add",
+        "Concat",
+        "Conv",
+        "LayerNormalization",
+        "MatMul",
+        "Mul",
+        "Relu",
+        "Reshape",
+        "Slice"
+      ],
+      "avoid": [],
+      "conditional": {},
+      "other": [],
+      "slow_on_npu": [],
+      "custom_domain": [],
+      "float64_tensors": [],
+      "sequence_tensors": [],
+      "long_recurrences": [],
+      "issues": []
+    },
+    "output_checks": {
+      "calls": 64,
+      "shape_ok": true,
+      "finite": true,
+      "output_norm_range": [
+        0.999999870796801,
+        1.0000001460636512
+      ],
+      "deterministic": true,
+      "max_abs_diff_rerun": 0.0,
+      "max_abs_diff_1_vs_4_threads": 0.0
+    },
+    "stream_parity": null
+  },
+  "accuracy": {
+    "protocol": "from-start",
+    "protocol_text": "Stateful, from segment start: zero states at the segment's first sample, one sample per call; before 400 samples exist the context is left-padded with the first sample. Scored from the first full window.",
+    "windows": 931051,
+    "mean_deg_step20": 4.236478716845791,
+    "mean_deg_step10": 2.1749049482611,
+    "mean_deg_by_horizon": [
+      0.10329883435899391,
+      0.26371288449493957,
+      0.4744179008630657,
+      0.7178017075126873,
+      0.9752386170783351,
+      1.232654945457956,
+      1.482490488174669,
+      1.7223799630264722,
+      1.9525554591445817,
+      2.1749049482611,
+      2.392110198866064,
+      2.6058957278819213,
+      2.8170449501950228,
+      3.0261299764559606,
+      3.233203482185491,
+      3.4379916206138836,
+      3.6405169162585316,
+      3.8409991416510607,
+      4.039523048241851,
+      4.236478716845791
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.5298589186035976,
+    "p95_deg_step20": 9.825517160340954,
+    "p99_deg_step20": 14.941752736126219,
+    "equal_player_mean_deg_step20": 4.180580555571196,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/moredata_k8_combined_s42@nic-mac/endpoint_from-start.npy",
+      "sha256": "3326df18736c437dcaf8e10c4311d156482f047780b66fcc325ce448ccda54ff",
+      "dtype": "float32"
+    }
+  },
+  "accuracy_cold_start": {
+    "protocol": "cold-start",
+    "protocol_text": "Stateful, cold start: zero states at the first full window (anchor 399), then one sample per call.",
+    "windows": 931051,
+    "mean_deg_step20": 4.247620517273027,
+    "mean_deg_step10": 2.1783342070730605,
+    "mean_deg_by_horizon": [
+      0.10353817153812929,
+      0.2641807086748551,
+      0.47512628758982695,
+      0.7187774446337644,
+      0.9765151128926453,
+      1.2342749223681833,
+      1.4844956528075084,
+      1.7248181420647926,
+      1.9554688703652463,
+      2.1783342070730605,
+      2.3960964198884347,
+      2.610492285638529,
+      2.8223066202501252,
+      3.0321067130003376,
+      3.2399499070498563,
+      3.4455487051588833,
+      3.64891944673774,
+      3.850278346002502,
+      4.0497157822473815,
+      4.247620517273027
+    ],
+    "horizon_ms": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "median_deg_step20": 3.5443461030910637,
+    "p95_deg_step20": 9.83890217236618,
+    "p99_deg_step20": 14.958893075306861,
+    "equal_player_mean_deg_step20": 4.199694318404651,
+    "per_window_file": {
+      "path": "bench_runs/group-a-v2-test20/moredata_k8_combined_s42@nic-mac/endpoint_cold-start.npy",
+      "sha256": "888ce2afe116c0fcc401c9bc6ca20b66c53aa0547f5c1b3595ad66c6cbf984ac",
+      "dtype": "float32"
+    }
+  }
+}

@@ -1,0 +1,379 @@
+Confirming full_pass on seeds [42, 43, 44]
+Training seed 42 on cuda; 7,555 parameters; 3162 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (951,301 windows, stride 5): hold-last 6.4145 deg | damped velocity 5.3700 deg
+Training seed 43 on cuda; 7,555 parameters; 3162 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (951,301 windows, stride 5): hold-last 6.4145 deg | damped velocity 5.3700 deg
+epoch 18/40 | loss 0.062183 | train end 4.707 deg | val end 4.4249 deg (best 4.4249 @18, stale 2/40) | val 100ms 2.221 deg | vs damped -0.945 deg (-17.6%) | lr 6.17e-04 | 4.5k win/s | 247.7s | ETA <= 1h31m
+epoch 19/40 | loss 0.062111 | train end 4.702 deg | val end 4.4238 deg (best 4.4238 @19, stale 3/40) | val 100ms 2.219 deg | vs damped -0.946 deg (-17.6%) | lr 5.78e-04 | 4.6k win/s | 244.5s | ETA <= 1h26m
+epoch 20/40 | loss 0.061973 | train end 4.690 deg | val end 4.4213 deg (best 4.4213 @20, stale 0/40) | val 100ms 2.218 deg | vs damped -0.949 deg (-17.7%) | lr 5.39e-04 | 4.6k win/s | 244.0s | ETA <= 1h22m
+epoch 21/40 | loss 0.061970 | train end 4.690 deg | val end 4.4193 deg (best 4.4193 @21, stale 1/40) | val 100ms 2.217 deg | vs damped -0.951 deg (-17.7%) | lr 5.00e-04 | 4.6k win/s | 244.7s | ETA <= 1h18m
+epoch 22/40 | loss 0.061828 | train end 4.679 deg | val end 4.4184 deg (best 4.4184 @22, stale 2/40) | val 100ms 2.217 deg | vs damped -0.952 deg (-17.7%) | lr 4.61e-04 | 4.6k win/s | 244.6s | ETA <= 1h14m
+epoch 23/40 | loss 0.061933 | train end 4.688 deg | val end 4.4160 deg (best 4.4160 @23, stale 0/40) | val 100ms 2.216 deg | vs damped -0.954 deg (-17.8%) | lr 4.22e-04 | 4.6k win/s | 244.6s | ETA <= 1h09m
+epoch 24/40 | loss 0.061825 | train end 4.679 deg | val end 4.4160 deg (best 4.4160 @24, stale 1/40) | val 100ms 2.215 deg | vs damped -0.954 deg (-17.8%) | lr 3.83e-04 | 4.6k win/s | 244.4s | ETA <= 1h05m
+epoch 25/40 | loss 0.061878 | train end 4.682 deg | val end 4.4146 deg (best 4.4146 @25, stale 2/40) | val 100ms 2.214 deg | vs damped -0.955 deg (-17.8%) | lr 3.45e-04 | 4.6k win/s | 244.4s | ETA <= 1h01m
+epoch 26/40 | loss 0.061799 | train end 4.677 deg | val end 4.4136 deg (best 4.4136 @26, stale 3/40) | val 100ms 2.214 deg | vs damped -0.956 deg (-17.8%) | lr 3.09e-04 | 4.5k win/s | 248.7s | ETA <= 57m
+epoch 27/40 | loss 0.061798 | train end 4.677 deg | val end 4.4127 deg (best 4.4127 @27, stale 4/40) | val 100ms 2.214 deg | vs damped -0.957 deg (-17.8%) | lr 2.73e-04 | 4.6k win/s | 244.3s | ETA <= 53m
+epoch 28/40 | loss 0.061774 | train end 4.675 deg | val end 4.4118 deg (best 4.4118 @28, stale 5/40) | val 100ms 2.214 deg | vs damped -0.958 deg (-17.8%) | lr 2.39e-04 | 4.5k win/s | 245.7s | ETA <= 49m
+epoch 29/40 | loss 0.061775 | train end 4.674 deg | val end 4.4110 deg (best 4.4110 @29, stale 0/40) | val 100ms 2.213 deg | vs damped -0.959 deg (-17.9%) | lr 2.06e-04 | 4.6k win/s | 244.8s | ETA <= 45m
+epoch 30/40 | loss 0.061714 | train end 4.672 deg | val end 4.4102 deg (best 4.4102 @30, stale 1/40) | val 100ms 2.212 deg | vs damped -0.960 deg (-17.9%) | lr 1.75e-04 | 4.6k win/s | 244.1s | ETA <= 41m
+epoch 31/40 | loss 0.061707 | train end 4.669 deg | val end 4.4098 deg (best 4.4098 @31, stale 2/40) | val 100ms 2.212 deg | vs damped -0.960 deg (-17.9%) | lr 1.46e-04 | 4.6k win/s | 244.2s | ETA <= 37m
+epoch 32/40 | loss 0.061680 | train end 4.668 deg | val end 4.4095 deg (best 4.4095 @32, stale 3/40) | val 100ms 2.212 deg | vs damped -0.961 deg (-17.9%) | lr 1.20e-04 | 4.6k win/s | 243.5s | ETA <= 33m
+epoch 33/40 | loss 0.061736 | train end 4.672 deg | val end 4.4086 deg (best 4.4086 @33, stale 4/40) | val 100ms 2.211 deg | vs damped -0.961 deg (-17.9%) | lr 9.55e-05 | 4.6k win/s | 243.7s | ETA <= 29m
+epoch 34/40 | loss 0.061536 | train end 4.656 deg | val end 4.4085 deg (best 4.4085 @34, stale 5/40) | val 100ms 2.211 deg | vs damped -0.962 deg (-17.9%) | lr 7.37e-05 | 4.6k win/s | 244.1s | ETA <= 24m
+epoch 35/40 | loss 0.061625 | train end 4.663 deg | val end 4.4078 deg (best 4.4078 @35, stale 6/40) | val 100ms 2.211 deg | vs damped -0.962 deg (-17.9%) | lr 5.45e-05 | 4.6k win/s | 244.0s | ETA <= 20m
+epoch 36/40 | loss 0.061598 | train end 4.661 deg | val end 4.4080 deg (best 4.4078 @35, stale 7/40) | val 100ms 2.211 deg | vs damped -0.962 deg (-17.9%) | lr 3.81e-05 | 4.6k win/s | 243.8s | ETA <= 16m
+epoch 37/40 | loss 0.061539 | train end 4.657 deg | val end 4.4083 deg (best 4.4078 @35, stale 8/40) | val 100ms 2.211 deg | vs damped -0.962 deg (-17.9%) | lr 2.45e-05 | 4.6k win/s | 244.3s | ETA <= 12m
+epoch 38/40 | loss 0.061553 | train end 4.657 deg | val end 4.4081 deg (best 4.4078 @35, stale 9/40) | val 100ms 2.211 deg | vs damped -0.962 deg (-17.9%) | lr 1.38e-05 | 4.5k win/s | 248.0s | ETA <= 8m
+epoch 39/40 | loss 0.061555 | train end 4.658 deg | val end 4.4077 deg (best 4.4077 @39, stale 10/40) | val 100ms 2.211 deg | vs damped -0.962 deg (-17.9%) | lr 6.16e-06 | 4.4k win/s | 257.4s | ETA <= 4m
+epoch 40/40 | loss 0.061506 | train end 4.654 deg | val end 4.4075 deg (best 4.4075 @40, stale 11/40) | val 100ms 2.211 deg | vs damped -0.962 deg (-17.9%) | lr 1.54e-06 | 4.3k win/s | 260.2s | ETA <= 0m
+Scoring 4,755,761 windows from 333 segments / 120 users; filter-qualified according to input metadata.
+  Segment 1/333: 20,092/4,755,761 windows
+  Segment 2/333: 39,938/4,755,761 windows
+  Segment 3/333: 62,030/4,755,761 windows
+  Segment 4/333: 75,576/4,755,761 windows
+  Segment 5/333: 98,090/4,755,761 windows
+  Segment 6/333: 109,314/4,755,761 windows
+  Segment 7/333: 120,130/4,755,761 windows
+  Segment 8/333: 130,867/4,755,761 windows
+  Segment 9/333: 135,262/4,755,761 windows
+  Segment 10/333: 142,949/4,755,761 windows
+  Segment 11/333: 162,058/4,755,761 windows
+  Segment 12/333: 180,761/4,755,761 windows
+  Segment 13/333: 194,641/4,755,761 windows
+  Segment 14/333: 200,038/4,755,761 windows
+  Segment 15/333: 216,743/4,755,761 windows
+  Segment 16/333: 244,653/4,755,761 windows
+  Segment 17/333: 255,114/4,755,761 windows
+  Segment 18/333: 271,372/4,755,761 windows
+  Segment 19/333: 292,279/4,755,761 windows
+  Segment 20/333: 300,745/4,755,761 windows
+  Segment 21/333: 301,890/4,755,761 windows
+  Segment 22/333: 322,714/4,755,761 windows
+  Segment 23/333: 338,742/4,755,761 windows
+  Segment 24/333: 355,278/4,755,761 windows
+  Segment 25/333: 373,088/4,755,761 windows
+  Segment 26/333: 392,835/4,755,761 windows
+  Segment 27/333: 401,756/4,755,761 windows
+  Segment 28/333: 403,416/4,755,761 windows
+  Segment 29/333: 411,393/4,755,761 windows
+  Segment 30/333: 426,131/4,755,761 windows
+  Segment 31/333: 453,246/4,755,761 windows
+  Segment 32/333: 459,678/4,755,761 windows
+  Segment 33/333: 461,739/4,755,761 windows
+  Segment 34/333: 469,926/4,755,761 windows
+  Segment 35/333: 471,986/4,755,761 windows
+  Segment 36/333: 472,645/4,755,761 windows
+  Segment 37/333: 476,388/4,755,761 windows
+  Segment 38/333: 477,621/4,755,761 windows
+  Segment 39/333: 494,625/4,755,761 windows
+  Segment 40/333: 509,757/4,755,761 windows
+  Segment 41/333: 528,230/4,755,761 windows
+  Segment 42/333: 548,285/4,755,761 windows
+  Segment 43/333: 571,610/4,755,761 windows
+  Segment 44/333: 583,236/4,755,761 windows
+  Segment 45/333: 591,701/4,755,761 windows
+  Segment 46/333: 592,870/4,755,761 windows
+  Segment 47/333: 648,312/4,755,761 windows
+  Segment 48/333: 663,719/4,755,761 windows
+  Segment 49/333: 676,502/4,755,761 windows
+  Segment 50/333: 689,284/4,755,761 windows
+  Segment 51/333: 690,254/4,755,761 windows
+  Segment 52/333: 717,430/4,755,761 windows
+  Segment 53/333: 738,134/4,755,761 windows
+  Segment 54/333: 760,737/4,755,761 windows
+  Segment 55/333: 780,529/4,755,761 windows
+  Segment 56/333: 796,841/4,755,761 windows
+  Segment 57/333: 803,096/4,755,761 windows
+  Segment 58/333: 820,006/4,755,761 windows
+  Segment 59/333: 823,039/4,755,761 windows
+  Segment 60/333: 839,370/4,755,761 windows
+  Segment 61/333: 850,488/4,755,761 windows
+  Segment 62/333: 868,399/4,755,761 windows
+  Segment 63/333: 884,847/4,755,761 windows
+  Segment 64/333: 910,669/4,755,761 windows
+  Segment 65/333: 926,076/4,755,761 windows
+  Segment 66/333: 933,078/4,755,761 windows
+  Segment 67/333: 952,844/4,755,761 windows
+  Segment 68/333: 975,712/4,755,761 windows
+  Segment 69/333: 996,185/4,755,761 windows
+  Segment 70/333: 1,012,796/4,755,761 windows
+  Segment 71/333: 1,029,808/4,755,761 windows
+  Segment 72/333: 1,050,671/4,755,761 windows
+  Segment 73/333: 1,069,844/4,755,761 windows
+  Segment 74/333: 1,086,855/4,755,761 windows
+  Segment 75/333: 1,099,482/4,755,761 windows
+  Segment 76/333: 1,112,539/4,755,761 windows
+  Segment 77/333: 1,131,484/4,755,761 windows
+  Segment 78/333: 1,152,789/4,755,761 windows
+  Segment 79/333: 1,178,293/4,755,761 windows
+  Segment 80/333: 1,201,210/4,755,761 windows
+  Segment 81/333: 1,224,670/4,755,761 windows
+  Segment 82/333: 1,244,807/4,755,761 windows
+  Segment 83/333: 1,253,692/4,755,761 windows
+  Segment 84/333: 1,276,649/4,755,761 windows
+  Segment 85/333: 1,281,101/4,755,761 windows
+  Segment 86/333: 1,296,802/4,755,761 windows
+  Segment 87/333: 1,305,119/4,755,761 windows
+  Segment 88/333: 1,317,825/4,755,761 windows
+  Segment 89/333: 1,332,041/4,755,761 windows
+  Segment 90/333: 1,354,395/4,755,761 windows
+  Segment 91/333: 1,362,712/4,755,761 windows
+  Segment 92/333: 1,386,346/4,755,761 windows
+  Segment 93/333: 1,398,079/4,755,761 windows
+  Segment 94/333: 1,417,653/4,755,761 windows
+  Segment 95/333: 1,437,347/4,755,761 windows
+  Segment 96/333: 1,438,779/4,755,761 windows
+  Segment 97/333: 1,457,225/4,755,761 windows
+  Segment 98/333: 1,458,053/4,755,761 windows
+  Segment 99/333: 1,472,904/4,755,761 windows
+  Segment 100/333: 1,498,337/4,755,761 windows
+  Segment 101/333: 1,501,018/4,755,761 windows
+  Segment 102/333: 1,515,834/4,755,761 windows
+  Segment 103/333: 1,538,298/4,755,761 windows
+  Segment 104/333: 1,540,360/4,755,761 windows
+  Segment 105/333: 1,560,188/4,755,761 windows
+  Segment 106/333: 1,571,361/4,755,761 windows
+  Segment 107/333: 1,604,629/4,755,761 windows
+  Segment 108/333: 1,626,970/4,755,761 windows
+  Segment 109/333: 1,651,074/4,755,761 windows
+  Segment 110/333: 1,668,775/4,755,761 windows
+  Segment 111/333: 1,674,417/4,755,761 windows
+  Segment 112/333: 1,688,490/4,755,761 windows
+  Segment 113/333: 1,709,295/4,755,761 windows
+  Segment 114/333: 1,727,701/4,755,761 windows
+  Segment 115/333: 1,731,037/4,755,761 windows
+  Segment 116/333: 1,744,429/4,755,761 windows
+  Segment 117/333: 1,769,420/4,755,761 windows
+  Segment 118/333: 1,786,122/4,755,761 windows
+  Segment 119/333: 1,802,194/4,755,761 windows
+  Segment 120/333: 1,814,017/4,755,761 windows
+  Segment 121/333: 1,829,535/4,755,761 windows
+  Segment 122/333: 1,853,389/4,755,761 windows
+  Segment 123/333: 1,874,832/4,755,761 windows
+  Segment 124/333: 1,896,961/4,755,761 windows
+  Segment 125/333: 1,908,831/4,755,761 windows
+  Segment 126/333: 1,928,601/4,755,761 windows
+  Segment 127/333: 1,949,240/4,755,761 windows
+  Segment 128/333: 1,962,073/4,755,761 windows
+  Segment 129/333: 1,978,890/4,755,761 windows
+  Segment 130/333: 1,996,146/4,755,761 windows
+  Segment 131/333: 1,999,178/4,755,761 windows
+  Segment 132/333: 2,008,205/4,755,761 windows
+  Segment 133/333: 2,014,557/4,755,761 windows
+  Segment 134/333: 2,026,308/4,755,761 windows
+  Segment 135/333: 2,041,804/4,755,761 windows
+  Segment 136/333: 2,058,749/4,755,761 windows
+  Segment 137/333: 2,060,191/4,755,761 windows
+  Segment 138/333: 2,085,633/4,755,761 windows
+  Segment 139/333: 2,113,311/4,755,761 windows
+  Segment 140/333: 2,128,788/4,755,761 windows
+  Segment 141/333: 2,131,318/4,755,761 windows
+  Segment 142/333: 2,136,696/4,755,761 windows
+  Segment 143/333: 2,138,119/4,755,761 windows
+  Segment 144/333: 2,140,265/4,755,761 windows
+  Segment 145/333: 2,152,733/4,755,761 windows
+  Segment 146/333: 2,168,140/4,755,761 windows
+  Segment 147/333: 2,185,005/4,755,761 windows
+  Segment 148/333: 2,193,483/4,755,761 windows
+  Segment 149/333: 2,211,636/4,755,761 windows
+  Segment 150/333: 2,232,498/4,755,761 windows
+  Segment 151/333: 2,242,811/4,755,761 windows
+  Segment 152/333: 2,261,846/4,755,761 windows
+  Segment 153/333: 2,285,329/4,755,761 windows
+  Segment 154/333: 2,286,715/4,755,761 windows
+  Segment 155/333: 2,303,568/4,755,761 windows
+  Segment 156/333: 2,311,619/4,755,761 windows
+  Segment 157/333: 2,335,397/4,755,761 windows
+  Segment 158/333: 2,352,659/4,755,761 windows
+  Segment 159/333: 2,372,011/4,755,761 windows
+  Segment 160/333: 2,396,330/4,755,761 windows
+  Segment 161/333: 2,415,364/4,755,761 windows
+  Segment 162/333: 2,434,787/4,755,761 windows
+  Segment 163/333: 2,446,520/4,755,761 windows
+  Segment 164/333: 2,451,406/4,755,761 windows
+  Segment 165/333: 2,457,302/4,755,761 windows
+  Segment 166/333: 2,472,803/4,755,761 windows
+  Segment 167/333: 2,483,920/4,755,761 windows
+  Segment 168/333: 2,506,140/4,755,761 windows
+  Segment 169/333: 2,522,368/4,755,761 windows
+  Segment 170/333: 2,543,074/4,755,761 windows
+  Segment 171/333: 2,563,778/4,755,761 windows
+  Segment 172/333: 2,583,591/4,755,761 windows
+  Segment 173/333: 2,589,221/4,755,761 windows
+  Segment 174/333: 2,594,863/4,755,761 windows
+  Segment 175/333: 2,612,563/4,755,761 windows
+  Segment 176/333: 2,621,107/4,755,761 windows
+  Segment 177/333: 2,621,831/4,755,761 windows
+  Segment 178/333: 2,632,972/4,755,761 windows
+  Segment 179/333: 2,652,144/4,755,761 windows
+  Segment 180/333: 2,679,706/4,755,761 windows
+  Segment 181/333: 2,696,642/4,755,761 windows
+  Segment 182/333: 2,713,793/4,755,761 windows
+  Segment 183/333: 2,733,363/4,755,761 windows
+  Segment 184/333: 2,734,076/4,755,761 windows
+  Segment 185/333: 2,746,979/4,755,761 windows
+  Segment 186/333: 2,762,851/4,755,761 windows
+  Segment 187/333: 2,779,527/4,755,761 windows
+  Segment 188/333: 2,796,769/4,755,761 windows
+  Segment 189/333: 2,816,889/4,755,761 windows
+  Segment 190/333: 2,836,030/4,755,761 windows
+  Segment 191/333: 2,837,461/4,755,761 windows
+  Segment 192/333: 2,846,097/4,755,761 windows
+  Segment 193/333: 2,853,298/4,755,761 windows
+  Segment 194/333: 2,876,420/4,755,761 windows
+  Segment 195/333: 2,877,067/4,755,761 windows
+  Segment 196/333: 2,895,413/4,755,761 windows
+  Segment 197/333: 2,897,169/4,755,761 windows
+  Segment 198/333: 2,913,316/4,755,761 windows
+  Segment 199/333: 2,937,912/4,755,761 windows
+  Segment 200/333: 2,957,325/4,755,761 windows
+  Segment 201/333: 2,982,525/4,755,761 windows
+  Segment 202/333: 2,999,465/4,755,761 windows
+  Segment 203/333: 3,000,656/4,755,761 windows
+  Segment 204/333: 3,001,309/4,755,761 windows
+  Segment 205/333: 3,017,296/4,755,761 windows
+  Segment 206/333: 3,032,125/4,755,761 windows
+  Segment 207/333: 3,039,076/4,755,761 windows
+  Segment 208/333: 3,057,185/4,755,761 windows
+  Segment 209/333: 3,073,269/4,755,761 windows
+  Segment 210/333: 3,091,649/4,755,761 windows
+  Segment 211/333: 3,110,028/4,755,761 windows
+  Segment 212/333: 3,130,992/4,755,761 windows
+  Segment 213/333: 3,138,562/4,755,761 windows
+  Segment 214/333: 3,141,565/4,755,761 windows
+  Segment 215/333: 3,147,957/4,755,761 windows
+  Segment 216/333: 3,164,199/4,755,761 windows
+  Segment 217/333: 3,171,722/4,755,761 windows
+  Segment 218/333: 3,194,297/4,755,761 windows
+  Segment 219/333: 3,209,419/4,755,761 windows
+  Segment 220/333: 3,227,502/4,755,761 windows
+  Segment 221/333: 3,229,501/4,755,761 windows
+  Segment 222/333: 3,234,682/4,755,761 windows
+  Segment 223/333: 3,241,481/4,755,761 windows
+  Segment 224/333: 3,263,479/4,755,761 windows
+  Segment 225/333: 3,284,921/4,755,761 windows
+  Segment 226/333: 3,287,577/4,755,761 windows
+  Segment 227/333: 3,298,617/4,755,761 windows
+  Segment 228/333: 3,299,469/4,755,761 windows
+  Segment 229/333: 3,314,427/4,755,761 windows
+  Segment 230/333: 3,335,510/4,755,761 windows
+  Segment 231/333: 3,359,104/4,755,761 windows
+  Segment 232/333: 3,362,388/4,755,761 windows
+  Segment 233/333: 3,369,898/4,755,761 windows
+  Segment 234/333: 3,380,485/4,755,761 windows
+  Segment 235/333: 3,392,277/4,755,761 windows
+  Segment 236/333: 3,393,700/4,755,761 windows
+  Segment 237/333: 3,395,123/4,755,761 windows
+  Segment 238/333: 3,410,823/4,755,761 windows
+  Segment 239/333: 3,427,434/4,755,761 windows
+  Segment 240/333: 3,438,076/4,755,761 windows
+  Segment 241/333: 3,458,387/4,755,761 windows
+  Segment 242/333: 3,471,647/4,755,761 windows
+  Segment 243/333: 3,485,363/4,755,761 windows
+  Segment 244/333: 3,499,940/4,755,761 windows
+  Segment 245/333: 3,513,662/4,755,761 windows
+  Segment 246/333: 3,525,085/4,755,761 windows
+  Segment 247/333: 3,538,195/4,755,761 windows
+  Segment 248/333: 3,539,989/4,755,761 windows
+  Segment 249/333: 3,545,386/4,755,761 windows
+  Segment 250/333: 3,565,918/4,755,761 windows
+  Segment 251/333: 3,585,183/4,755,761 windows
+  Segment 252/333: 3,608,087/4,755,761 windows
+  Segment 253/333: 3,623,268/4,755,761 windows
+  Segment 254/333: 3,646,964/4,755,761 windows
+  Segment 255/333: 3,667,624/4,755,761 windows
+  Segment 256/333: 3,669,982/4,755,761 windows
+  Segment 257/333: 3,672,306/4,755,761 windows
+  Segment 258/333: 3,693,767/4,755,761 windows
+  Segment 259/333: 3,697,289/4,755,761 windows
+  Segment 260/333: 3,701,714/4,755,761 windows
+  Segment 261/333: 3,719,382/4,755,761 windows
+  Segment 262/333: 3,733,939/4,755,761 windows
+  Segment 263/333: 3,760,952/4,755,761 windows
+  Segment 264/333: 3,784,368/4,755,761 windows
+  Segment 265/333: 3,804,722/4,755,761 windows
+  Segment 266/333: 3,830,648/4,755,761 windows
+  Segment 267/333: 3,846,133/4,755,761 windows
+  Segment 268/333: 3,861,744/4,755,761 windows
+  Segment 269/333: 3,867,336/4,755,761 windows
+  Segment 270/333: 3,877,311/4,755,761 windows
+  Segment 271/333: 3,894,208/4,755,761 windows
+  Segment 272/333: 3,896,205/4,755,761 windows
+  Segment 273/333: 3,917,746/4,755,761 windows
+  Segment 274/333: 3,966,772/4,755,761 windows
+  Segment 275/333: 3,985,100/4,755,761 windows
+  Segment 276/333: 4,004,298/4,755,761 windows
+  Segment 277/333: 4,019,601/4,755,761 windows
+  Segment 278/333: 4,022,784/4,755,761 windows
+  Segment 279/333: 4,025,966/4,755,761 windows
+  Segment 280/333: 4,042,879/4,755,761 windows
+  Segment 281/333: 4,064,693/4,755,761 windows
+  Segment 282/333: 4,086,121/4,755,761 windows
+  Segment 283/333: 4,101,095/4,755,761 windows
+  Segment 284/333: 4,118,262/4,755,761 windows
+  Segment 285/333: 4,131,277/4,755,761 windows
+  Segment 286/333: 4,137,988/4,755,761 windows
+  Segment 287/333: 4,143,428/4,755,761 windows
+  Segment 288/333: 4,144,147/4,755,761 windows
+  Segment 289/333: 4,144,776/4,755,761 windows
+  Segment 290/333: 4,179,764/4,755,761 windows
+  Segment 291/333: 4,200,581/4,755,761 windows
+  Segment 292/333: 4,215,484/4,755,761 windows
+  Segment 293/333: 4,235,198/4,755,761 windows
+  Segment 294/333: 4,246,937/4,755,761 windows
+  Segment 295/333: 4,259,119/4,755,761 windows
+  Segment 296/333: 4,273,681/4,755,761 windows
+  Segment 297/333: 4,294,188/4,755,761 windows
+  Segment 298/333: 4,317,419/4,755,761 windows
+  Segment 299/333: 4,327,471/4,755,761 windows
+  Segment 300/333: 4,328,669/4,755,761 windows
+  Segment 301/333: 4,342,209/4,755,761 windows
+  Segment 302/333: 4,357,616/4,755,761 windows
+  Segment 303/333: 4,368,520/4,755,761 windows
+  Segment 304/333: 4,384,441/4,755,761 windows
+  Segment 305/333: 4,401,247/4,755,761 windows
+  Segment 306/333: 4,419,486/4,755,761 windows
+  Segment 307/333: 4,435,757/4,755,761 windows
+  Segment 308/333: 4,454,808/4,755,761 windows
+  Segment 309/333: 4,473,757/4,755,761 windows
+  Segment 310/333: 4,495,038/4,755,761 windows
+  Segment 311/333: 4,517,281/4,755,761 windows
+  Segment 312/333: 4,533,966/4,755,761 windows
+  Segment 313/333: 4,536,779/4,755,761 windows
+  Segment 314/333: 4,556,604/4,755,761 windows
+  Segment 315/333: 4,559,636/4,755,761 windows
+  Segment 316/333: 4,577,177/4,755,761 windows
+  Segment 317/333: 4,578,007/4,755,761 windows
+  Segment 318/333: 4,581,496/4,755,761 windows
+  Segment 319/333: 4,591,765/4,755,761 windows
+  Segment 320/333: 4,626,456/4,755,761 windows
+  Segment 321/333: 4,648,213/4,755,761 windows
+  Segment 322/333: 4,656,120/4,755,761 windows
+  Segment 323/333: 4,658,103/4,755,761 windows
+  Segment 324/333: 4,659,679/4,755,761 windows
+  Segment 325/333: 4,661,662/4,755,761 windows
+  Segment 326/333: 4,663,724/4,755,761 windows
+  Segment 327/333: 4,684,215/4,755,761 windows
+  Segment 328/333: 4,698,060/4,755,761 windows
+  Segment 329/333: 4,719,862/4,755,761 windows
+  Segment 330/333: 4,725,167/4,755,761 windows
+  Segment 331/333: 4,739,936/4,755,761 windows
+  Segment 332/333: 4,747,093/4,755,761 windows
+  Segment 333/333: 4,755,761/4,755,761 windows
+Training seed 44 on cuda; 7,555 parameters; 3162 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (951,301 windows, stride 5): hold-last 6.4145 deg | damped velocity 5.3700 deg
+epoch 01/40 | loss 0.066773 | train end 5.048 deg | val end 4.6399 deg (best 4.6399 @1, stale 0/40) | val 100ms 2.338 deg | vs damped -0.730 deg (-13.6%) | lr 1.00e-03 | 4.6k win/s | 244.1s | ETA <= 2h39m
+epoch 02/40 | loss 0.064482 | train end 4.878 deg | val end 4.5509 deg (best 4.5509 @2, stale 0/40) | val 100ms 2.287 deg | vs damped -0.819 deg (-15.3%) | lr 9.98e-04 | 4.6k win/s | 243.8s | ETA <= 2h34m
+epoch 03/40 | loss 0.063611 | train end 4.814 deg | val end 4.5140 deg (best 4.5140 @3, stale 0/40) | val 100ms 2.268 deg | vs damped -0.856 deg (-15.9%) | lr 9.94e-04 | 4.6k win/s | 243.6s | ETA <= 2h30m
+epoch 04/40 | loss 0.063363 | train end 4.797 deg | val end 4.4906 deg (best 4.4906 @4, stale 0/40) | val 100ms 2.256 deg | vs damped -0.879 deg (-16.4%) | lr 9.86e-04 | 4.6k win/s | 244.1s | ETA <= 2h26m
+epoch 05/40 | loss 0.062998 | train end 4.766 deg | val end 4.4737 deg (best 4.4737 @5, stale 0/40) | val 100ms 2.248 deg | vs damped -0.896 deg (-16.7%) | lr 9.76e-04 | 4.6k win/s | 244.5s | ETA <= 2h22m
+epoch 06/40 | loss 0.062879 | train end 4.759 deg | val end 4.4633 deg (best 4.4633 @6, stale 0/40) | val 100ms 2.242 deg | vs damped -0.907 deg (-16.9%) | lr 9.62e-04 | 4.6k win/s | 244.5s | ETA <= 2h18m
+epoch 07/40 | loss 0.062804 | train end 4.752 deg | val end 4.4554 deg (best 4.4554 @7, stale 0/40) | val 100ms 2.238 deg | vs damped -0.915 deg (-17.0%) | lr 9.46e-04 | 4.6k win/s | 244.4s | ETA <= 2h14m
+epoch 08/40 | loss 0.062574 | train end 4.736 deg | val end 4.4493 deg (best 4.4493 @8, stale 0/40) | val 100ms 2.235 deg | vs damped -0.921 deg (-17.1%) | lr 9.26e-04 | 4.6k win/s | 244.8s | ETA <= 2h10m
+epoch 09/40 | loss 0.062659 | train end 4.741 deg | val end 4.4459 deg (best 4.4459 @9, stale 1/40) | val 100ms 2.233 deg | vs damped -0.924 deg (-17.2%) | lr 9.05e-04 | 4.6k win/s | 244.5s | ETA <= 2h06m
+epoch 10/40 | loss 0.062542 | train end 4.734 deg | val end 4.4418 deg (best 4.4418 @10, stale 0/40) | val 100ms 2.231 deg | vs damped -0.928 deg (-17.3%) | lr 8.80e-04 | 4.5k win/s | 250.5s | ETA <= 2h02m
+epoch 11/40 | loss 0.062509 | train end 4.731 deg | val end 4.4381 deg (best 4.4381 @11, stale 1/40) | val 100ms 2.230 deg | vs damped -0.932 deg (-17.4%) | lr 8.54e-04 | 4.4k win/s | 250.0s | ETA <= 1h59m
+epoch 12/40 | loss 0.062385 | train end 4.722 deg | val end 4.4360 deg (best 4.4360 @12, stale 0/40) | val 100ms 2.228 deg | vs damped -0.934 deg (-17.4%) | lr 8.25e-04 | 4.6k win/s | 243.3s | ETA <= 1h54m
+epoch 13/40 | loss 0.062337 | train end 4.717 deg | val end 4.4319 deg (best 4.4319 @13, stale 1/40) | val 100ms 2.227 deg | vs damped -0.938 deg (-17.5%) | lr 7.94e-04 | 4.6k win/s | 243.3s | ETA <= 1h50m
+epoch 14/40 | loss 0.062270 | train end 4.712 deg | val end 4.4303 deg (best 4.4303 @14, stale 0/40) | val 100ms 2.225 deg | vs damped -0.940 deg (-17.5%) | lr 7.61e-04 | 4.6k win/s | 243.2s | ETA <= 1h46m
+epoch 15/40 | loss 0.062286 | train end 4.713 deg | val end 4.4280 deg (best 4.4280 @15, stale 1/40) | val 100ms 2.224 deg | vs damped -0.942 deg (-17.5%) | lr 7.27e-04 | 4.6k win/s | 243.2s | ETA <= 1h42m

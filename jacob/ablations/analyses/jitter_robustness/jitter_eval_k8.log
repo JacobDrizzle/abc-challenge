@@ -1,0 +1,18 @@
+zero-jitter resample max |dq|: 1.4901161193847656e-08
+exact 100 Hz grid (61 s) {'damped velocity (baseline)': 5.0497, 'sep+angular s44 (current best)': 4.3145, 'k8_3blocks_w32 s42': 4.2916, 'k8 jitter_3ms s42': 4.3228}
+jitter +-1 ms (61 s) {'damped velocity (baseline)': 5.0507, 'sep+angular s44 (current best)': 4.3683, 'k8_3blocks_w32 s42': 4.3399, 'k8 jitter_3ms s42': 4.3265}
+jitter +-2 ms (60 s) {'damped velocity (baseline)': 5.0681, 'sep+angular s44 (current best)': 4.4816, 'k8_3blocks_w32 s42': 4.45, 'k8 jitter_3ms s42': 4.3509}
+jitter +-3 ms (60 s) {'damped velocity (baseline)': 5.1016, 'sep+angular s44 (current best)': 4.6144, 'k8_3blocks_w32 s42': 4.5741, 'k8 jitter_3ms s42': 4.396}
+glitches 1% (61 s) {'damped velocity (baseline)': 5.0699, 'sep+angular s44 (current best)': 4.3589, 'k8_3blocks_w32 s42': 4.3331, 'k8 jitter_3ms s42': 4.3524}
+jitter +-2 ms + glitches 1% (62 s) {'damped velocity (baseline)': 5.0891, 'sep+angular s44 (current best)': 4.5229, 'k8_3blocks_w32 s42': 4.4844, 'k8 jitter_3ms s42': 4.3787}
+
+Step-20 mean (deg) on the exact grid; other rows are the change.
+| Stream | damped velocity (baseline) | sep+angular s44 (current best) | k8_3blocks_w32 s42 | k8 jitter_3ms s42 |
+| --- | ---: | ---: | ---: | ---: |
+| exact 100 Hz grid | 5.0497 | 4.3145 | 4.2916 | 4.3228 |
+| jitter +-1 ms | +0.0010 | +0.0538 | +0.0483 | +0.0037 |
+| jitter +-2 ms | +0.0183 | +0.1671 | +0.1583 | +0.0281 |
+| jitter +-3 ms | +0.0519 | +0.2999 | +0.2825 | +0.0732 |
+| glitches 1% | +0.0202 | +0.0444 | +0.0414 | +0.0296 |
+| jitter +-2 ms + glitches 1% | +0.0394 | +0.2084 | +0.1928 | +0.0560 |
+wrote <scratch>\jitter_robustness_subset.json

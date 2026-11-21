@@ -1,0 +1,187 @@
+{
+ "v7 graph (seed 44)": {
+  "nodes": 130,
+  "macs": 13863,
+  "state_floats": 11616,
+  "other_ops": [],
+  "stored_weights": 6648,
+  "params": 6651,
+  "parity_vs_own_model": {
+   "max_difference_deg": 7.50708529853898e-05,
+   "mean_difference_deg": 5.3768947469054904e-06,
+   "onnx_endpoint_error_deg": 3.2453441122121496
+  },
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.08760002674534917,
+   "mean_ms": 0.08936689332282792,
+   "p90_ms": 0.0923000043258071,
+   "p99_ms": 0.12349995144177228,
+   "min_ms": 0.08520000847056508,
+   "max_ms": 0.6735000060871243,
+   "calls_per_second": 11415.52162885717
+  }
+ },
+ "v9 lean (seed 44)": {
+  "nodes": 84,
+  "macs": 14446,
+  "state_floats": 11616,
+  "other_ops": [],
+  "stored_weights": 6648,
+  "params": 6651,
+  "parity_vs_own_model": {
+   "max_difference_deg": 7.595681144020191e-05,
+   "mean_difference_deg": 5.487329829514136e-06,
+   "onnx_endpoint_error_deg": 3.245343968954508
+  },
+  "vs_exact_model": {
+   "max_difference_deg": 7.407932514999018e-05,
+   "mean_difference_deg": 5.506562324450093e-06
+  },
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.07050001295283437,
+   "mean_ms": 0.07745897345012054,
+   "p90_ms": 0.08079997496679425,
+   "p99_ms": 0.18250099266879263,
+   "min_ms": 0.06839999696239829,
+   "max_ms": 1.944200019352138,
+   "calls_per_second": 14184.39455704804
+  }
+ },
+ "v9 lean + A4 fused head (seed 44)": {
+  "nodes": 81,
+  "macs": 14248,
+  "state_floats": 11616,
+  "other_ops": [],
+  "stored_weights": 6873,
+  "params": 6651,
+  "parity_vs_own_model": {
+   "max_difference_deg": 7.59273402230587e-05,
+   "mean_difference_deg": 5.491668329324237e-06,
+   "onnx_endpoint_error_deg": 3.2453439519236573
+  },
+  "vs_exact_model": {
+   "max_difference_deg": 7.407637078472661e-05,
+   "mean_difference_deg": 5.508734147901628e-06
+  },
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.06859999848529696,
+   "mean_ms": 0.07513801355380564,
+   "p90_ms": 0.09059999138116837,
+   "p99_ms": 0.14470199588686233,
+   "min_ms": 0.06639998173341155,
+   "max_ms": 0.5127000040374696,
+   "calls_per_second": 14577.25979708775
+  }
+ },
+ "L0 control layout": {
+  "nodes": 84,
+  "macs": 14446,
+  "state_floats": 11616,
+  "other_ops": [],
+  "stored_weights": 6648,
+  "params": 6651,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.07020001066848636,
+   "mean_ms": 0.07469989330274984,
+   "p90_ms": 0.07990002632141113,
+   "p99_ms": 0.13960095704533163,
+   "min_ms": 0.06829999620094895,
+   "max_ms": 0.4681000136770308,
+   "calls_per_second": 14245.012080160726
+  }
+ },
+ "L0 rf_324": {
+  "nodes": 84,
+  "macs": 14494,
+  "state_floats": 15504,
+  "other_ops": [],
+  "stored_weights": 6672,
+  "params": 6675,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.0714000198058784,
+   "mean_ms": 0.07414978651795537,
+   "p90_ms": 0.07750000804662704,
+   "p99_ms": 0.12420095677953216,
+   "min_ms": 0.06920000305399299,
+   "max_ms": 1.019999966956675,
+   "calls_per_second": 14005.598355837843
+  }
+ },
+ "L0 rf_397": {
+  "nodes": 84,
+  "macs": 14542,
+  "state_floats": 19008,
+  "other_ops": [],
+  "stored_weights": 6696,
+  "params": 6699,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.07210002513602376,
+   "mean_ms": 0.07465005343935142,
+   "p90_ms": 0.07690000347793102,
+   "p99_ms": 0.12340100773144516,
+   "min_ms": 0.06980000762268901,
+   "max_ms": 0.3372000064700842,
+   "calls_per_second": 13869.620684783426
+  }
+ },
+ "L0 k5_4blocks": {
+  "nodes": 75,
+  "macs": 12382,
+  "state_floats": 19008,
+  "other_ops": [],
+  "stored_weights": 5592,
+  "params": 5595,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.06339995888993144,
+   "mean_ms": 0.0651466934165607,
+   "p90_ms": 0.0678999931551516,
+   "p99_ms": 0.10060300875920809,
+   "min_ms": 0.061400001868605614,
+   "max_ms": 0.8081000414676964,
+   "calls_per_second": 15772.880889971842
+  }
+ },
+ "L0 k8_3blocks_w32": {
+  "nodes": 66,
+  "macs": 16286,
+  "state_floats": 25088,
+  "other_ops": [],
+  "stored_weights": 7552,
+  "params": 7555,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.05640002200379968,
+   "mean_ms": 0.057161253391920276,
+   "p90_ms": 0.05800003418698907,
+   "p99_ms": 0.07100001676008105,
+   "min_ms": 0.055100012104958296,
+   "max_ms": 0.15199999324977398,
+   "calls_per_second": 17730.4895365578
+  }
+ },
+ "L0 native maps": {
+  "nodes": 78,
+  "macs": 14382,
+  "state_floats": 11616,
+  "other_ops": [],
+  "stored_weights": 6648,
+  "params": 6651,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.06639998173341155,
+   "mean_ms": 0.06750185314255457,
+   "p90_ms": 0.06950999959371988,
+   "p99_ms": 0.08979998528957367,
+   "min_ms": 0.06459996802732348,
+   "max_ms": 0.6286000134423375,
+   "calls_per_second": 15060.245106917158
+  }
+ }
+}

@@ -1,0 +1,24 @@
+train: 14,482 segments, 210,656,601 samples
+w_x: mean -0.31382  sd 32.9813  mean/sd -0.00951  positive share 0.49751  mean size when positive 21.0835, negative 21.4994  
+w_y: mean +0.01361  sd 33.6696  mean/sd +0.00040  positive share 0.50226  mean size when positive 21.8949, negative 22.0668  (sign changes under mirror)
+w_z: mean -0.01363  sd 34.9660  mean/sd -0.00039  positive share 0.49993  mean size when positive 22.8972, negative 22.9182  (sign changes under mirror)
+g_x: mean -0.00995  sd 0.1492  mean/sd -0.06672  positive share 0.46472  mean size when positive 0.1024, negative 0.1075  (sign changes under mirror)
+g_y: mean +0.96659  sd 0.0632  mean/sd +15.29278  positive share 0.99956  mean size when positive 0.9671, negative 0.2734  
+g_z: mean -0.08370  sd 0.1799  mean/sd -0.46526  positive share 0.31554  mean size when positive 0.1076, negative 0.1719  
+correlations between a sign-changing and a sign-keeping component (zero under mirror symmetry):
+  w_y x w_x: -0.0059
+  w_y x g_y: -0.0018
+  w_y x g_z: -0.0022
+  w_z x w_x: +0.0098
+  w_z x g_y: -0.0007
+  w_z x g_z: -0.0015
+  g_x x w_x: -0.0011
+  g_x x g_y: +0.0156
+  g_x x g_z: -0.0095
+for scale, correlations within the same class:
+  w_x x g_y: -0.0099
+  w_x x g_z: -0.0238
+  w_y x w_z: -0.2186
+  w_y x g_x: -0.0676
+  w_z x g_x: +0.0184
+  g_y x g_z: +0.3931

@@ -1,0 +1,53 @@
+{
+  "context": 400,
+  "horizon": 20,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "batch_size": 256,
+  "steps_per_epoch": 1000,
+  "epochs": 40,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "patience": 40,
+  "minimum_improvement_deg": 0.005,
+  "validation_stride": 5,
+  "ema_decay": 0.999,
+  "workers": 0,
+  "cache_mb_per_worker": 0,
+  "data_on_device": true,
+  "loss_kind": "angular",
+  "endpoint_weight": 0.5,
+  "input_features": "body_velocity",
+  "velocity_features": false,
+  "effective_context": 400,
+  "damped_prior_tau_ms": 100,
+  "channels": 64,
+  "dropout": 0.1,
+  "num_blocks": 3,
+  "gravity_features": true,
+  "mirror_equivariant": true,
+  "dilation_base": 3,
+  "separable": true,
+  "head_basis": 3,
+  "speed_feature": "l1",
+  "kernel_sizes": [
+    8,
+    8,
+    8
+  ],
+  "dilations": [
+    1,
+    8,
+    47
+  ],
+  "maps": "native",
+  "sampling": "window",
+  "tilt_augmentation_deg": 15,
+  "jitter_augmentation_ms": 0,
+  "distill_beta": 0,
+  "teacher": null
+}

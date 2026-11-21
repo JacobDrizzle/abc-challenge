@@ -1,0 +1,102 @@
+{
+ "stride": 10,
+ "windows": 65744,
+ "models": {
+  "sep+angular s44 (current best)": "v8_recipe_sep_base3_addons/angular_loss/seed_44/best.pt",
+  "v9 control s42": "v9_screen/control/seed_42/best.pt",
+  "rf_397 s42": "v9_screen/rf_397/seed_42/best.pt",
+  "sampling_window s42": "v9_screen/sampling_window/seed_42/best.pt",
+  "native_maps s42": "v9_screen/native_maps/seed_42/best.pt",
+  "k5_4blocks s42": "v9_screen/k5_4blocks/seed_42/best.pt",
+  "k8_3blocks_w32 s42": "v9_screen/k8_3blocks_w32/seed_42/best.pt"
+ },
+ "scenarios": {
+  "exact 100 Hz grid": [
+   0,
+   0
+  ],
+  "jitter +-1 ms": [
+   1,
+   0
+  ],
+  "jitter +-2 ms": [
+   2,
+   0
+  ],
+  "jitter +-3 ms": [
+   3,
+   0
+  ],
+  "glitches 1%": [
+   0,
+   0.01
+  ],
+  "jitter +-2 ms + glitches 1%": [
+   2,
+   0.01
+  ]
+ },
+ "results": {
+  "exact 100 Hz grid": {
+   "damped velocity (baseline)": 5.051438513036374,
+   "sep+angular s44 (current best)": 4.3194436600417525,
+   "v9 control s42": 4.341803284702487,
+   "rf_397 s42": 4.314923281840166,
+   "sampling_window s42": 4.312407484232979,
+   "native_maps s42": 4.33809480064785,
+   "k5_4blocks s42": 4.2952555710880596,
+   "k8_3blocks_w32 s42": 4.291086293669464
+  },
+  "jitter +-1 ms": {
+   "damped velocity (baseline)": 5.052920744650731,
+   "sep+angular s44 (current best)": 4.372617123448404,
+   "v9 control s42": 4.397057194044657,
+   "rf_397 s42": 4.37243356311994,
+   "sampling_window s42": 4.367650494315679,
+   "native_maps s42": 4.392537850353802,
+   "k5_4blocks s42": 4.341273147791205,
+   "k8_3blocks_w32 s42": 4.339466690977717
+  },
+  "jitter +-2 ms": {
+   "damped velocity (baseline)": 5.070702840706683,
+   "sep+angular s44 (current best)": 4.485749836260992,
+   "v9 control s42": 4.523284966845958,
+   "rf_397 s42": 4.496795300951675,
+   "sampling_window s42": 4.489267821636341,
+   "native_maps s42": 4.515205825283739,
+   "k5_4blocks s42": 4.454248374381123,
+   "k8_3blocks_w32 s42": 4.450486482300544
+  },
+  "jitter +-3 ms": {
+   "damped velocity (baseline)": 5.104554011332233,
+   "sep+angular s44 (current best)": 4.619612232750514,
+   "v9 control s42": 4.671967945116165,
+   "rf_397 s42": 4.638311404366889,
+   "sampling_window s42": 4.62424281818626,
+   "native_maps s42": 4.655602085374375,
+   "k5_4blocks s42": 4.5867855326868865,
+   "k8_3blocks_w32 s42": 4.575803029198594
+  },
+  "glitches 1%": {
+   "damped velocity (baseline)": 5.072033283510125,
+   "sep+angular s44 (current best)": 4.364202280562344,
+   "v9 control s42": 4.388327869962466,
+   "rf_397 s42": 4.3609061778901115,
+   "sampling_window s42": 4.355796175568181,
+   "native_maps s42": 4.385254451130966,
+   "k5_4blocks s42": 4.342073320754377,
+   "k8_3blocks_w32 s42": 4.333216135451415
+  },
+  "jitter +-2 ms + glitches 1%": {
+   "damped velocity (baseline)": 5.088622423276182,
+   "sep+angular s44 (current best)": 4.528282216718251,
+   "v9 control s42": 4.564483578418889,
+   "rf_397 s42": 4.543287400696784,
+   "sampling_window s42": 4.524449650320099,
+   "native_maps s42": 4.558499394707462,
+   "k5_4blocks s42": 4.494214517823559,
+   "k8_3blocks_w32 s42": 4.482751583828053
+  }
+ },
+ "table_md": "| Stream | damped velocity (baseline) | sep+angular s44 (current best) | v9 control s42 | rf_397 s42 | sampling_window s42 | native_maps s42 | k5_4blocks s42 | k8_3blocks_w32 s42 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n| exact 100 Hz grid | 5.0514 | 4.3194 | 4.3418 | 4.3149 | 4.3124 | 4.3381 | 4.2953 | 4.2911 |\n| jitter +-1 ms | +0.0015 | +0.0532 | +0.0553 | +0.0575 | +0.0552 | +0.0544 | +0.0460 | +0.0484 |\n| jitter +-2 ms | +0.0193 | +0.1663 | +0.1815 | +0.1819 | +0.1769 | +0.1771 | +0.1590 | +0.1594 |\n| jitter +-3 ms | +0.0531 | +0.3002 | +0.3302 | +0.3234 | +0.3118 | +0.3175 | +0.2915 | +0.2847 |\n| glitches 1% | +0.0206 | +0.0448 | +0.0465 | +0.0460 | +0.0434 | +0.0472 | +0.0468 | +0.0421 |\n| jitter +-2 ms + glitches 1% | +0.0372 | +0.2088 | +0.2227 | +0.2284 | +0.2120 | +0.2204 | +0.1990 | +0.1917 |"
+}

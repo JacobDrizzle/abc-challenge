@@ -1,0 +1,85 @@
+{
+ "schema": "bench-latency-v1",
+ "label": "nic-mac",
+ "created_utc": "2026-11-11T16:28:34.653051+00:00",
+ "machine": {
+  "cpu": "Apple M5 Pro",
+  "processor": "arm",
+  "machine": "arm64",
+  "os": "macOS-27.2-arm64-arm-64bit",
+  "logical_cores": 18,
+  "python": "3.12.14",
+  "onnxruntime": "1.31.0",
+  "numpy": "2.2.6"
+ },
+ "protocol": {
+  "runtime": "ONNX Runtime CPUExecutionProvider",
+  "batch_size": 1,
+  "warmup_per_round": 200,
+  "timed_calls": 3000,
+  "rounds": 3,
+  "threads": [
+   1,
+   4
+  ],
+  "graph_optimization": "ORT_ENABLE_ALL",
+  "stream": "bench.geometry.synthetic_stream(seed 0)",
+  "timed": "session.run of one harness step; stateful graphs get their states back"
+ },
+ "models": {
+  "final_k8_combined_v10_s42": {
+   "onnx": "Submission/Motion_Pending_headpose/model_fp32.onnx",
+   "onnx_sha256": "28221e1e0b559e8d4d900f8b448acd22a0fbe0da38f904cb12d4e268aca53cad",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.03454193938523531,
+     "mean_ms": 0.03516606381163001,
+     "p90_ms": 0.03679611254483461,
+     "p99_ms": 0.05467658513225592,
+     "min_ms": 0.03075005952268839,
+     "max_ms": 0.16808300279080868
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.03504205960780382,
+     "mean_ms": 0.03699201310519129,
+     "p90_ms": 0.03787502646446228,
+     "p99_ms": 0.07876007584854937,
+     "min_ms": 0.033958000130951405,
+     "max_ms": 0.20491692703217268
+    }
+   }
+  },
+  "k8_100users": {
+   "onnx": "jacob/models/tcnn_v9_k8_combined_ga2_stream.onnx",
+   "onnx_sha256": "fa69c36127167445109c3764157e7e553db9f6eecfe201e3768b727dabbd06ad",
+   "stateful": true,
+   "threads": {
+    "1": {
+     "calls": 3000,
+     "median_ms": 0.03445800393819809,
+     "mean_ms": 0.035117666508692004,
+     "p90_ms": 0.03666698466986418,
+     "p99_ms": 0.06213086657226072,
+     "min_ms": 0.030375085771083832,
+     "max_ms": 0.14366593677550554
+    },
+    "4": {
+     "calls": 3000,
+     "median_ms": 0.035125063732266426,
+     "mean_ms": 0.036749602877534926,
+     "p90_ms": 0.03774999640882015,
+     "p99_ms": 0.07710018078796527,
+     "min_ms": 0.033708056434988976,
+     "max_ms": 0.19391695968806744
+    }
+   }
+  }
+ },
+ "git": {
+  "commit": "7f6c374859146430f2980fc038ab488f66471a9b",
+  "dirty": true
+ }
+}

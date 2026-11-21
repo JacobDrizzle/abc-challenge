@@ -1,0 +1,322 @@
+{
+ "sep+angular s44 | v7 graph": {
+  "file_nodes": 130,
+  "executed_nodes": 130,
+  "params": 6651,
+  "stored_floats": 6648,
+  "macs": 13863,
+  "state_floats": 11616,
+  "ops": {
+   "Constant": 131,
+   "Slice": 23,
+   "Mul": 23,
+   "Add": 21,
+   "Concat": 18,
+   "MatMul": 12,
+   "Relu": 12,
+   "Conv": 11,
+   "Reshape": 9,
+   "Clip": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 7.50708529853898e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.09029998909682035,
+   "mean_ms": 0.0993670134494702,
+   "p90_ms": 0.132200017105788,
+   "p99_ms": 0.17300097853876653,
+   "min_ms": 0.0877000275067985,
+   "max_ms": 0.30880002304911613,
+   "calls_per_second": 11074.198457851331
+  }
+ },
+ "sep+angular s44 | lean": {
+  "file_nodes": 84,
+  "executed_nodes": 84,
+  "params": 6651,
+  "stored_floats": 6648,
+  "macs": 14446,
+  "state_floats": 11616,
+  "ops": {
+   "Constant": 82,
+   "Slice": 15,
+   "MatMul": 13,
+   "Concat": 13,
+   "Relu": 12,
+   "Conv": 11,
+   "Reshape": 7,
+   "Mul": 6,
+   "Add": 6,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 7.595681144020191e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.07200002437457442,
+   "mean_ms": 0.07898703983131175,
+   "p90_ms": 0.10280002607032657,
+   "p99_ms": 0.1398000167682767,
+   "min_ms": 0.07010000990703702,
+   "max_ms": 0.2497999812476337,
+   "calls_per_second": 13888.884187004982
+  }
+ },
+ "sep+angular s44 | padded": {
+  "file_nodes": 79,
+  "executed_nodes": 74,
+  "params": 6651,
+  "stored_floats": 6648,
+  "macs": 20206,
+  "state_floats": 11616,
+  "ops": {
+   "Constant": 62,
+   "Concat": 13,
+   "MatMul": 13,
+   "Relu": 12,
+   "Conv": 11,
+   "Slice": 10,
+   "Reshape": 7,
+   "Mul": 6,
+   "Add": 6,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 7.595060619389263e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.06059999577701092,
+   "mean_ms": 0.06544323352864012,
+   "p90_ms": 0.0801000278443098,
+   "p99_ms": 0.11939997784793377,
+   "min_ms": 0.05909998435527086,
+   "max_ms": 0.27789996238425374,
+   "calls_per_second": 16501.651314955336
+  }
+ },
+ "sep+angular s44 | padded+A4": {
+  "file_nodes": 80,
+  "executed_nodes": 71,
+  "params": 6651,
+  "stored_floats": 6651,
+  "macs": 20008,
+  "state_floats": 11616,
+  "ops": {
+   "Constant": 61,
+   "Concat": 15,
+   "Relu": 12,
+   "Conv": 12,
+   "MatMul": 11,
+   "Slice": 10,
+   "Reshape": 7,
+   "Mul": 6,
+   "Add": 6,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 7.592431150274996e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.06019999273121357,
+   "mean_ms": 0.06520517308575412,
+   "p90_ms": 0.0819999841041863,
+   "p99_ms": 0.1173000200651586,
+   "min_ms": 0.058399979025125504,
+   "max_ms": 0.29579998226836324,
+   "calls_per_second": 16611.297686776998
+  }
+ },
+ "k8_combined | lean": {
+  "file_nodes": 60,
+  "executed_nodes": 60,
+  "params": 7555,
+  "stored_floats": 7552,
+  "macs": 16222,
+  "state_floats": 25088,
+  "ops": {
+   "Constant": 64,
+   "Slice": 11,
+   "MatMul": 11,
+   "Concat": 9,
+   "Relu": 8,
+   "Reshape": 7,
+   "Conv": 7,
+   "Mul": 3,
+   "Add": 3,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 9.352144271824672e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.05520001286640763,
+   "mean_ms": 0.06026439996591459,
+   "p90_ms": 0.07801000610925261,
+   "p99_ms": 0.10760000441223383,
+   "min_ms": 0.05360000068321824,
+   "max_ms": 0.2940999693237245,
+   "calls_per_second": 18115.937806394195
+  }
+ },
+ "k8_combined | padded": {
+  "file_nodes": 57,
+  "executed_nodes": 54,
+  "params": 7555,
+  "stored_floats": 7552,
+  "macs": 22366,
+  "state_floats": 25088,
+  "ops": {
+   "Constant": 52,
+   "MatMul": 11,
+   "Concat": 9,
+   "Slice": 8,
+   "Relu": 8,
+   "Reshape": 7,
+   "Conv": 7,
+   "Mul": 3,
+   "Add": 3,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 9.363679334867061e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.04830001853406429,
+   "mean_ms": 0.05353444681192438,
+   "p90_ms": 0.06910000229254365,
+   "p99_ms": 0.09970100247301164,
+   "min_ms": 0.046900007873773575,
+   "max_ms": 0.47859997721388936,
+   "calls_per_second": 20703.925802735157
+  }
+ },
+ "k8_combined | padded+A4": {
+  "file_nodes": 58,
+  "executed_nodes": 51,
+  "params": 7555,
+  "stored_floats": 7555,
+  "macs": 22168,
+  "state_floats": 25088,
+  "ops": {
+   "Constant": 51,
+   "Concat": 11,
+   "MatMul": 9,
+   "Slice": 8,
+   "Relu": 8,
+   "Conv": 8,
+   "Reshape": 7,
+   "Mul": 3,
+   "Add": 3,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 9.375394359682807e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.046900007873773575,
+   "mean_ms": 0.05096439990447834,
+   "p90_ms": 0.06310001481324434,
+   "p99_ms": 0.09120099595747891,
+   "min_ms": 0.04579999949783087,
+   "max_ms": 0.31560001662001014,
+   "calls_per_second": 21321.958040847127
+  }
+ },
+ "k5_combined | lean": {
+  "file_nodes": 69,
+  "executed_nodes": 69,
+  "params": 5595,
+  "stored_floats": 5592,
+  "macs": 12318,
+  "state_floats": 19008,
+  "ops": {
+   "Constant": 72,
+   "Slice": 13,
+   "MatMul": 11,
+   "Concat": 11,
+   "Relu": 10,
+   "Conv": 9,
+   "Reshape": 7,
+   "Add": 4,
+   "Mul": 3,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 9.754604227798799e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.0619000056758523,
+   "mean_ms": 0.06659205334726721,
+   "p90_ms": 0.07681000279262666,
+   "p99_ms": 0.12009998317807913,
+   "min_ms": 0.060399994254112244,
+   "max_ms": 0.17319998005405068,
+   "calls_per_second": 16155.087371665755
+  }
+ },
+ "k5_combined | padded": {
+  "file_nodes": 65,
+  "executed_nodes": 61,
+  "params": 5595,
+  "stored_floats": 5592,
+  "macs": 16926,
+  "state_floats": 19008,
+  "ops": {
+   "Constant": 56,
+   "Concat": 11,
+   "MatMul": 11,
+   "Relu": 10,
+   "Slice": 9,
+   "Conv": 9,
+   "Reshape": 7,
+   "Add": 4,
+   "Mul": 3,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 9.757983481879255e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.053499999921768904,
+   "mean_ms": 0.05877757340980073,
+   "p90_ms": 0.07599999662488699,
+   "p99_ms": 0.10500104224774989,
+   "min_ms": 0.05199998850002885,
+   "max_ms": 0.3499000449664891,
+   "calls_per_second": 18691.588812378755
+  }
+ },
+ "k5_combined | padded+A4": {
+  "file_nodes": 66,
+  "executed_nodes": 58,
+  "params": 5595,
+  "stored_floats": 5595,
+  "macs": 16728,
+  "state_floats": 19008,
+  "ops": {
+   "Constant": 55,
+   "Concat": 13,
+   "Relu": 10,
+   "Conv": 10,
+   "Slice": 9,
+   "MatMul": 9,
+   "Reshape": 7,
+   "Add": 4,
+   "Mul": 3,
+   "LayerNormalization": 1
+  },
+  "off_list_ops": [],
+  "parity_max_deg": 9.754604227798799e-05,
+  "latency_1thread": {
+   "calls": 15000,
+   "median_ms": 0.052099989261478186,
+   "mean_ms": 0.05723461350038027,
+   "p90_ms": 0.07319997530430555,
+   "p99_ms": 0.10150001617148519,
+   "min_ms": 0.05050003528594971,
+   "max_ms": 0.32460002694278955,
+   "calls_per_second": 19193.861921568234
+  }
+ }
+}

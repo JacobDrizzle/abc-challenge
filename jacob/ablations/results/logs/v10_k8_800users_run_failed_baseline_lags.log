@@ -1,0 +1,19 @@
+Working folder: <repo>\jacob\training
+Stage 1 compares 1 configurations with seed 42.
+Stage 2 confirms the winning configuration with seeds [42, 43, 44].
+Repeating seed 42 across different configurations is intentional. Saved work is reused.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<repo>\jacob\training\best\run.py", line 39, in <module>
+    main()
+  File "<repo>\jacob\training\best\run.py", line 35, in main
+    desktop_next.main()
+  File "<repo>\jacob\training\desktop_next.py", line 98, in main
+    run_next.main()
+  File "<repo>\jacob\training\run_next.py", line 121, in main
+    run_suite(args.data, args.output, json.loads(args.suite.read_text()), json.loads(args.base_config.read_text()),
+  File "<repo>\jacob\training\run_next.py", line 64, in run_suite
+    tune(data, split, output/"damped_baseline", tuple(suite["baseline_lags"]), tuple(suite["baseline_tau_ms"]))
+                                                      ~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'baseline_lags'

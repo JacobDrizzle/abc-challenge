@@ -1,0 +1,14 @@
+{
+  "complete": false,
+  "rows": [
+    {
+      "variant": "full_pass",
+      "seed": 42,
+      "checkpoint": "seed_42/best.pt",
+      "checkpoint_sha256": "4fa593cc77c073081c6c4f09728d1488fad889765dd48e6873aab1936cb704be",
+      "validation_endpoint_deg": 4.411100967788365,
+      "hold_last_endpoint_deg": 6.414602031717522,
+      "cohort_fingerprint": "809e80aea87b0d07db0142f6978a4edd497d95409ff14c96df27fb0fe1adcbea"
+    }
+  ]
+}

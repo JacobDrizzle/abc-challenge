@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": {
+    "control": {},
+    "reference": {
+      "last_position_forward": false,
+      "dense_validation": false
+    },
+    "dense_validation_only": {
+      "last_position_forward": false
+    }
+  },
+  "baseline_lags": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "baseline_tau_ms": [
+    25,
+    50,
+    100,
+    200,
+    500,
+    null
+  ]
+}

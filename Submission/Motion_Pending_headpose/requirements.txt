@@ -1,0 +1,8 @@
+# Motion_Pending head-pose predictor: everything run_inference.py needs (Python 3.10 to 3.14; Linux, macOS, Windows).
+# CPU onnxruntime on purpose: the model is ~16k multiply-adds per step, and it also runs unchanged on a CUDA machine.
+# Every line is pinned. The marker after ";" picks the line for your Python version, because onnxruntime 1.31.0 has no
+# wheel for Python 3.10 and numpy 2.2.6 has none for Python 3.14.
+numpy==2.2.6; python_version < "3.14"
+numpy==2.4.6; python_version >= "3.14"
+onnxruntime==1.23.2; python_version < "3.11"
+onnxruntime==1.31.0; python_version >= "3.11"

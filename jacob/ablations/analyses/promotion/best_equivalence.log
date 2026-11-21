@@ -1,0 +1,19 @@
+﻿1 configs: 288 combinations, 233 valid, 0 mismatches
+2 v9_confirm/k8_combined {'same_weights': True, 'max_abs_delta_trained': 0.0, 'max_abs_delta_deployed': 0.0, 'pass': True}
+2 v9_confirm/k5_combined {'same_weights': True, 'max_abs_delta_trained': 0.0, 'max_abs_delta_deployed': 0.0, 'pass': True}
+2 v8_recipe_sep_base3_addons/angular_loss {'same_weights': True, 'max_abs_delta_trained': 0.0, 'max_abs_delta_deployed': 0.0, 'pass': True}
+3 tcnn_v9_k8_combined_ga2_stream.onnx True
+3 tcnn_v9_k8_combined_padded_ga2_stream.onnx True
+3 tcnn_v9_k8_combined_padded_a4_ga2_stream.onnx True
+Training seed 42 on cpu; 7,555 parameters; 3 steps x 4 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (25 windows, stride 20): hold-last 4.3988 deg | damped velocity 2.4947 deg
+epoch 01/2 | loss 0.035549 | train end 2.887 deg | val end 1.6073 deg (best 1.6073 @1, stale 0/40) | val 100ms 0.547 deg | vs damped -0.887 deg (-35.6%) | lr 1.00e-03 | 0.1k win/s | 0.2s | ETA <= 0m
+epoch 02/2 | loss 0.019092 | train end 1.526 deg | val end 0.9149 deg (best 0.9149 @2, stale 0/40) | val 100ms 0.366 deg | vs damped -1.580 deg (-63.3%) | lr 5.00e-04 | 0.2k win/s | 0.1s | ETA <= 0m
+Training seed 42 on cpu; 7,555 parameters; 3 steps x 4 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (25 windows, stride 20): hold-last 4.3988 deg | damped velocity 2.4947 deg
+epoch 01/2 | loss 0.035549 | train end 2.887 deg | val end 1.6073 deg (best 1.6073 @1, stale 0/40) | val 100ms 0.547 deg | vs damped -0.887 deg (-35.6%) | lr 1.00e-03 | 0.3k win/s | 0.1s | ETA <= 0m
+epoch 02/2 | loss 0.019092 | train end 1.526 deg | val end 0.9149 deg (best 0.9149 @2, stale 0/40) | val 100ms 0.366 deg | vs damped -1.580 deg (-63.3%) | lr 5.00e-04 | 0.3k win/s | 0.1s | ETA <= 0m
+4 training: {'checkpoint_keys': ['best_validation_deg', 'config', 'cuda_rng', 'epoch', 'format_version', 'history', 'model_spec', 'model_state', 'optimizer_state', 'patience_best', 'provenance', 'scheduler_state', 'seed', 'stale_epochs', 'torch_rng', 'train_model_state'], 'tensor_dicts_compared': ['model_state', 'train_model_state'], 'differing_keys': ['history'], 'history_equal': True, 'epochs': 2, 'pass': True}
+Scoring 657,189 windows from 44 segments / 15 users; filter-qualified according to input metadata.
+5 full validation: {'got': 4.247104990427709, 'expected': 4.247104990427709, 'cohort_fingerprint_equal': True, 'pass': True}
+PASSED -> <scratch>\best_equivalence.json

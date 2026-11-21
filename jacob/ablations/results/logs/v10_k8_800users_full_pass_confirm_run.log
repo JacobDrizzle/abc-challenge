@@ -1,0 +1,52 @@
+Confirming full_pass on seeds [42, 43, 44]
+Training seed 42 on cuda; 7,555 parameters; 3162 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (951,301 windows, stride 5): hold-last 6.4145 deg | damped velocity 5.3700 deg
+Training seed 43 on cuda; 7,555 parameters; 3162 steps x 256 windows per epoch; GPU-resident sampling; EMA 0.999; damped prior 100.
+Validation references (951,301 windows, stride 5): hold-last 6.4145 deg | damped velocity 5.3700 deg
+epoch 01/40 | loss 0.067008 | train end 5.066 deg | val end 4.6414 deg (best 4.6414 @1, stale 0/40) | val 100ms 2.342 deg | vs damped -0.729 deg (-13.6%) | lr 1.00e-03 | 4.3k win/s | 257.6s | ETA <= 2h47m
+epoch 02/40 | loss 0.064550 | train end 4.884 deg | val end 4.5463 deg (best 4.5463 @2, stale 0/40) | val 100ms 2.292 deg | vs damped -0.824 deg (-15.3%) | lr 9.98e-04 | 4.4k win/s | 251.4s | ETA <= 2h41m
+epoch 03/40 | loss 0.063823 | train end 4.829 deg | val end 4.5059 deg (best 4.5059 @3, stale 0/40) | val 100ms 2.269 deg | vs damped -0.864 deg (-16.1%) | lr 9.94e-04 | 4.4k win/s | 251.2s | ETA <= 2h36m
+epoch 04/40 | loss 0.063286 | train end 4.789 deg | val end 4.4867 deg (best 4.4867 @4, stale 0/40) | val 100ms 2.256 deg | vs damped -0.883 deg (-16.4%) | lr 9.86e-04 | 4.4k win/s | 251.2s | ETA <= 2h32m
+epoch 05/40 | loss 0.063037 | train end 4.771 deg | val end 4.4745 deg (best 4.4745 @5, stale 0/40) | val 100ms 2.249 deg | vs damped -0.896 deg (-16.7%) | lr 9.76e-04 | 4.4k win/s | 253.8s | ETA <= 2h28m
+epoch 06/40 | loss 0.062886 | train end 4.761 deg | val end 4.4661 deg (best 4.4661 @6, stale 0/40) | val 100ms 2.244 deg | vs damped -0.904 deg (-16.8%) | lr 9.62e-04 | 4.4k win/s | 251.3s | ETA <= 2h23m
+epoch 07/40 | loss 0.062945 | train end 4.765 deg | val end 4.4592 deg (best 4.4592 @7, stale 0/40) | val 100ms 2.240 deg | vs damped -0.911 deg (-17.0%) | lr 9.46e-04 | 4.3k win/s | 261.4s | ETA <= 2h20m
+epoch 08/40 | loss 0.062678 | train end 4.744 deg | val end 4.4529 deg (best 4.4529 @8, stale 0/40) | val 100ms 2.235 deg | vs damped -0.917 deg (-17.1%) | lr 9.26e-04 | 4.3k win/s | 261.8s | ETA <= 2h16m
+epoch 09/40 | loss 0.062602 | train end 4.738 deg | val end 4.4470 deg (best 4.4470 @9, stale 0/40) | val 100ms 2.232 deg | vs damped -0.923 deg (-17.2%) | lr 9.05e-04 | 4.3k win/s | 261.9s | ETA <= 2h12m
+epoch 10/40 | loss 0.062635 | train end 4.741 deg | val end 4.4434 deg (best 4.4434 @10, stale 1/40) | val 100ms 2.231 deg | vs damped -0.927 deg (-17.3%) | lr 8.80e-04 | 4.4k win/s | 254.5s | ETA <= 2h08m
+epoch 11/40 | loss 0.062422 | train end 4.725 deg | val end 4.4405 deg (best 4.4405 @11, stale 0/40) | val 100ms 2.229 deg | vs damped -0.929 deg (-17.3%) | lr 8.54e-04 | 4.4k win/s | 251.6s | ETA <= 2h03m
+epoch 12/40 | loss 0.062288 | train end 4.715 deg | val end 4.4373 deg (best 4.4373 @12, stale 1/40) | val 100ms 2.227 deg | vs damped -0.933 deg (-17.4%) | lr 8.25e-04 | 4.4k win/s | 255.0s | ETA <= 1h59m
+epoch 13/40 | loss 0.062418 | train end 4.725 deg | val end 4.4344 deg (best 4.4344 @13, stale 0/40) | val 100ms 2.225 deg | vs damped -0.936 deg (-17.4%) | lr 7.94e-04 | 4.2k win/s | 263.4s | ETA <= 1h55m
+epoch 14/40 | loss 0.062277 | train end 4.713 deg | val end 4.4321 deg (best 4.4321 @14, stale 1/40) | val 100ms 2.224 deg | vs damped -0.938 deg (-17.5%) | lr 7.61e-04 | 4.2k win/s | 263.5s | ETA <= 1h51m
+epoch 15/40 | loss 0.062202 | train end 4.708 deg | val end 4.4306 deg (best 4.4306 @15, stale 2/40) | val 100ms 2.223 deg | vs damped -0.939 deg (-17.5%) | lr 7.27e-04 | 4.4k win/s | 254.6s | ETA <= 1h47m
+epoch 16/40 | loss 0.062279 | train end 4.715 deg | val end 4.4270 deg (best 4.4270 @16, stale 0/40) | val 100ms 2.221 deg | vs damped -0.943 deg (-17.6%) | lr 6.91e-04 | 4.4k win/s | 254.2s | ETA <= 1h42m
+epoch 17/40 | loss 0.062034 | train end 4.695 deg | val end 4.4260 deg (best 4.4260 @17, stale 1/40) | val 100ms 2.221 deg | vs damped -0.944 deg (-17.6%) | lr 6.55e-04 | 4.4k win/s | 254.5s | ETA <= 1h38m
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<repo>\jacob\training\best\confirm.py", line 116, in <module>
+    main()
+  File "<repo>\jacob\training\best\confirm.py", line 98, in main
+    run_desktop.run_experiment(args.data, split, ROOT/plan["candidates"][name]["output"], configs[name],
+  File "<repo>\jacob\training\run_desktop.py", line 59, in run_experiment
+    checkpoint = train(data, split, run, config, seed, device, resume=run.exists(), synthetic=synthetic)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\jacob\training\best\hooks.py", line 62, in train_best
+    return train(data, split, output, config, seed, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\jacob\training\train_tcnn.py", line 213, in train
+    torch.nn.utils.clip_grad_norm_(model.parameters(), config["gradient_clip"], error_if_nonfinite=True)
+  File "<local_test>\.venv\Lib\site-packages\torch\nn\utils\clip_grad.py", line 38, in _no_grad_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<local_test>\.venv\Lib\site-packages\torch\nn\utils\clip_grad.py", line 220, in clip_grad_norm_
+    _clip_grads_with_norm_(parameters, max_norm, total_norm, foreach)
+  File "<local_test>\.venv\Lib\site-packages\torch\nn\utils\clip_grad.py", line 38, in _no_grad_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<local_test>\.venv\Lib\site-packages\torch\nn\utils\clip_grad.py", line 168, in _clip_grads_with_norm_
+    torch._foreach_mul_(device_grads, clip_coef_clamped.to(device))
+RuntimeError: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

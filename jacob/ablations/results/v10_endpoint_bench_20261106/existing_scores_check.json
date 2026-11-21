@@ -1,0 +1,27 @@
+{
+ "k8_800_original_s44": {
+  "reference": "jacob\\ablations\\analyses\\generalisation\\scores\\k8_800_s44.json",
+  "reference_sha256": "cec7b76f57a03cfc646cfe2be74b66f46a1eef61c1af78ae2aeaf3dd8f4ece95",
+  "max_player_difference_deg": 1.4319931964483306e-06
+ },
+ "v9_k8_combined_ga2": {
+  "reference": "jacob\\ablations\\analyses\\generalisation\\scores\\k8_100_s42.json",
+  "reference_sha256": "2f2a772e8db0c9d0c7c82bc7a68cc95ad6e95e4e4a148190b4113b360361ae64",
+  "max_player_difference_deg": 5.438074195037698e-07
+ },
+ "hold_last": {
+  "reference": "jacob\\ablations\\analyses\\generalisation\\scores\\baselines.json",
+  "reference_sha256": "30e7c016312b2fde07f79eabe8f593c3cab848907d44dfe1375c17b40ca3c69e",
+  "max_player_difference_deg": 3.0228606111099474e-09
+ },
+ "damped_velocity": {
+  "reference": "jacob\\ablations\\analyses\\generalisation\\scores\\baselines.json",
+  "reference_sha256": "30e7c016312b2fde07f79eabe8f593c3cab848907d44dfe1375c17b40ca3c69e",
+  "max_player_difference_deg": 2.779461050149388e-07
+ },
+ "constant_velocity_1step": {
+  "reference": "jacob\\ablations\\analyses\\generalisation\\scores\\baselines.json",
+  "reference_sha256": "30e7c016312b2fde07f79eabe8f593c3cab848907d44dfe1375c17b40ca3c69e",
+  "max_player_difference_deg": 5.076367179518221e-07
+ }
+}
